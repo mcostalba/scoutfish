@@ -35,6 +35,8 @@ namespace Parser {
   void make_db(std::istringstream& is);
 }
 
+void scout(const Position& startPos, std::istringstream& is);
+
 using namespace std;
 
 extern void benchmark(const Position& pos, istream& is);
@@ -199,6 +201,7 @@ void UCI::loop(int argc, char* argv[]) {
       else if (token == "position")   position(pos, is);
       else if (token == "setoption")  setoption(is);
       else if (token == "db")         Parser::make_db(is);
+      else if (token == "scout")      scout(pos, is);
 
       // Additional custom non-UCI commands, useful for debugging
       else if (token == "flip")       pos.flip();

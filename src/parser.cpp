@@ -193,7 +193,7 @@ const char* parse_game(const char* moves, const char* end, std::ofstream& ofs,
     if (!DryRun && fenEnd == fen)
     {
         *curMove++ = MOVE_NONE; // Game separator
-        ofs.write(moves, curMove - gameMoves);
+        ofs.write((const char*)gameMoves, (curMove - gameMoves) * sizeof(Move));
     }
 
     return end;
@@ -547,6 +547,8 @@ void make_db(std::istringstream& is) {
     dbName += ".bin";
     std::ofstream ofs;
     ofs.open(dbName, std::ofstream::out | std::ofstream::binary);
+    Move first = MOVE_NONE;
+    ofs.write((const char*)&first, sizeof(Move));
 
     std::cerr << "\nProcessing...";
 
