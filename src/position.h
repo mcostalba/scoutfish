@@ -71,8 +71,11 @@ public:
   static void init();
 
   Position() = default;
-  Position(const Position&) = delete;
-  Position& operator=(const Position&) = delete;
+  Position(const Position& pos) { *this = pos; }
+  Position& operator=(const Position& pos) {
+      ::memcpy(this, &pos, sizeof(Position));
+      return *this;
+  }
 
   // FEN string input/output
   Position& set(const std::string& fenStr, bool isChess960, StateInfo* si, Thread* th);
@@ -154,6 +157,9 @@ public:
   int rule50_count() const;
   Score psq_score() const;
   Value non_pawn_material(Color c) const;
+  bool move_is_uci(Move m, const char* ref) const;
+  template<bool Strict = true> bool move_is_san(Move m, const char* ref) const;
+  Move san_to_move(const char* cur, const char* end, size_t& fixed) const;
 
   // Position consistency check, for debugging
   bool pos_is_ok(int* failedStep = nullptr) const;

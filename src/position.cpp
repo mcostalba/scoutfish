@@ -34,6 +34,8 @@
 #include "uci.h"
 #include "syzygy/tbprobe.h"
 
+const char* play_game(const Position& pos, Move move, const char* moves, const char* end);
+
 using std::string;
 
 namespace PSQT {
@@ -51,6 +53,7 @@ namespace Zobrist {
 namespace {
 
 const string PieceToChar(" PNBRQK  pnbrqk");
+const string PieceToSAN(" PNBRQK  PNBRQK");
 
 // min_attacker() is a helper function used by see_ge() to locate the least
 // valuable attacker for the side to move, remove the attacker we just found
@@ -1100,6 +1103,258 @@ bool Position::is_draw() const {
   } while ((e -= 2) >= 4);
 
   return false;
+}
+
+
+/// Position::move_is_uci() takes a pseudo-legal Move and a uci as input and
+/// returns true if moves are equivalent.
+bool Position::move_is_uci(Move m, const char* ref) const {
+
+  string uci1 = UCI::move(m, false), uci2 = uci1, uci3 = uci1;
+  uci2.insert(2, "-");
+  uci3.insert(2, "x");
+  return uci1 == ref || uci2 == ref || uci3 == ref;
+}
+
+
+/// Position::move_is_san() takes a pseudo-legal Move and a san as input and
+/// returns true if moves are equivalent.
+template<bool Strict>
+bool Position::move_is_san(Move m, const char* ref) const {
+
+  assert(m != MOVE_NONE);
+
+  Bitboard others, b;
+  char buf[8], *san = buf;
+  Square from = from_sq(m);
+  Square to = to_sq(m);
+  Piece pc = piece_on(from);
+  PieceType pt = type_of(pc);
+
+  buf[2] = '\0'; // Init to fast compare later on
+
+  if (type_of(m) == CASTLING)
+  {
+      int cmp, last = to > from ? 3 : 5;
+
+      if (ref[0] == 'O')
+          cmp = to > from ? strncmp(ref, "O-O", 3) : strncmp(ref, "O-O-O", 5);
+      else if (ref[0] == '0')
+          cmp = to > from ? strncmp(ref, "0-0", 3) : strncmp(ref, "0-0-0", 5);
+      else if (ref[0] == 'o')
+          cmp = to > from ? strncmp(ref, "o-o", 3) : strncmp(ref, "o-o-o", 5);
+      else
+          cmp = 1;
+
+      return !cmp && (ref[last] == '\0' || ref[last] == '+' || ref[last] == '#');
+  }
+
+  if (pt != PAWN)
+  {
+      *san++ = PieceToSAN[pt];
+
+      // A disambiguation occurs if we have more then one piece of type 'pt'
+      // that can reach 'to' with a legal move.
+      others = b = (attacks_from(pc, to) & pieces(sideToMove, pt)) ^ from;
+
+      while (Strict && b)
+      {
+          Square s = pop_lsb(&b);
+          if (!legal(make_move(s, to)))
+              others ^= s;
+      }
+
+      if (!others)
+      { /* Disambiguation is not needed */ }
+
+      else if (  !(others & file_bb(from))
+               && (Strict || (ref[1] > '8'))) // Check for wrong row disambiguation
+          *san++ = char('a' + file_of(from));
+
+      else if (!(others & rank_bb(from)))
+          *san++ = char('1' + rank_of(from));
+
+      else
+      {
+          *san++ = char('a' + file_of(from));
+          *san++ = char('1' + rank_of(from));
+      }
+
+      if (capture(m) && (Strict || strchr(ref,'x')))
+          *san++ =  'x';
+
+      // Add also if not a capture but 'x' is in ref
+      else if (!Strict && strchr(ref,'x'))
+          *san++ =  'x';
+  }
+  else if (capture(m))
+  {
+      *san++ = char('a' + file_of(from));
+
+      if (Strict || strchr(ref,'x'))
+          *san++ = 'x';
+  }
+
+  *san++ = char('a' + file_of(to));
+  *san++ = char('1' + rank_of(to));
+
+  if (type_of(m) == PROMOTION)
+  {
+      if (Strict) // Sometime promotion move misses the '='
+          *san++ = '=';
+
+      *san++ = PieceToSAN[promotion_type(m)];
+  }
+
+  if (   buf[1] != ref[1]
+      || buf[2] != ref[2]
+      || buf[0] != ref[0])
+      return false;
+
+  if (!ref[2] || ! ref[3]) // Quiet move both pawn and piece: e4, Nf3
+      return true;
+
+  // Be forgivng if the move is missing check annotation
+  return !strncmp(ref+3, buf+3, san - buf - 3);
+}
+
+
+// Reduce target to destination square only. It is harmless for castling
+// moves because generate_castling() does not use target.
+
+static inline Bitboard trim(Bitboard target, const char* san) {
+
+  if (!san[3] || san[3] == '+')
+      return target & make_square(File(san[1] - 'a'), Rank(san[2] - '1'));
+  return target;
+}
+
+static inline Bitboard trimPawn(Bitboard target, const char* san, bool isCapture) {
+
+  if (isCapture)
+  {
+      if (san[1] == 'x')
+          return target & make_square(File(san[2] - 'a'), Rank(san[3] - '1'));
+      else
+          // Wrong notation, possibly a uci move like d4xf6, in this case retrun
+          // empty target becuase strict search will not find it anyhow
+          return 0;
+  }
+  else
+      return target & file_bb(File(san[0] - 'a'));
+
+  return target;
+}
+
+Move Position::san_to_move(const char* cur, const char* end, size_t& fixed) const {
+
+  ExtMove moveList[MAX_MOVES];
+  ExtMove* last;
+  Color us = sideToMove;
+
+  bool isCapture = strchr(cur, 'x');
+  Bitboard target = isCapture ? pieces(~us) : ~pieces();
+
+  switch (cur[0]) {
+  case 'N':
+      last = generate_moves<KNIGHT, false>(*this, moveList, us, trim(target, cur));
+      break;
+
+  case 'B':
+      last = generate_moves<BISHOP, false>(*this, moveList, us, trim(target, cur));
+      break;
+
+  case 'R':
+      last = generate_moves<ROOK , false>(*this, moveList, us, trim(target, cur));
+      break;
+
+  case 'Q':
+      last = generate_moves<QUEEN, false>(*this, moveList, us, trim(target, cur));
+      break;
+
+  case 'K':
+        last = us == WHITE ? generate_king_moves<WHITE, NON_EVASIONS, false, false>(*this, moveList, trim(target, cur))
+                           : generate_king_moves<BLACK, NON_EVASIONS, false, false>(*this, moveList, trim(target, cur));
+      break;
+
+  case 'O':
+  case '0':
+  case 'o':
+      last = us == WHITE ? generate_castling_moves<WHITE, NON_EVASIONS, false>(*this, moveList)
+                         : generate_castling_moves<BLACK, NON_EVASIONS, false>(*this, moveList);
+      break;
+
+  case '-':
+      assert(!strcmp(cur, "--"));
+      return MOVE_NULL;
+
+  default:
+      assert(cur[0] >= 'a' && cur[0] <= 'h');
+
+      target = trimPawn(target, cur, isCapture);
+
+      if (isCapture)
+          last = us == WHITE ? generate_pawn_moves<WHITE, CAPTURES>(*this, moveList, target)
+                             : generate_pawn_moves<BLACK, CAPTURES>(*this, moveList, target);
+      else
+          last = us == WHITE ? generate_pawn_moves<WHITE,   QUIETS>(*this, moveList, target)
+                             : generate_pawn_moves<BLACK,   QUIETS>(*this, moveList, target);
+      break;
+  }
+
+  for (ExtMove* m = moveList; m < last; ++m)
+      if (move_is_san(m->move, cur) && legal(m->move))
+          return m->move;
+
+  static bool strict = false;
+
+  if (strict)
+      return MOVE_NONE;
+
+  fixed++;
+
+  // Retry with disambiguation rule relaxed, this is slow path anyhow
+  for (ExtMove* m = moveList; m < last; ++m)
+      if (move_is_san<false>(m->move, cur) && legal(m->move))
+          return m->move;
+
+  // If is a capture withouth 'x' or a non-capture with 'x' we may have missed
+  // it, so regenerate move list to include all legal moves and retry.
+  for (const ExtMove& m : MoveList<LEGAL>(*this))
+      if (move_is_san<false>(m.move, cur) || move_is_uci(m.move, cur))
+          return m.move;
+
+  // Ok, still not fixed, let's try to deduce the move out of the context. Play
+  // the game with the generated moves and check if only one candidate is valid.
+  //
+  // First step is to compute for each move how many plies we can play before
+  // a wrong move occurs. This should be done in strict mode to avoid complex
+  // artifacts.
+  typedef std::pair<Move, const char*> C;
+  std::vector<C> candidates;
+
+  strict = true;
+  for (ExtMove* m = moveList; m < last; ++m)
+      if (legal(m->move))
+          candidates.push_back(C{m->move, play_game(*this, m->move, cur, end)});
+  strict = false;
+
+  // Then we pick the move that survived the longest
+  auto it = std::max_element(candidates.begin(), candidates.end(),
+                            [cur](const C& a, const C& b) -> bool
+                            {
+                                return a.second - cur < b.second - cur;
+                            });
+
+  // If the best move is correct until the end we have finished, otherwise
+  // replay the game with relaxed checks.
+  if (    candidates.size()
+      && (it->second == end || play_game(*this, it->first, cur, end) == end))
+      return it->first;
+
+  fixed--; // No able to fix...
+
+  return MOVE_NONE;
 }
 
 
