@@ -22,6 +22,7 @@
 #define POSITION_H_INCLUDED
 
 #include <cassert>
+#include <cstring>
 #include <deque>
 #include <memory> // For std::unique_ptr
 #include <string>
