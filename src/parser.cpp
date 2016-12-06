@@ -42,10 +42,12 @@
 
 #include "misc.h"
 #include "position.h"
+#include "thread.h"
+#include "uci.h"
 
 namespace {
 
-struct Stats {
+struct PGNStats {
     int64_t games;
     int64_t moves;
     int64_t fixed;
@@ -197,7 +199,7 @@ const char* parse_game(const char* moves, const char* end, std::ofstream& ofs,
     return end;
 }
 
-void parse_pgn(void* baseAddress, uint64_t size, Stats& stats, std::ofstream& ofs) {
+void parse_pgn(void* baseAddress, uint64_t size, PGNStats& stats, std::ofstream& ofs) {
 
     Step* stateStack[16];
     Step**stateSp = stateStack;
@@ -373,7 +375,7 @@ void init() {
 
     static StateInfo st;
     const char* startFEN = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1";
-    RootPos.set(startFEN, false, &st, RootPos.this_thread());
+    RootPos.set(startFEN, false, &st, Threads.main());
 
     ToToken['\n'] = ToToken['\r'] = ToToken[' '] = ToToken['\t'] = T_SPACES;
     ToToken['/'] = ToToken['*'] = T_RESULT;
@@ -524,7 +526,7 @@ void init() {
 
 void make_db(std::istringstream& is) {
 
-    Stats stats;
+    PGNStats stats;
     uint64_t mapping, size;
     void* baseAddress;
     std::string dbName;
@@ -542,7 +544,7 @@ void make_db(std::istringstream& is) {
     size_t lastdot = dbName.find_last_of(".");
     if (lastdot != std::string::npos)
         dbName = dbName.substr(0, lastdot);
-    dbName += ".db";
+    dbName += ".bin";
     std::ofstream ofs;
     ofs.open(dbName, std::ofstream::out | std::ofstream::binary);
 

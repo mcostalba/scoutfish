@@ -47,10 +47,10 @@ int main(int argc, char* argv[]) {
   Bitbases::init();
   Search::init();
   Pawns::init();
-  Parser::init();
   Threads.init();
   Tablebases::init(Options["SyzygyPath"]);
   TT.resize(Options["Hash"]);
+  Parser::init();
 
   UCI::loop(argc, argv);
 
