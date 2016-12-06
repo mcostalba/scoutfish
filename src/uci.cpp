@@ -23,6 +23,7 @@
 #include <string>
 
 #include "evaluate.h"
+#include "misc.h"
 #include "movegen.h"
 #include "position.h"
 #include "search.h"
@@ -34,8 +35,6 @@
 namespace Parser {
   void make_db(std::istringstream& is);
 }
-
-void scout(const Position& startPos, std::istringstream& is);
 
 using namespace std;
 
@@ -138,6 +137,35 @@ namespace {
         else if (token == "mate")      is >> limits.mate;
         else if (token == "infinite")  limits.infinite = 1;
         else if (token == "ponder")    limits.ponder = 1;
+
+    Threads.start_thinking(pos, States, limits);
+  }
+
+  // scout() is called when engine receives the "scout" command. The function
+  // memory-maps the Db file, sets teh correct search limits and then starts
+  // the search.
+
+  void scout(Position& pos, istringstream& is) {
+
+    Search::LimitsType limits;
+    uint64_t mapping, size;
+    void* baseAddress;
+    std::string dbName;
+
+    is >> dbName;
+
+    if (dbName.empty())
+    {
+        std::cerr << "Missing PGN file name..." << std::endl;
+        exit(0);
+    }
+
+    mem_map(dbName.c_str(), &baseAddress, &mapping, &size);
+
+    limits.baseAddress = (Move*)baseAddress;
+    limits.dbMapping = mapping;
+    limits.dbSize = size / sizeof(Move);
+    limits.startTime = now();
 
     Threads.start_thinking(pos, States, limits);
   }

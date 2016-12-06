@@ -79,6 +79,8 @@ struct LimitsType {
   LimitsType() { // Init explicitly due to broken value-initialization of non POD in MSVC
     nodes = time[WHITE] = time[BLACK] = inc[WHITE] = inc[BLACK] =
     npmsec = movestogo = depth = movetime = mate = infinite = ponder = 0;
+    dbMapping = dbSize = 0;
+    baseAddress = nullptr;
   }
 
   bool use_time_management() const {
@@ -89,6 +91,8 @@ struct LimitsType {
   int time[COLOR_NB], inc[COLOR_NB], npmsec, movestogo, depth, movetime, mate, infinite, ponder;
   int64_t nodes;
   TimePoint startTime;
+  Move* baseAddress;
+  size_t dbMapping, dbSize;
 };
 
 
@@ -107,5 +111,19 @@ void clear();
 template<bool Root = true> uint64_t perft(Position& pos, Depth depth);
 
 } // namespace Search
+
+
+class Thread;
+
+namespace Scout {
+
+struct Results {
+  size_t movesCnt;
+};
+
+void search(const Search::LimitsType&, Thread*);
+void print_results(const Search::LimitsType&);
+
+} // namespace Scout
 
 #endif // #ifndef SEARCH_H_INCLUDED

@@ -27,19 +27,6 @@
 #include <string>
 #include <sstream>
 
-#ifndef _WIN32
-#include <fcntl.h>
-#include <unistd.h>
-#include <sys/mman.h>
-#include <sys/stat.h>
-#else
-#define WIN32_LEAN_AND_MEAN
-#ifndef NOMINMAX
-#define NOMINMAX
-#endif
-#include <windows.h>
-#endif
-
 #include "misc.h"
 #include "position.h"
 #include "thread.h"
@@ -78,54 +65,6 @@ enum MetaType {
 Token ToToken[256];
 Step ToStep[STATE_NB][TOKEN_NB];
 Position RootPos;
-
-void map(const char* fname, void** baseAddress, uint64_t* mapping, size_t* size) {
-
-#ifndef _WIN32
-    struct stat statbuf;
-    int fd = ::open(fname, O_RDONLY);
-    fstat(fd, &statbuf);
-    *mapping = *size = statbuf.st_size;
-    *baseAddress = mmap(nullptr, statbuf.st_size, PROT_READ, MAP_SHARED, fd, 0);
-    ::close(fd);
-    if (*baseAddress == MAP_FAILED)
-    {
-        std::cerr << "Could not mmap() " << fname << std::endl;
-        exit(1);
-    }
-#else
-    HANDLE fd = CreateFile(fname, GENERIC_READ, FILE_SHARE_READ, nullptr,
-                           OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, nullptr);
-    DWORD size_high;
-    DWORD size_low = GetFileSize(fd, &size_high);
-    HANDLE mmap = CreateFileMapping(fd, nullptr, PAGE_READONLY, size_high, size_low, nullptr);
-    CloseHandle(fd);
-    if (!mmap)
-    {
-        std::cerr << "CreateFileMapping() failed" << std::endl;
-        exit(1);
-    }
-    *size = ((size_t)size_high << 32) | (size_t)size_low;
-    *mapping = (uint64_t)mmap;
-    *baseAddress = MapViewOfFile(mmap, FILE_MAP_READ, 0, 0, 0);
-    if (!*baseAddress)
-    {
-        std::cerr << "MapViewOfFile() failed, name = " << fname
-                  << ", error = " << GetLastError() << std::endl;
-        exit(1);
-    }
-#endif
-}
-
-void unmap(void* baseAddress, uint64_t mapping) {
-
-#ifndef _WIN32
-    munmap(baseAddress, mapping);
-#else
-    UnmapViewOfFile(baseAddress);
-    CloseHandle((HANDLE)mapping);
-#endif
-}
 
 void error(Step* state, const char* data) {
 
@@ -539,7 +478,7 @@ void make_db(std::istringstream& is) {
         exit(0);
     }
 
-    map(dbName.c_str(), &baseAddress, &mapping, &size);
+    mem_map(dbName.c_str(), &baseAddress, &mapping, &size);
 
     size_t lastdot = dbName.find_last_of(".");
     if (lastdot != std::string::npos)
@@ -558,7 +497,7 @@ void make_db(std::istringstream& is) {
 
     elapsed = now() - elapsed + 1; // Ensure positivity to avoid a 'divide by zero'
 
-    unmap(baseAddress, mapping);
+    mem_unmap(baseAddress, mapping);
 
     size_t dbSize = ofs.tellp();
     ofs.close();

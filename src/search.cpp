@@ -260,7 +260,7 @@ void MainThread::search() {
   DrawValue[ us] = VALUE_DRAW - Value(contempt);
   DrawValue[~us] = VALUE_DRAW + Value(contempt);
 
-  if (rootMoves.empty())
+  if (rootMoves.empty() && !Limits.baseAddress)
   {
       rootMoves.push_back(RootMove(MOVE_NONE));
       sync_cout << "info depth 0 score "
@@ -300,6 +300,10 @@ void MainThread::search() {
       if (th != this)
           th->wait_for_search_finished();
 
+  // Scouting, just return
+  if (Limits.baseAddress)
+      return Scout::print_results(Limits);
+
   // Check if there are threads with a better score than main thread
   Thread* bestThread = this;
   if (   !this->easyMovePlayed
@@ -334,6 +338,9 @@ void MainThread::search() {
 // consumed, the user stops the search, or the maximum search depth is reached.
 
 void Thread::search() {
+
+  if (Limits.baseAddress)
+      return Scout::search(Limits, this);
 
   Stack stack[MAX_PLY+7], *ss = stack+4; // To allow referencing (ss-4) and (ss+2)
   Value bestValue, alpha, beta, delta;

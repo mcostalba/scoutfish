@@ -193,10 +193,11 @@ void ThreadPool::start_thinking(Position& pos, StateListPtr& states,
   Search::Limits = limits;
   Search::RootMoves rootMoves;
 
-  for (const auto& m : MoveList<LEGAL>(pos))
-      if (   limits.searchmoves.empty()
-          || std::count(limits.searchmoves.begin(), limits.searchmoves.end(), m))
-          rootMoves.push_back(Search::RootMove(m));
+  if (!limits.baseAddress)
+      for (const auto& m : MoveList<LEGAL>(pos))
+          if (   limits.searchmoves.empty()
+                 || std::count(limits.searchmoves.begin(), limits.searchmoves.end(), m))
+              rootMoves.push_back(Search::RootMove(m));
 
   if (!rootMoves.empty())
       Tablebases::filter_root_moves(pos, rootMoves);

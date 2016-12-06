@@ -23,6 +23,10 @@
 #undef  _WIN32_WINNT
 #define _WIN32_WINNT 0x0601 // Force to include needed API prototypes
 #endif
+#define WIN32_LEAN_AND_MEAN
+#ifndef NOMINMAX
+#define NOMINMAX
+#endif
 #include <windows.h>
 // The needed Windows API for processor groups could be missed from old Windows
 // versions, so instead of calling them directly (forcing the linker to resolve
@@ -34,6 +38,13 @@ typedef bool(*fun1_t)(LOGICAL_PROCESSOR_RELATIONSHIP,
 typedef bool(*fun2_t)(USHORT, PGROUP_AFFINITY);
 typedef bool(*fun3_t)(HANDLE, CONST GROUP_AFFINITY*, PGROUP_AFFINITY);
 }
+#endif
+
+#ifndef _WIN32
+#include <fcntl.h>
+#include <unistd.h>
+#include <sys/mman.h>
+#include <sys/stat.h>
 #endif
 
 #include <fstream>
@@ -317,3 +328,52 @@ void bindThisThread(size_t idx) {
 #endif
 
 } // namespace WinProcGroup
+
+void mem_map(const char* fname, void** baseAddress, uint64_t* mapping, size_t* size) {
+
+#ifndef _WIN32
+    struct stat statbuf;
+    int fd = ::open(fname, O_RDONLY);
+    fstat(fd, &statbuf);
+    *mapping = *size = statbuf.st_size;
+    *baseAddress = mmap(nullptr, statbuf.st_size, PROT_READ, MAP_SHARED, fd, 0);
+    ::close(fd);
+    if (*baseAddress == MAP_FAILED)
+    {
+        std::cerr << "Could not mmap() " << fname << std::endl;
+        exit(1);
+    }
+#else
+    HANDLE fd = CreateFile(fname, GENERIC_READ, FILE_SHARE_READ, nullptr,
+                           OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, nullptr);
+    DWORD size_high;
+    DWORD size_low = GetFileSize(fd, &size_high);
+    HANDLE mmap = CreateFileMapping(fd, nullptr, PAGE_READONLY, size_high, size_low, nullptr);
+    CloseHandle(fd);
+    if (!mmap)
+    {
+        std::cerr << "CreateFileMapping() failed" << std::endl;
+        exit(1);
+    }
+    *size = ((size_t)size_high << 32) | (size_t)size_low;
+    *mapping = (uint64_t)mmap;
+    *baseAddress = MapViewOfFile(mmap, FILE_MAP_READ, 0, 0, 0);
+    if (!*baseAddress)
+    {
+        std::cerr << "MapViewOfFile() failed, name = " << fname
+                  << ", error = " << GetLastError() << std::endl;
+        exit(1);
+    }
+#endif
+}
+
+void mem_unmap(void* baseAddress, uint64_t mapping) {
+
+#ifndef _WIN32
+    munmap(baseAddress, mapping);
+#else
+    UnmapViewOfFile(baseAddress);
+    CloseHandle((HANDLE)mapping);
+#endif
+}
+

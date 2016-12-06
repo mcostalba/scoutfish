@@ -27,136 +27,65 @@
 #include <string>
 #include <sstream>
 
-#ifndef _WIN32
-#include <fcntl.h>
-#include <unistd.h>
-#include <sys/mman.h>
-#include <sys/stat.h>
-#else
-#define WIN32_LEAN_AND_MEAN
-#ifndef NOMINMAX
-#define NOMINMAX
-#endif
-#include <windows.h>
-#endif
-
 #include "misc.h"
 #include "position.h"
+#include "search.h"
 #include "thread.h"
 #include "uci.h"
 
-namespace {
+namespace Scout {
 
-void map(const char* fname, void** baseAddress, uint64_t* mapping, size_t* size) {
+void search(const Search::LimitsType& limits, Thread* th) {
 
-#ifndef _WIN32
-    struct stat statbuf;
-    int fd = ::open(fname, O_RDONLY);
-    fstat(fd, &statbuf);
-    *mapping = *size = statbuf.st_size;
-    *baseAddress = mmap(nullptr, statbuf.st_size, PROT_READ, MAP_SHARED, fd, 0);
-    ::close(fd);
-    if (*baseAddress == MAP_FAILED)
-    {
-        std::cerr << "Could not mmap() " << fname << std::endl;
-        exit(1);
-    }
-#else
-    HANDLE fd = CreateFile(fname, GENERIC_READ, FILE_SHARE_READ, nullptr,
-                           OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, nullptr);
-    DWORD size_high;
-    DWORD size_low = GetFileSize(fd, &size_high);
-    HANDLE mmap = CreateFileMapping(fd, nullptr, PAGE_READONLY, size_high, size_low, nullptr);
-    CloseHandle(fd);
-    if (!mmap)
-    {
-        std::cerr << "CreateFileMapping() failed" << std::endl;
-        exit(1);
-    }
-    *size = ((size_t)size_high << 32) | (size_t)size_low;
-    *mapping = (uint64_t)mmap;
-    *baseAddress = MapViewOfFile(mmap, FILE_MAP_READ, 0, 0, 0);
-    if (!*baseAddress)
-    {
-        std::cerr << "MapViewOfFile() failed, name = " << fname
-                  << ", error = " << GetLastError() << std::endl;
-        exit(1);
-    }
-#endif
+  StateInfo states[1024], *st = states;
+  size_t cnt = 0;
+
+  // Compute our file sub-range to search
+  size_t range = limits.dbSize  / Threads.size();
+  Move* data = limits.baseAddress + th->idx * range;
+  Move* end = th->idx == Threads.size() - 1 ? limits.baseAddress + limits.dbSize
+                                            : data + range;
+  // Move to the beginning of the next game
+  while (*data++ != MOVE_NONE) {}
+
+  // Main loop, replay all games until we finish our file chunk
+  while (data < end)
+  {
+      assert(*data != MOVE_NONE);
+
+      Position pos = th->rootPos;
+      st = states;
+
+      do {
+          Move m = *data;
+
+          assert(pos.legal(m));
+
+          pos.do_move(m, *st++, pos.gives_check(m));
+          cnt++;
+
+      } while (*++data != MOVE_NONE);
+
+      // End of game, move to next
+      while (*++data == MOVE_NONE && data < end) {}
+  }
+
+  th->scoutResults.movesCnt = cnt;
 }
 
-void unmap(void* baseAddress, uint64_t mapping) {
+void print_results(const Search::LimitsType& limits) {
 
-#ifndef _WIN32
-    munmap(baseAddress, mapping);
-#else
-    UnmapViewOfFile(baseAddress);
-    CloseHandle((HANDLE)mapping);
-#endif
-}
+  TimePoint elapsed = now() - limits.startTime + 1;
+  size_t cnt = 0;
 
-size_t do_scout(const Position& startPos, Move* data, uint64_t size) {
+  mem_unmap(limits.baseAddress, limits.dbMapping);
 
-    StateInfo states[1024], *st = states;
-    size_t cnt = 0;
-    Move* eof = data + size / sizeof(Move);
+  for (Thread* th : Threads)
+      cnt += th->scoutResults.movesCnt;
 
-    // Look for beginning of next game
-    while (*data++ != MOVE_NONE) {}
-
-    // Main loop
-    while (data < eof)
-    {
-        assert(*data != MOVE_NONE);
-
-        Position pos = startPos;
-        st = states;
-
-        do {
-            Move m = *data;
-
-            assert(pos.legal(m));
-
-            pos.do_move(m, *st++, pos.gives_check(m));
-            cnt++;
-
-        } while (*++data != MOVE_NONE);
-
-        // End of game, move to next
-        while (*++data == MOVE_NONE && data < eof) {}
-    }
-
-    return cnt;
+  std::cerr << "\nMoves: " << cnt
+            << "\nMoves/second: " << 1000 * cnt / elapsed
+            << "\nProcessing time (ms): " << elapsed << "\n" << std::endl;
 }
 
 } // namespace
-
-
-void scout(const Position& startPos, std::istringstream& is) {
-
-    uint64_t mapping, size;
-    void* baseAddress;
-    std::string dbName;
-
-    is >> dbName;
-
-    if (dbName.empty())
-    {
-        std::cerr << "Missing PGN file name..." << std::endl;
-        exit(0);
-    }
-
-    map(dbName.c_str(), &baseAddress, &mapping, &size);
-
-    TimePoint elapsed = now();
-
-    size_t cnt = do_scout(startPos, (Move*)baseAddress, size);
-
-    elapsed = now() - elapsed + 1; // Ensure positivity to avoid a 'divide by zero'
-
-    unmap(baseAddress, mapping);
-
-    std::cerr << "\nMoves: " << cnt
-              << "\nMoves/second: " << 1000 * cnt / elapsed
-              << "\nProcessing time (ms): " << elapsed << "\n" << std::endl;
-}
