@@ -32,6 +32,10 @@ namespace PSQT {
   void init();
 }
 
+namespace Parser {
+  void init();
+}
+
 int main(int argc, char* argv[]) {
 
   std::cout << engine_info() << std::endl;
@@ -43,6 +47,7 @@ int main(int argc, char* argv[]) {
   Bitbases::init();
   Search::init();
   Pawns::init();
+  Parser::init();
   Threads.init();
   Tablebases::init(Options["SyzygyPath"]);
   TT.resize(Options["Hash"]);

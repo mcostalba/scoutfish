@@ -1,0 +1,533 @@
+[Event "Simul"]
+[Date "1972.??.??"]
+[Site "Manhattan Chess Club"]
+[White "Reshevsky"]
+[Black "Schiller, Eric"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[Result "0-1"]
+[Round "?"]
+[ECO "D25"]
+[Annotator "Schiller Eric"]
+[Source ""]
+[Remark ""]
+
+1.d4 d5 2.c4 dxc4 3.Nf3 Nf6 4.e3 g6 5.Bxc4 Bg7 6.O-O O-O 7.Nc3
+Nfd7 { Smyslov's system.} 8.Qe2 ( 8.e4 Nb6 9.Be2 Bg4 10.Be3 Nc6
+{was played in Evans - Smyslov, Helsinki Olympiad 1952, which was a game I had
+studied in preparation for this contest. Black has a lot of pressure on the center. Play continued}
+11.d5 Bxf3 12.Bxf3 Ne5 13.Be2 Nec4 { with pressure on the long diagonal. After 14.Bc1 c6! Black had a strong game.}
+) Nb6 9.Bb3 Nc6 {!?} { An attempt to improve on Golombek - Smyslov, Budapest 1952, which saw 9...a5.}
+10.Rd1 Bg4 11.h3 Bxf3 12.Qxf3 Qe8 {This move has the goal of blasting open the center. After the king moves to the h-file Black can advance both e- and f-pawns.}
+13.Nb5 {?!} {
+Gligoric improved against me a week or two later with 13. Ne4!, with the threat
+of Nc5. Serves me right for getting the game published in the New York Times!}
+Rc8 14.Bd2 a6 15.Na3 Kh8 16.Rac1 e5 $1 17.d5 e4 18.Qf4 {
+It is clear that the Nc6 is headed for e5, with the possibility of jumping into
+f3. If only the g-file were open and a rook stood on g8...} g5
+$1 19.Qxg5 Ne5 20.Bc3 {The pin looks strong - but checks have been known to break pins!}
+Nf3+ {!!} 21.gxf3 Bxc3 22.Kh1 ( 22.bxc3 Rg8 ) Rg8 23.Qf4 Qd7
+24.Qh4 Qf5 $1 { Black continues to make threats while improving the position of his queen, before capturing the pawn at b2.}
+25.f4 Bxb2 26.Rg1 Bxc1 27.Rxc1 Qg6 {Desperately chasing checkmate.}
+28.Qg4 Qxg4 29.hxg4 Rxg4 {White could have resigned here.} 30.Rg1
+Rxg1+ 31.Kxg1 Rd8 32.d6 Rxd6 33.Bxf7 Rd3 34.Nc2 c5 35.Be6 Rc3
+36.Ne1 Rc1 37.Kf1 Nc4 38.Ke2 b5 39.Bd5 Ra1 40.Bxe4 Rxa2+ 41.Kd1
+Rxf2 42.Nd3 Rd2+ {Reshevsky finally resigned, since I'm going to sac the rook for the knight and grab the e-pawn, with a three pawn advantage.}
+ 0-1
+
+[Event "Regency Masters"]
+[Date "1981.??.??"]
+[Site "Ramsgate ENG"]
+[White "Schiller, Eric"]
+[Black "Paolozzi, Marcos"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[Result "1-0"]
+[Round "?"]
+[ECO "B80"]
+[Annotator "Schiller Eric"]
+[Source ""]
+[Remark "Best Game"]
+
+1.e4 c5 2.Nc3 e6 3.Nge2 d6 4.d4 cxd4 5.Nxd4 a6 6.Be3 Nf6 7.g4
+h5 8.g5 Ng4 9.Bc1 Qb6 {
+A novelty, which runs somewhat counter to the theme of the opening, which
+usually involves b7-b5 and the placement of the queen at c7. Still, there is
+some logic behind the move, as it inhibits the development of the bishop at c1.}
+10.h3 Ne5 11.Be2 ( 11.Nb3 g6 12.Be3 Qc7 13.f4 Nec6 14.Nd4 { is an interesting option.}
+) g6 12.Nb3 Nbc6 13.f4 {!?} { This exposes the entire kingside and commits White to a do or die battle.}
+( 13.Be3 {isn't that useful, because Black just retreats the queen to c7 and then can push the b-pawn.}
+Qc7 {Planning b7-b5. The loss of time is not so important, bcause in the interval
+between the development of the queen at b6 and the present move the kingside pawn structure has changed.}
+14.Qd2 b5 15.f4 Nc4 16.Bxc4 bxc4 { would leave the situation quite messy.}
+) Nd7 14.Rf1 Qc7 15.Be3 b5 ( 15...Bg7 {might have been a better choice, getting ready to castle.}
+16.Nd4 O-O 17.Qd2 ( 17.f5 {!?} ) Nxd4 18.Bxd4 Bxd4 19.Qxd4 e5
+20.Nd5 {!?} Qxc2 21.fxe5 dxe5 22.Qb4 {should provide enough compensation for the pawn.}
+) 16.f5 {!?} {A thematic advance, but one which concedes the e5 square, from which a knight can play a major defensive role on the kingside.}
+Nde5 17.Nd4 Bd7 ( 17...Nxd4 18.Bxd4 {and a subsequent capture at e5 will give White a permanent advantage on the queenside.}
+b4 19.fxg6 bxc3 20.gxf7+ Nxf7 ( 20...Kd8 21.Bxe5 )
+( 20...Ke7 21.Bxh5 cxb2 22.Bxb2 Qa5+ 23.Kf2 $13 Qb6+ 24.Bd4 )
+21.Rxf7 $1 Qxf7 22.Bxh8 {/\ Bxh5.} ) ( 17...b4 18.Na4 exf5 19.Nxc6
+$1 ( 19.exf5 {!?} Nxd4 20.Bxd4 Bxf5 21.Nb6 Rc8 22.Nd5 Qxc2 23.Nf6+
+Ke7 24.Bxe5 Qxd1+ 25.Rxd1 dxe5 26.Bxa6 Rc2 ( 26...Ra8 27.Rxf5
+$1 Rxa6 ( 27...gxf5 28.Rd7+ Ke6 29.Bc4# ) 28.Rxe5+ Re6 29.Rd7# )
+27.Nd5+ Ke6 ( 27...Ke8 28.Bb5+ ) ( 27...Kd7 28.Nxb4+ ) 28.Nc7+
+Ke7 29.Nd5+ {=} ) Qxc6 20.Nb6 Qxe4 21.Nxa8 Qxa8 {%02 where White has the better prospects after}
+22.Qd4 ) 18.fxe6 fxe6 {Now things become very interesting.} 19.Rf6
+$1 {This invasion seems irrelevant, since Black can quickly attack the rook with a bishop and drive it away. Or can he?}
+( 19.Qd2 Nxd4 20.Qxd4 Bc6 21.Rf6 Qe7 22.Bf4 Bg7 23.Bxe5 $1 dxe5
+24.Qxe5 Bxf6 25.gxf6 Qf7 26.Qc5 Rc8 27.e5 {looks better for White because the pawns at d5 and f6 are just too strong.}
+) Nd8 {Now all Black has to do is play Be7 and White is in deep trouble, having  clearly overextended.}
+20.Rxg6 $1 {Reckless, perhaps, but Black's exposed king was too good a target.}
+( 20.Qd2 Be7 $1 21.Rf2 Ndc6 {gives White a little edge, perhaps. But I was in a bloodthirsty mood.}
+) Nxg6 21.Bxh5 Nf7 $1 ( 21...Kf7 {?} {would have been most welcome, as I could win instantly with}
+22.Qf3+ {picking up the knight at g6.} Kg8 $1 ( 22...Kg7 23.Qf6+
+Kg8 24.Qxg6+ Bg7 25.Bg4 {looks terrible for Black.} ) 23.Bxg6
+b4 24.Nce2 {offers up a pawn, but only at the price of allowing White's knights to join the attack.}
+e5 25.Nf5 Qxc2 26.Nh6+ $1 Bxh6 ( 26...Kg7 27.Qf6# ) 27.gxh6
+Bb5 $1 {Black's counterattack at e2 almost saves the day, but not quite.}
+28.Ng3 Qxb2 29.Rc1 {The Whtie knight will get to f6, via h5, and there is nothing Black can do about it. White will win.}
+) ( 21...Rxh5 22.Qxh5 Kf7 {loses to} 23.Qh7+ Bg7 24.O-O-O )
+( 21...Rg8 {leads to enormous complications.} 22.Bxg6+ $1
+( 22.Nf5 {?!} {doesn't quite work.} Nf7 23.Bxg6 Rxg6 24.Qh5 Rxg5
+25.Bxg5 b4 ( 25...exf5 26.Nd5 Qc5 27.O-O-O $16 ) 26.Nh6 Bxh6
+27.Bxh6 bxc3 {and Black should win.} ) Rxg6 23.Qh5 Kf7 24.O-O-O
+Be8 ( 24...Kg7 {meets with the brilliant refutation} 25.Nf5+
+{!!} exf5 26.Bd4+ Kf7 27.Nd5 Qc4 28.Qh7+ Bg7 29.Bxg7 Rxg7 30.g6+
+Kf8 31.Qh8+ Rg8 32.Qf6+ Nf7 33.Qxf7# ) 25.Qh7+ Bg7 26.Rf1+ Ke7
+27.Nf5+ {!!} Kd7 ( 27...exf5 28.Nd5+ Kd7 29.Nxc7 Kxc7 30.exf5
+$18 ) 28.Rd1 Nb7 29.Nxg7 Kc8 30.Qg8 Rxg7 31.Qxe8+ Nd8
+( 31...Qd8 32.Qxe6+ Qd7 33.Qf6 { with more than 3 pawns and a bishop for the rook, because the pawns are flying and at least one will be promoted.}
+) 32.h4 { White's pawns are worth more than the exchange.} )
+22.Bxg6 Rxh3 23.Bxf7+ {?!} ( 23.Kd2 $1 {would have been much stronger.}
+Rh2+ ( 23...Bc8 24.Qe2 e5 25.Nd5 Qb7 26.Nb3 {is crushing. Black's position is a mess, and the White forces will soon close in.}
+) 24.Kc1 b4 {is countered by} 25.Bg1 $1 Rh4 26.Qf3 $1 {The position is still a mess, chances seem about equal.}
+) Kxf7 24.Qe2 {!?} {
+I could not resist the sacrifice of the rook at a1. Of course I couldn't work
+out all of the maniacal complications. I simply had faith in the attack. As it
+turns out, Black couldn't do better than draw by accepting, so my instincts turned out to be correct.}
+( 24.Kd2 {was a worthy alternative.} ) Qc4 {?!} {
+It was of course tempting to elimitate the queens, now that the h-awn is gone
+from the board. In addition, from c4 she defends the critical square e6. Yet it
+might have been wiser to enter the thicket with an extra rook in hand.}
+( 24...Rh1+ 25.Kd2 Rxa1 {
+leads to enormous complications. Black has two rooks for a knight and a pawn.
+This is a huge material advantage, but the pawn at g5 is a lot of compensation.
+It is critical that the rook can't go to g1, which is guarded by the bishop.
+Black has a bishop and king in the area, but they are not effective defenders.
+White's knights seem to be useless, but can in many cases jump in at d5 or f5.}
+26.Qh5+ ( 26.g6+ {!?} ) ( 26.Nf5 {!?} ) Kg8 $1 { was found by Stuart Conquest.}
+( 26...Ke7 27.Nf5+ $1 {
+requires very deep analysis. It is hard to say how much we would have spotted
+at the board. I was already way ahead on the clock, and Paolozzi was getting into deep time trouble.}
+exf5 ( 27...Kd8 28.Qf7 $1 exf5 ( 28...Kc8 29.Qxf8+ Kb7 30.Nxd6+
+Kc6 31.Qxa8+ Kxd6 32.g6 $1 {The lowly pawn is decisive. Black can't prevent it from promoting. The White king is completely secure.}
+) ( 28...Be8 29.Qxf8 Rf1 {looks like a nice trick but} 30.g6
+$1 {is crushing, for example} exf5 ( 30...b4 $5 31.Nd5
+$1 exd5 32.g7 $1 {The pawn cannot be stopped.} ) 31.Nd5 $1
+Qd7 32.g7 fxe4 33.Bg5+ Kc8 34.Nb6+ Kc7 35.Nxd7 Rxf8 36.gxf8Q )
+29.Qxf8+ Be8 30.Nd5 {with the deadly threats of Bb6 and the advance of the g-pawn.}
+Qf7 {defends at the cost of a pawn, and also gives White the chance to draw with a perpetual check.}
+31.Qxd6+ Qd7 32.Qb6+ Kc8 33.Qc5+ Kb7 34.Qb6+ Kc8 35.Qc5+ {%04etc.} )
+28.Nd5+ Kd8 29.Qf7 ( 29.Nxc7 Kxc7 $13 ) Kc8 30.Qxf8+
+( 30.g6 $1 Qd8 ( 30...Qc4 31.Nb6+ Kc7 32.Qxd7+ Kb8 33.Nxc4 )
+( 30...Qa5+ 31.b4 Qa3 32.Nb6+ {/\ Qxd7#.} ) 31.Nb6+ Kc7
+( 31...Kb7 32.Nxd7 Qe7 33.Qd5+ Kc7 34.Qxa8 Kxd7 35.Qb7+ Ke6
+( 35...Ke8 36.Qc8+ Qd8 37.Qxf5 Qe7 38.Qc8+ {and White has at least a draw.}
+) 36.exf5+ $1 Kf6 ( 36...Kxf5 37.Qxe7 Bxe7 38.g7 {and the pawn gets promoted.}
+) 37.Bd4+ Kxf5 38.Qxe7 Bxe7 39.g7 $18 ) 32.Nxd7 {is similar to the line above except that the K is on c7 instead of b7. This means that there is no check at d5.}
+Qe7 ( 32...Qxd7 33.Bb6+ Kc6 34.Qd5+ Kxb6 35.Qxa8 Bh6+ $19 ) 33.Nb6
+Qxf7 34.Nxa8+ Kb7 35.gxf7 Kxa8 $19 ) Kb7 31.Qxa8+ $1 Kxa8 32.Nxc7+
+Kb7 33.Nd5 $13 ) 27.Nf5 Be8 28.g6 Rc8 $1 29.Bd4 e5 30.Bb6 $1
+{gives White some chances since the queen has to guard h7 and can't leave the 7th rank.}
+b4 {sacrifices the queen, but Black has plenty of compensation.}
+31.Bxc7 bxc3+ 32.bxc3 Rxc7 33.Qg5 $1 {Threatens to push the pawn to g7. Black has to offer the exchange with}
+Rg7 ( 33...Bg7 34.Qd8 $1 ) 34.Nh6+ Kh8 35.Qd8 $1 Rxg6
+( 35...Re7 36.Nf5 ) 36.Qxe8 Rxh6 37.Qxf8+ Kh7 {White could settle for a draw here by checking at f7 and f8, or could try to play on, though a draw is the likeliest result.}
+) 25.Qf2+ Kg8 26.g6 Bg7 {?} {
+This was a miscalculation due to time pressure. With 15 moves remaining Black
+had under 5 minutes. Black sets up the terminal threat of ...Rf8, but White has a plan ready.}
+( 26...Rh1+ {?} 27.Kd2 Rxa1 {is too dangerous now.} 28.Qf7+ Kh8
+29.Qh7# ) ( 26...Be8 $1 {was clearly best.} 27.O-O-O Bg7 $1
+( 27...Bxg6 {?} 28.Rg1 Kh7 29.Qg2 $18 ) 28.e5 $1 {White threatens Qg2, attacking both rooks. The knight can now move from c3 to e4, and then to f6.}
+Rd8 29.Ne4 dxe5 30.Nf6+ Kh8 ( 30...Bxf6 31.Qxf6 Rxd4 $1 32.Bxd4
+Rh2 33.Bf2 $1 {with a much better position for White, whose king is easier to defend.}
+) ) 27.Qf7+ Kh8 28.O-O-O $1 {I can't recall castling this late in any serious game! ^013^010
+}
+{The bishop cannot be captured because of 29.Rh1+. Black hopes his problems are
+solved because he can drive away the enemy queen and go on the attack. But they are far from over.}
+Be8 ( 28...Rd8 29.Bg5 Rg8 {gives up the bishop at d7, but the knight at d4 is undefended.}
+30.Bf6 $1 ( 30.Qxd7 Bxd4 31.Qf7 Qc5 {is better for White, but Black might be able to hang on.}
+) Qc8 31.e5 $1 {The thematic move as in many other variations, opening up a square at e4 for the knight.}
+Qe8 32.Ne4 Qxf7 33.gxf7 Rf8 34.Bxg7+ Kxg7 35.Rg1+ $1 {
+A clever move. Black can't capture the f-pawn because Ng5+ is a deadly fork. So
+the king must flee to the edge of the board, where it will be effectively out of play.}
+Kh6 36.Nxd6 {Black is paralyzed, and White has two pawns for the exchange.}
+Kh7 {Forced, to stop Rg8.} 37.Nb3 $1 {The knight heads to c5. Black must sacrifice a rook for the pawn at f7 and a knight.}
+Rf3 38.Nc5 R8xf7 39.Nxf7 Rxf7 40.Nxa6 {is a fairly easy win for White.}
+) 29.Qxe6 {!!} {White has  calculated this very well. The pressure is maintained in the endgame and the material is not important.}
+Qxe6 30.Nxe6 Rxe3 {?} {Paolozzi can be forgiven for missing my 32nd move. It isn't easy to spot in advance!}
+( 30...Bxg6 $1 { was correct, leading to an equal game.} 31.Bd4
+Bxd4 32.Rxd4 Rh4 33.Rxd6 Bxe4 34.Nxe4 Rxe4 35.Nc7 Rf8 36.Nxa6
+Rf1+ 37.Kd2 { and it is White who holds the only winning chances.} )
+31.Rh1+ Kg8 32.Nd5 $1 {This is the point of the whole line. White threatens Ne7 mate!}
+Bxg6 33.Nxe3 Bxe4 {
+This endgame might at first be thought to favor Black, who holds the bishop
+pair. But in fact, it is much better for White, whose pieces are much more active.}
+34.Rg1 {I can now force the rooks and a pair of minor pieces off the board, and work to exploit Black's weak pawn structure.}
+Ra7 35.Rg4 Bh7 {?} { The losing move, although Black was in trouble anyway.}
+( 35...d5 $1 {was correct, securing the bishop in its powerful position.}
+36.Kd2 $1 d4 ( 36...Kh8 37.Nxg7 Rxg7 38.Rxg7 Kxg7 39.Kc3 Kf6
+40.Kd4 Ke6 {is forced.} 41.c3 Kd6 42.a4 bxa4 43.c4 Bf3 44.cxd5
+Bh1 45.Nc4+ Kc7 46.Kc5 {is strong, but Black might hold.} Bg2
+47.d6+ Kd8 48.Nb6 Bf1 49.Nxa4 Bb5 50.Nc3 Be8 {How can White make progress?}
+) 37.Rxe4 ( 37.Nxd4 Rd7 38.Rxe4 Bxd4 39.c3 Ba7+ {holds.} ) dxe3+
+38.Kxe3 Bxb2 {would have drawn.} ) 36.Nd5 $1 {
+Black's clerics are cowering in the corner, but one will soon die, and the
+other will be powerless against the galloping horse.} Kh8 37.Nxg7
+Rxg7 38.Rxg7 Kxg7 {The end comes remarkably quickly. Black's offside forces can't defend the little pawns.}
+39.Nc7 Kf6 40.Nxa6 Ke5 41.Nc7 {
+ and with time control reached Black resigned. The b-pawn will be chased by the
+knight until it falls, and the endgame is a simple matter thereafter.}
+b4 42.Na6 b3 43.axb3 Be4 44.Kd2 Bc6 45.Nb4 Bb7 46.Ke3 Ke6 47.Kd4
+Bf3 48.c4 Bd1 49.Kc3 Bf3 50.Nc2 Bb7 51.b4 Be4 52.b5 Kd7 53.Nb4
+Bb7 54.Kd4 Bf3 55.Nd5 {followed by b4 and c5.} 1-0
+
+[Event "Oak Brook"]
+[Date "1993.??.??"]
+[Site "Oak Brook IL"]
+[White "Gurevich, Dmitry"]
+[Black "Schiller, Eric"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[Result "0-1"]
+[Round "?"]
+[ECO "A90"]
+[Annotator "Schiller Eric"]
+[Source ""]
+[Remark ""]
+
+1.d4 d5 2.c4 e6 3.Nf3 c6 4.Nbd2 ( 4.Qc2 f5 5.g3 Nf6 6.Bg2 Bd6
+7.O-O O-O {was part of Gurevich's experience as White in the line.}
+8.b3 Qe7 9.Ne5 Na6 10.Nd3 Nh5 11.a4 f4 12.Ba3 fxg3 13.hxg3 Bxa3
+14.Nxa3 Qg5 15.Qc1 {
+ was better for White in D. Gurevich vs. McClelland, New York Open 1995. The
+e-pawn is backward and weak, while White controls e5.} ) f5 5.g3
+Nf6 6.Bg2 Bd6 7.O-O {This position can be reached from many move orders, including 1.d4 d5 2.c4 e6 3.Nf3 c6 4.g3 f5 5.Bg2 Nf6 6. 0-0 Bd6 7.Nbd2.}
+Qe7 {Black usually plays ...Nbd7, to prevent White from occupying e5 with a knght.}
+8.Qc2 O-O 9.Ne5 {
+ White needs to occuly the e5 square at some point, since otherwise Black will
+eventually play ...e5. As long as White maintains control of e5, Black will
+find it difficult to activate the light-squared bishop.} Nbd7
+10.Ndf3 { This is a standard anti-Dutch plan. The knight at e5 is supported by both a pawn at d4 and another knight at either f3 or d3.}
+Ne4 {Black can safely keep the knight here if an enemy knight is at f3, so that
+White cannot place a pawn there. In many cases the knight can sit at e4 even if
+the f3-square is not occupied, since the weakening of the a7-g1 diagonal can
+prove embarassing for White if the f-pawn advances. In addition, g3 can become vulnerable.}
+11.Bf4 { White invites Black to advance the g-pawn. This is a double-edged strategy.}
+g5 {!?} {Black accepts the challenge.} 12.Nxd7 Bxd7 13.Bxd6 Nxd6
+{ White now owns a superior bishop, but Black has plenty of room to maneuver.}
+14.Ne5 Be8 {
+There are two ways to activate the light-squared bishop in the Stonewall Dutch.
+Black can fianchetto it at b7 under some circumstances, msot easily when the
+knight sits at b8 to defend the pawn at c6. The other plan, seen here, is to redeploy it on the kingside.}
+( 14...Nf7 15.Nd3 Nd6 16.c5 Nf7 17.Qc3 Rfe8 18.e3 e5 19.f4 e4
+20.Ne5 Nxe5 21.dxe5 gxf4 22.gxf4 Be6 23.Kh1 {was agreed drawn in, Stupica vs. Piskur, 1999.}
+) 15.f4 ( 15.c5 Nf7 16.Nxf7 Bxf7 17.f3 Bg6 18.e4 f4 {leaves White with more problems to solve than Black.}
+) Bh5 16.Rac1 Rac8 17.Kh1 {White takes care to get the king off the a7-g1 diagonal in case Black opens up the game with ...c5.}
+Nf7 18.cxd5 exd5 $1 ( 18...cxd5 {allows White to sacrifice the queen, though moving her to a safe square is also good.}
+19.Qxc8 Rxc8 20.Rxc8+ Kg7 21.Rfc1 Qb4 22.fxg5 Nxe5 23.dxe5 Qxb2
+24.R1c7+ Bf7 25.Bf3 $1 {and White wins.} ) 19.e3 ( 19.Qxf5 Nxe5
+20.Qxe5 Qxe5 21.fxe5 Bxe2 22.Rxf8+ Rxf8 {would have been equal.} )
+Nxe5 $1 { Although Black has a bad bishop, there is little to fear in most of the possible endgames.}
+20.fxe5 Bg6 { White must now take seriously the threat of advancing the f-pawn.}
+21.Qd2 Kg7 {Black prepares to operate on the h-file.} 22.b4 h5
+23.Rf2 Rh8 24.Rcf1 h4 $1 25.Kg1 {White gets the king off the dangerous h-file.}
+g4 26.Rc1 Qg5 27.Rf4 {White does not want to allow ...f4, even as a sacrifice.}
+Rh7 28.b5 hxg3 29.hxg3 Qh5 30.Qf2 {?} {This square is needed for the king.}
+( 30.Kf2 {threatens Rh1, trapping the enemy queen.} Qh2 31.Rh1
+{ Forced, in view of the threat of ...Rh3.} Qxh1 32.Bxh1 Rxh1
+33.Qb4 cxb5 34.Kg2 ( 34.Qe7+ Kh6 35.Kg2 Rcc1 36.Qxb7 Rhg1+ 37.Kf2
+Rgf1+ 38.Ke2 Rfe1+ 39.Kd2 Red1+ {is a draw.} ) Rch8 35.Qe7+ Bf7
+36.Qf6+ Kf8 37.Qd8+ Kg7 38.Qf6+ {would have drawn.} ) Qh2+ 31.Kf1
+Rhh8 $1 {It looks as though Black cannot make further progress. It is true that I have
+exhausted the possibilities on the h-file, but there is another path to the
+enemy king, via the queenside, and with the next very subtle move I prepare a deep and long plan}
+32.bxc6 {Had Dmitry figured out the point of my last move, he never would have opened up the b-file.}
+( 32.Rb1 b6 33.bxc6 Rxc6 34.Bxd5 Rc2 35.Qxh2 Rhxh2 {and White is too tied down to make any progress.}
+) Rxc6 33.Rxc6 bxc6 34.Qe1 ( 34.Qc2 Rb8 35.Kf2 Rb6 { and again White has no way to make progress.}
+) Rb8 35.a4 Rb3 $1 { White is in completely tied down.} 36.Rf2
+{Desperation. The rook should stay in its passive post at f4, as now the Black bishop enters the game.}
+{?} ( 36.a5 Rb7 {and White is at a loss for a move, as all of the pieces must remain in place to defend.}
+37.a6 Rb2 38.Rf2 f4 $1 {wins.} 39.e4 ( 39.Rxb2 Bd3+ 40.Re2 f3 )
+Rxf2+ 40.Qxf2 f3 41.Bxf3 Qxf2+ 42.Kxf2 gxf3 43.Kxf3 Bxe4+ {White will win by retreating the bishop to c8 and capturing the pawn at a6.}
+) f4 $1 {The threat is ...Rb1, pinning the queen.} 37.Rd2 Rxe3
+38.Qf2 Qxg3 39.Qxg3 Rxg3 40.Rf2 f3 41.Bh1 Bd3+ {White resigned.} 0-1
+
+[Event "U.S. Open"]
+[Date "1994.08.??"]
+[Site "Alexandria VA"]
+[White "Schiller, Eric"]
+[Black "Schwartzman, Gabriel"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[Result "1-0"]
+[Round "?"]
+[ECO "C11"]
+[Annotator "Schiller Eric"]
+[Source ""]
+[Remark "Best"]
+
+1.e4 {This game featured a major upset in the U.S. Open. Gabriel Schwartzman is a
+very talented young Grandmaster but he runs into a creative sacrifice in this game.}
+e6 2.d4 d5 3.Nc3 Nf6 4.e5 {
+The old Steinitz variation is enjoying renewed popularity these days. A game
+between Kasparov and Short at the 1994 Euwe Memorial in Amsterdam had made a
+deep impression on me, and I was hoping to make use of a plan involving h4,
+Rh3-g3 and a kingside attack that worked well for Kasparov.}
+Nfd7 5.f4 c5 6.Nf3 Nc6 7.Be3 Qb6 8.Qd2 {
+The pawn sacrifice offered by this move has rarely been tested in the
+tournament arena. I was quite surprised when Schwartzman accepted it.}
+Qxb2 9.Rb1 Qa3 10.dxc5 {
+This was my own idea. 10.Be2 was recommended in an old book by Harding, but it
+did not impress me at all. I decided to eliminate the dark-squared bishops and
+use Kasparov's attacking formation on the kingside.} Bxc5 11.Bxc5
+Qxc5 12.Bd3 a6 13.h4 Nb6 {13...Qe7 would have made it harder for me to justify the investment of the pawn.}
+14.Rh3 $1 Nc4 15.Bxc4 Qxc4 16.a3 $1 {This is a very important move. I need to free the knight from the need to hang around at c3 just to defend the poor pawn.}
+b5 17.Ne2 Bd7 18.Nfd4 $1 {
+This eliminates the enemy knight, and I have a decent endgame even without the
+pawn, because Black is left with a very bad bishop.} Nxd4 19.Nxd4
+Rc8 20.Rbb3 $1 {
+There are two points to this move. One is to be ready to transfer to the
+kingside at a moment's notice, and the other, more subtle, will be revealed shortly.}
+O-O 21.Rhg3 f6 { Standard French counterply.} 22.f5 {!?} {
+I hadn't worked out all the tactics here. But I had a great deal of confidence
+and had seen some pleasant long variations, beginning at move 27!}
+exf5 {This fell in with my plans. But what about the alternative? Could I have held the position following:}
+( 22...fxe5 23.Qh6 Rf7 24.Rb4 Qc5 $1 ( 24...Qc3+ {?!} 25.Rxc3
+gxh6 26.Rg3+ Kh8 27.fxe6 Re7 28.exd7 exd4+ 29.Kd2 Rxd7 30.Rxd4 )
+25.fxe6 Re7 $1 26.exd7 exd4+ 27.Kf1 Rxd7 ( 27...Rf8+ 28.Kg1
+d3+ 29.Kh2 Kh8 $1 { 29...dxc2? allows 30.Rbg4! with devastating threats at g7!}
+( 29...Rxd7 30.cxd3 $15 ) 30.Qf4 $1 Rxd7 ( 30...Rxf4 31.d8Q+ )
+31.Qg4 Rdf7 ( 31...dxc2 $1 32.Qxd7 g6 $19 ) 32.cxd3 Qc1 {It might not have been easy, but neither would it have been a simple matter to find all these moves at the board!}
+33.a4 {keeps White in the game. A draw is quite possible.} )
+28.Qe6+ Rf7+ 29.Rf3 Rcf8 $1 {White has no good moves.} 30.h5
+Qxc2 31.Qxd5 {is still extremely complicated. Black gets connected passed pawns after}
+Qc1+ 32.Kf2 Qxa3 $1 {The rook at f7 and the rook at f3 are both pinned!!}
+33.Rxd4 Qe7 $1 ( 33...b4 {?} 34.Qxf7+ $1 Rxf7 35.Rd8+ Rf8 36.Rdxf8# )
+34.Rdf4 {What a crazy position! Black cannot unpin without dropping a rook except by getting the king to g7.}
+b4 ( 34...g6 35.h6 b4 36.Kg1 $1 {breaks the pin.} a5 37.Rxf7
+Rxf7 38.Rxf7 Qxf7 39.Qd8+ Qf8 40.Qd5+ Kh8 41.Qe5+ Kg8 42.Qd5+
+{draws.} ) 35.Kg1 $1 h6 36.g4 Qe1+ 37.Kg2 Qe8 38.Rxf7
+( 38.Qc4 a5 39.Qd5 a4 40.Rxf7 Rxf7 41.Rxf7 Qxf7 42.Qa8+ Kh7 43.Qe4+
+Kh8 44.Qxb4 Qa2+ 45.Kf1 Qa1+ 46.Ke2 a3 47.Qf8+ Kh7 48.Qf5+ Kg8
+49.Qe6+ Kf8 50.Qc8+ {It is doubtful that the king can find shelter.} )
+Rxf7 39.Rxf7 Qxf7 40.Qa8+ Qf8 41.Qxa6 b3 42.Qb7 Qf7 43.Qa8+ Kh7
+44.Qe4+ Kh8 45.Qa8+ Qg8 46.Qb7 Qc4 $1 {Black controls e4, so White can't attack the Black king when it is at h7.}
+) 23.Rbc3 $1 {A critical preparatory move before the real attack begins.}
+Qa4 {The rest of the game is virtually forced.} ( 23...Qa2 24.Qh6
+Rf7 25.e6 $1 {is crushing.} Re8 26.Rce3 Bxe6 27.Nxe6 Rfe7 28.Rxg7+
+{wraps things up.} ) 24.Qh6 Rf7 25.exf6 $1 g6 {Forced, but Black's defenses cannot hold.}
+26.Rxg6+ {!!} {The rook is sacrificed for two pawns and a tremendous attack.}
+hxg6 27.Qxg6+ Kf8 28.Qh6+ {The attack plays itself!} Ke8 29.Qh8+
+Rf8 30.Re3+ Kd8 31.Qxf8+ Kc7 32.Qc5+ Kb8 33.Qd6+ Rc7 34.Rc3 Qa5
+35.Qxc7+ {Black resigned, because once the pieces come off, the f-pawn promotes. Black is powerless to prevent it.}
+ 1-0
+
+[Event "Foster City"]
+[Date "1995.??.??"]
+[Site "Foster City CA"]
+[White "Schiller, Eric"]
+[Black "Arne, Mike"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[Result "1-0"]
+[Round "?"]
+[ECO "C77"]
+[Annotator "Schiller Eric"]
+[Source ""]
+[Remark ""]
+
+1.e4 {As I was finishing this book I took part in one of the regular all-Master
+training tournaments held monthly in the San Francisco area. I found myself
+paired with a very strong opponent, Mike Arne (2400 FIDE). Since we were due to
+meet a few weeks later in an IM norm tournament, I decided that I shouldn't
+play my special preparation for him.  Naturally with so much Spielmann on my
+mind I turned to one of his favorite lines, the Worral Attack in the Spanish
+Game. My preparation consisted solely of annotating a few games for this book,
+and the choice was made at the board.  So this game shows that it is not
+necessary to study a lot of opening theory as White in the Spanish Game. All
+that is needed is some basic concepts, and either courage or recklessness!}
+e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.Qe2 b5 6.Bb3 Bc5 { The sharpest continuation.}
+7.c3 {I was in no mood for quiet play with 7.d3.} O-O 8.O-O d6
+( 8...d5 9.d3 {is unclear, according to ECO.} ) 9.h3 {
+ This is probably not necessary, as Black's bishop is headed to b7, but I
+wanted to make sure it was kept off of g4, where the pin on the knight would weaken my control of d4.}
+Bb7 10.Rd1 Re8 11.a4 {I believe this was a novelty.} b4 12.a5
+Qb8 {?!} { In retrospect, this is an error. The simple 12...Qe7 would have given Black an equal game.}
+13.d4 {!?} {
+This is a deliberate sacrifice. I saw the Black forces huddled on the queenside
+and felt that a pawn could safely be invested for good attacking chances.}
+exd4 14.cxd4 Ba7 ( 14...Rxe4 {was certainly playable, but I felt that I would then have sufficient compensation.}
+15.Be3 {!?} ( 15.Bxf7+ {doesn't work:} Kxf7 16.Ng5+ Kf8 17.Qc4
+( 17.Nxe4 {?!} Nxd4 $1 18.Rxd4 Bxd4 19.Nxf6 Bxf6 {and Black is better.}
+) Qe8 $1 ( 17...Nd8 18.Nxe4 Nxe4 19.dxc5 Nxc5 20.Be3 { and Black does not have compensation for the exchange.}
+) 18.Nxe4 Qxe4 { and White is simply down a piece.} ) Ba7 16.Nbd2
+Re7 17.Qd3 {
+White has g ood play for the pawn. Whether it is enough is not entirely clear,
+but as a practical matter I would have been satisfied with the position.}
+) 15.e5 $1 d5 ( 15...Nd7 16.Ng5 {gives White a strong attack.} )
+( 15...dxe5 16.dxe5 Nd8 17.Ng5 {threatens Rxd8 followed by an assault at f7.}
+) ( 15...Re7 16.Bg5 { Threatens to smash open the kingside.} )
+16.Qd3 $1 { Now Black must try for complications.} Ne4
+( 16...Nd7 17.Bxd5 Ne7 18.Bc4 {is simple and strong.} ) 17.Bxd5
+Nxf2 {The idea is that if White captures the knight the pin the d4 allows captures at
+e5 with counterplay. Instead, I sacrifice a bishop and a rook to go after the undefended Black king.}
+18.Bxf7+ {!!} ( 18.Kxf2 Nxe5 19.Qb3 Bxd5 20.Qxd5 Nxf3
+( 20...c6 21.Qe4 Nxf3 22.Qxf3 Qd6 23.Be3 Re6 {also provides a little counterplay.}
+) 21.gxf3 c5 { leaves the White king vulnerable to attack.} )
+Kxf7 19.Qf5+ Kg8 20.Ng5 Nxd1 ( 20...Nxh3+ {would have put up more resistance.}
+21.Qxh3 Bxd4+ ( 21...h6 22.Qb3+ Kh8 23.Nf7+ Kh7 24.Qd3+ Kg8
+( 24...g6 25.Be3 { and the Black king is more exposed than White's.} )
+25.Nxh6+ gxh6 26.Qg6+ Kh8 27.Qxh6+ Kg8 28.Qg6+ Kh8 29.Rd3 Bxd4+
+30.Kh1 Bc8 {To stop the mate at h3.} 31.Qh6+ Kg8 32.Rg3+ Kf7
+33.Qf6# ) 22.Rxd4 Nxd4 23.Qxh7+ Kf8 24.Qh8+ Ke7 25.Qxg7+ Kd8
+26.Be3 Nf5 ( 26...c5 27.Bxd4 cxd4 28.Qf6+ Kd7 29.Qf5+ Kc6
+( 29...Kd8 30.Ne6+ Rxe6 31.Qxe6 {and White should win, for example:}
+Qc8 ( 31...Qc7 32.Nd2 Rc8 ( 32...Qg7 33.g4 ) ( 32...Qc6 33.Qg8+
+Kc7 34.Qg7+ Kb8 35.Re1 ) 33.Rf1 ) 32.Qg8+ Kc7 33.Qc4+ Kb8 34.Qxd4 )
+30.Na3 $1 { and the knight cannot be captured because of 31.Rc1+ and mate follows quickly.}
+) 27.Qf6+ Ne7 28.Qe6 {wins for White.} ) 21.Qxh7+  Kf8 22.Qh8+
+Ke7 23.Qxg7+ Kd8 24.Nf7+ Kd7 {This position looks great for White, but it is not so simple.}
+25.e6+ $1 ( 25.Nd6+ Re7 26.Qg4+ Re6 { and unfortunately the d-pawn, being pinned, cannot advance to d5.}
+) ( 25.Ng5+ Kc8 ) ( 25.Bg5 Bxd4+ 26.Kh1 Nf2+ 27.Kh2 Ne7 ) Kxe6
+{ Now there is a long series of forced moves.} 26.Ng5+ Kd5
+( 26...Kd6 27.Bf4+ ( 27.Nf7+ {?} Ke6 28.Ne5 Bxd4+ $1 ) Ne5 28.Bxe5+
+( 28.Nf7+ {?} Kd5 ) Kc6 29.Qg6+ $1 ( 29.Nd2 {is too slow.} Qd8
+30.Qg6+ ( 30.Kh2 Ne3 31.Rc1+ Kb5 32.Rxc7 {is still enormously complex. And it gets messier after}
+Bxg2 $1 {?} 33.Rxa7 Rxa7 34.Qxa7 Rxe5 $1 {Then if I take the rook I lose my knight at d2 and my king is in trouble. But I do have a fork!}
+35.Nf7 $1 Ng4+ $1 36.Kxg2 Qd5+ 37.Kg3 Re3+ 38.Kh4 $1
+( 38.Kxg4 Qg2+ 39.Kf5 Qxd2 ) Nf2 39.Qb6+ Ka4 40.b3+ Ka3 41.Nc4+
+Kxb3 42.Nxe3 Qxf7 {with a probable draw.} ) Kb5 31.Qd3+ Kc6 32.Rc1+
+Nc3 33.Qg6+ $1 Kb5 34.bxc3 bxc3 35.Rb1+ Ka4 36.Qc2+ Ka3 37.Qb3# )
+Kd7 $1 ( 29...Kb5 {?} 30.Na3+ bxa3 31.Qd3+ Kc6 32.Rc1+ Kd7 33.Qf5+
+Ke7 34.Bf6+ Kd6 35.Nf7# ) 30.Qf5+ Kc6 31.Nd2 $1 {Black's knight at d1 is doomed, and the rest of his army is useless.}
+Qc8 32.Rc1+ Nc3 33.Qf6+ $1 {Keep queens on the board!} Kd7 34.bxc3
+b3 35.Qf5+ Kc6 36.Qg6+ Kd7 37.Nh7 $1 {Black has to lose material. The d-pawn is pinned, but the bishop at e5 cannot be killed cleanly.}
+Rxe5 38.Qg7+ Kc6 39.Qxe5 b2 40.Rf1 {and Black can resign.} )
+27.Qd7+ {If the Black king is allowed to capture the d-pawn, then the next time it moves
+it will expose the White king to check from the bishop at a7, and that may, in
+some circumstances, give Black enough time to regroup.} Kc4 28.Nd2+
+Kd3 29.Qf5+ $1 Kxd4 {Surely there is a mating net here! There is, but it involves a problem-like move.}
+30.Ngf3+ $1 ( 30.Ndf3+ Kc4+ {would have prolonged the game.} )
+Ke3 31.Kf1 {!!} { A quiet king move ends the spectacular combination.}
+{%30^000} 1-0
+
+[Event "Mechanics Masters"]
+[Date "1997.12.06"]
+[Site "San Francisco CA USA"]
+[White "Schiller, Eric"]
+[Black "Gurevich, Dmitry"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[Result "1-0"]
+[Round "?"]
+[ECO "A09"]
+[Annotator "Schiller Eric"]
+[Source ""]
+[Remark ""]
+
+1.Nf3 d5 2.c4 d4 3.b4 g6 4.Bb2 Bg7 5.g3 a5 6.a3 e5 7.d3 Ne7 8.Bg2
+c5 9.Qb3 axb4 10.axb4 Rxa1 11.Bxa1 Nbc6 12.b5 Qa5+ 13.Nfd2 Nb4
+( 13...Qxa1 14.bxc6 Nxc6 15.O-O {is very unclear.} ) 14.Bb2 O-O
+15.O-O b6 16.Na3 Qa7 17.Ra1 $1 Qb8 18.Nc2 Nxc2 19.Qxc2 Bg4 {Black tries to get some counterplay.}
+20.Nf1 h5 21.h3 Be6 22.Qa4 Qd6 23.Bc1 h4 $1 {I underestimated this.}
+24.Qa7 { Should have just captured at h4.} f5 25.Bg5 Nc8 26.Qb7
+hxg3 27.Nxg3 e4 28.Ra8 Be5 29.Bh6 ( 29.Nf1 {!?} ) Rf7 {Now the tactics explode.}
+30.Rxc8+ Kh7  31.Bf8 Rxb7 32.Bxd6 Bxg3 33.Rc6 Bxd6 34.Rxd6
+{ The endgame is tremendous for White.} Bf7 35.Kh2 Rb8 36.Rd7
+Kg8 37.h4 Ra8 38.Rb7 Ra2 39.dxe4 Rxe2 40.exf5 Rxf2 41.Rxb6 Bxc4
+42.Rxg6+ Kf7 43.b6 Ba6 44.Kg3 Rxf5 45.Rc6 Kg7 46.Rc7+ Rf7 47.Ra7
+d3 48.Rxa6 { I took the simple road. But there was another, better win.}
+( 48.Bd5 Rxa7 49.bxa7 d2 50.a8Q d1Q 51.Qg8+ Kh6 52.Qf8+ Kg6 53.Be4+
+Kh5 54.Qh8# { would have been more efficient.} ) d2 49.Ra1 c4
+50.Be4 c3 51.Bc2 Rf6 52.Rb1 Rf8 53.b7 1-0
+
+[White "Izumakawa, Burt"]
+[Black "Schiller, Eric"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[Result "0-1"]
+[Date "1997.12.06"]
+[Event "Mechanics Masters"]
+[Site "San Francisco CA USA"]
+[Round "?"]
+[ECO "D32"]
+[Annotator "Schiller Eric"]
+[Source ""]
+[Remark ""]
+
+1.d4 d5 2.c4 e6 3.Nc3 c5 4.cxd5 cxd4 5.Qa4+ Bd7 6.Qxd4 exd5 7.Qxd5
+Nc6 {The Schara Gambit is one of my favorite openings.} 8.Qd1
+Nf6 9.e3 Bc5 10.Nf3 Qe7 11.Bb5 O-O {
+In the past, queenside castling was considered better, so that a pawn storm
+could be used on the kingside. But Black's fortress on the queenside is a bit
+airy, and I prefer kingside castling. It is more comfortable to attack when your king is safe.}
+12.O-O Rfd8 {Better 12...Rad8. I realized later that rooks belong at e8 and d8. Typical wrong rook move!}
+13.Qe2 Bg4 14.Bxc6 bxc6 15.b3 Nd7 16.h3 Bh5 17.Bb2 Bd6 18.Nb1
+{ Intending Nd2. Probably 18.Rfd1 was better.} Be5 19.g4 Bg6
+20.Nc3 h5 21.Rfd1 hxg4 {Opening the h-file is very double-edged!}
+22.hxg4 Bc7 23.Kg2 $1 Nf6 24.Nd4 Re8 $1 {To discourage any advance of the f-pawn. This is why the rook should have been at e8 all along.}
+25.Rh1 Qd7 26.Rh4 c5 27.Rah1 Nh7 {The defensive plan is ...f6, ...Ng5 and the initiative comes back to me.}
+28.Nf5 Rad8 29.Qf3 f6 30.Rd1 {Last move of time control (30/90), with 17 seconds left. Izumakawa has been in deep time pressure for the last 7 moves.}
+Qe6 31.Rxd8 Rxd8 32.Ne4 {?} ( 32.Qb7 $1 { and the position is still a mess.}
+) Rd5 $1 {A dangerous square for the rook, with lots of tricks involving Ne7 to calculate.}
+33.Nc3 {?!} ( 33.Ba3 Bxf5 34.gxf5 Rxf5 35.Nxc5 Rg5+ 36.Kf1 {was correct.}
+) Bxf5 34.gxf5 Rxf5 35.Qa8+ Nf8 {A computer may prefer White, but I was very happy to reach this position as Black!}
+36.Ne4 {White seems to have the better attack, but Black turns the tables with the next
+move. Perhaps the queen should have moved here, hoping to get the queens off
+the board. The resulting endgame would be about even.} Qa6 $1
+{This covers all key squares, not only eliminating threats from the enemy queen,
+but also threatening a deadly infiltration at e2.} 37.a4
+( 37.Rh8+ Kxh8 38.Qxf8+ Kh7 39.Nxf6+ Rxf6 40.Bxf6 {doesn't work because Black has}
+Qxf6 41.Qxc5 Bb6 42.Qh5+ Kg8 43.Qe8+ Qf8 {%02where} 44.Qxf8+
+Kxf8 45.Kf3 Ke7 46.Ke4 Ke6 47.a3 {
+would be a difficult endgame for White, though a draw is within reach as long
+as White doesn't run out of movesand get forced into zugzwang.} )
+Qe2 38.Ba3 Qf3+ 39.Kf1 Qxe3 $1 {The endgame has been calculated.}
+40.Qd5+ ( 40.Bxc5 Qd3+ $1 41.Ke1 Rxc5 42.Nxc5 Qc3+ 43.Kf1 Qc1+
+$1 ( 43...Qxc5 44.Rc4 ) 44.Ke2 ( 44.Kg2 Qg5+ 45.Kh3 Qxc5 ) Qxc5
+45.Rc4 Qe5+ 46.Kf1 Bb6 47.Rc8 Qd6 {and Black will find it difficult to make progress because of the nasty pin at f8.}
+) Rxd5 41.fxe3 Ne6 42.Ke2 {?} ( 42.Rg4 Kf7 ( 42...f5 {?} 43.Nf6+
+Kf7 44.Nxd5 fxg4 45.Nxc7 Nxc7 46.Bxc5 a6 {is likely to wind uo as a draw.}
+) 43.Rg2 {was perhaps safest.} ) Ba5 $1 43.Nxc5 {?} {A quick death, but the alternative was prolonged suffering. And Izumakawa had almost exhausted his remaining hour.}
+( 43.Bb2 Kf7 44.Rh7 f5 $1 45.Nc3 Rd6 {Black will eventually win the b-pawn with ...Rb6.}
+) ( 43.Rg4 Kf7 44.Rg1 f5 45.Ng5+ Nxg5 46.Rxg5 g6 {leaves White a pawndown with two many weaknesses.}
+) Nxc5 44.Bxc5 ( 44.b4 Nxa4 45.bxa5 Rxa5 {gives Black two extra passed pawns.}
+) Rxc5 45.b4 g5 $1 {There is no need to delay the advance.}
+46.Rd4 Re5 47.bxa5 Rxa5 {The rook and pawn endgame is a simple win.}
+48.Kd3 Kf7 49.Kc3 Ke6 50.Kb4 Re5 51.e4 g4 52.Kb3 g3 53.Rd3 g2 0-1
+
+[Event "NY Open"]
+[Date "1998.??.??"]
+[Site "New York City NY"]
+[White "Schiller, Eric"]
+[Black "Yakovich, Yuri"]
+[WhiteElo "0"]
+[BlackElo "0"]
+[Result "1-0"]
+[Round "1"]
+[ECO "A09"]
+[Annotator "Schiller Eric"]
+[Source ""]
+[Remark ""]
+
+1.Nf3 d5 2.c4 d4 3.g3 g6 4.b4 Bg7 5.Bb2 e5 6.d3 a5 7.b5 Ne7 8.Bg2
+O-O 9.O-O c5 10.bxc6 Nexc6 11.Nbd2 Na6 12.Ne1 Be6 13.Nc2 Qd7
+14.Ba3 Rfd8 15.Rb1 Rab8 16.Ne4 h6 17.Nc5 Nxc5 18.Bxc5 Bh3 19.Rb5
+Bxg2 20.Kxg2 Re8 21.Qb1 e4 22.Bb6 exd3 23.exd3 Re5 24.Re1 Rbe8
+25.Rbxe5 Rxe5 26.Rxe5 Nxe5 27.Qb5 Qg4 28.Nxd4 Nxd3 29.Qe8+ Bf8
+30.Qe3 Bc5 {??} 31.Bxc5 Nxc5 32.Qe8+ Kg7 33.Qe5+ {
+Black resigned. A time-pressure blunder by Yakovich, but I stayed in the game
+long enough to let it happen, and played well throughout.} {%30^000} 1-0
+

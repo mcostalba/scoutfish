@@ -1,0 +1,158 @@
+[Event "FIDE Wch KO"]
+[Site "Moscow"]
+[Date "2001.12.05"]
+[Round "4.4"]
+[White "Ponomariov, R."]
+[Black "Morozevich, A."]
+[Result "1-0"]
+[ECO "C78"]
+[WhiteElo "2684"]
+[BlackElo "2742"]
+[Annotator "GM Alfonso Romero Holmes"]
+[PlyCount "88"]
+[EventDate "2001.11.27"]
+[Source "Mikhail Golubev"]
+[SourceDate "2002.01.08"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Bc5 6. c3 b5 7. Bb3 d6 8. a4
+Bg4 (8... Rb8 9. axb5 axb5 10. d4 Bb6 11. Na3 Bg4 12. Nxb5 O-O) 9. h3 Bxf3 10.
+Qxf3 O-O 11. a5 $1 (11. d3 Na5 12. Bc2 b4 13. Nd2 Rb8) 11... Rb8 12. d3 Nd7 13.
+Nd2 (13. Be3 Kh8 14. Nd2 14... Ne7 {Kasparov-Anand, Wijk aan Zee 2001}) 13...
+Kh8 14. Kh1 Ne7 15. Qe2 { } 15... h6 (15... f5 16. Nf3 (16. exf5 Nxf5 17. Ne4))
+16. f4 Ng6 (16... exf4 17. d4 Ba7 18. Rxf4) 17. f5 Nf4 18. Qf3 18... Nf6 { }
+19. Bc2 (19. Nb1 b4 (19... g5 20. fxg6 fxg6 21. d4 (21. g3 $5) 21... Ba7 22. g3
+) 20. Bc4 d5 21. exd5 bxc3 22. bxc3) 19... g5 20. fxg6 fxg6 21. Nb3 21... Nd7 {
+} 22. Bxf4 $1 22... Rxf4 23. Qe2 Ba7 (23... Qh4 24. Rxf4 exf4 (24... Qxf4 25.
+Rf1 Qh4 26. Rf7) 25. d4 $1 (25. Nxc5 dxc5 26. Rf1 Nf6) 25... Ba7 26. Rf1 c6 27.
+Qf3 g5 28. e5 $1) 24. Rxf4 exf4 25. Qg4 g5 26. d4 $16 { } 26... Nf6 27. Qe6 Qf8
+28. e5 Nh5 29. exd6 29... Qxd6 { } (29... cxd6 30. Qd7) 30. Qxd6 (30. Re1)
+30... cxd6 31. Re1 Rf8 32. Re7 Bb8 33. Nd2 Ng7 (33... Nf6 34. Rb7 Re8 35. Nf3
+Nd5 36. Rh7+ Kg8 37. Rxh6 Re2 38. Rg6+ Kf8 39. Bb3 Ne7 40. Rf6+) 34. Nf3 Re8
+35. Rb7 d5 36. Rb6 { } 36... h5 37. Bg6 Rc8 38. Nxg5 f3 39. gxf3 Bf4 40. h4 Bc1
+41. Rxa6 Bxb2 42. Bf7 Ne8 (42... Nf5 43. Ra7 (43. Be6 Rf8 44. Ra7 Ng7) 43...
+Ng7 44. Bxd5 Bxc3 45. Nf7+ Kh7 46. Be4+ Kg8 47. Nd6) 43. Rg6 Nc7 44. Rc6 Ra8
+1-0
+
+[Event "FIDE Wch KO"]
+[Site "Moscow"]
+[Date "2001.??.??"]
+[Round "5.5"]
+[White "Ivanchuk, V."]
+[Black "Lautier, J."]
+[Result "1-0"]
+[ECO "E15"]
+[WhiteElo "2730"]
+[BlackElo "2650"]
+[Annotator "GM Alfonso Romero Holmes"]
+[PlyCount "103"]
+[EventDate "2001.11.27"]
+[Source "Mikhail Golubev"]
+[SourceDate "2002.01.08"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. g3 Ba6 5. b3 Bb4+ 6. Bd2 Be7 7. Nc3 O-O 8. Qc2
+(8. Bg2 8... c6 $1) 8... d5 9. cxd5 9... exd5 { } (9... Nxd5 10. Bg2 Nd7 11.
+O-O c5 12. Rfd1 Rc8 13. Qb2 Bb7 14. e4 $1 {
+Ivanchuk-Ehlvest, Tallinn rpd 2000; Topalov-Karpov, Monaco rpd 2001}) 10. Bh3
+$5 10... c5 11. O-O Nc6 12. Be3 Re8 13. Rfd1 h6 14. Rac1 c4 15. Ne5 Na5 16.
+bxc4 16... Nxc4 { } 17. Qa4 $6 (17. Bf4 $1 17... Bd6 (17... b5 18. e4 $5) 18.
+Qa4 Bc8 19. Bg2 Nxe5 20. dxe5 Bd7 21. Qa6 $5 (21. Qd4 Bc5 22. Qd3)) 17... Nxe3
+18. fxe3 Bb7 19. Nb5 19... Bd6 { } 20. Nd7 $5 (20. Nxd6 Qxd6 21. Rf1 Re7 22.
+Bf5 Rc7) 20... Qe7 21. Rd3 (21. Nxf6+ Qxf6 22. Nc7 Qe7 (22... Bxc7 $5 23. Rxc7
+Re7) 23. Nxa8 Qxe3+ 24. Kh1 24... Bxa8 $44) (21. Nxd6 Qxd6 22. Nxf6+ Qxf6 23.
+Rc7 Re7 24. Bd7 $5 { } 24... Qg5 $1 25. Rf1 Bc8 26. Qc6 Rxd7 27. Rxd7 Qxe3+ 28.
+Rf2 Bxd7 29. Qxa8+ Kh7 30. Qxd5 Bh3) 21... Nxd7 $6 (21... Ne4 22. Nxd6 Qxd6 23.
+Qa3 Bc8 24. Qxd6 Nxd6 25. Rc6 Nc4 26. Rc3 Bxd7 27. Bxd7 Re7 28. Bf5 g6 29. Bd3
+Nxe3 30. h3 $11) 22. Nxd6 Qxd6 23. Qxd7 Qxd7 24. Bxd7 Re7 25. Bb5 { } 25... Rd8
+$2 (25... a6 26. Ba4 b5 27. Bb3 b4 28. Rc5 Rd8 29. Kf2 Rd6 30. Ba4 $14 (30. Rd2
+Rf6+ 31. Ke1 Rxe3 32. Bxd5 Bxd5 33. Rxd5 $11)) 26. Rdc3 Rd6 27. Rc7 27... Rde6
+{ } 28. Bd7 Rd6 29. Bf5 Rxc7 30. Rxc7 g6 (30... Ba6 31. Rxa7 g6 32. Bxg6 fxg6
+33. Rxa6 $18) 31. Bd3 $1 31... Bc6 32. Rxa7 Bd7 33. Kf2 Kg7 34. Ke1 Bh3 35. Kd2
+Rf6 36. Rb7 h5 37. a4 g5 38. e4 dxe4 39. Bxe4 $18 39... h4 40. gxh4 gxh4 41.
+Bf3 Kg6 42. Ke3 Bf5 43. Rc7 Re6+ 44. Kd2 Be4 45. Bxe4+ Rxe4 46. Kd3 Rg4 47.
+Rc6+ Kg5 48. Rxb6 Rg2 49. a5 Rxh2 50. a6 Rh3+ 51. e3 Rh2 52. Rb5+ {(  53.Ra5)}
+1-0
+
+[Event "FIDE Wch KO"]
+[Site "Moscow"]
+[Date "2001.12.11"]
+[Round "6.3"]
+[White "Svidler, P."]
+[Black "Ponomariov, R."]
+[Result "0-1"]
+[ECO "C43"]
+[WhiteElo "2686"]
+[BlackElo "2684"]
+[Annotator "GM Alfonso Romero Holmes"]
+[PlyCount "88"]
+[EventDate "2001.11.27"]
+[Source "Mikhail Golubev"]
+[SourceDate "2002.01.08"]
+
+1. e4 e5 2. Nf3 Nf6 3. d4 Nxe4 4. Bd3 d5 5. Nxe5 Nd7 6. Nxd7 Bxd7 7. O-O Bd6 8.
+c4 c6 9. cxd5 cxd5 10. Nc3 Nxc3 11. bxc3 O-O 12. Qh5 f5 (12... g6 13. Qxd5 Qc7
+14. Qf3 $5 14... Bxh2+ 15. Kh1 Bd6 16. c4 {Rublevsky-Vallejo, Ech 2001}) 13.
+Re1 (13. Qf3 13... Kh8 $1 14. Bf4 Qc7 15. Bxd6 Qxd6 16. Rfe1 16... Rfe8 $11)
+13... Qc7 14. Bd2 Rae8 15. Bc2 g6 16. Qf3 { } (16. Qh4) 16... Re4 $1 17. g3 (
+17. Bxe4 fxe4 18. Qe2 Bxh2+ 19. Kh1 Rf5) 17... Bb5 18. Bf4 { } (18. Bxe4 fxe4
+19. Qg4 Rf5 (19... Bd7 $2 20. Qd1 Qc8 21. Qb3)) 18... Bxf4 19. gxf4 Qd6 20.
+Bxe4 fxe4 21. Qg3 Rxf4 22. Rab1 Bd7 23. f3 b6 (23... exf3 24. Kf2) 24. Re3
+24... Qf6 { } (24... exf3 25. Kf2 Bf5 26. Re8+ Kg7 27. Rbe1 Be4 28. c4) 25. Rf1
+$2 (25. Rbe1 h5) (25. Rb2 25... h5 (25... exf3 26. Kf2) 26. Rf2 h4 27. Qg2 Bf5
+28. h3 (28. Rf1 h3 29. Qe2 29... Qg5+ $1) 28... b5 29. fxe4 Bxe4 30. Rxf4 Qxf4
+31. Qf2 Qg5+ 32. Kh2) 25... Bg4 26. Qxg4 Rxg4+ 27. fxg4 Qg5 28. Rg3 28... b5 { 
+} 29. Rf2 Kg7 30. Kg2 a5 31. Rb2 b4 32. cxb4 axb4 33. h3 Qc1 34. Rgb3 34... Kh6
+$1 35. Rxb4 Qd1 36. Kf2 Kg5 37. Re2 { } 37... Kf4 $19 38. Rb3 Qxd4+ 39. Kg2 Qc4
+40. Rf2+ Kg5 41. Rf7 d4 42. h4+ Kxh4 43. Rxh7+ Kxg4 44. Rg3+ Kf5 0-1
+
+[Event "FIDE Wch KO"]
+[Site "Moscow"]
+[Date "2001.12.13"]
+[Round "6.4"]
+[White "Anand, V."]
+[Black "Ivanchuk, V."]
+[Result "0-1"]
+[ECO "B30"]
+[WhiteElo "2770"]
+[BlackElo "2731"]
+[Annotator "GM Alfonso Romero Holmes"]
+[PlyCount "84"]
+[EventDate "2001.11.27"]
+[Source "Mikhail Golubev"]
+[SourceDate "2002.01.08"]
+
+1. e4 c5 2. Nf3 Nc6 3. Nc3 e5 4. Bc4 d6 5. d3 5... Be7 { } 6. Nd2 $5 6... Nf6
+7. Nf1 7... Nd7 $5 (7... Be6 8. Ne3 O-O (8... Bxc4 $6 9. dxc4 $14) 9. O-O Nd4
+10. a4 a6 11. Ncd5 Nxd5 (11... b5 $2 12. axb5 axb5 13. Rxa8 Qxa8 14. Nxe7+ $18)
+12. Bxd5 Rb8 13. g3 (13. c3 Nc6 14. g3 $14) 13... Bh3 14. Ng2 Qd7 (14... Ne6
+15. f4 exf4 16. gxf4 Nc7 17. Ba2 d5) 15. c3 Ne6 16. f4 exf4 17. gxf4 Nc7 18.
+Ba2 Qg4 (18... d5 19. Qf3 Rbd8) 19. Qxg4 Bxg4 20. Rf2 Be6 21. f5 $1 21... Bxa2
+22. Rxa2 b5 23. Bf4 b4 24. f6 $5 24... Bxf6 (24... gxf6 $6 25. Ne3 $14 {x f5})
+25. Bxd6 Rfc8 (25... bxc3 $2 26. e5 $1 26... cxb2 27. Rfxb2 Rxb2 28. Rxb2 $18)
+26. e5 Bd8 27. e6 $6 (27. Ne3 $14) 27... Bf6 28. exf7+ Kxf7 29. Ne3 bxc3 30.
+bxc3 Rb1+ 31. Kg2 Ne8 32. Bg3 Kg6 33. Ng4 33... Rd8 {
+-  Gelfand,B-Kramnik,V FIDE Sanghi Nagar (2) 1994}) 8. Nd5 (8. Ne3 Bg5) 8...
+Nb6 9. Nxb6 (9. Bb3 Nd4) 9... axb6 10. c3 O-O 11. Ne3 (11. Ng3 $5 11... Be6 (
+11... Bg5 12. Bxg5 Qxg5 13. O-O) 12. O-O d5 13. exd5 Bxd5 14. Qg4) 11... Bg5
+12. O-O Kh8 13. Bd2 (13. Nd5 Bxc1 14. Qxc1 Ne7 15. f4 15... Be6 $1) 13... Bxe3
+14. fxe3 14... Qe7 { } 15. Bd5 Be6 16. Qb3 (16. c4 f5) 16... Na5 17. Qc2 (17.
+Qxb6 Ra6 18. Qb5 18... Bd7 $19) 17... Qc7 (17... b5 18. c4 bxc4 19. dxc4) (
+17... f5 $6 18. Bxe6 Qxe6 19. exf5 Rxf5 20. Rxf5 Qxf5 21. Rf1 Qe6 22. c4) 18.
+h3 (18. c4 Nc6 19. a3 Ne7) 18... h6 19. c4 Nc6 20. Qd1 { } 20... Bxd5 $1 21.
+exd5 Ne7 22. a4 (22. e4 22... f5 $1 23. Qh5 Qd7) 22... f5 23. Bc3 23... Rf7 { }
+24. Qb3 $2 (24. Qh5 Rf6 25. b3 $1 (25. Rf2 b5) 25... Qd7 26. Rf2) 24... Ng6 25.
+Rf2 Raf8 26. Raf1 { } 26... f4 $1 27. Bd2 27... f3 $1 28. Rxf3 (28. g3 Rf5 (
+28... Qd7 29. Kh2 Rf5 30. Qb5 Qc8 31. g4 R5f6) 29. e4 Rh5 30. Rxf3 (30. h4 Nxh4
+31. gxh4 Qc8 32. Rh2 Qg4+ 33. Kh1 Rxh4 34. Rff2 Rxh2+ 35. Kxh2 Qh4+ 36. Kg1
+36... Rf6 $19) 30... Rxf3 31. Rxf3 Rxh3 32. Kg2 Rh5 33. Be3 33... Qd7 $40)
+28... Rxf3 29. gxf3 (29. Rxf3 Rxf3 30. gxf3 Qd7 31. Kh2 Qf5 32. f4 (32. Qxb6
+Qxf3) 32... Nh4 (32... Qh5 $1) 33. Kg3 33... g5 $1 (33... Qg6+ 34. Kxh4 Qg2 35.
+Qxb6 Kh7 36. Qc7 $11) 34. Bc1 $1 34... Qg6 (34... Kh7 35. Qd1) 35. fxg5 (35.
+fxe5 35... Qf5 $1) 35... Qxg5+ 36. Kf2 Qg2+ 37. Ke1 Nf3+ 38. Kd1 Qf1+ 39. Kc2
+Ne1+ 40. Kd2 Kg7 41. Qxb6 $11) 29... Qc8 30. Kh2 { } 30... Rf5 31. f4 Rh5 32.
+f5 (32. Rf3 Qg4 33. Rg3 Qe2+ 34. Rg2 Qf3) 32... Rxf5 33. Qd1 33... Qf8 { } 34.
+Rxf5 $2 (34. Kg1 Nh4 35. e4 Rxf1+ (35... Rf3 36. Bc1 Qf7 37. Rxf3 Nxf3+ 38. Kg2
+Nh4+ 39. Kg3 39... g5 $15) 36. Qxf1 { } 36... Qf3 $1 37. Be1 Qe3+ 38. Bf2 Qg5+
+39. Kh1 Ng6 40. Qd1 (40. Bg1 Kh7) 40... Nf4 41. Qf3 Qf6) 34... Qxf5 35. Qe2
+35... e4 $1 36. Qg4 Qxg4 37. hxg4 Ne5 38. Kg3 exd3 39. b3 39... g6 $19 { } 40.
+e4 h5 41. gxh5 gxh5 42. Kf2 h4 0-1
+

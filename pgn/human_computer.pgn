@@ -1,0 +1,2191 @@
+[Event "IBM Kasparov vs. Deep Blue Rematch"]
+[Site "New York, NY USA"]
+[Date "1997.05.03"]
+[Round "1"]
+[White "Kasparov, Garry"]
+[Black "Deep Blue"]
+[Result "1-0"]
+[Opening "Reti: King's Indian attack, Keres variation"]
+[ECO "A07"]
+[Annotator "Gabriel Schwartzman"]
+
+1. Nf3
+ {Garry decided to play this much more passive move compared
+ to 1.e4 or 1.d4, in an attempt to keep the game quiet, with as
+ few tactical strikes as possible. As everybody knows, the
+ computer's main strength lies in calculating concrete lines
+ very fast and very far, and not necessarily in the area of
+ positional play, so it is normal for Garry to try to steer the
+ game in this direction.}
+1...d5
+ { Black's response indicates no desire to copy white's actions.}
+2. g3
+ {fianchetto}
+2...Bg4
+ {Black's idea is to counteract the power of the white bishop,
+ by building a pawn fortress on the squares c6, d5, and e6. But
+ before doing that, he makes sure that the his bishop isn't
+ caught inside}
+3. b3
+ {One of the most memorable games in Kasparov's career was the last
+ game of his 1987 world championship match against Anatoly
+ Karpov. Despite the fact the he needed a win to preserve his
+ title, he chose the rather passive double fianchetto}
+3...Nd7
+ {The computer passes on an attractive opportunity to double
+ white's pawns on the 'f' file, by taking the knight on f3.
+ This only means that in Deep Blue's eyes, keeping the pair of
+ bishops is more important than ruining the opponent's pawn
+ structure. In this case, the machine's decision was correct.}
+4. Bb2 e6 5. Bg2 Ngf6 6. O-O c6 7. d3 Bd6 8. Nbd2 O-O
+9. h3 Bh5 10. e3
+ {Kasparov once again proves he doesn't want a violent
+ confrontation, by playing e3, instead of
+ e4}
+10...h6 11. Qe1 Qa5? 12. a3 Bc7? 13. Nh4!
+ {Black's hesitation in the last moves allows white to grab the
+ initiative. Nh4 is also a way of proving that black's
+ overprotective h7-h6 a few moves back was no such a good idea.
+ Now white threatens to push g3-g4, and send the bishop to g6,
+ where the knight can't wait to capture it. The advantage of
+ trading under these conditions is that white gets the pair of
+ bishops and at the same time ruins black's pawn structure.}
+13...g5!? 14. Nhf3 e5!
+ {If black doesn't want to lose this game quickly, he has to
+ close the position. The push of the 'g' pawn created a very
+ weak a1-h8 diagonal, which black has to cover in some way.
+ e6-e5 is not without problems, as we'll see in a second, but
+ Deep Blue has no other choice - the bishop on b2 is too
+ powerful and its line of fire comes a little too close to the
+ black king.}
+15. e4 Rfe8
+ {One of the effects of black's last two moves is the complete weakening of the f5
+ square. }
+16. Nh2! Qb6
+ {Deep Blue discovered that one of the steps in white's march to
+ f5 is the removal of the rook on f1. This means that the pawn
+ on f2 suddenly loses its most defenders, so the machine, like
+ a bloodhound, started the hunt. First by placing the queen on
+ b6, and then by adding the bishop to the diagonal. }
+17. Qc1 a5 18. Re1 Bd6 19. Ndf1 dxe4 20. dxe4 Bc5 21. Ne3
+Rad8 22. Nhf1
+ {Both sides have achieved their ideal positions. Black's pieces
+ are placed almost perfectly, but he still has the weak f5
+ square. White meanwhile is a little behind in development, but
+ the same f5 square compensates for it plentifully. The only
+ thing he does need to solve is the 'f2' problem. It is hard to
+ play Nf5 while the black bishop and queen are enjoying such an
+ impressive supremacy on the g1-a7 diagonal, but no one can
+ stop white from slowly preparing b3-b4, for instance, and
+ chasing the black bishop away, thus getting ready for the
+ heralded arrival of the knight to f5.}
+22...g4?
+ {The fatal error.....Kasparov will say after the match that "pawns had to stay back to 
+ defend the king". He smiled after this move.}
+23. hxg4 Nxg4 24. f3 Nxe3 25. Nxe3 Be7! 26. Kh1!
+ {this will ensure that in the
+ concrete variations that can ensue in such a dynamic position,
+ there is no check that ruins everything}
+26...Bg5 27. Re2 a4 28. b4 f5!?
+ {Deep Blue finds another way of throwing the
+ position in the air}
+29. exf5 e4 30. f4!
+ {This move obviously sacrifices an exchange, but it does two
+ very significant things: it keeps the 'e' file tightly closed,
+ thus making the black extra rook sit as a spectator for a
+ while, and it gets rid of the black bishop. Add to this the
+ might of the white pawns on the kings side, and you realized
+ that white might have given up material, but also got a lot in
+ return.}
+30...Bxe2
+ {One interesting
+ variation was 30...Bf4 31.gf4 Be2, but as Kasparov pointed out in
+ his short talk with the audience after the game, the opening
+ of the 'g' file is to white's advantage, because it allows a
+ quick transferal to the king side of the heavy artillery from
+ the queen side with 32.Qg1. }
+31. fxg5 Ne5 32. g6 Bf3!
+ {Black finds a beautiful spot for the bishop}
+33. Bc3 Qb5 34. Qf1!
+ {after Qb5, black threatens to come
+ in, which white can ill afford. So better trade queens and get
+ out of danger, hoping that the 'f' and 'g' pawns are enough to
+ win}
+34...Qxf1+ 35. Rxf1 h5 36. Kg1!
+ {KasparovÕs decision not to take on e5
+ and f3 was correct, as his post game analysis proved. After
+ 36.Bf3 ef3 37.Be5 Re5 38.Rf3 Kg7!, black gets a powerful
+ blockade of the pawns, which could make things difficult for
+ white. }
+36...Kf8 37. Bh3! b5 38. Kf2 Kg7 39. g4! Kh6 40. Rg1 hxg4
+41. Bxg4 Bxg4 42. Nxg4+ Nxg4+ 43. Rxg4 Rd5 44. f6 Rd1?!
+45. g7 1-0
+
+[Event "IBM Kasparov vs. Deep Blue Rematch"]
+[Site "New York, NY USA"]
+[Date "1997.05.04"]
+[Round "2"]
+[White "Deep Blue"]
+[Black "Kasparov, Garry"]
+[Result "1-0"]
+[Opening "Ruy Lopez: closed, Smyslov defense"]
+[ECO "C93"]
+[Annotator "Gabriel Schwartzman"]
+
+1. e4 e5
+ {It is not a
+ secret that KasparovÕs favorite move here is 1...c5, leading to
+ the Sicilian Defense. But, since this defense can lead to
+ rather sharp positions, which Black wants to avoid, he chooses
+ to play 1...e5 instead. This is a very solid move, which
+ usually leads to complex positions, and thus seems a perfect
+ choice for this match.}
+2. Nf3 Nc6
+ {This time Kasparov goes for the straight forward way of defending
+ the 'e5' pawn, even though he actually won the game with the
+ Petroff last year. Deep Blue team didn't waste the past year -
+ they prepared very hard, and one of their priorities must have
+ been improving the lines played in the last match. So, better
+ avoid them completely...}
+3. Bb5
+ {The choice of
+ openings is a little surprising. The Ruy Lopez is well known
+ for its closed positions and extreme complexity. }
+3...a6 4. Ba4 Nf6 5. O-O Be7
+ {Open Variation}
+6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 h6 10. d4 Re8
+11. Nbd2
+ {This doesn't seem to be a great place for the white knight,
+ but it really doesn't matter, because the knight is en route
+ to much bigger things. Deep Blue intends to send it to f1, g3,
+ and then hopefully its final destination, f5. From there, it
+ can put pressure on the black king, and create some serious
+ discomfort in the black bunker.}
+11...Bf8 12. Nf1 Bd7 13. Ng3 Na5 14. Bc2 c5 15. b3 Nc6
+16. d5 Ne7 17. Be3 Ng6 18. Qd2 Nh7!?
+ {Kasparov finally gets off the well trodden path of chess theory
+ with this interesting move. It seems as if black has decided
+ to start an offensive on the king side, now that the center is
+ finally blocked. By playing Nh7, black opens the d8-h4
+ diagonal, with the declared intention of bringing his queen
+ into the action.}
+19. a4!
+ { This move at once
+ shows black that his rook will have to remain for a while on
+ a8, since now white has at any point the option of capturing
+ on b5 and opening the 'a' file.}
+19...Nh4 20. Nxh4 Qxh4 21. Qe2!
+ {A beautiful and very subtle move by Deep Blue, showing an
+ amazing understanding of the position on the computer's
+ behalf. The queen comes to e2 for two diametrically opposed
+ purposes: first of all, it is a defensive move. Now that the
+ control of the 'f4' square is not so important, the queen
+ moves over to the d1-h5 diagonal, thus preempting any tactical
+ strikes that could have followed after the black knight's jump
+ to g5. At the same time, the queen on e2 is putting additional pressure 
+ 	on the b5 pawn, and
+ threatening to continue adding to it with Bc2-d3.}
+21...Qd8?!
+ {a very dubious decision to abandon any possible
+ initiative opportunities on the king side, and instead focus
+ on the defense on the queen side}
+22. b4! Qc7 23. Rec1
+ {Now white threatens to blow up the entire queen side with the
+ c3-c4 push}
+23...c4 24. Ra3
+ {Deep Blue's next plan is simple: double the rooks, and then
+ take the pawn on b5. }
+24...Rec8 25. Rca1 Qd8 26. f4!!
+ {The idea of opening a second front is fantastic, because it is
+ white's pieces that have greater mobility, and thus can go
+ from one side to another much easier than black's. Black,
+ meanwhile, has to suddenly fight disadvantageous situations on
+ both sides of the chess board, and he hardly has the resources
+ to do so.}
+26...Nf6 27. fxe5!?
+ {Deep Blue plays a very interesting move. Instead of making
+ sure that the black bishop on f8 never sees the daylight
+ again, he actually opens the a3-f8 diagonal for it. The
+ reason a passed pawn on the 'd' file. }
+27...dxe5 28. Qf1?! Ne8
+ {The black knight is continuing its trip to the queen side,
+ where it very needed}
+29. Qf2! Nd6 30. Bb6 Qe8 31. R3a2 Be7 32. Bc5!
+ {The machine immediately senses that black is trying to
+ activate his bishop, so he cuts off this idea by attacking the
+ knight on d6, and making sure black has to keep the bishop
+ there to defend it.}
+32...Bf8 33. Nf5! Bxf5 34. exf5 f6 35. Bxd6!
+ {as long as the knight sits on d6, winning is
+ impossible}
+35...Bxd6 36. axb5 axb5 37. Be4!
+ {This is much better than 37.Qb6. First of all, the bishop blocks
+ the 'e' pawn, thus making sure, for the n-th time this game,
+ that black will get absolutely no counter play. At the same
+ time, it improves the position of the bishop, and also creates
+ threats based on the movement of the 'd' pawn, in case black's
+ bishop is thinking about taking a trip. Finally, by opening
+ the 2nd rank, it ensures that the queen will get into the
+ black camp no matter what, whether through b6, or on the 'a'
+ file.}
+37...Rxa2 38. Qxa2 Qd7 39. Qa7 Rc7 40. Qb6 Rb7 41. Ra8+
+Kf7?
+ {41...Kh7 would have been a
+ better choice}
+42. Qa6 Qc7 43. Qc6
+ {White is once again offering a queen trade, this time in even
+ better conditions. If black accepts it, he will suddenly find
+ himself fighting against a pawn on c6, and an even more active
+ white bishop. Because of the position of the black king, Qc6
+ also has a more concrete threat: Qe8 mate!}
+43...Qb6+ 44. Kf1 Rb8 45. Ra6!
+ {The computer doesn't succumb to the temptation of Qd7 followed
+ by Ra7, because after 45.Qd7 Kg8 46. Ra7 Bf8 47.d6 Qe3, black
+ manages to prevent the checkmate by creating his own perpetual
+ check chance.
+ Instead, Deep Blue plays the powerful Ra6, which forces black
+ to trade queens, and thus practically end the game, since
+ after 45...Qc6 46.dc6 black has no way of stopping the 'c'
+ pawn and at the same time preventing white from capturing too
+ many pawns. Which is why the world champion resigned.
+ However, the world champion resigned
+ too early. In this position, he could have still achieved a
+ draw with 45...Qe3!!. }
+1-0
+
+[Event "IBM Kasparov vs. Deep Blue Rematch"]
+[Site "New York, NY USA"]
+[Date "1997.05.06"]
+[Round "3"]
+[White "Kasparov, Garry"]
+[Black "Deep Blue"]
+[Result "1/2-1/2"]
+[Opening "Mieses opening"]
+[ECO "A00"]
+[Annotator "Daniel King"]
+
+1. d3
+ {This move
+ is never seen at Grandmaster level, for the simple reason that
+ it hands over the advantage of the first move to Black.}
+1...e5 2. Nf3 Nc6 3. c4 Nf6 4. a3
+ {This is a standard position from the Sicilian Defense, but
+ with colors reversed and a tempo down, and that is enough to
+ confuse Deep Blue. There are simply too many options to
+ consider in the opening, even with its enormous calculating
+ power.}
+4...d6 5. Nc3 Be7 6. g3 O-O 7. Bg2
+ {Activating the bishop on the long diagonal, and building a
+ solid home for White's king.}
+7...Be6 8. O-O Qd7
+ {I think most humans would be worried
+ about a knight arriving at g5 and would play 8...h6 first.}
+9. Ng5
+ {The knight move complicates the position, so it's no wonder
+ that the world champion thought for over twenty minutes before
+ going down this path. Black must preserve the bishop with
+ either 9...Bg4 or...}
+9...Bf5 10. e4 Bg4 11. f3 Bh5 12. Nh3
+ {Having sidelined the bishop Kasparov retreats his knight
+ preparing to storm his pawns down the board on the kingside.
+ His strategy here bears some similarity to the Kings Indian
+ Defense - with colors reversed - in which Kasparov is a great
+ expert.}
+12...Nd4 13. Nf2 h6
+ {A cautious, but probably wise, decision giving the bishop an
+ escape square in case Kasparov does attempt a pawn storm.}
+14. Be3 c5 15. b4 b6 16. Rb1 Kh8
+ {It's hard to say what this move is about. It might be that
+ Deep Blue envisages a time when the position will open up, in
+ which case the king is best placed tucked away in the corner.}
+17. Rb2!
+ {After the game, Kasparov
+ demonstrated the following variation: 17.h4 a6 18.Bxd4 cxd4
+ 19.Bh3 Qc7 20.Nd5 Nxd5 21.cxd5 . The point of h4 was to keep
+ Black's bishop from moving to g5 from where it controls c1 and
+ can settle on e3. But now White is set to dominate the c-file
+ as the bishop on h3 controls c8. }
+17...a6 18. bxc5 bxc5 19. Bh3 Qc7 20. Bg4 Bg6 21. f4
+ {White's strategy is directed against the bishop on g6: he
+ wants to bury it by playing the pawn to f5.}
+21...exf4 22. gxf4!
+ {Kasparov has a powerful pawn center; he has a knight which
+ is itching to leap into d5 once Black's knight can be shifted
+ from f6; and Black's bishops have no scope at all. A human
+ with this position against Kasparov would feel completely
+ demoralized.}
+22...Qa5
+ {Deep Blue abandons its fight for squares and
+ grabs a pawn instead.}
+23. Bd2 Qxa3 24. Ra2 Qb3 25. f5 Qxd1 26. Bxd1 Bh7
+27. Nh3 Rfb8 28. Nf4 Bd8 29. Nfd5 Nc6 30. Bf4 Ne5 31. Ba4
+Nxd5 32. Nxd5 a5?
+ {a poor positional decision by Deep Blue}
+33. Bb5 Ra7 34. Kg2 g5 35. Bxe5+ dxe5 36. f6!
+ {This is the crucial move. Black's position is cut in two.
+ There is little connection between kingside and queenside
+ which is potentially extremely dangerous for Black's king.
+ Although Kasparov is a pawn down his superbly placed knight
+ and bishop almost single-handedly dominate Black's pieces
+ (with a bit of help from the pawn on f6).}
+36...Bg6 37. h4 gxh4 38. Kh3 Kg8 39. Kxh4 Kh7 40. Kg4 Bc7!
+ {Deep Blue is prepared
+ to give back a pawn to free his position }
+41. Nxc7 Rxc7 42. Rxa5 Rd8 43. Rf3 Kh8 44. Kh4 Kg8
+45. Ra3 Kh8 46. Ra6 Kh7
+ {This prevents the positional threat 47. Bc6 Rd6, and White
+ can't escape the pin as there is no rook check on a8.}
+47. Ra3 Kh8 48. Ra6 1/2-1/2
+
+[Event "IBM Kasparov vs. Deep Blue Rematch"]
+[Site "New York, NY USA"]
+[Date "1997.05.07"]
+[Round "4"]
+[White "Deep Blue"]
+[Black "Kasparov, Garry"]
+[Result "1/2-1/2"]
+[Opening "Pirc: Pribyl variation"]
+[ECO "B07"]
+[Annotator "Daniel King"]
+
+1. e4 c6
+ {The Caro-Kann Defense. Kasparov used to play this right at the
+ start of his career}
+2. d4 d6
+ {This was the idea. Instead of a Caro proper, Kasparov is
+ continuing his anti-computer strategy, attempting to take it
+ out of its opening database. With this rare move, he might
+ have succeeded.}
+3. Nf3 Nf6 4. Nc3 Bg4
+ {Now we have returned to something 'known', though rather
+ unusual, the Prybl opening}
+5. h3 Bh5 6. Bd3 e6 7. Qe2 d5 8. Bg5 Be7 9. e5 Nfd7
+10. Bxe7 Qxe7 11. g4
+ { this advance is probably rather strong }
+11...Bg6 12. Bxg6 hxg6 13. h4 Na6 14. O-O-O O-O-O
+15. Rdg1
+ {Both kings have been brought to safety and all pieces
+ developed, so the middlegame begins.}
+15...Nc7
+ {If he attempts it immediately, 15...c5, then 16
+ Nb5! is embarrassing, heading for d6. }
+16. Kb1 f6
+ {It is a risky move as it compromises his pawn structure, but
+ it also gives him a chance to counter-attack.}
+17. exf6 Qxf6 18. Rg3 Rde8 19. Re1 Rhf8 20. Nd1 e5!
+ {From a position where his pieces were cramped,
+ blocked behind their own pawns, this long-term pawn sacrifice
+ liberates his entire army.}
+21. dxe5 Qf4 22. a3?
+ {No one could quite work out the point of this modest pawn
+ move. }
+22...Ne6!
+ {Black's position has been transformed. Every single one of his
+ pieces is working}
+23. Nc3 Ndc5 24. b4 Nd7 25. Qd3 Qf7 26. b5
+ {Kasparov expected b4 and b5. This is a brilliant positional
+ decision. }
+26...Ndc5 27. Qe3 Qf4 28. bxc6 bxc6 29. Rd1 Kc7 30. Ka1
+Qxe3
+ {'Here I just lost my nerve. I exchanged queens because my king
+ was exposed and I was running short of time. If I play
+ 30...Rf7 instead then it will have difficulty playing another
+ move.' - Kasparov.}
+31. fxe3 Rf7 32. Rh3 Ref8 33. Nd4 Rf2 34. Rb1 Rg2
+ {Kasparov will say that 34...Nxd4 35.exd4 Ne6 was his original
+ intention. Although Black is still a pawn down, it looks as
+ though he is about to clean up. The d4 pawn is attacked. c2 is
+ attacked, the two kingside pawns are vulnerable...but then
+ comes the shock: 36.Nxd5+ cxd5 37.Rc3+ with a vicious
+ counter-attack. For those of you interested: 37...Kd8 38.Rb8+
+ Kd7 39.Rb7+ when Black would do best to repeat moves as
+ 39...Ke8 40.Rc8+ Nd8 41.e6 41...Rxc2 42.Rxd8+ Kxd8 43.e7+ Ke8
+ 44.exf8Q+ Kxf8 45.Rd7 is a bit better for White. }
+35. Nce2 Rxg4 36. Nxe6+ Nxe6 37. Nd4
+ {Exchanging knights is the only hope for a draw, even if it
+ means ditching a pawn. The exchanges open up the position
+ allowing White's rooks to grab a piece of the action. It's not
+ that simple though.}
+37...Nxd4 38. exd4 Rxd4 39. Rg1 Rc4 40. Rxg6 Rxc2
+41. Rxg7+ Kb6 42. Rb3+ Kc5 43. Rxa7
+ {White scoops as many pawns as possible - and his king just
+ survives.}
+43...Rf1+ 44. Rb1 Rff2
+ {Threatening mate in one 45...Ra2, but Deep Blue has it under control.}
+45. Rb4 Rc1+ 46. Rb1 Rcc2 47. Rb4 Rc1+ 48. Rb1 Rxb1+
+49. Kxb1
+ {Even though White is a pawn up it is Black who has the winning
+ chances.}
+49...Re2 50. Re7 Rh2?
+ {Black could have tried 50...d4 though if White
+ plays accurately, then the game should also end as a draw. For
+ instance, 51 e6 Kc4 52 h5 d3 53 h6 Re1+ 54 Kb2 d2 55 Rd7 d1(Q)
+ 56 Rxd1 Rxd1 57 e7 winning for White, is the nicest variation.}
+51. Rh7 Kc4 52. Rc7!
+ {Good move. This prevents Black from using his king very
+ actively as he will always have to watch the c-pawn.}
+52...c5 53. e6 Rxh4 54. e7 Re4 55. a4 Kb3 56. Kc1 1/2-1/2
+
+[Event "IBM Kasparov vs. Deep Blue Rematch"]
+[Site "New York, NY USA"]
+[Date "1997.05.10"]
+[Round "5"]
+[White "Kasparov, Garry"]
+[Black "Deep Blue"]
+[Result "1/2-1/2"]
+[Opening "Reti: King's Indian attack, Keres variation"]
+[ECO "A07"]
+[Annotator "Daniel King"]
+
+1. Nf3
+ {Kasparov continues his testy strategy, avoiding main lines and
+ waiting to see what Deep Blue offers before committing his
+ pawns.}
+1...d5 2. g3 Bg4 3. Bg2
+ {In game one Kasparov played 3. b3}
+3...Nd7 4. h3 Bxf3 5. Bxf3!? c6 6. d3 e6 7. e4 Ne5
+ {Gaining the bishop pair counts in Kasparov's favor, but in
+ doing so he has lost time. }
+8. Bg2 dxe4 9. Bxe4 Nf6 10. Bg2 Bb4+!
+ {The check accomplishes nothing in
+ itself, what it does do is slightly disrupt the smooth flow of
+ White's development. 11 c3 is impossible because of
+ 11...Nxd3+. If 11 Nc3, then Black exploits the pin with
+ 11...Nd5 12 Bd2 Qa5, forcing an exchange of pieces that leaves
+ Black comfortably placed.}
+11. Nd2 h5
+ {This move is based on the fact that Black's knights work best
+ on squares where they are protected and therefore are more
+ stable. Black's threat is to play ...h4, and if g4 then Black
+ can hope to occupy the f4 square by dropping the knight back
+ to g6.}
+12. Qe2 Qc7 13. c3 Be7 14. d4 Ng6 15. h4 e5!?
+ {At first sight I thought that this was a very curious
+ decision, opening up the position when White has the two
+ bishops, but Deep Blue has seen a long way ahead yet again and
+ judged the consequences correctly. If Black doesn't break free
+ with the pawn, then White will set up a clamp with Nc4.}
+16. Nf3 exd4 17. Nxd4 O-O-O 18. Bg5 Ng4!
+ {The knight is so powerful here, tying White to the defense of
+ the pawn on f2.}
+19. O-O-O Rhe8 20. Qc2 Kb8 21. Kb1 Bxg5 22. hxg5 N6e5
+23. Rhe1
+ {23.Rxh5 would have been asking for trouble, there are too
+ many loose points in White's position, the rook on h5, the
+ pawn on f2, the rook on d1: 23...c5 24.Nb5 Qb6 brings White's
+ position to breaking point }
+23...c5!
+ {The knights are causing the world champion
+ problems. The one on g4 keeps a constant watch over f2, and
+ the other has ambitions to fly into d3 or c4. With knight
+ forks dancing in front of his eyes, and knowing that Deep Blue
+ was calculating them all perfectly, I'm not surprised Kasparov
+ was concerned. }
+24. Nf3 Rxd1+ 25. Rxd1 Nc4 26. Qa4 Rd8
+ {The only move, but a good one. If 27 Rxd8+ Qxd8 28 Qxc4 Qd1 -
+ splat.}
+27. Re1 Nb6 28. Qc2 Qd6 29. c4!
+ {a crucial move as it cuts the knight on b6 out of the game for
+ several moves}
+29...Qg6?!
+ {29...Nc8 would have been preferable}
+30. Qxg6 fxg6 31. b3 Nxf2 32. Re6!
+ {The pawn on g6 is going and suddenly Black's forces appear
+ split and uncoordinated. }
+32...Kc7 33. Rxg6 Rd7 34. Nh4
+ {The threat is Nf5 and Rxg7}
+34...Nc8!
+ {If 35. Nf5 then, remarkably, it is Black who is
+ almost winning: 35...Ne7! 36 Nxe7 Rxe7 and White's rook is
+ trapped on g6. Black threatens ...Ng4 and ...Ne5. White can
+ try 37 Bd5 Ng4 38 Re6 Rxe6 39 Bxe6, but 39...Ne3 leaves him
+ struggling.}
+35. Bd5 Nd6 36. Re6 Nb5!
+ {An extraordinary move. Black threatens ...Nc3+ and apart from
+ the game continuation, there is not a great deal to be done
+ about it. For instance 37 Kb2 can be met by 37...Nd3+ with
+ some really juicy forks on the cards.}
+37. cxb5 Rxd5 38. Rg6 Rd7 39. Nf5!
+ {His bishop is gone, but Kasparov has survived that little
+ skirmish and seems to have the position under control again.}
+39...Ne4 40. Nxg7 Rd1+ 41. Kc2 Rd2+ 42. Kc1 Rxa2
+43. Nxh5 Nd2 44. Nf4 Nxb3+ 45. Kb1 Rd2 46. Re6
+ {Though I couldn't quite see how Deep Blue was going to hold
+ the game, from the way in which Kasparov had seemingly lost
+ interest, I had a feeling that something was up. He was
+ curiously pensive, leaning back in his chair and staring away
+ from the board somewhere into the middle distance. He didn't
+ look like a man about to make a new queen.}
+46...c4 47. Re3 Kb6!
+ {The king joins the attack just in the nick of
+ time to force a draw by perpetual check.}
+48. g6 Kxb5 49. g7 Kb4
+ {If 50 g8(Q), then Black forces a draw with 50...Rd1+ 51 Kc2
+ Rd2+ 52 Kb1 Rd1+, and so on.}
+1/2-1/2
+
+[Event "IBM Kasparov vs. Deep Blue Rematch"]
+[Site "New York, NY USA"]
+[Date "1997.05.11"]
+[Round "6"]
+[White "Deep Blue"]
+[Black "Kasparov, Garry"]
+[Result "1-0"]
+[Opening "Caro-Kann: 4...Nd7"]
+[ECO "B17"]
+[Annotator "Daniel King"]
+
+1. e4 c6 2. d4 d5
+ { This time we have a Caro-Kann proper}
+3. Nc3 dxe4 4. Nxe4 Nd7
+ {This line is actually the favorite of Anatoly Karpov. In fact the two have done battle
+ from this exact position - but with Kasparov on the white
+ side. }
+5. Ng5
+ {if Black tries to kick the
+ knight immediately with 5...h6, then White
+ has 6 Ne6! fxe6 7
+ Qh5 mate.}
+5...Ngf6 6. Bd3 e6
+ {6...h6 7 Ne6! is strong}
+7. N1f3 h6?
+ {The fatal error....he should have played
+ 7...Bd6, which leads to standard and frequently played
+ positions.}
+8. Nxe6!
+ {Kasparov shook his head in disbelief. He had made a finger slip
+ allowing a known sacrifice which, of course, was all in Deep
+ Blue's database. }
+8...Qe7
+ {If 8...fxe6 9 Bg6+, forcing 9...Ke7, would have been even
+ worse.}
+9. O-O fxe6
+ {If Black captures with the queen, then Re1 is a killer}
+10. Bg6+ Kd8
+ {Black is a piece up but his position is horrendous. }
+11. Bf4 b5?!
+ {to control the c4 square, enabling a
+ knight to land on d5}
+12. a4!
+ {White is able to open more files
+ in front of the king.}
+12...Bb7 13. Re1 Nd5 14. Bg3 Kc8 15. axb5 cxb5 16. Qd3
+ {Deep Blue brings his queen into the
+ attack and even gains time by attacking a pawn}
+16...Bc6 17. Bf5 exf5
+ {If Kasparov doesn't capture the bishop then the e6 pawn just
+ caves in.}
+18. Rxe7 Bxe7 19. c4
+ {If 19...bxc4 20 Qxc4 White's queen breaks through to the king
+ and its all over. The game had taken just one hour.}
+1-0
+
+[Event "game-1"]
+[Site "8 game match"]
+[Date "1998.07.21"]
+[Round "?"]
+[White "Rebel10 (exp)"]
+[Black "Anand,V"]
+[Result "1-0"]
+[WhiteElo "?"]
+[BlackElo "2795"]
+[ECO "E61"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 
+O-O 8. Ne2 c5 9. O-O Nc6 10. Be3 Bg4 11. f3 Bd7 { An unusual variation. 
+More usual is 11 ... Na5. Rebel's following move was still in its book. 
+} 12. Rb1 Qc7 { Rebel's book expected 12 ... Na5. Now the chessprogram 
+had to think for the very first time. } 13. Nf4 { Also after a longer think 
+Rebel sticks to this logical move. White tries to take advantage of the 
+unusual c7-square for the Black queen by means of Nf4-d5. } 13... e6 14. 
+Be2 { A serious alternative would have been 14. d5. Rebel's move removes 
+the bishop to Nc6-a5 attacks. } 14... Ne7 { Preventing 15 d5, but the knight 
+is very passive at e7. More active was 14 ... Rad8 or Rfd8. } 15. Qb3 b6 
+{ Already the losing mistake! Much stronger was either 15 ... Rab8, or 
+Rebel's choice 15 ... b5!? } 16. dxc5 bxc5 17. Qa3 { Very strong. c5 is 
+a big weakness. Note that the undefended knight on e7 prevents the answer 
+... c5-c4. } 17... Be5 { Played after prolonged thought. It is the only 
+way to defend c5. } 18. g3 Bd6 19. Rfd1 { Simply threatening 20 Rxd6. There 
+is not much Black can do about that. } 19... Rfb8 { Trying to get some 
+active counterplay. 19 ... Rac8 or Rfc8 would allow 20 Ba6, or even 20 
+Rb1-b2-d2 with huge pressure and winning material. } 20. Rxb8+ Rxb8 21. 
+Rxd6 { Of course. It appears that Black's threats are not dangerous. } 
+21... Qxd6 22. Bxc5 Qd2 23. Bxe7 Rb7 { Equal to resigning. But 23 ... Rb1+ 
+or 23 ... e5 also was insufficient. } 24. Qa5 Be8 25. Bb4 Qe3+ 26. Kg2 
+{ Now the only move is 26 ... Qb6, leaving no hope of salvation. Anand 
+resigned. A spectecular start from Rebel's point of view.  1-0 } 1-0
+
+[Event "game-2"]
+[Site "8 game match"]
+[Date "1998.07.21"]
+[Round "?"]
+[White "Anand,V"]
+[Black "Rebel10 (exp)"]
+[Result "0-1"]
+[WhiteElo "2795"]
+[BlackElo "?"]
+[ECO "D02"]
+
+1. d4 d5 2. Nf3 Nf6 3. g3 { Rather passive and probably chosen to get Rebel 
+out of its book as quickly as possible. } 3... g6 4. Bg2 Bg7 5. O-O O-O 
+6. b3 { Rebel out of book. } 6... c5 7. Bb2 Ne4 8. c3 { Again passively 
+played! } 8... Nc6 9. e3 Bg4 { I would prefer 9 ... b6, to get the bishop 
+to a6 or b7. } 10. h3 cxd4 { A little trick: If 11 hxg4, then 11 ... dxc3 
+and if the bishop moves, 12 ... c2 will follow. } 11. cxd4 Bf5 12. Nfd2 
+{ Anand continues to play passively. More logical was 12 Nh4 and then 13 
+Nd2 to get rid of the e4-knight. } 12... Nf6 { Preventing piece exchanges. 
+} 13. Nc3 { Now the black c6-knights enters the White position. It was 
+possible to play 13 a3 to prevent this. } 13... Nb4 14. Nf3 Nd3 { A so 
+called 'octopus'. It appears that it is very difficult to get rid of this 
+awsome knight. } 15. Ba3 Rc8 16. Ne2 Be4 17. Nh2 { This is too passive. 
+Rebel expected the stronger 17 Ng5. Also 17 Nc1 to remove Nd3 was better. 
+Perhaps Anand hoped to take advantage of the loose Black pieces. } 17... 
+Bh6 18. Qd2 Re8 { Even after a longer thought Rebel prefers this somewhat 
+srange move. More natural would be 18 ... Qd7, or 18 ... b5. } 19. Ng4 
+{ This is a clear mistake! After 19 f3! Rc2! 20 Qxc2 Bxe3+ 21 Rf2! the 
+game would end in perpetual check (try it out yourself!). Now Black is 
+better. } 19... Nxg4 20. hxg4 Qc7 { Taking the c-file. } 21. Rfd1 { This 
+was the last chance for Nc1. } 21... Qc2 22. Kf1 Qxd2 23. Rxd2 b5 { Keeping 
+the pressure and preparing a brilliant piece sacrifice. } 24. f3 Bxe3 25. 
+Rdd1 f5 { Fantastic! Vishy looked very surprised and nervous. Black opens 
+the f-file to attack the poor white king. } 26. fxe4 fxe4 27. Rxd3 { It 
+is understandable that Anand wants to get rid of the huge knight on d3, 
+but after the game we found out that 27 Nf4 was the only chance to fight. 
+Now it is all over. } 27... exd3 28. Nf4 Rc2 29. Bxd5+ e6 { And there is 
+no defence: 30 Bxe6+ Rxe6 31 Nxe6 Rf2+ 32 Ke1 d2+ 33 Kd1 Rf1+ followed 
+by 34 ... Rxa1 and 35 ... d1Q. So Anand resigned. 0-1 } 0-1
+
+[Event "game-3"]
+[Site "8 game match"]
+[Date "1998.07.21"]
+[Round "?"]
+[White "Rebel10 (exp)"]
+[Black "Anand,V"]
+[Result "1-0"]
+[WhiteElo "?"]
+[BlackElo "2795"]
+[ECO "A41"]
+
+1. d4 d6 { Surprise, I've never seen Vishy playing this before. } 2. e4 
+g6 3. Nc3 Bg7 4. f4 { IMO this agressive continuation is best for a chess 
+program. } 4... c6 5. Nf3 Bg4 6. Be3 Nd7 { More usual is 6 ... Qb6. } 7. 
+h3 Bxf3 8. Qxf3 e6 9. O-O-O d5 { Rebel had 9 ... Ne7 in its book. } 10. 
+g4 { Rebel was debating between this and 10 f5!? After a longer think Rebel 
+would have preferred 10 f5!?, which is an interesting continuation. But 
+also 10 g4 is perfectly playable, of course. } 10... Ne7 11. h4 { Impressive, 
+these white pawns! } 11... b5 { Preparing a counterattack on the queen's 
+side. Rebel expected 11 ... h5. } 12. h5 b4 13. h6 { This isn't good. White 
+should open the king's side, not close it. The normal move was 13 Ne2, 
+with an interesting fight coming up. } 13... Bf8 14. Ne2 dxe4 15. Qxe4 
+Nd5 { A strong position for the black knight. The white attack has come 
+to a standstill. } 16. Bg2 Be7 17. Bd2 O-O 18. Qd3 { White should try a 
+plan involving f4-f5, but it is clear that the white pawn on h6 prevents 
+a huge attack. It might even be better if this pawn was off the board. 
+} 18... N7f6 19. g5 { Now Black is clearly better. Rebel abandons the f5-square 
+and has no counterplay at all. } 19... Ne8 20. Ng3 a5 21. Rde1 Nd6 { Simple 
+chess by Anand. The other knight goes to f5. White has no play and Black 
+can attack with a5-a4. } 22. Qe2 Re8 23. Rhf1 Bf8 24. Ne4 Nf5 25. Qd3 Qb6 
+26. c3 { The losing move. White opens up the b-file, black only needs to 
+say 'thank you'! Of course White's only chance was to keep the position 
+as closed as possible. My guess would be 26 Kb1 and hope for the best. 
+} 26... bxc3 27. Bxc3 Red8 28. Bh3 Be7 { Rebel prefers 28 ... Qb5, as 29 
+Qxb5 cxb5 would lose material. } 29. Bxf5 { To get rid of the pressure 
+on d4, but now the white squares are gone (especially e4). } 29... exf5 
+30. Nd2 Qc7 { Winning the pawn on f4. Black is winning. } 31. Rg1 Bd6 32. 
+Kb1 Bxf4 { 32 ... Nxf4 was possible as well. } 33. Nc4 a4 { A variation 
+by Rebel: 33 ... c5!? 34 dxc5 Qxc5 35 Qd4 Qxd4 36 Bxd4 and Black has the 
+advantage. } 34. Bd2 Re8 { Again 34 ... c5 looks a serious continuation. 
+} 35. Rxe8+ Rxe8 36. Qc2 Bxd2 37. Qxd2 Re4 { Rebel thinks this move is 
+a mistake, costing Black the largest part of his advantage. The computer 
+prefers 37 ... Qf4 instead. } 38. Rc1 { With the simple idea of 39 Ne5, 
+attacking the c6-pawn. } 38... Ne7 { After 10 minutes Rebel would have 
+played 38 ... Re6, only scoring +0.28 for Black. } 39. Qc3 { Contains the 
+strong threat 40 d5! } 39... Nd5 40. Qd2 Re6 41. Ne5 Qb6 { 41. ... f6!? 
+is interesting. } 42. Rc4 Qb5 { A strong move, activating the queen and 
+threatening 43 ... Rxe5. } 43. Rc5 Qf1+ 44. Qc1 Qxc1+ 45. Kxc1 f6 { Of 
+course. Black gets two connected passed pawns: g6 and f5. White gets his 
+pawn back, but I am sure Black still is better in this ending. } 46. gxf6 
+Nxf6 47. Ra5 { The a-pawn is more important than the c6-pawn. White tries 
+to get a passed a-pawn, trying to compensate for the g6 and f5 pawns. } 
+47... Kf8 { To activate the king. After 10 minutes on my Pentium MMX 200 
+MHz Rebel plays 47 ... Ne8 as Black. As tempi are very important in this 
+ending, 47 ... g5 merits consideration. } 48. Ra8+ { A strong check. The 
+black king is worse on e7, compared to the better square f8. } 48... Ke7 
+49. Rxa4 Rd6 { Again losing time, but it appears that the ending is not 
+so clear anymore. White has gained a lot of counterplay. Probably 47 ... 
+Kf8 is the cause of this. } 50. Rc4 g5 { Finally, although Rebel prefers 
+50 ... Ke6 to activate the king. } 51. a4 g4 52. a5 g3 { This looks like 
+a mistake, because it is now easy for White to stop the Black pawns by 
+putting a knight on f3. } 53. Rc3 { 53 a6 could be played. } 53... f4 54. 
+a6 g2 55. Nf3 Nd5 56. a7 Nc7 57. Rb3 { Now White is compeletely winning. 
+} 57... Rd8 58. Rb8 Kd7 59. Kd1 { The a7-pawn is keeping all Black's pieces 
+busy. In the meantime Rebel simply plans Kd1-e2-f2xg2 and Ng5, winning 
+pawn h7. It's all over! } 59... Na8 60. Ke2 Kc7 61. Rxd8 Kxd8 62. Kf2 { 
+Here Vishy resigned. 1-0 } 1-0
+
+[Event "game-4"]
+[Site "8 game match"]
+[Date "1998.07.21"]
+[Round "?"]
+[White "Anand,V"]
+[Black "Rebel10 (exp)"]
+[Result "1-0"]
+[WhiteElo "2795"]
+[BlackElo "?"]
+[ECO "A12"]
+
+1. c4 c6 2. Nf3 d5 3. b3 Bg4 4. Bb2 Nd7 5. e3 Ngf6 6. h3 { End of Rebel's 
+book, that expected 6 Be2. } 6... Bxf3 7. Qxf3 e6 8. Nc3 dxc4 { Positionally 
+speaking not a good move. Logical is 8 ... Bd6. } 9. bxc4 Ne5 10. Qe2 Bb4 
+{ Striving for complications. On 11 d4 it's possible to play 11 ... Ne4. 
+} 11. f4 { A mistake, missing Black's reply. Probably 11 d4 is best anyway. 
+} 11... Bxc3 { Not a trivial move! But the point comes one move later. 
+} 12. Bxc3 Ne4 { Threatening 13 ... Ng3, 13 ... Qh4+ and 13 ... Nxc3. } 
+13. O-O-O Ng3 { This is wrong. Rebel needs a few minutes on the AMD K6 
+450 MHz to find the right move: 13 ... Nxc3! 14 dxc3 Nd7, followed by 15 
+... Qe7 and 16 ... Nc5 with advantage to Black. } 14. Qe1 Nxh1 15. Bxe5 
+Qa5 16. Be2 Qxa2 17. Qxh1 O-O 18. g4 { Not to attack, but to clear the 
+path for the manoeuvre Qh1-e4-c2. Anand rightly tries to exchange queens, 
+after which his bishops are very strong in the ending. } 18... a5 19. Qe4 
+a4 20. Qc2 Qxc2+ { This exchange gives Anand a won ending. The only chance 
+was 20 ... Qa3+, to avoid the exchange. } 21. Kxc2 Rfc8 22. Kb2 a3+ 23. 
+Ka2 f6 24. Bc3 Ra7 { Black is helpless against the bishops and the weaknesses 
+on a3 and b7. The rest of the game requires no comment. } 25. Rb1 Kf8 26. 
+h4 Ke8 27. g5 Ke7 28. Rg1 fxg5 29. hxg5 c5 30. Bxg7 Kf7 31. Bc3 Rc7 32. 
+Rh1 Ke8 33. Bg4 Re7 { Rebel resigns. 1-0 } 1-0
+
+[Event "game-5 (15:00 all)"]
+[Site "8 game match"]
+[Date "1998.07.21"]
+[Round "?"]
+[White "Rebel10 (exp)"]
+[Black "Anand,V"]
+[Result "1-0"]
+[WhiteElo "?"]
+[BlackElo "2795"]
+[ECO "B18"]
+
+1. e4 c6 { The Caro Kann didn't come as a surprise, since Anand played 
+this opening several times this year. } 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Bf5 
+{ A small surprise, as Anand preferred 4 ... Nd7 earlier this year. } 5. 
+Ng3 Bg6 6. h4 h6 7. h5 Bh7 8. Nf3 Nf6 9. Bd3 Bxd3 10. Qxd3 e6 11. Bd2 Be7 
+12. O-O-O O-O 13. Ne5 { With the idea of f4, Ne4 and g4 to start an attack 
+on the Black king. } 13... Nbd7 14. f4 c5 15. Bc3 { Criticised in the tournament 
+bulletin. A possible alternative would be 15 Ne4. } 15... Nd5 16. dxc5 
+Nxc5 17. Qf3 Rc8 { A bit strange. 17 ... Qc7 looks normal, after which 
+Black has a good position. Play might continue 18 Bd4 Rac8 19 Kb1. } 18. 
+Nf5 { Rebel takes the first opportunity to complicate the game. } 18... 
+exf5 { Anand used a lot of time for this more or less forced move. After 
+f.e. 18 ... Na4 White has 19 Nxh6+! gxh6 20 Qg4+. } 19. Rxd5 Qc7 20. Qh3 
+{ As this doesn't win a pawn, 20 Rhd1 was better. After some thought Rebel 
+also thinks Rhd1 is the best move. } 20... Ne4 { Very well played. Anand 
+temporarely gives up a piece, to obtain a dangerous attack. } 21. Rd7 Qc5 
+22. Nd3 Qc4 { The point. Black takes on a2 with the queen, threatening 
+mate through ... Qa1. White has to give up an exchange to deal with the 
+threats. } 23. Rxe7 Qxa2 24. Rxe4 fxe4 25. Nb4 { From a materialistic point 
+of view White is not in a bad shape. Still, his knight on b4 is rather 
+shaky and also the pawn on e4 can become strong. Anand has only one problem: 
+he has not much time left.... } 25... Qa1+ 26. Kd2 Rfd8+ 27. Ke2 Qa4 28. 
+Qf5 { Here Vishy used his remaining time, didn't find a solution and lost 
+on time! A pity this exciting game had to finish in such a way. After 28 
+... a5 29 b3 Qd7 30 Qxd7 Rxd7 31 Na2 the ending looks better for Black. 
+1-0 } 1-0
+
+[Event "game-6 (15:00 all)"]
+[Site "8 game match"]
+[Date "1998.07.21"]
+[Round "?"]
+[White "Anand,V"]
+[Black "Rebel10 (exp)"]
+[Result "1/2-1/2"]
+[WhiteElo "2795"]
+[BlackElo "?"]
+[ECO "A07"]
+
+1. Nf3 d5 2. g3 { Anand avoids the main theoretical variations. } 2... 
+Bg4 3. Bg2 Nf6 4. O-O Nc6 { Out of book Rebel produces this slightly inferior 
+move. The knight shouldn't block the c-pawn. } 5. d3 { Anand doesn't try 
+to take advantage of Black's last move. 5 d4 was possible, after which 
+the knight on c6 looks a bit silly. } 5... e5 { Now we have a kind of Pirc-Ufimzev, 
+with reversed colours. } 6. h3 Be6 7. a3 { White prefers a kind of Modern 
+Defence setup, by means of a3 and b4. } 7... Be7 8. b4 a6 9. Bb2 Nd7 10. 
+Nbd2 O-O 11. e3 f5 { Active play, like Rebel always does. } 12. c4 { With 
+a little trick in mind: 13 Ng5! Bxg5 14 cxd5. } 12... dxc4 13. dxc4 Bf6 
+14. Qc2 e4 { This move is possible, because White is not able to retake 
+on d4 with a piece. Still, white's centre is getting stronger, but also 
+after 10 minutes of thought Rebel would have played e5-e4. } 15. Nd4 Nxd4 
+16. exd4 c6 17. Rfd1 Nb6 18. Bf1 Qc7 { A tense struggle lies ahead. Anand 
+has the initiative on the queen's side, but he must be aware of moves like 
+... e3, ... f4. In the meantime Black's pieces are well coordinated to 
+catch up with the White pawns in the centre. } 19. Nb3 Qf7 20. Na5 Rfd8 
+{ Always a difficult question: Which rook belongs on d8? 20 ... Rad8 seems 
+playable as well, to keep the other rook at f8 and try for ... f5-f4. } 
+21. a4 Rd7 { 21 ... Rac8 was better, to stop the advance b4-b5. } 22. b5 
+axb5 23. axb5 Rc7 24. c5 { Maybe too hasty. Rebel's choices 24 Qb3 or 24 
+bxc6 come into consideration. } 24... cxb5 25. Bxb5 Rcc8 26. Qe2 Nd5 27. 
+Nc4 { White has the better chances now, although the situation is still 
+pretty tense. } 27... Be7 28. Ne5 Qf6 { Moving the queen to h6 is not such 
+a good idea. 28 ... Qf8 seems better. } 29. Bc4 Qh6 30. h4 Kh8 { A mistake, 
+losing a pawn. The logical follow-up after moving the queen to h6 would 
+have been the sharp 30 ... g5!? I think this would have given Anand a tough 
+time. } 31. Bc1 { A very strong move. Now after 31 ... Qf6 32 Rxa8 Rxa8 
+33 Qb2 Black will lose the b7-pawn. } 31... Rxa1 32. Bxh6 Nc3 33. Rxa1 
+{ Vishy misses the easy 33 Bxg7+, winning a pawn and probably the game. 
+} 33... Nxe2+ 34. Bxe2 gxh6 35. Ra7 { Now White hasn't much anymore. Better 
+is 35 Rb1 or even 35 Rd1 (proposed by Rebel). } 35... Bf6 36. Rxb7 Bxe5 
+37. dxe5 Rxc5 38. Re7 Bd5 39. Rd7 Bg8 { Forces the draw. } 40. Re7 Bd5 
+41. Rd7 Bg8 42. Re7 Bd5 { Draw by repetition. Actually I claimed the draw 
+after White's last move 42 Re7, stating that the computer was going to 
+play 42 ... Bd5, leading to the move-repetition. Anand accepted. 1/2-1/2 
+} 1/2-1/2
+
+[Event "game-7 (40/2:00 all 1:00)"]
+[Site "8 game match"]
+[Date "1998.07.22"]
+[Round "?"]
+[White "Anand,V"]
+[Black "Rebel10 (exp)"]
+[Result "1/2-1/2"]
+[WhiteElo "2795"]
+[BlackElo "?"]
+[ECO "D07"]
+
+1. d4 d5 2. c4 Nc6 { I chose this opening because I wanted an unbalanced 
+game for Rebel, relying on the surprise value. Playing a Queen's Indian 
+or a Queen's gambit instead, was probably exactly Anand was hoping for. 
+He knows too much about this opening, so lets play unorthodox! } 3. e3 
+{ A small success: Anand avoids the main theoretical lines, starting with 
+3 cxd5, 3 Nc3 or 3 Nf3. } 3... e5 4. Nf3 Bg4 5. Nc3 { Rebel had 5 Qb3 and 
+5 dxe5 in its book. Now it had to think for the first time. } 5... exd4 
+6. Nxd5 Nf6 7. Qb3 Bxf3 8. gxf3 Rb8 { White has the two bishops and is 
+probably better here, but I liked the course of the game sofar. It's no 
+quiet position, in which the number 2 in the world can play positionally. 
+} 9. Bd2 Bd6 10. O-O-O O-O { I was very satisfied with the outcome of the 
+opening: Rebel has a solid position, with no weaknesses and a clear aim: 
+Attack the White king. } 11. Kb1 { The tournament bulletin condemns this 
+move, claiming it's a routine move. They propose 11 e4 instead. } 11... 
+Nxd5 12. cxd5 Ne5 { Nicely played by Rebel. Of course 13 exd4 wins a pawn, 
+but after 13 ... Ng6 Black controls f4 and the White pawns are very weak. 
+} 13. Be2 Re8 14. h4 { To push the pawn to h5, after which exd4 becomes 
+a threat (the Black knight cannot go to g6 anymore). } 14... c5 { Starting 
+the counterattack and defending the pawn on d4. } 15. f4 Nd7 16. Bf3 { 
+Supporting the advance e3-e4. White's plan is to get the pawns e4, f4 and 
+d5 rolling. Black attacks on the queen's side. } 16... b5 { There we go. 
+I began to like the Black position more and more. I guess Vishy wanted 
+to have a much more quiet game today! } 17. Qd3 Qf6 { A nice place for 
+the queen, also stopping the advance e3-e4 because of the pressure on f4. 
+} 18. Bc1 dxe3 19. fxe3 c4 20. Qc2 Nc5 21. h5 Nd3 { For the second time 
+this match Rebel gets an octopus on d3. See also game 2. } 22. Rxd3 { Rebel 
+didn't expect this exchange sac, but I was sure Anand would play this. 
+It almost came without thinking. In return White gets two bishops and a 
+pawn. For a moment Black's attack is gone and he has to concentrate on 
+the White pawnroller in the centre. } 22... cxd3 23. Qxd3 Rec8 { Well played. 
+Rebel finds a way to bring new life into the Black attack. } 24. Bd2 b4 
+{ Keeping the bishop away from c3. } 25. Be4 Qh6 { The only good move. 
+25 ... h6 was my first impression, but then 26 Bf5  rook moves 27 e4 comes 
+and the pawns go forward. White is better in that case. } 26. Bg2 { Criticised 
+by Anand after the match. He underestimated Black's 27th. On the other 
+hand it is difficult for White to find a proper plan. His pawns are still 
+not able to move. } 26... Rc7 27. Rf1 b3 { Here it is. Now Anand was visibly 
+getting nervous, as Black's attack suddenly is very strong. The natural 
+28 a3 would allow the black rook to come to c2, and also sacrifices like 
+Bxa3 are hanging in the air. } 28. e4 { There is no way back! Now we get 
+a very, very interesting game. } 28... bxa2+ 29. Ka1 { Of course any computer 
+would play 29 Kxa2 here, which is very bad. The White king uses the black 
+a2-pawn as a shelter. After Kxa2 the a-file would be wide open to the black 
+attack. } 29... Rcb7 30. Bc1 Bc5 { A crushing move. The idea is ... Rb3, 
+... Qb6 and ... Bd4 and White is going to get crushed on b2. Rebel's evaluation 
+now showed a big advantage to Black. } 31. e5 { Trying to shut the door 
+to b6 by means of d5-d6. } 31... Rb3 32. Qc2 Bd4 { If 32 ... Qb6, then 
+White has the defence 33 d6 Bd4 34 d7! } 33. d6 Bxb2+ { Too early! After 
+the game we found out that Rebel could have won with the brilliant 33 ... 
+Qe6! 34 Bc6 Rc3!! 35 bxc3 Qc4! On my Pentium 200 Mhz MMX Rebel 9 needs 
+around 11 minutes to find this move. } 34. Bxb2 Rxb2 35. Qxb2 Rxb2 36. 
+Kxb2 g5 { A very surprising move, but Rebel saw that after the normal 36 
+... Qxh5 White has 37 Rc1, with back rank problems. Analysis after the 
+game confirmed that there is no win for Black. } 37. Bf3 { Well played. 
+Anand finds the line that secures a draw. } 37... gxf4 38. Rd1 Qe6 39. 
+d7 { The point. Anand's passed d7-pawn is a monster, killing all Black's 
+hopes. } 39... Qxe5+ 40. Kxa2 Qa5+ { As I saw absolutely no way to make 
+progress (Anand looked convinced, too), I offered a draw. Anand accepted 
+and said after the last game the position is drawn. A very exciting game, 
+one to be very proud of. Rebel played great chess IMO.  1/2-1/2 } 1/2-1/2
+
+[Event "game-8"]
+[Site "8 game match"]
+[Date "1998.07.23"]
+[Round "?"]
+[White "Rebel10 (exp)"]
+[Black "Anand,V"]
+[Result "0-1"]
+[WhiteElo "?"]
+[BlackElo "2795"]
+[ECO "E12"]
+
+1. d4 { A difficult choice. From a computer's point of view 1 e4 is the 
+most likely choice to be played, but I like surprises and I had something 
+in mind. } 1... Nf6 2. c4 e6 { Whoops, didn't count on that one. In the 
+specially prepared openingbook I counted on the Grunfeld, the Queen's Gambit 
+Accepted and the Slav. Also the Queen's Indian was prepared, but less thoroughly 
+than the other openings. } 3. Nf3 b6 4. a3 { During the game I wished I 
+had chosen 4 g3 instead. But 4 a3 is not bad at all, leading to a lively 
+game. The move is still popular and 4 g3 leads to a much more quiet game. 
+} 4... Bb7 5. Nc3 d5 6. cxd5 Nxd5 7. Qc2 Nxc3 8. bxc3 Nd7 9. e4 c5 10. 
+Bf4 Qc8 { Out of book. Rebel only knows 10 ... Be7 and 10 ... cxd4. I must 
+confess that I thought that 10 ... Qc8 was a novelty, because I had never 
+seen it before. } 11. Bb5 { Heavily criticised, because the bookmove 11 
+d5 scored a clear 3-0 for White recently. But this is nonsense IMO: A great 
+player like Anand would NEVER play 10 ... Qc8 if this can be refuted by 
+11 d5. Anand confirmed after the game that Rebel's move 11 Bb5 is a good 
+one. } 11... a6 12. Bxd7+ Qxd7 13. Ne5 Qc8 { Rebel expected 13 ... Qd8 
+14 Rd1. } 14. Qd3 { An interesting move. First Rebel wanted to play 14 
+Nc4, but the reply 14 ... Qc6 is sufficient in that case. } 14... b5 { 
+Stops 15 Nc4, but overlooks White's next move. Maybe it was better to complete 
+development first. } 15. Qf3 { Very surprising! The main idea is 15 ... 
+Be7? 16 Bg5! It is very difficult to find a good move for Black here. } 
+15... Bd6 { A brilliant solution. Anand gives some material to reach an 
+unclear ending. Other moves have been analysed, but all seem insufficient. 
+All in all anand used about 20 minutes to come to this decision. Again 
+no quiet game! } 16. Nxf7 { Immediately indicating an evaluation of +2, 
+but this is far too optimistic! } 16... Bxf4 17. Nxh8 Qc7 18. Qh5+ { Less 
+good is 18 g3 Bh6! Black plans 19 ... 0-0-0 20 Nf7 Rf8. } 18... g6 19. 
+Nxg6 hxg6 20. Qxg6+ Qf7 21. Qxf7+ Kxf7 { So White has rook + 3 pawns for 
+2 bishops. But one pawn will fall (d4 is weak) and it is not easy to get 
+the pawns on the king's side going. According to Anand the ending is unclear. 
+Most chess programs, though, still think White is clearly better. } 22. 
+g3 { Rebel was debating between this move and 22 f3. After 22 g3 the move 
+22 ... Bxe4?? fails to 23 f3 Bxf3 24 Rf1 winning a piece. } 22... Bh6 23. 
+f3 cxd4 24. cxd4 Rc8 { Taking control of the c-file. Because of the weaknesses 
+on d4 and a3, Black is always able to win back one pawn. } 25. h4 { This 
+is a clear mistake. Anand indicated after the game that 25 Ke2 should be 
+played, with a very unclear endgame. } 25... Rc2 { This rook is seriously 
+hampering White's game. } 26. g4 Be3 27. h5 Kg7 { Stopping the pawns. Note 
+how useless the White king's side pawns are. } 28. Rd1 a5 { Planning b5-b4 
+creating a strong passed pawn. White has to activate the h1-rook quickly, 
+or else it is over. } 29. d5 exd5 30. Rh3 { Not a nice move, but it contains 
+a little trick. Rebel first wanted to play the normal 30 exd5, but then 
+30 ... b4, or first 30 ... Ba6 followed by 31 ... b4 would have been decisive. 
+} 30... b4 31. axb4 axb4 32. f4 { Here it is. White finally activates his 
+unfortunate rook. The tactical point is 32 ... d4?? 33 Rxe3 dxe3 34 Rd7+. 
+} 32... Bf2+ 33. Kf1 Bc5 { The cleanest way. } 34. Ke1 d4 { Creating a 
+second passed pawn. Because the White pawns cannot accomplish anything, 
+the game is over. } 35. e5 Rc3 { Securing the further advance of the pawns. 
+} 36. Rh2 b3 37. h6+ Kh7 { Here I resigned the game before Rebel could 
+play 38 Rb2. White's game is hopeless. 0-1 } 38. Rb2 0-1
+
+[Event "Dortmund SuperGM"]
+[Site "?"]
+[Date "2000.??.??"]
+[Round "?"]
+[White "Bareev, Evgeny"]
+[Black "Comp Deep Junior"]
+[Result "1/2-1/2"]
+[ECO "D45"]
+[WhiteElo "2700"]
+[Annotator "JvR"]
+[PlyCount "146"]
+[EventDate "2000.??.??"]
+
+{Deep Junior participated in a super tournament of classical chess.} 1. c4 e6
+2. Nc3 d5 3. d4 c6 4. e3 Nf6 5. b3 {
+Bareev wants to play a closed position against the computer.} 5... Nbd7 6. Bb2
+Bd6 7. Nf3 O-O 8. Bd3 Qe7 9. O-O $2 {
+A strategic error hands the initiative to Black.} 9... e5 $1 10. Be2 (10. dxe5
+$2 Nxe5 11. Nxe5 Qxe5 {leads to an attack.}) 10... e4 11. Nd2 a6 12. cxd5 $6 ({
+A lesser evil is} 12. c5 Bc7 13. b4 Ne8 14. f4 exf3 15. Rxf3 Ndf6 16. h3) 12...
+cxd5 13. b4 $2 {Maybe Bareev worried about an attack on the kingside. It does
+not justify the sacrifice sufficiently.} 13... Bxb4 14. Qb3 Nb8 15. Na4 Qd6 16.
+Rfd1 Nc6 17. Bc3 Bxc3 18. Qxc3 Bg4 19. Bxg4 Nxg4 20. Nf1 b5 21. Nc5 $1 Rfc8 22.
+Rdc1 h5 $2 {Junior shows no understanding of prophylaxis during the middle
+game. It allows a blockade of the queenside.} (22... b4 23. Qd2 a5 {
+attacks on the queenside.}) 23. Rc2 Nf6 24. Rac1 Ne8 25. a4 b4 26. Qe1 h4 27.
+h3 Qh6 28. Nb3 Rc7 29. Qe2 Raa7 30. Qg4 Kf8 31. Nfd2 Ne7 32. Rxc7 Rxc7 33. Nc5
+Ra7 34. Ndb3 Kg8 35. Qe2 Nc7 36. a5 Nb5 37. Qd2 Nc6 38. Na4 Qe6 ({Sources give
+} 38... Qf6 {but that would leave pawn d5 unprotected during the next moves.})
+39. Rc5 Rc7 40. Qe2 g6 41. Qc2 Kg7 42. Qe2 Kh8 43. Qc2 Qd6 44. Qe2 f5 45. Qd1
+Kh7 46. Qe2 Rf7 47. f4 exf3 48. Qxf3 Ne7 49. Qf4 Qxf4 50. exf4 Rf6 51. Nb6 Rd6
+52. Kf2 Kh6 53. Nc8 Nxc8 54. Rxc8 Kg7 55. Ke3 Re6+ 56. Kd3 Re1 57. Rc1 Rxc1 58.
+Nxc1 Kf6 {The king is needed for the defence of pawn d5.} 59. Na2 $1 {
+Bareev starts a brilliant defence.} 59... b3 60. Nb4 Ke6 61. Nxa6 Kd6 62. Nb4
+Nxd4 $1 63. Kc3 Ne2+ 64. Kxb3 Nxf4 65. a6 Kc7 66. Kc3 g5 67. Kd4 g4 68. Kc5 $1
+({The trap} 68. Nxd5+ $4 Nxd5 69. Kxd5 f4 70. Ke4 f3 {is avoided.}) 68... d4 $1
+69. Kxd4 Nxg2 70. Nd3 $1 gxh3 71. Nf2 h2 72. Ke5 f4 73. Ke4 Kb6 (73... Kb6 74.
+Kf3 h3 75. Kg4 {The remaining pawns will disappear from the board.})
+ 1/2-1/2
+
+[Event "Brains in Bahrain"]
+[Site "Manama BAH"]
+[Date "2002.10.04"]
+[Round "1"]
+[White "DEEP FRITZ"]
+[Black "Kramnik, V."]
+[Result "1/2-1/2"]
+[ECO "C67"]
+[BlackElo "2807"]
+[PlyCount "55"]
+[EventDate "2002.10.04"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 {I suppose this opening was no surprise.
+Kramnik wants the quiet life and Fritz has had trouble in this line before.} 4.
+O-O Nxe4 5. d4 Nd6 6. Bxc6 dxc6 7. dxe5 Nf5 8. Qxd8+ Kxd8 9. Nc3 h6 10. b3 Ke8
+11. Bb2 {All typical Berlin Defence fare. White has all his pieces out and
+Black does not a lot} 11... Be7 {
+Designed to take Fritz out of book which it appeared to do} 12. Rad1 a5 {
+Although this is the first novelty but again a normal move.} 13. a4 h5 {
+Nigel Short asked Vlad about this - he did not want to answer in detail. It
+just does not matter if you lose a tempo in this line hesaid} 14. Ne2 Be6 15.
+c4 {Fritz wanted to prevent ...Bd5 but this reminded me of when Vishy feasted
+on 'yoghurt' against Fritz in a Berlin Defence and captured all three pawns
+with his light squared bishop.} 15... Rd8 16. h3 b6 17. Nfd4 Nxd4 18. Nxd4 c5 (
+18... Bd7 19. f4 (19. Rd3 c5 20. Nb5 Bxb5 21. Rxd8+ Kxd8 22. axb5 Kd7 23. f4 f5
+{Looks quite OK for Black as well}) 19... Bc5 {
+heading for opposite bishops and the Bd7 could come in handy later}) 19. Nxe6
+fxe6 20. Rxd8+ Kxd8 21. Bc1 Kc8 22. Rd1 Rd8 {I am sure Kramnik has examined
+this kind of ending in detail but it still requires accuracy. Vlad said he
+felt it was a draw now} 23. Rxd8+ Kxd8 24. g4 {Another idea was to try and
+play g4 and recapture with the king because then the white bishop can
+manoeuvre to h4 and force an exchange into a won K+P ending.} (24. f4 {0} 24...
+Ke8 25. Kf2 Kf7 26. Kf3 Bd8 27. g4 hxg4+ $5 (27... g6 28. Ke4 Be7 {The line I
+ind troubling is 29.gxh5 and 30.f5, this needs more analysis but I have not
+found a way through so far.} 29. f5 (29. gxh5 gxh5 30. f5 Bh4 31. f6 Be1 32.
+Kf4 Bc3) 29... hxg4 30. hxg4 (30. f6 gxh3) (30. fxg6+ Kxg6 31. hxg4 Bh4 $11)
+30... gxf5+ 31. gxf5 Bh4 {and I think this is holding.}) 28. Kxg4 Be7 29. Be3
+Bd8 30. Bf2 c6 31. Bh4 Bc7 32. Kh5 {And it's winning.}) 24... g6 (24... hxg4
+25. hxg4 g6 26. f4 Ke8 27. Kf2 Kf7 28. Kg3 Bd8 29. Kh3 Be7 30. Be3 Bd8 31. Bf2
+Be7 (31... c6 $5 32. Bh4 Bc7 33. Bf6 $16) 32. Bh4 Bxh4 33. Kxh4 Kg7 34. Kg5 $18
+) 25. h4 $2 {
+This takes the pressure off but Fritz thought (wrongly) it was setting a trap}
+25... hxg4 (25... Bxh4 {Also draws but why complicate ? - Kramnik} 26. g5 Kd7
+27. Be3 Kc6 28. Kg2 Kd7 29. Kh3 Bxf2 30. Bxf2 Kc6 $11) 26. Bg5 Bxg5 27. hxg5
+Ke8 28. Kg2 1/2-1/2
+
+[Event "Brains in Bahrain"]
+[Site "Manama BAH"]
+[Date "2002.10.06"]
+[Round "2"]
+[White "Kramnik, V."]
+[Black "DEEP FRITZ"]
+[Result "1-0"]
+[ECO "D27"]
+[WhiteElo "2807"]
+[PlyCount "113"]
+[EventDate "2002.10.04"]
+
+1. d4 d5 2. c4 dxc4 {Computers like to open files but this is an opening that
+Vlad really has had great success with.} 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. O-O
+a6 7. dxc5 {As played with success against Kasparov.} 7... Qxd1 8. Rxd1 Bxc5 9.
+Kf1 $1 {What a clever idea to get the computer out of book and it works. It
+later turns out that the king is slightly vulnerable on f1 and h2 is
+undefended but this was naturally quite impossible to foresee.} (9. Nbd2 {0}
+9... Nbd7 10. Be2 b6 {Kramnik v Kasparov game 4 London 2000.}) 9... b5 {
+I don't like this because there is no need for it now.} (9... Nbd7 {
+is sounder and less weakening.}) 10. Be2 Bb7 11. Nbd2 Nbd7 12. Nb3 {
+A bit unusual.} (12. b3 {was standard, so standard Fritz short circuits. I
+wonder if Kramnik had this position on the board in advance. After the game he
+denied this.}) 12... Bf8 $4 {Fritz just thought Kramnik had to play 13.Nbd2
+now when it would merrily play 13...Bc5 Of course 13...Be7 was more sensible}
+13. a4 {With the Black rook on h8 a long way from the action its time to
+attack the weak queenside pawns.} 13... b4 (13... bxa4 14. Rxa4 Nc5 15. Nxc5
+Bxc5 16. Bd2 O-O 17. Rda1 Rfd8 18. Be1 {and the pawn on a6 is going.}) 14. Nfd2
+{The standard move to head for the newly available c4 square.} 14... Bd5 15. f3
+{To play e4 and kick the bishop.} 15... Bd6 16. g3 e5 $1 {Its vital to keep
+the bishop shadowing the Nb3 and limit those white knights which are poised to
+invade.} 17. e4 Be6 18. Nc4 Bc7 (18... Be7 19. Nba5 O-O 20. Nc6 Rfe8 21. Bd2 {
+and the queenside pawns are very weak again.}) 19. Be3 a5 (19... O-O 20. Nc5
+Nxc5 21. Bxc5 Rfb8 22. Bd6 Bxd6 23. Rxd6 $16) 20. Nc5 {
+
+Now Fritz plays quite brilliantly to find a defence.} 20... Nxc5 21. Bxc5 Nd7 {
+Only move.} 22. Nd6+ Kf8 $1 (22... Kd8 23. Rac1 (23. Nxf7+ Bxf7 24. Bb5 Be6 25.
+Rxd7+ Bxd7 26. Rd1 Kc8 27. Rxd7 {
+Is exactly how not to play against Fritz even if its quite strong !}) 23...
+Nxc5 $16 24. Nxf7+ Ke7 25. Rxc5 Bb6 26. Rc6 $16) 23. Bf2 {
+At this stage it was hard to imagine the computer surviving.} (23. Nb5+ {
+At first sight Nigel Short thought this was winning. I couldn't see why not so
+in the end we switched on Franz Morsch's Fritz to find out!!} 23... Nxc5 24.
+Nxc7 Rc8 25. Rac1 {Looks absolutely crushing but...} 25... Bh3+ 26. Ke1 Rxc7
+27. Rd8+ Ke7 28. Rxh8 Nd3+ {Survives.}) 23... Bxd6 24. Rxd6 Ke7 25. Rad1 Rhc8
+26. Bb5 {
+and now we were expecting 26...Rc7 and Fritz grovels till it dies but...} 26...
+Nc5 $3 (26... Rc7 27. R1d2 Rac8 28. Ra6 $16 Nc5 29. Bxc5+ Rxc5 30. Rxa5) 27.
+Bc6 {They think its all over..} 27... Bc4+ $1 {An amazing shot.} 28. Ke1 Nd3+
+29. R1xd3 Bxd3 30. Bc5 Bc4 (30... Bc2 31. Kd2 b3 32. Rd5+ Kf6 33. Bxa8 Rxa8 34.
+Rd6+ Kg5 35. h4+ Kh5 36. Bb6 {And a5 falls and White should win.}) 31. Rd4+ {
+Kramnik forces a rook and pawn endgame.} 31... Kf6 32. Rxc4 Rxc6 33. Be7+ Kxe7
+34. Rxc6 Kd7 35. Rc5 f6 36. Kd2 {After this forcing sequence its hard to see a
+good plan for Fritz even though material is level. Nearly all strong human
+players would try to give up a pawn to become active and set the opponent
+practical problems but not Fritz, he wants to hang on to his pawns and so
+Kramnik just expertly improves his position.} 36... Kd6 37. Rd5+ Kc6 38. Kd3 g6
+(38... Ra7 39. Kc4 Ra8 40. h4 Ra7 41. h5 h6 42. f4 {
+Opening a second front and straining the defence to the limit.} 42... exf4 43.
+gxf4 Re7 44. e5 fxe5 45. fxe5 Kb6 46. Rd6+ Kc7 47. Kd5 {wins.}) 39. Kc4 g5 {
+Fritz had now seen that f4 would hurt but this does not stop it. If anything
+it might encourage the sequence f4 gxf4 gxf4 exf4 Rf5 but Kramnik just prefers
+to let the machine suffer a bit more.} 40. h3 h6 41. h4 $1 gxh4 42. gxh4 Ra7
+43. h5 {Now everything is perfect. Fritz can not afford the waiting move Ra7
+because Rd8-h8 wins so Kramnik loses a move to set up Zugszwang.} 43... Ra8 44.
+Rc5+ Kb6 45. Rb5+ Kc6 46. Rd5 $1 {Your move my friend.} 46... Kc7 (46... Ra7
+47. Rd8 Rg7 (47... Rf7 48. Rc8+ Kb6 49. Kd5 Rd7+ 50. Ke6 Rd2 51. Kxf6 Rxb2 52.
+Kxe5 b3 53. f4 $16) 48. Rf8 $16) 47. Kb5 b3 (47... Ra7 48. Rc5+ Kd7 49. Kb6 $16
+) 48. Rd3 Ra7 49. Rxb3 Rb7+ 50. Kc4 Ra7 51. Rb5 Ra8 52. Kd5 Ra6 53. Rc5+ Kd7
+54. b3 Rd6+ 55. Kc4 Rd4+ 56. Kc3 Rd1 57. Rd5+ {57...Rxd5 58.exd5 Kd6 59.b4
+Kxd5 60.bxa5 f5 61.a6 Kc6 62.Kc4 Kb6 63.Kd5 wins 57...Rxd5 58.exd5 Kd6 59.b4
+
+axb4 60.Kxb4 Kxd5 61.Kb5 f5 62.a5 e4 63.a6 queens with check} 1-0
+
+
+[Event "Brains in Bahrain"]
+[Site "Manama BAH"]
+[Date "2002.10.08"]
+[Round "3"]
+[White "DEEP FRITZ"]
+[Black "Kramnik, V."]
+[Result "0-1"]
+[ECO "C45"]
+[BlackElo "2807"]
+[PlyCount "101"]
+[EventDate "2002.10.04"]
+
+1. e4 e5 2. Nf3 Nc6 3. d4 {Avoiding Kramnik's indestructible Berlin! Rumour
+has it that, right before he left Bahrain, Nigel Short actually recommended
+trying the Scotch to the Fritz team during their arbiter-supervised 'opening
+adjustment' session, in an attempt to catch Kramnik off guard.} 3... exd4 4.
+Nxd4 Bc5 5. Nxc6 Qf6 6. Qd2 dxc6 7. Nc3 Ne7 {Oddly enough, Kramnik has adopted
+Short's favoured reply to the Scotch, according to Mig Greengard.} 8. Qf4 Be6 {
+allowing White to double Black's kingside pawns as well. Kramnik realizes that
+the exchange of queens is worth this, considering that Fritz would require
+quite a bit of strategic savoirfaire in order to exploit the resulting
+irregular pawn structure.} 9. Qxf6 gxf6 10. Na4 Bb4+ {
+a zwischenzug that aims to deprive the wayward knight of any retreat squares.}
+11. c3 Bd6 12. Be3 {avoids losing the knight to 13...b5 by creating an outpost
+for it on c5, but Black competes with} 12... b6 13. f4 {White grabs some more
+space on the kingside and anticipates Black's f5 pawn advance.} 13... O-O-O 14.
+Kf2 {Preparing to advance his c-pawn in order to reactivate the knight and get
+a nice hold on the white squares.} ({If} 14. c4 {then} 14... Bb4+) 14... c5 {
+Black would like to bring his own knight into play with this.} 15. c4 Nc6 16.
+Nc3 f5 {the long-awaited pawn thrust contests White's dominant central pawn
+structure. Especially with players like Kramnik, the timing of such pawn
+thrusts is crucial.} 17. e5 Bf8 {planning Bg7 and then f6, hitting White's
+spearhead on e5. At this point, the Fritz team were quite pleased with their
+program's opening play. White does have the more favourable position.} 18. b3 {
+this exposes the long a1-h8 diagonal to Black's intended Bg7 and pawn f6.
+Kramnik took over a half-hour, and some nicotine, to produce the following
+masterstroke:} 18... Nb4 $1 19. a3 $2 {This further weakens White's queenside
+structure. Later, Kramnik said that he was sure of the win after this move.}
+19... Nc2 20. Rc1 Nxe3 21. Kxe3 Bg7 22. Nd5 c6 ({If} 22... Bxd5 {then} 23. cxd5
+Rxd5 24. Bd3 {White regains his pawn and has a clear endgame advantage thanks
+to his more active pieces and superior pawn structure.}) 23. Nf6 {to stop Black
+'s f6 push, but this also neutralises White's pawn structure advantage on the
+kingside.} 23... Bxf6 24. exf6 Rhe8 {Black's superiority is becoming clear now.
+} 25. Kf3 Rd2 26. h3 Bd7 27. g3 Re6 {snapping up the defenceless pawn on f6.}
+28. Rb1 {passive, but it's hard to see anything else} (28. g4 $5 Rxf6 {
+This does allow White just enough time to slightly activate his pieces.}) 28...
+Rxf6 29. Be2 Re6 30. Rhe1 Kc7 31. Bf1 b5 32. Rec1 (32. cxb5 cxb5 {
+and now White has to reckon with the threat of Bc6++.}) 32... Kb6 33. b4 cxb4
+34. axb4 {Now Black has a legitimate Queenside majority, of which he takes
+full advantage.} 34... Re4 35. Rd1 Rxd1 36. Rxd1 Be6 37. Bd3 Rd4 38. Be2 Rxd1
+39. c5+ Kb7 40. Bxd1 a5 41. bxa5 Ka6 42. Ke3 Kxa5 43. Kd4 b4 44. g4 fxg4 45.
+hxg4 b3 46. Kc3 Ka4 47. Kb2 f6 48. Bf3 Kb5 {Protects his own pawn on c6 and
+secures the capture of the white one on c5. With two connected passed pawns,
+all White can play for is heart failure.} 49. g5 f5 50. Kc3 Kxc5 51. Be2 {
+was played over the board, but the Fritz team chose not to wait for Black's
+response, demonstrating the only legal method of taking a move back.} 0-1
+
+[Event "Brains in Bahrain"]
+[Site "Manama BAH"]
+[Date "2002.10.10"]
+[Round "4"]
+[White "Kramnik, V."]
+[Black "DEEP FRITZ"]
+[Result "1/2-1/2"]
+[ECO "D34"]
+[WhiteElo "2807"]
+[PlyCount "81"]
+[EventDate "2002.10.04"]
+
+1. d4 d5 2. c4 e6 3. Nf3 c5 {Dr. Siegbert Tarrasch's answer to the Queen's
+Gambit. Once again today, Fritz chooses an opening line which allows for piece
+activity.} 4. cxd5 exd5 5. g3 {The legendary Akiba Rubinstein found this most
+effective move against the Tarrasch Defence in the early 20th century. The
+fianchettoed bishop is to exploit the potentially-isolated d5-pawn.} 5... Nc6
+6. Bg2 Nf6 7. O-O Be7 8. Nc3 O-O 9. Bg5 cxd4 10. Nxd4 h6 11. Bf4 Bg4 12. h3 Be6
+13. Rc1 Re8 14. Nxe6 fxe6 15. e4 {All theory. With this pawn break, White
+contests Black's center pawns, aiming to open lines for his two bishops and
+perhaps an exchange of queens.} 15... d4 16. e5 dxc3 17. exf6 Bxf6 18. bxc3
+Qxd1 19. Rfxd1 {This has all been play with which Kramnik is apparently
+familiar. Up to this point, he's used up very little time. White has a nice
+advantage here. His rook is sole commander of the d-file, and his laser-beam
+bishops penetrate the heart of Black's queenside. The only disadvantage (other
+than those loose queenside pawns) is that this is exactly the kind of open
+position in which Fritz has little trouble finding the best moves.} 19... Rad8
+20. Be3 Rxd1+ 21. Rxd1 Bxc3 22. Rd7 {Kramnik spent 31 minutes before
+committing to this move. The c3-pawn would have been too much of a burden to
+protect. In any case, with his rook on the seventh, White looks forward to
+regaining his pawn.} 22... Rb8 {I saw Frans Morsch shake his head at this one.
+Similar to Fritz's Rb1 yesterday, this move is too passive.} (22... Re7 $4 23.
+Bxc6) 23. Bxc6 bxc6 24. Rxa7 Rb2 {'Rooks behind pawns!' By moving his own rook
+to the second rank, Black aims to annoy the a-pawn and also keep the white
+king at bay.} 25. Ra6 Bd2 $1 {Fritz gladly gives up a pawn to exchange bishops.
+The machine here sees that the resulting position is a draw.} 26. Rxc6 {
+White wins if he could trade rooks, thanks to his passed rook pawn. By
+allowing the bishop exchange, however, Kramnik also allows the draw.} ({
+The masters here were expecting} 26. Bd4 Rb4 27. Be5 Re4 28. f4 g5 29. Rxc6
+gxf4 30. gxf4 Bxf4 31. Bxf4 Rxf4 32. Rxe6 $11) 26... Bxe3 27. fxe3 Kf7 {
+At this point, with his king confined to the first rank, White hasn't the
+slightest hope for a win. The extra rook pawn means little, as it is under
+easy surveilance by Black's active rook. Of course, Kramnik has to play on for
+another 14 moves, just in case...} 28. a4 Ra2 29. Rc4 Kf6 30. Kf1 g5 31. h4 h5
+32. hxg5+ Kxg5 33. Ke1 e5 34. Kf1 {
+The king can't stray too far from his lone pawns.} 34... Kf5 {
+It's about that time, isn't it?} 35. Rh4 Kg6 36. Re4 Kf5 37. Rh4 Kg5 38. Kg1
+Kg6 39. g4 hxg4 40. Rxg4+ Kf5 41. Rc4 {Now that clocks have gained an extra
+hour each, Kramnik is satisfied that the machine isn't likely to err.} 1/2-1/2
+
+[Event "Brains in Bahrain"]
+[Site "Manama BAH"]
+[Date "2002.10.13"]
+[Round "5"]
+[White "DEEP FRITZ"]
+[Black "Kramnik, V."]
+[Result "1-0"]
+[ECO "D57"]
+[BlackElo "2807"]
+[PlyCount "69"]
+[EventDate "2002.10.04"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. Bg5 {Having faced accusations of
+playing too many Kasparov openings, Deep Fritz adopts a Karpov favourite today.
+} 5... h6 6. Bh4 O-O 7. e3 Ne4 {The Lasker variation.} 8. Bxe7 Qxe7 9. cxd5
+Nxc3 10. bxc3 exd5 11. Qb3 Rd8 ({probably better than} 11... c6 {
+which restricts both of Black's minor pieces.}) 12. c4 dxc4 {Instead of this,
+the GM team of commentators were examining what looks like a forced queen
+exchange.} (12... Nc6 13. cxd5 Qb4+) 13. Bxc4 Nc6 14. Be2 {This avoids the
+possibility of losing a tempo and the capture of White's good bishop after.}
+14... b6 15. O-O Bb7 16. Rfc1 Rac8 {Preparing for an eventual ...c5 pawn break
+to butt heads with White's rock-solid d-pawn.} 17. Qa4 Na5 18. Rc3 c5 19. Rac1
+cxd4 20. Nxd4 Rxc3 21. Rxc3 Rc8 22. Rxc8+ Bxc8 {Entering this endgame, Black's
+ace-in-the-hole is his queenside pawn majority. This could materialize into a
+dreaded distant passed pawn, but only if Black trades off the pieces first!
+Currently, White's knight is powerfully centralised while the poor Black winny
+on a5 might as well be off the board.} 23. h3 g6 (23... Bd7 24. Qc2 Qd6 {
+enabling 25...Nc6 and preventing 25. Qc7 25.Qe4 Nc6 26.Bd3 Nxd4?? 27.Qa8+!})
+24. Bf3 Bd7 25. Qc2 Qc5 26. Qe4 Qc1+ 27. Kh2 Qc7+ {I suspect the purpose
+behind the queen checks was to help reach the time control.} 28. g3 Nc4 {
+the knight finally joins the battle.} 29. Be2 $1 Ne5 ({Excellent maneuvering
+by Fritz! It rightly anticipates the advance of Black's queenside pawns,
+beginning with} 29... b5 {to support the knight, but then} 30. a4 $1 a6 31.
+Qa8+ {nails it.}) 30. Bb5 $1 ({At this point, most humans- including the
+grandmasters here- would probably kick the knight with} 30. f4 {According to
+Frans Morsch, this move was what the machine was considering as its best
+option for a while, until it happened upon Bb5}) 30... Bxb5 31. Nxb5 Qc5 {
+Black cannot hold on to his a-pawn.} 32. Nxa7 Qa5 33. Kg2 Qxa2 34. Nc8 {
+In this position, Kramnik played the worst move of his world championship
+career.} 34... Qc4 $4 35. Ne7+ 1-0
+
+[Event "Brains in Bahrain"]
+[Site "Manama BAH"]
+[Date "2002.10.15"]
+[Round "6"]
+[White "Kramnik, V."]
+[Black "DEEP FRITZ"]
+[Result "0-1"]
+[ECO "E15"]
+[WhiteElo "2807"]
+[PlyCount "68"]
+[EventDate "2002.10.04"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 b6 {Fritz decides on the Queen's Indian Defence.} 4.
+g3 Ba6 5. b3 Bb4+ 6. Bd2 Be7 7. Bg2 c6 8. Bc3 {Forget the whole 'don't move
+the same piece twice' advice here. The dance of bishops is considered theory.}
+8... d5 9. Ne5 Nfd7 10. Nxd7 Nxd7 11. Nd2 O-O 12. O-O Rc8 13. a4 {
+Black's next move prepares to hit the d4-pawn with ...c5.} 13... Bf6 ({
+if immediately} 13... c5 {then} 14. cxd5 (14. a5 b5) 14... exd5 15. Bxd5 cxd4
+16. Bxd4 Nb8 17. e4 Bxf1 18. Nxf1 Nc6) 14. e4 c5 15. exd5 (15. e5 $2 cxd4)
+15... cxd4 {So far, so book.} 16. Bb4 Re8 17. Ne4 {Kramnik spent 42 minutes
+before making this move. It leads to some spectacular play.} 17... exd5 18. Nd6
+dxc4 {Deep Fritz was anticipating this and was willing to sacrifice the
+exchange for a super-strong d-pawn, but Kramnik had other ideas...} 19. Nxf7 $5
+{Spectacular! Before this move was played Deep Fritz was expecting 19. Bd5!
+and if 19...Ne5 20. f4! with a clear advantage to White.} ({
+Here's the actual Deep Fritz analysis:} 19. Bd5 Nc5 (19... Ne5 20. f4 Nd3 21.
+Bxf7+ Kf8 (21... Kh8 22. Bxe8) 22. Qh5 Nxb4 23. Bxe8) 20. Bxf7+ Kf8 21. Bxe8
+Qxd6 22. Bb5 Bxb5 23. axb5 $16 {
+With White's actual move, we're presented with the most fascinating king hunt.}
+) 19... Kxf7 20. Bd5+ Kg6 21. Qg4+ Bg5 22. Be4+ ({very interesting was} 22. f4
+h5 $1 23. Bf7+ Kxf7 24. fxg5+ Kg8 25. Qxh5 {
+threatening g6 and then Qh7 mate, but after} 25... Ne5 26. g6 Nxg6 27. Qxg6 Qd7
+{seems to hold for Black.}) 22... Rxe4 {
+Forced if Black wants to avoid a draw by repetition.} 23. Qxe4+ Kh6 (23... Kf7
+24. Qd5+ Kg6 25. Qe4+ {
+with the choice between perpetual check or the text move.}) 24. h4 Bf6 25. Bd2+
+g5 26. hxg5+ {Here, the Deep one took a deep think before committing to} 26...
+Bxg5 27. Qh4+ {At the time of playing 19.Nxf7, Kramnik had intended 27.Qe6+
+here, but then saw 27...Nf6 28. Qh3+ Kg6! 29. f4 Bh6 30.f5+ Kf7 and dismissed
+it for the text move (he was under time pressure). It turns out that the more
+complicated 27.Qe6+ would have resulted in better winning chances for White.
+Following is the actual analysis done by the commentary team, Deep Fritz, and
+Kramnik himself, enjoy:} (27. Qe6+ Nf6 28. Qh3+ Kg6 $1 {Kramnik showed that
+this move gives back the piece but wins for Black- see very bottom of this
+analysis.} (28... Nh5 29. f4 Bh4 30. bxc4 (30. g4 Ng3 (30... Kg7 31. bxc4) 31.
+f5+ Kg7 32. f6+ Bxf6 (32... Kh8 33. Qxh4 Ne2+ (33... Nxf1 34. Rxf1) 34. Kh2
+cxb3 (34... c3 $2 35. Bf4 Qf8 (35... Nxf4 36. Rxf4) 36. f7 Nxf4 37. Rxf4) 35.
+Qh6 Qc7+ (35... Qf8 36. f7) 36. Bf4 Qf7) 33. Qh6+ Kh8 34. Rxf6) 30... Nxg3 31.
+Be1 Nxf1 32. Bxh4 Qg8+ 33. Bg5+ Kg7 34. Re1 $1 Rc7 (34... Ne3 35. Qd7+ Kh8 36.
+Qxd4+ Qg7 37. Qxg7+ (37. Qxe3) 37... Kxg7 38. Rxe3 Rxc4 39. Re7+ Kg6 40. Rxa7
+Rxa4 41. Bd8 $11) 35. Qh6+ Kh8 36. Kxf1 Qxc4+ 37. Kg1 Qf7 $11 {Hodgson}) 29. f4
+Bh6 30. f5+ Kf7 $19 {Kramnik}) 27... Kg6 28. Qe4+ Kg7 {
+Black saves the king and keeps the piece, but the game isn't over yet.} 29.
+
+Bxg5 Qxg5 30. Rfe1 cxb3 31. Qxd4+ Nf6 32. a5 ({if} 32. Re7+ {then} 32... Kg6)
+32... Qd5 $1 {With his passed b-pawn 2 squares away from promotion, it is
+(finally) favourable for Fritz to trade queens.} 33. Qxd5 Nxd5 34. axb6 axb6
+0-1
+
+[Event "Brains in Bahrain"]
+[Site "Manama BAH"]
+[Date "2002.10.17"]
+[Round "7"]
+[White "DEEP FRITZ"]
+[Black "Kramnik, V."]
+[Result "1/2-1/2"]
+[ECO "E19"]
+[BlackElo "2807"]
+[PlyCount "56"]
+[EventDate "2002.10.04"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 b6 {
+Kramnik thinks he'll try the black side of the Queen's Indian today.} 4. g3 Bb7
+5. Bg2 Be7 6. O-O O-O 7. Nc3 Ne4 {Common theme in the Nimzo/Queen's Indian
+complex; Black aims to give White doubled pawns on the c-file.} 8. Qc2 {
+meets the threat and creates another.} 8... Nxc3 9. Qxc3 c5 {Such a central
+pawn thrust, contesting the d4-pawn, is almost always crucial for Black in
+Queen's pawn openings.} 10. Rd1 d6 11. b3 Bf6 {pinning} 12. Bb2 Qe7 13. Qc2 {
+unpinning} 13... Nc6 14. e4 e5 15. d5 Nd4 16. Bxd4 cxd4 {Here, Fritz creator
+Frans Morsch was worried. With this sort of closed position, the program
+cannot capitalize on its phenomenal tactical abilities and Kramnik has the
+opportunity to implement his superior strategic knowledge. The black pawn on
+d4 is strong. Not only because it's passed (with all the locked pawns around
+it, it's hard to imagine it advancing to queen), but also because it's solidly
+placed in the heart of White's camp, and hinders the White pieces.} 17. Bh3 {
+The king's bishop sees the light of day. Fritz played this instantly.According 
+to Alex Kure, the man in charge of the program's openings, Deep Fritz has
+roughly 1.9 million opening positions in its database, from 88,000 master
+games, plus a lot of analysis that's never been played before. All this
+amounts to about 150 megabytes on the hard drive.} 17... g6 18. a4 {
+White intends 19.a5 to open the file for his major pieces.} 18... a5 {
+The backward b6-pawn is actually quite safe from harm, thanks to the locked
+pawn structure.} 19. Rab1 Ba6 20. Re1 $2 {Useless.} ({
+Much more to the point was} 20. b4 {opening things up on the queenside.}) 20...
+Kh8 {Black takes his time to place all his pieces in preparation for a future
+central pawn break with ...f5.} 21. Kg2 $4 {These time-wasting moves are a
+great example of a computer's inability to handle such postions.} 21... Bg7 22.
+Qd3 Rae8 23. Nd2 Bh6 24. f4 $1 {The computer beats him to it! This makes the
+champ's pieces sweat for a bit, but leads to equality and, as Mig Greengard
+would put it, a "high chicken factor" draw in four more moves.} 24... Qc7 25.
+Rf1 Kg8 26. Rbe1 Qd8 27. Kg1 Bb7 28. Re2 Ba6 1/2-1/2
+
+[Event "Brains in Bahrain"]
+[Site "Manama BAH"]
+[Date "2002.10.19"]
+[Round "8"]
+[White "Kramnik, V."]
+[Black "DEEP FRITZ"]
+[Result "1/2-1/2"]
+[ECO "D68"]
+[WhiteElo "2807"]
+[PlyCount "41"]
+[EventDate "2002.10.04"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 c6 {Entering the Slav Defence, only to be
+transposed into something else in a few moves.} 5. Bg5 Be7 {Black avoids the
+nebulous strategic realms of the Slav, in which Kramnik happens to be a
+leading expert. Instead the Fritzer transposes back into the Queen's Gambit
+Declined.} 6. e3 O-O 7. Bd3 Nbd7 8. O-O dxc4 {The immortal Jose Raul
+Capablanca studied the position for a long time before finding this move in
+the QGD Orthodox variation. The idea is, due to his cramped (but sound)
+position, Black forces a series of exchanges that virtually neutralizes
+White's spacial domination.} 9. Bxc4 Nd5 {
+The dark-squared bishops must be exchanged.} 10. Bxe7 Qxe7 11. Rc1 Nxc3 12.
+Rxc3 {Recapturing with the rook saves a tempo.} ({The alternative recapture} 
+12. bxc3 {isolates the a-pawn, and the d4-pawn would still be vulnerable to
+the counter-thrusts ...e5 and ...c5.}) 12... e5 {
+With this, White must either exchange his pawn on d4 or isolate it.} 13. Bb3
+exd4 14. exd4 Nf6 15. Re1 Qd6 16. h3 {prevents ..,Bg4, obviously.} 16... Bf5 {
+The active rooks yield White some more activity, but his isolated d4-pawn
+could prove to be a burden later on. In return for slightly less active pieces,
+Black has no inherent weakness in his position. With a beautifully sound pawn
+structure, it would be hard for Kramnik to find a way to win out of this final
+game of the match.} 17. Rce3 Rae8 {The doubled rooks must not be allowed entry.
+} 18. Re5 Bg6 19. a3 {Probably with no purpose other than to provoke the
+computer into aggressively advancing, and thereby weakening, its queenside
+pawns.} 19... Qd8 20. Rxe8 Nxe8 21. Qd2 1/2-1/2
+
+[Event "Internet Match"]
+[Site "?"]
+[Date "2002.??.??"]
+[Round "?"]
+[White "Hiarcs 8"]
+[Black "Gulko, Boris"]
+[Result "1-0"]
+[ECO "A43"]
+[BlackElo "2600"]
+[Annotator "JvR"]
+[PlyCount "67"]
+[EventDate "2002.??.??"]
+
+{Each side starts with one hour and gets 10 seconds per move. Hiarcs plays in
+its hyper-modern mode.} 1. e4 d6 2. d4 Nf6 3. Nc3 g6 4. Nf3 Bg7 5. Be2 O-O 6.
+O-O c5 7. d5 Na6 8. Re1 Nc7 9. Bf4 b6 $6 ({Heroism shows} 9... b5 $1 10. Nxb5
+Nxe4 11. Nxc7 Qxc7 {(Tal-Speelman, Reykjavik 1988).}) 10. Qd2 Re8 $6 {
+Black plays another passive move.} 11. a4 Bb7 12. Bc4 a6 13. Ra3 {
+A rook manoeuvre restricts the queenside.} 13... Rb8 14. Rb3 $1 Ba8 15. e5 $1
+Nh5 16. Bh6 f5 $2 ({The central area is properly defended by} 16... Qd7 $1 17.
+Bxg7 (17. e6 fxe6 18. dxe6 Qc6) 17... Nxg7) 17. Bxg7 Kxg7 18. Ng5 $1 {
+Hiarcs attacks on all fronts.} 18... h6 19. exd6 exd6 20. Rxe8 Qxe8 21. Ne6+
+Nxe6 22. dxe6 Qd8 (22... Qe7 23. Bd5 Bxd5 24. Nxd5 Qxe6 25. Re3 {
+is horrible for Black.}) 23. Bxa6 d5 24. a5 Qd6 25. Na4 Nf6 26. Rxb6 Rxb6 27.
+Nxb6 Qxe6 28. Qe2 Qxe2 29. Bxe2 Bc6 30. Bf3 Bb7 31. c4 Ba6 32. Bxd5 Nxd5 33.
+cxd5 Bb5 34. Na8 {The grandmaster was outclassed by the machine.} 
+1-0
+
+[Event "Man-Machine World Championship"]
+[Site "New York"]
+[Date "2003.11.11"]
+[Round "1"]
+[White "Kasparov, Garry"]
+[Black "X3D Fritz"]
+[Result "1/2-1/2"]
+[WhiteElo "2830"]
+[ECO "D45"]
+[Annotator "Karsten Müller, Mig"]
+[PlyCount "73"]
+
+{Matches of the best human players against computer programs are very common
+nowadays as the question of human or computer superiority in chess is still
+open and more than ever. Last year Kramnik drew 4:4 against Fritz in Bahrein
+and Kasparov scored 3:3 against Deep Junior in New York at the beginning of
+this year. Can one side change this now? In the first game Kasparov had
+good chances, but could not use them in slight time trouble. But see for
+yourself} 1. Nf3 {Does Kasparov play like this to
+avoid the Tarrasch variation of the Queen's Gambit or is this the best move
+order in his opinion to reach a Meran? Mig: 'Kasparov almost always opens with
+1.e4 these days, at least against humans. But over the course of his 25 year
+professional career he has played just about everything.} d5 2. c4 c6 3. d4 Nf6 4. Nc3 e6 {Mig: 'Logical and normal development
+into what is called the Slav Defense. This is a well-known system that is
+particularly well-known to Garry Kasparov! The X3D Fritz team shows no fear
+and heads right into Kasparov's strength. They wanted to show they didn't fear
+his preparation. This choice is also relevant because in Kasparov's last
+computer match, against Deep Junior in January '03, he crushed the machine in
+this exact opening in the first game!'} 5. e3 Nbd7 6. Qc2 Bd6 (6... b6 7. cxd5
+exd5 8. Bd3 Be7 9. Bd2 O-O 10. g4 Nxg4 11. Rg1 Ndf6 {
+0-1 Kasparov,G-DEEP JUNIOR/New York USA 2003/(36)}) 7. g4 {Mig: 'A very
+aggressive move that offers a pawn in exchange for attacking chances. If Black
+captures the pawn with ..Nxg5 White gets a lot of pressure on the open g-file.
+Kasparov has played this position three times, twice with white and once with
+black! He won all three games, including one against the computer program Deep
+Junior earlier this year.'} Bb4 {Mig: 'A normal move still in the "book" of
+both players. X3D Fritz has almost three million positions in its library of
+opening moves and sequences. Kasparov is legendary for his opening preparation
+and knowledge. He is a walking encyclopedia of opening theory and his
+opponents have a healthy fear of his surprises in the openings. This move
+also takes the game away from the game Kasparov won against Deep Junior in
+this line. That's a sort of psychological advantage, being the first to spring
+something unexpected. Between two humans it could also be sort of like a game
+of chicken, with the first player to turn off from the previous game being the
+chicken. No matter how well it plays chess, this aspect is lost on X3D Fritz.
+It is not, however, lost on its creators and operators! '} (7... dxc4 8. Bxc4 (
+8. g5 Nd5 9. Bxc4 Nxc3 10. bxc3 e5 $132) (8. e4 e5 $1 9. g5 {
+Ftacnik,L. 0-1 Adams,M-Kasparov,G/Dortmund 1992/CBM 29/22)} (9. dxe5 Nxe5 10.
+Nxe5 Bxe5 11. g5 Nh5 $15)) (8. g5 Nd5 9. Bxc4 Nxc3 10. bxc3 e5 $132) (8. Bxc4 {
+Anand}) 8... b6 9. e4 e5 10. g5 Nh5 11. Be3 O-O 12. O-O-O Qc7 13. d5 b5 14.
+dxc6 bxc4 15. Nb5 Qxc6 16. Nxd6 Bb7 17. Qc3 Rae8 18. Nxe8 Rxe8 19. Rhe1 Qb5 20.
+Nd2 Rc8 21. Kb1 Nf8 22. Ka1 Ng6 23. Rc1 Ba6 24. b3 cxb3 25. Qxb3 Ra8 26. Qxb5
+Bxb5 27. Rc7 {1-0 Kasparov,G-DEEP JUNIOR/New York USA 2003/ (27)}) (7... O-O 8.
+g5 Nh5 9. Bd2 f5 10. gxf6 Nhxf6 11. Ng5 Qe8 12. O-O-O h6 13. h4 $40 {
+Shirov,A-Thorhallson,T/Reykjavik/1992/}) 8. Bd2 Qe7 9. Rg1 (9. a3 $6 {
+leads to the famous game Gelfand-Kramnik} Bxc3 10. Bxc3 b6 11. Bd3 Ba6 12. Qa4 dxc4 13. Qxa6 cxd3 14. Qxd3 O-O 15.
+g5 Nd5 16. Bd2 f5 17. O-O-O c5 18. Kb1 b5 19. Qxb5 Rab8 20. Qa5 Rb3 21. Ka2
+Rfb8 22. Rb1 e5 23. Rhc1 Qe6 24. Ka1 exd4 25. Rxc5 Nxc5 26. Qxc5 Nc3 27. Nxd4
+Rxb2 28. Rxb2 Qa2+ {0-1 Gelfand,B-Kramnik,V/Berlin 1996/CBM 55 (28)}) 9... Bxc3
+(9... b6 {is played more often}) 10. Bxc3 Ne4 (10...
+b6 {was again an alternative, e.g.} 11. Bd3 dxc4 12.Bxc4 Bb7 13. g5 Nd5 $14 {0-1 Szeberenyi,A-Izsak,G/Budapest 1997/CBM 61 ext (63)
+}) 11. O-O-O $5 $146 {Mig: 'A new move instead of the usual 11.Bd3.'} (11. Bd3
+Nxc3 12. Qxc3 dxc4 (12... O-O 13. O-O-O dxc4 14. Bxc4 c5 (14... b5 15. Bd3 Bb7
+16. Ne5 Nxe5 17. dxe5 Rfd8 18. Kb1 a6 19. Qc2 {
+1-0 Malakhov,V-Potkin,V/Togliatti RUS 2003/The Week in Chess (39)}) 15. g5 cxd4
+16. Qxd4 a6 17. Kb1 b5 18. Be2 {
+0-1 Milanovic,D-Djerfi,K/Belgrade 2003/CBM 96 ext (33)}) 13. Bxc4 b6 14. O-O-O
+O-O 15. Bd3 Bb7 16. Qc2 g6 17. Ne5 Nxe5 18. dxe5 c5 19. Be4 c4 20. Rd6 Rac8 {
+1/2-1/2 Kobalija,M-Ramesh,R/Biel 2001/CBM 83 ext (20)}) 11... Qf6 $5 {Mig.: 'Now that we are out of
+ X3D Fritz's opening library of recorded moves it
+is thinking, calculating, for itself. And right away we see a very
+"computer-like" move from the computer. It immediately plays to win a pawn by
+attacking the unprotected knight on f3.'} 12. Be2 {
+Mig: 'Kasparov protects his knight and offers the f2 pawn for capture.'} Nxf2
+$6 {Did Kasparov hope for this greedy pawn grab to happen? He gets now a
+murderous initiative based on his advantage in development, his mighty pair of
+bishops and the unsafe black king. A human would be shaking in his shoes with
+Black here. Mig: 'And X3D Fritz takes the pawn! This will give White a lot of
+pressure against the black position in compensation for the sacrificed pawn.
+It's ironic that we have the strongest chess computer of all time here and it
+is playing in the materialistic mode of the first chess programs. In X3D
+Fritz's opinion, it has enough defensive resources to rebuff Kasparov's
+initiative. This battle of material vs initiative is what chess is all
+about. Kasparov gives up a pawn for an attack, but if his attack doesn't
+succeed then X3D Fritz will have good chances to win with the extra material.
+Kasparov loves to have the initiative and such sacrifices are his stock and
+trade.} (12... Nb6 $5) 13. Rdf1 {Mig: 'Attacking the black knight.'} Ne4 {Mig:
+ 'Retreating the knight. One of
+the drawbacks of X3D Fritz's pawn grab is that now the f-file is open for
+White's pieces. Right now Kasparov is threatening a discovered attack on the
+black queen. That means when he moves his knight, there will be a line of
+attack opened for his rook.'} 14. Bb4 $1 {prevents the short castling and
+emphasizes Black's weak dark squares. Mig: 'Kasparov moves his bishop away so
+the knight can't capture it. He uses it to prevent the black king from
+castling by attacking the f8 square.} (14. Ne5 {This is the discovered
+attack. Note that now Black's queen is under fire from the rook on f1. When
+the queen moves Kasparov would be able to capture the pawn on f7. But X3D
+Fritz saw well in advance that its queen would be able to counterattack
+effectively. It's hard to fool a computer looking at four million moves per
+second.} Qh4 15. Nxf7 O-O $1 {Creating a double attack on the f7 knight.} 16.
+Ne5 Rxf1+ 17. Rxf1 Nxe5 18. dxe5 Qxh2 {
+Black maintains its extra pawn and has a clear advantage.}) 14... c5 {
+Mig: 'This move apparently came as a surprise to Kasparov, who now went into a
+deep think after playing all of his previous moves at tremendous speed. X3D
+Fritz gives back the pawn in order to block the white bishop's diagonal and
+open lines toward the White king.'} (14... Ng5 15. Kb1 {
+with powerful compensation.}) ({ Throwing} 14... a5 $6 15. Ba3 {in helps only 
+White, e.g.} c5 16. cxd5 exd5 17. dxc5 Qe7 18. c6 Ndc5 19. cxb7 Bxb7 20. Bb5+ 
+Kd8 21. Nd4 $16) 15. cxd5 {Why did Kasparov think so long here? The alternative}
+(15. dxc5 {leads after} Qe7 16. cxd5 exd5 17. Nd4 
+{to transposition to the game.})
+15... exd5 (15... cxb4 $2 16. Qxe4 $16) 16. dxc5 Qe7 {Mig: 'Getting the queen
+away from the discovered attack on the f-file and also attacking the c5 pawn.
+Material is now equal, Kasparov has an edge in development and X3D Fritz has a
+very well-placed knight on e4.'} ({Oliver Reeh suggested to solve the problems
+of Black's king radically with} 16... O-O
+$6 {in his live comments, but after} 17. c6 bxc6 18. Bxf8 Nxf8 19. Bd3 {
+with nice prospects}) 17. Nd4 $1 {a mighty square for
+White's knight, which is liked an octopus here. It can for instance jump to f5
+to imcrease the pressure on the dark squares. Mig: 'A typically dynamic
+Kasparov move. He will play his knight to the aggressive f5 square. He ignores
+the threat to the c5 pawn since capturing it would cost Black a great deal of
+time.} O-O $1 {The human looking
+move, which was again suggested by Oliver Reeh was a surprise. Fritz evacuates
+his king at the cost of an exchange. Mig: 'Getting the king to safety, but
+allowing Kasparov to play a powerful sequence of moves here that will win a
+rook for a bishop and pawns. A rather surprising decision from a program that
+has already shown itself to be a bit of a materialist!} 
+(17... b6 $2 18. Nf5 $18) ({We (IM Heiko Machelett, Prof.Dr.Althofer and I)
+thought the more "Fritz-like"} 17... Ndxc5 $2 18. Bb5+ Kf8 {
+Mig: 'Now the black king is stuck in the middle of the board.'} 19. Rf4 b6 {
+would follow. Black keeps his pawn and cements his knights. But his rook h8 is
+out of game at the moment. This is a typical shuffle chess problem by the way.
+So Heiko, who played an Advanced shuffle chess match against me in Jena last
+year, suggested options like h7-h6 followed by Kf8-g8-h7 rsp. g7-g6 and Kg7.
+But the whole line has a hole, which was seen by Fritz in time} 20. Bc6 $1 Bb7
+ $2 (20... Nd6 $1 21. Kb1 $16) 21. Nf5 $18 Qc7 22. Bxb7
+Qxb7 23. Rxe4 dxe4 24. Bxc5+ bxc5 25. Qxc5+ Kg8 (25... Ke8 26. Rd1 Rc8 $6 27.
+Nxg7#) 26. g5 h6 (26... Rc8 $2 27. Nh6+ gxh6 28. gxh6#) 27. Ne7+ Kf8 28. Nd5+
+Ke8 29. Nc7+ $18) (17... Nexc5 $2 18. Nf5 Qf8 19. Rd1 g6 20. Rxd5 gxf5 21. Bb5
+Nd3+ 22. Qxd3 Qxb4 23. Qxf5 $18) 18. Nf5 {Mig: 'Attacking the queen.'} Qe5 19.
+c6 {Mig: 'Kasparov goes for it. This pawn push is a discovered attack. The
+pawn attacks the knight and at the same time the diagonal for the b4 bishop is
+opened up to attack the rook on f8. He is going to win a rook for his bishop,
+a gain in material, but he usually likes to be the one giving up the material
+for the attack. Now X3D Fritz will have the initiative and more active pieces.
+'} bxc6 20. Bxf8 {Kasparov invests again a lot of time. Later he will be a bit
+short of time. Mig: 'The logical continuation, although he could also have
+checked the black king and infiltrated with his knight with 20.Ne7+} (20. Ne7+ 
+$2 Kh8 21. Nxc6 {is strongly met by} Qg5 $1 22. Bxf8 Qxe3+ 23. Kb1 Nd2+ 
+24. Ka1 Nxf1 25. Bxg7+ Kxg7 26. Rxf1 Bb7) 20... Kxf8 
+{a tempo played by Fritz. It must have had
+enough time to calculate it in advance on Kasparov's time. Mig: 'Our
+Grandmaster commentators were expecting X3D Fritz to recapture with the knight
+instead of moving his king into the middle of the board. The machine prefers
+to keep its pieces more active and isn't worried about its king at all. A
+human would instictively worry about putting his king out into traffic. A
+computer just looks at a few hundred million positions, sees no danger, and
+plays what it thinks is best} (20...
+Nxf8 21. Bd3 $16 {is very pleasant for White}
+(21. Qxc6 $2 Rb8 {gives Black strong attack. Mig: 'With great attacking
+chances for Black})) 21. Ng3 $1 {Mig: 'Kasparov
+wants to trade material. He has a material advantage and every exchange will
+bring him closer to realizing it.'} (21. Bd3 $2 Ndc5 22. Bxe4 dxe4 23. Nd4 Nd3+
+24. Kb1 Rb8 {and Black has good counterplay.}) ({Now} 21. Qxc6 $2 Rb8 
+22. Qc2 Nb6 {and Black can fish in muddy waters}) 21...
+Ndc5 22. Nxe4 Nxe4 23. Bd3 {Mig: 'Threatening yet more trades.'} Be6 {
+Mig: 'Finally developing this bishop and preparing to lodge it on the d5
+square after Kasparov captures on e4. The bishop also protects the f7 square
+on the vulnerable f-file. Computers always defend tenaciously.'} 24. Bxe4 $5 {
+Kasparov clarifies the situation by exchanges. Not only against the computer a
+good strategy as White's dominance on the dark square is emphasized by this.
+} (24. Rf4 $6 Nc3 25. Rg3 Nxa2+ 26. Kb1 d4 {is unneccessary tactical}) 
+24... dxe4 {Mig: 'Kasparov's
+mission to exchange pieces has been successful, but how to now convert his
+slight material advantage into a win?'} 25. Rf4 (25. Kb1 $5) 25... Bd5 {
+Mig: 'Protecting the attacked e4 pawn. Black has set up a solid defensive wall
+and it's up to Kasparov to find a way through.'} (25... Bxa2 $5 26. Rxe4 Qb5
+27. Rd4 c5 {came into consideration to give Black more attacking prospects}) 
+26. Qc5+ {Mig: 'Activating the queen with check, forcing the black king back. 
+This move
+also pins the bishop against the queen.'} (26. Qc3 {Many expected this move,
+offering to exchange the queens and driving the black queen from her excellent
+central post. X3D Fritz definitely wouldn't exchange queens because then
+Kasparov's material advantage would be close to crushing. X3D Fritz needs the
+powerful queen on the board to keep counterchances.} Qd6) 26... Kg8 {the key of
+White's strategy in this position is the prevention of any counterplay by slow
+prophylactical improvement of all his men using his dominance on the dark
+squares. This is very strong especially against Fritz, who needs activity like
+a fish the water} 27. Rgf1 {threatens Rxf7, which Fritz of
+course will never overlook. Mig: 'Threatening the brutally blunt capture Rxf7,
+taking advantage of the pin on the bishop. This move was criticized by several
+of the assembled Grandmasters as "too subtle." Black's reaction develops a
+piece and White's threat is easily parried. The more direct 27.Rd1 was more to
+the point} (27. g5 $6 Qe6
+28. a3 Qh3 {and und}) (27. Rg2 $6 Qg5 {
+give Black counterplay}) ({The prophylactical} 27. h4 $5 Rb8 28. Rg2 
+{came strongly into
+consideration. If g4-g5 is played later then the 3 white pawns make it very
+difficult to mobilze Black's kingside majority and may even be used to lauch
+an assault on the dark squares by h4-h5-h6 (White's queen threatens to land on
+g7 and back rank mates loom large)}) (27. Rd1 {Mig: The suggestion of GMs 
+Lautier, Gulko, and Alburt at the match in New York.
+} Rb8 28. Rd4) 27... Rb8 {Mig: 'Answering Kasparov's threat with an even
+stronger one. X3D Fritz threatens a lethal capture on b2.'} (27... a5 $4 28.
+Rxf7 Bxf7 $2 (28... a4 $4 29. Rf8+ Rxf8 30. Qxf8#) 29. Qxe5 $18) 28. R1f2 {
+Mig: 'Protecting b2 and so reviving the threat to capture on f7.'} (28. Rxf7 $4
+Qxb2+ 29. Kd1 Bxf7 $19) 28... Qc7 {Mig: 'Removing the pin on the bishop and so
+threatening to capture the unprotected a2 pawn.'} 29. Rc2 {Mig: 'Kasparov
+prefers to answer a threat with a counterthreat instead of playing defense.
+Now if Black plays ..Rb5 Kasparov exploits the new pin on the c-pawn and
+captures the rook with Qxb5.'} (29. Kb1 {Protecting the a2 pawn with the king.}
+) 29... Qd7 (29... h6 {is tactically playable} 30. Qxd5
+$2 {can be met } Qxf4) (29... Bxa2 {Grabbing the pawn immediately
+was playable, but now White's rooks get a lot of play.}) (29... Rb5 $4 30. Qxb5
+$1) 30. h4 $5 {Mig: 'Another aggressive surprise from Kasparov. Just when all
+the action was on the queenside and in the center, he threatens to open a new
+front by pushing his kingside pawns against the black king.'} (30. b3 $6 {
+is aimed against the Bd5, but can be answered by} Rb5 31. Qd4 Qe7 {
+when the lever a7-a5-a4 is in the air}) 30... Qd8 {
+threatens to take on h4 and on a2} 31. g5 {Mig: 'This move made X3D Fritz 
+very happy, at least according to its evaluation function. It
+now considers it safe to capture the hanging pawn on a2. Kasparov wants to
+play h5 without allowing Black to block his pawns with ..h6. But this plan is
+just to slow and now X3D Fritz grabs a pawn on a2.'} (31. h5 {This push instead
+of g5 wouldn't have given X3D Fritz time to capture on a2 because of the
+threat of h6.} Bxa2 $2 (31... h6) 32. h6) 31... Bxa2 {Mig: 'A surprise for
+Kasparov. Perhaps that pawn had sat there immune for so long that Kasparov
+started to believe it couldn't be captured! Not only does Black win a pawn but
+suddenly White's king is feeling a draft.'} (31... Rb5 32. Qd4 $16) 32. Rxe4 $2
+{played after thinking for about 15 minutes. Did Kasparov want to force a draw
+now or did he miss Black's reply? Mig: 'Almost a draw offer since it is now
+very hard for White to find any move to avoid the repetition that does indeed
+end the game} (32. Rd2 $1 {would have emphasized Black's wound again: 
+the weak dark squares. Mig: 
+'This move was expected by most commentators. It pushes the black
+queen off the d-file and claims it for White. Then Kasparov could continue his
+kingside push'} Qe8 (32... Bd5 $6 33. Rxe4 a5 (33... Rb5 $2
+34. Qxc6 $18) 34. Red4 f5 (34... Qe8 $2 35. e4 $18) 35. gxf6 Qxf6 36. Rf4 Qg6
+37. Rdf2 $16) 33. h5 $1 a6 (33... Bd5 $6 34. h6 g6 (34... Qf8 35. Qxa7 $16) 35.
+Qxa7 $16) 34. Rd6 (34. h6 $6 Bd5 35. Qd4 Qf8 $1) 34... Bd5 35. Qa7 Qf8 36. Qc7
+Rc8 37. Qd7 $16) (32. Qxc6) 32... Qd3 $1 {forces the draw as White can't
+escape the coming checks Mig: 'Bringing the queen to a dominating position and
+creating threats around the white king} 33. Rd4 {Mig: 'Giving up another
+pawn in order to remove the worst of the black threats.'} (33. Qxc6 Qf1+ 34.
+Kd2 Rd8+ 35. Rd4 Qf2+ 36. Kd3 Qf1+ $11) 33... Qxe3+ {Mig: 'X3D Fritz alarmed
+the commentators by spending eight minutes on this obvious and forced move.
+Seirawan, Ashley, and Hoffman wondered if there was a malfunction! Nothing of
+the sort. X3D Fritz had plenty of extra time, so it was in no hurry. It had
+started to see the repetition draw that now comes and when a decisive result
+comes into its analysis horizon the program gives itself more time.'} 34. Rcd2
+{Mig: 'The other moves are suicidal. Kasparov has no choice but to accept the
+perpetual check draw if X3D Fritz wants it.' Mig: 'The only move.'} (34. Rdd2
+$4 Rxb2 $1 {Whoops, giving up the queen but getting checkmate in return! A
+fine illustration of the dangers around White's king.} 35. Qxe3 (35. Rxb2 Qxc5+
+) (35. Kxb2 Qb3+ 36. Ka1 Qb1#) 35... Rb1#) (34. Kd1 $4 Re8) 34...
+Qe1+ {Mig: 'Black is in considerable danger as well. Not only does Kasparov
+have a material advantage, but the black king is not safe.'} (34... Rf8 $6 35.
+Qc3 $14) (34... Re8 {Black can keep the game going this way, but it was very
+risky and without any advantage.} 35. Qc3) (34... Qe8 $2 35. Rd7) 35. Rd1 {
+Mig: 'The only move. The open white king, hemmed in by the bishop on a2, is
+too vulnerable.'} (35. Kc2 $4 Bb1+ 36. Kc3 Qc1+ 37. Rc2 Qxc2#) 35... Qe3+ 
+(35... Qe8 $6 {helps only White, e.g.} 36. Rb4 Ra8 37. Rb7 $14) 36. R1d2
+(36. Kc2 $4 Qb3+ 37. Kd2 Qxb2+) (36. R4d2 $4 Qxc5+) 36... Qg1+ {Mig: 'This was
+the last fork in the road. X3D Fritz could have continued the game with ..Re8.
+The machine decides that there is no way to play for a win and forces the
+repetition draw.'} 37. Rd1 {The pressure on Kasparov has not become smaller
+after this draw. Will he be able to withstand it and show his powerful
+strength? Thursday we will already know more! Co-commentators IM Heiko
+Machelett and Prof.Dr.Althofer. Mig: 'Now the draw is completely forced
+because the black queen has no alternative to checking on e3 again and
+creating a third repetition. Any other move loses immediately. White is
+threatening to win instantly with Rd8+. So going to g1 for check instead of
+back to e1 was just a show of computer humor, if you will! The result is the
+same: draw. A rich and exciting battle with chances on both sides and
+unexpected play from the beginning.}
+1/2-1/2
+
+[Event "Man-Machine World Championship"]
+[Site "New York"]
+[Date "2003.11.13"]
+[Round "2"]
+[White "X3D Fritz"]
+[Black "Kasparov, Garry"]
+[Result "1-0"]
+[ECO "C66"]
+[BlackElo "2830"]
+[Annotator "Schulz, André"]
+[PlyCount "77"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 {
+Following Kramnik's strategy? Kasparov goes for the Berlin Defence} 4. d3 {
+Surprise!} (4. O-O Nxe4 5. d4 Nd6 6. Bxc6 dxc6 7. dxe5 Nf5 8. Qxd8+ Kxd8 {
+leads to the Berlin}) 4... d6 5. c3 g6 6. O-O Bg7 7. Nbd2 O-O 8. Re1 Re8 $146 (
+8... Bd7 9. a4 a6 10. Bc4 Be6 11. a5 Bxc4 12. dxc4 Nh5 {
+1/2-1/2 Ponomariov,R-Grischuk,A/Panormo 2001/CBM 84 ext (12)}) 9. d4 Bd7 10. d5
+Ne7 11. Bxd7 Nxd7 {The structure reminds us of the King's Indian, an opening
+in which computers have traditionally not fared too well.} 12. a4 h6 13. a5 {
+A positionally justified advance of the a-pawn} a6 14. b4 f5 15. c4 Nf6 16. Bb2
+{This move was criticised by many commentators} (16. Qb3 $5) 16... Qd7 17. Rb1
+(17. Rc1 { and} -- 18. c5 {was expected}) 17... g5 {
+Khalifman thought f5-f4 was better.} 18. exf5 {
+Necessary, otherwise White will be overrun} Qxf5 19. Nf1 {
+With the following manoeuvres Fritz takes control of the square e4.} Qh7 $5 (
+19... Qg6) 20. N3d2 Nf5 (20... Ng6 21. Ng3 Nf4 22. Nde4 {
+probably did not appeal to Kasparov}) 21. Ne4 Nxe4 22. Rxe4 h5 23. Qd3 Rf8 24.
+Rbe1 Rf7 25. R1e2 {This and the following moves were criticised. Fritz is not
+playing actively enough.} g4 26. Qb3 Raf8 27. c5 (27. b5 {
+was better according to Khalifman}) 27... Qg6 28. cxd6 cxd6 29. b5 axb5 30.
+Qxb5 Bh6 {The black plan is now h5-h4-h3 (or g3) with attack. Most annotators
+now thought that Black had the advantage.} 31. Qb6 {Threatens taking on e5,
+because the queen on g6 is unprotected and so the pawn on d6 is pinned.} Kh7
+32. Qb4 {This move prevents h5-h4, because otherwise g4 is hanging. With his
+next move Kasparov renews the threat but overlooks the fact that the rook on
+f8 is no longer protected. Kasparov was in time trouble.} Rg7 {Immediately
+after playing the move Kasparov jumps to his feet and shakes his head.} 33.
+Rxe5 {Fritz is not one to miss this shot. Vishy Anand on the Playchess server:
+"Tricky beast."} dxe5 34. Qxf8 Nd4 35. Bxd4 exd4 36. Re8 {threatens mate on h8}
+Rg8 37. Qe7+ ({Not} 37. Qxg8+ Qxg8 38. Rxg8 Kxg8 {
+and the white advantage disappears}) 37... Rg7 (37... Bg7 38. Rxg8 Kxg8 39.
+Qxb7 $18) (37... Kh8 38. Rxg8+ Kxg8 39. Qxb7 $18) 38. Qd8 {
+once again threatens mate.} Rg8 39. Qd7+ (39. Qd7+ Rg7 40. Qc8 Rg8 41. Qxb7+
+$18) 1-0
+
+[Event "Man-Machine World Championship"]
+[Site "New York"]
+[Date "2003.11.16"]
+[Round "3"]
+[White "Kasparov, Garry"]
+[Black "X3D Fritz"]
+[Result "1-0"]
+[ECO "D45"]
+[WhiteElo "2830"]
+[Annotator "Müller, Karsten"]
+[PlyCount "89"]
+
+{Garry Kasparov has overcome his desasterous blunder in the second game. In a
+fine anti-computer chess game he fought back, giving Fritz absolutely no
+chance.} 1. Nf3 Nf6 2. c4 e6 3. Nc3 d5 4. d4 c6 5. e3 a6 $6 {This very 
+principled (but highly dubious) move is the novelty compared to the 2nd game.} 
+6. c5 $5
+{Kasparov closes the position immediately and emphasises the weakness of b6
+and the dark squares on the queenside.} Nbd7 7. b4 a5 $2 {A strategical
+mistake. May be even the losing move in a higher sense as the position is now
+closed and Fritz does not understand it at all.} 8. b5 $1 {
+Black's pawn a5 is now very weak.} e5 9. Qa4 (9. dxe5 $2 Ne4 {
+gets tactical and plays into Fritz' hands.}) 9... Qc7 (9... Ne4 10. bxc6 Nxc3
+11. cxd7+ Bxd7 12. Qb3 exd4 13. exd4 Na4 14. Qxb7 Bxc5 15. dxc5 O-O 16. Be3 Qf6
+17. Bd4 Qe6+ 18. Ne5 Nxc5 19. Qb2 Rab8 20. Qe2 Rfc8 21. Qe3 Rb4 22. Be2 f6 23.
+Bg4 Qa6 24. Nxd7 {Loyer,A-Ricroque,J/FRA 2002/EXT 2003/1/2-1/2 (35)}) 10. Ba3
+$1 {is aimed against sacrifices on c5 or b6. Furthermore the bishop can go to
+b4 after Nxa5 to free the queen.} e4 $2 {
+Fritz closes the centre. Not a good idea for a computer.} 11. Nd2 Be7 12. b6 $1
+$146 {what a pawn chain. Ideal against Fritz!} (12. Be2 h5 13. b6 Qd8 14. h3
+Nf8 15. O-O-O Ne6 16. Ndxe4 Nxe4 17. Nxe4 h4 18. Nd2 O-O 19. Rhg1 Re8 20. Bd3
+Bf8 21. Bb2 Ng5 22. Qc2 a4 23. a3 Qe7 24. Rde1 Ne4 25. Nf1 Qg5 26. f3 Nf6 {
+Reshevsky,S-Keres,P/NLD/URS 1948/MainBase/0-1 (63)}) 12... Qd8 13. h3 {
+A dream position! Completely closed and a safe prey on a5.} O-O 14. Nb3 Bd6 $6
+{A little trick - the bishop can't be taken. But the trap is much too obvious
+for Kasparov and only valueable time is lost.} (14... Nb8 {
+with the idea Nf6-d7 followed by f5 was better.}) 15. Rb1 $5 {
+protects prophylactically b6.} (15. cxd6 $4 Nxb6 {loses the queen.}) (15. Nxa5
+$2 {is too early:} Nxb6 $1 16. cxb6 $2 Bxa3 17. Qxa3 Qxb6 $17) 15... Be7 $6 (
+15... Bb8 {is consequent. But a similar constallion was Deep Blue's doom in
+its first match against Kasparov.}) 16. Nxa5 $1 {take courage! This pawn has
+to be taken at some moment. It is very surprising that Fritz does not give a
+big disadvantage for itself. Every human playing Black would be shaking in his
+shoes.} Nb8 {Probably to protect c6 and to blockade on a6.} 17. Bb4 {
+Kasparov frees his pieces on the queenside with the following manovers.} Qd7 ({
+After} 17... Ne8 $2 {Fritz calculated:} 18. Nxc6 Rxa4 19. Nxd8 Ra8 20. c6 Bxd8
+21. c7 Bxc7 22. bxc7 Nxc7 23. Bxf8 $18) 18. Rb2 {Prophylaxis} Qe6 $6 {
+Fritz plays like a fish without water} (18... Ne8 19. Qd1 f5 {is the right
+plan now or later. But Fritz does not move its f-pawn until the end of the
+game. Have the programmers not allowed to "weaken" the king position?}) (18...
+Qf5 $2 {is refuted by} 19. Nxc6 $3) 19. Qd1 Nfd7 20. a3 
+{slowly, slowly! Secure everything! Allow no tactic! Very well done. 
+Fritz shall be alone
+at sea.} Qh6 21. Nb3 Bh4 (21... f5 {is better again.}) 22. Qd2 
+{Qxe3+ is threatened.} Nf6 23. Kd1 {this castling by hand is very fine and
+reminds me of the great Tigran Petrosian. Very nice!} Be6 24. Kc1 Rd8 {
+Fritz has no plan and plays completely random moves. It is very hard to
+believe that such a powerful program does not know nothing about this position.
+..} 25. Rc2 Nbd7 26. Kb2 {the king is very secure here. This is a well known
+concept: the king is better placed behind its own advanced pawn wall than
+crushed by the enemy pawn front. True Fritz has not even begun advancing his
+kingside pawns.} Nf8 27. a4 Ng6 {Black's moves make no real sense.} 28. a5 Ne7
+29. a6 $1 {Very strong. Black will be completely dominated soon and his
+queenside is in ruins.} bxa6 (29... Rd7 30. axb7 Rxb7 31. g3 Bg5 32. Bg2 {
+and White wins analogously to the game.}) 30. Na5 {
+What a knight! A real monster!} Rdb8 31. g3 Bg5 32. Bg2 (32. h4 $2 Ng4 {
+gives Black counterplay, which he does not deserve.}) 32... Qg6 33. Ka1 $5 {
+slowly, slowly! Secure everything. Do not allow any tactics.} Kh8 {Fritz is 
+completely at sea. In the meantime Kasparov prepares the decisive strike on the
+queenside slowly and calmly but steadily.} 34. Na2 {heading for b4} Bd7 35. Bc3
+Ne8 36. Nb4 $18 Kg8 37. Rb1 Bc8 38. Ra2 Bh6 39. Bf1 Qe6 40. Qd1 {the queen head
+s for a4 to increase the pressure on a6 and c6. The time trouble is over and
+so it is over in a higher sense.} Nf6 41. Qa4 Bb7 42. Nxb7 Rxb7 43. Nxa6 $5 ({
+An adventure like} 43. Bxa6 Rbb8 44. Nxc6 {is of course not neccessary.}) 43...
+Qd7 44. Qc2 Kh8 45. Rb3 ({A possible finish would have been} 45. Rb3 Kg8 46.
+Rba3 g6 47. Nb4 Rxa3 48. Rxa3 Kg7 49. Ra8 Nc8 50. Qa2 Nxb6 51. cxb6 Rxb6 52.
+Qa7 Rb7 53. Qc5 $18 {A superb performance by Kasparov. Fritz had absolutely no
+chance. Let us wait and see, if he can repeat it in the last gamo on Tuesday.})
+1-0
+
+[Event "Man-Machine World Championship"]
+[Site "New York"]
+[Date "2003.11.16"]
+[Round "3"]
+[White "Kasparov, Garry"]
+[Black "X3D Fritz"]
+[Result "1-0"]
+[ECO "D45"]
+[WhiteElo "2830"]
+[PlyCount "89"]
+
+1. Nf3 Nf6 2. c4 e6 3. Nc3 d5 4. d4 c6 5. e3 a6 {Diverging from game one, when
+the more common 5...Nbd7 was played. This sideline of the Slav with 5...a6 was
+criticized by Kasparov after the game. From the continuation here we can see
+why. X3D Fritz is playing from its opening book right into a position it
+doesn't understand at all! When Kasparov said this everyone looked over at
+poor Alex Kure, the man responsible for selecting and "training" X3D Fritz's
+openings. Kasparov has little practical experience with this sideline and in
+both cases (once with white and once with black) the game continued with 6.b3.
+ When this move appeared on the screen I thought maybe the Fritz team were
+trying to give Kasparov a little psychological jab. He played this move
+himself a month ago against Huzman in a game that turned into the shortest
+loss of his career after a horrific blunder. They wouldn't admit it, but you
+know they knew about that game and that Kasparov would be forced to think
+about while he was sitting there against X3D Fritz.} 6. c5 Nbd7 7. b4 a5 8. b5
+e5 (8... Ne4 $2 9. Nxe4 dxe4 10. Nd2 f5 11. f3 Qh4+ $2 (11... exf3 12. Qxf3 $16
+) 12. g3 Qh6 13. Qe2 {1-0 Euwe,M-Alekhine,A/NLD 1935/(41)}) (8... e5 $142) 9.
+Qa4 $1 {Given an exclamation point by Gligoric and Wade in their book "The
+World Chess Championship" (1972). This move was apparently not in X3D Fritz's
+opening book so it was now on its own.} Qc7 10. Ba3 (10. Be2 e4 11. Nd2 g6 12.
+Nb3 Bh6 13. Bd2 O-O 14. O-O-O b6 15. bxc6 Nb8 16. cxb6 Qxb6 17. Qb5 Qxc6 18.
+Qxc6 Nxc6 19. Na4 {1-0 Pachman,L-Fichtl,J/Prague 1954/MCD (41)}) 10... e4 11.
+Nd2 Be7 {All of these moves had been played before, although Kasparov said
+afterwards that he was not conscious of that at the time at this point. The
+game they are following was not a minor one, but a battle from the world
+championship match-tournament in 1948 between American Samuel Reshevsky and
+Soviet (Estonian) Paul Keres.} 12. b6 {Immediately sealing the queenside and
+diverging from that game from 1948, although there are still many similarities.
+A player as strong as Keres had no difficulty in seeing that Black needs
+immediate pawn play on the kingside in order to compensate for White's
+advantage on the kingside. He played a rapid ...h5 push and entered a very
+sharp battle.} (12. Be2 h5 13. b6 Qd8 14. h3 Nf8 15. O-O-O Ne6 16. Ndxe4 Nxe4 (
+16... dxe4 17. d5 Bxc5 (17... O-O 18. dxe6 Qe8) 18. dxc6 Bxa3+ 19. Kc2) 17.
+Nxe4 h4 {0-1 Reshevsky,S-Keres,P/NLD/URS 1948/MainBase (63)} (17... dxe4 18. d5
+)) 12... Qd8 13. h3 {An odd little prophylactic move that shows that Kasparov
+is betting that X3D Fritz won't know what to do in this position without any
+clear targets for its pieces. All the time Kasparov spent training with X3D
+Fritz clearly paid off. 13.h3 doesn't develop anything but it takes away a
+square from Black's knight, the g4 square.} O-O 14. Nb3 {Kasparov closes in on
+the isolated a5 pawn. After he captures it the white pieces will be a little
+tied up and during that time Black needs to counterattack vigorously on the
+kingside. Instead from now on we watch Kasparov consolidate on the queenside
+while X3D Fritz does absolutely nothing on the kingside. It has no clue that
+its only hope is to play its kingside pawns forward to break through the white
+pawn chain at its base.} Bd6 $6 {This got a good laugh from the Grandmaster
+commentators and the audience. Only a computer! It puts its bishop right where
+the white pawn can capture it. If Kasparov takes the bishop he loses his queen
+after 15.cxd6?? Nxb6 and the white queen is trapped. Of course Kasparov
+isn't going to blunder his queen away, so did this curious move have any other
+value? Maybe so, if Black thinks its bishop is more useful on the b8-h2
+diagonal, attacking the kingside.} (14... Ne8 15. Rb1 f5 {Here is the key move
+that X3D Fritz never wanted to play. All of Black's hopes are pinned on
+eventually breaking through with ..f5.} 16. g3 g5 {Necessary to enforce ...f4,
+but X3D Fritz has been taught not to move the pawns in front of its king. Now
+a double-edge battle is underway and White will have to watch out for Black's
+breakthrough on the kingside. In the game, Kasparov never had to worry about
+this at all since X3D Fritz never touched its f-pawn.}) 15. Rb1 
+{Kasparov ignores X3D Fritz's provocative play and continues 
+to develop his pieces. Black
+isn't threatening anything.} (15. cxd6 $4 Nxb6) (15. Nxa5 Nxb6 16. cxb6 Bxa3
+17. Qxa3 Qxb6) 15... Be7 $6 {Oh boy, now you know we're in the land of
+computer chess. As one of America's top players, GM Gregory Kaidanov, put it
+after the game, "this move showed that the computer doesn't feel any
+embarrassment!" X3D Fritz puts its bishop right back where it was two moves
+ago, basically making Kasparov a gift of two moves.} 16. Nxa5 Nb8 17. Bb4 {
+Kasparov will slowly unravel his pieces on the queenside and prepare to push
+his a2 pawn up the board where it will break through and give him a protected
+passed b-pawn with an easily winning position. X3D Fritz can't see this coming
+at all and does nothing but watch.} Qd7 18. Rb2 {This useless-looking move
+confused most of the commentators, but to anyone with extensive anti-computer
+chess experience it makes perfect sense. The rook protects the f2 pawn, a
+potential weak spot, but why would you protect something that isn't being
+attacked? The reason goes into how computers think. It's brute force
+calculation can only go so deep, even with four super-fast processors. Black's
+only possible source of counterplay in this position is to push its f-pawn and
+open up an attack against area around the white king, f2 in particular. If X3D
+Fritz's search, usually running 12-20 half-moves deep, ever reaches a position
+in which it sees success in such an attack it will put such a plan in motion. 
+ On the other hand, if it cannot reach a favorable position in its searches
+it will never play the initial moves required. With the rook on b2 protecting
+f2 already, the potential weakness of that critical square is somewhat hidden
+from the computer's search. X3D Fritz can't just play it anyway like a human
+would, knowing that everything else is useless. A machine has to receive a
+positive evaluation from its search to play a move and always plays the move
+that gives it the best evaluation. Since X3D Fritz sees no danger here for
+itself it is content to play moves that do nothing, but don't cause any
+negative effect either. It twiddles its virtual reality thumbs. Any human
+would say, "I have to do SOMETHING."} Qe6 19. Qd1 {Getting the queen out from
+behind the pin on the a5 knight. All of Kasparov's moves are based on
+supporting the push of the extra a2 pawn, with the occasional need to protect
+against an X3D Fritz threat.} Nfd7 {After this there was a brief hope that X3D
+Fritz had found the need to play its f-pawn at long last.} 20. a3 Qh6 21. Nb3
+Bh4 {A pathetic one-move threat that ends up wasting more time. This move pins
+the f2 pawn against the king and so threatens ...Qxe3+ on the next move.} 22.
+Qd2 {Protecting against that threat and preparing to evacuate the king to the
+queenside.} Nf6 {Nope, no f-pawn push. Black is doomed.} 23. Kd1 Be6 24. Kc1 {
+Kasparov has all the time in the world.} Rd8 {Useless.} 25. Rc2 Nbd7 26. Kb2
+Nf8 {Ironically, X3D Fritz was reaching incredible search depths because there
+are so few legal moves in this closed position. It was like casting a powerful
+searchlight into a black hole. Even reaching 19 half-moves ahead it couldn't
+find the essential plan.} 27. a4 {The a-pawn begins its march.} Ng6 28. a5 Ne7
+{After all this silliness it's too late for X3D Fritz to do anything now even
+if it realized it was in trouble. It's pieces are all on the other side of the
+board while Kasparov crashes through with his pawn.} 29. a6 {Kasparov gives
+back the pawn temporarily in order to gain a protected passed b-pawn and
+squares for his pieces. He will now build up his forces for the final assault.}
+bxa6 30. Na5 Rdb8 31. g3 {White gets ready to get his last piece into action
+and further restrain the useless black pieces.} Bg5 32. Bg2 {Getting out of
+the way of the rook while threatening to win a piece with h4, trapping the
+bishop.} (32. h4 $6 Ng4 33. Bg2 Bf6) 32... Qg6 33. Ka1 Kh8 {Two useless-looking
+king moves that aren't the same at all. Kasparov is getting out of the way of
+his heavy pieces. X3D Fritz is simply wasting more time. At this point the X3D
+Fritz team members started to shuffle their feet nervously. They knew from
+looking at the evaluation that the program had no idea it was about to be
+crushed.} 34. Na2 {Heading to the b4 square.} Bd7 35. Bc3 Ne8 36. Nb4 Kg8 37.
+Rb1 Bc8 38. Ra2 Bh6 39. Bf1 {Kasparov has optimized his forces for the final
+strike. During the last 20 moves X3D Fritz has accomplished absolutely nothing.
+} Qe6 40. Qd1 {With this move Kasparov's last worry disappeared. He had
+reached the time control on move 40, which meant he had an extra hour added to
+his clock. They would get even more time at move 60, but nobody believed the
+game would reach that point!} Nf6 {There is nothing to be done at this point,
+although X3D Fritz was still giving White just a tiny plus.} 41. Qa4 Bb7 (41...
+Kh8 {Waiting passively doesn't work either.} 42. Nbxc6 Bd7 {This pin backfires.
+} 43. b7 $1 Ra7 (43... Nxc6 44. bxa8=Q Rxa8 45. Rb6 Nxa5 46. Rxe6 Bxa4 47. Rxa6
+Rxa6 48. Bxa6 Nb3+ 49. Kb2) 44. Nxb8 Bxa4 45. Rxa4 {
+White wins easily even without his queen thanks to the mighty pawns.}) 42. Nxb7
+Rxb7 43. Nxa6 (43. Bxa6 Rbb8 44. b7 (44. Rb3 Qxh3) 44... Rxb7 45. Bxb7 Rxa4 46.
+Rxa4 g6 47. Ra6) 43... Qd7 44. Qc2 {For the second time in this game the queen
+steps out of a pin on the a-file. Now it's a simple matter of dominating the
+a-file, trading pieces, and pushing the b-pawn. Totally crushing.} Kh8 {
+X3D Fritz was still managing to find enough defensive resources in its search
+to delay the inevitable. It's evaluation was only -1.50, or a pawn and a half
+negative when in fact it is completely losing. The final cataclysm is beyond
+its search horizon, just like the rest of the game.} 45. Rb3 {The rooks will
+double on the a-file, penetrate to a7 or a8, force exchanges, and finally the
+push of the b-pawn will be unstoppable.} (45. Rb3 Ne8 (45... Qc8 46. Rba3 g6
+47. Nc7 Rxa3 48. Rxa3 Rb8 49. Qa2) (45... Qf5 46. Nc7 Rxa2+ 47. Qxa2 Nd7 48.
+Qa7 (48. Be2)) 46. Rba3 Nc8 47. Nb4 Rab8 48. Ra8 Bg5 49. Rxb8 Rxb8 50. Ra6 Bd8
+51. Qa4 Ne7 52. Ra8 Rxa8 53. Qxa8) 1-0
+
+[Event "Man-Machine World Championship"]
+[Site "New York"]
+[Date "2003.11.18"]
+[Round "4"]
+[White "X3D Fritz"]
+[Black "Kasparov, Garry"]
+[Result "1/2-1/2"]
+[ECO "D27"]
+[BlackElo "2830"]
+[Annotator "Greengard, Mig"]
+[PlyCount "54"]
+
+1. d4 {Already a bit of a surprise from X3D Fritz. Computers almost always
+play 1.e4 against humans because it leads to open positions with sharper, more
+concrete play, at least speaking very broadly. Of course any chess opening can
+lead to a sharp position, as we see here. The X3D Fritz team had a specific
+opening line in mind when they went for 1.d4 in this critical game four.} d5 {
+For a long time Kasparov played 1...Nf6 exclusively against 1.d4. That move
+usually led to the aggressive Grunfeld or King's Indian Defenses. Lately,
+however, he has been playing the more solid move here, staking out space in
+the center right from the start. After the game Kasparov said that he wasn't
+completely surprised by 1.d4 and had done some preparation with his seconds
+for the match, Grandmasters Yuri Dokhoian and Mikhail Kobalia. (Dokhoian is
+his long-time trainer.)} 2. c4 {The Queen's Gambit, offering a pawn to deflect
+Black's central d-pawn from its solid post. This has been one of the most
+common opening systems at every level of the game.} dxc4 {The Queen's Gambit
+Accepted, as Black accepts the offer of the pawn. Unlike other gambits Black
+only rarely attempts to hold on to his extra pawn in this variant. Doing so
+subjects him to too much attacking pressure. Instead he develops his pieces.
+Kasparov has played this before but the commentators weren't sure he would
+enter such an open, double-edged opening against X3D Fritz.} 3. Nf3 e6 4. e3
+Nf6 5. Bxc4 {Reestablishing material equality.} c5 {
+Black counterattacks the white center immediately.} 6. O-O a6 {
+Threatening to play 7...b5 and 8...c4 with a pawn advantage on the queenside.}
+7. Bb3 (7. dxc5 {This is a common line, but of course the X3D Fritz team
+wouldn't want to see the queens come off the board like this. They want as
+much activity and piece power on the board as possible to press the computer's
+advantage in tactics and calculation.} Qxd1 8. Rxd1 Bxc5) (7. a4 Nc6 8. Qe2
+cxd4 9. Rd1 Be7 10. exd4) 7... cxd4 {Kasparov heads into a line he has played
+before. You can see why the X3D Fritz team liked this line. All the pieces are
+still on the board and there are open lines for attack and piece play. There
+are no lines of blocked pawns to inhibit the computer's calculating ability.
+The downside is unrelated to the objective characteristics of the position.
+It's that Kasparov knows this position very well and is likely to have studied
+it deeply. This turns out to have been exactly the case.} (7... b5 {
+This move, quickly developing the bishop to b7, is the most popular here.} 8.
+a4 b4 9. Nbd2 Bb7) 8. exd4 {Now White has what we call an isolated queen's
+pawn, a very common structure. The pawn on d4 has no pawns alongside it to
+defend it and it can be a target for Black's forces. In compensation White has
+excellent open lines for developing his pieces and the pawn controls important
+center squares. It is also possible to advance the pawn to start an attack.}
+Nc6 9. Nc3 Be7 10. Re1 O-O 11. Bf4 {This move made it clear to Kasparov that
+the X3D Fritz team was headed into a line that was played in several very
+high-profile games a few years ago. Kasparov played in two of them, one with
+white in 1999 and one with Black in 2001! That 2001 game was against no lesser
+an opponent than world #2 Vladimir Kramnik on the stage in Moscow. Kasparov
+had won that game and no one had dared to play that line for White since then.
+Kasparov now started to play slower, warily looking ahead for what X3D Fritz
+had in mind. More precisely, what the X3D opening book team had in mind. The
+machine was still playing out of its opening library, not thinking on its own
+at all. There is a dead giveaway by the way the machine plays its moves
+instantaneously when it is still in its database book. When that's going on
+Kasparov knows that he is still following the programmers' preparation.} Na5 {
+Attacking the bishop. Exchanges are usually to the defender's benefit,
+especially in a cramped position.} (11... b5 12. d5 exd5 13. Nxd5 $16 Nxd5 14.
+Qxd5 Bb7 15. Qh5 Bf6 16. Rad1 Qc8 17. Bd6 g6 18. Qh6 $18 {
+1-0 Epishin,V-Jonkman,H/Amsterdam NED 2000/(30)}) 12. d5 {Wantonly giving up
+the weak pawn in order to open lines and create complications. Kasparov
+himself played 12.Bc2 against world #3 Anand in 1999.} (12. Bc2 b5 {'Illescas C
+ordoba: Este resulta ser el mejor metodo para desarrollar el alfil de b7; el
+peon en b5 tambien puede ser util en un futuro para hostigar al caballo blanco
+de c3 mediante el avance b5-b4'} 13. d5 {1/2-1/2 Kasparov,G-Anand,V/Wijk aan
+Zee 1999/CBM 69/[Huzman] (22) 'Illescas Cordoba: Un interesante sacrificio de
+peon cuyas consecuencias no quedan claras tras esta partida aunque promete una
+indudable compensacion a las blancas. Lo cierto es que a estas alturas del
+encuentro yo habia comprendido que en esta variante, tras la jugada 7.Bb3, las
+negras obtienen una comoda posicion si consiguen desarrollar a tiempo el
+flanco de dama. Por ello habia preparado esta entrega; las blancas abren el
+juego en un momento muy oportuno, con el alfil negro todavia en c8 y el
+caballo algo descolocado en a5'} (13. Qd3 Bb7 14. Be5 g6 15. Qe3 Nc4 16. Qh6
+Bxf3 17. gxf3 Nh5 18. Ne4 f5 $19 {
+0-1 Akesson,R-Degerman,L/Ronneby 1998/EXT 99 (23)})) 12... Nxb3 13. Qxb3 {
+After this Kasparov went into a very long think. He had faced this exact
+position two years ago in Moscow against his arch-rival, world #2 Kramnik.
+They were playing a match of blitz, games with just five minutes per player
+instead of the two hours plus of classical chess. Kasparov's was wondering if
+he should continue to follow the line from that game. He beat Kramnikspectacula
+rly in that 2001 blitz game by sacrificing his queen and winning a wild
+tactical melee. But surely trying that against X3D Fritz would be close to
+suicide. It was just that sort of position the computer team dreamed of when
+they told X3D Fritz to play this line if given the chance. So Kasparov sat
+there for a while looking at the alternatives. He was mentally thumbing
+through his years of memorized analysis and looking to see what dangerous
+improvements the X3D Fritz team might have found.} exd5 {Kasparov avo ids the
+wild queen sacrifice line and recaptures with the pawn. Grandmaster Yasser
+Seirawan, one of the ESPN commentators, didn't like this line at all against a
+computer because of the many open lines. The alternatives were worse, however,
+at least according to Kasparov. This move has also been played before in top
+level games and this is a factor in Kasparov's favor. He would definitely have
+analyzed those games.} (13... Nxd5 {
+A remarkable queen sacrifice originating with Alexei Shirov.} 14. Rad1 Nxf4 15.
+Rxd8 Rxd8 16. Rd1 Nd5 17. Ne5 (17. Nxd5 exd5 18. h3 b5 19. Rxd5 Be6 20. Rxd8+
+Rxd8 21. Qc2 {1/2-1/2 Gelfand,B-Shirov,A/New Delhi/2000/CBM 80 (21)'}) 17...
+Bf6 18. Nc4 Rb8 $1 (18... Nxc3 19. Rxd8+ Bxd8 20. Nb6 $1) 19. Na5 $6 (19. Nxd5
+exd5 20. Ne3 Be6 (20... d4 21. Nd5 Be5 22. Re1 Bd6 $11) 21. Nxd5 Bxb2 22. Qxb2
+Rxd5 23. Rxd5 Bxd5 $11) (19. Nb6 Nxb6 20. Qxb6 Bd7 21. Ne4 Be7 $11 {/=/+})
+19... Bd7 20. Ne4 (20. Nxd5 exd5 21. Rxd5 b6 22. Nc4 Be6 $17) 20... Be7 21. Nc4
+Bb5 $17 22. Ne5 Be8 23. h3 b5 24. Qg3 Rbc8 25. Kh1 a5 26. h4 a4 27. Ng5 h6 28.
+Ngf3 Nf6 29. Rxd8 Rxd8 30. Qf4 Rd1+ 31. Kh2 Bd6 $19 32. g3 Bc6 $1 33. g4 Rd3 $1
+34. Kg1 Bxf3 {0-1 Kramnik,V-Kasparov,G/Moscow 2001/CBM 87/[Huzman] (34)}) 14.
+Rad1 {Played instantly, showing that X3D Fritz was still in its opening
+library. Black is unable to hold on to the extra pawn.} Be6 15. Qxb7 {
+Getting the pawn back, but now the queen is exposed on b7.} Bd6 {Kasparov offer
+s exchanges to weaken White's attacking forces. Another move played here is
+the much more complicated 15...Bc5. Anand played that move against Kramnik in
+2001 and a few months later his Indian compatriot, Sasikiran, tried it against
+Bacrot. The extreme complications arising from that move are exactly what any
+human would want to avoid against a computer beast like X3D Fritz.} (15... Bc5
+16. Be5 Qa5 (16... a5 17. Nd4 Nd7 18. Bg3 Re8 19. Ndb5 h5 20. Nxd5 h4 21. Bf4
+Bg4 22. Nbc7 Rxe1+ 23. Rxe1 Rb8 24. Qxb8 Nxb8 25. Re8+ Qxe8 26. Nxe8 Nc6 27.
+Nef6+ gxf6 28. Nxf6+ Kf8 29. Nxg4 {
+1-0 Bacrot,E-Sasikiran,K/Lausanne 2001/CBM 82 ext (42)}) 17. Nd4 Bxd4 18. Rxd4
+Nd7 19. Bd6 Nc5 20. Qc7 Qxc7 21. Bxc7 Rfc8 22. Bg3 Ne4 23. Nxd5 Bxd5 24. Rxd5
+Nxg3 25. hxg3 {1/2-1/2 Kramnik,V-Anand,V/Monte Carlo 2001/CBM 81 ext (76)}) 16.
+Bg5 {
+Keeping the bishop on the board and pinning the knight on f6 against the queen.
+} Rb8 17. Qxa6 {Kasparov was relieved when the computer actually thought for a
+while before playing this obvious move. That meant it was finally out of its
+opening library and he wasn't out of his! Now he didn't have to worry about a
+nasty prepared surprise. Kasparov had analyzed this position extensively in
+the past and didn't think Black had anything to fear.} Rxb2 18. Bxf6 {
+Making things easier for Kasparov. The world #1 had already seen through to
+the completely equal endgame that is now coming. X3D Fritz could have kept
+more material on the board instead of exchanging, but it doesn't know how to
+do anything other than play the best move. If a move that simplifies is rated
+as 0.01 points better than an incredibly complicated move it will play the
+simplifying move even though it would have much better winning chances against
+a human by playing the complicating move. One thing the X3D Fritz team might
+not have been aware of is that the previous game to reach this position was
+played by GM Andrei Kharlov, a Russian who has been part of Kasparov's
+analysis team several times. This would significantly increase the chance that
+Kasparov would know this line inside and out.} (18. Re2 Rxe2 19. Qxe2 Be7 20.
+Qd3 Qa5 21. Bxf6 Bxf6 22. Nxd5 Qxa2 23. Nxf6+ gxf6 24. h3 Qa5 25. Qd4 Kg7 26.
+Qe3 Re8 27. Rc1 Rc8 28. Rxc8 {
+1/2-1/2 Dorfman,J-Kharlov,A/France 2001/EXT 2002 (28)}) 18... Qxf6 {Kasparov wa
+s now playing his moves quickly and with a peaceful look on his face. He knew
+the danger was past. Black has absolutely no winning chances in these lines as
+there is no way X3D Fritz is going to make a huge blunder. In simple, open
+positions computers are all but invincible. The draw was now becoming apparent.
+} 19. Qxd6 Qxc3 20. Nd4 {If White tries to save the a-pawn it can come out on
+the worse end of the position. X3D Fritz is content to play a line in which it
+eliminates Black's central passed pawn.} (20. a4 Ra2) 20... Rxa2 21. Nxe6 fxe6
+22. Qxe6+ Kh8 {It's White to play, but Black's double attack on the f2 pawn
+forces X3D Fritz to defend instead of grabbing the d5 pawn. It's completely
+equal with no winning chances for either side.} 23. Rf1 (23. Qf7 Qc8 24. Qxd5
+Raxf2 25. Rf1 Qc2 26. h3 h6) 23... Qc5 {Continued precise play from Kasparov.
+The triple attack on f2 leads to further exchanges.} (23... Rd2 24. Qe1 Rd3 25.
+Qxc3 Rxc3 26. Rxd5) 24. Qxd5 Rfxf2 {The point! Black isn't losing his queen
+here because he is threatening checkmate in two moves. Of course X3D Fritz had
+seen all this coming too. Still, it's a pretty way to end a rather technical
+final game. Both sides have serious back-rank problems; their kings have no
+way to escape a check on the rank. With all the heavy pieces on the board this
+creates various tricks, but both Kasparov and X3D Fritz were up to the task.}
+25. Rxf2 (25. Qxc5 $4 Rxg2+ 26. Kh1 Rxh2+ 27. Kg1 Rag2# {Checkmate!}) (25. Qd8+
+Rf8+ {Blocking check with check, a rare and attractive tactical theme that
+saves the day. Kasparov had foreseen all of this as early as a dozen moves ago.
+} 26. Kh1 Raf2 (26... Rxd8 $4 27. Rxd8+ Qf8 28. Rdxf8#) 27. Rxf2 Qxf2 28. h3)
+25... Qxf2+ 26. Kh1 h6 {Eliminating the back-rank weakness by giving the king
+some air (usually called the German "luft"). 10 moves earlier online
+commentator Mig Greengard has predicted the game would finish drawn in this
+position. But X3D Fritz ruins that prediction by playing one more useless move
+first.} 27. Qd8+ (27. Rc1 {Any human would have played this move just to see
+if Black might blunder. It isn't immediately obvious how Black can deal with
+the threat of Rc8+ with a winning attack. The black rook can't go to a8 and if
+it blocks with ..Rc2 then Qd8+ Kh7 Qd3+ wins the rook with a fork. Three-time
+US Champion Joel Benjamin was momentarily alarmed, thinking that perhaps
+Kasparov had missed this trick in what looked like a safe position at last.}
+Qc2 $1 {This is the way! Black offers the queen to block the check and White
+cannot capture without being checkmated! A nice trick that Kasparov had to
+have seen long ago or this line could have meant trouble. It turns out there
+is another way to save Black, but it's not nearly so clear or pretty.} (27...
+Ra6 $6 {Unnecessarily complicated.} 28. Rc8+ Kh7 29. Qe4+ Rg6 30. h4 Qf1+ 31.
+Kh2 Qf6 32. h5 $2 Qd6+ 33. Kh1 Qd1+ 34. Kh2 Qxh5+) 28. Rxc2 $4 (28. Rf1 Kh7)
+28... Ra1+ 29. Rc1 Rxc1+ 30. Qd1 Rxd1#) (27. Rb1 Rb2 28. Ra1 Rb8) 27... Kh7 {
+White cannot make progress and has to worry about its own king and the attack
+on g2.} 1/2-1/2
+

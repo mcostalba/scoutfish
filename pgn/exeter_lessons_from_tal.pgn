@@ -1,0 +1,268 @@
+[Event "Olympic games"]
+[Site "Munchen"]
+[Date "1958"]
+[White "Walther"]
+[Black "Tal,M"]
+[Result "0-1"]
+[Source "Exeter Chess Club"]
+[Annotator "DrDave"]
+
+{Natural moves in the opening}
+1. e4 c5 2. Ne2 Nf6 3. d3 Nc6 4. Nd2
+{
+So many words have been written about Tal that my own observations are perhaps rather superfluous. The brilliance of his play and the dramatic way his wins are often achieved are apparent to all.
+For tonight's session, and with their instructional content in mind, I would just like to add that it was interesting to me how some of his most striking wins are introduced by apprently simple means - not striving for complications but building up with classically good moves. This may be partly a reflection of how familiar the GM play of the 1950s is to a club player of the 1990s - the Modern Benoni was by no means a staple when Tal played it - but nonetheless you feel that Capablanca would have chosen many of Tal's moves, even if he would have tried to reach a decision by different means.
+Most curious. It is not unusual to develop one or other Knight to the second rank, but both at once, and before developing either Bishop, is very odd. Any advantage Walther saw in getting Tal out of the books is outweighed by the unnatural formation and the need to get his pieces untangled. Tal does not strike immediately, but develops quietly, waiting for a suitable moment to arise.
+}
+4... d5 5. c3 dxe4 6. dxe4 g6 7. Qc2 Bg7 8. a4 $2 O-O 9. Nc4 $2 Na5 10. Nf4
+{
+White is trying to get sorted but is a long way from castling. Tal gives White's formation a sharp push, and after some wobbling, it collapses.
+}
+10... e5 $1 11. Nd5 Nxe4 12. Qxe4 Nb3 13. Ra3 Bf5 14. Qe3 Nxc1 15. Qxc5 Re8 16. Qe3
+{
+On "body count" Black is a bare Pawn up, but as Bill Hartston says, its the pieces on the board that count, and White's are horribly uncoordinated.
+}
+16... Bf8 17. Nb4 a5 18. Nxa5 Qxa5 19. Qxc1 Bxb4 20. cxb4 Qxb4+ 21. Rc3 Qe4+ 22. Be2 Rxa4 23. f3 Qb4 24. g4 e4 $1
+{
+Properly opening up lines against White's uncastled King.
+}
+25. f4 Ra2 $1 26. gxf5 Rxb2 27. O-O $1 
+{
+At last! But Black's nicely centralised and active forces are still in control.
+}
+27... Rxe2 28. Rc8 Qb6+ 29. Kh1 Rxc8 30. Qxc8+ Kg7 31. fxg6 hxg6 32. f5 Qf6 33. Qxb7 Qe5
+0-1
+
+[Event "ch-SU"]
+[Site "Riga"]
+[Date "1958"]
+[White "Averbakh"]
+[Black "Tal,M"]
+[Result "0-1"]
+[Source "Exeter Chess Club"]
+[Annotator "DrDave"]
+
+{Trying to refute an opponent's opening} 
+1. d4 Nf6 2. c4 e6 3. Nc3 c5 4. d5 exd5 5. cxd5 d6 6. e4 g6 7. Be2 Bg7 8. Nf3 O-O 9. O-O Re8
+{
+So far, so typical of the Modern Benoni. At the time this formation was still considered rather suspect (and maybe it still is in some circles), so Averbakh adopts a very active plan to 'punish' this cheeky opening, targeting d6.
+}
+10. Qc2 Na6 11. Bf4 Nb4 12. Qb1
+{
+White's formation is just for the moment in need of a few moves for perfect comfort. Tal decides the time to strike is now!
+}
+12... Nxe4 13. Nxe4 Bf5 14. Nfd2 Nxd5
+{
+This sacrifice of a Knight for central Pawns is seen repeatedly in Tal's play, and his practical results have been excellent.
+}
+15. Bxd6?! 
+(15. Bg3 {e.g.} 15... Qe7 16. Bf3 Rad8)
+15... Nf6 16. Bf3 Nxe4 17. Nxe4 Bxe4 18. Bxe4 Qxd6
+{
+The scrapping has led to a winning position for Black. Opposite coloured Bishops only draw if they are the only things on the board!
+}
+19. Qc2 Re7 20. Bf3 Rae8 21. Rad1 Bd4 22. a4 b6 23. b3 Re5 24. Rd2 h5 25. Re2 Rxe2 26. Bxe2 h4 27. Kh1 Qf4 28. g3 Qf6 29. Qd1 Rd8 30. Bg4 Bxf2 31. Qe2 Rd2 32. Qe8+ Kh7 33. gxh4 Qd4 34. Bh3 Qd3 35. Bg2 Rd1 
+0-1
+
+[Event ""]
+[Site "Riga"]
+[Date "1954"]
+[White "Saigin"]
+[Black "Tal,M"]
+[Result "0-1"]
+[Source "Exeter Chess Club"]
+[Annotator "DrDave"]
+
+{Natural moves in the middlegame} 
+1. d4 Nf6 2. c4 c5 3. Nf3 e6 4. g3 cxd4 5. Nxd4 d5 6. Bg2 e5 7. Nf3 d4 8. O-O Nc6 9. e3 $5 Be7 10. exd4 exd4 11. Nbd2 Be6
+{
+White has allowed Black a passed Pawn, hoping that it will become weak.
+}
+12. Re1 O-O 13. b3 Qd7 14. Bb2 Rad8 15. a3 a5 16. Ne5 Nxe5 17. Rxe5 b6 18. Nf3 Bc5 19. Qd2 Ng4 20. Ree1 d3 21. Rf1
+{
+Black has a nice position, but what to do next?
+}
+21... Qd6 
+{
+"Such quiet and apparently non-constructive moves are among the finest and most difficult to find in a game of chess." - Clarke.
+}
+22. Qc3 
+(22. b4 axb4 23. axb4 Bxb4)(22. h3 Nxf2 23. Rxf2 Qxg3)
+22... f6 23. Rad1 Rfe8 24. Rd2 Bf5 25. Ng5
+{
+Surely Black's position has reached its peak of potential. All we need now is a way of translating the good position into a decisive tactical blow - and of that art Tal has always been a master.
+}
+25... Ne3 $3 26. fxe3 
+(26. Re1 Nxg2 27. Rxe8+ Rxe8 28. Kxg2 Qc6+ 29. f3 
+(29. Nf3 Be4)
+29... Re1)
+26... Bxe3+ 27. Kh1 
+(27. Rff2 Bxf2+ 28. Kxf2 Qc5+ 29. Kf1 Re1+ 30. Kxe1 Qg1+ 31. Bf1 Re8+)(27. Rdf2 Bxf2+ 28. Rxf2 
+(28. Kxf2 Qc5+)
+28... d2 29. Bd5+ Qxd5 30. cxd5 d1=Q+)
+27... Bxd2 28. Qxd2 Re2 29. Qc3 Rxg2 
+(29... Rxg2 30. Kxg2 d2 31. Rd1 Bg4 32. Nf3 Qd3)
+0-1
+
+[Event "23rd USSR ch"]
+[Site ""]
+[Date "1956"]
+[White "Tal,M"]
+[Black "Simagin"]
+[Result "1-0"]
+[Source "Exeter Chess Club"]
+[Annotator "DrDave"]
+
+{A real sacrifice}
+1. e4 c6 2. d4 d6 3. Nc3 Nf6 4. f4 Qb6 5. Nf3 Bg4 6. Be2 Nbd7 7. e5 Nd5 8. O-O Nxc3 9. bxc3
+9... e6 
+(9... Bxf3 10. Bxf3 dxe5 11. fxe5 Nxe5 12. Ba3)
+10. Ng5 Bxe2 11. Qxe2 h6
+12. Nxf7 
+{
+Easy to see, hard to play! Simagin undoubtedly expected this move and was deliberately inviting it, judging that Tal was bluffing. Bravery from both players, then!
+Spielmann calls this type of move a 'real' sacrifice as opposed to those sacrificial combinations where the hoped-for gain is clear and short- term. We have seen already a Tal sacrifice in the game against Averbakh where the omens may have been good but the precise justification was not obvious. 
+}
+12... Kxf7 13. f5 dxe5 14. fxe6+ Kxe6 15. Rb1 Qxb1 16. Qc4+ Kd6 17. Ba3+ Kc7 18. Rxb1 Bxa3 19. Qb3 Be7 20. Qxb7+ Kd6
+21. dxe5+ (21. Rd1 $1 $18) Nxe5 22. Rd1+ Ke6 23. Qb3+ Kf5 24. Rf1+
+24... Ke4 
+(24... Kg6 25. Qe6+ Bf6 26. Qf5+ Kf7 27. Qxe5)
+25. Re1+ Kf5 26. g4+ Kf6 27. Rf1+ Kg6 28. Qe6+ Kh7 29. Qxe5 Rhe8 30. Rf7 Bf8 31. Qf5+ Kg8 32. Kf2 Bc5+ 33. Kg3 Re3+ 34. Kh4 Rae8 35. Rxg7+ Kxg7 36. Qxc5 R8e6 37. Qxa7+ Kg6 38. Qa8 Kf6 39. a4 Ke5 40. a5 Kd5 41. Qd8+ Ke4 42. a6 Kf3 43. a7 Re2 44. Qd3+ R6e3 45. Qxe3+ 
+1-0
+
+[Event "ch-SU"]
+[Site "Moskva"]
+[Date "1957"]
+[White "Aronson"]
+[Black "Tal,M"]
+[Result "0-1"]
+[Source "Exeter Chess Club"]
+[Annotator "DrDave"]
+
+{Mixing it}
+1. d4 e6 2. c4 f5 3. Nf3 Nf6 4. Nc3 Be7 5. g3 O-O 6. Bg2 d6 7. O-O Qe8 8. Re1 Qg6 9. e4 fxe4 10. Nxe4 Nxe4 11. Rxe4 Nc6 12. Qe2 Bf6 13. Bd2 e5 14. dxe5 dxe5 15. Bc3 Bf5 16. Nh4 Bxh4 17. Rxh4 Rae8
+{
+Tal's position looks OK but White's position also has virtues. The game now enters a scrappy phase where Tal's formidable powers of imagination and calculation shine.
+}
+18. Qe3 h6 19. b4 $1 Qf6 20. b5 Nd8 21. Bd5+ Kh8 22. f4 $2 exf4 $1 23. Qd2
+{
+Just when White might have thought he was getting somewhere...
+}
+23... Qb6+ $1 24. Bd4 Qg6 25. Qxf4 
+(25. Rxf4 Ne6 26. Bxe6 Bxe6)
+25... Kh7 $1 26. Qxc7 
+(26. Qd2)
+26... Bb1 27. Be5 Ne6 28. Qd6 Qf5 29. Bf4 Ng5 30. Qb4 Be4 31. Bxe4 Rxe4 32. Rf1 Re2 33. Qd6 Rxa2 34. Qd5 Qc2 35. c5 Rd8! 36. Bd6 Re8 $1 
+ (36... Re8 37. Qf5+ Qxf5 38. Rxf5 Re1+ 39. Rf1 Nf3+) 
+{time} 
+0-1 
+
+[Event "sf-ch-SU"]
+[Site "Tbilisi"]
+[Date "1956"]
+[White "Tal,M"]
+[Black "Yukhtman"]
+[Result "1-0"]
+[Source "Exeter Chess Club"]
+[Annotator "DrDave"]
+
+{Outside passed Pawn} 
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6 6. Bg5 Nbd7 7. Bc4 h6 8. Bxf6 Nxf6 9. Qe2 e6 10. a3 Be7 11. Bb3 Bd7 12. O-O Qa5 13. Rad1 Qh5 14. Qe1
+14... g5 $2 15. e5 $1 Ng4 16. Nf3 Bc6 17. Bd5 $1 Nxe5 18. Nxe5 exd5 19. Nxd5 $1 Bxd5 20. Rxd5 dxe5 21. Rxe5 O-O 22. Rxe7
+{
+Peter Clarke remarks that drawing chances in major piece endings depend on (1) exposed opponent's King, (2) possession of an advanced or passed Pawn, and (3) weak enemy Pawns. Black has none of these!
+}
+22... Rac8 23. Qe4 b5 24. Re1 Rcd8 25. c4 $1 bxc4 26. Qxc4 Qg6 27. Ra7 Rfe8 28. Rxe8+ Rxe8 29. g3 Re6 30. Kg2 Rf6 31. Ra8+ Kh7 32. Rd8 $1
+{
+Deliberately inviting...
+}
+32... Rxf2+ 33. Kxf2 Qf6+ 34. Ke3 Qxd8 35. Qd3+ Qxd3+ 36. Kxd3
+{
+Tal had of course had foreseen this simple win: the outside passed Pawn wins.
+}
+36... Kg6 37. Ke4 Kf6 38. g4 $1 Ke6 39. b4 h5 40. gxh5 f5+ 41. Kd4 Kf6 42. a4 g4 43. b5 
+1-0
+
+[Event ""]
+[Site ""]
+[Date "1956"]
+[White "Tal,M"]
+[Black "Lisitsin"]
+[Result "1-0"]
+[Source "Exeter Chess Club"]
+[Annotator "DrDave"]
+
+{Active King in the Ending}
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 g6 6. f4 Nc6 7. Nxc6 bxc6 8. e5 Nd7 9. exd6 exd6 10. Be3 Be7 11. Qf3 d5 12. O-O-O Bf6 13. Bd4 O-O 14. h4 Rb8 15. Qf2 Rb4 16. Bxf6 Nxf6 17. a3 Qb6 18. Qxb6 Rxb6 19. Na4 Rb7 20. Bd3 Nh5 21. Rhf1 Re7
+{
+How to save the f-pawn?
+}
+22. f5 $1 
+{
+Can't be done, but Tal gives it up for a high price - scrambled pawns.
+}
+22... gxf5 23. Rfe1 Rfe8 24.Rxe7 Rxe7 25. Kd2
+{
+In Exeter we say "KUFTE!" (King Up For The Endgame!)
+}
+25... Ng3 26. Kc3 f4 27. Kd4 Bf5
+{
+And there it is, nicely posted in the middle of a lot of weak Black pawns.
+}
+28. Rd2 Re6 29. Nc5 Rh6 30. Ke5 $1 Bxd3 31. cxd3 Rxh4 32. Kd6 Rh6+ 33. Kc7 Nf5 34. Kb7 Nd4 35. Rf2 a5 36. Rxf4 Ne6 37. Rg4+ Kf8
+{
+The game is decided all in the position of the two Kings.
+}
+38. Kxc6 $1 38... Nxc5+ 39. Kxc5 Re6 40. Kxd5 Rb6 41. b4 axb4 42. axb4 Ke7 
+{
+Too late
+}
+43. Kc5 Rf6 44. Rd4 Rf5+ 45. Kb6 Rf6+ 46. Kc7 Rf5 47. Re4+ Kf6 48. Kc6 Rf2 49. g4 h5 50. gxh5 Kg5 51. b5 f5 52. Rb4 f4 53. b6 f3 54. b7
+(54. b7 Rc2+ 55. Kd5 f2 56. b8=Q f1=Q 57. Qg3+ Kf6 58. Qe5+ Kf7 59. Rb7+ Rc7 60. Rxc7+ Kf8 61. Qh8#)
+1-0 
+
+[Event "WM"]
+[Site "Varna tt stud"]
+[Date "1958"]
+[White "Tal,M"]
+[Black "Djurasevic"]
+[Result "1-0"]
+[Source "Exeter Chess Club"]
+[Annotator "DrDave"]
+
+{Activity of the pieces} 
+1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bg5 e6 7. Qd2 a6 8. O-O-O h6 9. Bf4 Bd7 10. Nxc6 Bxc6 11. f3 Qb6 12. Bc4 O-O-O 13. Be3 Qc7 14. Qf2 Nd7 15. f4 b5 16. Be2 Qb7 17. a3 $1 Be7 $2
+{
+This apparently safe developing move is not to the point.
+}
+(17... Nf6)
+18. Bf3 Nf6 19. e5 Ne4 20. Nxe4 Bxe4 21. Bxe4 Qxe4
+22. Bb6 $1 Rd7 23. Rhe1 Qb7 24. exd6 Rxd6 25. Rxd6 Bxd6 26. Qd4 Bc7
+{
+White can grab the pawn on g7, but... Purdy talks about 'contempt for Pawns' - what is more important is to keep active.
+}
+27. Bxc7 $1 
+{
+"The most important feature of each phase of the game is the activity of the pieces." - Stean.
+}
+(27. Qxg7 Bxf4+ 28. Kb1 Re8 29. g3 {when Black's active pieces have counterplay.})
+27... Qxc7 28. Rd1 Rd8 
+{
+Biting the bullet!
+} 
+(28... Qc4 29. Qxc4+ bxc4 30. Rd4)(28... f6 29. Qd6)(28... Rg8 29. Rd3 Kb8 30. Rc3 Qd8 31. Qc5 Qd7 32. Qb6+ Qb7 33. Qd6+ Ka8 34. Rc6)(28... Kb8 29. Rd3 Rc8 30. Rc3 Qb7 31. Rxc8+ Qxc8 32. Qxg7)
+29. Qxd8+ Qxd8 30. Rxd8+ Kxd8 31. Kd2 Kd7 32. Kd3 Kd6
+{
+The exchanges have led to a position in which Tal again has a Queen's-side majority, but this is by no means a simple win because of the "outside" candidate. The reason this position is won is because the White Queen's-side majority is 3:2 as opposed to 4:3. This simpler formation can yield a passed Pawn more quickly.
+}
+33. c4 bxc4+ 
+(33... Kc6 {passive defence} 34. Kd4 bxc4 35. Kxc4 Kd6 36. b4 Kc6 37. a4 Kb6 38. b5 axb5+ 39. axb5 g5 40. fxg5 hxg5 41. h3 f6 42. g3 f5 43. Kd3 Kxb5 44. h4)(33... e5 {counterattack} 34. fxe5+ Kxe5 35. cxb5 axb5 36. b3 Kd5 37. a4 bxa4 38. bxa4 Kc5 39. Ke4 Kb4 40. Ke5 Kxa4 41. Kd6 Kb5 42. Ke7)
+34. Kxc4 e5 35. fxe5+ Kxe5 36. b4 f5 37. b5 axb5+ 38. Kxb5
+38... f4 39. a4 g5 40. a5 g4 
+(40... Kd6 41. Kc4 Kc6 42. Kd4 Kb5 43. Ke4 Kxa5 44. Kf5 Kb5 45. h3)
+41. Kc4 $1 
+(41. Kc4 $1 Ke4 
+(41... f3 42. gxf3 gxf3 43. Kd3)(41... Kd6 42. Kd4)
+42. a6 f3 43. a7 f2 44. a8=Q+)
+1-0
+

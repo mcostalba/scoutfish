@@ -1,0 +1,636 @@
+[Event ""]
+[Site ""]
+[Date ""]
+[White "Svidler"]
+[Black "Shirov"]
+[Result "1-0"]
+[Source "Russian Chess"]
+[Annotator "Svidler"]
+
+1. e4 e5
+{In my preparation to this tournament, I (and probably everybody else) paid the most serious attention to two openingsx Ruy Lopez with Bc5 and Najdorf, since most of the participants seem to play them both. Needless to say, refuting Najdorf is tough, but I thought I came close to refuting Ruy Lopez with 5...b5 and 6...Bc5, provided Black responded to 7.a4 with 7...Rb8. But the opening ceremony dealt a heavy blow to mex I was the last one to play Shirov with White. And indeed, in Rounds 7&8 Shirov faced the position after 7.a4 against Kasparov & Anand. But to my relief, he must have thought that these guys know something and replied 7...Bb7. I was still in business.} 
+2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O b5 6. Bb3 Bc5 7. a4 Rb8
+{Played without hesitation, as I and Nigel correctly guessed he wouldx his 7...Bb7 was not broken, but quite bent in the game vs Vishy, and also I probably don't give the impression of a man capable to prepare anything at all.}
+8. c3 d6 9. d4 Bb6 10. Na3 Bg4 11. axb5 axb5 12. Nxb5 O-O 
+{One of the strangest tabyias of modern times. Black is a pawn down and is prepared to take on f3, strengthening White's centre and giving him the advantage of two Bishops.}
+13. Re1
+{This position saw also 13.Bc2 and 13.Be3, but Black is doing relatively fine there.}
+13...Bxf3 14. gxf3 Nh5
+{Shirov is repeating his game vs Ivanchuk from Belgrade, where he had no problems whatsoever.}
+15. Kh1 $1
+{Novelty which, in my opinion, almost kills the entire line. Kasparov, however, seemed to be sceptical. During the closing ceremony he asked me a couple of questions concerning the game, and then remarked that he would do a far better job as White if he was given a chance. It remains a mystery whether his improvement over my play was before or after move 15. Anand, on the other hand, is rumoured to have prepared the same stuff. } (15.Be3 Qf6 16.Kh1 exd4 17.cxd4 Ba5 $1 18.Rg1 Rxb5 19.Ba4 Rxb2 20.Bxc6 Bb6) { was played in Ivanchuk-Shirov. Black is completely out of danger.}
+15...Qf6
+{Played very quickly again. Other moves arex } (15...Qh4 16.Be3 exd4 17.cxd4 Ba5 18.Nc3 { and since Black queen is not attacking f3, White is just a pawn up. })
+(15...exd4 16.Nxd4 $1 (16.cxd4 $6 Qf6 17.Be3 Ba5 {transposes to Ivanchuk-Shirov}) 16...Bxd4 (16...Nxd4 17.cxd4 Qf6 18.Ra4+) 17.cxd4 Nxd4 (17...Qf6 18.Ra4+) 18.Qxd4 Rxb3 { and here comes the highpoint of White's ideax } 19.Qd5 $1 $20) 
+16. Rg1 $1
+{Winning an important tempo.}
+16...Nf4
+(16...h6 17.Be3 {is much better for White, since his rook is on g1 and cannot be attacked by Ba5 }) (16...exd4 17.Bg5 Qe5 18.Bd5+)
+17. Be3 Ne6 $133
+{The only possible source of counterplay.}
+18. Bxe6 fxe6 19. Rg3 Kh8 $1
+{A good prophylactic move} (19...exd4 20.Nxd4 $5 (20.cxd4 {is also OK, since} 20...e5 {is bad} 21.Bg5 $1 Qf7 22.Bh6 $20) 20...Ne5 (20...Bxd4 21.cxd4 Rxb2 22.Rc1 Ne7 23.Bg5 $1 Qf7 24.Rxc7 $20) 21.f4 Nc4 22.Qe2 Nxe3 (22...Nxb2 23.Ra2 $20) 23.fxe3+)
+20. Qd3
+{This move does not spoil anything, but it was probably better to play 20.Rc1, and Black is left with almost no counterplay at all.}
+20...exd4 21. cxd4 e5 22. d5
+(22.Rc1 $2 Nxd4 23.Bxd4 exd4 24.Nxc7 $4 Rbc8 $21)
+22...Ne7
+{Here I spent half an hour calculating this position to the end, and played}
+23. Bxb6 Rxb6 24. Nxc7 Rxb2
+(24...Ng6 25.Ne6 Nf4 26.Qe3 $20)
+25. Ne6 Rg8 26. Kg1 $1
+{Many other ideas are tempting, but this is the best. White chases away the enemy rook and then goes on the offensive.}
+26...Ng6 27. Qa3 Rb6
+(27...Rc2 $5 {A very nice variation could happen if Black went} 28.Qxd6 Nf4 {Here Black's initiative is quite strong, so White returns some of the material: } 29.Qd7 Ne2+ (29...Rgc8 30.Rf1 Ne2+ 31.Kg2 Nxg3 32.hxg3 R2c3 33.f4 exf4 34.Nxf4 $20) 30.Kg2 Nxg3 31.hxg3 Rc3 $1 32.f4 $1 {going for it!} 32...exf4 33.Nxf4 Rxg3+ 34.fxg3 Qb2+ $1 (34...Qxa1 {is a big mistakex } 35.Ng6+ hxg6 36.Qh3#) 35.Kf3 Qc3+ 36.Ke2 Qb2+ 37.Kd3 Qb3+ 38.Kd4 Qb2+ (38...Qb4+ 39.Ke5 Qb6 $5 {trying to discoordinate White's pieces} 40.Qe7 $1 Qb2+ 41.Ke6 Qxa1 {and once again} 42.Ng6+ hxg6 43.Qh4#) 39.Kc5 Qc3+ 40.Kd6 Qb4+ (40...Qf6+ 41.Qe6 Rd8+ 42.Kc7 $20) 41.Ke6 Qxe4+ 42.Kf7 {what a journey!} 42...g5 43.Qe6 Rg7+ 44.Kf6 Qd4+ 45.Qe5 $20) 
+28. Kh1 $1
+{The point. White is perfectly coordinated and is ready to tie Black completely with 29.Rag1.}
+28...Nf4 $2
+({During the game I was very worried about} 28...Nf8 $5. {I had seen the right ideax} 29.Qa7 $1 Rb3 $1 30.Ng5 h6 31.Nf7+ Kh7  32.Rh3 $1 ({after} 32.Rag1 $2 {with idea 33.Nxd6} Rxf3 $1) {Black is suddenly even better and Black is forced to go for} 32...Rxf3 (32...Ng6 33.Rxh6+ gxh6 34.Ng5+ Kh8 35.Qh7#) 33.Ng5+ Qxg5 34.Rxf3 $20})
+29. Nxg7 Ne2 30. Nf5 $1
+{That's what Alexei probably missed. White has no intention of protecting the exchange - once Black take on g3, the game will be over.}
+30...Rgb8 31. Qd3 Rb2 32. Rf1 $1
+{Probably something like 32.Rg4 was winning also, but this move is better- Black will be forced to take on g3 quite soon.}
+32...Ra8
+(32...Nxg3+ 33.hxg3 R2b3 34.Qd1 $1 (34.Qe2 Rb1 {with some chances}) 34...Rb1 35.Qxb1 Rxb1 36.Rxb1 {offers no hopes.})
+33. Qc4 Nxg3+ 34. hxg3
+{White is now winning easily.}
+34...Qd8 35. Qc1 Rb3 36. Kg2 Qf8 37. Qc7 
+1-0 
+
+[Event "Istanbul olm (8)"]
+[Site "Istanbul"]
+[Date "2000"]
+[White "Sakaev, Konstantin"]
+[Black "Mrva"]
+[WhiteELO "2627"]
+[BlackELO "2468"]
+[Result "1-0"]
+[Source "Russian Chess"]
+[Annotator "GM Konstantin Sakaev"]
+
+{In the match with Slovakia team we considered to win with big score and their avoiding the fight on white boards couldn't please us. So all responsibility was laid on Alexander Morozevich and me, who were playing with the white pieces. Sasha gradually outplayed Shtol and reached the victory and I have played rather balanced game.}
+1.d4 Nf6 2.c4 g6 3.g3 
+{It seemed to me the variation used to play by my opponent against system with g3 is rather doubious. That's why I chose this move. Nevertheless it was not so easy way indeed.}
+3...Bg7 4.Bg2 0-0 5.Nc3 d6 6.Nf3 Bg4 7.h3 Bxf3 8.Bxf3 Nc6 9.e3 Nd7 10.Bg2 a5 $1 $146
+({Good novelty, they played} 10...e5 11.d5 Ne7 12.e4 f5 13.h4 Nf6 (13...f4 14.Bh3 Rf6 15.Qe2 $16 {Botvinnik,M-Smyslov,V 1957}) 14.Bg5 h6 15.Bxf6 Bxf6 {with strong} 16.Qd3 $1 $146 ({positional incorrect} 16.h5 Bg5 17.hxg6 f4 18.Bh3 Kg7 {with good play for Black, Portisch,L-Sznapik,A 1984}) 16...h5 17.0-0-0 $16)
+11.Qe2 
+({I paid attention to} 11.h4 $5 {but I disliked} 11...Nb6 12.Qe2 e6 13.h5 d5 {though my partner, who is a follower of King's Indian positions, most likely would prefer another way.} )
+({After} 11.0-0 {Black has simple plan} 11...e5 12.d5 Ne7 13.e4 f5)
+11...e5 12.d5 Nb4 13.a3 
+({The Knight must be driven away since it is able to get a good post on the d3 square after approximate} 13.e4 Nc5 14.0-0 f5)
+13...Na6 14.Rb1 f5 $6 
+({This natural move turned out a serious mistake after which White has an advantage.
+Deserves attention} 14...Bh6 15.b4 (15.h4 f5 16.h5 Kg7 17.b4) 15...f5 {with complicated but better for White position because of lame a6 Knight's position.}) ({The best was} 14...Nac5 $1 15.b4 axb4 16.axb4 Na4 17.Nxa4 ({Risky is} 17.Nd1 Bh6 18.h4 f5 19.h5 Kg7 {with active play for Black}) 17...Rxa4 18.e4 Qa8 19.0-0 Ra2 {and White's advantage is minimal, if of course it is at all.})
+15.e4 Nac5 16.b4 axb4 17.axb4 Na4 
+(17...Nxe4 18.Nxe4 fxe4 19.Bxe4 $16)
+18.Nd1 $1 $16 
+{Very effective multifunctional move proving an advantage. White keeps a couple of pieces, consolidates plentifully the f2 square, clears the 3rd rank for the Rook (subsequently not for Rb1-b3 but Rh1-h3-a3!), and also threating 19.ef5 gf5 20.g4 and then it will be able to put the knight into the play through the e3 square.}
+(18.Nxa4 Rxa4 19.0-0 {as it was told before can offer White a little.}) 
+18...f4 
+(18...Nf6 19.exf5 gxf5 20.g4 $1 $16)(18...Qe7 19.Rb3 f4 20.h4 Bh6 21.Bh3 f3 22.Qc2 $16)
+19.h4 c5 $1 {Makes White worsen his pawn structure of queenside.} 
+20.dxc6 bxc6 21.h5 g5 22.h6 $1 Bf6 23.Bh3 Kh8 
+({Perhaps better was} 23...Qe7 $5 24.Bf5 Rfb8 {with the idea to put the Knight onto e6 through f8 by the chance. })
+24.Bf5 Ndb6 25.g4 $1
+{Strengthening the light-square bishop and preparing h1 Rook's manoevre.}
+25...Nc8 26.Rh3 Ne7 27.Be6 Ng6 28.Ra3 Qe7 29.Bf5 Nh4 30.Rba1 Nb6 31.Rxa8 Nxa8 
+({Exchange of one more couple of the Rooks is good for White} 31...Rxa8 32.Rxa8+ Nxa8 33.Nc3 $16)
+32.Nc3 Qb7 33.b5 Nxf5 34.gxf5 Nb6 35.Qd3 
+({Also promising was} 35.Ra6 $16 {but White has already planned some X-rays on the 6th rank and b file which in combination with mate net (... 22.h6!) decides.} )
+35...Be7 36.Ra6 Rf6 37.c5 $1 dxc5 38.bxc6 Rxc6 39.Qb5 $20 Bd8 40.Nd5 
+{White threatens nothing immediately but Black is completely pinned and can't find any useful move.} 
+40...g4 41.Bb2 f3 
+({After} 41...g3 {the simplest is} 42.Bxe5+ Kg8 43.fxg3 fxg3 44.Bxg3)
+42.Bxe5+ Kg8 43.Ra7
+(43.Rxb6 Bxb6 44.Qxc6 Ba5+)
+(43.Ra7 $1 43...Qxa7 44.Qxc6 Qd7 45.Nf6+ Bxf6 46.Qxf6)
+1-0 
+
+[Event "KC Internet Grand Prix"]
+[Site " $4"]
+[Date "2000"]
+[White "Short, Nigel"]
+[Black "Svidler, Peter"]
+[WhiteELO "2683"]
+[BlackELO "2672"]
+[Result "1/2-1/2"]
+[Source "Russian Chess"]
+[Annotator "GM Konstantin Sakaev"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Be7 6. d4 Na5 7. Be2 d6 8. Qa4+ c6 9. dxe5 dxe5 10. Nxe5 Nf6 11. O-O b5 12. Qc2 O-O
+{Svidler chosed the line where White's chances, in my opinion, are obviously better} (12...Qc7 13. f4 O-O 14. Be3 $16) 
+13. a4 $6
+(13. Bf4 $1 13...Bd6 14. Rd1 Qc7 15. Rxd6 Qxd6 16. Ng6 Qc5 17. Nxf8 Qxf8 (17...Kxf8 18. e5 Nd5 19. Qxh7 Nxf4 20. Qh8+ Ke7 21. Qh4+) 18. Nd2 $16 {By now nobody has played 13. Bf4} ) (13. a4)
+(13. Nd2)
+13...Qc7 14. Nf3 a6 15. Bg5 Bg4 $1 
+{It is stronger than} (15...Be6 16. Nbd2 Nb7 17. Nd4 Nc5)
+16. Nbd2 Nb7 17. h3 Bh5 18. Rae1 Nc5 19. Nd4 Bg6 $6
+({Looks like a mistake. Necessary was} 19...Bxe2 20. Rxe2 Ne6 (20...h6 21. Bh4 Nh5 $5 22. Bxe7 Qxe7 23. Nxc6 $6 Qf6 24. Nd4 Nf4))
+20. f4 $6
+({Tempting was} 20. Bxf6 $5 Bxf6 21. f4 b4 $2 22. f5 bxc3 23. N2b3)
+20...Ncxe4 21. Nxe4 Bxe4 
+{White hardly has a sufficient compensation for a pawn}
+22. Bd3 Bxd3 23. Qxd3 Rfe8 $6 
+{I would recommend} (23...Nd5) (23...Bc5 24. Bxf6 gxf6 {one should expect a quick draw. After 23...Rfe8?!  White gains better chances}) 
+24. Re5 $1 Qd7 25. Qf3 $6 
+(25. Qe2 Bc5 $1)
+(25. Qg3 $5 {deserved attention})
+25...Nd5 26. axb5 axb5 27. Bxe7 Nxe7 28. Rfe1 Ng6 
+(28...Nd5 29. Nxc6 (29. Qg4 Rxe5 30. Qxd7 Rxe1+ $17) 29...Qxc6 30. Rxe8+ Rxe8 31. Rxe8+ Qxe8 32. Qxd5 {with a draw}) 
+29. Rxe8+ Rxe8 30. Rxe8+ Qxe8 31. Nxc6 Nh4 
+32. Qd5 (32. Qg4 Qxc6 33. Qxh4 f6 34. Qg3) Qe3+ 33. Kh1 Qc1+
+1/2-1/2 
+
+
+[Event "KC Internet Grand Prix"]
+[Site " $4"]
+[Date "2000"]
+[White "Svidler, Peter"]
+[Black "Short, Nigel"]
+[WhiteELO "2672"]
+[BlackELO "2683"]
+[Result "1-0"]
+[Source "Russian Chess"]
+[Annotator "GM Konstantin Sakaev"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 Bb4 5. e5 h6 6. Bd2
+({This is the MacCutcheon variation, rarely used now. It seems that the most unpleasant line for Black is} 
+6. Bh4 $5 {an uncommon continuation, as well as all the variant with 4...Bb4} 6...g5 7. Bg3 Ne4 8. Nge2 c5 9. Qd3 $5)
+6... Bxc3 7. bxc3 Ne4 8. Qg4 Kf8 9. Be3 
+({Rather rare move, very sharp and risky. The main way is} 9. Bd3 Nxd2 10. Kxd2 c5)
+9...Nxc3 10. Bd3 Nc6 11. Nf3 $5 
+({A questionable decision, no wonder that Svidler spent a long time while thinking about this move. The alternative was} 11. a3 {avoiding a trade of the bishop d3, but it would have lost an important tempo})
+11...Nb4 12. Bd2
+(12. O-O Nxd3 13. cxd3 Bd7 (13...h5 14. Qh3) {White can't play} 14. Nh4 $2 (14.Bd2 Na4 {with the same position as in the game}) 14...h5 $1 15. Qh3 g5 $1 $19)
+12...Nxd3+ 13. cxd3 Na4 14. O-O Bd7 15. Rab1
+{Preventing 15...Bb5}
+15...b6 $6
+({This natural move, probably, is a mistake. If} 15...b5 16. Ba5 $1)
+16. Nh4 Qe8 17. Rfe1 
+{Another possible way - 17. f4 g6 18. Qh3 with the following 19. g4 and 20. f5, or 19. Be1, 20. Nf3 and 21. Bh4 }
+17...Kg8 18. Re3 Rh7 19. Rg3 
+{Threatening is 20. Bxh6}
+19...Kh8 20. Re1 Rc8 $6 
+{The idea to carry out c7-c5 is wrong. Necessary was 20...a5 and then b6-b5-b4, developing counterplay. To open any line is good for White}
+21. Ree3 c5 22. Ref3 cxd4
+(22...c4 23. dxc4 dxc4 $5 {deserved attention})
+23. Qxd4 Rc2 24. Qf4 Rxa2 25. h3 Rxd2 $7 
+{26. Qxf7 threated}
+26. Qxd2 g5 27. Qb4 $6 
+({Better was} 27. Rf6 $1 gxh4 28. Rg4 Qf8 29. Rxh4 h5 30. Qe2 Nc3 31. Qf3 -- 32. Rxh5 $40 $18)
+27...a5 28. Qd4
+(28. Qg4 28...Nc3)
+28...Qc8 29. Re3 
+(29. Kh2 $40 29...Qc3 30. Qg4 Qxe5 31. Rxf7 $1 $18)
+29...Qc3 30. Qg4 d4 31. Re4 Nc5 32. Rxd4 a4 33. Nf3
+({Once more} 33. Kh2 $40 $18 {was better})
+33...Qc1+ 34. Kh2 h5 35. Qxg5 Qxg5 36. Nxg5 Rg7 37. Rd6 Rxg5 38. Rxg5 a3 39. d4 a2 $2 
+(39...Nb3 {was better} 40. Rxb6 (40. Rxd7 a2 41. Ra7 Na5) 40...a2 41. Ra6 a1=Q 42. Rxa1 Nxa1 43. Rxh5 {White must gradually win. After 39...a2 Black had no chances, his position is lost})
+40. dxc5 a1=Q 41. Rxd7 Qc1 42. Rxh5+ Kg7 43. Rh4 bxc5 44. g3 Kf8 45. Rf4 Ke8 46. Rfxf7 
+1-0 
+ 
+[Event "Stockholm (7)"]
+[Site "Stockholm"]
+[Date "2000"]
+[White "Akesson, Ralf"]
+[Black "Ivanov, Sergey"]
+[WhiteELO "2495"]
+[BlackELO "2545"]
+[Result "0-1"]
+[Source "Russian Chess"]
+[Annotator "GM Sergey Ivanov"]
+
+{The game took place at round 7. By that time I had scored 5.5 points and was half a point ahead of my partner. Akesson is known as an uncompromise player, and I myself is ready to add fuel to the fire, so one could expect a hot battle. That was what happened. }
+1. d4 d5 2. c4 e6 3. Nc3 c6 4. e3 Nf6 5. Nf3 Nbd7 6. Qc2 Bd6 7. g4 
+{White shows his aggressive designs from the very beginning. Akesson had never used this lunge, so to some extent it became a surprise for me, but, frankly speaking, rather pleasant one. Let me a little digression to explain to my readers what these feelings are bound up with. 
+I studied chess at the Leningrad Pioneers' Palace (subscribers of the "New in Chess" Magazine could feel its atmosphere with the help of the remarkable essay of Genna Sosonko, dedicated to Vladimir Zak ["A great teacher inspires" - see NIC 99/5]). A very experienced master Sergey Khavsky was my coach (by the way, a well-known St.Petersburg grandmaster Vladimir Epishin, living now in Germany, was one of his students). 
+Well, master Khavsky inculcated us steadfast disgust for moves like g2-g4 and g7-g5, especially when one makes them at the open position or having a king unprovided for. He often said that "the only case to play g2-g4 is when you win at least a piece". We even invented a special term for such a move - "the anti-Khavsky move". Accordingly, when an opponent resorts to the move, I feel an insuperable desire to "punish" him for this untimely activity and permanently tell myself that "a pawn doesn't advance back" and that "the position weakening must adversaly affect early or late".}
+7...Bb4 
+({In my opinion, it's one of the effective ways to oppose to the White's offensive, along with} 7...Nxg4 8. Rg1 f5. {Black moves a bishop two times in a row, but provides a knight for a firm outpost e4 in return.})
+8. a3 $5
+({A seldom but rather venemous plan. Usually White plays} 8. Bd2 {I had already had a quite good experience at this line.} 8...Qe7 9. g5 Bxc3 10. Bxc3 Ne4 11. Bd3 Nxc3 12. Qxc3 dxc4 $1 13. Bxc4 b6 14. O-O-O Bb7 15. Ne5 Nxe5 16. dxe5 O-O 17.f4 c5 18. Rhf1 Rfd8 {and Black has not a shadow of difficulties, D.Shchukin - S.Ivanov, St.Petersburg 1998.})
+8...Bxc3+ 9. bxc3 
+({Erroneous is} 9. Qxc3 $2 Nxg4 10. Rg1 Ngf6 11. Rxg7 $4 {loses after} 11...Ne4 12. Qc2 Qf6 $19)
+9...b6 
+({Black develops his bishop to the big diagonal, where it certainly would have what to do. After} 9...Nxg4 10. Rg1 h5 11. h3 Nh6)
+({or }  9...e5 10. Rg1 e4 11. Nd2 Qc7 (11...O-O 12. a4 $14 {E.Agrest}) 12. g5 Ng8 13. f4 Ne7 {the position is more sharp})
+10. Rg1
+({Also tested was} 10. cxd5 cxd5 11. Bb5 O-O 12. Bd3 Bb7 13. Bb2 Rc8 14. h4 $13 {S.Kitte - J.Mewes, Germany, 1996}) 
+10...Bb7 11. Nd2 $5
+({White managed to unload the big diagonal and at the same time to check the important square e4. In the case of straightforward} 11. g5 Ne4 12. Bd3 {I intended to play} 12...Qc7 $5 13. Bxe4 dxe4 14. Qxe4 c5 15. d5 (15. Qg4 cxd4 16. cxd4 Qxc4 $15) 15...O-O-O $44 (15...b5 $5))
+11...c5
+({Now the pawn structure at the center takes shape. Deserving attention was more flexible} 11...Qc7 $5 12. g5 Ng8 13. h3 Ne7 {keeping the possibility to play on either side})
+12. cxd5
+(12. g5 Ne4 13. Nxe4 dxe4 14. h4 h6 $5 15. gxh6 g6 $1 $37)
+12...exd5 13. g5 Ne4 14. Nxe4 dxe4 15. Bb2 
+{Had a pawn stayed on g2 instead of g5, the advantage of White would have been incontestable, for he has two bishops and a solid center. But now the weakening of the White's kingside gives Black objects for counterplay. That moment I thought kindly of master Khavsky once more.}
+15...cxd4
+({I believed that the opening of the line c was in my favor, for the white king remained at the center. I didn't like} 15...O-O 16. c4 $1 cxd4 17. Bxd4 {and the White's dark-square bishop becomes too active} )
+({Probably, it was worth to consider} 15...Qc7 {with the purpose to evacuate the king to the queenside})
+16. cxd4 
+(16. exd4 Qc7 17. Rg3 O-O 18. c4 f5 $5 19. gxf6 Nxf6 {a double-edged position appears, where either of partners has his own trumps})
+16...O-O 
+{If I had imagined what the next move would be I would have preferred 16...Bd5, safely blocking the pawn d.}
+17. d5 $1 $7
+(17. Bc4 b5 $1) 
+(17. Rd1 Bd5 $133) 
+(17. Qb3 Rc8 $133)
+17...Re8 
+({I refused} 17...Bxd5 {without thinking a bit; it's obvious at first sight that dominating over almost all open files and diagonals, White easily forces the opponent's defence. In my opinion, the most spectacular way is the following:} 18. Rd1 Rc8 19. Qa4 Rc5 (19...Bc6 20. Qd4 f6 21. gxf6 Rxf6 22. Bh3 $18) 20. Bh3 f5 21. gxf6 Nxf6 22. Qxa7 g6 (22...Rf7 23. Be6 $1 $18)( 22...Rc7 23. Rxd5 $1 $18) 23. Be6+ Kh8 24. Rg5 $18.)
+18. Rd1 
+{18. Qc3 Ne5)
+(18. Bb5 Rc8 19. Qa4 Ne5 20. Bxe8 Nd3+ 21. Kf1 Qxe8 Black {has more than a sufficient compensation for an exchange.}
+18...a6 
+({White plans to transfer the queen at the center, to the square d4, through d2 or a4, and Black can't prevent it. My last move is connected with the preparation of the advance b6-b5 with the purpose to open a way out to the queen and to take the important square c4 under control} 18...b5 19. Bxb5 Qa5+ 20. Qc3) 
+({But this plan proves to be somewhat sluggish. It was worth to choose} 18...Rc8 19. Qa4 Ne5 20. Qxe4 Nc4 {and if White sacrifices the queen} 21. Qxc4 Rxc4 22. Bxc4 Qc7 {leading to unclear play})
+19. Qa4 
+(19. Bh3 {threatening 20. Bxd7 and 21. Qc3}  19...Rc8 20. Qd2 (20. Qa4 $6 b5 21. Qd4 Ne5 22. Qxe4 Rc4 $15 $37)
+20...Rc4 $1 {control over the square d4}  21. Bxd7 Qxd7 22. Ba1 Qb5 {control over the square b2 and Black's chances seem to be better})
+19...b5 20. Qd4 Ne5 21. Be2 Rc8
+{Both sides has fully completed development. The very next moves are to show whose trumps are more significant} 
+22. Qxe4 
+({Leads to simplifications and lightens Black's play. During the game I feared} 22. d6 {for after natural} 22...Qd7 (22...Rc2 23. d7 Re6 (23...Re7 24. Qb6 $1 $18) 24. Qa7 $5 $36)( 22...Rc4 23. Qa7 $1 $16) {White strikes the unexpected blow} 23. Bg4 $1 Qxg4 $1 24. Rxg4 Nf3+ 25. Kf1 Nxd4 26. d7 $1 Nf3 27. Kg2 {and Black hasn't a sufficient compensation for an exchange})
+22...Nc4 23. Qd4 Nxb2 24. Qxb2 Bxd5 $1 $7 {Judging by my partner's reaction, he had evidently underestimated this simple capture. A bishop boldly stands under the pin, but the open location of the king doesn't let White to derive profits from it. }
+25. Kf1 $6 
+({In search of a slipping advantage White goes too far. Also erroneous is} 25. Bf3 $2 Qa5+ 26. Ke2 Bc4+ $19)
+(25. Qd2 Be6) 
+(25. Qb4 {defending from Qa5+} 25...Re7 (25...Rc7 26. e4 Rc2 27. Kf1 Qa8 $1)(25...Re5) 26. Bg4 (26. Rxd5 $4 Qxd5 27. Qxe7 Rc1+ $19) 26...Re4 27. Qd2 Rc5 28. Bf3 Re5 {firmly defending the bishop d5. White ought to include the second rook into play} )
+(25. Rg4 Rc5 (25...Qa5+ 26. Qb4 Qxb4+ 27. axb4 $14) 26. Qb4 Qc7 27. Rgd4 Be6 {the position is approximately even})
+25...Qd7 $1 
+26. Bg4 $2 
+{This is lost. After 26. Rg3 White would have kept a defendable position, although it would have been Black who possesses doubtless initiative.}
+({Thanks to the pawn g5 Black makes both ends meet once more } 26. Qd4 Qh3+ 27. Ke1 Qh2 $19 {Master Khavsky was remembered with gratitude again})
+26...Bc4+ 27. Ke1 Qc7 $1 
+(27...Qa7 (28. Qd4.) 28. Bxc8 Rxe3+ 29. Kd2 Re2+ 30. Kc1 Qc7 31. Rd2)
+28. Bxc8 Qxh2 29. Rg4 
+(29. Rg3 {would have prolonged White's resistance, but would have hardly let him to escape:} 29...Qh1+ ({unclear is} 29...Rxc8 30. Qc2) 30. Kd2 Rd8+ 31. Qd4 Rxd4+ 32. exd4 Qd5 $17)
+29...Rxc8 
+{White can't protect his king from coordinate attack of all black pieces. In addition, Akesson was in a terrible time trouble}
+30. Rc1 
+(30. Rf4 Qg1+ 31. Kd2 Rd8+ 32. Rd4 Qxf2+ 33. Kc1 Qxe3+ $19)
+(30. Qd4 Qh1+ 31. Kd2 Qf3 $19)(30. Rdd4 Qh1+ 31. Kd2 Bd5 $1 ({also quite good is} 31...Qf1 32. Qc3 Qxf2+) 32. -- Bf3) 
+30...Qh1+ 31. Kd2 Qf3 $19
+32. Rcxc4 bxc4 33. Rf4 Rd8+ 34. Kc3 Rd3+
+{Mate in several moves is inevitable.} 
+0-1
+
+[Event "St.Petersburg Men Championship"]
+[Site "St.Petersburg"]
+[Date "1999"]
+[White "Alekseev, Evgeny"]
+[Black "Ivanov, Sergey"]
+[WhiteELO "2300"]
+[BlackELO "2548"]
+[Result "0-1"]
+[Source "Russian Chess"]
+[Annotator "GM Sergey Ivanov"]
+
+1. e4 e6 2. d4 d5 3. e5 c5 4. c3 Nc6 5. Nf3 Bd7 
+{I think, this is a more flexible continuation compared to the classical 5...Qb6, for Black keeps a possibility to develop his queen on the square c7, intending to play against the pawn e5 by f7-f6.} 
+6. a3
+({In the case of} 6. Bd3 {Black can switch the game to the old Milner-Barry gambit by} 6...cxd4 7. cxd4 Qb6 {Modern theory consider this opening as safe for Black.})
+( {Interesting is also} 6. Bd3 Rc8 $5 7. a3 (7. O-O cxd4 8. cxd4 Nb4) 7...cxd4 8. cxd4 Qb6 9. Bc2 (9. O-O Nxd4 10. Nxd4 Qxd4 11. Nc3 Qxe5 12. Re1 Qb8 $1) 9...g5 $5 10. h3 Nxd4 $1 11. Nxd4 Bc5 12. Ne2 Bxf2+ 13. Kf1 f6 {leads to a sharp and unclear position, E.Sveshnikov - A.Chernin, Riga, 1985.} ) 
+({Often used is} 6. Be2 {and Black can choose between two main plans: to attack the pawn d4 -} 6...Nge7 7. Na3 cxd4 8. cxd4 Nf5 9. Nc2)
+( {or to remove the pawn e5 -} 6. Be2 f6 7. O-O fxe5 8. Nxe5 Nxe5 9. dxe5 Qc7 10. c4 O-O-O 11. cxd5 Qxe5.)
+6...f6 7. Bd3
+(7. exf6 gxf6 8. Nh4 {is countered by} 8...Qe7 9. Qh5+ Qf7 $13)( {Interesting is} 7. b4 $5 fxe5 (7...c4 8. Be2 Qc7) 8. b5 Na5 9. Nxe5 Nf6 10. Bd3 (10. Bg5 $5 Be7 11. Bd3 O-O 12. Nd2 $14 { M.Kiselev - S.Ivanov, Yerevan, 1983}) 10...Bd6 (10...c4 $5) 11. Bg5 O-O 12. Qc2 Qe8 $5 13. Bxf6 gxf6 14. Bxh7+ Kg7 15. Bg6 Qe7 16. Nxd7 Qxd7 17. dxc5 Bxc5 18. Bd3 e5 $13 {A.Faas - S.Ivanov, Leningrad, 1982.})
+7...Qc7 
+({Other possibilities -} 7...fxe5 8. Nxe5 Nxe5 9. dxe5 Ne7 10. O-O Qc7 {with a double-edged play})
+(7...cxd4 8. cxd4 Nh6 9. O-O Nf7 10. Re1 Be7 11. Nc3 O-O 12. Qc2 f5 13. Nxd5 $5 exd5 14. e6 $14 {J.Hodgson - M.Sharif, Linares, 1995.})
+8. O-O O-O-O
+({Risky is } 8...fxe5 9. Nxe5 Nxe5 10. Bf4 $1 ({quite good is also is} 10. dxe5 Qxe5 $6 11. Re1 Qd6 12. Qh5+ $40) 10...Qb6 (10...Bd6 11. dxe5 $16) 11. Bxe5 Qxb2 12. Qh5+ Ke7 13. Qg5+ Nf6 14. Nd2 $40)
+9. Re1 
+(9. Bf4 {looks temptingly, but it turns out to be unsuccessful at this situation, for the bishop just stimulates activation of black pawns:} 9...c4 10. Bc2 h6 $1 11. h4 (11. Bg3 f5 12. h4 Be8) 11...Be8 12. b3 cxb3 13. Bxb3 Bh5 14. Nbd2 fxe5 (14...g5 $1) 15. dxe5 Bc5 16. Qb1 Nge7 $15 {M.Adams - V.Epishin, Ter Apel, 1992.} )
+9...fxe5 10. dxe5 
+(10. Nxe5 Nxe5 11. Bf4 $6 {is obviously insufficient - after} 11...c4 12. Bc2 Qb6 13. Bxe5 Qxb2 14. Nd2 Qxc3 {White has no compensation for two pawns.})
+10...c4 $5 
+{White planned a strike c3-c4, so Black radically prevents it, bearing in mind that it is difficult for a white knight to occupy the ideal square d4, because the pawn e5 is weak.}
+11. Bc2 Bc5 12. Nbd2
+({It would have been profitable for White to exchange black-square bishops -} 12. Be3 Bxe3 13. Rxe3, {but in this case Black would have got counterplay:} 13...Nh6 14. h3 Nf7 15. Qe2 g5 16. Nbd2 Rdg8 17. b3 h5)
+12...Nh6 
+{Looking closely not only to the pawn e5, but also to the square f2.} 
+13. b4 Bb6 14. h3 Nf7 15. Qe2 
+{White has strengthened his outpost on the square e5 and intends to drive the enemy knight from c6, in order to activate his "runner" on the square d4. Black needs to undertake counter-actions quickly.} 
+15...Rdf8 $5
+{Setting up an ambush - to attack the square f2 }
+16. Kh1 
+({White makes a prophylactic move, hesitating to} 16. a4 $5 (16. b5 Ncxe5 $1) 16...a5 17. b5 Ncxe5 $1 18. Nxe5 Nxe5 19. Qxe5 Bxf2+ 20. Kh1 Bxe1 21. Qxe1 e5 22. Ba3 (22. b6 $5) 22...Rf6 23. Nf3 Bf5 {The position is hard to estimate, but White is at least not worse because of the unsafe position of the black king. })
+16...g5
+{After the white king has moved to the square h1, a pawn attack becomes more effective. }
+17. a4 a5 18. b5 Ne7 19. Nf1 
+({More active was} 19. Ba3 Bc5 (19...Re8 {is more reliable}) 20. b6 $5 Qxb6 (20...Qc6 21. Nd4 Bxd4 22. cxd4 $16) 21. Nxc4 $1 Qc7 (21...dxc4 22. Qxc4 $18) 22. Bxc5 Qxc5 23. Nd6+ Nxd6 24. exd6 Qxd6 25. Nxg5 $14)
+19...h5 20. Nd4 
+{Preventing files opening: if g5-g4, then h3-h4.}
+20...Rfg8 21. Ng3 g4 22. h4 Ng6 
+{An important achievement of Black: now White is forced to exchange his light-square bishop.} 
+23. Bxg6 Rxg6 24. Nf1
+{Threatening was 24...Qd8, and the pawn h4 is defenceless.}
+24...Qd8 25. g3 Rf8 
+{The position seems to be even. Pawn chains enclose all the board, making breakthroughs into an alien camp difficult. Nevertheless, Black has some possibilities to reinforce his pieces; for example, he can transmit his light-square bishop along the route d7-e8-g6 and double his rooks on the file f. Also the pawn e5 is weak, and White has to play extremely careful.}
+26. Ba3 Re8 27. Kg1 $2 
+{White doesn't feel danger. Neccessary was 27. Bc1, and if 27...Bc7, then 28. Bf4.}
+27...Bc7 $1 28. f4
+{White has to permit the opening of the file g, for not to lose the pawn e5.}
+28...gxf3 29. Nxf3 Reg8 
+{Black pieces have revived and have found new objects to attack.}
+30. Qf2 Nh6 31. Bc5 Ng4 
+(31...Nf5 32. Ng5 Rxg5 33. hxg5 Qxg5 {with a number of threats was even stronger.})
+32. Qg2
+(32. Qe2 $2 Nxe5 $1 33. Nxe5 Rxg3+ 34. Kh1 (34. Nxg3 Rxg3+ 35. Kf1 Qxh4 $19. {Deserving attention was 32. Qd4, and White doesn't allow Black to occupy the important diagonal g1-a7.}) Qxh4+ (34...Rh3+ 35. Nh2 d4 $5) 35. Nh2 Rh3 $41)
+32...Bb6 $1 33. Bd4 Rf8 34. Ra2 Rg7 
+{Threatening to double rooks on the file f and to breakthrough into the White's camp.}
+35. Ng5 Bxd4+ 36. cxd4 Qb6 37. Rd2 Be8 
+{A "French" bishop, sleeping so far, intends to enter play with a decisive effect. }
+38. Nh2 Nxh2 $2
+({Having reach a strategically winning position, Black makes a serious error. Simple} 38...Bg6 39. Nxg4 hxg4 40. Qe2 Bf5 {would have left no chances for Whitex the knight g5 is hobbled, Black can prepare the queen's transmit to the square b4 without haste and, binding White pieces, rush to the file f.})
+( {Black had also a tactical possibility:} 38...c3 $5 39. Rd3 Rf2 40. Rxc3+ Kb8 {forcing White to give the queen away.})
+39. Kxh2 Bg6 40. Rf1 Rxf1 41. Qxf1
+{The time control had passed, there was the time to deepen in a position. As it seemed to me, I found the way to win. }
+41...c3 
+(41...Bf5 {would have now been met by} 42. Qf3  {However, after} 42...Kb8 $1 43. Qxh5 c3 {Black retained good chances to win.})
+42. Rc2 $3 
+({A brilliant defence $1 White rook puts its body in the way of a black passed pawn. Other attempts were unsufficient:} 42. Qf8+ Qd8 43. Qxg7 (43. Rf2 Qxf8 44. Rxf8+ Kd7 45. Rb8 c2 46. Rxb7+ Kc8 47. Rxg7 c1=Q $19)( 43. Qc5+ Rc7 44. Qa7 cxd2 45. Nxe6 Qe7 $19) 43...cxd2 44. Nxe6 d1=Q 45. Nxd8 Qe2+ 46. Kg1 Qe1+ 47. Kh2 Qf2+ 48. Kh3 Bf5+ $19)
+(42. Rf2 Bf5 (42...Kb8 $5) 43. Rxf5 exf5 44. Qxf5+ Kb8 45. e6 (45. Qf8+ Ka7 46. Qxg7 $2 c2 $19) 45...Ka7 $17 )
+42...Bxc2 43. Qf8+ Kc7
+({Curiously, here Black could lose:} 43...Qd8 $2 44. Qxg7 Bf5 45. Nf7 Qe7 (45...c2 $2 46. Nd6+ $1 Qxd6 47. exd6 c1=Q 48. Qf8+ Kd7 49. Qe7+ Kc8 50. Qe8#) 46.Nd6+ Kd7 47. Qh8 Qd8 48. Qxh5 c2 49. Qh6 )
+44. Qxg7+ Kb8 45. Qf8+ $1 
+({Just so - a queen must keep the file f and the diagonal a3-f8 under control. Erroneous was} 45. Qg8+ $2 Ka7 46. Nxe6 Bxa4 47. Nc5 Qxb5 $19)
+45...Ka7 46. Nxe6 $2 
+({After perfectly carrying out a difficult defence, my young opponent took a false last step. Leading to draw was} 46. Nf7 $1 Qxd4 47. Nd6 Qd2+ 48. Kg1 Qe1+ 49. Kh2 {and Black has no more then a perpetual check.})
+46...Qxe6 47. Qc5+ Qb6 48. Qxc3 Bxa4 
+0-1 
+
+[Event "St.Petersburg Men Championship"]
+[Site "St.Petersburg"]
+[Date "1999"]
+[White "Ivanov, Sergey"]
+[Black "Solovjov, Sergey"]
+[WhiteELO "2550"]
+[BlackELO "2445"]
+[Result "0-1"]
+[Source "Russian Chess"]
+[Annotator "GM Sergey Ivanov"]
+
+1. d4 d5 2. c4 c6 3. Nf3 e6 4. Nc3 dxc4 5. a4 Bb4 6. e3 b5 7. Bd2 a5 
+({The double-edged Noteboom system becomes very popular nowadays. Just one example:} 7...Qe7 8. axb5 Bxc3 9. Bxc3 cxb5 10. d5 Nf6 11. dxe6 (11. d6 Qb7 12. b3 $44) 11...Bxe6 12. Nd4 Bd7 13. Qf3 Ne4 14. g4 (14. Nf5 $5) 14...O-O 15. Bg2 Re8 16. O-O a6 17. Rfd1 Nxc3 18. bxc3 Ra7 $15 {Alander - V.Bagirov, Berlin, 1998.})
+8. axb5 Bxc3 9. Bxc3 cxb5 10. b3 Bb7 11. bxc4 
+({Another popular line -} 11. d5 Nf6 12. bxc4 b4 13. Bxf6 Qxf6 14. Qa4+ Nd7 15. Nd4 e5 (15...Ke7 16. d6+ Kxd6 17. Rd1 Kc7 $5 $13) 16. Nb3 Ke7 17. Be2 (17. Qb5 Ba6 18. Qxa5 Rhb8 19. d6+ Ke8 $1 $17) 17...Rhc8 {- hasn't still gained a certain estimation.})
+11...b4 12. Bb2 Nf6 13. Bd3 Nbd7 14. O-O O-O 15. Re1 Re8 
+({This variation is of the most frequently use. There are 31 games in Chess Assistant 4.0 on it, played mainly in 1997-98. A detailed survey of this variant is given at the "Chess St.Petersburg",  2(8)/1998.} 15...Qc7 {is considered to be less accurate because of} 16. e4 e5 17. c5 $1 exd4 18. Rc1 $1 {and the black queen's position on c7 is not good. It lets White to take initiative.})
+16. Rc1 $5 
+({This is a new plan. Not without reasons, White believes that his central pawns, if advance, will be more dangerous than the queensude's black passed pawns. Immediate} 16. e4 {doesn't seem to be well prepared:} 16...e5 17. c5 exd4 18. Rc1 Bxe4 19. c6 Nf8 $5 {and White has to prove that his activity costs a pawn.})( 16. c5 {One of the latest examples:} 16...Bc6 17. Bc2 Ne4 18. Ba4 Qc7 19. Nd2 Bxa4 20. Rxa4 Ndxc5 $1 21. dxc5 Rad8 22. Bd4 Nxd2 23. Qxd2 e5 $15 {J.Piket - V.Ivanchuk, Monako, 1999. })
+16...a4 
+({This is the most reliable reply to the White's idea. Black takes the opportunity to advance his pawns further to bind the opponent's pieces.}  16...e5 17. Nxe5 ( 17. dxe5)(17. Bf5) 17...Nxe5 18. dxe5 Nd7 19. e6 $5 (19. c5 Nxe5 $1 20. Bxe5 Rxe5 {with idea} 21. c6 $2 Bxc6 $1 22. Rxc6 Rd5 $17) 19...fxe6 20. c5 ({Now erroneous is} 20. Qh5 $6 Nf6 21. Bxf6 Qxd3 22. Qg5 (22. Bxg7 Kxg7 23. Rcd1 Qg6 24. Rd7+ Kg8 25. Qxg6+ hxg6 26. Rxb7 Reb8 $19) 22...Qg6 23. Qxg6 hxg6 24. Be5 a4 {and White gained a hard ending, S.Ivanov - V.Malakhov, Cappelle la Grande, 1999. }) 20...Bc6 (20...Rc8 21. Bb5 Bc6 22. Qa4 $5 $36) 21. Rc4 e5 (21...Nf6 22. Rd4 Qc7 23. Rd6) 22. Qc2 Nf6 23. Rh4 e4 24. Bc4 Kh8 25. Rd1 Qe7 26. Rd6 $40)
+17. e4 a3 18. Ba1 e5
+({In the case of} 18...Bc6 {White has a pleasant choice between} 19. e5 Nh5 {unfortunately, the square e8 is not free} 20. Nd2 Nf4 21. Be4 Bxe4 22. Nxe4 $14 {with the subsequent Nd6})(18...Bc6 19. Bc2 b3 (19...e5 $2 20. d5 Bb7 21. Qd2 Qa5 22. Rb1 $16) 20. Bxb3 Bxe4 21. Ne5 $14)
+19. c5 Bc6 
+(19...Rc8 $2 20. dxe5 (20. Qa4 $5) 20...Ng4 21. Bb5 Bc6 22. Bxc6 Rxc6 23. Qd4 $1 $16 (23. Nd4 Qh4 $1 $13 )( 23. h3 Nxf2 $1 24. Kxf2 Nxc5 $13))
+20. d5 
+(20. dxe5 Ng4 {is quite good for Black.} )
+20...Ba4 21. Qd2 
+({Bad was} 21. Bc2 Nxc5 22. Bxa4 Nxa4 23. Nxe5 (23. Qb3 Nc3 $15) 23...Nb2 24. Qd4 Rxe5 $1 25. Qxe5 Nd3 $15 )
+({After 20...Ba4 the white queen has only two free squares, and it is quite difficult to decide which of them is better. Now I understand that my choice was wrong. It turned out to be that I was under impression of my home analysis, where I paid the main attention to the move 21. Qd2. Nevertheless,} 21. Qe2 {is stronger. Now after} 21...Ra5
+(21...Qa5 22. c6 Nc5 23. Bxe5 ({worse is} 23. Nxe5 Nb3 24. Rb1 Nxa1 25. Nc4 Qd8 $1 26. Rxa1 Nd5) {the white queen doesn't find itself under the fork and after} 23...Nxd3 (23...b3 24. Bc3 $16) 24. Qxd3 b3 25. Bxf6 gxf6 26. Nd4 {White's chances are obviously better. 
+But, as a matter of the fact, after 21. Qe2 the pawn b4 is not under attack, so Black has the option of} )
+22. c6 Nc5 23. Bxe5 (23. Rb1 $5 {with idea} 23...b3 24. Bc3) 23...Bxc6 $1 24. Bxf6 gxf6 25. Rxc5 Rxc5 26. dxc6 b3 {the position is unclear.})
+21...Qa5 
+({Of course, bad is} 21...b3 $2 22. c6 b2 (22...Nf8 23. Bxe5 b2 24. Rc3 $18) 23. cxd7 Qxd7 24. Bxb2 axb2 25. Qxb2 $16)
+22. c6 
+({White can't prevent black knight to occupy the square c5:} 22. Qe3 Ng4 $1 23. Qg5 Nxc5 24. Rxc5 Qxc5 25. Qxg4 f6 {with a very dangerous threat of b4-b3-b2.})
+22...Nc5 23. Nxe5
+({Deserving attention was} 23. Bxe5 $5 Nb3 24. Qg5 h6 25. Qg3 Nh5 26. Qg4 Nxc1 27. Rxc1 {With compensation, for example,} 27...g6 (27...Rxe5 28. Nxe5 Nf6 29. Qf5 {with idea} 29...b3 30. c7) 28. c7 Rec8 29. d6)
+23...Nb3 24. Qa2
+({I had been thinking for 45 minutes here, but, nevertheless, didn't bring myself to} 24. Qg5. {May be, computer analyses will allow to prove that White would have lost in this case too. But at the practical game this aggressive move was apparently the best solution. The game could develop like this:} 24...h6 25. Qg3 (25. Qf5 $5) 25...Nxc1 (25...Nxa1 26. Rxa1  (26. Nc4 {is possible}) Nh5 27. Nc4 ) 26. Nc4 ({it seems that strong is} 26. Nd7 Nh5 27. Nf6+ Nxf6 28. Bxf6 g6 29. Rxc1 $40 {but a counterattack exists:} )( 26. Nd7 b3 $1 27. Nxf6+ Kh8 28. Rxc1 b2 29. Qe3 bxa1=Q 30. Rxa1 Qc3 $19) 26...Nh5 $1 (26...Qxd5 27. Bxf6 $40) 27. Qd6 $5
+( 27. Nxa5 Nxg3 28. Rxc1 Nxe4 $19 )
+( 27. Qe3 Nxd3 (27...Qxd5 $5) 28. Nxa5 Nxe1 29. Qxe1 Rxa5 {with idea} 30. Qxb4 Rb5 $19 )
+27...Qd8 $5 (27...Nxd3 28. Nxa5 Nxe1 29. Qxb4 $13) 28. Rxc1 (28. Qxd8 Rexd8 29. Rxc1 Bxc6 $17) 28...Qg5 29. Ne3 Nf4 30. h4 Nh3 $1 (30...Qxh4 31. g3 Nh3+ 32. Kg2 Qh5 33. Rh1 $16) 31. Kh2 Qf4+ 32. Qxf4 Nxf4 $19)
+({There was another way for White:} 24. Qe3 Nxa1
+( 24...Nxc1 25. Rxc1 b3 26. Nc4 Qb4 (26...Nxd5 $2 27. Qg5 $1 $18) 27. Bc3 $13. 
+{But Black has a simple})
+ 25. Nc4 Qd8 26. Rxa1 Nxd5 $17)
+24...Nxc1 25. Rxc1 Qb6
+({Black has to prevent the white bishop to consolidate on the square d4. Dubious was} 25...Qc7 $6 26. d6 $1 Qxd6 27. Nxf7 (27. Qxf7+ Kh8 28. Qb7 Bb3 $13) 27...Qf4 {and White has at least a perpetual check. })
+26. Nc4 
+(26. d6 26...b3 $1 27. Qxa3 Bxc6.)
+26...Qc5 27. Bxf6
+{This exchange was necessary - otherwise White couldn't defence the pawn e4.} 
+27...gxf6 28. Qa1 Bb5 
+{Black was threatened with 29. Nxa3 and the unpleasant transfer of the knight c4 to the f5 through the e3.} 
+29. Qxf6 $6
+(29. Ne3 29...Qxc1 30. Qxc1 Bxd3 {On the face of it, black pawns can't be stopped. But it turns out that after} 31. Ng4 $1 {the white queen and the knight cooperate perfectly and produce dangerous threats to the black king. For example:} 31...a2
+( 31...b3 $2 32. Nf6+ Kh8 (32...Kf8 33. d6 Kg7 34. Qg5+ Kh8 35. Nh5) 33. Qh6 Bxe4 34. Nh5 Rg8 35. Qf6+ $18)
+32. Nf6+ Kh8 33. Qa1 Re7 34. d6 $18 )
+29...Qe7 $1 
+({After the brown study my opponent decides to continue the struggle, and he didn't make the mistake as I did. He had only a draw after} 29...Bxc4 30. Qg5+ Kf8 31. Qh6+ Ke7 32. Qg5+ {and Black can't avoid a perpetual check.})
+30. Qxe7
+({White would have had more practical chances after} 30. Qh6 {with idea 30...b3 31. d6 or 31. f5 with attack. In this case Black had to continue with} 30...Qf8 {protecting the king.})
+30...Rxe7 31. d6
+({In the case of} 31. Nb6 {Black has several ways to the win:} 31...Bxd3 (31...b3 32. Nxa8 b2 33. Rd1 a2) 32. Nxa8 b3
+(32...Ra7 33. c7 (33. d6 Rxa8 34. d7 Bb5 $19) 33...Rxa8 34. c8=Q+ Rxc8 35. Rxc8+ Kg7 36. Ra8 Bxe4 $19)
+33. d6 b2 34. Rd1 Kf8 $1 35. d7 (35. dxe7+ Kxe7 36. c7 Ba6 $19) 35...Rxd7 36. cxd7 Ke7 $19.)
+31...Re6 
+({The rook must attack passed pawns. If} 31...Rea7, {then White could gain good chances to a draw by sudden} 32. Nxa3 $1 (32. c7 a2 33. Ra1 b3 $15)( 32. Ne5 b3 $1 33. c7 a2 $19) 32...Bxc6 (32...Bxd3 33. c7 bxa3 34. d7 Rxc7 35. Rxc7 Ba6 36. Ra7 $1 Rb8 37. f3) 33. Nb1.)
+32. c7 
+(32. Nxa3 Bxc6 {the pawn d6 is undefendable.})( 32. Nb6 Bxc6 33. Nxa8 Rxd6 {also didn't help.})
+32...a2 
+(32...Bxc4 $4 33. d7 $1 $18)
+33. Ra1 $2 
+({The decisive mistake. Losing was also } 33. e5 a1=Q 34. c8=Q+ Rxc8 35. Rxa1 Bxc4 36. Bxc4 Rxe5. )({White had to play} 33. Nb6 $5 Rxd6 (33...a1=Q 34. c8=Q+ Rxc8 35. Rxa1 $13) 34. Nxa8 Rc6 $5 (34...Bd7 35. Bb5 Bc8 36. Rf1 {with idea} 36...b3 37. Bc4) 35. c8=Q+ Rxc8 36. Rxc8+ Kg7 37. Bxb5 a1=Q+ 38. Bf1 {and even after taking the rook for the pawn b the Black's victory is not clear.} )
+33...b3 34. Nb2
+({White couldn't longer escape:} 34. e5 Bxc4 35. d7 Ree8 36. dxe8=Q+ Rxe8 37. Bxc4 b2.)
+34...Rxd6 
+{The easiest way.} 
+35. Bxb5 Rd2 36. Nd1 b2 37. Nxb2 Rxb2 38. Bf1 Rc8
+0-1 
+
+[Event "Russian Club Championship"]
+[Site "Smolensk"]
+[Date "2000"]
+[White "Ivanov, Sergey"]
+[Black "Vaulin, Alexander"]
+[WhiteELO "2543"]
+[BlackELO "2540"]
+[Result "1-0"]
+[Source "Russian Chess"]
+[Annotator "GM Sergey Ivanov"]
+
+{The match vs. Siberia (Tomsk) was of decisive importance for determination of the Championship's winner. For I played with white, a task was set to me to keep tension all the game, but to play firmly, avoiding unfounded risk. It was desirable to "drag" a rival into an unfamiliar for him position, to make him solving non-standart problems and, bearing in mind his disposition to long thought, to "drive" him into the time trouble. It is a reader who should judge which of our plans were realized.}
+1. d4 d6
+{Wow! The basic opening of Grandmaster A.Vaulin is accepted queen's gambit, but it when he plays for a draw. By the first move, that day the contender had an aggressive mood. }
+2. Nf3 $1 
+({An exclamation mark - for the right decision in the psychological plan. Earlier in this position I played only} 2. c4 e5 3. Nf3 e4 4. Ng5 f5 5. Nc3 {etc. Arose complex in the strategic plan positions, in which Black usually built the pawn centre, and White consistently undermined it. But now I would like to struggle absolutely in the other key, and main - to bring down the partner from concrete preparation. })
+2... Bg4 
+({As Vaulin had no experience of playing King's indian} 2... Nf6 3. c4 g6 4. Nc3 Bg7 5. e4  {I could to afford "prematurely" to move by knight on f3 (then my favourite Averbach system is possible). })
+3. e4 
+{While there is an opportunity, it is meaningful to grasp the centre by the pawn. Alternative The continuation 3. c4 Nd7 etc. repeatedly met in practice of the contender. }
+3... Nf6 4. h3 
+{It is useful to find out intentions of the black bishop.} 
+4... Bh5 
+{Obviously, that the exchange in f3 gave for White small, but proof advantage.} 
+5. Bd3 e6 6. c4 
+({White throw forward one more pawn, that on prepared d6-d5 to have an opportunity c4xd5 and e4-e5, keeping the pawn superiority in the centre. In case of} 6. 0-0 Be7 7. Re1 d5 8. ed5 Nxd5 9.Nbd2 0-0 10. Nb3 Nd7 {the play is approximately equal, U.Bonsch - G.Hickl, Lippstadt, 1994.} )
+6... Nc6 
+({The correct reaction - it is necessary for Black to attack the white centre immediately. Played Black in the game more poorly, on which, actually, and mine was under construction home preparation:} 6... Be7 7. Nc3 Nc6 8. Be3 0-0 9. Qe2 Bg6 10. Rd1 d5 11. cd5 ed5 12. e5 Ne4 13. 0-0 Qd7 14. Bc1 f5 $2 15. Nxd5 $1 $18 {G.Kasparov - V.Anand, Paris, 1992, (rapid).} )
+7. Be3 
+({The most natural answer.} 7. g4 Bg6 8. Nc3 d5 9. cd5 ed5 10. e5 Ne4 { With unclear game, it seemed to me too causing.} )
+7... d5 $5 
+({While White yet didn't castle, Black hurry up to put impact in the centre. Met} 7... Bxf3 8. Qxf3 g6 (8... Nb4 9. Qd1 Nxd3 + 10. Qxd3 $14) 9. Na3 (9. Nc3 Bg7 10. Rd1 $5) 9...Bg7 10. Nc2 0-0 11. 0-0 a5 {(L.Hansen - G.Hickl, Polianiza-Zdrui, 1993) with game in the spirit of King's indian constructions, that, I repeat, not in the taste of my opponent.})
+8. cd5 ed5 9. e5 Bb4 + 
+{The important move, differently in case of 9...  $2e4 10. 0-0 with subsequent Nc3 White leads the game to the favourable position from the game Kasparov - Anand. }
+10. Nc3 
+({Considerably less actively} 10.Nbd2 Ne4 {and the pins of the white knights are rather unpleasant. })
+10... Ne4 
+11. 0-0 
+({Up to this moment on my clock has passed 7 minutes, and on the clock of my partner - about 40. But now it was my turn to medidate longer. Certainly, White here has the strong move} 11.Rc1 {probably, the strongest in this position, but then the play of Black would be simple and clear: } 11... 0-0 12. 0-0 Bxc3 13. bc3 f5 { But for me it would be desirable to hold the contender uder the pressure constantly, to put before him concrete problems and to force to choice from the several opportunities. On the other hand, the strategy of reliability ordered to act circumspectly. And still, having counted the variants and some time having hasitated, I have accepted the decision and have played with the sure appearance })
+11... Bxc3
+({I have understood, that my decision was justified - contender was above what to think. Let's look, whether Black could take the pawn.} 11... Bxf3 12. Qxf3 Nxc3 13. bc3 Bxc3 14. Rac1 {allows for White to develop the initiative without troubles:} 14... Bxd4
+( 14... Nxd4 15. Qg4 Ne6 16. Rxc3 d4 17. Rd1 $16 )
+( 14... Bb4 15. Bb5 Qd7 16. Qg3 $36 (16. Qd1 -- 17. Qa4 $36) ) 15. Rxc6 $1 Bxe3 16. fe3 $1 bc6 17. Qxf7# {this nice variation move me to choice for the benefit of 11. 0-0.} )
+(11.. Nxc3 12. bc3 Bxc3 {more problematically. But here White plays already} 13. Rb1 $1 (13. Rc1 Bxd4)  13.. Bxf3 (13... Bxd4 14. Bxd4 Bxf3 15. gf3 $1 Qg5 + 16. Kh1 Nxd4 17. Qa4 + Nc6 18. Rxb7 $18) 14. Qxf3 (14. gf3 $5) 14.. Bxd4 (14... Nxd4 15. Bxd4 Bxd4 16. Qg4 Bxe5 17. Rfe1 Qe7 18. f4 Bd4 + 19. Kf1 Be3 20. Rxe3 Qxe3 21. Re1 $16) 15. Rxb7 ( 15. Bxd4 Nxd4 16. Qg4 $44) 15... Bxe3 16. Bb5 0-0 17. Bxc6 Bb6 18. Bxd5 $16)
+12. bc3 0-0 13.Qc2 
+({It was better, apparently,} 13. Rc1 f5 14. ef6 Qxf6 15. Be2 {and White keeps the minimal advantage. The move in the game is connected with the small miscalculation.} )
+13... f5 
+(13.. Bxf3 14. gf3 Ng5 15. Kg2 h6 16. f4 Ne6 17. f5 Ng5 18. f4 $16)
+14. Rab1 
+({Not only attacking b7-pawn, but also preparing c3-c4 - to undermine the Black foundations in the centre. At first I planned to play here} 
+14. ef6 Bxf3 15. fg7 Kxg7 (15...Rf7 $5) 16. gf3 {But when I have found out} 16... Ng5 17. Bxg5 Qxg5+ 18. Kh1 Rxf3 19. Rg1 Rxh3# $1 {the capture en passant was rejected immediately. })
+( 14. Nh2 f4 15. Bc1 f3 $1 $133 )
+({More precisely} 14. Nd2 {planning f2-f3, but also here after} 14... f4 15. Nxe4 de4 (15... fe3 $2 16. Ng3 $16) 16. Bc4 + Kh8 17. Bc1 Bg6 {the complete clearness is not present.} )
+14... f4 15. Bc1 Bxf3 16. gf3 Ng5 
+{Black is not going to sit out in defense, and is going to organize attack on the white king, the pawn covering of which is destroyed. }
+17. Kg2 Qe8 18. Rh1 
+({The prophylaktic is necessary here.} 18. h4 Qh5 19. hg5 (19. Qe2) {resulted to the perpetual check:} 19... Qg5 + 20. Kh2 Qh4+ )
+18... Qh5 19. Qe2 b6 20. Ba3 Rfe8 
+({It was not necessary to lose the control above the f5-field. After right} 20.. Rf7 {there was a position of dynamic balance. And for white too it is impossible to lose vigilance. His king is opened, and what the dangers can be here, shows next variation:} 21.Bb5 Ne7 22. Bxe7 ( 22. e6 $2 Rf6 23. Bxe7 Rxe6 $19) 22.. Rxe7 23. Bc6 Rd8 24. Rb5 Qg6 $1 25. Bxd5 + Nf7 + 26. Kh2 Rxd5 27. Rxd5 c6. {the rook has got in a trap in the centre of the board, but White can escape here by way} 28. Qa6 Qe6 29. Rd6 Nxd6 30. ed6 Qxd6 31.Qc8 +.) ({And in case of} 20.. Rf7 21. Rb5 Ne7 22. Bxe7 {Black has an intermediate move} 22... c6 $1 )
+21. Bf5 $1 
+{White has defenced all weak pawn and begins operation on the replacement of black pieces from the K-side.} 
+21... Rad8 
+(21... Nxf3 22. Bxh7 + (22. Qxf3 Qxf5 23. Qxd5 + Re6 {leads to unclear play, and })( 22.Bd7 $2 {even loses -} 22.. Nh4+ 23. Kf1 Qg6 $1 $19) 22... Kxh7 23. Qxf3 $14)
+22. Bg4 Qg6 
+(22... Qh4 23. e6 {the passed pawn "e" can become dangerous, as} 23... h5 {does not comprise any threat. White simply will play} 24. e7 Nxe7 25. Bxe7 hg4 26. hg4 $18 {the queen is caught!})
+23. h4 h5 $2 
+({Already lacking time, Black suppose a mistake, incorrectly having estimated the arisen position. It was necessary to continue} 23... Ne6 24. h5 Qg5, {and though White owns the initiative, all struggle was ahead more. })
+24. hg5 hg4 25. fg4 Rd7 
+(25... Qxg5 26.Rh5 Qg6 27.Rbh1 $18 )
+26. Rbd1 $1 Nd8 27. Qd3 
+{Black planned manoeuvre Nd8-e6xg5, but last by two moves White has prevented this opportunity. }
+27... Re6 
+({It is necessary to take a field of knight, as it is bad} 27... Qxd3 28. Rxd3 Ne6 29. g6 $16 )( 27... Qe4+ 28. Qxe4 de4 29. Rde1 $18 )
+28. Rh3 $6 
+({Here I slightly have relaxed and have made a mediocre move.} 28.Rh5 Qxd3 ( 28... Rf7 29. Rdh1 $18) 29. Rxd3 {etc. resulted to positions from the game, but with an extrapawn at white.} )
+28... Qxd3 29. Rdxd3 Rg6 
+(29... Nf7 30. Rhf3 Nxg5 31. Rxf4 $16 {White has a healthy extra pawn.} )
+30. Rh5 Ne6 31. Bc1 c5 32. dc5 Nxc5 $2 
+({Here my contender who was already in the strong zeitnot, supposes decisive mistake. To continue struggle it was possible by} 32... bc5 {on what I was going to answer} 33. Rf3 d4 34. Bxf4 ( 34. cd4 Rxd4 {with unclear game}) 34.. Nxf4 + (34... dc3 35. Bc1 c2 36. Rc3 Nd4 37.Be3 $18) 35. Rxf4 d3 36. Rh1 {White should win. More strongly})( 32... bc5 33. Rf3 Nxg5 34. Rxf4 Ne6 35. Ra4 d4 36. f3.{ White has an extra pawn, but Black has counterchances - game yet is finished. })
+33. Rf3 $18. 
+{f4 pawn falls, then the outcome of struggle does not cause doubts.} 
+33... Ne4 34. Bxf4 Rc7 35. Rd3 Nxc3 36. Bd2 Nxa2 37. f4 
+{The avalanche of the white pawns has come in movement, preparing displace all on the way. }
+37... Rc2 38. Rxd5 Nc3 39. Rd8 + Kf7 40. Kf3 Rc6 41. f5 
+{This victory has allowed our team to be fixed on the first place, and me has brought also moral satisfaction that it was possible to execute almost all trainer's installations and to realize the strategic plan conceived at to preparation for the game. }
+1-0
+
+[Event "Stockholm (4)"]
+[Site "Stockholm"]
+[Date "1999"]
+[White "Ivanov, Sergey"]
+[Black "Westerinen, Heikki M J"]
+[WhiteELO "2545"]
+[BlackELO "2390"]
+[Result "1-0"]
+[Source "Russian Chess"]
+[Annotator "GM Sergey Ivanov"]
+
+{The game ran on the 30th of December and was to become the last game of the 1999 year. I wished to finish the year worthy and to play a good and attractive game. Course of the game shows that my partner was overwhelmed with the same feelings.}
+1. d4 d5 2. c4 c5 
+{A very experienced Finnish grandmaster has been upholding this seldom continuation not without success for several last years. Frankly speaking, at home preparation I hadn't managed to find a way to gain a more or less tangible advantage for White.}
+3. cxd5 Nf6 4. Nf3 
+(
+4. dxc5 Qxd5 5. Qxd5 Nxd5 6. e4 (6. a3 Nd7 7. b4 a5 $133) 6...Nb4 7. Na3 e5 8. Nf3 f6 {promises White no favour, because a pawn c5 falls a prey of Black pieces. For example,} 9. Be3 
+(9. Bd2 N8c6 10. Bb5 Bxc5 11. Ke2 Ke7 $1 $12 {V.Korchnoi - J.Piket, Antwerpen, 1993}) 
+9...N8a6 10. Bxa6 Nxa6 11. Rc1 Bd7 {with idea Rc8} 12. Nc4 Bxc5 $1 $12 
+{1/2, F.Gheorghiu - H.Westerinen, Liechtenstein, 1998. })
+({Not till coming back to St.Petersburg, I found out in the latest volume of the "New in Chess Yearbook" (NIC Yearbook, v.52) a paper of Genna Sosonko "Symmetry", in "Sosonko's corner". The grandmaster offers to play} 4. e4 $1 Nxe4 5. dxc5 Nxc5 6. Nf3 (6. Nc3 $16 {Seemingly, this reply is optimal for White, but 6. Nf3 $1 is more exact, for 6. Nc3 permits} 6...e5 $5 7. Nf3 Bd6 8. Nd2 O-O 9. Nc4 Bf5 10. Be2 Ne4 11. Bd2 Bc5 12. O-O Nd7 $12 {J.Yrjola - H.Westerinen, Vantaa, 1999. Curiously, the right way was showed two rounds later at the game E.Gleizerov - H.Westerinen, Stockholm, 2000: after} )
+6... e6 7. Nc3 exd5 8. Qxd5 Qxd5 ({to keep queens is even worse:} 8...Qe7+ 9. Be3 Nc6 10. Bb5 Bd7 11. O-O Ne6 12. Ne5 Nxe5 13. Qxe5 Bxb5 14. Nxb5 a6 15. Rad1 $1 Rd8 16. Bb6 Rxd1 17. Rxd1 f6 18. Qf5 g6 19. Nc7+ Kf7 20. Qd5 {1-0, L.Portisch - D.Bronstein, Monte Carlo, 1969}) 
+9. Nxd5 Nba6 10. Bb5+ Bd7 11. Bxd7 Nxd7 12. O-O f6 13. Be3 Kf7 14. Rfd1 {Black got a very unpleasant ending. Unloading} 14...Bc5 15. Nc7 $1 Rad8 16. Nxa6 Bxe3 17. fxe3 bxa6 18. Rac1 Nb6 19. Rc7+ Kg6 20. Rxd8 Rxd8 21. Rxa7 {White won a pawn and the game shortly after.}
+)
+4...cxd4 5. Qxd4 
+(5. Nxd4 Nxd5 (5...a6 $5 {see in NIC Yearbook 52, "Sosonko's corner".} ))
+5...Qxd5 6. Nc3 Qa5 
+({That day my opponent evidently didn't want to play a boring ending, which could appear after} 6...Qxd4 7. Nxd4 a6 {and after long thinking he preferred to continue the struggle with queens. It's not excluded that his choice was influenced by the result of the recent game A.Kuzmin - H.Westerinen, Andorra, 1999, where White had showed a fresh idea:} 8. g3 (8. Bg5 Nbd7 (8...e5 9. Bxf6 gxf6 10. Nc2 $14)( 8..e6 9. g3 $14) 9. g3 ({interesting is also the idea of G.Levenfish } 9. O-O-O $5) 9...h6 10. Be3 e5 11. Nb3 b6 {O.Romanishin - E.Prandstetter, Moscow, 1977} 12. Bg2 $14) 8...Bd7 9. Bg2 e5 10. Nf3 $5 {10. Nb3 and 10. Nc2 see in "Sosonko's corner". By 10. Nf3 White prevents from his strong "Catalanian" bishop trade} 10...Bc6 11. O-O Nbd7 12. b3 g6 13. Bb2 Bg7 14. Rac1 O-O 15. Rc2 Rfe8 16. Nd2 {now it's time to trade light-square bishops} 16...Bxg2 17. Kxg2 Rac8 18. Rfc1 Nb6 19. a4 $14 {keeping annoying pressure. I'd known that game and had intended to choose between 8. g3 and the less explored 8. Bg5 !?})
+7. b4 $1
+{Suddenly it turns out that black queen feels itself uncomfortably. Here my partner spent much time again and took an unhappy decision. }
+7...e5 $2
+(7...Qb6 8. Qxb6 axb6 9. Bb2 {is of little attraction, for black queenside pawns are very weak. It was necessary to recede to the opposite side -})( 7...Qh5. {I remembered that theory advises} 8. Ne5 $1 {preserving the queen from attack Nc6, but further my knowledge stopped. While my opponent was thinking, I studied the most annoying (to my mind) reply} 8...Nfd7 $5 (8...Nbd7 9. f4 $5 )( 8...Bd7 9. b5 $1)( 8...Nc6 9. Nxc6 bxc6 10. e4 e5 11. Qc4 Bd7 12. Be3 Qg4 (12...a5 $5)( 12...Ng4 $5) 13. a3 $14 {B.Gelfand - P.Wolff, Wijk aan Zee, 1993, but in no way could evaluate the lunge}) 9. Nd5 ({Gelfand recommended} 9. Nxd7 Bxd7 10. b5 $5 $36) 9...Qxe5 (9...Na6 $5) 10. Qxe5 Nxe5 11. Nc7+ Kd8 12. Nxa8. 
+{Only after placing this position on a board at home, I realized that it's in favour of White. An "electronic friend" also says that White "has decisive advantage". })
+8. Qc4 $5
+({White put himself to unwarrantable risk. But I wanted very much to keep up the fighting mood of my partner and to play "battle" chess, although I saw that I could gain a quiet ending with an extra pawn by} 8. bxa5 exd4 9. Nb5 $1 Bb4+ 10. Bd2 Bxd2+ 11. Nxd2 Nd5 12. Nxd4 Nc6 13. Nxc6 bxc6 )
+8...Bxb4
+({Black has no choice - both} 8...Be6 $2 9. Qxe6+ $18)( { and} 8...Qd8 $2 9. Ng5 $1 Qd7 10. Nxf7 $1 $18 {are entirely bad.})
+9. Qxc8+ Ke7 10. Qxh8 
+(10. Qxb7 $2 10...Nbd7 11. Bd2 Bxc3 $41 $19 )
+10...Bxc3+ 11. Bd2 Ne4 
+(11...e4 12. Rc1.)
+12. Rd1
+{White has defended all his weak points and is ready to start development - e3, Bd3 etc. Pay attention to the strong position of the queen on h8 - it holds black pieces of the queenside and doesn't let them to enter play.}
+12...Nc6
+({Now White wins forcely. It's easy to win in the case of} 12...Bxd2+ 13. Nxd2 Nc3 14. Nc4 Qc7 15. Ne3 $18)
+( 12...Nd7 {sets much more complex tasks, for White would have been to find several only moves:}
+13. Qxa8 Qb6 (13...Nxd2 14. Nxd2 Qxa2 15. f3 $18) 14. e3 Nxd2 15. Nxd2 ({it may be, that it's simpler to return a part of the extra material but to develop the kingside } 15. Bd3 $5 Nxf3+ 16. Ke2 $18) 15...Bxd2+ 16. Rxd2 Qb1+ 17. Rd1 $1 ({it is necessary to empty the square d2, drawn is} 17. Ke2 Qb5+ 18. Kf3 $2 e4+ 19. Kxe4 Nf6+ 20. Kf4 Nh5+ 21. Kf3 Qf5+ 22. Ke2 Nf4+ $1 23. exf4 Qe4+ {with a perpetual check}) 17...Qb4+ 18. Ke2 Qb5+ 19. Kf3 e4+ 20. Kxe4 Qe5+ $1 (20...Nf6+ 21. Kf4 $1 g5+ 22. Kf3 Qf5+ 23. Ke2 Qb5+ 24. Rd3 Qb2+ 25. Kf3) 21. Kd3 (21. Kf3 Qf6+ 22. Ke2 Qb2+) 21...Qd5+ (21...Qb5+ 22. Kc3 Qa5+ 23. Kb3 Qb6+ (23...Nc5+ 24. Kc4) 24. Bb5 $1 Qxb5+ 25. Kc2 $18) 22. Kc3 {it's inevitable to return a rook, otherwise the game ends with a perpetual check} 22...Qxd1 23. Qxb7 Qc1+ 24. Kd3 Qd1+ 25. Ke4 Qg4+ 26. f4 f5+ 27. Kd4 Qd1+ 28. Bd3 Qxh1 29. Qb4+ Ke8 30. Bxf5 $18.)
+13. Qxa8 Qb6 14. e3 Nxd2 15. Nxd2
+{Now White has no need moves like 15. Bd3} 15... Bxd2+ 16. Rxd2 Qb1+ 17. Ke2 Qb5+
+(17...Nd4+  18. Rxd4 ({with a trap} 18. exd4 $2 Qe4+ $12) 18... exd4 19. Qc8 $18)
+18. Kf3 e4+ 19. Kg4 $1 
+({In contrast to the variant with 12...Nd7 now this move is possible, for Black has no resource Nd7-f6. Meanwhile, erroneous is} 19. Kxe4 $2 Qe5+ 20. Kd3 (20. Kf3 Qf5+ 21. Ke2 Qb5+) 20...Qd5+ 21. Kc3 Qa5+ {and the white king can't hide from a perpetual check.})
+19...Qb4 
+(19...Ne5+ 20. Kg3 Nd3 21. h4 $18)( 19...h5+ 20. Kh4 g5+ 21. Kxh5 Qf5 22. Qxb7+ Kf8 23. Qxc6 $18)
+20. Be2 
+{The simplest.}
+20...Ne5+
+(20...Qxd2 21. Qxb7+ Kd6 22. Rd1 $18.)
+21. Kg3 Qxd2 22. Rd1 $1 Qxe2 23. Qd8+ 
+{Now it is the black king who appears in a mating net, and his white wis-a-wis takes the very active part in the former's capture.}
+23...Ke6 24. Rd6+ Kf5 25. Qc8+ Kg5 26. h4+ 
+({Black resigned, not awaiting for} 26. h4+ Kh5 27. Qf5+ g5 28. Qg5#)
+1-0
+
+[Event "Chigorin memorial"]
+[Site " $4"]
+[Date "1997"]
+[White "Kobalija"]
+[Black "Aseev, Konstantin"]
+[WhiteELO "2495"]
+[BlackELO "2545"]
+[Result "1/2-1/2"]
+[Source "Russian Chess"]
+[Annotator "GM Konstantin Aseev"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 Nc6 6. Bg5 e6 7. Qd2 Be7 8. O-O-O O-O 9. f4 Nxd4 10. Qxd4 a6 
+{Rather rare move. Main discussions there are now around 10...Qa5}
+11. Bc4
+({The other ways of development don't put any problems to Black. Here are a few examples.} 11.Rd3 b5 12.Bxf6 Bxf6 13.Qxd6 Bb7 14.Qxd8 Bxd8 15.a3 Ba5 16.Re3 f5 17.Bd3 Rac8 18.Nb1 Rfd8 19.Rd1 g6 20.exf5 exf5 21.g3 Kf7 $10 {Minasian-Aseev, St.-Petersburg, 1993})
+(11.Be2 Qa5 12.e5 (12.Bf3 h6 13.h4 Rd8 14.Qf2 Bd7 15.Kb1 Rac8 16.Rd3 Kf8 17.g4 Be8 {Berelovich-Aseev, Sochi, 1993})( 12.Kb1 $5) 12...dxe5 13.fxe5 Nd5 14.Bxe7 Nxe7 15.Bd3 Nf5 16.Qf4 Rb8 17.Kb1 $6 ({better} 17.Ne4 $1 Qxa2 $2 18.g4 Ne7 19.Nf6+ $1 $20) 17...b5 18.Ne4 Qc7 19.g4 Ne7 20.Nd6 Bb7 {Tiviakov-Aseev, St.-Petersburg, 1993})
+11...Qc7 $146
+{Early Black automatically played 11...b5, but if White in any case ought to take away his bishop on b3, why Black would not use this tempo for more useful pieses regrouping}
+12. Bb3 Rd8 13. e5
+(13.f5 $5)
+ 13...dxe5 14. Qxe5 Qb6
+(14...Rd6 $6 15.Ne4 Nxe4 16.Bxe7 Qxe7 17.Qxe4+)( 14...Qc6 15.Ne4 (15.f5 $5) 15...Nxe4 16.Bxe7 Re8 17.Bh4 $5 (17.Rhe1))
+15. Qe2
+(
+15.Rxd8+ Qxd8 $5
+( 15...Bxd8 16.f5 $5 Ng4 17.Qf4 Bxg5 18.Qxg5 Qe3+ (18...exf5 19.Nd5 $5 Qh6 20.Qxh6 Nxh6 21.Rd1 Be6 22.Nc7 Rb8 23.Nxe6 fxe6 24.Bxe6+) 19.Qxe3 Nxe3 20.fxe6 Bxe6 21.Bxe6 fxe6 22.g3)
+ 16.Rd1 Bd7)
+(
+15.Ne4 Nxe4 16.Bxe7 Qe3+ 17.Kb1 Rxd1+
+( 17...Nd2+ $2 18.Rxd2 $1 Qxd2 19.Bxd8 Qxd8 20.f5 exf5 21.Re1 (21.Bd5 $5) )
+18.Rxd1 Nd2+ 19.Ka1 Qxe5 20.fxe5 Nxb3+ 21.axb3 h5 22.Rd8+ Kh7 23.c4 b5 24.g3 Bb7 25.Rd7 Be4)
+(
+15.f5 $5 )
+15...Bd7 16.f5 Qc5 $1
+{An important resource, which allows Black to keep the position}
+17.Bxf6 Bxf6 18.fxe6
+({In case of sacrificing the rook for the bishop} 18.Rxd7 Rxd7 19.fxe6 Re7 20.Ne4 Qe5 21.Nxf6+ Qxf6 22.exf7+ 
+{White hardly has to count on the advantage})
+18...Bxe6 19.Bxe6 Bxc3
+1/2-1/2

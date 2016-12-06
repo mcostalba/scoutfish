@@ -1,0 +1,135 @@
+[Event "Marshall Club Championship"]
+[Site "New York, NY"]
+[Date "1946.03.07"]
+[Round "?"]
+[White "Evans, Larry GM"]
+[Black "Pilnick, Carl"]
+[Result "1-0"]
+[ECO "C13"]
+[WhiteElo "unknown"]
+[BlackElo "unknown"]
+[Annotator "Hayes, David"]
+[PlyCount "57"]
+
+1. e4 {C13: French: Classical System: 4 Bg5 Be7, Alekhine-Chatard Attack} 1... e6 2. d4 d5 {Black gets the initiative} 3. Nc3 Nf6 4. Bg5 Be7 5. Bxf6 Bxf6 6. e5 {This push gains space} 6... Be7 7. Qg4 O-O 8. O-O-O c5 {Trying to unravel the pawn chain} 9. h4 cxd4 10. Nce2 Nc6 11. f4 Qa5 12. Kb1 d3 13. cxd3 Bd7 14. Rh3 Rac8 15. Rg3 {Threatening mate: Qxg7} 15... g6 16. d4 b5 17. h5 Nb4 {The mate threat is Qxa2} 18. a3 Nc6 19. hxg6 fxg6 20. Nc3 b4 21. Bd3 Be8 22. Nf3?? (22. axb4 {is a viable option} 22... Bxb4 23. f5 (23. Qxe6+ Bf7 24. Qf6 Be7 (24... Nxd4 25. Bxg6 Bxg6+ 26. Rxg6+ hxg6 27. Qxg6+ Kh8 28. Nge2 Qa1+ 29. Kxa1 Nc2+ 30. Ka2 Ne1 31. Rxe1 Rxc3 32. Rh1+ Rh3 33. Rxh3#)) 23... exf5 24. Bxf5 Bxc3 25. Be6+ Kg7 26. Rxc3 (26. Bxc8?? {greedy!} 26... Nb4 27. Qd7+ Bxd7 28. Rxc3 Qa2+ 29. Kc1 Rf2 30. Ne2 Qa1+ 31. Kd2 Qxb2+ 32. Rc2 Qxc2+ 33. Ke3 Qxe2#)) 22... bxa3?  (22... bxc3! {is better for Black} 23. Rh1 Rb8 24. Qxe6+ Kh8 25. b4 Qxa3) 23. Qxe6+ Bf7 24. Bxg6 {The mate threat is Bxh7} 24... axb2 {No better is:} (24... Bxe6 25. Bxh7+ {Demolishes the pawn shield} 25... Kh8 (25... Kf7 26. Bg6+ Kg6 27. Be8+! Kh8 28. Rh1+) 26. Rh1 Rxf4 27. Bf5+ Bh4 28. Nxh4 ends the debate)) 25. Bxh7+ Kh8 26. Qh6 Qa1+ 27. Kc2 b1=Q+ 28. Rxb1 Nb4+ 29. Kd1 1-0
+
+[Event "AVRO"]
+[Site "AVRO"]
+[Date "1938.??.??"]
+[Round "?"]
+[White "Botvinnik, M."]
+[Black "Capablanca, J."]
+[Result "1-0"]
+[ECO "E49"]
+[WhiteElo "unknown"]
+[BlackElo "unknown"]
+[Annotator "Hayes, David"]
+[PlyCount "81"]
+
+1. d4 {E49: Nimzo-Indian: Rubinstein: 5 Bd3 d5 6 a3 Bxc3+ 7 bxc3} 1... Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 d5 5. a3 Bxc3+ 6. bxc3 c5 7. cxd5 exd5 8. Bd3 O-O 9. Ne2 b6 10. O-O Ba6 11. Bxa6 Nxa6 12. Bb2 Qd7 13. a4 Rfe8 14. Qd3 c4 {Black gains space.} 15. Qc2 Nb8 {The idea is Na6-b8-c6-a5-b3.} 16. Rae1 Nc6 17. Ng3 Na5 18. f3 {Prepares a center push with e4.} 18... Nb3 {Praise the knight!} 19. e4 Qxa4 20. e5 Nd7 21. Qf2 g6 {Prevents intrusion on f5 and h5.} 22. f4 f5 23. exf6 Nxf6 24. f5 Rxe1 25. Rxe1 Re8 26. Re6 Rxe6 27. fxe6 {The passed pawn on e6 will quickly become a dangerous weapon.} 27... Kg7 28. Qf4 Qe8 29. Qe5 Qe7 30. Ba3 Qxa3 31. Nh5+ gxh5 32. Qg5+ Kf8 33. Qxf6+ Kg8 34. e7 Qc1+ 35. Kf2 Qc2+ 36. Kg3 Qd3+ {Having won the Queenside, black is now desperate to bring defensive resources to protect his King.  No better is 36... Qxc3+ 37. Kh4 Qe1 38. Kxh5 Qe2+ 39. Kh4 Qe1+ 40. Kh3 Qe3+ 41. g3 h5 (to avoid immediate mate).} 37. Kh4 Qe4+ 38. Kxh5 Qe2+ 39. Kh4 Qe4+ 40. g4 Qe1+ 41. Kh5 {Black resigns given that white can force mate in 6 moves.} 1-0
+
+[Event "U.S. Championship"]
+[Site "?"]
+[Date "1963.??.??"]
+[Round "?"]
+[White "Fischer, Bobby GM"]
+[Black "Mednis, Edmar GM"]
+[Result "0-1"]
+[ECO "C18"]
+[WhiteElo "unknown"]
+[BlackElo "unknown"]
+[Annotator "Hayes, David"]
+[PlyCount "145"]
+
+1. e4 {C18: French: 3 Nc3 Bb4: Main line: 7 h4 and 7 Qg4} 1... e6 2. d4 d5 3. Nc3 Bb4 4. e5 c5 5. a3 Bxc3+ 6. bxc3 Qc7 {This move is designed to discourage 7. Qg4 when black would play 7... f5.  However, a more modern idea is simply 6... Ne7.  Then if 7. Qg4, then 7... cxd4 is complicated, but OK for black.} 7. Nf3 Bd7 8. a4 Ne7 9. Bd3 Nbc6 10. O-O c4 ( {The Bishop must be dislodged from its powerful diagonal before black castles.  For example} 10... O-O 11. Bxh7 Kxh7 12. Ng5+ Kg8 13. Qh5 Rfc8 14. Qxf7+ Kh8 15. f4! {and black will find it hard to stop 16. Rf3 and 17. Rh3.  For example: } 15... Nf5 (  {The defensive recourse} 15... Be8 16. Qxe6 ({is good for a draw because white gets into trouble after the complicated } 16. Qf8+ Ng8 17. Rf3 Bh5!)) 16. Rf3 Nh6 17. Rh3 cxd4 {what else?} 18. Rxh6+ {is mate next} ) 11. Be2 f6 12. Ba3 O-O (  12... fxe5 13. dxe5 Nxe5 14. Nxe5 Qxe5 15. Bh5+ Ng6 {wins a pawn at the expense of opening the center uncastled for one of history's great attacking players.} )  13. Re1 Rf7 14. exf6 gxf6 15. Bf1 Re8 16. Nh4 Ng6 17. Qh5 Rg7 18. g3 Qa5! {Forcing an ugly defensive move.} 19. Bb2 Nd8 {The isolated pawn on a4 becomes a target.} 20. Re3 Nf7 21. Kh1 Nd6 ( {Now the immediate} 21... Bxa4 {gets refuted by} 22. Nf5!}) 22. Nxg6 hxg6 23. Qe2 Rh7 24. Kg1 Kf7 25. h4 f5 26. Qf3 Ne4 27. Qf4 Rc8 28. Bg2 Qc7 29. Qxc7 Rxc7 30. a5 Rc6 31. Ba3 Ra6 32. Bb4 Rh8 33. Ree1 Bc6 34. Bf3 Nd2 35. Be2 Ne4 36. Kg2 Nf6 37. Rh1 Be8 38. Kf3 Ne4 39. Ke3 Nf6 40. f3 Bd7 41. g4 Be8 42. Kf4 Bb5 43. h5 gxh5 44. Rag1 Be8 45. Ke3 b6 46. axb6 Rxb6 47. Ra1 Rb7 48. Bd6 Rh7 49. gxf5 {White is not prepared to exploit the attacking chances created by this line opening move.  Perhaps this move was a bit impatient.} 49... exf5 50. Rh4 Ke6 51. Bh2 Rb2 52. Kd2 Rhb7 53. Kc1 R2b6 54. Bf1 Ng8 55. Bf4 a5 {This outside passed pawn will eventually win the game for black in classic style.  The pawn is untouchable 56. Rxa5? Rb1+ grabs the Bishop.} 56. Rh2 a4 57. Bh3 Ne7 58. Bg5 Kf7 59. Re2 Re6 60. Rxe6 Kxe6 61. Kd1 Nc8 62. Kd2 Bd7 63. Bg2 Ra7 64. Re1+ Kd6 65. Bh6 a3 66. Bf8+ Kc6 67. Bc5 Ra8 68. Ra1 a2 69. Ke3 Nd6 70. Kf4 Nb5 71. Bb4 h4 72. Bh3 Nc7 73. Be7 {White resigns after making this move in adjournment.  There might follow, 73... Re8! (threatening Ne6+) 74. Bxh4 Rh8! (75. Kg3 f4+) 75. Bxf5 Rxh4+ wins a piece for 3 pawns, but white's extra pawns are not enough to turn the tide.} 0-1
+
+[Event "Fifth World Championship, corr."]
+[Site "?"]
+[Date "1968.05.10"]
+[Round "?"]
+[White "Estrin, Yakov (Soviet Union)"]
+[Black "Berliner, Hans (United States)"]
+[Result "0-1"]
+[ECO "C57"]
+[WhiteElo "unknown"]
+[BlackElo "unknown"]
+[Annotator "Hayes, David"]
+[PlyCount "84"]
+
+1. e4 {C57: Two Knights: Wilkes-Barre/Traxler and 4 Ng5 d5 5 exd5, unusual Black 5th moves} 1... e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 {If black play s the immediate 5... Nxd5?, then white can crush black's position with 6. Nxf7! Typical play might look like this: 6... Kxf7 7. Qf3+ Ke6 8. Nc3 Ncb4 9. Qe4 c6 10. a3 Na6 11. f4! Nac7 12. fxe5 Ke7 13. d4 Ke8 14. O-O.} 5... b5 {The Ulvestad Variation.} 6. Bf1 {The odd looking retreat of this Bishop is designed to prevent Qxg2 after 6... Qxd5 7. Nc3. Other alternatives give black a good game. For example, 6. Bb3 Nd4 7. d6?! Nxb3 8. dxc7 Qxc7 9. axb3 abandons the center to black's very active play for only a pawn. Also, 6. Bxb5 Qxd5 7. Nc3 Qxg2 8. Qf3 Qxf3 9. Nxf3 Bd7 is OK for black.} 6... Nd4 {A new move ! The book line is 6... Qxd5 Nc3 7. Qd6 (7. Qc5?! leaves the Queen too exposed). Black can also play 6... h6 which drops a pawn for active play. 6... h6 7. Nxf7 Kxf7 8. dxc6 Bc5 (Kirilov - Shebenyuk, coor. 1985.} 7. c3 Nxd5 8. Ne4 Qh4 {Black's pieces swarm around white. Now if 9. d3 then 9... Bg4 10. Qd2 entombs many of white's pieces.} 9. Ng3 Bg4 10. f3 {How should black respond with two pieces hanging? Attack of course!} 10... e4 11. cxd4 Bd6 {Black sacrifices material until it hurts. Play is now razor sharp on the king side.} 12. Bxb5+ Kd8 13. O-O exf3 {White is a piece up with no peace. How should white respond to black's threat of 14... fxg2 attacking both white's Rook and Queen? The natural 14. gxf3 is refuted by 14... Bxg3 15. hxg3 Qxg3+ 16. Kh1 Nf4 17. Qe2 (forced) Nxe2 winning.} 14. Rxf3 {This may be the losing move. After 14. Qe1!, black will find it hard to justify his material sacrifice.} 14... Rb8 15. Be2 Bxf3 16. Bxf3 Qxd4+ 17. Kh1 Bxg3 18. hxg3 Rb6 19. d3 Ne3 20. Bxe3 Qxe3 21. Bg4 h5 22. Bh3 g5 23. Nd2 g4 24. Nc4 Qxg3 25. Nxb6 gxh3 26. Qf3 hxg2+ 27. Qxg2 Qxg2+ 28. Kxg2 cxb6 {Black's attack has regained the lost material. Now it is only a matter of endgame technique.} 29. Rf1 Ke7 30. Re1+ Kd6 31. Rf1 Rc8 32. Rxf7 Rc7 33. Rf2 Ke5 34. a4 Kd4 35. a5 Kxd3 36. Rf3+ Kc2 37. b4 b5 38. a6 Rc4 39. Rf7 Rxb4 40. Rb7 {Why you might ask did white stop short of capturing on a7? Indeed, 40. Rxa7 is better. No doubt that after white saw that the capture on a7 loses also, he decided to complicate matters in the hope that black might go wrong.} 40... Rg4+ 41. Kf3 b4 42. Rxa7 b3 {With this move white resigned. There is little use in wasting postage on a lost game. The game might have continued: 43. Rb7 b2 44. a7 Ra4 when black's b-pawn cannot be stopped.} 0-1
+
+[Event "World Championship, Game 16"]
+[Site "?"]
+[Date "1985.??.??"]
+[Round "?"]
+[White "Karpov, Anatoly GM"]
+[Black "Kasparov, Garry GM"]
+[Result "0-1"]
+[ECO "B44"]
+[WhiteElo "2700"]
+[BlackElo "2700"]
+[Annotator "Hayes, David"]
+[PlyCount "80"]
+
+1. e4 {B44: Sicilian: Taimanov: 5 Nb5} 1... c5 2. Nf3 e6 3. d4 cxd4 4. Nxd4 Nc6 5. Nb5 d6 6. c4 Nf6 7. N1c3 a6 8. Na3 d5 {White tried to stop this move. The white Pawns on e4 and c4 form what is known as the Maroczy Bind or Wall. This wall is supposed to restrain black in the center. Black played this move which sacrifices a Pawn in order to gain greater freedom of movement for his pieces. Is the sacrifice worth it? In this game - yes. In clear retrospect - no.} 9. cxd5 exd5 10. exd5 Nb4 11. Be2 Bc5 12. O-O {White may have missed his best chance for a win by making this natural move. Karpov himself provides us insight into this position, and how to refute the black gambit. Karpov played the following line against GM John vanderWiel in the 1987 SWIFT tournament in Brussels. 12. Be3! Bxe3 13. Qa4+! Nd7 14. Qxb4 Bc5 15. Qe4+ Kf8 16. O-O with advantage for white.} 12... O-O 13. Bf3 {White plays for the win. He reinforces his extra Pawn on d5 which black could have regained on move 11. How does black refute the loss of material? Watch how black paralyzes white, dominates the center, and gains control of more space. By move 19 white will be tied in knots.} 13... Bf5 14. Bg5 Re8 15. Qd2 b5 16. Rad1 Nd3 17. Nab1 {A natural retreat which avoids the Pawn fork on b4. Kasparov recommends the more active 17. d6! Ra7! (17... b4? 18. Bxa8 Qxa8 19. Bxf6 gxf6 20. Na4 bxa3 21. Nxc5 Nxc5 22 Qd5! Qxd5 23. Rxd5 Re5 24. Rxe5 fxe5 25. bxa3 makes a better ending for white.) 18. Nd5 with an unclear position.} 17... h6 18. Bh4 b4 19. Na4 Bd6 {Kasparov states in his book Garry Kasparov: New World Chess Champion, A position for which I had aimed in my preparatory analysis! Black has achieved obvious advantage. White scattered his minor pieces about on either flank and are quite unable to coordinate, the placement of the Knights being particularly depressing. But black has the wonderful duo of Bf5 and Nd3 which completely paralyzes all three white major pieces - a very rare occurrence in a practical game!} 20. Bg3 Rc8 21. b3 g5 22. Bxd6 Qxd6 23. g3 Nd7 {A very excel lent move. Black is not content to merely capture the d5 Pawn. Instead, he wants to reinforce the d3-Knight with Nd7-e5 and then play for an attack against the white King on the weakened light squares. In addition, this sets up a diabolical trap if white tries to recycle his a4-Knight to b2. For example, 24. Nb2 Qf6! 25. Nxd3 Bxd3 26. Qxd3 Ne5! trapping the white Queen. Believe it or not.} 24. Bg2 Qf6 25. a3 a5 26. axb4 axb4 27. Qa2 Bg6 {A good move indeed. Black will refute Nd2 with Re2. This move prevents white from driving away the Rook with Bf3. This is a refute to the refute. Simply stated this move prevents the freeing Nd2.} 28. d6 g4 29. Qd2 Kg7 30. f3 Qxd6 31. fxg4 Qd4+ 32. Kh1 Nf6 33. Rf4 Ne4 34. Qxd3 Nf2+ 35. Rxf2 Bxd3 36. Rfd2 Qe3 37. Rxd3 Rc1 {Who among us has the steady hand to play a move like this. Black offers to give up his Queen for a host of white pieces.} 38. Nb2 Qf2 39. Nd2 Rxd1+ 40. Nxd1 Re1+ 0-1
+
+[Event "Hoogoven Tournament, Wijk aan Zee"]
+[Site "?"]
+[Date "1985.05.10"]
+[Round "?"]
+[White "Beliavsky, Alexander GM"]
+[Black "Nunn, John GM"]
+[Result "0-1"]
+[ECO "E81"]
+[WhiteElo "2500"]
+[BlackElo "2500"]
+[Annotator "Hayes, David"]
+[PlyCount "54"]
+
+1. d4 {E81: King's Indian: Saemisch: 6th move deviations (including 6 Be3 c6)} 1... Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f3 O-O 6. Be3 Nbd7 {Not the standard move here. Most common is 6... e5 fighting for the center. Black could also play 6... c5. The move played allows white to develop his g1 Knight safely to f2 via h3.} 7. Qd2 {A typical move in this position. White prepares to castle long and Pawn storm the black King. However, 7. Nh3-f2 is a better idea. Seirawan-Istratescu, 1994 continued 7. Nh3 e5 8. d5 Nh5?! 9. g4 Nf4 10. Nxf4 exf4 11. Bxf4 Ne5 12. Be2 f5 13. exf5 gxf5 14. O-O fxg4 15. fxg4 h5!? 16. Bxe5 Bxe5 17. Qd3! gave white a clear advantage according to Seirawan in his book, Winning Chess Brilliancies. However, GM Nunn had prepared a special treatment of this line.} 7... c5 8. d5 Ne5 9. h3 {A mistake. The move is logically designed to prevent black's Knights from going to g4 after white plays the natural f4 to drive away black's Knight on e5. Few better moves spring to mind for white here. 9. Bd3 Nxd3 uncoordinates the white position. 9. Ne2? Nxc4 loses material. Watch how black immediately targets the weakened g3 square.} 9... Nh5 10. Bf2 f5 11. exf5 Rxf5 {This move invites the Pawn fork which sacrifices black material for no clear tactical advantage. After the natural 11... gxf5 12. f4 Ng6 13. g3 would make black's Knights harmless. White is nearly forced to fork the black pieces in order to develop his own pieces.} 12. g4 Rxf3 13. gxh5 Qf8 {The point of this entire line of sacrifice is made with this move. The white King is stuck in the center. Castling Queenside would run into Bh6 immediately. White finds it difficult to develop his kingside pieces. Black has the initiative with the f-file battery. Therefore, white will find it hard to devise a defensive plan.} 14. Ne4 Bh6 15. Qc2 Qf4 {White can only curse his fortune. White cannot remove black's Rook on f3 because 16. Nxf3 Nxf3+ 17. Kd1 Bf5 18. Bg3 (not 18. Bd3 Nd4! 19. Bxd4 Qf3+ 20. Qe2 Qxh1+ 21. Kc2 Qxa1 wins material) 18... Qe3! 19. Bf2 Qxe4 20. Qxe4 Bxe4 21. Bg2 Rf8 gives black a superior end game. The black Queen assumes a dominating position in the middle of the board planning Bc8-f5 and Ra8-f8.} 16. Ne2 Rxf2 17. Nxf2 Nf3+ 18. Kd1 Qh4 19. Nd3 Bf5 20. Nec1 Nd2 21. hxg6 hxg6 22. Bg2 Nxc4 23. Qf2 Ne3+ {Black could also play for a winning endgame with 23...Qxf2 24. Nxf2 Ne3+ 25. Ke2 Nxg2, but GM Nunn plans for a beautifully coordinated attack. The end is near.} 24. Ke2 Qc4 25. Bf3 Rf8 26. Rg1 Nc2 27. Kd1 Bxd3 0-1
+
+[Event "Copenhagen"]
+[Site "?"]
+[Date "1923.05.10"]
+[Round "?"]
+[White "Saemisch, Friedrich GM"]
+[Black "Nimzovich, Aron GM"]
+[Result "0-1"]
+[ECO "E06"]
+[WhiteElo "2500"]
+[BlackElo "2500"]
+[Annotator "Hayes, David"]
+[PlyCount "50"]
+
+1. d4 {E06: Closed Catalan: Early deviations} 1... Nf6 2. c4 e6 3. Nf3 b6 4. g3 Bb7 5. Bg2 Be7 6. Nc3 O-O 7. O-O d5 8. Ne5 c6 9. cxd5 {This move releases the center tension. It is especially odd given that white moved his Knight to e5 to protect the c4 square. More vigorous is 9. e4 to destroy black's center. 9. Bf4 is also very playable.} 9... cxd5 10. Bf4 a6 11. Rc1 b5 12. Qb3 {This is an odd and ineffective placement of the Queen. It bites on steel and blocks the progress of Queenside development.} 12... Nc6 13. Nxc6 {White may have traded his strong Knight away because he feared the maneuver Nc6-a5-c4. A timely b3 would have driven this Knight away from the c4 square. Therefore, his fear was not justified.} 13... Bxc6 14. h3 Qd7 15. Kh2 Nh5 16. Bd2 f5 17. Qd1 b4 {Black slowly gains space on both sides of the board. This subtle process eventually leads to megalomaniac total domination of the entire board.} 18. Nb1 Bb5 19. Rg1 Bd6 {This move at first appears to be a blunder. However, Nimzovich sees farther.} 20. e4 {A good try. White hopes to gain time by attacking the Knight on h5. If black comes to its defense with Qf7, then e5 stuffs black and frees white's game.} 20... fxe4 {A piece for two pawns, and central domination, and aggressively poised pieces, and open file, and...} 21. Qxh5 Rxf2 22. Qg5 Raf8 23. Kh1 R8f5 24. Qe3 Bd3 25. Rce1 h6 {Here white resigned. Nearly all moves lead to a serious loss of material. After a pawn move or two, white will face complete Zugzwang. Zugzwang is a German word meaning 'a compulsion to move.' White is forced to move, and in so doing will lose. If white plays 26. Rc1 or Rd1 then 26... Re2 wins white's Queen. If 26. Kh2 then 26... R5f3 also wins white's Queen. If 26. g4 then 26... R5f3 27. Bxf3 Rh2 is checkmate. If 26. Bc1 then 26... Bxb1 wins material. If 26. a3 then 26... a5. etc.} 0-1
+
+[Event "TASK"]
+[Site "?"]
+[Date "1998.08.29"]
+[Round "?"]
+[White "Markkanen, Seppo"]
+[Black "Jarvenpaa, Jari"]
+[Result "0-1"]
+[ECO "B01"]
+[WhiteElo "2015"]
+[BlackElo "1845"]
+[Annotator "Hayes, David"]
+[PlyCount "40"]
+
+1. e4 {B01: Scandinavian Defence} 1... d5 2. exd5 Nf6 3. d4 Bg4 {The main line of the Portuguese Variation of the Scandinavian or Center Counter Opening.} 4. Nf3 {Other alternatives are 4. Be2 and 4. f3. For example 4. f3 Bf5 5. Bb5+ Nbd7 6. c4 e6 7. dxe6 Bxe6 8. c5! c6 9. Bd3 b6 10. cxb6 Qxb6 11. Ne2 c5 12. O-O! and white stands slightly better.} 4... Qxd5 5. Be2 Nc6 6. c4 Qh5 7. d5 {Not a good move, because of dark squares and pressure of white's kingside, better would be something like 7. O-O O-O-O 8. Be3 and so on.} 7... Ne5 8. Nbd2 O-O-O 9. O-O e6 10. Qa4 {Too aggressive! White has no chance of attack, because his own King-side is weak. More reasonable would be 10. dxe6.} 10... Bd6 11. h3 Bxh3 12. gxh3 Qxh3 13. Qxa7 {Too greedy. Rather 13. Nxe5 Bxe5 14. Nf3 Ng4!} 13... Nxf3+ 14. Nxf3 Ne4 15. Be3 h5 16. Qa8+ {Or 16. c5 Rh6 17. Qa8+ Kd7 18. Qxd8+ Kxd8 19. Bxh6 Bxc5 with the double threat of Nxf2! and gxh6. If 20. Be3 then 20... Ng3!} 16... Kd7 17. Qxb7 Rh6 18. dxe6+ Rxe6 19. Rfd1 Rg6+ 20. Bg5 Rxg5+ 0-1
+
+[Event "Breslau"]
+[Site "?"]
+[Date "1912.??.??"]
+[Round "?"]
+[White "Levitsky"]
+[Black "Marshall, Frank"]
+[Result "0-1"]
+[ECO "C10"]
+[WhiteElo "unknown"]
+[BlackElo "unknown"]
+[Annotator "Hayes, David"]
+[PlyCount "46"]
+
+1. d4 {C10: French with 3 Nc3: Unusual Black 3rd moves instead of 3...dxe4} 1... e6 2. e4 d5 3. Nc3 c5 {Marshall plays a weak move that will ultimately allow white to shred black's center.  Perhaps black was hoping for tactical chances in the resulting complex position.} 4. Nf3 Nc6 5. exd5 exd5 6. Be2 Nf6 7. O-O Be7 8. Bg5 O-O 9. dxc5 {Black's d-pawn becomes a juicy target; isolated, alone.} 9... Be6 {Black cannot afford the loss of his entire center.  He wastes no time bolstering the weakling.} 10. Nd4 Bxc5 11. Nxe6 {A bad idea by white.  Black reconnects a strong central pair of pawns, opens up the f-file for his Rooks.  White cannot generate counter play against the central pawns in time.} 11... fxe6 12. Bg4 Qd6 13. Bh3 Rae8 14. Qd2 {White should have played a3 to control the important b4 square.} 14... Bb4 {Black immediately pins the poor Knight.} 15. Bxf6 {White deals with black's threat of Nf6-e4.} 15... Rxf6 16. Rad1 {Now white deals with the threat of d5-d4.} 16... Qc5 17. Qe2 {White sets up what he hopes will be a simple exchange of pawns, but Marshall sees more deeply.} 17... Bxc3 18. bxc3 Qxc3 19. Rxd5 {Of course not 19... exd5 because 20. Qxe8 leads to mate.} 19... Nd4 {Black activates his Knight while gaining time on White's Queen.  How should white respond?  The Queen must keep pressure on the e8-Rook.  If 20. Qe5 then 20... Nf3+! 21. gxf3 Rg6+ is crushing.} 20. Qh5? {White loses the upper hand.  20. Qe4 Rf4 21. Qe5 is white's only chance.} 20... Ref8 {With the decisive threat Rxf2.  Black has nothing to gain by 20... exd5?! 21. Qxe8+ Rf8 22. Be6+ Nxe6 23. Qxe6+ Rf7 24. Qxd5 Qxc2 25. f3 =.  20... g6 allows 21. Qe5 =.} 21. Re5 {White may have wanted to play 21. Rc5, but after 21... Rxf2! the game is over.  22. Rxf2 Qe1+ or 22. g3 Nf3+ are both crushing.} 21... Rh6 22. Qg5 {If 22. Qg4? then black would win routinely with 22... Nf3+ discovery on the Rook on e5.} 22... Rxh3 23. Rc5 Qg3 {There you have a move to admire.  The Queen is en prise three ways.  All of which lose.  If 24. hxf3, then 24... Ne2 is mate.  If 24. fxg3, then 24... Ne2+ leads to mate. The game could have continued painfully for white like this:  24. Qxg3 Ne2+ 25. Kh1 Nxg3+ 26. Kg1 Nxf1.} 0-1
+

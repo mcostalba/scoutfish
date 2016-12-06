@@ -1,0 +1,769 @@
+[Event ""]
+[Site "Lodz"]
+[Date "1929.??.??"]
+[Round "?"]
+[White "Najdorf"]
+[Black "Shapiro"]
+[Result "1-0"]
+[ECO "C10"]
+[Annotator "Tim McGrew"]
+
+{
+It's hard to believe that Najdorf was turning out brilliancies as far back as 1929 -- but watch!
+}
+1.e4 e6 2.d4 d5 3.Nc3 dxe4 
+{
+This variation has a mixed reputation. On the one hand, Black concedes some space to White without much of a struggle, creating the pawn formation that Hans Kmoch would immortalize as the "French Jump Formation." On the other hand, Black's position resembles a brick: small, compact, hard to crack. Blackmar-Diemer Gambit fans are apt to play f3 here, counting on the materialistic nature of the average French player to make him munch the pawn. 
+}
+4.Nxe4 
+{
+Najdorf just takes it off: he's interested in fluid development with a slight but pleasant spatial advantage without a material sacrifice. 
+(4.f3 exf3 5.Nxf3 Nf6 By transposition, then, we'd have the Euwe Defense to the BDG. The Euwe Defense has a pretty good theoretical reputation at present thanks to endorsements from GM Joe Gallagher and the Watson & Schiller analytical team. But it's not clear that this reputation is deserved since there are some improvements for White on the aforementioned analysis. In any event, what makes the 4.f3 line less attractive for White is the fact that Black can simply ignore it, like so: 4...e3 Now White has no open f-file, his f-pawn stunts his Kingside development, and the pawn formation is otherwise the same as he would get by just taking the pawn on e4.)
+}
+4...Nd7 
+{
+Partly because of the uncomfortable position of a Queen on f6, Black prepares the Knight exchange by playing Nbd7. Black would like to exchange off this strong N/e4, but the most natural way to do it can lead to trouble. 4...Nf6 Every time I give a simultaneous exhibition, I look to catch another victim in some version of the following age-old trap: 5.Nxf6+ Qxf6 6.Nf3 b6 7.Bd3 White weaves a nefarious web; Black plans a counter-blow. 7...Bb7 8.Bg5 Oh no! Is the Queen caught? 8...Bxf3 No she isn't! 9.Qd2 Yes she is!!! 9...Qxd4 No! 10.Bb5+ Yes!! Variants of this trap come up in many different openings. Whenever I teach the Colle System to a beginner, I make a point of illustrating how it can arise there -- and I have had more than one student come back and tell me tales of Queens netted like this! 
+}
+5.Nf3 
+{
+Najdorf, imperturbably confident in his slight spatial and developmental edge, continues to bring out his pieces. 
+}
+5...Ngf6 6.Bd3 
+{
+How should we assess the position here? 
+White's spatial advantage is worth the most when Black is cramped, with too many pieces on the board and too little space for maneuvering them. It makes good sense, therefore, for Black to swap off a pair of Knights. Makes sense -- but also takes time, and a single pair of Knights isn't all he'd like to get rid of. (6...Nxe4 7.Bxe4 Nf6 8.Bd3 After a tit-for-tat like this, Black is still left with a deficit in space and, importantly, a trapped B/c8.)
+}
+6...Be7 
+{
+Shapiro decides to defer the exchanges and concentrate on getting his Queenside untangled. To that end, he fianchettoes the B/c8. 
+}
+7.0-0 b6 
+{
+What square does this move weaken? c6! Najdorf seizes the opportunity to take a peek at that square. 
+}
+8.Ne5 
+{
+He's threatening Nc6 now, and if Black captures on e5, watch: 8...Nxe5 9.dxe5 Nxe4 10.Bxe4 The exchanges have opened up some space but now Black's pieces look badly-placed. 10...Qxd1 11.Rxd1 Rb8 12.Bc6+ Kf8 This is not a happy position for Black, despite the material equality. His pieces lack good squares and White is pretty obviously going to be coming down the d-file in the very near future. For example: 13.Be3 Bb7 14.Bxb7 Rxb7 15.Rd7 ...with Rad1 to come. White hasn't won material yet, but Black is being squeezed badly.
+}
+8...Bb7 
+{
+Shapiro, reasonably enough, figures that there's nothing much to fuss about as long as he covers his c6 square. 
+}
+9.Nxf6+ 
+{
+Najdorf, however, has a keener sense of the tactical usefulness of a N on e5. Black has three possible recaptures. Which one is best? 
+9...Nxf6 
+This is the most natural way to recapture -- yet it is precisely against this move that Najdorf's idea can be put into action. 
+10.Bb5+! Kf8
+Because of the combined force of Bishop and Knight covering c6 and d7, Black is obliged to forfeit castling now.Perhaps you're thinking, "So what? The King looks pretty safe on f8." But the point is that in the long run Black's position will be even less coordinated than it is now -- he would have real difficulties getting his pieces into action. Already one of the difficulties he faces from being cramped, he should really want to avoid it -- whether or not there are immediate tactical consequences.
+}
+9...gxf6 
+{
+Despite the awkwardness of it, Shapiro should have taken with the Bishop. But he reasons thus: why not take with the pawn and get rid of that pesky N/e5 once and for all? Now if White backs up the Knight, Black can play f5, Nf6, Qd7 and 0-0-0 -- he might even be able to use the g-file for an attack on White's King later on. Even ugly moves can give victory if they are not met resolutely. Fortunately for us, resolute play is Najdorf's strong suit!
+Can you guess what he uncorks here? 
+}
+10.Nxf7! 
+{
+Let your imagination run wild and you will see that Nxf7 has all the earmarks of an excellent investment. First point: it's an offer Black can't refuse. 
+}
+10...Kxf7 11.Qh5+ 
+{
+Second point: White has at least a perpetual check now, since if nothing else he can keep going from g4-h5-g4+. Black can never set his King on a dark square or Bh6+ will be the end of him. 
+For example: 11...Kg7 12.Bh6+ Kg8 13.Qg4+ Here's a delightful little line. 13...Kf7 14.Qg7+ Ke8 Now taking the Rook allows Black to play Nf8. Can you see a better idea? 15.Qg6+!! (15.Bg6+ hxg6 16.Qxg6#) 15...hxg6 16.Bxg6# Same effect, but a little more glamourous this way.
+}
+11...Kg8 
+{
+All of that demonstrates why Black must not put his King on a dark square. So we know, already, that White has at least a perpetual check in hand any time he wants it.Najdorf, of course, wants a good deal more than that. Now it's a sad but true fact that with the material aimed at the King right now, White cannot deliver checkmate. How can he best get another heavy piece into action? It will take a few moves to get a rook into action. Nevertheless, Najdorf starts the process. 
+}
+12.Re1 Nf8 
+{
+Shapiro hunkers down to defend. 
+Najdorf decides he'd like more open diagonals, thank-you-very-much. 
+}
+13.Rxe6!! 
+{
+And yes, he'd like fries with that. Crispy french-fried Black pieces, please! 
+}
+13...Nxe6 
+{
+The gift cannot be refused. But now White's lightsquare Bishop becomes a brilliant laser pinning down the Knight on the e-file. 
+}
+14.Bc4 Qd6 15.Bh6 Bf8 16.Re1 
+{
+Najdorf tightens the screws mercilessly. How can the Knight be defended? White has a grip on d5 thanks to his Queen's control of the fifth rank, so ...Bd5 is out of the question. That leaves only Bc8. 
+}
+16...Bc8 
+{
+Now Black's pieces are so awkwardly pinned and stuck together that it's almost a miracle he's not mated already. Najdorf gleefully adds another pin to the mix. 
+}
+17.Qe8!! 
+{
+But now the threat is just Rxe6!! e.g. 17...a5 18.Rxe6 Bxe6 19.Qxe6+ Another nice little touch. This game is for the Bishops in our audience... 19...Qxe6 20.Bxe6#. I can well imagine that Shapiro was getting desperate hereabouts. 
+}
+17...Bd7 
+{
+He offered to shed an entire Rook to relieve the immediate pressure. Najdorf, however, knows what to do with an open line. 
+}
+18.Rxe6!! 
+{
+This stunning sacrifice brings down the house. 
+}
+18...Rxe8 19.Rxe8+ 
+{
+Discovered check! 
+}
+19...Be6 
+{
+Some form of interposition is forced. 
+}
+20.Bxe6+ Qxe6 21.Rxf8# 
+{
+The final mating position is reminiscent of the "Opera Box Game" Morphy v. Allies. Note, in particular, that the mate is carried out with White's two remaining pieces, and that throughout the whole of this brevity Najdorf has wasted not a single move on wing pawns. 
+This is imaginative play of a very high order!
+}
+1-0
+
+[Event ""]
+[Site "Warsaw"]
+[Date "1935.??.??"]
+[Round "?"]
+[White "Glucksberg"]
+[Black "Najdorf"]
+[Result "0-1"]
+[ECO "A85"]
+[Annotator "Tim McGrew"]
+
+{
+When Najdorf played the following game in Warsaw he was in his early 20s and not yet famous. Later his family would be slaughtered by the Nazis and he would be forced to flee the country. He spent the latter days of his life in Argentina. 
+}
+1.d4 
+{
+Later in life, Najdorf took up the King's Indian with formidable effect. His games at Zurich in 1953, along with those of Gligoric, made a profound impression on Bobby Fischer. But this game was played in the early 1930's, before Najdorf had discovered the King's Indian. Here, he sets up a classic Stonewall Dutch -- a variation that was serving the up-and-coming Russian player Mikhail Botvinnik well at about the same time. 
+}
+1...f5 2.c4 Nf6 
+{
+This is the first decision point for Black. Some Russian players -- notably Korchnoi -- favored ...g6 and the fianchetto of the King's Bishop. That variation used to be called the Leningrad Dutch...But perhaps we'll have to call it the St. Petersburg Dutch now! 
+}
+3.Nc3 e6 
+{
+This is Black's second decision point. With ...b6 and ...Bb7, he can set up a sort of Queen's Indian formation in which he has a good grip on e4. But Najdorf goes with the classic Stonewall pawn formation, grabbing space and locking down on e4 but creating a rigid pawn formation that may block in his own pieces, particularly the B/c8. 
+}
+4.Nf3 d5 
+{
+This completes the Stonewall pawn formation. 
+}
+5.e3 c6 6.Bd3 Bd6 7.0-0 0-0 8.Ne2 
+{
+Glucksberg may have experienced one of Najdorf's attacks before and wanted to cover his Kingside. But this move, taking a tempo to reposition a piece that stood perfectly well, takes too much time. 
+}
+8...Nbd7 
+{
+This very natural move may be a microscopic inaccuracy, since White can now trade pawns on d5 in a way that is strategically favorable. 
+For example: 9.cxd5 By capturing on d5 at the very moment that Black's N/d7 blocks off his B/c8, White can force Black to recapture with his c-pawn rather than the strategically desirable recapture with the e-pawn. 9...exd5 (9...cxd5 This recapture, though it does not lose a pawn, leaves Black with an unweildy block of pawns including the useless pawn on e6. Since White wishes to operate on the Queenside anyway, the open c-file is to his advantage.) 10.Bxf5 If Black captured with the e-pawn, he would be on his way toward freeing his B/c8 -- but alas, the f-pawn is momentarily undefended, so this is tactically untenable. 
+}
+9.Ng5 
+{
+White, however, doesn't take advantage of his opportunity, and in letting it slip he also gives Black a free pawn. Najdorf now uses a familiar theme to take advantage of the undefended N/g5. But the use to which he puts that theme is anything but familiar! 
+}
+9...Bxh2+ 
+{
+Obviously, if White captures this Bishop, Black has 10...Ng4+ and 11...Qxg5 recovering the piece and remaining a pawn to the good with a strong attack. 
+}
+10.Kh1 
+{
+Glucksberg therefore leaves the Bishop where it sits, possibly already envisaging an encirclement with ...g3 to trap and win it. 
+}
+10...Ng4 
+{
+Najdorf consistently brings his forces over to the Kingside with a gain of time thanks to the unveiled attack on the N/g5. But has he overlooked something? 
+}
+11.f4 
+{
+White slams the door on the Bishop's exit from h2. Now Najdorf has to prove that he can get sufficient compensation for the piece. But White is also making his own defensive front rigid. It isn't obvious just yet what Black can do to take advantage of this fact. 
+}
+11...Qe8 
+{
+Blackmar-Diemer Gambit fans the world over know and love this move, preparing to swing the Queen up to h5 for the Kingside assault. But Stonewall fanatics are likely to say that they took out the patent first! 
+}
+12.g3 
+{
+White consistently pursues the attack on the trapped Bishop. Now Kg2 and Rh1 is threatened. If White can get two minor pieces for a Rook and a pawn, the transaction is likely to favor him -- particularly since Black's remaining Bishop is rather pathetic. 
+}
+12...Qh5 
+{
+Experienced players know enough to find this concentration of force on the Kingside rather alarming. True, there is no instant mate. But Najdorf shows his tactical mastery in making the most of his pieces' firepower. 
+}
+13.Kg2 
+{
+still blissfully unsuspecting, Glucksberg continues the encirclement. 
+}
+13...Bg1 
+{
+A shot! Najdorf clears off the h2 square for a Queen check. There is only one way to capture this Bishop: taking with the King is self-mate. 
+}
+14.Nxg1 
+{
+Taking with the Rook allows mate in two as well. Only the Knight capture is acceptable -- or so it seems. 
+}
+14...Qh2+ 
+{
+Driving the King forward -- to his doom! 
+}
+15.Kf3 
+{
+Here it may be salutary for us to apply the "FSA" (Flight Square Analysis) thinking technique. White's King has abruptly run out of room: though centralized, he is stuck in place. What Black needs is a way to open lines to bring in further attacking forces. Najdorf's next few moves accomplish this in a fashion that smacks more of wizardry than of sober chess! 
+}
+15...e5! 
+{
+This fearless break is the prelude to an orgy of sacrifices. The immediate threat is simply 16...e4+ winning massive amounts of material since White must give up two minor pieces just to avoid mate. Obviously, then, White needs to take the pawn. 
+}
+16.dxe5 Ndxe5+ 
+{
+Najdorf presses forward! His goal here is to clear the line so that the despised B/c8, buried alive by its own pieces and pawns, can join in the fray. The material investment, however, is fearful. If Black does not succeed in pursuing this to mate, he will have to scrape around for a perpetual check. 
+}
+17.fxe5 
+{
+Glucksberg still doesn't see what is coming -- pardonably so! 
+}
+17...Nxe5+ 18.Kf4 
+{
+White has no choice but to come further forward. Should Black take a perpetual now with Ng6-e5+? What a mercy that Najdorf set his sights higher! 
+}
+18...Ng6+ 19.Kf3 f4 
+{
+Utterly without fear! Najdorf plays with the inspiration of a Morphy. Now the threat of opening the f-file compels White to capture the cheeky pawn. 
+}
+20.exf4 
+{
+For all that, it looks like White is getting away now. His King has the newly-acquired square e3 for running away. But Najdorf has succeeded in clearing the line for the buried B/c8, which now immolates itself in a burst of glory. 
+}
+20...Bg4+ 
+{
+The skewer on the Queen confronts White with a bitter choice: lose her ladyship, or come still further forward. We may be grateful to Glucksberg for choosing to die with his sword in hand. 
+}
+21.Kxg4 Ne5+ 
+{
+A final minor piece sacrifice, preventing the King's retreat to f3 and forcing open the f-file so that the King is held fast on the g-file. 
+}
+22.fxe5 h5# 
+{
+Truly a game of brutal efficiency. Black sacrificed all four minor pieces! Small wonder that this game was christened "The Polish Immortal". Soon after, Najdorf became one of the top players in the world and stayed there for decades. He died while attending a chess tournament (as an observer) in Malaga Spain in 1997 at the age of 87. His doctor warned him not to make the trip, but he replied gamely that he wanted to die watching a chess tournament! 
+}
+0-1
+ 
+[Event ""]
+[Site "Kassa"]
+[Date "1893.??.??"]
+[Round "?"]
+[White "Charousek"]
+[Black "Wolner"]
+[Result "1-0"]
+[ECO "C21"]
+[Annotator "Tim McGrew"]
+
+{
+Rudolf Charousek was born in 1873 and died in the year 1900, a tragic loss to chess. He began playing at the age of 16, in 1889, and in the span of less than a dozen years he made his mark as one of the most promising masters of the "young" generation.
+According to Hoffer, who wrote an article on him in the Chess Monthly, virtually all of the masters who met him admitted that he was a genius. Lasker is said to have remarked, "I shall have to play a championship match with this man some day."
+Early in 1898, Charousek contracted an inflammation of the lungs that dogged him throughout the last year and a half of his life. Although he continued to try to participate in tournaments, finishing second at the German Congress (ahead of Steinitz, Schlechter, Janowski, etc), Hoffer remarked that he looked frail and emaciated.
+On April 18, 1900, he was seized with a hemmorage of the lungs. He died the next day.
+The game that brings us to the campfire this month was an offhand encounter between Charousek and Wollner, played at Kassa in 1893. As we play it over, keep in mind that this is a player who only learned how the pieces move four years earlier.
+One of the wonderful things about games from the "romantic era" of chess is the fearless gambiteering spirit the contestants so frequently display. Charousek here offers the Danish Gambit, two full pawns for glorious diagonals and fierce attacking chances. 
+}
+1.e4 e5 2.d4 exd4 3.c3 dxc3 4.Bc4 Nf6 
+{
+By playing 4...Nf6, Wollner avoids some of the terrifying tactics of the Danish proper. At the time, this was considered a fully viable mode of defense. 
+Wollner, perhaps understandably, was reluctant to grab that final pawn. Today, theory claims that Black can wend his way to equality by giving back the material in a tactical counter-trick, as follows: 4...cxb2 5.Bxb2 d5 The first pawn is given back. 6.Bxd5 Nf6 7.Bxf7+ And now, the second. But hasn't Black gone too far -- isn't he dropping his Queen here? 
+7...Kxf7 8.Qxd8 Bb4+ The counter-trap: Black regains his material. 9.Qd2 Bxd2+ 10.Nxd2.
+"Theory" judges this position to be equal. That may be true, but it's worth pointing out that the position is also very sharp, with substantial pawn majorities for each side. Some correspondence players have recently resurrected this variation as a winning attempt for White. It demands accurate defensive play from Black, because White's pawns advancing on the Kingside "bite" faster, thanks to Black's exposed Knight and King.
+In this side line, there's one other move also worth considering. When Black plays ... Nf6, White need not liquidate but can instead play for central domination by accenting his development: 7.Nc3 Nxd5 8.Nxd5 One of the many interesting points in this line is that Black cannot force an exchange of Queens here, thanks to a very clever tactical shot: 8...c6 ... apparently forcing the Knight to move, but -- 9.Nf6+ White pulls Black's pieces forcibly into a fork! 9...gxf6 10.Qxd8+ Kxd8 11.Bxf6+ ... and when the dust clears, White is the exchange ahead. That is the tactical rationale behind White's interesting winning attempt with Nc3. I have much more analysis of this in my secret notebooks!
+}
+5.Nf3 
+{
+Charousek offers Black one more chance to take a pawn, any pawn! 
+}
+5...Bc5 
+{
+Wollner is admirably "modern" in his lack of greed, and insists on completing his development. 
+}
+6.Nxc3 
+{
+Charousek follows suit, and the next few moves for each side are rather natural. 
+}
+6...d6 7.0-0 0-0 
+{
+But now something curious happens -- Charousek's imagination goes into overdrive! 
+The most natural move here would be the simple and obvious Bg5, pinning the Knight and threatening Nd5 to disrupt the Kingside pawn formation. Black, however, could meet the pin with Nbd7, since he has not committed his N/b8 to c6 yet. Charousek therefore tries something which might, in the final analysis, be labeled a "coffeehouse" move. But if so, then coffeehouse chess is superb! 
+}
+8.Ng5!? 
+{
+Well, what can the point of all of this be? The Knight is just hanging out there. We know that Nxf7 is, on general principles, a poor move -- trading two active minor pieces for a R + P is a bad deal in the opening and middlegame. Impatiently, Wollner tries to brush the Knight aside like Goliath trying to brush that pesky shepherd lad out of the way... 
+}
+8...h6 
+{
+I hope some one later gave Wollner financial compensation for playing this move, because we are all in his debt! 
+}
+9.Nxf7!! 
+{
+Rules are made to be broken -- not often, but on just those occasions when genius rises to the occasion! Charousek has no intention of giving up his perfectly good Bishop for the Rook on f7. Instead, he has spied a fascinating feature of the position. We saw that by delaying the development of his Queen's Knight, Black has reserved the possibility of Nbd7 defending f6. But Charousek has seen -- and brilliantly exposes -- the dark side of Black's delayed development. The following combination is made possible because Black's Queen is undefended! 
+}
+9...Rxf7 
+{
+This pulls the Rook away from the eighth rank. Now the d-pawn is pinned against the undefended Queen. Hence: 
+}
+10.e5!! 
+{
+Only this move is a just followup to the Knight sacrifice. Black's N/f6 must move (or he has lost material for nothing), and White will push this pawn up to e6. 
+}
+10...Ng4 11.e6 
+{
+Now the point of the sacrifice is becoming clearer. Charousek is not simply attacking the Rook: he has also used the P/e6 to cut off the defense of Black's Knight on the light diagonal from c8 to g4. In a sense, this is a very sophisticated double attack. Wollner is no fool: he realizes his position is desperate. So he immediately plays for the counterattack. 
+}
+11...Qh4 
+{
+No points for subtlety, but full marks for bravery. 
+}
+12.exf7+ 
+{
+Charousek doesn't need to be asked twice. 
+}
+12...Kf8 
+{
+But now, how to meet the threats at h2 and f2?
+}
+13.Bf4 
+{
+The only move! Charousek displays not only great attacking elan but also defensive savvy here. Consider the alternative: 13.h3 Nxf2 Now it is Black who has the attack, with a sacrifice on h3 threatened (in addition to the obvious ..Nxd1).
+}
+13...Nxf2 14.Qe2 
+{
+By threatening mate at e8, Charousek ensures that his B/f4 cannot be taken. 
+}
+14...Ng4+ 15.Kh1 
+{
+Now ...Nf2+ would be met by Rxf2 and Qe8#. 
+}
+15...Bd7 
+{
+Wollner realizes that he is now on the defensive, and he tries hard to cover the weak e8 square. But Charousek is not to be denied! 
+}
+16.Rae1 
+{
+This intensifies the pressure: Charousek now threatens to sacrifice a Queen on e8! 
+}
+16...Nc6 
+{
+Wollner finally develops his Knight, lending his Rook's defensive aid to the beleaguered e8 square. 
+But Charousek has realized something tremendous about this position. His Rook, sitting at f1, is on the same file as the enemy King. "Yes," you say, "but what of it? I often get my Rook on the same file as the enemy King -- but my own pawn blocks the file, so what's the use?" Youth and genius do not lose heart for such trifles. Charousek now sacrifices, not one, but two Queens to achieve the ultimate opening of all remaining lines! 
+}
+17.Qe8+!! Rxe8 18.fxe8Q+!! Bxe8 19.Bxd6# 
+{
+One of the finest sacrificial conclusions on record. Not often does one get to sacrifice two Queens to force checkmate before move 20! Talk about efficient piece deployment!! It doesn't get better than this! 
+Years later, Kester Svendsen wrote a wonderful short story entitled "Last Round," about an old master who has tried for 50 years to create a work of art, the perfect game. In the crucial final round of a World Championship tournament, he trails the mighty Russian Rolavsky by half a point, and they are paired. Svendsen weaves his story around this as their game. 
+"I have always a slight feeling of pity for the man who has no knowledge of chess, just as I would pity the man who has remained ignorant of love. Chess, like love, like music, has the power to make men happy."-- Siegbert Tarrasch. 
+}
+1-0
+
+[Event ""]
+[Site "Belgrade"]
+[Date "1946.??.??"]
+[Round "?"]
+[White "Gligoric, S"]
+[Black "Bidev, P"]
+[Result "1-0"]
+[ECO "C60"]
+[Annotator "Tim McGrew"]
+
+{
+When I set about trying to find a game of Gligoric's for the campfire, I almost despaired. For over half a century Svetozar Gligoric has been turning out chess masterpieces -- how to select from such an abundance of material?
+Gligoric was one of the early contributors to the theory and practice of the King's Indian Defense; one could easily find a dozen beautiful wins by him in that opening. But for a campfire game, some of these are too strategically complex. Finally, reaching back to the early post-war era, I found a gem of a game that illustrates a surprisingly simple theme: the use of Time in the opening. 
+}
+1.e4 e5 2.Nf3 Nc6 3.Bb5 
+{
+Many players hammer out the first few moves of the Ruy Lopez (or "Spanish Game" as it's sometimes called) without stopping to think about the logic behind them.
+White, we are told by some opening books, is threatening to remove the defender of Black's e-pawn. But if that's really the threat, then why does Black so often adopt Morphy's idea of 3...a6, immediately daring the Bishop to capture on c6? And why does White so often decline to take?  
+}
+3...a6 4.Ba4  
+{
+The answer is that White is not actually threatening -- yet -- to take the N/c6 and grab the e-pawn. Even in the exchange variation 3...a6 4.Bxc6, White's aim is not to win the e-pawn but rather to establish a healthy Kingside pawn majority, at the cost of the two Bishops. 4...dxc6 The punishment for grabbing on e5 is a swift equalization of the position: 5.Nxe5 Qd4 6.Nf3 Qxe4+ 7.Qe2 Qxe2+ 8.Kxe2.  Notice the resulting pawn structure. White and Black each have four pawns on the Queenside. In this kind of pawn formation, White cannot force a passed pawn: Black's "crippled" Queenside holds White's "healthy" set of four easily. So Black has the Bishop pair essentially for free. Unfortunately, it's almost inevitable that everything will be exchanged down the e-file (both sides will rush to occupy this with Rooks) with an early draw the likely result. 
+So instead of playing 4.Bxc6 as a means of "winning" the e-pawn, White sometimes plays the exchange variation in order to trade his own d-pawn for Black's e-pawn. That is a different matter entirely: 5.0-0 Bd6 6.d4 exd4 7.Qxd4  This sort of position -- with or without the exchange of Queens -- affords White more winning chances. Now White's pawn majority is on the Kingside, and that makes a huge difference. Experience shows that Black's pair of Bishops is just about adequate compensation for White's pawn majority. But this line can definitely be played for something other than a stone-cold draw, as Fischer proved numerous times. 
+Nevertheless, the resulting positions often lack the dynamism of a full-board struggle. In our game, Gligoric chooses a time-honored move that remains the main line of the Ruy Lopez: 4.Ba4  It's instructive to keep track of time in the opening. White is moving the Bishop for the second time, but this isn't really a net loss in development since Black's move ...a6 hardly counts for much in the way of time. White remains, then, half a tempo ahead. 
+I can hear the faint sound of heads being scratched. "Half a tempo? How do you get half of a tempo? A move is a move, you can't have half of a move!"  Not to leave you wondering, here's my modest contribution toward the theory of time in the opening. In the initial position of chess, White is thought to have a slight advantage. But why? The position is, after all, symmetrical. White's only advantage is that it is his turn to move.   Now, it would violate logic if White, who has this theoretical advantage, were to stand worse after using it in the best possible way. Therefore, I propose to count having the turn to move as being worth half of a tempo. Consider: 
+After 1.e4, White has moved -- and gets a full tempo for that. But it is now Black's turn to play, and so Black gets back half a tempo. The net difference? One half of a tempo, just as it was before White moved. Skip forward now to the point where White has played 4.Ba4. 
+White has three useful moves on the board that affect, directly or indirectly, the center: P/e4, N/f3, B/a4 (threatening Black's Knight, though at the moment that threat doesn't carry much bite).  Black has only two: N/c6 and P/e5. However, it is Black's turn to move. So White has retained his half-tempo lead. (White gets 3 tempi, one for each "good" move. Black gets two for "good" moves and another half-tempo for its being his turn to move.) 
+}
+4...Nf6 5.0-0  
+{
+Experience shows that Black cannot simply win a pawn here on e4: he must rapidly give it back or face a fierce attack. The line is playable (it is known as the "Open Defense"), but in our game Bidev plays more conservatively.  White remains half a tempo ahead: He has four useful moves to Black's three, so he would appear to be a full tempo ahead, but it is Black's turn to play so that narrows the gap to half a tempo. 
+}
+5...Be7 6.Re1 b5 7.Bb3 
+{
+A third move by the Bishop, but again, obviously forced: White retains the advantage in Time conferred on him by the first move. Of course, there's also the interesting question of Black's pawns on a6 and b5 -- are they strong or weak?  Whoever can answer that question understands the mysteries of the Ruy Lopez. 
+Black cannot get away with an immediate chase of the Bishop -- his e-pawn is hanging, and he is not in a position to regain it. So he must either sacrifice it by ...0-0 (the Marshall Attack) or else defend it, as Bidev does here. 
+}
+7...d6 
+{
+This move constitutes a positional threat to the B/b3: Black now intends ...Na5, both aiming at the Bishop and freeing his c-pawn for duty in the center.  This gives me an opportunity to clear up another little mystery. Many players learn early on to identify Bishops as "bad" or "good," according to whether they do or do not bump into their own center pawns.  By that criterion, of course, White's B/b3 is "bad" -- it's on a light square, as is White's principal pawn in the center on e4.  But that isn't really the point. The important thing is that White's Bishop is active.  The designation "bad" is only useful insofar as it denotes a Bishop that is well and truly restricted by its pawns.
+Black's Bishop on e7 is, at this point, unequivocally bad. But neither of White's Bishops is inactive like the poor creature on e7.  That is why White now takes time to preserve his Bishop and increase his control over the center, particularly the d4 square. 
+}
+8.c3 0-0 9.h3  
+{
+This move, which can be found in tens of thousands of grandmaster games, is liable to be baffling. Isn't it almost always a bad waste of time to move one's Rook's pawn in the opening? And isn't it particularly weakening when done in front of one's King??   
+Yet the move has a sound strategic objective that is squarely focused in the center. White wants the option of creating a strong center with a subsequent d4. If Black is allowed to play ...Bg4, the pin on White's N/f3 will reduce White's control of d4 -- the more so since Black, by capturing on f3, not only eliminates one defender of d4 but also draws away the Queen, thereby at a single blow reducing White's control of d4 by two. 
+}
+9...Bb7 10.d3  
+{
+An interesting parting of the ways.  
+Gligoric could very well play d4 here -- his previous play has been designed to make it possible. But instead, he chooses a rather different (and superficially, slower) method of handling the position. By playing 10.d3, he cuts the potential of Black's B/b7, thereby rendering the tempo spent on its development a waste. 
+}
+10...Nd7  
+{
+Black, for his part, evolves a plan to bring his forces to the Queenside and open the center, believing that he has superiority in piece activity. 
+}
+11.Nbd2 Nc5 12.Bc2 d5  
+{
+Without this move, Black's maneuver to reposition his Knight on c5 looks a little odd. But on second thought, it looks odd with ...d5 as well. On f6, the Knight supported ...d5 directly. Black has chased White's Bishop to c2, but the Bishop will stand very well there when the e-pawn is exchanged off!  Indeed, in the coming tactics, Black will have cause to remember that Bishop on c2. 
+}
+13.exd5 Qxd5 14.Nf1 Rad8  
+{
+Superficially, Black's position looks fine. He controls four ranks of the board to White's three: his pieces seem tolerably active, and it's hard to believe that disaster is about to strike.   
+To get beyond superficial assessments, let's look at some less obvious factors. First, mentally draw lines from White's Bishops up the diagonals.  They're aimed in the right direction, and they will both be ready to let fly when White (as is unstoppable) plays d4. 
+Second, look at the square f5. Wouldn't that make a lovely location for a Knight? Black, by exposing his Queen on d5, has given White a free tempo for swinging a Knight up there.  It is hard to believe it, but at this point Black is probably already lost. The time he spent repositioning his Knight to c5 -- where it has virtually no bearing on Kingside defense and is in fact an embarrassment -- comes back to haunt him. 
+}
+15.Ne3 Qd7  
+{
+The drive begins. From now on, Gligoric's pieces come flooding out with a speed that is truly frightening. 
+}
+16.d4 exd4  
+{
+Black would love to bypass the exchange, but because of the attack on his N/c5, he cannot: 16...e4 17.Nd2 ... and Black must move the Knight, allowing the e-pawn to fall.  
+}
+17.cxd4 Qc8   
+{
+Bidev pins the d-pawn, hoping that Gligoric has simply overlooked the fresh attack by the Rook. He could not in any event have gotten away with taking it, because in the end the weakness of the f5 square (no, really!) is too great: 17...Nxd4 18.Nxd4 Qxd4 19.Qxd4 Rxd4 20.Nf5 White snags a full piece here. 
+}
+18.Bd2 
+{
+Unpinning! Once again, Black is unable to take the pawn because of a subsequent Nf5 forking d4 and e7. 
+}
+18...Na4 19.d5 Nb8 20.Nf5 Bf6 21.Ng5  
+{
+Witness the transformation!  
+In just a few moves, White's pieces have assumed truly menacing positions. Now Black's h-pawn is threatened, since a recapture would be met by Ne7, winning the Queen with the discovered check from -- yes, you guessed it, from the B/c2! 
+}
+21...g6  
+{
+This is not an unreasonable try: Black hopes to put his Bishop on g7 where it may give him some defensive strength. But now Gligoric shows his tactical completeness with a lovely exploitation of both light and dark squares around Bidev's King. 
+}
+22.Nxh7 
+{
+A lovely shot! The fundamental idea is to draw the King up to h7, thereby self-pinning the g-pawn.  
+}
+22...Kxh7  
+{
+But how, you ask, is the g-pawn pinned? The answer is that it is pinned by the B/c2. "No," you say, "it's not; the N/f5 is in the way." But Gligoric cannot be bothered with such trifles! 
+}
+23.Ne7!!   
+{
+This lovely follow-up, which had to be seen, clears the diagonal and simultaneously attacks the Black Queen. Notice that the Queen cannot come up to e6, f5, or g4 -- squares from which she might render some defensive aid to the beleaguered Kingside.  
+}
+23...Bxe7 24.Qh5+  
+{
+Finally, White exploits the pin on the g-pawn. Now Black may as well run to g8, since he can be forced there anyway. 24...Kg7 25.Qh6+ Kf6? 26.Bg5# ... would be a merciful way to commit suicide. Bidev, however, insists on being shown. 
+}
+24...Kg8 25.Bxg6  
+{
+The mate threat on h7 forces Black's reply.  
+}
+25...fxg6 26.Qxg6+ Kh8 27.Rxe7
+{
+... and Bidev resigned.  There is, in truth, nothing left to be said.   
+I've seen many masterpieces by Gligoric, but I've always had a weak spot in my heart for this sprightly demonstration of tactical mastery. All the while Bidev was maneuvering over to the Queenside, Gligoric was preparing -- surreptitiously, but very effectively --to take over the Kingside. I think we can forgive Bidev for not realizing it until it was too late.  Gligoric had to have what he needed in the right spot when he needed it, and he needed to know what to do with it when he got it!  He didn't fire a shot, didn't sac a piece, until everything was in readiness.  That Knight, repositioned with such labor, to c5, cost Black precious time and put the piece on a square that was palpably worse. Opening the center sealed his fate.
+}
+1-0
+
+[Event ""]
+[Site "Ostend"]
+[Date "1907.??.??"]
+[Round "?"]
+[White "Mieses, J"]
+[Black "Znosko-Borovsky, E"]
+[Result "1-0"]
+[ECO "C28"]
+[Annotator "Tim McGrew"]
+
+{
+Jacques Mieses was born on February 23, 1865 -- just a few years after Morphy's brilliant conquest of England and Europe. No doubt the games of Morphy exercised a strong influence on Mieses's style, for in his long career he won a staggering number of brilliancy prizes.
+Mieses was born in Leipzig and studied first at Leipzig University and later in Berlin. His international success did not come until 1888, when he tied for 2nd place at Nuremberg and took 3rd at Leipzig. Over the next 50 years he played in numerous tournaments, always with an eye to the sharpest openings and boldest sacrifices. He also had the practice of earning money by writing journalistic reports about the tournaments in which he was playing, which may have contributed to his erratic results. In 1907, He came in 1st at Vienna ahead of Duras, Maroczy, Tartakover, Vidmar, Schlechter and Spielmann -- yet later that year he had a dismal performance at Carlsbad.
+He fled Germany just before World War II and eventually became a naturalized British citizen. He had a sharp wit, even in old age. On the occasion of his eightieth birthday, some friends held a dinner in his honor in London; the speech he made there has been preserved and is characteristic of his sense of humor: "I have been told that a good many people never reach the biblical span of three score years and ten; and those who do -- so some most reliable statistics assure us -- are most likely to die between 70 and 80. Hence, I dare say, ladies and gentlemen, that I for one have now passed the danger zone and may well go on living forever."
+He never gave up his love of brilliant chess. The same year that he gave that speech, he took a brilliancy prize at Hastings.  Mieses was one of the players awarded the GM title by FIDE in 1950 when they began to give retrospective acknowledgment to the great players of the previous generation. Arpad Elo estimates his peak performance rating at 2490. He died on February 23, 1954, just four days short of his 89th birthday.
+For this month's campfire, we go back to 1907 when Mieses was at the height of his powers and conjuring furiously with that Morphyesque flair that remained his trademark throughout his long career. His opponent here is the strong Russian player and theoretician, Eugene Znosko-Borovsky.
+}
+1.e4 e5 2.Nc3 
+{
+Znosko-Borovsky is probably best remembered today for four books that served as texts for the pre-war generation of Soviet players: How to Play the Chess Openings, The Middle Game in Chess, How to Play Chess Endings, and the delightful and irreverent How Not to Play Chess. Mieses, too, was the author of several books including The Chess Pilot, Manual of the End Game, and Instructive Positions from Master Chess.
+Mieses had a hearty dislike of "long lines," theoretical openings analyzed so deeply that anyone with a good memory could find his way through them. He would frequently trot out the Danish Gambit (2.d4 exd4 3.c3!?) in international competition. Here, he heads for a variation of the Vienna Game that was not sufficiently well explored at that time. His opponent's unfamiliarity with this sideline soon nets Mieses a significant positional advantage. 
+}
+2...Nf6 3.Bc4 Nc6 
+{
+Znosko-Borovsky passes up the opportunity to test Mieses with 3...Nxe4. While it is generally considered harmless for White to take the Knight (4.Nxe4 d5! gets back the piece with a spatial advantage for White), Mieses might well have essayed 4.Nf3!? Nxc3 5.dxc3, the Boden-Kieseritzky Gambit, or the extremely complicated lines beginning with 4.Qh5!? Nd6 5.Bb3 Nc6 6.Nb5!?, which lead to almost unfathomable tactics. 
+}
+4.d3 
+{
+As an interesting aside, White often reaches this position via the Bishop's Opening without giving Black the opportunity to take on e4, thus: 1.e4 e5 2.Bc4 Nf6 3.d3 Nc6 4.Nc3, etc. 
+}
+4...Bb4 
+{
+Here 4...Bc5 would probably transpose into a King's Gambit Declined -- an opening, however, with which the veteran gambitteer Mieses could be expected to be familiar. Znosko-Borovsky's move is designed to start a fight in the center focused on the d5 square. By pinning White's N/c3, Black obtains presumptive control of d5 and is prepared to push his pawn there next move. After, for example, 5.Ne2 d5 6.exd5 Nxd5, Black has achieved the favorable "Jump Formation" in the center and can look forward to the middlegame with confidence thanks to his spatial advantage. 
+}
+5.Bg5
+{
+Mieses, not to be outdone, counters by reducing Black's own control over d5.
+}
+5...d6 
+{
+This is such a natural-looking move that it is difficult to condemn it. 
+Yet Alekhine, in his annotations to the game Alekhine-Gregory, St. Petersburg, 1909, suggests that Black's strongest course is an immediate 5...h6! with the idea 6.Bxf6 Bxc3+! (before White can play Ne2) 7.bxc3 Qxf6, with equal chances. On the other hand, if White were to meet 5...h6 with 6.Bh4, Black could continue 6...g5 7.Bg3 d5! and, having driven off White's Bishop, he would achieve his central goal and have no further worries. 
+}
+6.Nge2 
+{
+Now that Mieses has taken the time to defend the N/c3 with a fellow steed, the idea of ...h6 is less appealing. White can recapture on c3 with a Knight, and Black's Queen would be exposed after her recapture on f6 since White plans both Nd5 (hitting f6 and c7) and 0-0 with f4! coming. 
+}
+6...Be6 
+{
+The tension this move introduces is quite characteristic of Vienna and Giuoco Piano positions. Tarrasch was one of the first people to note that White should not, as a rule, capture on e6: although it doubles Black's pawns, the pawns control important central squares (like d5 -- there's that square again!) and the open f-file is an asset for Black. The two paths most commonly taken are Bb3, defending the B comfortably with the a-pawn, and Mieses's more daring plan here: 
+}
+7.0-0 
+{
+Mieses simply completes his development. If Black captures on c4, White will have a death-grip on the d5 square. This is highly uncomfortable for Black! So Znosko-Borovsky puts the question to White's B/g5 instead. Yet perhaps the best move of all for Black is simply 7...Bxc3. This is a difficult point to understand unless you really grasp the niceties of the pawn formation. Black's darksquare Bishop is outside his pawn chain, true: yet it hasn't much of a future where it stands. In the subsequent course of the game, it serves as more of a punching bag for White than an offensive piece. Trading it off might have been the better part of valor. 
+}
+7...h6 8.Bxf6 Qxf6 9.Nd5 Bxd5 
+{
+Already, the B/b4 looks like it is "floating" without a purpose. Mieses captures on d5 with his Bishop for a good reason. There is nothing to be gained immediately by kicking Black's N/c6 with a pawn; and long-term, the pawn on d5 might become a liability. Mieses is planning to push f4 soon, harassing Black's Queen and opening a critical file. Notice how weak the f7 square would be if there were no White f-pawn! 
+}
+10.Bxd5 Bc5 11.Bxc6+ 
+{
+This prepares for the eventual advance of White's d-pawn. The idea is to soften up the center with f4 first, and if the Black e-pawn can be deflected, then d4 will establish a dominant center for White. 
+}
+11...bxc6 12.Kh1  
+{
+As advertised: White is preparing f4. 
+}
+12...d5 13.f4 exf4 
+{
+Here Mieses makes a small mis-step, which his opponent declines to capitalize on. 
+}
+14.Rxf4 
+{
+This dares Black to snatch a pawn on b2. 
+Yet he might as well grab some booty for his troubles. Mieses could have avoided all of this with 14.d4! and 15.Rxf4, transposing into something like the game continuation without offering Black that opportunity.  
+}
+14...Qe7 
+{
+Black ducks the challenge. Now White's plan rolls forward unhindered. 
+}
+15.d4 
+{
+What should White play if Black puts the Bishop on d6 now?  15...Bd6 is not the game continuation, but it is worth looking at. The key to this position, as is so often the case in chess, is an undefended man -- here, the pawn on c6. Black's problem is that his Bishop can be forced to go to an undefended square as well, and White can then fork the B and the P. 16.e5 Bb4 17.c3 Ba5 18.Qa4 ... and Black must lose a piece since allowing the fork on c6 is out of the question.
+For this reason, Black must put his Bishop on b6. 
+}
+15...Bb6 
+{
+But now we can see clearly the sense in which this piece is more of a target than an asset. 
+}
+16.Ng3 
+{
+Mieses consistently prepares for an assault on the King. Now 16...0-0? is poor, since White has 17.Nf5! and 18.Qg4 with decisive threats on g7 and h6. 
+}
+16...0-0-0 
+{
+Znosko-Borovsky is well aware that the Kingside is an unwelcome home for him, so he spirits his King away to the other side. The castle on the west side of his domain is drafty, but he counts on the fact that he has a clerical defender there and White's pieces are not aimed properly for an assault on the Queenside. 
+}
+17.e5 
+{
+Now White threatens a positional crush with c3 and b4, burying Black's Bishop alive. Even with Black's King "safe" on the Queenside, Black cannot hold the game if he is effectively a piece down. This positional threat is very real and it would be sheer suicide to permit White to carry it out. This helps to explain Black's next move, which is otherwise an incomprehensible opening of lines against his own King. 
+}
+17...c5  18.c3 cxd4 19.cxd4 Kb8 
+{
+Black scurries off of the hot file and prepares ...c5, hoping to undermine White's center before Mieses has a chance to reorganize his forces. True, the king is on an open file, but Black has to act fast or White will lock down on c5 and Black will be, practically speaking, a piece down. 
+}
+20.a4! 
+{
+This threatens to win a piece, however. 
+}
+20...a5 
+{
+Now Mieses is truly inspired! 
+}
+21.b4! 
+{
+Black's erstwhile safe shelter is being torn to shreds. 
+Now 21...axb4 is met by 22.a5 Ba7 23.Qa4 and the invaders are already at the gates. 
+}
+21...Qxb4 22.Rb1 
+{
+Seizing the newly-opened file without delay. 
+}
+22...Qe7 
+{
+Now Mieses sets up a brilliant double-attack: 
+}
+23.Qf1!! 
+{
+Simply glorious -- a fine example of probing both wings at once. White threatens both Rxf7 and Qa6. 
+}
+23...Ka7 
+{
+Black judges that of the two threats, Qa6 is the more deadly. White could play 24.Rxf7 now, a good move, but Mieses is ever searching for the most brilliant continuation. His search is rewarded with... 
+}
+24.Rxb6!! 
+{
+This stunning move enables Mieses to draw Black's King out into the open. Notice that 24...cxb6?? loses to Rxf7. 
+}
+24...Kxb6 25.Qb5+ Ka7 26.Qxa5+ 
+{
+Having garnered a B+P for the Rook, Mieses already has back practically full compensation for the exchange. Of course, he also sacrificed a pawn to open the b-file. But the open file is worth far more to White than the pawn is to Black. 
+}
+26...Kb7 27.Rf1 
+{
+White switches sides effortlessly. This whole game exhibits a sort of grace in the attack for which Mieses was justly famous and well-beloved. 
+}
+27...Rb8 28.Nf5 
+{
+Naturally, White wants to conduct this attack with all of his pieces, not just with two. 
+}
+28...Qe6 
+{
+And now for the coup de grace: 
+}
+29.Nd6+!! cxd6 30.Rb1+ 
+{
+Black resigns because he is losing his R/b8, e.g. Kc8: Qa6+ Kc7 Qa7+ Kd8 Rxb8+ 
+A finely-calculated finish by Jacques Mieses, chevalier sans peur et sans reproche! (A Knight without fear and without reproach.) 
+}
+1-0
+
+[Event ""]
+[Site " Hastings "]
+[Date "1933.??.??"]
+[Round "?"]
+[White " Lilienthal, A. "]
+[Black " Capablanca, J. "]
+[Result "1-0"]
+[ECO "E24"]
+[Annotator "Tim McGrew"]
+
+{
+Andrea Lilienthal was born on May 5, 1911, and as of this writing he is still with us. Though he was born in the USSR, his family moved to Hungary when he was two and he represented Hungary in several Olympiads in the 1930's.
+The 30's was a difficult decade to be a talented chess player, because the rise of the Soviet School meant that the competition was unusually stiff. Lilienthal never quite reached the front rank of GM's, though he did tie for first in the powerful USSR Championship of 1940. Nevertheless, Lilienthal made his mark with some resounding victories against first-rate opposition. This month's campfire is devoted to his 26 move crush of Capablanca at Hastings, 1933/4.
+}
+1. d4 Nf6 2.c4 e6 3.Nc3 Bb4
+{
+Lilienthal opens in classical fashion, and Capablanca shows his flexibility by adopting the NimzoIndian Defense -- a fashionable new continuation at the time that shocked some of the classically-minded theoreticians.
+The NimzoIndian is a formidably complex opening with many fascinating byways, but the ideas at the outset are not too difficult to understand. White, by playing 3.Nc3, threatens to play 4.e4. Even the "hypermodernists" realized that giving White this much leeway in the center was a recipe for trouble, so Black must find a way to deter White from occupying that square. The standard method, before Nimzowitsch began to spread his heresy, was 3...d5, transposing into a Queen's Gambit Declined. This effectively stops 4.e4 by putting additional guards on that key square. The Nimzoindian, by contrast, stops e4 by depriving the pawn of support -- the pinned N/c3 is no longer rendering active service.
+White has a wide range of responses. 4.Qc2, one of the earliest moves to gain favor, has recently come back into vogue. During the 1970's, it was difficult to find any master who would play anything but 4.e3. Romanishin experimented with 4.g3 in the 1980's. But Lilienthal was fond of a blunt approach championed by Saemisch.
+}
+4. a3
+{
+Putting the question to the Bishop. Since Black frequently exchanges on c3 of his own free will, this can seem like a loss of time. But matters are not so simple. For the tempo spent forcing Black to make his choice, White gets a clarified central position in which he knows, to some extent, what Black's options are. The theoretical battle is still going on, though it's not quite so hot as it once was.
+Saemisch's 4.a3 remains a viable approach to the position for those who know it well. Lilienthal knows it very well indeed.
+}
+4...Bxc3+ 5. bxc3 b6 
+{
+The battle for e4 continues to rage: Capablanca prepares to meet 6.Qc2 with 6...Bb7, reasserting his control over the critical square.  
+}
+6. f3 
+{
+Lilienthal is determined to dominate the center at all costs. Now mere piece control will not avail Black: he must fight for control of e4 with a pawn. Capablanca does just that. 
+}
+6...d5 7. Bg5 
+{
+There's a pleasing symmetry to the struggles over e4. Black, on move 3, asserted control by pinning White's Knight. Now White returns the compliment on the other side of the board.
+}
+7...h6  8. Bh4 Ba6 
+{
+One of Black's positional goals in the Nimzoindian is to cripple White's c-pawns and then assault them, particularly the P/c4. Capablanca abandons the struggle over e4 here in order to take a simplifying line in which his Bishop will be exchanged for White's B/f1. The little flurry of tactics that now arises is easily foreseen by master players, but it's worth noting since it is a recurring theme in many d-pawn openings. 
+}
+9. e4 Bxc4 
+{
+This does not really win a pawn: the idea is to simplify rather than to grab material. 
+}
+10. Bxc4 dxc4  11. Qa4+ 
+{
+This check gets back the pawn.
+}
+11...Qd7 12. Qxc4 Qc6  
+{
+Here is Black's idea. White has a large center, but provided Black can maintain control over key breakthrough points, the center will not be too important -- the more so because Black has managed to exchange off half of the minor pieces. 
+}
+13. Qd3 Nbd7  
+{
+This position is what Capablanca was aiming for with 8...Ba6. Black's position is solid and presents no obvious weaknesses, his spatial deficit notwithstanding. It must have seemed a reasonable approach, offering a still-powerful ex-world-champion ample scope for outplaying his young opponent.
+}
+14. Ne2 
+{
+Lilienthal continues his development behind the powerful center, not rushing to attack until he is sure that his pieces will coordinate well.
+}
+14...Rd8 15. O-O a5  
+{
+This prevents the a-pawn from being a target on a7, where it might be vulnerable to a later Qa6, for example. Yet the move loses time: Capablanca may have underestimated the force of Lilienthal's coming central play.
+}
+16. Qc2 
+{
+Lilienthal patiently removes his Queen from the d-file, pre-empting any tricky ideas involving ...Nc5 or ...Ne5.  
+}
+16...Qc4 
+{
+This square seems a natural place for the Queen to nestle down. Yet it has two defects. First, Black's King remains uncastled in the center. Second, the Queen no longer exerts pressure on e4. As a consequence, Lilienthal can set an avalanche in motion.
+}
+17. f4 Rc8 
+{
+Capablanca continues to make long-range plans, underestimating the force of White's coming central pawn storm. The idea here is ...c5, threatening ...cxd4 since the R/c8 will pick up White's Queen after a sham sacrifice of Black's own Queen on d4.
+}
+18. f5 
+{
+Naturally, Black cannot allow this pawn to capture on e6 or the opening of the center, combined with Black's failure to castle, will spell ruin. 
+}
+18...e5 
+{
+But Capablanca apparently counted on this move as an adequate reply.  Black's idea is that the d-pawn is horizontally pinned against the weakness at e4.
+}
+19. dxe5 Qxe4  
+{
+If Lilienthal were obligated to exchange Queens at this point, Capablanca would stand very well indeed. The White P/e5, recklessly advanced, would be a serious weakness that White could hardly hope to hold. But at this point Lilienthal is truly inspired and comes up with a conception that must have shaken Capablanca's normally imperturbably self-confidence to its very foundations.
+}
+20. exf6!  
+{
+What is the point of this stunning Queen sacrifice? How can White get away with it?
+The answer lies, as it usually does for any really difficult combination, in multiple factors: the opening of the e-file, the presence of the B/h4, and the arrival of a pawn at g7 which will simultaneously strike at h8 and take away a flight square at f8.
+Black has little choice now but to accept the Queen sacrifice. Trying to take the B/h4 instead fails, because of the most common of all tactical motifs, an undefended piece -- in this case, the R/c8. Thus: if 20...Qxh4 21.fxg7 Rg8 22.f6! and now 22...Nxf6 fails to 23.Qf5! forking f6 and c8 while pinning the hapless N/f6 against the f7 pawn.
+}
+20...Qxc2 21. fxg7 Rg8 
+{
+Now the shape of Lilienthal's magnificent conception becomes visible: Black's King is trapped on the e-file. All that is necessary is a tempo-gaining move to get the N off of the file.
+}
+22. Nd4 
+{
+And there it is! Now a R check will be deadly. 
+Capablanca struggles on as best he can, but without much hope since he will finish this sequence by losing a N on e4. 22.Rfe1 also works but not as well, since Qxf5 simplifies somewhat.
+}
+22...Qe4 23. Rae1 Nc5 
+{
+Trying to get as much for his Queen as he can.  
+}
+24. Rxe4+ Nxe4 
+{
+Now the Knight is on the critical file. A charming feature of this entire game is that the e4 square turns out to be critical all the way through the final combination.
+}
+25. Re1 
+{
+Pinning the Knight. There's nothing to do now, and Capablanca does not prolong the agony. 
+}
+25...Rxg7 26. Rxe4+ Kd7
+{
+... and Capablanca resigned without waiting for Lilienthal's move.
+The finish might have been:  27. f6 Rg6 28. Re7+ Kd6 29. Nf5+ Kd5 30. Re1! and Capablanca's major pieces are lined up for an unavoidable fork with Ne7.
+As a career highlight, a crushing defeat of Capablanca with a brilliant Queen sacrifice would do any player proud. Lilienthal continued to play the Saemisch variation against the Nimzoindian and produced many wonderful games, but this one is difficult to top. I suspect he may still, nearly 70 years later, consider it to be the game of a lifetime.
+}
+1-0
+
+

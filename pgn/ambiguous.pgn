@@ -1,0 +1,161 @@
+[Event "?"]
+[White "Spassky"]
+[Black "Petrosian"]
+[Date "1969.??.??"]
+[Result "1-0"]
+
+{Queen's Gambit Declined (by transposition), 30 moves. Spassky plays an excellent opening and emerges with an advantage. Petrosian, under pressure, allows Spassky to obtain a passed d pawn which decides the game. Petrosian was world champion from 1963-1969; Spassky from 1969-1972.}
+1. c4 {The English opening. White takes possession of d5.}
+ 1... Nf6 {Developing and attacking the center.}
+ 2. Nc3 {A natural move.}
+ 2... e6 {Preparing to play 3... d5. Also playable is 2... e5.}
+ 3. Nf3
+ 3... d5
+ 4. d4 {This position can also arise from the Queen's gambit as follows: 1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3.}
+ 4... c5 {This variation is called the Semi-Tarrasch Defense.}
+ 5. cxd5 {If 5... exd5 then Black will end up with an isolated queen pawn.}
+ 5... Nxd5 {The usual next move for White when this game was played was 6. e3}
+ 6. e4 $1 {Spassky will demonstrate the strength of the pawn center.}
+ 6... Nxc3
+ 7. bxc3
+ 7... cxd4
+ 8. cxd4 {White now occupies the center. The question is whether he will be able to use it to advantage or spend all his energy protecting it.}
+ 8... Bb4+ {The side with less space should strive to exchange pieces.}
+ 9. Bd2
+ 9... Bxd2+
+ 10. Qxd2
+ 10... 0-0
+ 11. Bc4 {A natural developing move.}
+ 11... Nc6 {Developing and beginning to put pressure on White's center.}
+ 12. 0-0
+ 12... b6 {The bishop is better placed on b7 then d7.}
+ 13. Rd1
+ 13... Bb7
+ 14. Rfe1 {Developing the last piece.}
+ 14... Rc8 {Placing the rook on the open file.}
+ 15. d5 $1 {If here 15... Na5 then Spassky planned 15. Bd3 exd5 16. e5 with a strong attack. White's bishop, knight, and queen all are ready for a kingside attack while Black's pieces are on the other wing.}
+ 15... exd5
+ 16. Bxd5 {White's pieces are now very active and it is difficult for Black to find a good defense.}
+ 16... Na5? {The knight ends up being out of the game. Either 16... Qe7 or 16... Qc7 is better.}
+ 17. Qf4 $1 {The queen is well placed here, exerting pressure on f7. The threat is Bxf7+ winning the queen.}
+ 17... Qc7
+ 18. Qf5 {threatening Ng5. If now 18... h6 then 19. Bxb7 Qxb7 20. Rd7 Rc7 21. Red1 and White's rook on the seventh rank gives him a distinct advantage.}
+ 18... Bxd5 {This gives White a very strong passed d pawn.}
+ 19. exd5
+ 19... Qc2 {White would have a good game after 20. Qxc2 Rxc2 21. Re7 Rxa2 22. Rxa7}
+ 20. Qf4 {White wants to force a win in the middle game rather than play out a long end game.}
+ 20... Qxa2
+ 21. d6 {Nimzovich often spoke of a past pawn's lust to expand.}
+ 21... Rcd8 {Covering the pawn's queening square.}
+ 22. d7
+ 22... Qc4
+ 23. Qf5 {White threatens 24. Ng5 as well as 24. Rc1 followd by 25. Rc7}
+ 23... h6
+ 24. Rdc1 {Now the rook will get to the seventh rank.}
+ 24... Qa6
+ 25. Rc7
+ 25... b5 {Giving the queen a better chance to defend.}
+ 26. Nd4
+ 26... Qb6
+ 27. Rc8 $1 {Black cannot play 27... Qxd4 because of 28. Rxd8 Rxd8 29. Re8+ Rxe8 30. dxe8=Q#. White threatens 28. Re8 Qxd4 29. Rxf8+ Rxf8 29. Rxf8 Kxf8 30. Qc5+ Qxc5 31. d8=Q#.}
+ 27... Nb7 {Guarding the rook on d8.}
+ 28. Nc6 $1
+ 28... Nd6
+ 29. Nxd8 $1 {A decisive finish.}
+ 29... Nxf5
+ 30. Nc6 {Black resigned since White is threatening both 31. Rxf8+ Kxf8 32. Re8# and 31. Rxf8+ Kxf8 32. d8=Q+ Qxd8 33. Nxd8}
+1-0
+
+
+[Event "1st/2nd Prize Corus"]
+[Site "?"]
+[Date "2008.??.??"]
+[Round "?"]
+[White "Bazlov, Y. (wh)"]
+[Black "[+4146.21c6f6 (bl)"]
+[Result "1-0"]
+[SetUp "1"]
+[FEN "2n1n3/3Qp1RP/2Kb1k1P/8/3q4/6B1/8/8 w - - 0 1"]
+
+1. Bh4+ Qxh4 2. Rf7+ Kxf7 3. Qf5+ Qf6 4. Qxf6+ exf6 5. h8=Q Bf8 6. h7 Ne7+
+7. Kd7 Ng7 8. Qg8+ Nxg8 9. h8=N# 1-0
+
+[Event "IPCCC Paderborn"]
+[Date "2006.12.27"]
+[White "Ikarus V0.40a"]
+[Black "Jonny 2.90"]
+[Round "2"]
+[Result "0-1"]
+
+1.d4 Nf6{(g8f6 tb=0/0)}  2.c4{00:08.078}  e6{(e7e6 tb=0/0)}  3.Nf3{00:06.156}
+ b6{(b7b6 tb=0/0)}  4.g3{00:06.485}  Ba6{(c8a6 tb=0/0)}  5.Nbd2{00:06.094}
+ d5{(d7d5 tb=0/0)}  6.Bg2{00:06.188}  Be7{(f8e7 tb=0/0)}  7.O-O{00:07.656}
+ O-O{(e8g8 tb=0/0)}  8.b3{00:05.985}  c5{(c7c5 c1b2 b8c6 d4c5 e7c5 e2e3
+tb=0/0) 0.27/15 01:45.094}  9.dxc5{00:08.984}  Bxc5{(e7c5 c1b2 b8c6 e2e3
+a8c8 d1c2 c8c7 f1d1 c6b4 c2b1 tb=0/0) 0.25/15 00:53.594}  10.Bb2{00:08.172}
+ Nc6{(b8c6 d1c2 a8c8 e2e3 f6g4 tb=0/0) 0.13/15 03:04.281}  11.Rc1{04:36.468}
+ Rc8{(a8c8 a2a3 c5e7 c4d5 f6d5 d2e4 d8d7 d1d2 f7f6 f1d1 c6a5 f3d4 e6e5
+d4f5 d7f5 d2d5 g8h8 tb=0/0) 0.17/15 02:58.671}  12.a3{11:18.844}  Be7 13.cxd5{02:56.969}
+Nxd5{(f6d5 d2c4 d5f6 f3g5 d8d1 f1d1 f8d8 d1d8 c6d8 e2e3 f6e8 g5e4 b6b5
+c4e5 c8c1 b2c1 f7f6 e5d3 a6b7 c1b2 e6e5 tb=0/0) 0.13/17 02:24.437}  14.b4{04:16.141}
+Bf6{(e7f6 b2f6 d8f6 d1a4 a6b7 d2e4 f6e7 e2e3 f7f5 e4d2 e6e5 f1d1 e5e4 a4b3
+c6b4 c1c8 f8c8 f3d4 c8c3 d4f5 e7f8 tb=0/0) 0.16/15 02:47.359}  15.Bxf6{01:02.516}
+Qxf6{(d8f6 d1a4 a6b7 d2e4 f6e7 e2e3 tb=0/0) 0.10/16 00:27.781}  16.Qa4{03:26.047}
+Bb7{(a6b7 d2e4 f6e7 f1d1 f8d8 e2e3 a7a5 b4b5 c6a7 a4b3 c8c1 d1c1 d5f4 e3f4
+b7e4 tb=0/0) 0.06/17 00:29.610}  17.Ne4{03:48.172}  Qe7{(f6e7 f1d1 f8d8
+e2e3 f7f5 e4d2 e7f6 d2c4 d5c3 d1d8 c8d8 a4c2 c3e4 b4b5 c6e7 c1d1 e7g6 d1d8
+f6d8 tb=0/0) 0.11/17 00:07.109}  18.Qb3{02:30.703}  Nf6{(d5f6 e4f6 e7f6
+f1d1 f8d8 b3a4 tb=0/0) 0.09/16 03:30.641}  19.Nxf6{01:29.938}  Qxf6{(e7f6
+f1d1 f8d8 b3a4 a7a6 d1d8 f6d8 a4d1 d8d1 c1d1 c6b8 f3e1 b7g2 g1g2 g8f8 e2e4
+f8e7 f2f4 f7f6 g2f3 tb=0/0) 0.00/17 00:19.312}  20.Rfd1{02:03.813}  Rfd8
+21.b5{02:10.078}  Na5{(c6a5 c1c8 d8c8 b3d3 f6e7 h2h4 f7f6 g2h3 f6f5 f3e5
+e7c5 e5f3 c5c7 f3g5 c7e7 g5e6 e7e6 h3f5 e6e8 f5c8 e8c8 tb=0/0) 0.07/18
+02:45.047}  22.Rxc8{03:30.359}  Rxc8 23.Qd3{01:23.157}  Qe7{(f6e7 f3e5
+b7g2 g1g2 f7f6 e5f3 a5c4 d1c1 e7c5 g2g1 c5d5 f3d4 c4d6 c1c8 d6c8 e2e4 d5a2
+f2f4 g8f7 d4c6 tb=0/0) 0.03/18 01:03.781}  24.h4{05:22.891}  f6{(f7f6 g2h3
+b7d5 e2e4 d5c4 d3d7 c8c7 d7e7 c7e7 f3d4 g8f7 d1c1 e7e8 g1g2 e6e5 d4c6 c4b5
+c6a7 b5c4 a7c6 c4b3 c6a5 b6a5 tb=0/0) 0.16/17 01:03.906}  25.Bh3{01:47.359}
+ Bd5 26.e4{02:17.562}  Bc4 27.Qd7{01:31.610}  Rc7{(c8c7 d7e7 c7e7 f3d4
+e7d7 h3g4 g8f7 g1g2 d7c7 d1c1 c7c5 c1d1 f7e7 tb=0/0) 0.40/19 01:26.312}
+ 28.Qxe7{01:26.797}  Rxe7{(c7e7 f3d4 e7d7 h3g4 g8f7 f2f4 a5b7 e4e5 b7c5
+d4c6 d7c7 c6d8 f7g6 d1d6 c4b5 h4h5 g6h6 e5f6 tb=0/0) 0.47/20 00:40.344}
+ 29.Nd4{03:57.594}  Rd7 30.Bg4{04:58.703}  Kf7{00:00.016}  31.a4{01:50.937}
+ Rd6{(d7d6 f2f4 e6e5 f4e5 f6e5 d4f5 d6d1 g4d1 c4e6 g3g4 g7g6 f5e3 a5b3
+g1f2 b3d2 d1c2 f7e7 f2e2 d2b3 c2d1 e7d6 h4h5 tb=0/0) 0.75/19 00:58.469}
+ 32.f4{00:33.891}  e5{(e6e5 f4e5 f6e5 d4f5 d6d1 g4d1 c4e6 g3g4 g7g6 f5e3
+a5b3 g1f2 b3c5 f2f3 f7e7 h4h5 e7d6 h5g6 h7g6 e3f1 d6c7 tb=0/0) 0.75/20
+00:43.890}  33.fxe5{02:11.844}  fxe5 34.Nf5{05:07.594}  Rxd1 35.Bxd1{00:07.031}
+ g6{(g7g6 f5e3 c4d3 d1c2 d3c2 e3c2 f7e6 c2e3 e6d6 g1f2 d6c5 e3g4 a5c4 g4f6
+c5d4 f6h7 d4e4 h7f8 e4f5 f8d7 e5e4 d7b8 f5g4 tb=2/180) 1.05/24 04:12.500}
+ 36.Nd6{00:51.312}  Ke7{(f7e7 d6c8 e7d7 c8a7 c4d3 g1f2 d3e4 f2e3 e4f5 tb=0/46)
+1.04/22 01:06.078}  37.Nxc4{06:39.813}  Nxc4{(a5c4 d1b3 c4d2 b3g8 d2e4
+g8h7 e7f6 h4h5 e4g3 h5g6 g3e2 g1f2 e2f4 g6g7 f6g7 h7c2 g7f6 f2e3 f4e6 e3e4
+e6d4 c2d3 f6e6 tb=83/1699) 1.31/24 00:55.156}  38.Bb3{00:44.406}  Nd2{(c4d2
+b3g8 d2e4 g8h7 e7f6 h4h5 e4g3 h5g6 g3e2 g1f2 e2f4 g6g7 f6g7 h7c2 f4e6 f2e3
+e6c5 e3d2 g7f6 d2c3 e5e4 c3d4 f6f5 tb=297/5465) 1.42/24 00:37.343}  39.Bg8{01:43.922}
+Nxe4 40.Bxh7{01:40.906}  Kf6{(e7f6 h4h5 e4g3 h5g6 g3h5 g1f2 h5f4 f2e3 f4g6
+h7g8 g6f4 tb=6847/118788) 1.50/26 01:44.750}  41.h5{01:19.797}  Nxg3{(e4g3
+h7g6 f6g5 g6f7 g3h5 g1f2 h5f6 f2e3 g5f5 f7b3 e5e4 e3d4 f5f4 b3d1 e4e3 d4d3
+tb=31062/1523303) 1.83/27 02:40.875}  42.Bxg6{02:30.735}  Kg5{(f6g5 g6f7
+g3h5 g1f2 h5f6 f2e3 g5f5 f7c4 e5e4 c4b3 f6g4 e3e2 f5f4 b3c2 e4e3 e2f1 tb=31443/572368)
+2.05/27 00:05.312}  43.Kf2{00:22.750}  Nxh5{(g3h5 g6e4 g5f4 tb=17572/395628)
+2.30/26 01:58.766}  44.Bf7{00:43.047}  Nf6{(h5f6 f2f3 g5f5 f7a2 tb=4635/75796)
+2.42/24 00:47.078}  45.Ke3{01:05.422}  Kf5{(g5f5 f7c4 e5e4 c4a2 f5e5 tb=5514/84196)
+2.71/24 00:56.922}  46.Bc4{02:05.907}  e4{(e5e4 c4b3 f5e5 tb=29093/437627)
+2.93/25 02:15.218}  47.Ke2{01:13.954}  Ke5{(f5e5 c4a2 e5d4 a2b3 tb=14097/268343)
+3.37/23 00:57.609}  48.Kd2{00:47.703}  Nd5{(f6d5 c4b3 e5d4 b3c2 d5e3 c2b3
+e3c4 d2e2 c4b2 b3c2 e4e3 c2b3 b2d3 b3c2 d3f4 e2d1 tb=14100/212997) 3.41/23
+01:25.500}  49.Bb3{00:32.875}  Kd4{(e5d4 b3c2 d5e3 c2b3 e3c4 d2e2 c4b2
+b3c2 tb=30403/361794) 3.41/24 01:15.188}  50.Bd1{00:47.812}  e3{(e4e3 d2e1
+d4d3 d1g4 d3e4 tb=21892/263876) 3.63/24 01:34.687}  51.Ke1{02:43.969} 
+Nf4{(d5f4 d1g4 d4c3 tb=85865/1117783) 3.88/24 02:13.937}  52.Bc2{01:47.922}
+ Kc3{(d4c3 c2e4 c3b3 e4b7 b3c2 b7c8 c2d3 c8f5 d3c4 f5d7 c4b4 tb=67090/749863)
+3.97/25 05:16.907}  53.Be4{00:20.468}  Kb3{(c3b3 e4b7 b3a4 tb=32182/425409)
+4.97/24 06:00.625}  54.Bc6{01:04.359}  Kxa4{(b3a4 c6e8 a4b4 e8d7 b4c3 d7g4
+e3e2 g4f5 tb=3639/67429) 5.70/20 00:40.344}  55.Bd7{00:08.922}  Kb4{(a4b4
+e1d1 b4c3 d7f5 e3e2 d1e1 c3c4 e1d2 c4b5 f5d7 b5b4 d7e8 tb=7192/158536)
+5.59/19 02:43.656}  56.Kd1{04:32.282}  Kc3{00:41.578}  57.Bf5{01:11.859}
+ e2{(e3e2 d1e1 c3c4 f5h7 c4b5 e1d2 a7a5 h7g8 a5a4 d2e1 b5b4 tb=13624/221488)
+7.15/19 02:12.312}  58.Ke1{00:19.594}  Kc4{(c3c4 f5h7 c4b5 tb=20578/289546)
+7.40/19 01:54.078}  59.Kd2{02:27.266}  Kxb5{(c4b5 f5d7 b5c5 tb=5528/84512)
+10.66/19 04:32.297} 0-1

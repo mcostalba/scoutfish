@@ -1,0 +1,1334 @@
+[Event "URS-qualJ"]
+[Site "Sochi"]
+[Date "1990.??.??"]
+[Round "?"]
+[White "Kramnik, Vladimir"]
+[Black "Tiviakov, Sergei"]
+[Result "1-0"]
+[ECO "E32"]
+[WhiteElo "2450"]
+[BlackElo "2500"]
+[PlyCount "79"]
+[EventDate "1990.??.??"]
+[Source "ChessBase"]
+[SourceDate "1996.11.15"]
+
+1. d4 {E32: Nimzo-Indian: Classical (4 Qc2): 4...0-0} 1... Nf6 2. c4 e6 3. Nc3
+Bb4 4. Qc2 O-O 5. a3 Bxc3+ 6. Qxc3 b6 7. Bg5 Bb7 8. Nh3 d6 9. f3 Nbd7 10. e4 e5
+11. d5 a5 12. b3 h6 13. Be3 c5 14. Nf2 Nh5 15. g3 {Controls f4} 15... Bc8 16.
+Be2 Ra7 17. Qd2 Qf6 18. a4 Re8 19. O-O-O Nf8 20. Kb1 Ng6 21. Rhf1 Qe7 22. Bd3
+Qf6 23. Rde1 Nf8 24. f4 exf4 25. gxf4 Ng6 (25... Qh4 $5 $11 {is interesting})
+26. f5 $16 26... Ne5 27. Be2 Qh4 28. Bxh6 $1 {Demolition of pawn structure}
+28... Ng3 (28... gxh6 29. Qxh6) 29. hxg3 Qxh6 30. Qf4 g5 (30... Nd7 31. Rh1
+Qxf4 32. gxf4 $16) 31. fxg6 (31. Qd2 31... Qg7 $18) 31... Qxg6 (31... Qxf4 32.
+gxf4 Nxg6 33. f5 $16) 32. Rh1 $18 32... Kg7 (32... Qg7 33. g4 $18) 33. Rh5 f6
+34. Reh1 Nf7 35. R5h4 35... Re5 $2 (35... Qg5 $18) 36. Nd3 (36. Bh5 {
+and White can already relax} 36... Rxh5 37. Rxh5 37... Re7 $18) 36... Rg5 37.
+Bh5 Rxh5 38. Rxh5 Re7 39. Rh7+ Kf8 (39... Kg8 {is not much help} 40. Nf2 $18)
+40. Qh4 (40. Qh4 Rxe4 41. g4 $14) (40. Rh8+ {and White has reached his goal}
+40... Nxh8 41. Rxh8+ Kf7 42. Rxc8 Qxe4 43. Qxe4 Rxe4 44. Rb8 $18) 1-0
+
+[Event "URS-chJ"]
+[Site "Kherson"]
+[Date "1991.??.??"]
+[Round "?"]
+[White "Ibragimov, Ildar"]
+[Black "Kramnik, Vladimir"]
+[Result "0-1"]
+[ECO "A88"]
+[WhiteElo "2455"]
+[BlackElo "2480"]
+[PlyCount "110"]
+[EventDate "1991.??.??"]
+[Source "ChessBase"]
+
+1. d4 {A88: Dutch Defence: Leningrad System: 5 Nf3 0-0 6 0-0 d6 7 Nc3 c6} 1...
+d6 2. c4 f5 3. Nf3 Nf6 4. g3 g6 5. Bg2 Bg7 6. O-O O-O 7. Nc3 Qe8 8. b3 Na6 9.
+Ba3 c6 10. Qd3 Rb8 11. e4 fxe4 12. Nxe4 Bf5 13. Nxf6+ Bxf6 14. Qd2 Nc7 15. Rae1
+Qd7 16. h4 b5 17. Re3 bxc4 18. bxc4 Bh3 19. Rfe1 19... Bxg2 {last book move}
+20. Kxg2 Qf5 21. Re4 Rbe8 22. Rf4 Qc8 23. Qa5 d5 24. cxd5 Nxd5 25. Rfe4 {
+e7 seems the pivot of the position} 25... Qf5 26. Qd2 (26. Qxa7 $4 {
+taking the pawn is naive} 26... Qxf3+ {Annihilates a defender: f3} 27. Kxf3
+Bxd4+ 28. Kg4 Bxa7 29. Bxe7 29... Rxf2 $19 (29... Rxe7 30. Rxe7 Bxf2 31. a4 $19
+) (29... Nxe7 $6 30. Rxe7 Rxe7 31. Rxe7 Bxf2 32. a4 $19)) 26... Bg7 27. Nh2 Rf7
+28. Bc5 {The white bishop on an outpost} 28... Qd7 29. a4 Nf6 30. Re5 Nd5 31.
+R5e4 (31. R5e2 31... Rb8 $14) 31... Nf6 $11 32. Re5 Kh8 (32... Nd5 33. R5e2 $14
+) 33. Kg1 33... Nd5 {A valuable piece} 34. R5e2 a6 35. Qd3 Qh3 (35... Ra8 $14)
+36. Nf3 (36. Qxa6 36... Ref8 37. Qa5 $14 (37. Qxc6 Rxf2 38. Rxf2 Qxg3+ 39. Kh1
+Rxf2 (39... Qxf2 $6 40. Rf1 Qa2 41. Rxf8+ Bxf8 42. Kg1 $11) 40. Qa8+ Bf8 41.
+Qxf8+ Rxf8 42. Re2 Rf2 43. Rxf2 Qxf2 44. Ng4 Qf1+ 45. Kh2 Nf4 46. Ne3 Qf2+ 47.
+Kh1 Qxh4+ 48. Kg1 Qg3+ 49. Kf1 Qxe3 50. Bb6 Qe2+ 51. Kg1 Qg2#) (37. Bxe7 $4 {
+White will choke on that pawn} 37... Rxf2 (37... Nxe7 $6 38. Rd1 $19) 38. Rxf2
+Qxg3+ 39. Kh1 Rxf2 (39... Qxf2 40. Re2 Qxd4 41. Bxf8 Qd1+ 42. Kg2 Nf4+ 43. Kf3
+$11) 40. Qc8+ Bf8 41. Bf6+ Nxf6 42. Qxf8+ Ng8 43. Qxf2 43... Qxf2 $19)) 36...
+Nf4 $15 {Do you see the mate threat?} 37. gxf4 37... Rxf4 {
+The mate threat is Rg4} 38. Ne5 (38. Re4 $5 {is worthy of consideration} 38...
+Qg4+ 39. Kf1 Rxf3 40. Rxg4 Rxd3 41. Re6 $15) 38... Rg4+ $1 $17 {
+keeping the advantage} 39. Nxg4 {Theme: Deflection from d3} 39... Qxd3 40. Re4
+Qf3 41. Nh2 Qf5 42. Bxe7 (42. Kg2 Rf8 43. f3 43... Bf6 $19) 42... Kg8 43. f3 (
+43. R1e3 43... Qd5 $19) 43... Qh3 $19 44. R1e2 (44. Kh1 $19) 44... Qg3+ 45. Rg2
+45... Bxd4+ $1 {a devastating blow} 46. Kh1 (46. Rxd4 {A deflection} 46... Qe1+
+{Theme: Double Attack}) 46... Qh3 47. Rgg4 (47. a5 47... Bc3 $19) 47... c5 48.
+h5 (48. Re1 {does not improve anything} 48... Bf6 49. Rge4 Bxe7 50. Rxe7 Rxe7
+51. Rxe7 51... Qxh4 $19) 48... Rb8 49. Re1 Be5 50. Rh4 Qf5 51. hxg6 hxg6 52.
+Re2 (52. Bxc5 {doesn't change the outcome of the game} 52... Bg3 53. Rb4 53...
+Rc8 $19 (53... Bxe1 $6 {is clearly worse} 54. Rxb8+ Kh7 55. Rb7+ Kh8 56. Rb8+
+Kg7 57. Rb7+ Kf6 58. Ng4+ Kg5 59. Be3+ Kh4 60. Kg2 Qc2+ 61. Nf2 $15) (53...
+Qxc5 $6 {is much worse} 54. Rxb8+ Bxb8 55. Re8+ Kf7 56. Rxb8 $19)) 52... Rb1+ (
+52... Qb1+ $5 {keeps an even firmer grip} 53. Kg2 Rb2 54. Rxb2 Qxb2+ 55. Kg1
+$19) 53. Kg2 Bd4 54. Ng4 (54. Rxd4 {no good, but what else?} 54... cxd4 55. Ng4
+$19) 54... Rg1+ 55. Kh2 (55. Kh3 {doesn't do any good} 55... Qxf3+ 56. Kh2 Rh1#
+) 55... Qf4+ (55... Qf4+ 56. Kh3 Qg3#) 0-1
+
+[Event "URS-ch58"]
+[Site "Moscow"]
+[Date "1991.??.??"]
+[Round "4"]
+[White "Neverov, Valeriy"]
+[Black "Kramnik, Vladimir"]
+[Result "0-1"]
+[ECO "D31"]
+[WhiteElo "2540"]
+[BlackElo "2490"]
+[PlyCount "80"]
+[EventDate "1991.11.??"]
+[Source "ChessBase"]
+
+1. d4 {D31: Queen's Gambit Declined: Semi-Slav without ...Nf6 (+ Marshall
+Gambit and Noteboom) and Exchange Variation lines without ...Nf6} 1... d5 2. c4
+c6 3. Nf3 e6 4. Nc3 dxc4 5. a4 Bb4 6. e3 b5 7. Bd2 a5 8. axb5 Bxc3 9. Bxc3 cxb5
+10. b3 Bb7 11. bxc4 b4 12. Bb2 Nf6 13. Bd3 Nbd7 14. Qc2 {White plans c5} 14...
+O-O 15. O-O Qc7 16. e4 e5 17. Rfe1 Rfe8 18. c5 exd4 19. Bxd4 19... h6 {
+e4 becomes the focus of attention} 20. h3 {White intends e5} 20... Bc6 21. e5 {
+last book move} 21... Nd5 22. e6 (22. Bc4 22... Nf8 $15) 22... Rxe6 23. Rxe6
+fxe6 24. Bh7+ Kh8 25. Bxg7+ (25. Be4 e5 26. Qc4 exd4 27. Bxd5 Bxd5 28. Qxd5
+28... Rd8 $17) 25... Kxg7 26. Qg6+ Kh8 27. Qxh6 {Do you see the mate threat?}
+27... Nf8 28. Bf5+ Nh7 29. Bxh7 Qxh7 30. Qxe6 Ne7 31. Ne5 31... Qg7 {
+Threatening mate: Qxg2} 32. g4 (32. g3 Be8 33. Re1 $17) 32... Bd5 $4 {
+Black is ruining his position} (32... Be8 $19 {Black had this great chance})
+33. Qxe7 $1 $16 {Eliminates the defender e7} 33... Qxe7 {A deflection} 34. Ng6+
+{A double attack} 34... Kh7 {The mate threat is Qe4} 35. Nxe7 Be4 36. Re1 (36.
+f3 $5 {is worth consideration} 36... Bxf3 37. Kf2 $14) 36... a4 $11 37. c6 $4 {
+White has let it slip away} (37. Rxe4 a3 38. Re1 38... a2 $19) 37... a3 $4 {
+makes life more difficult} (37... b3 $5 {makes it even easier for Black} 38.
+Rxe4 a3 39. Kh2 $19) 38. c7 $2 (38. f3 $15 {the rescuing straw}) 38... b3 39.
+c8=Q (39. Rxe4 {hoping against hope} 39... b2 40. Ra4 b1=Q+ 41. Kh2 $19) 39...
+Rxc8 40. Nxc8 b2 (40... b2 41. Nd6 b1=Q 42. Rxb1 42... Bxb1 $19) 0-1
+
+[Event "Guarapuava"]
+[Site "?"]
+[Date "1991.??.??"]
+[Round "?"]
+[White "Polgar, S."]
+[Black "Kramnik, V."]
+[Result "0-1"]
+[ECO "B33"]
+[WhiteElo "2430"]
+[BlackElo "2490"]
+[PlyCount "90"]
+[EventDate "1991.??.??"]
+[Source "Andry's Collect"]
+[SourceDate "2000.??.??"]
+
+1. e4 {B33: Sicilian: Pelikan and Sveshnikov Variations} 1... c5 2. Nf3 Nc6 3.
+d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Na3 b5 9. Bxf6 gxf6 10.
+Nd5 f5 11. Bd3 Be6 12. c3 Bg7 13. O-O Bxd5 14. exd5 Ne7 15. Qh5 15... e4 {
+Black wins space} 16. Bc2 Qa5 17. Rae1 (17. Nb1 17... b4 $11) 17... Ra7 (17...
+Bxc3 18. bxc3 Qxa3 19. Bxe4 fxe4 20. Rxe4 $11) 18. Kh1 (18. g4 Rg8 19. Kh1 Bxc3
+20. bxc3 20... Rxg4 $14) 18... Bxc3 19. bxc3 {Deflection from a3} 19... Qxa3
+20. Bb3 Qb2 (20... a5 21. f3 a4 22. Bd1 exf3 23. Rxf3 (23. gxf3 23... Qxc3 24.
+Qxf5 24... Rc7 $15) (23. Bxf3 $6 23... Kd8 $14 (23... Qxa2 $2 {
+is worthless because of} 24. Qxf5 Qc4 25. Bh5 $18)) 23... Qxa2 24. Rfe3 $16)
+21. f3 21... Rg8 {Do you see the mate threat?} 22. g3 f4 23. fxe4 23... fxg3 {
+The mate threat is g2} 24. Rxf7 Kd8 25. Qh6 (25. Rf3 Rc7 26. hxg3 26... Rxc3
+$11) 25... Qxc3 {Threatening mate... how?} 26. Rf8+ (26. Qxd6+ Ke8 27. Rxe7+
+Rxe7 28. Qb8+ Kd7 29. Qb7+ Kd8 30. Qb8+ Kd7 31. Qb7+ Kd8 32. Qb8+ 32... Kd7 $11
+) 26... Rxf8 27. Qxf8+ 27... Kd7 {Black threatens strongly Qxe1} 28. Rf1 {
+With the decisive threat Bd1} 28... Qe3 29. Qf4 Qxf4 30. Rxf4 gxh2 31. Bd1 Kc7
+32. Rf7 (32. Rf6 32... Ng6 $15) 32... Kb6 $17 33. Rxh7 Rc7 34. Kxh2 (34. Rxh2
+Rc1 35. Rd2 35... Ng6 $17) 34... Nxd5 $1 {Theme: Clearance for c7-h7} 35. Rxc7
+(35. exd5 Rxh7+) 35... Nxc7 $19 36. Kg3 Kc5 37. Kf4 Kd4 38. Kf5 b4 39. Ba4 a5
+40. Bc6 Kc5 41. Bd7 Nb5 42. e5 dxe5 43. Kxe5 Nc3 44. Be6 44... Nxa2 $1 {
+takes home the point} 45. Bxa2 (45. Kf4 {hardly improves anything} 45... a4 46.
+Bxa2 46... b3 $19) 45... a4 (45... a4 46. Be6 46... b3 $19) 0-1
+
+[Event "Chalkidiki"]
+[Site "?"]
+[Date "1992.??.??"]
+[Round "9"]
+[White "Kramnik, V."]
+[Black "Ulibin, M."]
+[Result "1-0"]
+[ECO "E11"]
+[WhiteElo "2625"]
+[BlackElo "2570"]
+[PlyCount "97"]
+[EventDate "1992.??.??"]
+
+1. d4 {E11: Bogo-Indian} 1... e6 2. c4 Nf6 3. Nf3 Bb4+ 4. Bd2 Qe7 5. g3 Nc6 6.
+Nc3 O-O 7. Bg2 Bxc3 8. Bxc3 Ne4 9. Rc1 d6 10. d5 Nd8 11. dxe6 Nxe6 12. Bb4 Bd7
+13. Ne5 N6c5 14. Nxd7 Nxd7 15. O-O a5 16. Ba3 Rfe8 17. b3 b6 18. Bb2 Rad8 19.
+Qd4 Qf6 20. Qxf6 Ndxf6 21. Rfd1 21... h6 {last book move} 22. e3 Nd7 23. Kf1
+Re7 24. Ke2 Rde8 25. g4 Re6 26. h4 R6e7 27. Bf3 Ndc5 28. Rd5 Na6 29. a3 {
+Controls b4} 29... Nac5 30. b4 axb4 31. axb4 Na6 32. b5 {White gets more space}
+32... Nac5 {The knight feels good on c5} 33. Ra1 Nf6 (33... Kf8 34. Ra7 $11)
+34. Rdd1 (34. Bxf6 gxf6 35. Ra7 35... Nb3 $16) 34... Nfe4 $11 35. Ra7 Kf8 36.
+g5 (36. Bxe4 Nxe4 (36... Rxe4 37. Rxc7 Rxg4 38. Rxd6 $16) 37. Rda1 37... Nc5
+$14) 36... hxg5 37. hxg5 Nxg5 38. Bc6 {White can be proud of that piece} 38...
+Rc8 39. Rh1 Kg8 40. Raa1 Nce6 41. Rh4 {White threatens strongly Rah1} 41... f6
+{Consolidates e5} 42. Rg1 {White intends Bd5} 42... Kf7 43. Bd5 {Threatening f4
+} 43... Ke8 44. Rh8+ Nf8 45. f4 Nge6 46. Kf3 46... f5 $2 (46... c5 47. bxc6
+47... Nc7 $18) 47. Rg6 Nc5 (47... Rd8 {is one last hope} 48. Rxe6 Rxe6 49. Bxe6
+Ke7 50. Bxf5 Ne6 51. Rxd8 Nxd8 52. Bxg7 52... Ne6 $18) 48. Bxg7 Rf7 49. Bxf8 (
+49. Bxf8 Rxf8 50. Rxf8+ Kxf8 51. Rg8+ Ke7 52. Rxc8 $18) 1-0
+
+[Event "Manila olm"]
+[Site "Manila"]
+[Date "1992.??.??"]
+[Round "?"]
+[White "Kramnik, Vladimir"]
+[Black "Lanka, Zigurds"]
+[Result "1-0"]
+[ECO "E81"]
+[WhiteElo "2590"]
+[BlackElo "2490"]
+[PlyCount "87"]
+[EventDate "1992.06.??"]
+[Source "ChessBase"]
+
+1. d4 {E81: King's Indian: Saemisch: 6th move deviations (including 6 Be3 c6)}
+1... Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f3 O-O 6. Be3 Nbd7 7. Qd2 c5 8. d5 Ne5
+9. Bg5 Nfd7 10. Bh6 Bxh6 11. Qxh6 a6 12. h4 f6 13. Qd2 Qa5 14. f4 Nf7 15. Nf3
+Rb8 16. a4 16... Nb6 {last book move} 17. Bd3 Bg4 18. Nh2 18... Bd7 {
+Can a4 get defended?} 19. b3 Kh8 20. O-O Na8 21. Qb2 Rg8 22. Nf3 Bg4 23. e5 {
+Nimzovich: attack the chain at its base} (23. Ne2 Bxf3 24. Rxf3 24... Rbe8 $14)
+23... Bxf3 24. exf6 Bg4 ({Not} 24... exf6 25. Rxf3 Qd8 26. Ne4 $16) 25. fxe7
+Rg7 (25... Nc7 26. Ne4+ Rg7 27. Nf6 $11) 26. Ne4 $11 26... Nc7 27. Nf6 27...
+Bh5 $4 {allows the opponent back into the game} (27... Nh6 $15 {
+would keep Black alive}) 28. Rae1 (28. g4 Ne8 29. Rfe1 Bxg4 30. Nxg4 30... Qc7
+$18) 28... Ne8 29. Nd7 $4 {White loses the upper hand} (29. g4 {
+a pity that White didn't try this} 29... Nxf6 30. Qxf6 $16 (30. gxh5 $6 30...
+Ne8 $11)) 29... Ra8 $11 30. f5 g5 (30... gxf5 $5 {and Black can hope to survive
+} 31. Bxf5 31... Nh6 $11) 31. hxg5 $16 31... Nxg5 32. f6 {
+Threatening mate: fxg7} 32... Rf7 33. Bf5 33... Nc7 $2 (33... Bg6 $5 34. Bxg6
+34... hxg6 $16) 34. Nf8 $18 34... h6 (34... Ne8 $18) 35. Re3 b5 36. g4 (36. Ne6
+{and White can already relax} 36... Re8 $18) 36... bxc4 (36... bxa4 {
+doesn't change the outcome of the game} 37. gxh5 a3 38. Ng6+ Kg8 39. Qe2 $18)
+37. gxh5 c3 38. Rxc3 Nxd5 (38... Rb8 39. Be6 Qxa4 40. Rg3 $18) 39. Rd3 c4 40.
+bxc4 Qc5+ 41. Qd4 (41. Kh1 {keeps an even firmer grip} 41... Nc7 42. Ng6+ 42...
+Kg8 $18) 41... Qxd4+ 42. Rxd4 Ne3 (42... Nxf6 {doesn't change anything anymore}
+43. Rxd6 Rfxf8 44. exf8=Q+ Rxf8 45. Bb1 $18) 43. Bg6 (43. Ng6+ Kh7 44. Rxd6
+Rxf6 45. Rxf6 $18) 43... Kg8 (43... Rfxf8 44. exf8=Q+ Rxf8 45. Rxd6 Nxf1 46.
+Kxf1 46... Nf3 $18) 44. Rxd6 (44. Rxd6 Rfxf8 45. f7+ Kg7 46. e8=Q Rfxe8 47.
+fxe8=N+ Rxe8 48. Bxe8 Nxf1 49. Kxf1 $18) 1-0
+
+[Event "BL9293"]
+[Site "?"]
+[Date "1992.??.??"]
+[Round "?"]
+[White "Nunn, J."]
+[Black "Kramnik, V."]
+[Result "1/2-1/2"]
+[ECO "B66"]
+[WhiteElo "2595"]
+[BlackElo "2625"]
+[PlyCount "81"]
+[EventDate "1993.??.??"]
+
+1. e4 {B66: Sicilian: Richter-Rauzer: 7...a6 8 0-0-0 h6} 1... c5 2. Nf3 Nc6 3.
+d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bg5 e6 7. Qd2 a6 8. O-O-O h6 9. Bf4 Bd7 10.
+Nxc6 Bxc6 11. f3 d5 12. Qe1 Bb4 13. a3 Ba5 14. Bd2 Qe7 15. e5 Nd7 16. f4 b5 17.
+Ne2 Bxd2+ 18. Qxd2 O-O 19. Nd4 Rfc8 20. Bd3 20... Nc5 {last book move} 21. Kb1
+(21. f5 21... a5 $11) 21... Bd7 (21... Nxd3 22. cxd3 b4 23. Rc1 $15) 22. g4 (
+22. Qa5 Qd8 23. Qxd8+ 23... Rxd8 $14) 22... Rab8 (22... Nxd3 23. Qxd3 b4 24.
+axb4 Qxb4 25. g5 $15) 23. g5 {White gains space} (23. Qb4 Qd8 24. g5 hxg5 25.
+fxg5 25... Qxg5 $17) 23... b4 24. gxh6 bxa3 25. b3 {Consolidates a4} 25... g6 {
+Prevents intrusion on f5} 26. h4 Na4 ({Not} 26... Nxd3 27. Qxd3 Bb5 28. Qd2 $14
+) 27. Rdg1 a2+ (27... Nc3+ 28. Ka1 Qc5 29. Nf3 $11) 28. Ka1 28... Qa3 {
+Threatening mate: Qb2} 29. Qc1 Qb4 30. Ne2 Nc5 31. Rxg6+ Kh8 32. Rg7 {
+Do you see the mate threat?} 32... Nxb3+ {Demolishes the pawn shield} 33. cxb3
+{Exploits the pin.} 33... Rxc1+ {A double attack} 34. Rxc1 34... Qxb3 {
+The mate threat is Qb2} 35. Rh7+ Kg8 36. Rg1+ Kf8 37. Rh8+ Ke7 38. Rxb8 Qxd3 (
+38... Qxb8 39. h7 (39. Kxa2 {is the less attractive alternative} 39... Bb5 40.
+Nd4 40... Qb6 $17) 39... Ba4 40. Rg7 $11) 39. Rc1 Qxe2 40. h7 {
+Do you see the mate threat?} 40... Qd2 41. h8=Q {The mate threat is Qf6}
+1/2-1/2
+
+[Event "Gausdal"]
+[Site "?"]
+[Date "1992.??.??"]
+[Round "?"]
+[White "Kramnik, V."]
+[Black "Lerner, K."]
+[Result "1-0"]
+[ECO "A01"]
+[WhiteElo "2590"]
+[BlackElo "2515"]
+[PlyCount "79"]
+[EventDate "1992.??.??"]
+[Source "Andry's Collect"]
+[SourceDate "2000.??.??"]
+
+1. b3 {A01: Nimzowitsch-Larsen Opening} 1... e5 2. Bb2 d6 3. g3 Nf6 4. Bg2 Be7
+5. e3 Nc6 6. d3 O-O 7. Nf3 h6 8. c4 Be6 9. O-O Qd7 10. d4 exd4 11. exd4 11...
+Bf5 {last book move} 12. a3 {Prevents intrusion on b4} 12... Rae8 13. d5 {
+White wins space} 13... Nb8 14. Nc3 Bd8 15. Nd4 Bh3 16. Qd3 Re5 17. Nce2 Bxg2
+18. Kxg2 Rfe8 19. Nf4 (19. Rae1 c6 20. Nc2 cxd5 21. Bxe5 dxe5 22. cxd5 22...
+Nxd5 $14) 19... Re4 20. Rad1 Na6 21. b4 Nb8 22. Nb3 g5 (22... a6 23. Nd2 R4e7
+24. Bxf6 gxf6 25. Nf3 $16) 23. Nd2 gxf4 24. Bxf6 Re2 25. Bc3 Qg4 26. Qd4 Kh7
+27. Rde1 c5 28. Qd3+ 28... f5 {White now must not overlook the idea Rxe1} 29.
+Rxe2 Rxe2 30. bxc5 dxc5 31. Nf3 {White threatens strongly Qxe2} 31... Re4 32.
+d6 (32. h3 $5 32... Qg6 33. Ne5 33... Qe8 $18) 32... Nd7 33. Qd5 Qg6 34. Qxb7 {
+White gets deadly initiative. .} 34... Qxd6 35. Be5 $1 {
+securing the advantage in this game} 35... Qd3 (35... Rxe5 36. Nxe5) 36. Bxf4
+$18 36... Bf6 37. Qc6 (37. Rc1 37... Re7 $18) 37... Re7 $16 38. Rc1 Qe4 39. Qd6
+39... Qb7 $2 (39... Rg7 $5 $16) 40. Rd1 $18 (40. Rd1 Kg7 41. Rd5 $18) 1-0
+
+[Event "Manila (ol)"]
+[Site "?"]
+[Date "1992.??.??"]
+[Round "?"]
+[White "Kramnik, V."]
+[Black "Nunn, J."]
+[Result "1-0"]
+[ECO "E81"]
+[WhiteElo "2590"]
+[BlackElo "2615"]
+[PlyCount "65"]
+[EventDate "1992.??.??"]
+[Source "Andry's Collect"]
+[SourceDate "2000.??.??"]
+
+1. d4 {E81: King's Indian: Saemisch: 6th move deviations (including 6 Be3 c6)}
+1... Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f3 O-O 6. Be3 c5 7. dxc5 dxc5 8. Qxd8
+Rxd8 9. Bxc5 Nc6 10. Ba3 a5 11. Rd1 Be6 12. Nd5 Bxd5 13. cxd5 Nb4 14. Bb5 Nc2+
+15. Kf2 (15. Ke2 Nxa3 16. bxa3 16... Rdc8 $14) 15... Nxa3 16. bxa3 e6 17. d6 {
+He broke from his leash} 17... e5 (17... Rac8 18. a4 $11) 18. Ne2 Bf8 19. d7
+Bxa3 20. g4 h6 21. h4 a4 22. Rd3 Bb2 23. g5 hxg5 24. hxg5 Nh7 25. f4 Ra5 26.
+Rd5 f6 (26... Nf8 27. f5 27... Nh7 $16) 27. Rxh7 $1 $18 {a brilliant end} 27...
+Kxh7 28. gxf6 {White threatens fxe5} 28... exf4 29. e5 Kh6 30. Nxf4 Bxe5 31.
+Rxe5 Rxd7 (31... Rxb5 {the only chance to get some counterplay} 32. Rxb5 32...
+Rxd7 $18) 32. Bxd7 Rxe5 33. f7 (33. f7 Kg7 34. f8=Q+ Kxf8 35. Nxg6+ Kf7 36.
+Nxe5+ Ke7 37. Bxa4 $18) (33. Bxa4 $6 {succumbs to} 33... Re4 34. Nxg6 34...
+Rxa4 $11 (34... Kxg6 $4 35. Bc2 $18)) 1-0
+
+[Event "Beograd "]
+[Site "?"]
+[Date "1993.??.??"]
+[Round "?"]
+[White "Kramnik, V."]
+[Black "Romanishin, O."]
+[Result "1-0"]
+[ECO "A17"]
+[PlyCount "81"]
+[EventDate "1993.??.??"]
+
+1. Nf3 {A17: English Opening: 1...Nf6 with ...Bb4} 1... Nf6 2. c4 e6 3. Nc3 Bb4
+4. Qc2 c5 5. a3 Ba5 6. g3 Nc6 7. Bg2 Bxc3 8. Qxc3 Qa5 9. b4 cxb4 10. axb4 Qxb4
+11. Qxb4 Nxb4 12. Nd4 d5 13. Ba3 Nc6 14. Nb5 Kd7 15. Nd6 Rf8 16. Rc1 b6 17. g4
+{last book move} 17... Ne7 (17... h6 $5 $14) 18. g5 $16 18... Nfg8 19. cxd5
+Nxd5 20. Nb5 Ba6 (20... Rd8 21. Bxd5 exd5 22. Rc7+ Ke8 23. Nd6+ Rxd6 24. Bxd6
+$16) 21. Nc7 $1 {Theme: Double Attack} 21... Bb7 (21... Nxc7 22. Bc6+ {
+A double attack}) 22. Nxd5 (22. Nxa8 Rxa8 23. Bb2 23... Nge7 $16) 22... Bxd5
+$14 23. Bxd5 exd5 24. Bxf8 Rxf8 25. Rg1 Ne7 26. Rg3 Nc6 27. Rgc3 Rc8 28. Rh3
+Rh8 29. Rhc3 (29. Rf3 29... Rf8 $14) 29... Rc8 30. d4 a5 31. f3 Ne7 32. Kd2
+Rxc3 33. Kxc3 b5 (33... h6 $5 $14) 34. Kb2 $16 34... Nf5 35. Rc5 Ke6 36. Kc3
+Nd6 37. Kd3 a4 38. Kc3 a3 39. Rc6 Kd7 (39... a2 40. Kb2 $18) 40. Ra6 Nc4 41.
+Kb4 (41. Kb4 Ne3 42. Kxb5 $18) 1-0
+
+[Event "Biel izt"]
+[Site "?"]
+[Date "1993.??.??"]
+[Round "11"]
+[White "Portisch, L."]
+[Black "Kramnik, V."]
+[Result "0-1"]
+[ECO "D13"]
+[WhiteElo "2585"]
+[BlackElo "2710"]
+[PlyCount "84"]
+[EventDate "1993.??.??"]
+
+1. d4 {D13: Slav Defence: Exchange variation without ...Bf5} 1... d5 2. c4 c6
+3. cxd5 cxd5 4. Nf3 Nf6 5. Nc3 Nc6 6. Bf4 Ne4 7. e3 Nxc3 8. bxc3 g6 9. Be2 Bg7
+10. O-O O-O 11. c4 dxc4 12. Bxc4 Bf5 13. Rc1 Rc8 14. Qe2 14... a6 {Controls b5}
+15. h3 {Consolidates g4} 15... Na5 16. Bd3 Bxd3 17. Qxd3 Qd7 18. Rc3 {
+The rook intends Rc1-c3-c7-c5} 18... b5 19. Rfc1 Nc4 20. Qe2 Nb6 21. Rc7 Qe6
+22. Bg5 Nd5 23. R7c5 {An ideal square for the white rook.} 23... h6 24. Bh4 b4
+25. Qb2 25... Nc3 {Plans Rxc5. The knight dominates} 26. Rxc8 Rxc8 27. Kh1 Kh7
+28. Ra1 a5 29. Qb3 Qxb3 30. axb3 g5 31. Bg3 a4 32. Nd2 a3 33. Rc1 e5 34. d5 $2
+(34. Nf3 exd4 35. Nxd4 Bxd4 36. exd4 36... Rd8 $19) 34... a2 (34... Rc5 $5 {
+might be the shorter path} 35. d6 Rd5 36. Nf3 $19) 35. Ra1 35... e4 {
+Black threatens.... what?} 36. d6 36... Ra8 {Threatens Ne2} 37. Nc4 37... Nb5 {
+Black threatens strongly Bxa1} 38. Be5 38... Nxd6 $1 {the knockout punch} 39.
+Rxa2 (39. Nxd6 {A deflection} 39... Bxe5 {A double attack}) 39... Rxa2 40. Bxd6
+Rxf2 41. Bxb4 (41. Kg1 41... Rf5 $19) 41... Rf1+ 42. Kh2 Rb1 (42... Rb1 43. Bd2
+43... Rxb3 $19) 0-1
+
+[Event "PCA-WchQual3 New York"]
+[Site "?"]
+[Date "1994.??.??"]
+[Round "1"]
+[White "Kamsky, G."]
+[Black "Kramnik, V."]
+[Result "1-0"]
+[ECO "D44"]
+[WhiteElo "2695"]
+[BlackElo "2710"]
+[PlyCount "81"]
+[EventDate "1994.??.??"]
+
+1. d4 {D44: Semi-Slav: Botvinnik System} 1... d5 2. c4 c6 3. Nc3 Nf6 4. Nf3 e6
+5. Bg5 dxc4 6. e4 b5 7. e5 h6 8. Bh4 g5 9. Nxg5 hxg5 10. Bxg5 Nbd7 11. exf6 Bb7
+12. g3 c5 13. d5 Qb6 14. Bg2 O-O-O 15. O-O b4 16. Na4 Qb5 17. a3 Ne5 18. axb4
+cxb4 19. Qd4 Nc6 20. dxc6 20... Rxd4 {last book move} 21. cxb7+ {
+White gets kings attack} 21... Kc7 (21... Kb8 22. Be3 Qh5 23. h3 $14) 22. Be3
+$14 22... e5 23. Nc3 {The mate threat is Nxb5} 23... bxc3 24. bxc3 Bc5 25. cxd4
+(25. Rfb1 $5 25... Rd1+ 26. Rxd1 Bxe3 27. fxe3 $14) 25... Bxd4 $11 {
+A beautiful square!} 26. Rfb1 Qc5 27. Ra6 Rb8 28. Bc1 c3 (28... Bxf2+ $5 29.
+Kh1 29... Kd7 $16) 29. Ba3 $18 29... Qc4 30. Bd6+ Kd7 31. Bc6+ 31... Ke6 $4 {
+strolling merrily down the path to disaster} (31... Qxc6 32. Rxc6 Rxb7 33. Rc7+
+Rxc7 34. Bxc7 34... Kxc7 $16) 32. Bb5 $18 (32. Bxb8 {
+is the less attractive alternative} 32... Qxa6 33. Bd6 Bxf2+ 34. Kg2 Qxc6+ 35.
+Kxf2 35... c2 $15) 32... Bxf2+ 33. Kxf2 Qd4+ 34. Kf1 Qe4 (34... Qxd6 {
+there is nothing else anyway} 35. Bc4+ Kd7 36. Rxd6+ Kxd6 37. Rd1+ Kc5 38. Bxf7
+38... Rxb7 $18) 35. Re1 Qh1+ 36. Kf2 Qxh2+ 37. Kf3 Rxb7 38. Bxe5+ Rb6 (38...
+Kd5 {what else?} 39. Bc6+ Kc4 40. Bxb7 40... c2 $18) 39. Bc4+ Kd7 40. Rxa7+ Kc8
+41. Rc7+ (41. Rc7+ Kd8 42. Rxf7 Qh5+ 43. g4 Qxf7 44. Bxf7 $18) (41. Ra8+ {
+and White can celebrate victory} 41... Kd7 42. Rd1+ Qd2 43. Ra7+ 43... Kc8 $18)
+1-0
+
+[Event "Moscow olm  RUS 1-UKR"]
+[Site "?"]
+[Date "1994.??.??"]
+[Round "?"]
+[White "Kramnik, V."]
+[Black "Malaniuk, V."]
+[Result "1-0"]
+[ECO "A87"]
+[WhiteElo "2725"]
+[BlackElo "2610"]
+[PlyCount "81"]
+[EventDate "1994.??.??"]
+
+1. Nf3 {A87: Dutch Defence: Leningrad System: 5 Nf3} 1... f5 2. g3 Nf6 3. Bg2
+d6 4. d4 g6 5. O-O Bg7 6. c4 O-O 7. Nc3 Qe8 8. d5 Na6 9. Rb1 Bd7 10. b4 c5 11.
+dxc6 Bxc6 12. Qb3 Ne4 13. Bb2 Nxc3 14. Bxc3 Bxc3 15. c5+ (15. Qxc3 $5 15... Nc7
+16. c5 $14) 15... e6 $15 16. Qxc3 dxc5 17. b5 Bxb5 18. Ne5 {
+The knight feels good on e5} 18... Rb8 (18... Bxe2 $2 {
+doesn't lead to anything significant} 19. Rxb7 Qd8 20. Re1 $18) 19. Rfe1 b6 20.
+e4 Nc7 21. exf5 gxf5 22. Qe3 a6 23. Qg5+ Kh8 24. Rbd1 Rg8 25. Qf4 Qe7 (25...
+Rg7 $5 $15 {must definitely be considered}) 26. Bc6 $14 26... Rg4 (26... Rbd8
+$5 {and Black could well hope to play on} 27. Rxd8 Rxd8 28. Bxb5 28... axb5 $14
+(28... Nxb5 29. Nc6 Qd7 30. Nxd8 Qxd8 31. Qe5+ Kg8 32. Qxe6+ Kg7 33. Qxf5 $18))
+27. Nxg4 $18 27... Bxc6 28. Rd6 28... Be8 $2 (28... Bb5 29. Rdxe6 $1 {
+Clearance to allow e5-b8} 29... Nxe6 30. Qxb8+ Qf8 31. Qe5+ Qg7 32. Qxe6 Qxg4
+33. Qxb6 $18) 29. Nh6 (29. Rdxe6 {keeps an even firmer grip} 29... Nxe6 30.
+Qe5+ Qg7 31. Qxb8 Nc7 32. Rxe8+ Nxe8 33. Qxe8+ Qg8 34. Qe5+ 34... Qg7 $18)
+29... Rc8 $4 {causes even greater problems} (29... Qf6 $5 $16) 30. Rxb6 (30.
+Rdxe6 $1 {makes sure everything is clear} 30... Nxe6 31. Qe5+ Qg7 32. Qxe6 $18)
+30... Qg7 31. Rb7 (31. Qe5 Qxe5 32. Rxe5 32... c4 $18) 31... Bc6 $16 32. Ra7
+Nd5 (32... Bd5 $5 $18) 33. Qe5 {Threatening mate... how?} (33. Rxg7 $6 33...
+Nxf4 34. Ra7 Nh3+ 35. Kf1 35... Ng5 $16) 33... Qxe5 34. Nf7+ 34... Kg8 {
+Threatening mate: Qxe1} 35. Nxe5 (35. Rxe5 Rb8 36. f3 Rb1+ 37. Kg2 Rb2+ 38. Kh3
+Rb7 39. Rxa6 Nb4 40. Nh6+ Kf8 41. Rxe6 Nxa6 42. Rxc6 Nb4 43. Rxc5 43... Ra7 $18
+) 35... Bb5 36. a4 Bxa4 37. Rxa6 Bb5 38. Rxe6 c4 39. Rd6 Nb4 (39... Nc3 $18)
+40. Rb6 Nc2 41. Rb1 (41. Rb1 Nd4 42. R6xb5 Nxb5 43. Rxb5 $18) 1-0
+
+[Event "Moscow PCA"]
+[Site "?"]
+[Date "1994.??.??"]
+[Round "2"]
+[White "Kramnik, V."]
+[Black "Kasparov, G."]
+[Result "1-0"]
+[ECO "E93"]
+[WhiteElo "2710"]
+[BlackElo "2805"]
+[PlyCount "81"]
+[EventDate "1994.??.??"]
+
+1. Nf3 {E93: King's Indian: Classical: Petrosian System with 7...Nbd7} 1... Nf6
+2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. d4 O-O 6. Be2 e5 7. d5 Nbd7 8. Be3 Ng4 9. Bg5
+f6 10. Bh4 h5 11. Nd2 Nh6 12. f3 Nf7 13. Qc2 Bh6 14. O-O-O c5 15. dxc6 bxc6 16.
+Kb1 a5 17. Na4 c5 18. Nc3 Be3 19. Nd5 Bd4 20. Nb3 Bb7 21. Nxd4 cxd4 ({
+Inferior is} 21... exd4 22. Nf4 $16) 22. f4 Rb8 23. Rhf1 Nh6 24. c5 {
+White launches an attack} 24... Bxd5 25. exd5 Nf5 26. fxe5 Nxh4 ({Weaker is} 
+26... dxc5 27. Rxf5 gxf5 28. e6 $16) ({Less advisable is} 26... dxe5 27. Rxf5
+gxf5 28. c6 $16) 27. exd6 Ne5 28. Rxd4 Nf5 (28... Nxg2 $2 {
+doesn't solve anything} 29. Re4 Rf7 30. Rg1 $18) 29. Rxf5 gxf5 30. Qxf5 Kg7 31.
+Bxh5 ({Instead of} 31. Qxh5 31... Rh8 32. Qf5 32... Rxh2 $17) 31... Rh8 $4 {
+gives the opponent new chances} (31... Rb5 {was a good chance to save the game}
+32. Be2 Rxc5 33. Rg4+ Nxg4 34. Qxg4+ Kh6 35. Qh5+ Kg7 36. Qg4+ Kf7 37. Qe6+ Kg7
+38. Qg4+ $11) 32. Rg4+ $1 $18 {the death sentence} 32... Kf8 (32... Nxg4 {
+A deflection} 33. Qg6+ {A double attack}) 33. Qe6 {With the decisive threat c6}
+33... Rb7 $4 {sad, but how else could Black save the game?} (33... a4 $18) 34.
+c6 Rxb2+ 35. Kxb2 Qb6+ 36. Ka3 Qc5+ 37. Ka4 Qc2+ 38. Kb5 Qb2+ 39. Ka6 Qe2+ 40.
+Kb7 (40. Kb6 {and White can already relax} 40... Qe3+ 41. Kb7 Rh7+ 42. c7 42...
+Nxg4 $18) 40... Rh7+ 41. d7 (41. d7 Qb5+ 42. Kc7 Rxd7+ 43. cxd7 Qc5+ 44. Kb7
+Qb5+ 45. Ka8 Qa6+ 46. Qxa6 Nxg4 47. d8=Q+ Kg7 48. h4 Nf2 49. Qb7+ Kh6 50. Qh8#)
+1-0
+
+[Event "Sanghi Nagar (m/3)"]
+[Site "?"]
+[Date "1994.??.??"]
+[Round "?"]
+[White "Kramnik, V."]
+[Black "Gelfand, B."]
+[Result "1-0"]
+[ECO "B52"]
+[WhiteElo "2725"]
+[BlackElo "2680"]
+[PlyCount "69"]
+[EventDate "1994.??.??"]
+[Source "Andry's Collect"]
+[SourceDate "2000.??.??"]
+
+1. e4 {B52: Sicilian: Moscow Variation with 3...Bd7} 1... c5 2. Nf3 2... d6 {
+Prevents intrusion on e5} 3. Bb5+ Bd7 4. Bxd7+ Qxd7 (4... Nxd7 5. d4 $11) 5. c4
+Nf6 (5... Qg4 6. Nc3 Qxg2 7. Rg1 $11) 6. Nc3 Nc6 7. O-O g6 8. d4 cxd4 9. Nxd4
+Bg7 10. Nde2 (10. Be3 10... h5 $14) 10... O-O (10... Qe6 $5 {
+is worthy of consideration} 11. Nd5 Qxe4 12. Nc7+ Kd7 13. Nxa8 13... Qxc4 $17)
+11. f3 {Controls g4} 11... a6 {Consolidates b5} 12. a4 Rfc8 13. b3 Qd8 14. Kh1
+Nd7 15. Bg5 Qa5 16. Qd2 Nc5 17. Rab1 17... e6 {Secures d5} 18. Rfd1 Rab8 19.
+Bh4 Qb6 20. Qxd6 (20. Bf2 $5 {is noteworthy} 20... Rd8 21. Na2 $11) 20... Be5
+$15 21. Qd2 Nxb3 22. Qb2 Nca5 23. Nd5 {Threatening mate: Ne7} 23... exd5 24.
+Qxe5 24... Nxc4 {The knight dominates} (24... dxe4 $5 {
+should be examined more closely} 25. Nf4 25... Re8 $15) 25. Qxd5 $14 {
+White creates threats along the open d-file} 25... Qe3 26. Re1 Nbd2 (26... Nba5
+$5 $14 {must be considered}) 27. Rxb7 $16 27... Rxb7 28. Qxb7 {
+The mate threat is Qxc8} 28... Re8 29. Qd7 {Do you see the mate threat?} 29...
+Rb8 30. Bg3 Nxf3 31. Bxb8 {With the decisive threat Qc8} 31... Qxe4 $4 {
+shortens the misery for Black} (31... Nxe1 32. Qc8+ Kg7 33. Qxc4 Nd3 34. Qd4+
+Qxd4 35. Nxd4 Nf2+ 36. Kg1 36... Nxe4 $18) 32. gxf3 Qxf3+ 33. Kg1 Qe3+ 34. Kg2
+Qe4+ 35. Kh3 (35. Kh3 Ne3 36. Qd8+ Kg7 37. Qd4+ Qxd4 38. Nxd4 $18) 1-0
+
+[Event "Deutschland "]
+[Site "?"]
+[Date "1995.??.??"]
+[Round "?"]
+[White "Lutz, Ch"]
+[Black "Kramnik, V."]
+[Result "0-1"]
+[ECO "B33"]
+[PlyCount "70"]
+[EventDate "1995.??.??"]
+
+1. e4 {B33: Sicilian: Pelikan and Sveshnikov Variations} 1... c5 2. Nf3 Nc6 3.
+d4 cxd4 4. Nxd4 Nf6 5. Nc3 e5 6. Ndb5 d6 7. Bg5 a6 8. Na3 b5 9. Nd5 Be7 10.
+Bxf6 Bxf6 11. c3 O-O 12. Nc2 Bg5 13. a4 bxa4 14. Rxa4 a5 15. Bc4 Rb8 16. b3 Kh8
+17. O-O g6 18. Qe2 Bd7 19. Rfa1 19... Bh6 {last book move} 20. g3 {
+Consolidates f4} (20. Nde3 20... Be6 $14) 20... f5 $11 21. exf5 gxf5 22. b4
+22... e4 {Black wins space.} 23. bxa5 Ne5 24. Rb4 Rxb4 25. cxb4 f4 26. Nd4 e3
+27. fxe3 (27. Nxf4 $2 {doesn't work because of} 27... exf2+ 28. Qxf2 28... Bxf4
+$19) 27... f3 {He broke from his leash} (27... fxg3 28. hxg3 Qg5 29. Kh2 Nxc4
+30. Nf4 $19) 28. Qa2 f2+ 29. Kg2 Qe8 30. Be2 30... Ng4 {
+The pressure on the isolated pawn grows} 31. Bf3 $4 (31. Qd2 Qh5 32. Bxg4 Qxg4
+33. Nf4 Bxf4 34. exf4 Qh3+ 35. Kxf2 Qxh2+ 36. Ke1 Qxg3+ 37. Kd1 Qg1+ 38. Ke2
+Bg4+ 39. Kd3 Qxa1 40. f5 $19) 31... Nxe3+ $19 32. Nxe3 Qxe3 33. Qxf2 $4 {
+sad, but how else could White save the game?.} (33. Rd1 Bg7 34. Qb3 Bxd4 35.
+Qxe3 Bxe3 36. Be2 $19) 33... Bh3+ $1 {the final blow} 34. Kg1 {
+Black now must not overlook the idea Re1} (34. Kxh3 {A deflection} 34... Qxf2)
+34... Qc3 35. Re1 Bd2 (35... Bd2 36. Ne2 36... Qxf3 $19 (36... Bxe1 $6 {
+is clearly weaker} 37. Nxc3 Bxf2+ 38. Kxf2 $19) (36... Rxf3 $2 37. Nxc3 Rxf2
+38. Kxf2 Bxc3 39. Re7 $18)) 0-1
+
+[Event "Dortmund "]
+[Site "?"]
+[Date "1995.??.??"]
+[Round "?"]
+[White "Kramnik, V."]
+[Black "Piket, Je"]
+[Result "1-0"]
+[ECO "E05"]
+[PlyCount "97"]
+[EventDate "1995.??.??"]
+
+1. Nf3 {E05: Open Catalan: 5 Nf3 Be7} 1... d5 2. d4 e6 3. g3 Nf6 4. Bg2 Be7 5.
+O-O O-O 6. c4 dxc4 7. Qc2 a6 8. a4 Nc6 9. Qxc4 Qd5 10. Nbd2 10... Rd8 {
+d4 becomes the focus of attention} 11. e3 Qh5 12. e4 Bd7 13. b3 b5 14. Qc3 Be8
+15. axb5 axb5 16. Rxa8 Rxa8 17. Bb2 Ra2 18. Qc1 Qh6 19. h3 g6 20. Re1 20... Qf8
+{last book move} 21. Qb1 21... Nb4 {A sound move} 22. Ne5 Nd7 23. Bc3 Ra6 24.
+Nxd7 Bxd7 25. Nf3 Qa8 26. Ne5 Bc6 27. Qd1 Na2 28. Bb2 b4 (28... Be8 $5 $11) 29.
+d5 {White gains space} 29... Be8 (29... Bb5 30. Qc2 $14) 30. Ng4 (30. Bf1 $5
+30... Rb6 31. Bd4 $16) 30... Nc3 $14 {Here comes the goal-getter} 31. Qf3 h5
+32. Nf6+ Bxf6 33. Qxf6 exd5 34. Qd4 Ra2 35. Qxb4 Nb5 ({Instead of} 35... Nxe4
+36. Qd4 Rxb2 37. Qxb2 $16) 36. Bf6 36... Qa7 {Do you see the mate threat?} 37.
+Re3 d4 38. Qe7 {Threatening mate... how?} 38... Nd6 39. Rd3 Qa6 40. Rd1 (40.
+Rxd4 $4 {Taking that pawn is naive} 40... Qe2 41. Rd2 Qxd2 42. Bd4 Qxd4 43. Qf6
+Qxf6 44. f4 Qb2 45. Bf3 Ra1+ 46. Bd1 Rxd1#) 40... Qe2 {Threatening mate: Qxf2}
+41. Rf1 41... d3 {Don't underestimate that pawn} 42. Bd4 d2 (42... Qc2 43. e5
+Qe2 44. exd6 Qxe7 45. dxe7 $18) 43. Qe5 Kf8 44. Be3 {The mate threat is Bh6}
+44... Kg8 (44... f6 {does not save the day} 45. Qxf6+ Bf7 46. Bf3 $18) 45. Bh6
+Qxf2+ (45... Nf5 {is one last hope} 46. Qxe8+ Kh7 47. Qxf7+ Kxh6 48. exf5 gxf5
+49. Qf6+ Kh7 50. Qxf5+ Kg7 51. Qg5+ 51... Kh7 $18) 46. Rxf2 d1=Q+ 47. Rf1 Rxg2+
+48. Kxg2 Qe2+ 49. Kg1 (49. Kg1 Qxf1+ 50. Kxf1 Bb5+ 51. Kg2 $18) 1-0
+
+[Event "Beograd"]
+[Site "?"]
+[Date "1995.??.??"]
+[Round "?"]
+[White "Topalov, V."]
+[Black "Kramnik, V."]
+[Result "0-1"]
+[ECO "B57"]
+[WhiteElo "2640"]
+[BlackElo "2730"]
+[PlyCount "80"]
+[EventDate "1995.??.??"]
+
+1. e4 {B57: Classical Sicilian: Sozin with 6...Qb6} 1... c5 2. Nf3 Nc6 3. d4
+cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bc4 Qb6 7. Ndb5 a6 8. Be3 Qa5 9. Nd4 Ne5 10. Bd3
+Neg4 11. Bc1 g6 12. Nb3 Qb6 13. Qe2 Bg7 14. f4 Nh5 15. Nd5 15... Qd8 {
+last book move} 16. Bd2 e6 (16... Bxb2 17. Ba5 b6 18. Bxb6 Bc3+ 19. Kf1 (19.
+Nxc3 $6 19... Qxb6 20. Nd5 20... Qa7 $11) 19... Nxh2+ 20. Kg1 Nxf4 21. Qf2 Nxd3
+22. cxd3 $18) 17. Ba5 Qh4+ 18. g3 Nxg3 19. Nc7+ Ke7 20. hxg3 Qxg3+ 21. Kd1 Nf2+
+22. Kd2 Nxh1 23. Nxa8 Qxf4+ 24. Qe3 Qh2+ 25. Qe2 Qf4+ (25... Bh6+ 26. Kd1 Qg1+
+27. Qe1 Qg4+ 28. Be2 Qxe4 29. Nb6 $17) 26. Qe3 Qh2+ (26... Qf2+ 27. Qxf2 Nxf2
+28. Nb6 $15) 27. Qe2 Bh6+ 28. Kc3 Qe5+ 29. Kb4 Ng3 30. Qe1 {
+If White now only could play Ka3...} 30... Bg7 31. Nb6 d5 32. Ka4 {
+If White now would get Bc3 in, he might survive} 32... Bd7+ (32... Nxe4 33.
+Qb4+ Nd6 34. c3 $17) ({Inferior is} 32... dxe4 33. Bc3 Qc7 34. Bxg7 Qxb6 35.
+Qxg3 $16) 33. Nxd7 b5+ (33... Kxd7 34. Qb4 Rb8 35. Bb6 dxe4 36. Bc4 $17) 34.
+Kb4 Kxd7 35. Bb6 $2 (35. Nc5+ Kc6 36. Rb1 Qd4+ 37. Ka3 Nxe4 (37... Kxc5 38. b4+
+Kd6 39. Qxg3+ Be5 40. Qe1 $19) (37... Qxc5+ $6 38. Bb4 Qd4 39. exd5+ Kb7 40. b3
+$19) 38. Bxe4 Qxc5+ (38... dxe4 $6 39. b4 Qc3+ 40. Qxc3 Bxc3 41. Kb3 $17) 39.
+b4 Qc3+ 40. Qxc3+ 40... Bxc3 $19) 35... Qxb2 (35... dxe4 36. Bf1 Nxf1 37. Rd1+
+37... Kc8 $19) 36. exd5 $17 36... Rc8 {The mate threat is Bf8} 37. dxe6+ Ke8 (
+37... Kc6 38. Rb1 Qxa2 39. Na5+ Kd6 (39... Kxb6 $4 {
+taking the bishop will lose the game} 40. Qf2+ Kc7 41. Qc5+ Kd8 42. Qd6+ Ke8
+43. Qd7+ Kf8 44. Qxf7#) 40. Qxg3+ Be5 41. Nb7+ Ke7 42. Bc5+ Rxc5 43. Qh4+ Bf6
+44. Qxh7 Rc4+ (44... Qxb1+ $6 {is no comparison} 45. Kxc5 Qg1+ 46. Kc6 Qg2+ 47.
+Kb6 Bd4+ 48. Kc7 Be5+ 49. Kb6 Bd4+ 50. Kc7 Be5+ 51. Kb6 51... Bd4+ $11) 45.
+Bxc4 Qa4+ (45... Qxb1+ 46. Kc5 Qg1+ 47. Kc6 Qh1+ 48. Qxh1 bxc4 49. Nd8 Bg7 50.
+Qh4+ Bf6 51. Qf4 Kf8 52. e7+ Kg7 53. e8=Q Kh7 54. Qxf7+ Kh8 55. Q4xf6#) 46. Kc5
+Qxc4+ 47. Kb6 Bd4+ 48. Kxa6 Qxe6+ 49. Kxb5 Qd5+ 50. Ka6 Qc6+ 51. Ka5 Bc3+ 52.
+Rb4 52... Qc4 $19 (52... Bxb4+ $6 53. Kxb4 Qxb7+ 54. Kc4 $19)) 38. Bc5 $4 {
+overlooking an easy win} (38. Bxb5+ {would hold out} 38... axb5 39. exf7+ (39.
+Qxg3 39... fxe6 (39... Qxc2 40. exf7+ Kxf7 41. Qf3+ Qf5 42. Qxf5+ gxf5 43. Rh1
+$18 (43. Kxb5 {is clearly inferior} 43... Bxa1 44. Nxa1 44... Ke6 $15)) 40. Qf3
+Qc3+ (40... Rxc2 41. Qa8+ Kf7 42. Rf1+ Bf6 43. Rf3 $14) 41. Qxc3 Bxc3+ (41...
+Rxc3 42. Rc1 $16 (42. Kxb5 42... Rxb3+ 43. cxb3 43... Bxa1 $15)) 42. Kxb5 Bxa1
+43. Nxa1 43... h5 $17) 39... Kxf7 40. Qxg3 $11) 38... Bc3+ $3 $19 {
+Theme: Double Attack} 39. Qxc3 39... a5+ $1 {a fitting end to a beautiful game}
+40. Kxb5 (40. Kxa5 {A deflection} 40... Qxc3+ {A double attack}) 40... Qxc3 (
+40... Qxc3 41. Rg1 Rb8+ 42. Ka6 Rxb3 43. exf7+ Kxf7 44. Rxg3 Kg7 45. axb3 Qxc5
+46. Bxg6 46... hxg6 $19) 0-1
+
+[Event "Novgorod"]
+[Site "?"]
+[Date "1995.??.??"]
+[Round "?"]
+[White "Gulko, B."]
+[Black "Kramnik, V."]
+[Result "0-1"]
+[ECO "A29"]
+[WhiteElo "2595"]
+[BlackElo "2715"]
+[PlyCount "76"]
+[EventDate "1995.??.??"]
+
+1. c4 {A29: English Opening: Four Knights Variation with 4 g3} 1... e5 2. Nc3
+Nf6 3. Nf3 Nc6 4. g3 g6 5. d4 exd4 6. Nxd4 Bg7 7. Nxc6 dxc6 8. Qxd8+ Kxd8 9. e4
+Bg4 10. Be2 Bxe2 11. Kxe2 Re8 12. f3 {Secures g4} 12... Nd7 13. Bg5+ (13. Be3
+f5 14. exf5 14... Bd4 $11) 13... Kc8 $15 14. Rac1 a5 (14... f5 15. Rhd1 $15)
+15. Rhd1 (15. Rhe1 15... a4 $11) 15... a4 (15... f5 $5 $15 {
+should be investigated more closely}) 16. Rd2 Nf8 17. Be3 Ra5 18. a3 Ne6 19.
+Kf2 g5 (19... f5 20. exf5 Rxf5 21. Kg2 $11) 20. Rcd1 (20. g4 20... Rd8 $14)
+20... f5 $11 21. exf5 Bxc3 22. bxc3 {White threatens strongly fxe6} 22... Rxf5
+23. Rd7 h5 24. Rh7 24... g4 {Black gets more space} 25. f4 Ng5 26. Rg7 Ne4+ 27.
+Kf1 {With the idea Rdd7} 27... Nd6 28. Bb6 Rf7 29. Rxf7 29... Nxf7 {
+Black threatens cxb6} 30. Bd4 Nd6 31. c5 Nc4 32. Kf2 b5 (32... Nxa3 $6 33. Ra1
+Nb5 34. Rxa4 Nxd4 35. Rxd4 $11) 33. cxb6 cxb6 34. Bf6 b5 (34... Nxa3 $6 35. Ra1
+Nc4 36. Rxa4 $15) 35. Rd4 (35. Ra1 $5 35... Re3 $17) 35... Nxa3 36. Rd6 Kc7 37.
+Be5 $2 (37. Rd1 $19) 37... Nc4 38. Re6+ Kd7 (38... Kd7 39. Rh6 Nxe5 40. fxe5
+Rxe5 41. Rh7+ Kd6 42. Rh6+ Kc7 43. Rh7+ 43... Kb6 $19) 0-1
+
+[Event "Dos Hermanas"]
+[Site "Dos Hermanas"]
+[Date "1996.??.??"]
+[Round "8"]
+[White "Ivanchuk, V."]
+[Black "Kramnik, V."]
+[Result "0-1"]
+[ECO "B66"]
+[WhiteElo "2735"]
+[BlackElo "2775"]
+[PlyCount "64"]
+[EventDate "1996.??.??"]
+
+1. e4 {B66: Sicilian: Richter-Rauzer: 7...a6 8 0-0-0 h6} 1... c5 2. Nf3 Nc6 3.
+d4 cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bg5 e6 7. Qd2 a6 8. O-O-O h6 9. Be3 Be7 10. f4
+Nxd4 11. Bxd4 b5 12. Qe3 {White prepares e5} 12... Qc7 13. e5 dxe5 14. Bxe5 Ng4
+15. Qf3 Nxe5 16. Qxa8 Nd7 17. g3 Nb6 18. Qf3 Bb7 19. Ne4 {last book move} 19...
+f5 20. Qh5+ Kf8 21. Nf2 Bf6 22. Bd3 (22. Rg1 $5 {and White hangs on} 22... Qc5
+23. Bg2 Bxb2+ 24. Kxb2 Nc4+ 25. Ka1 Qxf2 26. Qg6 $11) 22... Na4 $17 (22... Bxh1
+$6 23. Rxh1 Na4 24. Nd1 $11) 23. Rhe1 Bxb2+ 24. Kb1 Bd5 (24... Qc8 25. Nh3 Bd5
+26. Bxb5 axb5 27. Rxd5 Nc3+ 28. Kxb2 Nxd5 29. Qf3 $15) 25. Bxb5 25... Bxa2+ {
+Demolition of pawn structure.} (25... axb5 26. Rxd5 {Annihilates a defender: d5
+} 26... Nc3+ 27. Kxb2 Nxd5 28. Rxe6 Qc3+ 29. Kb1 Qb4+ 30. Kc1 Qa3+ 31. Kd1 $16)
+26. Kxa2 {Threatening mate... how?} 26... axb5 27. Kb1 27... Qa5 {
+Do you see the mate threat?} 28. Nd3 $4 {
+terrible, but the game is lost in any case} (28. c3 Bxc3 29. Rd7 Qb4+ 30. Kc2
+Qb2+ 31. Kd1 Qb1+ 32. Ke2 Qxe1+ 33. Kf3 $15) 28... Ba3 $19 29. Ka2 (29. c4 {
+there is nothing better in the position} 29... bxc4 30. Nb2 $19) 29... Nc3+ 30.
+Kb3 Nd5 31. Ka2 {If White now only could play Rxe6...} 31... Bb4+ 32. Kb1 Bc3 (
+32... Bc3 33. Qe8+ Kxe8 34. Rxe6+ Kf7 35. Re7+ Kxe7 36. Re1+ Kd8 37. Nb2 Qa3
+38. Re8+ Rxe8 39. g4 Qxb2#) 0-1
+
+[Event "Dos Hermanas "]
+[Site "?"]
+[Date "1996.??.??"]
+[Round "6"]
+[White "Kasparov, G."]
+[Black "Kramnik, V."]
+[Result "0-1"]
+[ECO "D48"]
+[WhiteElo "2775"]
+[BlackElo "2775"]
+[PlyCount "70"]
+[EventDate "1996.??.??"]
+
+1. d4 {D48: Semi-Slav: Meran System: 7...b5 8 Bd3 a6} 1... d5 2. c4 c6 3. Nc3
+Nf6 4. Nf3 e6 5. e3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 Bb7 9. O-O a6 10. e4 c5
+11. d5 c4 12. Bc2 Qc7 13. Nd4 Nc5 14. b4 cxb3 15. axb3 b4 16. Na4 Ncxe4 17.
+Bxe4 Nxe4 18. dxe6 18... Bd6 {last book move} 19. exf7+ Qxf7 (19... Kxf7 $5 {
+should be considered} 20. Qh5+ 20... g6 $11) 20. f3 $16 20... Qh5 {
+Do you see the mate threat?} 21. g3 (21. fxe4 Qxh2+ 22. Kf2 O-O+ 23. Ke3 23...
+Qxg2 $19) 21... O-O (21... Nf6 $5 22. Ne6 Qd5 23. Nxg7+ 23... Kf7 $16) 22. fxe4
+$18 22... Qh3 23. Nf3 (23. Qe2 {and White is on the road to success} 23... Bxe4
+24. Bf4 Bxf4 25. Rxf4 (25. gxf4 Bd5 26. Rae1 26... Rae8 $11) 25... Rxf4 26.
+gxf4 $18) 23... Bxg3 $14 {Demolishes the pawn shield} 24. Nc5 (24. hxg3 Qxg3+)
+24... Rxf3 $17 {Eliminates the defender f3} 25. Rxf3 (25. Qxf3 25... Qxh2# {
+The nicest combinations are those leading to mate}) 25... Qxh2+ {
+Demolition of pawn structure} 26. Kf1 26... Bc6 {Threatening mate: Bb5} 27. Bg5
+(27. Be3 27... Bb5+ 28. Nd3 $17) 27... Bb5+ $19 28. Nd3 {Plans Qd2} 28... Re8
+29. Ra2 (29. Rc1 Qh1+ 30. Ke2 Rxe4+ 31. Kd2 Qg2+ 32. Rf2 Bxf2 33. Rc8+ Be8 34.
+Nxf2 Rd4+ 35. Ke2 Rxd1 36. Rxe8+ Kf7 37. Re7+ Kf8 38. Kxd1 Qxf2 39. Re1 Qf3+
+40. Re2 Qxb3+ 41. Kc1 Qc3+ 42. Kd1 Qd4+ 43. Bd2 $19) 29... Qh1+ (29... Bxd3+
+30. Rxd3 Qh1+ 31. Ke2 Qg2+ 32. Ke3 Rxe4#) 30. Ke2 $19 30... Rxe4+ 31. Kd2 Qg2+
+32. Kc1 Qxa2 33. Rxg3 Qa1+ 34. Kc2 Qc3+ 35. Kb1 Rd4 (35... Rd4 36. Qd2 Bxd3+ (
+36... Rxd3 $6 37. Qxc3 bxc3 38. Bf4 $19) 37. Ka2 Rd5 38. Qxc3 38... bxc3 $19)
+0-1
+
+[Event "Berlin "]
+[Site "?"]
+[Date "1996.??.??"]
+[Round "?"]
+[White "Gelfand, B."]
+[Black "Kramnik, V."]
+[Result "0-1"]
+[ECO "D45"]
+[WhiteElo "2665"]
+[BlackElo "2765"]
+[PlyCount "56"]
+[EventDate "1996.??.??"]
+
+1. d4 {D45: Semi-Slav: 5 e3} 1... d5 2. c4 c6 3. Nc3 Nf6 4. Nf3 e6 5. e3 Nbd7
+6. Qc2 Bd6 7. g4 Bb4 8. Bd2 Qe7 9. a3 Bxc3 10. Bxc3 b6 11. Bd3 Ba6 12. Qa4 dxc4
+13. Qxa6 cxd3 14. Qxd3 O-O 15. g5 Nd5 16. Bd2 f5 17. O-O-O c5 18. Kb1 18... b5
+{last book move} 19. Qxb5 19... Rab8 {Black is in command} 20. Qa5 Rb3 21. Ka2
+21... Rfb8 {Attacking the backward pawn on b2} 22. Rb1 (22. Bc1 c4 23. Qa4
+23... N7b6 $17) 22... e5 23. Rhc1 (23. Ka1 $5 $11) 23... Qe6 $15 24. Ka1 exd4
+25. Rxc5 $4 (25. Ne1 $15 {is just about the only chance}) 25... Nxc5 $19 26.
+Qxc5 (26. Nxd4 {praying for a miracle} 26... Qc8 27. Be1 $19) 26... Nc3 {
+Demolishes the pawn shield} 27. Nxd4 (27. bxc3 {Exploits the pin} 27... Rxb1# {
+A beautiful mate combination}) 27... Rxb2 $3 {Demolition of pawn structure} 28.
+Rxb2 {Decoy theme: b2} (28. Qf8+ {desperation} 28... Rxf8 29. Rxb2 $19 (29.
+Nxe6 $4 {greedy!} 29... Rxb1#)) 28... Qa2+ $5 {Theme: Double Attack} (28...
+Qa2+ 29. Rxa2 Rb1#) 0-1
+
+[Event "Supertorneo Las Palmas"]
+[Site "Las Palmas"]
+[Date "1996.??.??"]
+[Round "6"]
+[White "Kramnik, V."]
+[Black "Anand, V."]
+[Result "1-0"]
+[ECO "A30"]
+[WhiteElo "2765"]
+[BlackElo "2735"]
+[PlyCount "81"]
+[EventDate "1996.12.08"]
+[Source "ChessBase"]
+[SourceDate "1997.04.10"]
+
+1. Nf3 {A30: Symmetrical English: Double Fianchetto and Hedgehog} 1... Nf6 2.
+c4 b6 3. g3 Bb7 4. Bg2 e6 5. O-O Be7 6. Nc3 O-O 7. Re1 d5 8. cxd5 Nxd5 9. e4
+Nxc3 10. bxc3 c5 11. d4 Nd7 12. Bf4 cxd4 13. cxd4 Nf6 14. Ne5 Bb4 15. Re3 Rc8
+16. d5 exd5 17. exd5 {The passed pawn on d5 will become decisive later} 17...
+Bd6 18. Nc6 Bxc6 19. Bxd6 Ba4 20. Bxf8 Bxd1 21. Be7 21... Qc7 {last book move}
+22. Rxd1 Nd7 23. Bh3 23... h6 {Secures g5} 24. Bf5 b5 25. Bb4 Rd8 26. Re7 Qc4
+27. Rxd7 Rxd7 28. Bxd7 Qxb4 29. d6 Qa4 (29... Qa5 {
+doesn't get the bull off the ice} 30. Bxb5 $1 {Clearance to allow d6-d7} 30...
+Qxb5 $18) 30. Rd3 (30. Rc1 {and White can already relax} 30... g6 31. Bf5 31...
+Qxa2 $18) 30... Qe4 $4 (30... Kf8 $11 {
+this is the best bet to save the position}) 31. Bxb5 $18 31... Qe1+ 32. Kg2
+Qe4+ 33. Kg1 (33. Kf1 {it becomes clear that White will call all the shots}
+33... Qh1+ 34. Ke2 Qe4+ 35. Kd1 Qh1+ 36. Kc2 $18) 33... Qe1+ $11 34. Kg2 Qe4+
+35. Kf1 Qh1+ 36. Ke2 Qe4+ 37. Kf1 (37. Kd1 {makes sure everything is clear}
+37... Qh1+ 38. Kc2 $18) 37... Qh1+ $11 38. Ke2 Qe4+ 39. Kd1 Qg4+ (39... Qh1+ {
+cannot change destiny} 40. Kc2 Qa1 41. d7 Qxa2+ 42. Kd1 Qb1+ 43. Ke2 $18) 40.
+f3 Qh3 (40... Qb4 {desperation} 41. d7 Qxb5 42. d8=Q+ 42... Kh7 $18) 41. d7 (
+41. d7 Qf1+ 42. Kc2 Qe2+ 43. Kb3 Qe6+ 44. Ka3 $18) 1-0
+
+[Event "Amsterdam"]
+[Site "Amsterdam"]
+[Date "1996.??.??"]
+[Round "?"]
+[White "Kramnik, V."]
+[Black "Topalov, V."]
+[Result "1-0"]
+[ECO "A30"]
+[WhiteElo "2775"]
+[BlackElo "2700"]
+[PlyCount "71"]
+[EventDate "1996.??.??"]
+
+1. Nf3 {A30: Symmetrical English: Double Fianchetto and Hedgehog} 1... Nf6 2.
+c4 c5 3. Nc3 e6 4. g3 b6 5. Bg2 Bb7 6. O-O d6 7. b3 Nbd7 8. Bb2 Be7 9. d4 O-O
+10. d5 exd5 11. Nh4 g6 12. cxd5 Ne8 13. f4 Nc7 14. e4 b5 15. e5 f5 16. a4 (16.
+exd6 Bxd6 17. Re1 $15) 16... b4 $15 {Black gets more space} 17. Nb5 {
+Black now must not overlook the idea exd6} 17... Nxb5 18. axb5 Qb6 19. Re1 Qxb5
+(19... dxe5 20. fxe5 c4+ 21. Bd4 $17) 20. Bf1 (20. exd6 $5 {
+is worth consideration} 20... Bf6 21. Bxf6 Nxf6 22. Re7 $11) 20... Qb6 $15 21.
+Bc4 {The bishop likes it on c4} 21... Qd8 22. exd6 Bf6 23. Qd2 (23. Qe2 $11)
+23... Bxb2 (23... Nb6 $5 $15 {should be examined more closely}) 24. Qxb2 $14
+24... Qf6 25. Qf2 25... Nb6 {Attacks the isolani on d5} 26. Rad1 (26. Qxc5 Rfc8
+27. Qxb4 Nxc4 28. bxc4 Qd4+ 29. Kg2 Bxd5+ 30. Kh3 Bxc4 31. Qa3 $16) 26... Rfe8
+(26... Nxc4 $5 {looks like a viable alternative} 27. bxc4 27... Qxd6 $11) 27.
+Rxe8+ $16 27... Rxe8 28. Qxc5 Qc3 29. Ng2 29... Re2 $2 (29... Rf8 $18) 30. d7
+$1 {puts the final touch} 30... Nxd7 {Black threatens to counter with Rxg2} 31.
+Qb5 {Theme: Double Attack} 31... Rxg2+ (31... Rd2 {does not help much} 32. d6+
+Kh8 33. Rxd2 Qxd2 34. Qxb7 Qxd6 35. Qxa7 Qd1+ 36. Bf1 $18) 32. Kxg2 Qc2+ (32...
+Bc8 33. Qc6 Qc2+ 34. Kh3 34... Kg7 $18) 33. Be2 (33. Kh3 Qxd1 34. Qxb7 Nb6 35.
+Qb8+ Kg7 36. Qxa7+ Kh6 37. Qxb6 Qf3 38. Qxb4 Kg7 39. Qe7+ Kh6 40. Qf8+ Kh5 41.
+Qg7 Qg4+ 42. Kg2 Qh3+ 43. Kxh3 h6 44. Be2#) 33... Nb6 $2 (33... a6 34. Qc4 Qxc4
+35. bxc4 35... Nc5 $18) 34. Kf2 Kg7 (34... Qe4 {doesn't improve anything} 35.
+Bf3 Qc2+ 36. Kg1 $18) 35. d6 (35. Ra1 {secures victory} 35... Qe4 36. Rxa7 Qd4+
+37. Kf1 37... Kh6 $18) 35... Bc6 36. Qxb4 (36. Qxb4 Qb2 37. Rd3 $18) 1-0
+
+[Event "Wien"]
+[Site "Wien"]
+[Date "1996.??.??"]
+[Round "?"]
+[White "Kramnik, V."]
+[Black "Polgar, J."]
+[Result "1-0"]
+[ECO "E97"]
+[WhiteElo "2765"]
+[BlackElo "2665"]
+[PlyCount "87"]
+[EventDate "1996.??.??"]
+
+1. Nf3 {E97: King's Indian: Classical Main Line (6...e5 7 0-0 Nc6): 8 Be3 and
+8 d5 Ne7, not 9 Ne1} 1... Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. d4 O-O 6. Be2 e5
+7. O-O Nc6 8. d5 Ne7 9. b4 Nh5 10. Re1 f5 11. Ng5 Nf6 12. Bf3 Kh8 13. Bb2 a5
+14. b5 {White gets more space} 14... Rb8 15. Ne6 (15. exf5 Bxf5 16. Qd2 16...
+Qd7 $14) 15... Bxe6 $11 16. dxe6 Ne8 17. Qb3 c5 18. exf5 gxf5 19. Bh5 Nc7 20.
+Bf7 {The white bishop is well posted.} 20... Qc8 21. Nd5 Ncxd5 22. cxd5 22...
+f4 {Black wins space} (22... c4 23. Qf3 $11) 23. Bh5 {
+The bishop aims for Bf7-h5-f3-e4} (23. Rac1 23... Qc7 $11) 23... b6 24. Rad1
+Rf5 25. Bf3 Qg8 26. Be4 {A sound move} 26... Rg5 27. Rd3 Bf6 28. Rh3 Ng6 29.
+Qf3 Rb7 30. Rh5 Rxh5 31. Qxh5 Rg7 32. g3 {Controls h4} 32... Ne7 (32... a4 33.
+Kf1 $11) 33. Kh1 $14 33... Qf8 34. Rg1 Ng8 35. Qf3 Bg5 36. h4 Bf6 37. Rg2 Qe7 (
+37... fxg3 38. fxg3 Qa8 39. a4 $11) 38. Qh5 fxg3 39. fxg3 Qf8 (39... Qd8 $5 $11
+{is an interesting alternative}) 40. Rf2 $16 40... Qd8 $2 (40... Qe7 41. Rf3
+41... a4 $14) 41. g4 $18 41... Be7 (41... Qe7 42. g5 $18) 42. g5 {
+Threatening mate... how?} 42... c4 (42... Bf6 $18) 43. Rf7 Qe8 (43... Nf6 {
+no good, but what else?} 44. gxf6 Rg1+ 45. Kxg1 Qg8+ 46. Kh1 h6 47. Qxh6+ Qh7
+48. Qxh7#) 44. Qxh7+ $3 {Demolishes the pawn shield} (44. Qxh7+ Rxh7 45. Rxh7#)
+1-0
+
+[Event "Investbanka"]
+[Site "Belgrade"]
+[Date "1997.11.12"]
+[Round "2"]
+[White "Kramnik, Vladimir"]
+[Black "Anand, Viswanathan"]
+[Result "0-1"]
+[ECO "D43"]
+[WhiteElo "2770"]
+[BlackElo "2765"]
+[PlyCount "84"]
+[EventDate "1997.11.11"]
+[Source "ChessBase"]
+[SourceDate "1998.01.31"]
+
+1. Nf3 {D43: Semi-Slav: 5 Bg5 h6} 1... Nf6 2. c4 e6 3. Nc3 d5 4. d4 c6 5. Bg5
+h6 6. Bh4 dxc4 7. e4 g5 8. Bg3 b5 9. Be2 Bb7 10. e5 Nh5 11. a4 a6 12. Nxg5 Nxg3
+13. Nxf7 Kxf7 14. fxg3 Kg8 15. O-O Nd7 16. Bg4 Qe7 17. Ne4 17... Rh7 {
+last book move} 18. Nd6 {A classical outpost} 18... Rb8 19. b4 (19. axb5 {
+would keep White in the game} 19... cxb5 20. Nxb7 Rxb7 21. Rxa6 $14) 19... h5
+$17 20. Bh3 Bh6 21. Kh1 Bg5 (21... Nf8 22. Qxh5 Bd2 23. Qg4+ Qg7 24. Ne4 Qxg4
+25. Bxg4 $19) 22. Qc2 (22. axb5 cxb5 23. Nxb7 23... Rxb7 $17) 22... Rg7 (22...
+Nf8 $5 23. axb5 cxb5 24. Nxb7 Rxb7 25. Rxa6 $19) 23. Qe2 Ba8 (23... h4 24. axb5
+cxb5 25. Nxb7 Rxb7 26. Rxa6 $15) 24. Qxh5 $15 24... Rf8 25. Ne4 25... c5 {
+Black gets strong initiative} (25... Rxf1+ 26. Rxf1 Nf8 27. Nc5 $15) 26. Nxg5
+$14 {The isolani on e6 becomes a target} 26... Bd5 27. Nf3 cxb4 28. axb5 axb5
+29. Nh4 (29. Ra6 Nb8 30. Rd6 30... Qe8 $14) 29... Qg5 30. Rxf8+ Nxf8 31. Qe8
+Rf7 32. Nf3 (32. Qxb5 $5 32... b3 33. Rg1 $15) 32... Qg6 $17 {
+Black threatens b3} 33. Qxb5 (33. Rg1 $5 $17) 33... b3 $19 34. Rf1 Qd3 (34...
+Rb7 $5 35. Bxe6+ Qxe6 36. Qc5 $19) 35. Kg1 (35. Rg1 $17) 35... Qe3+ (35... Bxf3
+$6 {is no comparison} 36. gxf3 Rxf3 37. Rxf3 Qxf3 38. Qb6 Qd1+ 39. Kf2 Qc2+ 40.
+Kg1 Qb1+ 41. Kg2 $17) 36. Kh1 c3 (36... Bxf3 $6 {is clearly weaker} 37. gxf3
+Rxf3 38. Rg1 $17) 37. Bxe6 (37. Qa6 $19 {what else?}) 37... Bxe6 38. d5 38...
+Rxf3 $1 {Demolition of pawn structure} 39. gxf3 {Theme: Deflection from h3} (
+39. Rxf3 c2) 39... Bh3 40. Qc4 Bxf1 41. Qg4+ Kh7 42. e6 Ng6 (42... Ng6 43. e7
+Qe2 44. Qh5+ Kg7 45. e8=N+ Qxe8 46. g4 Bg2+ 47. Kxg2 Qe2+ 48. Kg3 Qe1+ 49. Kg2
+Nf4#) 0-1
+
+[Event "Dortmund "]
+[Site "?"]
+[Date "1997.??.??"]
+[Round "?"]
+[White "Kramnik, V."]
+[Black "Karpov, An"]
+[Result "1-0"]
+[ECO "A15"]
+[WhiteElo "2770"]
+[BlackElo "2745"]
+[PlyCount "77"]
+[EventDate "1997.??.??"]
+
+1. Nf3 {A15: English Opening: 1...Nf6} 1... Nf6 2. c4 b6 3. g3 Bb7 4. Bg2 e6 5.
+O-O Be7 6. Nc3 O-O 7. Re1 d5 8. cxd5 Nxd5 9. e4 Nxc3 10. bxc3 Nc6 11. d4 Na5
+12. h4 Re8 13. h5 h6 14. Ne5 Bd6 15. Bf4 Qe7 16. Qg4 Kh8 17. Nd3 {
+White plans e5} 17... Rad8 18. Rad1 Bc6 19. e5 19... Ba3 {last book move} 20.
+Bxc6 Nxc6 21. Re4 Qd7 22. Qf3 Bf8 23. Be3 Na5 24. g4 Nc4 25. g5 Nxe3 26. fxe3
+hxg5 27. Rg4 Qe7 (27... Qa4 28. Nf2 $11) 28. Rf1 $11 28... Rd7 29. Qg3 (29. Nf2
+f5 30. exf6 30... gxf6 $11) 29... f6 (29... Qa3 $5 $17) 30. e4 Qa3 31. exf6
+Qxc3 32. f7 (32. Ne5 Qxg3+ 33. Rxg3 Rxd4 34. Nf7+ Kh7 35. Nxg5+ 35... Kh6 $14)
+32... Rc8 (32... Qxd4+ 33. Kh2 Red8 34. Ne5 Qb2+ 35. Kh3 $11) 33. d5 exd5 34.
+e5 34... c5 $4 {gives the opponent counterplay} (34... Be7 35. Rxg5 Bxg5 36.
+f8=Q+ Rxf8 37. Rxf8+ Kh7 38. Qh3 Be3+ 39. Qxe3 Qa1+ 40. Kg2 $18) 35. Rf3 $4 {
+not a good decision, because now the opponent is right back in the game} (35.
+Rxg5 Qd4+ 36. Kh2 $18) 35... c4 $15 {Black wins space} 36. Nf2 (36. e6 Rxf7 37.
+exf7 37... cxd3 $11) 36... Qe1+ (36... Qa1+ 37. Kg2 Rdc7 38. Rxg5 $18) 37. Kg2
+$15 37... Be7 $4 {weakening the position} (37... Rdc7 $15 {was possible}) 38.
+Rxg5 $18 38... Bxg5 {A deflection} (38... Rdd8 39. Rxg7 39... Qd2 $18) 39.
+f8=Q+ {Theme: Double Attack. . . . . . . .} (39. f8=Q+ Rxf8 40. Rxf8+ Kh7 41.
+Qxg5 Qb1 42. e6 Re7 43. Qxe7 Kh6 44. Rh8+ Qh7 45. Ng4+ Kxh5 46. Qxg7 Qxh8 47.
+Nf6+ Kh4 48. Qg3#) 1-0
+
+[Event "Tilburg Fontys"]
+[Site "Tilburg"]
+[Date "1997.10.14"]
+[Round "8"]
+[White "Kramnik, Vladimir"]
+[Black "Leko, Peter"]
+[Result "1/2-1/2"]
+[ECO "A30"]
+[WhiteElo "2770"]
+[BlackElo "2635"]
+[PlyCount "107"]
+[EventDate "1997.09.27"]
+[Source "ChessBase"]
+[SourceDate "1997.11.23"]
+
+1. Nf3 {A30: Symmetrical English: Double Fianchetto and Hedgehog} 1... Nf6 2.
+c4 c5 3. Nc3 e6 4. g3 b6 5. Bg2 Bb7 6. O-O Be7 7. Re1 d6 8. e4 a6 9. d4 cxd4
+10. Nxd4 Qc7 11. f4 O-O 12. Be3 Nc6 13. Rc1 Nxd4 14. Bxd4 Rac8 15. b3 Rfe8 16.
+a4 Nd7 17. Rc2 Bf8 18. Rd2 Nb8 19. Bf2 Bc6 20. g4 Qb7 21. Bf1 21... Nd7 {
+last book move} 22. g5 {This push gains space} 22... Nc5 {
+The pressure on e4 grows} 23. Bg2 b5 24. axb5 axb5 25. b4 Na6 26. cxb5 26...
+Bxb5 {The passed pawn on b4 will quickly become a dangerous weapon} 27. Nxb5
+Qxb5 28. Bf1 Qb7 29. b5 Nc5 30. Qf3 Red8 31. f5 {White gains space} 31... d5
+32. exd5 exd5 (32... Rxd5 33. Rxd5 exd5 34. Bxc5 34... Rxc5 $11) 33. Bd4 (33.
+Qd1 $5 $14 {is worthy of consideration}) 33... Ne4 $17 {A beautiful square!}
+34. Rg2 Bc5 35. Qe3 Bxd4 36. Qxd4 36... Nd6 {
+Exerts pressure on the isolated pawn} 37. g6 Nxf5 38. gxh7+ Kh8 39. Qf4 g6 (
+39... Qa7+ 40. Kh1 g6 41. Bd3 $15) 40. Bd3 $11 40... Qb6+ 41. Rf2 Qf6 42. Re5
+Rc1+ 43. Kg2 {With the decisive threat Rxf5} 43... Nh4+ (43... Qg7 44. Qxc1
+Qxe5 45. Bxf5 gxf5 46. Qg5 $11) 44. Kh3 $14 {Threatening mate... how?} 44...
+Qxf4 45. Rxf4 Rc3 46. Kxh4 {White threatens Rd4} (46. Rxf7 $4 {
+the pawn of course cannot be captured} 46... Nf5 47. Rf6 Rxd3+ 48. Kg4 48...
+Rd2 $19) 46... Rxd3 47. Rxf7 Rb3 (47... d4 48. Rfe7 Rf3 49. b6 $14) 48. Rb7 d4
+49. Kg5 d3 50. Kxg6 (50. Rbe7 50... Rb2 $14) 50... Rxb5 51. Rbxb5 {
+Threatening mate: Rb6} (51. Rexb5 d2) 51... d2 52. Rbd5 d1=Q 53. Rxd1 53...
+Rd6+ {A double attack} 54. Rxd6 1/2-1/2
+
+[Event "Linares"]
+[Site "?"]
+[Date "1997.??.??"]
+[Round "?"]
+[White "Topalov, V."]
+[Black "Kramnik, V."]
+[Result "0-1"]
+[ECO "D43"]
+[WhiteElo "2725"]
+[BlackElo "2740"]
+[PlyCount "66"]
+[EventDate "1997.??.??"]
+
+1. d4 {D43: Semi-Slav: 5 Bg5 h6} 1... d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. g3
+Nbd7 6. Bg2 dxc4 7. a4 Be7 8. O-O O-O 9. e4 e5 10. dxe5 10... Ng4 {
+Manoeuvre Nf6-g4-e5-d3} 11. Bf4 Qa5 12. e6 fxe6 13. Qe2 Nge5 14. Nd4 14... Nd3
+{Menacing} (14... Nb6 15. Bh3 $15) 15. Nxe6 Rf6 (15... Rf7 16. Qc2 $15) 16. Bc7
+(16. Nc7 $5 {should not be overlooked} 16... Rb8 17. N7d5 cxd5 18. Bxb8 Nxb8
+19. Nxd5 $11) 16... Qb4 $17 {Threatens Rxe6} 17. Nd4 Bc5 18. Nc2 (18. Nf3 Qxb2
+19. Qxb2 19... Nxb2 $17) 18... Qxb2 19. Nd1 Qb3 20. Nde3 N7e5 21. h3 Be6 22.
+Kh2 Rh6 23. Rab1 Bg4 24. Nxg4 Nxg4+ 25. Qxg4 {
+White threatens to counter with Rxb3} 25... Qxc2 26. Qg5 $2 (26. Bf4 26... Nxf4
+27. Qxf4 $17) 26... Nxf2 $19 27. Rxf2 (27. h4 b6 28. a5 28... Rg6 $19) 27...
+Qxf2 (27... Bxf2 {makes it even easier for Black} 28. Qc1 Qxc1 29. Rxc1 $19)
+28. Rf1 (28. Be5 Rg6 29. Qc1 29... Qf7 $19) 28... Qd4 (28... Rg6 $5 {
+keeps an even firmer grip} 29. Qe5 Qe3 30. Bb8 $19) 29. Be5 Qd7 30. Qc1 $6 {
+puts up no strong fight} (30. Bxg7 Bg1+ 31. Rxg1 31... Qxg7 $19) 30... Qe6 (
+30... b5 31. Bf4 Rg6 32. e5 $19) 31. Bxg7 {Demolishes the pawn shield} 31...
+Kxg7 {Decoy theme: g7} 32. Qg5+ {Theme: Double Attack} 32... Rg6 33. Qxc5 33...
+Qd6 {Threatening mate... how?} (33... Qd6 34. Qe3 34... Rd8 $19) 0-1
+
+[Event "Linares"]
+[Site "Linares"]
+[Date "1998.??.??"]
+[Round "8"]
+[White "Ivanchuk, Vassily"]
+[Black "Kramnik, Vladimir"]
+[Result "1/2-1/2"]
+[ECO "B57"]
+[WhiteElo "2740"]
+[BlackElo "2790"]
+[PlyCount "148"]
+[EventDate "1998.02.22"]
+[Source "ChessBase"]
+[SourceDate "1998.06.15"]
+
+1. e4 {B57: Classical Sicilian: Sozin with 6...Qb6} 1... c5 2. Nf3 Nc6 3. d4
+cxd4 4. Nxd4 Nf6 5. Nc3 d6 6. Bc4 Qb6 7. Ndb5 a6 8. Be3 Qd8 9. Nd4 Ng4 10. Nxc6
+bxc6 11. Qf3 Ne5 12. Qe2 e6 13. O-O-O Be7 14. Bd4 Qc7 15. Bxe5 dxe5 16. Na4 {
+last book move} 16... O-O 17. Rd3 Qa5 18. b3 Rb8 19. Qd2 Qxd2+ 20. Kxd2 g6 (
+20... f5 21. exf5 Rxf5 22. Ke2 $11) 21. Rd1 Kg7 (21... f5 22. Nc3 $11) 22. Ke2
+a5 23. Rc3 Bb4 24. Rcd3 Be7 25. g3 {Consolidates h4} 25... h5 26. h4 f5 27. Rc3
+Bb4 28. Re3 Kf6 29. f4 exf4 30. e5+ 30... Kf7 {
+If Black now would get fxe3 in, he might survive} 31. gxf4 Be7 32. Red3 Bxh4 (
+32... Rg8 33. Rh1 $14) 33. Nc5 (33. Rd6 Bg3 34. Kf3 34... h4 $16) 33... Be7 $14
+34. Rd6 {Increases the pressure on e6} (34. Nd7 Bxd7 35. Rxd7 35... Rfd8 $11)
+34... Bxd6 35. exd6 Rd8 (35... Bb7 36. Nxe6 Rh8 37. Nc5+ Ke8 38. Kf2 $16) 36.
+d7 $14 {White threatens.... what?} 36... Ke7 37. dxc8=N+ Rbxc8 38. Rxd8 (38.
+Rg1 38... Kf6 $14) 38... Rxd8 39. Nxe6 ({Weaker is} 39. Bxe6 39... h4 40. Bc4
+40... h3 $17) 39... Rh8 40. Ng5 h4 41. Nh3 Kf6 42. Kf2 Rd8 43. Bd3 a4 44. Ng5
+a3 (44... axb3 45. axb3 Rd4 46. Ke3 $14) 45. Nf3 $16 45... c5 (45... Rh8 46.
+Kg2 $16) 46. Ng5 (46. Nxh4 $5 46... Rh8 47. Nf3 $16) 46... Rd4 $14 47. Kf3 Rd7
+48. Ke3 Rd8 49. Nf3 Re8+ 50. Kf2 50... Rd8 $2 (50... h3 $5 $11 {
+should be considered}) 51. Nxh4 $16 51... c4 (51... Rh8 $5 52. Nf3 52... Rh1
+$16) 52. bxc4 $18 52... Rb8 53. c5 Rb2 (53... Rc8 54. Nf3 Rxc5 55. Nd4 $18) 54.
+c6 (54. Kf3 Rxa2 55. c6 Ke7 56. Nxg6+ 56... Kd8 $11) 54... Ke7 55. Nxg6+ Kd6
+56. Ne5 (56. Nh4 Rxa2 57. Nxf5+ (57. Bxf5 57... Rxc2+ 58. Bxc2 58... a2 $15)
+57... Kxc6 58. Nd4+ Kd5 59. Nb5 $11) 56... Rxa2 $11 57. Nc4+ Kc7 58. Kg3 Ra1
+59. Nxa3 (59. Bxf5 $4 {the pawn is something White will choke on} 59... a2 60.
+Kf2 60... Rd1 $19) 59... Rxa3 60. Kh4 Kxc6 61. Kg5 {
+The white king gets dangerous} 61... Ra5 62. Bxf5 Kd6 63. Kg4 Ke7 64. Bd3 Rc5
+65. Kf3 Kd6 66. Ke4 Rh5 67. c4 Rh4 68. Kf5 {White activates its king} 68... Kc5
+69. Ke5 Rh3 70. Ke4 Rh4 71. Be2 Rh2 72. Kf3 (72. Bd3 72... Rh8 $11) 72... Kd4
+$15 {Active king in the endgame} 73. Bf1 Rh1 74. Kf2 Rh8 1/2-1/2
+
+[Event "Dortmund SPARKASSE"]
+[Site "Alemania"]
+[Date "1999.07.15"]
+[Round "5"]
+[White "Kramnik, Vladimir"]
+[Black "Topalov, Vesselin"]
+[Result "1-0"]
+[ECO "D15"]
+[PlyCount "79"]
+[EventDate "1999.??.??"]
+
+1. d4 {D15: Slav Defence: 4 Nc3 a6 and gambit lines after 4 Nc3 dxc4} 1... Nf6
+2. Nf3 d5 3. c4 c6 4. Nc3 a6 5. c5 Bf5 6. Bf4 Nbd7 7. e3 e6 8. Be2 Be7 9. Nd2
+Bg6 10. b4 Qc8 11. O-O Bd8 12. Rc1 Bc7 13. Bxc7 Qxc7 14. f4 Ng8 15. e4 Ne7 16.
+f5 16... exf5 {last book move.} 17. exd5 cxd5 18. b5 O-O 19. b6 (19. bxa6 bxa6
+20. Re1 20... Nf6 $11) 19... Qd8 $15 20. Nb3 Nf6 21. Na5 Rb8 22. a4 22... Ne4 {
+Black can be proud of that piece} 23. Na2 f6 24. Nb4 Be8 25. Qc2 25... g6 {
+Consolidates h5} 26. Rb1 Rf7 27. Nxb7 (27. Ra1 $5 $11) 27... Rxb7 $17 28. a5
+Nc6 (28... Bc6 29. Bxa6 Rb8 30. Be2 $17) 29. Nxc6 $15 29... Bxc6 30. Bxa6 Rb8
+31. Bb5 Qc8 32. Bxc6 Qxc6 33. a6 {Black has to watch this pawn} 33... Kg7 34.
+Rb4 Nd6 (34... Re7 $11 {and Black can hope to survive}) 35. Qa4 $1 $16 {
+White stays in the lead} 35... Qxa4 36. Rxa4 Nc8 37. Rb4 37... Na7 $4 {
+the final mistake, not that it matters anymore} (37... Rf8 $16) 38. bxa7 $18
+38... Ra8 39. c6 Raxa7 40. Rc1 (40. Rc1 Rxa6 41. c7 $18) 1-0
+
+[Event "FIDE Wch"]
+[Site "Las Vegas"]
+[Date "1999.08.11"]
+[Round "4.4"]
+[White "Topalov, Veselin"]
+[Black "Kramnik, Vladimir"]
+[Result "0-1"]
+[ECO "A32"]
+[PlyCount "80"]
+[EventDate "1999.07.??"]
+
+1. c4 {A32: Symmetrical English: 2 Nf3 Nf6 3 d4 cxd4 4 Nxd4 e6} 1... c5 2. Nf3
+Nf6 3. d4 cxd4 4. Nxd4 e6 5. g3 Bb4+ 6. Bd2 Be7 7. Bg2 Nc6 8. Bf4 O-O 9. Nc3 a6
+10. O-O Nxd4 11. Qxd4 d6 12. Qd3 Qc7 13. Rfd1 {Can d6 get defended?} 13... Rd8
+14. Rac1 Nh5 15. Bd2 {last book move} 15... Rb8 16. Ne4 Nf6 (16... f5 17. Qf3
+Nf6 18. Nxf6+ Bxf6 19. Bc3 Bxc3 20. Rxc3 $14) 17. Nxf6+ $14 17... Bxf6 18. Bf4
+e5 19. Be3 Be6 20. b3 20... h6 {Secures g5} 21. a4 21... b6 {Consolidates c5}
+22. Rc2 Be7 23. Bd5 Qd7 24. Bxe6 Qxe6 25. f3 b5 (25... Qh3 $5 $11) 26. cxb5 $14
+26... axb5 27. a5 d5 28. Bb6 e4 29. Qxb5 Rd6 30. fxe4 (30. Qa4 30... d4 $16)
+30... Bd8 $14 31. exd5 {The passed pawn on d5 quickly leads to threats} (31.
+Rxd5 Bxb6+ 32. axb6 32... Rdxb6 $14) 31... Bxb6+ $11 32. axb6 {
+The passed pawn on b6 will quickly become a dangerous weapon} 32... Qe3+ 33.
+Kf1 Rf6+ (33... Qe4 34. Rd3 Qh1+ 35. Kf2 Rdxb6 36. Qd7 Rf6+ 37. Ke3 $14) 34.
+Ke1 $11 34... Rfxb6 (34... Qf2+ $5 {is an interesting idea} 35. Kd2 35... Rfxb6
+$11) 35. Qc5 $14 {White plans d6} 35... Qe4 36. Kf2 Rxb3 37. d6 {
+Don't underestimate that pawn} 37... R8b5 $4 {
+strolling merrily down the path to disaster} (37... R3b7 $16) 38. Rc4 $18 38...
+Rf3+ (38... Qg6 {cannot change what is in store for ?} 39. d7 Rxc5 40. d8=Q+
+Kh7 41. Rxc5 41... Rb2 $18) 39. Kg1 (39. Ke1 {
+and the rest is a matter of technique} 39... Rc3 40. Rxe4 Rcxc5 41. d7 $18)
+39... Qxe2 $19 40. Qd4 (40. Qc8+ {the last chance for counterplay} 40... Kh7
+41. Rdc1 $19) 40... Rb2 (40... Rb2 41. Rc8+ Kh7 42. Rc2 Rxc2 43. Qe4+ Qxe4 44.
+g4 Qxg4+ 45. Kh1 Qg2#) 0-1
+
+[Event "Beograd "]
+[Site "?"]
+[Date "1999.??.??"]
+[Round "?"]
+[White "Shirov, Alexei"]
+[Black "Kramnik, Vladimir"]
+[Result "1-0"]
+[ECO "C42"]
+[WhiteElo "2726"]
+[BlackElo "2751"]
+[PlyCount "127"]
+[EventDate "1999.??.??"]
+[SourceDate "1999.11.03"]
+
+1. e4 {C42: Petroff Defence: 3 Nxe5 and unusual White 3rd moves} 1... e5 2. Nf3
+Nf6 3. Nxe5 d6 4. Nf3 Nxe4 5. d4 d5 6. Bd3 Nc6 7. O-O Be7 8. Re1 Bg4 9. c3 f5
+10. Qb3 O-O 11. Nbd2 Na5 12. Qa4 Nc6 13. Bb5 Bh4 (13... Bxf3 14. Nxf3 Qd6 15.
+Bxc6 Qxc6 16. Qxc6 bxc6 17. Ne5 $16) 14. g3 $16 14... Bf6 15. Bxc6 bxc6 16.
+Qxc6 Re8 17. Ne5 {With the idea Nxe4} 17... Bxe5 18. dxe5 Ng5 (18... Rxe5 $5
+19. Nxe4 19... fxe4 $16) 19. f4 $18 19... Re6 20. Qc5 Ne4 21. Nxe4 dxe4 22. Be3
+a6 23. Qc4 Qd7 24. Rac1 Rd8 25. Rc2 Qf7 26. Rd2 {Threatening mate... how?}
+26... Rxd2 27. Bxd2 Rb6 28. Qxf7+ Kxf7 29. b4 Rc6 30. Kf2 Rh6 31. h4 Rc6 32.
+Ke3 Bh5 33. Kd4 Ke7 34. c4 Bf7 35. Rc1 Rb6 36. Kc5 Be8 37. Be3 Rc6+ 38. Kd5 Rg6
+39. Bc5+ Kd7 40. Rc3 (40. Bf2 Bf7+ 41. Kd4 41... Rb6 $16) 40... Bf7+ 41. Kd4 h6
+42. a4 Rg4 43. b5 axb5 44. a5 (44. cxb5 g5 45. hxg5 hxg5 46. fxg5 e3+ 47. Kxe3
+Rxg3+ 48. Kd2 48... Rxg5 $16) 44... e3 (44... bxc4 $5 {is worth consideration}
+45. a6 45... Kc8 $14) 45. Rxe3 $16 45... g5 (45... bxc4 $4 {
+A poison bait which should not be taken} 46. e6+ $1 {Theme: Double Attack}
+46... Bxe6 47. a6 $18) (45... Bxc4 $4 {the pawn is indigestible} 46. e6+ $1 {
+Theme: Clearance for e3-e6} 46... Bxe6 47. a6 $18) 46. e6+ Bxe6 47. cxb5 gxf4
+48. gxf4 Rxf4+ (48... Rxh4 $2 {would be great except for} 49. Ke5 Bc4 50. a6
+$18) 49. Ke5 Rc4 50. Rd3+ Kc8 51. Kxe6 Rxc5 52. Rd5 {
+Do you see the mate threat?} 52... Rc4 53. Rxf5 Re4+ 54. Kd5 {
+Threatening mate: Kxe4} 54... Rxh4 55. a6 55... Ra4 $2 (55... Kb8 56. Rf8+ Ka7
+57. Rc8 c6+ 58. bxc6 $18 (58. Rxc6 58... Rh5+ 59. Kc4 Rh4+ 60. Kc5 Rh5+ 61. Kb4
+Rh1 62. Rc7+ Kb8 63. Rb7+ 63... Kc8 $18)) 56. Rf8+ Kd7 57. Rf7+ (57. b6 {
+and White can already relax} 57... c6+ 58. Ke5 Ra5+ 59. Kf6 Rxa6 60. b7 $18)
+57... Kc8 58. Rf8+ $4 {White has let it slip away} (58. Kc5 Ra1 59. Rf8+ Kd7
+60. b6 cxb6+ 61. Kxb6 $18) 58... Kd7 59. Ra8 (59. b6 {
+and the rest is a matter of technique} 59... c6+ 60. Ke5 Ra5+ 61. Kf6 61...
+Rxa6 $18) 59... Ra1 60. a7 Rd1+ 61. Ke4 Re1+ 62. Kf3 Ra1 63. b6 $1 {
+Demolishes the pawn shield} 63... cxb6 64. Rh8 (64. Rh8 b5 65. a8=Q Rxa8 66.
+Rxa8 $18) 1-0
+
+[Event "SuperGM"]
+[Site "Dortmund GER"]
+[Date "2000.07.12"]
+[Round "5"]
+[White "Kramnik, V."]
+[Black "DEEP JUNIOR 6"]
+[Result "1-0"]
+[ECO "D00"]
+[WhiteElo "2770"]
+[PlyCount "65"]
+[EventDate "2000.07.07"]
+
+1. d4 {D00: 1 d4 d5: Unusual lines} 1... d5 2. e3 Nf6 3. Bd3 e6 4. f4 Be7 5.
+Nf3 c5 6. c3 O-O 7. Nbd2 Ng4 8. Qe2 c4 9. Bc2 f5 10. Rg1 Nc6 11. h3 Nf6 12. g4
+12... Ne4 {A beautiful square!} 13. Qg2 g6 14. Qh2 Kh8 15. h4 Nxd2 16. Bxd2
+fxg4 17. Ng5 Qe8 (17... Kg7 18. Rxg4 18... e5 $15) 18. h5 $14 {
+Theme: Clearance for g4-h4. The mate threat is hxg6} 18... gxh5 19. Rxg4 Rf6 (
+19... hxg4 {Exploits the pin} 20. Qxh7#) 20. Rh4 Rh6 21. O-O-O a5 (21... b5 22.
+Rh1 $16) 22. Rh1 $18 22... b5 23. Bd1 Ra7 24. Bxh5 Qf8 25. e4 Bd8 26. f5 (26.
+exd5 exd5 27. Qg2 Bf5 28. Qxd5 28... Rb7 $18) 26... b4 27. Bg6 (27. fxe6 $6
+27... bxc3 28. bxc3 28... Bxe6 $14) 27... Rxh4 28. Qxh4 bxc3 29. bxc3 29... Bf6
+$4 {but even a better move would not have saved the game} (29... Qa3+ 30. Kd1
+Qxa2 31. Qxh7+ Rxh7 32. Rxh7+ Kg8 33. Bf7+ Kf8 34. Nxe6+ Ke7 35. Bg6+ Kd6 36.
+Bf4+ Ne5 37. dxe5+ Kc6 38. Be8+ Bd7 39. Bxd7+ Kb6 40. Be3+ Kb7 41. Nxd8+ Kb8
+42. Nc6+ Ka8 43. Rh8+ Kb7 44. Rb8+ 44... Kc7 $18) 30. Qxh7+ $1 {
+Demolishes the pawn shield} 30... Rxh7 31. Rxh7+ Kg8 32. Bf7+ Qxf7 33. Rxf7 (
+33. Rxf7 Bxg5 34. Rc7 Bxd2+ 35. Kxd2 $18) (33. Nxf7 $2 33... Kxh7 34. e5 34...
+Be7 $19) 1-0
+
+[Event "Braingames WCC"]
+[Site "London ENG"]
+[Date "2000.10.12"]
+[Round "3"]
+[White "Kasparov, G."]
+[Black "Kramnik, V."]
+[Result "1/2-1/2"]
+[ECO "C67"]
+[WhiteElo "2849"]
+[BlackElo "2770"]
+[PlyCount "106"]
+[EventDate "2000.10.08"]
+
+1. e4 {C67: Ruy Lopez: Berlin Defence: 4 0-0 Nxe4} 1... e5 2. Nf3 Nc6 3. Bb5
+Nf6 4. O-O Nxe4 5. d4 Nd6 6. Bxc6 dxc6 7. dxe5 Nf5 8. Qxd8+ Kxd8 9. Nc3 Bd7 10.
+b3 h6 11. Bb2 Kc8 12. Rad1 b6 13. Ne2 c5 14. c4 Bc6 15. Nf4 Kb7 (15... Bxf3 16.
+gxf3 Be7 17. Rfe1 $11) 16. Nd5 $14 16... Ne7 17. Rfe1 Rg8 18. Nf4 g5 19. Nh5
+Rg6 20. Nf6 (20. Rd3 20... Re6 $14) 20... Bg7 $11 21. Rd3 Bxf3 22. Rxf3 Bxf6
+23. exf6 Nc6 24. Rd3 Rf8 25. Re4 Kc8 26. f4 gxf4 27. Rxf4 Re8 28. Bc3 Re2 (
+28... Nb4 29. Rd2 $11) 29. Rf2 $14 29... Re4 30. Rh3 a5 31. Rh5 a4 32. bxa4
+Rxc4 33. Bd2 Rxa4 34. Rxh6 Rg8 (34... Rxh6 35. Bxh6 Re4 36. Kf1 $11) 35. Rh7
+Rxa2 36. Rxf7 Ne5 37. Rg7 Rf8 38. h3 {Consolidates g4} (38. Bg5 Rxf2 39. Kxf2
+Ng4+ 40. Ke2 40... Nxf6 $11 (40... Nxh2 $2 {doesn't work because of} 41. Bf4
+Rxf6 42. Bxh2 $18)) 38... c4 (38... Nd3 $5 39. f7 39... Kd7 $15 (39... Nxf2 40.
+Rg8 Kd7 41. Rxf8 $18)) 39. Re7 Nd3 40. f7 Nxf2 41. Re8+ Kd7 42. Rxf8 Ke7 (42...
+Rxd2 $4 {Black cannot capture the bishop} 43. Re8 Rd6 44. f8=Q $18 (44. Kxf2 {
+is a weaker possibility} 44... Rf6+ 45. Ke3 45... Rxf7 $17)) 43. Rc8 {
+Threatening mate: f8Q} 43... Kxf7 44. Rxc7+ Ke6 45. Be3 Nd1 46. Bxb6 c3 47. h4
+(47. Kf1 47... Rc2 $16) 47... Ra6 (47... c2 48. Kh2 $14) 48. Bd4 $16 48... Ra4
+49. Bxc3 Nxc3 (49... Rxh4 50. Kf1 $16) 50. Rxc3 Rxh4 51. Rf3 Rh5 52. Kf2 Rg5
+53. Rf8 Ke5 1/2-1/2
+
+[Event "SuperGM"]
+[Site "Dortmund GER"]
+[Date "2000.07.15"]
+[Round "8"]
+[White "Kramnik, V."]
+[Black "Huebner, R."]
+[Result "1-0"]
+[ECO "D27"]
+[WhiteElo "2770"]
+[BlackElo "2615"]
+[PlyCount "53"]
+[EventDate "2000.07.07"]
+
+1. d4 {D27: Queen's Gambit Accepted: Classical main line: 7 e4!? and 7 a4} 1...
+d5 2. Nf3 Nf6 3. c4 dxc4 4. e3 e6 5. Bxc4 c5 6. O-O a6 7. Bb3 cxd4 8. exd4 Nc6
+9. Nc3 Be7 10. Re1 O-O 11. h4 Na5 12. Bc2 b5 13. Qd3 Bb7 14. h5 Bxf3 15. Qxf3
+Qxd4 16. Bf4 (16. h6 16... Nc4 $11) 16... b4 17. Rad1 Qc4 18. Bd3 Qc6 19. Ne4
+Nd5 20. Be5 f5 (20... f6 21. Bg3 f5 22. Nd2 $11) 21. Qg3 {
+Do you see the mate threat?} 21... Rf7 22. Nd2 Nb7 23. Nf3 Nc5 24. Nd4 Qb6 (
+24... Qc8 $5 $14 {is an interesting idea}) 25. Nxf5 $16 25... exf5 $2 (25...
+Rxf5 26. Bxf5) 26. Bc4 $18 {Discovered attack} 26... Nf6 $4 {
+leading to a quick end} (26... Ne6 27. Bxd5 27... Rd8 $18) 27. Bc7 (27. Bc7 f4
+28. Bxf7+ Kh8 29. Qxf4 $18) 1-0
+
+[Event "Magistral"]
+[Site "Linares"]
+[Date "2000.??.??"]
+[Round "2.3"]
+[White "Kramnik, Vladimir"]
+[Black "Kasparov, Gary"]
+[Result "1/2-1/2"]
+[ECO "A30"]
+[PlyCount "82"]
+[EventDate "2000.02.28"]
+
+1. Nf3 {A30: Symmetrical English: Double Fianchetto and Hedgehog} 1... Nf6 2.
+c4 c5 3. g3 d5 4. d4 dxc4 5. Qa4+ Bd7 6. Qxc4 Bc6 7. dxc5 Bd5 8. Qa4+ Bc6 9.
+Qc4 Bd5 10. Qc2 e6 11. Bg2 Be4 12. Qc4 Bd5 13. Qh4 Bxc5 14. Nc3 Bc6 15. O-O Be7
+16. Rd1 Qa5 (16... Qb6 17. e3 $14) 17. Bd2 Nbd7 18. g4 (18. Nd4 Bxg2 19. Kxg2
+19... h5 $14) 18... h6 $14 {Controls g5} 19. Qg3 Qa6 20. h4 Qc4 21. Bf4 Qb4 22.
+a3 (22. Rd2 h5 23. g5 Nd5 24. Nxd5 24... exd5 $16) 22... Qxb2 $11 23. Nd4 {
+White threatens Rdb1} 23... g5 24. Nxc6 (24. hxg5 hxg5 25. Bxg5 Bxg2 26. Kxg2
+26... Qb6 $16) 24... gxf4 $11 25. Qd3 {With the idea Nxe7} 25... bxc6 26. Bxc6
+26... O-O {Black threatens strongly Ne5} 27. Bxa8 Ne5 (27... Rxa8 28. Rdb1 Ne5
+29. Rxb2 29... Nxd3 $11) 28. Qd4 $11 28... Rxa8 29. Qxe5 Rc8 30. Rac1 30... Nd5
+$4 {Black loses the upper hand} (30... Rc5 {and Black can hope to live} 31. Qd4
+31... Nxg4 $15) 31. Nxd5 $16 {The mate threat is Rxc8} 31... Qxe5 {
+If Black now would get Bc5 in, he might survive} 32. Nxe7+ 32... Kg7 {
+Plans Rxc1} 33. Rxc8 Qxe2 34. Rg8+ 34... Kf6 {With the decisive threat Qxd1}
+35. Rd7 Qe1+ 36. Kg2 Qe4+ 37. Kh2 Qc2 38. Kg2 Qe4+ 39. Kh2 Qc2 40. g5+ hxg5 41.
+Rxg5 Qxf2+ 1/2-1/2
+
+[Event "Corus"]
+[Site "Wijk aan Zee"]
+[Date "2001.01.27"]
+[Round "12"]
+[White "Shirov, Alexei"]
+[Black "Kramnik, Vladimir"]
+[Result "0-1"]
+[ECO "B12"]
+[WhiteElo "2718"]
+[BlackElo "2772"]
+[PlyCount "106"]
+[EventDate "2001.01.13"]
+
+1. e4 {B12: Caro-Kann: Advance Variation} 1... c6 2. d4 d5 3. e5 c5 4. dxc5 e6
+5. Bf4 Bxc5 6. Bd3 Nc6 7. Nf3 f6 8. Nbd2 fxe5 9. Bxe5 Nf6 10. Qe2 O-O 11. O-O-O
+a5 12. Nb3 Bd6 13. Kb1 Bxe5 14. Nxe5 {A sound move} 14... a4 15. Nc1 (15. Nxc6
+bxc6 16. Nd4 16... Qb6 $17) 15... a3 16. b3 Qa5 17. c4 dxc4 (17... Nxe5 $5 18.
+Qxe5 dxc4 19. Qxa5 Rxa5 20. Bxc4 20... b5 $17) 18. Nxc4 $15 18... Qc7 19. Rhe1
+$2 (19. Nd6 $1 $15 {and White could well hope to play on}) 19... Nd5 $19 20.
+Qd2 Ncb4 21. Ne2 Rxf2 22. Be4 b5 23. Qd4 23... Rxe2 $1 {here's the full point}
+24. Rxe2 bxc4 25. Bxd5 Nxd5 26. bxc4 Ba6 27. Rc1 Nf4 28. Rd2 28... e5 {
+Do you see the mate threat?} 29. Qe3 Bxc4 30. Ka1 Qf7 (30... Rb8 {
+makes it even easier for Black} 31. Qc3 Rc8 32. Qb4 $19) 31. g3 Nd3 32. Rxd3
+Bxd3 33. Qxd3 h6 (33... e4 $5 34. Qb3 $19) 34. Qb3 Qxb3 35. axb3 Kf7 36. Rc6 (
+36. Ka2 36... Ke6 $17) 36... a2 (36... e4 37. Rc4 Re8 38. Ka2 $19) 37. h4 (37.
+b4 $5 $17) 37... Ra3 38. b4 e4 (38... Rxg3 39. b5 39... Rh3 $15) 39. Rc4 e3 40.
+Re4 Kf6 41. g4 (41. b5 Kf5 42. Re8 42... Kg4 $19) 41... h5 42. gxh5 42... Kf5 {
+Threatening mate... how?} 43. Re7 Kf4 44. b5 Rb3 45. Rf7+ Ke4 46. Re7+ Kd3 47.
+Rd7+ 47... Kc2 {Threatening mate: Rd3} 48. Rc7+ (48. Re7 {doesn't do any good}
+48... Kd2 (48... Rxb5 $6 {is clearly inferior} 49. Rxe3 Rxh5 50. Rg3 $15) 49.
+Kxa2 Rxb5 50. Rd7+ Ke1 51. Rxg7 51... Rxh5 $19) 48... Kd2 (48... Rc3 49. b6 e2
+50. Rxc3+ Kxc3 51. b7 e1=Q+ 52. Kxa2 Qe2+ 53. Ka3 Qa6#) 49. Kxa2 $19 49... Rxb5
+50. Rxg7 (50. Rd7+ {there is nothing better in the position} 50... Ke1 51. Rxg7
+Rxh5 52. Kb3 $19) 50... e2 51. Rd7+ Kc2 52. Rc7+ Kd3 53. Re7 (53. Rc1 {
+does not help much} 53... Rxh5 54. Kb2 Rxh4 55. Rc3+ Kd2 56. Rc2+ Ke1 57. Rc1+
+57... Kf2 $19) 53... Rxh5 (53... Rxh5 54. Kb2 Rxh4 55. Rd7+ Ke3 56. Rd5 e1=Q
+57. Re5+ Re4 58. Rxe4+ Kxe4 59. Kb3 Kd3 60. Kb2 Qb4+ 61. Ka1 Kc3 62. Ka2 Qb2#)
+0-1
+
+[Event "It"]
+[Site "Astana KAZ"]
+[Date "2001.05.28"]
+[Round "7"]
+[White "Kramnik, V."]
+[Black "Sadvakasov, D."]
+[Result "1-0"]
+[ECO "D27"]
+[WhiteElo "2797"]
+[BlackElo "2585"]
+[PlyCount "41"]
+[EventDate "2001.05.20"]
+[Source "Mark Crowther"]
+[SourceDate "2001.05.28"]
+
+1. d4 {D27: Queen's Gambit Accepted: Classical main line: 7 e4!? and 7 a4} 1...
+d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. O-O a6 7. a4 Nc6 8. Qe2 Qc7 9.
+Rd1 Bd6 10. dxc5 Bxc5 11. b3 O-O 12. Bb2 e5 13. Nc3 e4 14. Ng5 Bd6 (14... Bf5
+15. Nd5 Nxd5 16. Bxd5 $14) 15. Nd5 Nxd5 16. Rxd5 {With the decisive threat Qh5}
+16... Bxh2+ 17. Kh1 {The mate threat is Qh5} 17... Be5 18. Qh5 18... Bf5 $2 (
+18... h6 19. Nxf7 $1 {Demolition of pawn structure} 19... Rxf7 20. Rxe5 Nxe5
+21. Bxe5 21... Qe7 $16) 19. Nxf7 $18 {Demolition of pawn structure} 19... Rxf7
+(19... Qxf7 {Theme: Deflection from e5} 20. Rxe5) 20. Qxf5 $3 {
+Annihilates a defender: f5. Eliminates the defender f5} 20... g6 (20... Rxf5
+21. Rd8# {Theme: Double Attack}) 21. Bxe5 (21. Bxe5 gxf5 22. Bxc7 $18) 1-0
+
+[Event "Sparkassen Cat XXI"]
+[Site "Dortmund GER"]
+[Date "2001.07.15"]
+[Round "4"]
+[White "Kramnik, V."]
+[Black "Morozevich, A."]
+[Result "1-0"]
+[ECO "D12"]
+[WhiteElo "2802"]
+[BlackElo "2749"]
+[PlyCount "75"]
+[EventDate "2001.07.12"]
+
+1. d4 {D12: Slav Defence: 3 Nf3 Nf6 4 e3 Bf5} 1... d5 2. c4 c6 3. Nf3 Nf6 4. e3
+Bf5 5. Nc3 5... a6 {Covers b5} 6. Bd3 Bxd3 7. Qxd3 e6 8. O-O (8. e4 Bb4 9. e5
+Bxc3+ 10. bxc3 10... Ne4 $15) 8... Be7 (8... Bb4 9. Bd2 Bxc3 10. bxc3 $15) 9.
+e4 $14 9... O-O 10. Rd1 b5 11. c5 {White gets more space} (11. cxd5 cxd5 12. e5
+12... Nfd7 $11) 11... dxe4 12. Nxe4 Nxe4 13. Qxe4 Qd5 14. Qxd5 cxd5 15. Bf4 Nc6
+16. Ne5 Nb8 17. Rd3 Rc8 18. Re1 Bf6 19. Ng4 19... Nc6 {Blocks the pawn on c5}
+20. Nxf6+ gxf6 21. Bg3 Kg7 22. Bh4 Ne7 23. g4 Ng6 24. Bg3 a5 25. Bd6 h5 26.
+gxh5 {The passed pawn on h5 will become decisive later} 26... Nh4 27. Rg3+ (27.
+Kh1 Nf5 28. Rg1+ 28... Kh7 $14) 27... Kh6 $11 28. Be7 (28. Bf4+ $5 {
+is worthy of consideration} 28... Kxh5 29. f3 $11) 28... Nf5 $17 29. Bxf6 Nxg3
+30. fxg3 Rg8 31. Kg2 Kxh5 32. h3 Kg6 33. Rf1 Kh7 34. g4 b4 35. Kg3 b3 (35... a4
+36. h4 $11) 36. a3 (36. axb3 Rgb8 37. Rf3 a4 38. bxa4 38... Rxb2 $14) 36...
+Rac8 (36... a4 37. h4 $11) 37. h4 (37. a4 37... Rgf8 $14) 37... Rg6 38. h5 (38.
+h5 Rgg8 39. g5 $16) 1-0
+

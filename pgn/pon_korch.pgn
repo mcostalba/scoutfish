@@ -1,0 +1,366 @@
+[Event "Match"]
+[Site "Donetsk"]
+[Date "2001.01.16"]
+[Round "1"]
+[White "Ponomariov R., UKR."]
+[Black "Korchnoi V., SUI."]
+[Result "1/2-1/2"]
+[ECO "C83"]
+[WhiteElo "2677"]
+[BlackElo "2639"]
+[Annotator "IM E.Miroshnichenko, IM O.Berezin"]
+[PlyCount "181"]
+[EventDate "2001.01.16"]
+[Source "Mikhail Golubev"]
+[SourceDate "2001.01.27"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5
+Be6 9. c3 Be7 10. Be3 10... Qd7 $5 {The main line is 0-0, also playable is 10..
+.Nc5 (Khalifman - Korchnoi, Ubeda1997), but Korchnoi, as an expert of open
+variation, minds something new.} 11. Nbd2 11... Nxd2 $6 {Not so good 11. ...
+Bg4 12.Ne4 de 13.Qd5 Qd5 14.Bd5 O-O 15.Bc6 fe 16.gf   Lautier-Korchnoi Ubeda
+1997, but deserves attention 11. ...Rd8!? as Victor Lvovich played twice with
+Timman in 1987 and with B.Anand in Monte-Carlo 1993 blindfold.} 12. Qxd2 Na5
+13. Bg5 13... Nc4 $146 {
+Before this game black played 13. ...c5 with a terrible statistics.} 14. Bxc4
+bxc4 15. b4 $1 {!+=} 15... cxb3 16. axb3 O-O 17. b4 c5 18. Bxe7 Qxe7 19. bxc5
+Qxc5 20. Qd3 {Interesting was to try 20.Nd4 Rfc8 21.Rac1 with the  idea f4,f5 .
+} 20... f6 $5 {Searching for a counterplay.} 21. Rfe1 {
+(If  21.Ra6 so 21. ...Bf5 22.Qe2 Ra6 23.Qa6 Qc3-black is ok!)} 21... a5 22. Nd4
+Rae8 23. exf6 Rxf6 24. Qb5 Qxb5 25. Nxb5 Bd7 26. Rxe8+ Bxe8 27. Nc7 Bc6 28.
+Rxa5 28... Rd6 $1 {White can not prevent 29. ...d4 with an exchanging of weak
+pawn d5 (if 29.Ra6 so 29. ...d4! 30.Nb5?? Re6 31.f3 Re1 32.Kf2 Rf1-+).Black
+have a good draw chances.  } 29. f3 d4 30. cxd4 Rxd4 31. Ne6 Rd6 32. Nf4 Rd4
+33. Ne2 Rd2 34. Kf2 Rb2 35. Ke3 Rb7 36. Rc5 Bd7 37. h4 Ra7 38. Nc3 h6 39. Kf4
+Ra6 40. Nd5 Be6 41. Ne3 Ra3 42. Rc7 Rd3 43. Re7 Bd7 44. Nc4 Bb5 45. Ne5 Rd4+
+46. Kg3 Rd2 47. Ng4 {(47.h5!? Re2 48.Kh3 with the idea g4,Kg3-f4 )} 47... Bd7
+48. Ne3 Kf8 49. Re4 Kf7 50. Nc4 Rd5 51. Kf2 51... Bf5 $4 {
+A blunder ...sometimes something strange happens.} 52. Re3 $4 {Impossible!
+Immediatly wins 52.Rf4!: 52. ...g5 53.Rf5 Rf5 54.Nd6 Ke6 55.Nf5 Kf5   56.Kg3,
+57.Kg4, 58.f4+-; 52. ...Ke6 53.Ne3 Ra5 54.Rf5 Rf5 55.Nf5 Kf5 56.g4 Kf4   57.
+h5!+-; 52. ...Ke6 53.Ne3 Rd2 54.Ke1 Rd3 55.Nf5 Ke5 56.Rd4 Rd4 57.Nd4 Kd4 58.
+h5!+-.} 52... Rd4 53. Ne5+ Kf6 54. g4 54... Rd5 $1 55. f4 55... g5 $1 {=} 56.
+gxf5 gxf4 57. Ng4+ Kxf5 58. Nxh6+ Kg6 59. Re6+ Kh5 60. Kf3 Kxh4 61. Nf7 Rd3+
+62. Kxf4 Rd4+ 63. Kf3 Rd3+ 64. Ke4 Ra3 65. Rg6 Kh3 66. Ne5 Ra4+ 67. Ke3 Ra3+
+68. Nd3 Kh4 69. Rg8 Kh5 70. Ke4 Kh4 71. Nf2 Ra7 72. Kf3 Rf7+ 73. Kg2 Ra7 74.
+Ne4 Kh5 75. Kf3 Rf7+ 76. Ke3 Kh6 77. Nd6 Rf6 78. Rd8 Kg6 79. Ke4 Re6+ 80. Kd5
+Re7 81. Rg8+ Kh5 82. Nc4 Kh4 83. Ne5 Kh3 84. Ke4 Re6 85. Kf5 Ra6 86. Nd3 Ra5+
+87. Kf4 Ra4+ 88. Kf3 Kh4 89. Nf2 Kh5 90. Ne4 Kh6 91. Kf4 {
+time white 3.26 black 3.25} 1/2-1/2
+
+[Event "Match"]
+[Site "Donetsk"]
+[Date "2001.01.17"]
+[Round "2"]
+[White "Korchnoi V., SUI."]
+[Black "Ponomariov R., UKR."]
+[Result "1-0"]
+[ECO "A33"]
+[WhiteElo "2639"]
+[BlackElo "2677"]
+[Annotator "IM E.Miroshnichenko, IM O.Berezin"]
+[PlyCount "233"]
+[EventDate "2001.01.16"]
+[Source "Mikhail Golubev"]
+[SourceDate "2001.01.27"]
+
+1. c4 c5 2. Nf3 Nf6 3. Nc3 Nc6 4. d4 cxd4 5. Nxd4 e6 6. a3 Be7 (6... Bc5 7. Nb3
+Be7 8. e4 O-O 9. Be2 b6 10. f4 d6 11. Bf3) (6... Nxd4 7. Qxd4 b6 8. Qf4 $1 8...
+Bb7 9. e4 d6 10. Bd3 Be7 11. Qg3 O-O 12. Bh6 Ne8 13. Bd2 $14) (6... Qc7 7. Ndb5
+Qb8 8. g3 a6 9. Nd4 Nxd4 10. Qxd4 b5 11. e4 e5 12. Qe3 Qc7 13. cxb5 Bc5 14. Qf3
+Bd4 15. Bg5 Bxc3+ 16. bxc3 $13) (6... d5 7. cxd5 exd5 8. g3 Bc5 9. Nb3 Bb6 10.
+Bg2 d4 11. Na4 Be6 12. Bg5 Ba5+ 13. Nd2 h6 14. Bxf6 Qxf6 15. Nc5 $16) 7. e4 O-O
+8. Nf3 $5 {
+Korchnoi's patent - this way he played with Akesson in Antwerpen 1995.} (8. Nb3
+{was played in Korchnoi - Greenfeld, Beer - Sheva, 1992 with complicate game.})
+8... d6 9. Be2 b6 10. O-O (10. Bf4 Bb7 11. Qd3 $6 11... Qb8 $1 12. Rd1 Ne5 13.
+Qb1 Ng6 14. Bg3 Nh5 15. Qc1 Nxg3 16. hxg3 16... Bf6 $15 {Korchnoi - Akesson})
+10... Bb7 11. Bf4 Rc8 12. Re1 $146 12... a6 13. Bf1 Qc7 14. b4 14... Rfd8 $6 (
+14... Ne5 15. Nd2 15... Qb8 $132) 15. Rc1 Ne5 16. Nd2 Qb8 17. h3 {
+Drowsing black's attention.} 17... Bc6 18. Qe2 Ng6 19. Bg3 Qb7 20. Nb3 20... h6
+$6 (20... Bf8) 21. Rb1 $1 {Exellent move with the idea a4,a5  } 21... Bf8 22.
+f3 Re8 23. Bf2 23... Qb8 $6 (23... d5 $5 24. cxd5 exd5 25. Qxa6 dxe4 26. fxe4
+Qxa6 27. Bxa6 Ra8 28. b5 Bxe4 29. Nxe4 Rxe4 30. Bxb6 $14) 24. Qe3 $1 24... Nd7
+25. Red1 25... Bb7 $6 26. Na4 $1 26... Nge5 27. Nxb6 Nxb6 28. Qxb6 Nxc4 29.
+Bxc4 Rxc4 30. Na5 Rc7 31. b5 $1 31... Ba8 (31... Qc8 32. Nxb7 Qxb7 33. Qxb7
+Rxb7 34. bxa6 $18) 32. Qxb8 {The simplest way. Also winnig was after 32.Qa6}
+32... Rxb8 33. b6 $1 33... Rd7 34. b7 $1 34... Bxb7 35. Rb3 35... Kh7 $5 {
+Strange move...but it works!} 36. e5 $2 $138 {There were two ways to win
+immediatly:36.Rd2!, 37.Rdb2 +- or more simple 36.Rdb1 Be4 37.fe Rb3 38.Rb3 d5
+39.Rd3 +-.} 36... Bxf3 $1 37. Rxf3 d5 38. Nc6 Rc8 39. Nd4 Rb7 40. Kf1 Kg8 41.
+Nb3 Rc2 42. Bd4 $1 42... Rbc7 43. a4 Bb4 44. Bb6 R7c4 45. Rf2 R2c3 46. Rb1 $1
+46... Be7 47. a5 47... f6 $5 {Searching for a counterplay.} 48. exf6 Bxf6 (
+48... gxf6 $5 49. Nd4 Kf7 50. Re1 50... Rc1 $16) 49. Rf3 Rc2 50. Rd1 $1 $138 {
+Now all white pieces is good, black pawns are stopped, so it must be winning.}
+50... Rb2 51. Nc5 e5 (51... Rxb6 52. axb6 Rxc5 53. Rb1 Be5 54. Re3 $18) 52.
+Nxa6 e4 53. Rf2 Rxf2+ 54. Bxf2 (54. Kxf2 $1 54... d4 55. Nc5 d3 56. Kf1 $1 $18)
+54... d4 55. Be1 d3 56. Nb4 Rc5 57. g4 Rxa5 58. Nxd3 Ra3 59. Nf2 59... Bh4 $1
+60. Nxe4 Bxe1 61. Rxe1 Rxh3 62. Kg2 {
+Long forsing line finished and black have now some draw chances} 62... Rd3 63.
+Rh1 Kh7 64. Ng5+ Kg6 65. Nf3 Ra3 66. Rd1 Ra7 67. Rd6+ Kh7 68. Kg3 Rb7 69. Nd4
+Ra7 70. Kf4 Ra4 71. Rd7 $6 $138 (71. Ke4 $1 71... Rc4 72. Ra6 Rb4 73. Ke5 $16)
+71... Kg6 72. Kg3 Kf6 73. Nf3 Ra6 74. Rb7 74... g5 $6 75. Rb5 $16 75... Kg6 76.
+Kf2 Rf6 77. Ke3 Rf4 78. Rb6+ Kh7 79. Ne5 Kg7 80. Rd6 Ra4 81. Rg6+ Kh7 82. Rc6
+Kg7 83. Nc4 Ra7 84. Nd6 Ra3+ 85. Kd2 Ra2+ 86. Ke3 Ra3+ 87. Ke4 Ra4+ 88. Ke5
+Ra5+ 89. Ke6 Kh7 90. Kf6 Ra7 91. Nf5 Rb7 92. Ra6 Rc7 93. Ke5 Rc5+ 94. Kd4 Rb5
+95. Rxh6+ Kg8 96. Rc6 Ra5 97. Ke4 Kf7 98. Nd4 Kg7 99. Rd6 Ra4 100. Ke5 Kf7 101.
+Rd5 Kg6 102. Rb5 Rc4 103. Rb6+ Kf7 104. Rd6 Ra4 105. Nf5 Ra5+ 106. Rd5 Ra7 107.
+Nd6+ Kg6 108. Ne4 Ra4 109. Rc5 Ra6 110. Kd4 Ra4+ 111. Kd3 Ra3+ 112. Kd2 Ra2+
+113. Kc3 Ra3+ 114. Kb4 Rf3 115. Rxg5+ Kh6 116. Rf5 Re3 117. Rf4 1-0
+
+[Event "Match"]
+[Site "Donetsk"]
+[Date "2001.01.18"]
+[Round "3"]
+[White "Ponomariov R., UKR."]
+[Black "Korchnoi V., SUI."]
+[Result "1-0"]
+[ECO "C80"]
+[WhiteElo "2677"]
+[BlackElo "2639"]
+[Annotator "IM E.Miroshnichenko, IM O.Berezin"]
+[PlyCount "89"]
+[EventDate "2001.01.16"]
+[Source "Mikhail Golubev"]
+[SourceDate "2001.01.27"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5
+Be6 9. Be3 {"Something new?"} 9... Nc5 $5 {''Of course !''} 10. Nc3 $5 10...
+Nxb3 11. cxb3 $1 11... Be7 (11... Nb8 $5) 12. Rc1 Qd7 (12... O-O $5 13. Nxb5
+axb5 14. Rxc6 Rxa2 15. Qb1 Ra8 16. Rfc1 Rc8 17. Qc2 { }) 13. h3 $1 (13. Ne2 Rc8
+14. Nf4 O-O 15. Bc5 Rfd8 16. Bxe7 Nxe7 17. Qd4 Bg4 18. Ne1 (18. Nd2 18... c5 $1
+19. Rxc5 Rxc5 20. Qxc5 g5 21. h3 gxf4 22. hxg4 22... Ng6 { }) 18... c5 $3 19.
+Rxc5 Nf5 20. Qc3 20... d4 {  Smagin-Mikhalchishin,Moskva 1989.}) 13... O-O 14.
+Ne2 14... f6 $6 $146 (14... Rfc8 15. Nf4 a5 16. a3 Nd8 17. Nd3 Bf5 18. Nc5 Bxc5
+19. Bxc5 Ne6 20. Nd4 {  Groszpeter-Brunner,Biel 1990.}) 15. exf6 Rxf6 16. Ned4
+16... Nxd4 { } (16... Bf7 $2 17. Rxc6 $1 $18) 17. Bxd4 Rf5 18. Ne5 Qc8 19. Nc6
+$16 {Now White has a clear advantage, but accurasy is always necessary...}
+19... Bd6 20. Bc5 Qd7 21. Bxd6 21... cxd6 $6 (21... Qxd6 22. Nd4 Re5 23. Rc6
+Qd7 24. Re1 Rxe1+ 25. Qxe1 Bf7 26. Qe5 Re8 27. Rxc7 $16) 22. Nd4 Re5 23. Rc3 b4
+24. Rg3 a5 25. Kh2 (25. f4 $6 25... Re4 26. f5 (26. Nf5 $6 26... g6 27. Ne3 d4
+28. Nc2 28... Qa7 { }) 26... Qa7 $1) 25... Bf7 26. Nf3 Rf5 27. Qd4 $1 {
+White at last reminds Black of his main weakness - his kingside.} 27... g6 28.
+Qd2 Re8 29. Nd4 Rfe5 30. f4 Re4 31. f5 { } 31... Kh8 32. Qh6 $1 $18 {
+Now it's all over.} 32... Qe7 (32... Rxd4 33. fxg6 Bxg6 34. Rf8+ Rxf8 35. Qxf8#
+) 33. Nf3 (33. fxg6 Bxg6 34. Rxg6 34... Rxd4 $1 (34... Rh4 $2 35. Re1 $3 $18)
+35. Rgf6 Rg8 36. Rf7 36... Rh4 $1 $16) 33... Qf8 34. Qg5 (34. Ng5 Qxh6 35.
+Nxf7+ Kg7 36. Nxh6 Kxh6 37. fxg6 hxg6 38. Rf6 Rg8 39. Rxd6 Re2 40. Rxd5 Rxb2
+41. Rxa5 $18) 34... Qg7 35. f6 Qf8 36. Rc1 h6 37. Qd2 g5 (37... Re2 38. Qd4
+R2e4 39. Qb6 Rf4 40. Qxa5 Rxf6 41. Qxb4 $18) 38. Rc7 Re2 (38... Rf4 39. h4 $1
+39... gxh4 40. Rg7 Rxf6 41. Rcxf7 $1) 39. Qc1 R2e6 40. h4 Rxf6 41. hxg5 Rg6 42.
+Qf4 Be6 43. Nh4 $1 43... Rg7 44. Qd4 Kh7 (44... Kg8 45. gxh6 Rxg3 46. h7#) 45.
+Qd3+ {Black resigned, since he is mated after 45. ...Kg8 46.gh Rg3 47.Qh7#.}
+1-0
+
+[Event "Match"]
+[Site "Donetsk"]
+[Date "2001.01.19"]
+[Round "4"]
+[White "Korchnoi V., SUI."]
+[Black "Ponomariov R., UKR."]
+[Result "1/2-1/2"]
+[ECO "D20"]
+[WhiteElo "2639"]
+[BlackElo "2677"]
+[Annotator "IM E.Miroshnichenko, IM O.Berezin"]
+[PlyCount "24"]
+[EventDate "2001.01.16"]
+[Source "Mikhail Golubev"]
+[SourceDate "2001.01.27"]
+
+{Both players wants to have a rest, so they played without energy.} 1. d4 1...
+d5 2. c4 dxc4 3. e4 e5 4. Nf3 exd4 5. Bxc4 Nc6 6. O-O Be6 7. Bb5 Bc5 8. Qc2 (8.
+b4 $5 8... Bb6 9. Bb2 Nge7 (9... Qd6 $6 10. a4 $1 10... Nge7 11. a5 Qxb4 12.
+Qe2 d3 13. Bxd3 13... Nd4 $2 14. Bxd4 Bxd4 15. Ra4 $1 $18 {
+Yuferov - Ibragimov, St.Petersburg,1996.}) 10. Bxd4 O-O 11. Bc5 Bxc5 12. bxc5
+a6 13. Bxc6 Nxc6 14. Nc3 Qe7 15. Nd5 Qxc5 16. Nxc7 Rad8 17. Nxe6 fxe6 18. Qb3
+$14 {Beliavsky - Sherbakov, Niksic,1996}) 8... Bb6 9. Bxc6+ bxc6 10. Qxc6+ Bd7
+11. Qc4 Be6 (11... c5 12. Na3 Ne7 13. Bd2 O-O 14. Rfe1 Rc8 15. b3 $11 {
+Andersen - Rasmussen, Copenhagen, 2000.}) 12. Qc6+ 12... Bd7 {
+time white 0.24 black 0.07} 1/2-1/2
+
+[Event "Match"]
+[Site "Donetsk"]
+[Date "2001.01.20"]
+[Round "5"]
+[White "Ponomariov R., UKR."]
+[Black "Korchnoi V., SUI."]
+[Result "1/2-1/2"]
+[ECO "B45"]
+[WhiteElo "2677"]
+[BlackElo "2639"]
+[Annotator "IM E.Miroshnichenko, IM O.Berezin"]
+[PlyCount "126"]
+[EventDate "2001.01.16"]
+[Source "Mikhail Golubev"]
+[SourceDate "2001.01.27"]
+
+1. e4 1... c5 {This came as a surprise.} 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 Nf6 5.
+Nc3 e6 6. Ndb5 Bb4 7. a3 Bxc3+ 8. Nxc3 d5 9. Bd3 $5 ({The main line is} 9. exd5
+9... exd5 10. Bd3 O-O 11. O-O d4 12. Ne4 Bf5 13. Bg5 Bxe4 14. Bxe4 h6 15. Bxf6
+Qxf6 16. Re1 16... Rac8 $11 {Leko - Kramnik, 2001, match(12).}) 9... d4 (9...
+Ne5 10. Bb5+ Bd7 11. Bxd7+ Qxd7 12. exd5 Nxd5 13. Nxd5 exd5 14. Bf4 Qf5 15. Qd4
+Nc6 16. Qe3+ Qe6 17. O-O-O O-O 18. Rhe1 18... Qf5 $11 {
+de Firmian-Khmelnitsky USA 1996.}) 10. Ne2 e5 11. O-O O-O 12. h3 (12. Ng3 Ne7
+13. Bg5 Qb6 14. Nh5 Nxh5 15. Qxh5 Ng6 16. Bd2 16... Bd7 {
+`White is slightly better.(Filipenko - Nikolaisen, Berlin 1997.)}) 12... Re8
+13. Ng3 Nd7 14. f4 $5 14... exf4 15. Bxf4 Nde5 16. Qh5 $5 (16. Qd2 16... Qh4 $1
+$13) (16. Nh5 $5 16... Qh4 17. Bg3 Qg5 18. Bf4 $11) 16... f6 {Third time with
+black pieces Korchnoi played  f7-f6, but now this move is absolutely correct.}
+17. b4 $6 (17. Rf2 Be6 18. Raf1 Bf7 19. Qd1 $13) 17... Be6 $6 (17... a5 $5 18.
+b5 Nxd3 19. cxd3 Ne5 20. Qe2 20... a4 $13) (17... a6 $5) 18. b5 Bf7 19. Qe2
+19... Na5 $6 {(x Na5)} (19... Nxd3 20. cxd3 20... Ne5 $15) 20. Nf5 Bg6 (20...
+Nac4 $5 21. Qf2 21... Qb6 $13) 21. Nh4 Rc8 22. Bxe5 Rxe5 (22... fxe5 $5 23.
+Nxg6 hxg6 24. Qg4 Qd6 25. Rf2 25... Nc4 $6 (25... Rf8 $1 26. Raf1 Rxf2 27. Rxf2
+Rf8 28. Rxf8+ Kxf8 29. Qc8+ 29... Ke7 $11) 26. Bxc4+ Rxc4 27. Raf1 $14 27...
+Rc7 28. Rf6 $1) 23. Nf3 $1 {
+Breaking the blockade White have good chances to attack Black's kingside.}
+23... Re7 24. Rae1 $14 24... Rc3 25. e5 {Critical position.} 25... Bxd3 26.
+cxd3 26... Nb3 $8 (26... Qd5 27. Qf2 27... Rxd3 $2 28. exf6 $18) 27. Qa2 $5
+27... Kh8 $8 (27... Rxd3 $2 28. Rd1 $1 $18) 28. exf6 gxf6 29. Nh4 29... Qe8 $1
+{  Probably the best.} (29... Rxd3 30. Nf5 Rxe1 31. Rxe1 Qg8 32. Qf2 Rd2 33.
+Qf3 $18 {Threating 34.Nh6 and 35.Re8! +-}) 30. Qf2 Rxe1 31. Rxe1 (31. Qxf6+ Kg8
+32. Qg5+ Kh8 33. Qf6+ Kg8 34. Nf5 Rxf1+ 35. Kxf1 Rc1+ 36. Kf2 Rc2+ 37. Kg1 Qe1+
+38. Kh2 Rxg2+ 39. Kxg2 Qe2+ 40. Kg3 Qxd3+ 41. Kf4 41... Qf1+ $11) 31... Qxe1+
+$1 32. Qxe1 Rc1 33. Kf2 Rxe1 34. Kxe1 $14 34... a5 $1 {
+After this move Black have a good draw chances.} 35. bxa6 bxa6 36. Ke2 a5 37.
+Nf5 a4 38. Kf3 (38. Nd6 Nc1+ 39. Kd2 39... Nb3+ $11) 38... Nd2+ 39. Kf4 Nb1 40.
+Ke4 Nxa3 41. Kxd4 Kg8 42. Ne3 $1 42... Nb5+ $8 43. Kc4 Nc7 44. Kb4 Ne6 45. Nc2
+$5 45... Kf7 $1 46. Ne1 Kg6 47. Kxa4 Kf5 48. Kb5 Kf4 49. Kc6 Kg3 50. Kd5 50...
+Ng7 $1 $11 {The rest of the game wasn't necessarily.} 51. Kd6 Kf2 52. Ke7 Kxe1
+53. Kxf6 Ne8+ 54. Kf7 Nc7 55. g4 Kf2 56. Kg7 Kg3 57. Kxh7 Kxh3 58. g5 Ne6 59.
+g6 Kg4 60. d4 Kf5 61. Kh6 Ke4 62. g7 Nxg7 63. Kxg7 63... Kxd4 {
+So, there are no chances to win for both players.} 1/2-1/2
+
+[Event "Match"]
+[Site "Donetsk"]
+[Date "2001.01.21"]
+[Round "6"]
+[White "Korchnoi V., SUI."]
+[Black "Ponomariov R., UKR."]
+[Result "0-1"]
+[ECO "A07"]
+[WhiteElo "2639"]
+[BlackElo "2677"]
+[Annotator "IM E.Miroshnichenko, IM O.Berezin"]
+[PlyCount "72"]
+[EventDate "2001.01.16"]
+[Source "Mikhail Golubev"]
+[SourceDate "2001.01.27"]
+
+1. Nf3 Nf6 2. g3 d5 3. Bg2 c6 4. O-O Bg4 5. d3 Nbd7 6. Bf4 Nh5 7. Bc1 Nhf6 8.
+h3 {(?!)} (8. Bf4 $5 {Draw, why not?}) 8... Bh5 9. Bf4 e6 10. c4 Be7 11. cxd5
+cxd5 12. Nc3 O-O 13. g4 (13. Rc1 a6 14. Na4 Ne8 15. Ne5 Nxe5 16. Bxe5 $11 {
+Dizdarevic - Almasi Z., Pula 1996.}) 13... Bg6 14. Nh4 $4 {
+A horrible mistake, but Korchnoi was not the only one.(!)} 14... Nxg4 $1 (14...
+Rc8 $2 {Hersvik - Sorensen, Bergen 2000.}) 15. Nxg6 fxg6 16. e3 Ngf6 17. Nb5
+Qa5 18. a4 18... a6 $6 (18... Rac8 $17) 19. b4 $1 {Trying to create something.}
+19... Bxb4 $8 20. Bc7 b6 21. Nd4 Bc3 22. Rb1 Bxd4 23. exd4 23... Qc3 $6 (23...
+Rfc8 $1 24. Bd6 Qc3 25. Qe2 Qxd4 26. Rb4 Qc3 27. Qxe6+ Kh8 28. Bxd5 Re8 29. Qf7
+29... Rf8 $19) 24. Bxb6 Nxb6 25. Rxb6 Qxd4 26. Rxe6 a5 27. Qa1 $1 27... Qxd3
+28. Rd1 Qf5 29. Re5 (29. Rxf6 $5 29... gxf6 30. Bxd5+ Kg7 31. Bxa8 Rxa8 32. Qa3
+$17) 29... Qc2 $1 (29... Qf4 30. Qd4 Qxd4 31. Rxd4 {with some draw chances.})
+30. Re7 Kh8 31. Rxd5 Rab8 32. Rb5 $8 32... Rbd8 33. Bf3 Rd3 34. Re3 Rxe3 35.
+fxe3 35... h5 $5 36. Rxa5 $4 ({
+Loosing by force a chance to keep fighting for a draw after} 36. Qd1 36... Qc3
+37. Rb3 Qe5 38. Bg2 $17) (36. Qd4 $2 36... Ng4 37. Qb2 Qxb2 38. Rxb2 Rxf3 39.
+hxg4 39... Rg3+ $19) 36... Ng4 $1 {
+At the same square! White resigns. (time white 1,54; black 1,40).} 0-1
+
+[Event "Match"]
+[Site "Donetsk"]
+[Date "2001.01.22"]
+[Round "7"]
+[White "Ponomariov R., UKR."]
+[Black "Korchnoi V., SUI."]
+[Result "1/2-1/2"]
+[ECO "C10"]
+[WhiteElo "2677"]
+[BlackElo "2639"]
+[Annotator "IM E.Miroshnichenko, IM O.Berezin"]
+[PlyCount "147"]
+[EventDate "2001.01.16"]
+[Source "Mikhail Golubev"]
+[SourceDate "2001.01.27"]
+
+1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 dxe4 5. Nxe4 Nbd7 6. Nxf6+ Nxf6 7. Nf3 h6 (
+{The main continuation is} 7... c5 8. dxc5 8... Qxd1+ $6 (8... Qa5+) 9. Rxd1
+Bxc5 10. Bb5+ Ke7 11. O-O h6 12. Bf4 Bd7 13. Bxd7 Nxd7 14. a3 14... Rhc8 $2 15.
+b4 Bb6 16. c4 $1 $16 {Yakovenko - Dolmatov, St.- Peterburg, 2000.}) 8. Bh4 c5
+9. Be2 (9. Bb5+ Bd7 10. Bxd7+ Qxd7 11. Bxf6 gxf6 12. dxc5 Bxc5 13. Qxd7+ Kxd7
+14. Ke2 Ke7 15. Rhd1 Rhd8 16. c3 f5 17. Ne1 17... e5 $11 {
+Yudasin - Korchnoi, St.- Peterburg, 1997.}) 9... cxd4 (9... Bd7 10. O-O 10...
+Qb6 $2 (10... Be7 $5) (10... cxd4) 11. Ne5 $1 11... cxd4 12. Bxf6 $2 {
+Rozentalis - Vaganian, Budapest, 1996} (12. Bh5 $1 12... Nxh5 13. Qxh5 g6 14.
+Nxg6 $18)) 10. Qxd4 Qxd4 11. Nxd4 $14 11... Bc5 12. Nb3 Bd6 13. Bf3 Ke7 14. Bg3
+$5 (14. c4 $6 14... Bb4+ $1 15. Ke2 $2 15... g5 16. Bg3 16... g4 $19) (14.
+O-O-O $5 {with the idea c4,c5}) 14... Bxg3 15. hxg3 15... a5 $1 (15... Rb8 16.
+Na5 $5 $16) 16. O-O-O Ra7 17. Rhe1 ({Deserves attantion} 17. Rh4 17... Bd7 18.
+Nc5 $14) 17... Bd7 18. Nd4 g6 19. Re3 {
+with the idea to press on b7 after Rb3 and Rb6} 19... a4 ({After} 19... b5 20.
+Bc6 b4 21. Bxd7 Rxd7 22. Nc6+ {White has a pawn more}) 20. Rc3 20... Rc8 $8 21.
+Rxc8 Bxc8 22. Nb5 Ra6 23. Rd4 Bd7 24. Nc3 b5 25. a3 (25. Be2 $5 25... Rb6 26.
+Rb4 Nd5 27. Nxd5+ 27... exd5 $14 {with good draw chances for black}) 25... Ne8
+26. Be2 Nd6 27. Rb4 27... Ra5 {
+Now the set-up of black pieces is very passive, so White can activate his King.
+} 28. Kd2 Bc6 29. Bf1 h5 30. Ke3 e5 31. f4 Ke6 (31... Nf5+ 32. Kf2 Nd4 33. fxe5
+Nxc2 34. Rf4 $14) 32. Kf2 32... Kf6 {
+Waiting for something...Interesting was to try} (32... f5 $1 {
+and White has no real winning chance.}) 33. Be2 Ke6 34. Bd3 Kf6 35. g4 $1 {
+Black rook is out of the board - so White must open the position.} 35... hxg4
+36. fxe5+ Kxe5 37. Rxg4 Bd7 38. Rg3 38... Ra7 $6 39. Re3+ Kf6 40. Nd5+ Kg5 41.
+Re5+ $5 (41. Re7 Rb7 42. Ke3 Bc6 43. Rxb7 Bxb7 44. Kd4 f5 45. Kc5 45... Nc4 $1
+46. Bxc4 bxc4 47. Kxc4 47... f4 {
+and strong bishop alows Black to defend position.}) 41... f5 42. Ke3 Bc6 43.
+Nf4 43... Ra8 $8 44. Nxg6 44... Kf6 $1 45. Rc5 $2 (45. Kd4 $1 45... Rd8 46. Nf4
+$1 46... Nc4+ 47. Nd5+ $18) 45... Bxg2 46. Nh4 $6 (46. Ne5 $5 $14) (46. Nf4 $5
+$14) 46... Be4 47. Bxe4 fxe4 48. Rc6 Ke5 49. Ng6+ Kd5 50. Ne7+ 50... Ke6 $1 51.
+Nf5 Kxf5 52. Rxd6 52... Re8 $8 53. Rh6 {It looks like easy way to viktory...}
+53... Kg5 $8 54. Rh2 Re7 55. Rf2 55... Re5 $1 56. Rf4 (56. Rf1 $5 56... Rc5 (
+56... Re8 57. Rf4 Re5 (57... Rc8 58. Rxe4 Rxc2 (58... Kf5 59. Rb4 Rc5 60. Kd4
+$18) 59. Re5+ Kf6 60. Rxb5 Ke6 61. Kd3 Rh2 62. Kc3 Kd6 63. Rb4 Rh3+ 64. Kc4 $18
+) 58. Rxe4 $18) (56... Kg6 $3 57. Kd4 Re8 58. Rf4 e3 59. Rf1 Kg5 60. Kd3 Kg4
+61. Ke2 Re4 62. Rf3 Rc4 63. c3 Re4 64. Rxe3 Kf4 65. Rxe4+ Kxe4 66. Kd2 Kd5 67.
+Kd3 Kc5 68. c4 b4 69. axb4+ Kxb4 70. Kd4 Kb3 71. c5 Kxb2 72. c6 a3 73. c7 a2
+74. c8=Q 74... a1=Q $11) 57. Kxe4 Rxc2 58. Rf5+ Kg6 59. Rxb5 Kf6 60. Kd3 Rh2
+61. Kc3 $18) 56... Rc5 57. c3 57... Re5 $1 {The point of Black's defence.} 58.
+Rf8 Re7 59. Rb8 Re5 60. Rb6 Kf5 61. Rd6 Re8 62. Rh6 Kg5 63. Rh1 Re7 64. Rf1 Re8
+65. Rf4 Re5 66. Rxe4 Kf5 67. Rxe5+ 67... Kxe5 $11 {After Korchnoi's horrible
+mistakes in previouse game Ponomarev still hoping on something...} 68. Kd2 Kd6
+69. Kc2 Kc6 70. b4 axb3+ 71. Kxb3 Kb7 72. a4 bxa4+ 73. Kxa4 Kc6 74. c4 1/2-1/2
+
+[Event "Match"]
+[Site "Donetsk"]
+[Date "2001.01.23"]
+[Round "8"]
+[White "Korchnoi V., SUI."]
+[Black "Ponomariov R., UKR."]
+[Result "1-0"]
+[ECO "A33"]
+[WhiteElo "2639"]
+[BlackElo "2677"]
+[Annotator "IM E.Miroshnichenko, IM O.Berezin"]
+[PlyCount "131"]
+[EventDate "2001.01.16"]
+[Source "Mikhail Golubev"]
+[SourceDate "2001.01.27"]
+
+1. c4 c5 2. Nf3 Nf6 3. Nc3 Nc6 4. d4 cxd4 5. Nxd4 e6 6. a3 Be7 7. e4 O-O 8. Nf3
+8... Qc7 $5 {N} (8... b6 9. Be2) (8... d6 9. Be2 b6 10. O-O Bb7 11. Bf4 Rc8 12.
+Re1 a6 13. Bf1 Qc7 14. b4 14... Rfd8 $6 (14... Ne5 $5 {Korchnoi-Ponomariov, m/2
+})) 9. Bg5 b6 10. Bd3 $5 {the psycological victory.This position was analysed
+by Ponomariov's team only after 10.Be2} 10... h6 11. Bh4 Nh5 12. Bxe7 Nxe7 13.
+O-O Ba6 14. Rc1 Nf4 15. Nb5 15... Bxb5 $6 16. cxb5 $14 16... Qd6 17. Bb1 Qxd1
+18. Rcxd1 d5 19. e5 19... g5 $6 20. Rfe1 Rac8 21. h4 g4 22. Nh2 h5 23. f3 g3
+24. Nf1 Neg6 25. Rd4 25... Rc4 $6 (25... Rc1 $1 26. Rxc1 Ne2+ 27. Kh1 Nxd4 28.
+Nxg3 Nxe5 29. a4 $14) 26. Rxc4 dxc4 27. Bxg6 fxg6 28. Nxg3 Nd3 29. Re2 Rd8 30.
+Ne4 Nxe5 31. Ng5 Rd5 32. a4 Kg7 33. Nxe6+ Kf6 34. Ng5 $16 34... Kf5 35. Ne4 Rd3
+36. Nc3 Rd4 37. Ne4 Rd3 38. Kh2 Rb3 39. Nd6+ Kf6 40. Ne8+ Kf5 41. Nd6+ Kf6 42.
+Kg3 Rb4 43. Re4 Ke6 44. Nc8 $1 44... Kf6 45. Nxa7 Rxa4 46. Nc6 Nd3 (46... Nxc6
+47. bxc6 b5 48. Rd4 $1 (48. b3 $2 48... Ra6 49. bxc4 49... b4 $1 50. c5 Rxc6
+51. Rxb4 Rxc5 52. Kf4 52... Rc6 $11) 48... Ra8 49. Kf4 $18) 47. Ne7 $1 47...
+Nxb2 48. Nd5+ Kf7 49. Re7+ Kf8 50. Rb7 Nd1 51. Rxb6 $18 51... c3 52. Rc6 Ra5
+53. b6 Rb5 54. Rc7 Rxd5 55. b7 Rb5 56. Rc8+ Kf7 57. b8=Q Rxb8 58. Rxb8 c2 59.
+Rc8 Ne3 60. Kf2 Nf5 61. g3 Nd4 62. g4 Ke6 63. Ke3 Kd5 64. Rc3 g5 65. hxg5 hxg4
+66. fxg4 1-0
+
