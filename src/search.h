@@ -30,6 +30,21 @@
 
 class Position;
 
+namespace Scout {
+
+enum RuleType {
+  RuleNone, RulePattern, RuleEnd
+};
+
+struct Data {
+  Move* baseAddress;
+  size_t dbMapping, dbSize;
+  size_t movesCnt, matchCnt;
+  RuleType rules[10];
+};
+
+}
+
 namespace Search {
 
 /// Stack struct keeps track of the information we need to remember from nodes
@@ -79,8 +94,9 @@ struct LimitsType {
   LimitsType() { // Init explicitly due to broken value-initialization of non POD in MSVC
     nodes = time[WHITE] = time[BLACK] = inc[WHITE] = inc[BLACK] =
     npmsec = movestogo = depth = movetime = mate = infinite = ponder = 0;
-    dbMapping = dbSize = 0;
-    baseAddress = nullptr;
+    scout.dbMapping = scout.dbSize = scout.matchCnt = scout.movesCnt = 0;
+    scout.baseAddress = nullptr;
+    scout.rules[0] = Scout::RuleNone;
   }
 
   bool use_time_management() const {
@@ -91,8 +107,7 @@ struct LimitsType {
   int time[COLOR_NB], inc[COLOR_NB], npmsec, movestogo, depth, movetime, mate, infinite, ponder;
   int64_t nodes;
   TimePoint startTime;
-  Move* baseAddress;
-  size_t dbMapping, dbSize;
+  Scout::Data scout;
 };
 
 
@@ -117,11 +132,7 @@ class Thread;
 
 namespace Scout {
 
-struct Results {
-  size_t movesCnt;
-};
-
-void search(const Search::LimitsType&, Thread*);
+void search(Thread*);
 void print_results(const Search::LimitsType&);
 
 } // namespace Scout

@@ -193,7 +193,7 @@ void ThreadPool::start_thinking(Position& pos, StateListPtr& states,
   Search::Limits = limits;
   Search::RootMoves rootMoves;
 
-  if (!limits.baseAddress)
+  if (!limits.scout.baseAddress)
       for (const auto& m : MoveList<LEGAL>(pos))
           if (   limits.searchmoves.empty()
                  || std::count(limits.searchmoves.begin(), limits.searchmoves.end(), m))
@@ -218,6 +218,7 @@ void ThreadPool::start_thinking(Position& pos, StateListPtr& states,
       th->rootDepth = DEPTH_ZERO;
       th->rootMoves = rootMoves;
       th->rootPos.set(pos.fen(), pos.is_chess960(), &setupStates->back(), th);
+      th->scout = limits.scout;
   }
 
   setupStates->back() = tmp; // Restore st->previous, cleared by Position::set()

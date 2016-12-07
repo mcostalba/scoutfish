@@ -35,16 +35,19 @@
 
 namespace Scout {
 
-void search(const Search::LimitsType& limits, Thread* th) {
+void search(Thread* th) {
 
   StateInfo states[1024], *st = states;
-  size_t cnt = 0;
+  size_t cnt = 0, matchCnt = 0;
+  Scout::Data& d = th->scout;
 
   // Compute our file sub-range to search
-  size_t range = limits.dbSize  / Threads.size();
-  Move* data = limits.baseAddress + th->idx * range;
-  Move* end = th->idx == Threads.size() - 1 ? limits.baseAddress + limits.dbSize
+  const RuleType* rules = d.rules;
+  size_t range = d.dbSize  / Threads.size();
+  Move* data = d.baseAddress + th->idx * range;
+  Move* end = th->idx == Threads.size() - 1 ? d.baseAddress + d.dbSize
                                             : data + range;
+
   // Move to the beginning of the next game
   while (*data++ != MOVE_NONE) {}
 
@@ -63,6 +66,31 @@ void search(const Search::LimitsType& limits, Thread* th) {
 
           pos.do_move(m, *st++, pos.gives_check(m));
           cnt++;
+          const RuleType* curRule = rules - 1;
+
+          // Loop across matching rules, early exit as soon as
+          // a match fails.
+          while (true)
+          {
+              switch (*++curRule)
+              {
+              case RuleNone:
+                  goto EndWhile;
+                  break;
+
+              case RulePattern:
+                  // Here goes our match logic
+                  break;
+
+              case RuleEnd:
+                  // Success!
+                  matchCnt++;
+                  goto EndWhile;
+                  break;
+              }
+          }
+
+EndWhile: {}
 
       } while (*++data != MOVE_NONE);
 
@@ -70,20 +98,26 @@ void search(const Search::LimitsType& limits, Thread* th) {
       while (*++data == MOVE_NONE && data < end) {}
   }
 
-  th->scoutResults.movesCnt = cnt;
+  d.movesCnt = cnt;
+  d.matchCnt = matchCnt;
 }
 
 void print_results(const Search::LimitsType& limits) {
 
   TimePoint elapsed = now() - limits.startTime + 1;
-  size_t cnt = 0;
+  Scout::Data d = Threads.main()->scout;
+  size_t cnt = 0, matches = 0;
 
-  mem_unmap(limits.baseAddress, limits.dbMapping);
+  mem_unmap(d.baseAddress, d.dbMapping);
 
   for (Thread* th : Threads)
-      cnt += th->scoutResults.movesCnt;
+  {
+      cnt += th->scout.movesCnt;
+      matches += th->scout.matchCnt;
+  }
 
   std::cerr << "\nMoves: " << cnt
+            << "\nMatches found: " << matches
             << "\nMoves/second: " << 1000 * cnt / elapsed
             << "\nProcessing time (ms): " << elapsed << "\n" << std::endl;
 }

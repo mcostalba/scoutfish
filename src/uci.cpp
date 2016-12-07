@@ -148,6 +148,7 @@ namespace {
   void scout(Position& pos, istringstream& is) {
 
     Search::LimitsType limits;
+    Scout::Data& d = limits.scout;
     uint64_t mapping, size;
     void* baseAddress;
     std::string dbName;
@@ -162,9 +163,9 @@ namespace {
 
     mem_map(dbName.c_str(), &baseAddress, &mapping, &size);
 
-    limits.baseAddress = (Move*)baseAddress;
-    limits.dbMapping = mapping;
-    limits.dbSize = size / sizeof(Move);
+    d.baseAddress = (Move*)baseAddress;
+    d.dbMapping = mapping;
+    d.dbSize = size / sizeof(Move);
     limits.startTime = now();
 
     Threads.start_thinking(pos, States, limits);

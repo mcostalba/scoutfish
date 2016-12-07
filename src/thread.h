@@ -73,7 +73,7 @@ public:
   MoveStats counterMoves;
   FromToStats fromTo;
   CounterMoveHistoryStats counterMoveHistory;
-  Scout::Results scoutResults;
+  Scout::Data scout;
 };
 
 
