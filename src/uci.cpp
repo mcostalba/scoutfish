@@ -228,7 +228,7 @@ void UCI::loop(int argc, char* argv[]) {
       else if (token == "go")         go(pos, is);
       else if (token == "position")   position(pos, is);
       else if (token == "setoption")  setoption(is);
-      else if (token == "db")         Parser::make_db(is);
+      else if (token == "make")       Parser::make_db(is);
       else if (token == "scout")      scout(pos, is);
 
       // Additional custom non-UCI commands, useful for debugging
