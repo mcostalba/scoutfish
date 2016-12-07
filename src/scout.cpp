@@ -102,6 +102,10 @@ void search(Thread* th) {
 
               case RuleEnd:
                   matchCnt++; // All rules passed: success!
+
+                  // Skip to the next game after first match
+                  while (*++data != MOVE_NONE) { cnt++; }
+                  data--;
                   goto EndWhile;
               }
           }
