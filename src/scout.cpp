@@ -21,6 +21,7 @@
 #include <algorithm>
 #include <cstdint>
 #include <cstdio>
+#include <exception>
 #include <fstream>
 #include <iostream>
 #include <map>
@@ -54,9 +55,10 @@ void search(Thread* th) {
                                             : data + range;
 
   // Copy to locals hot-path variables
-  const RuleType* rules = d.rules;
+  const RuleType* rules = d.rules.data();
   Bitboard all = d.pattern.all;
   Bitboard white = d.pattern.white;
+  Key matKey = d.matKey;
   const auto& pieces = d.pattern.pieces;
 
   // Move to the beginning of the next game
@@ -96,8 +98,11 @@ void search(Thread* th) {
                   for (const auto& p : pieces)
                      if ((pos.pieces(p.first) & p.second) != p.second)
                          goto EndWhile;
+                  break;
 
-                  // Matched! Let's continue with next rule
+              case RuleMaterial:
+                  if (pos.material_key() != matKey)
+                      goto EndWhile;
                   break;
 
               case RuleEnd:
@@ -152,9 +157,18 @@ void print_results(const Search::LimitsType& limits) {
 
 void parse_rules(Scout::Data& d, const std::string& jsonStr) {
 
-  //std::string dbg = "{ \"fen\": \"8/8/p7/8/8/1B3N2/8/8\" }";
+  //std::string dbg = "{ \"fen\": \"8/8/8/8/1k6/8/8/8\", \"material\": \"KBNKP\" }";
 
-  json j = json::parse(jsonStr);
+  json j;
+
+  try {
+
+      j = json::parse(jsonStr);
+
+  } catch (const std::exception& e) {
+      std::cerr << e.what() << std::endl;
+      exit(0);
+  }
 
   if (!j["fen"].empty())
   {
@@ -170,10 +184,17 @@ void parse_rules(Scout::Data& d, const std::string& jsonStr) {
           if (pos.pieces(pt))
               p.pieces.push_back(std::make_pair(pt, pos.pieces(pt)));
 
-      d.rules[0] = Scout::RulePattern;
-      d.rules[1] = Scout::RuleEnd;
+      d.rules.push_back(Scout::RulePattern);
   }
 
+  if (!j["material"].empty())
+  {
+      StateInfo st;
+      d.matKey = Position().set(j["material"], WHITE, &st).material_key();
+      d.rules.push_back(Scout::RuleMaterial);
+  }
+
+  d.rules.push_back(d.rules.size() ? Scout::RuleEnd : Scout::RuleNone);
 }
 
 } // namespace

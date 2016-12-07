@@ -33,7 +33,7 @@ class Position;
 namespace Scout {
 
 enum RuleType {
-  RuleNone, RulePattern, RuleEnd
+  RuleNone, RulePattern, RuleMaterial, RuleEnd
 };
 
 struct Pattern {
@@ -46,8 +46,9 @@ struct Data {
   Move* baseAddress;
   size_t dbMapping, dbSize;
   size_t movesCnt, matchCnt;
-  RuleType rules[10];
+  std::vector<RuleType> rules;
   Pattern pattern;
+  Key matKey;
 };
 
 }
@@ -103,7 +104,6 @@ struct LimitsType {
     npmsec = movestogo = depth = movetime = mate = infinite = ponder = 0;
     scout.dbMapping = scout.dbSize = scout.matchCnt = scout.movesCnt = 0;
     scout.baseAddress = nullptr;
-    scout.rules[0] = Scout::RuleNone;
   }
 
   bool use_time_management() const {
