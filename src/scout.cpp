@@ -35,6 +35,9 @@
 
 namespace Scout {
 
+/// search() re-play all the games and after each move look if the current
+/// position matches the requested rules.
+
 void search(Thread* th) {
 
   StateInfo states[1024], *st = states;
@@ -76,7 +79,6 @@ void search(Thread* th) {
               {
               case RuleNone:
                   goto EndWhile;
-                  break;
 
               case RulePattern:
                   // Here goes our match logic
@@ -86,7 +88,6 @@ void search(Thread* th) {
                   // Success!
                   matchCnt++;
                   goto EndWhile;
-                  break;
               }
           }
 
@@ -101,6 +102,10 @@ EndWhile: {}
   d.movesCnt = cnt;
   d.matchCnt = matchCnt;
 }
+
+
+/// print_results() collect info out of the threads at the end of the search
+/// and print it out.
 
 void print_results(const Search::LimitsType& limits) {
 
@@ -120,6 +125,17 @@ void print_results(const Search::LimitsType& limits) {
             << "\nMatches found: " << matches
             << "\nMoves/second: " << 1000 * cnt / elapsed
             << "\nProcessing time (ms): " << elapsed << "\n" << std::endl;
+}
+
+
+/// parse_rules() read a JSON input, extract the requested rules and fill the
+/// Scout::Data struct to be used during the search.
+
+void parse_rules(Scout::Data& d, const std::string& jsonStr) {
+
+    std::cerr << jsonStr << std::endl;
+
+    d.rules[0] = Scout::RuleNone;
 }
 
 } // namespace

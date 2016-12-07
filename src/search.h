@@ -132,6 +132,7 @@ class Thread;
 
 namespace Scout {
 
+void parse_rules(Scout::Data&, const std::string&);
 void search(Thread*);
 void print_results(const Search::LimitsType&);
 

@@ -32,13 +32,13 @@
 #include "uci.h"
 #include "syzygy/tbprobe.h"
 
-namespace Parser {
-  void make_db(std::istringstream& is);
-}
-
 using namespace std;
 
 extern void benchmark(const Position& pos, istream& is);
+
+namespace Parser {
+  void make_db(istringstream& is);
+}
 
 namespace {
 
@@ -48,7 +48,7 @@ namespace {
   // A list to keep track of the position states along the setup moves (from the
   // start position to the position just before the search starts). Needed by
   // 'draw by repetition' detection.
-  StateListPtr States(new std::deque<StateInfo>(1));
+  StateListPtr States(new deque<StateInfo>(1));
 
 
   // position() is called when engine receives the "position" UCI command.
@@ -74,7 +74,7 @@ namespace {
     else
         return;
 
-    States = StateListPtr(new std::deque<StateInfo>(1));
+    States = StateListPtr(new deque<StateInfo>(1));
     pos.set(fen, Options["UCI_Chess960"], &States->back(), Threads.main());
 
     // Parse move list (if any)
@@ -151,13 +151,13 @@ namespace {
     Scout::Data& d = limits.scout;
     uint64_t mapping, size;
     void* baseAddress;
-    std::string dbName;
+    string dbName;
 
     is >> dbName;
 
     if (dbName.empty())
     {
-        std::cerr << "Missing PGN file name..." << std::endl;
+        cerr << "Missing PGN file name..." << endl;
         exit(0);
     }
 
@@ -166,6 +166,11 @@ namespace {
     d.baseAddress = (Move*)baseAddress;
     d.dbMapping = mapping;
     d.dbSize = size / sizeof(Move);
+
+    string jsonStr;
+    getline(is, jsonStr); // Get the rest of the string from the stream
+    Scout::parse_rules(d, jsonStr);
+
     limits.startTime = now();
 
     Threads.start_thinking(pos, States, limits);
@@ -188,7 +193,7 @@ void UCI::loop(int argc, char* argv[]) {
   pos.set(StartFEN, false, &States->back(), Threads.main());
 
   for (int i = 1; i < argc; ++i)
-      cmd += std::string(argv[i]) + " ";
+      cmd += string(argv[i]) + " ";
 
   do {
       if (argc == 1 && !getline(cin, cmd)) // Block here waiting for input or EOF
@@ -279,8 +284,8 @@ string UCI::value(Value v) {
 
 /// UCI::square() converts a Square to a string in algebraic notation (g1, a7, etc.)
 
-std::string UCI::square(Square s) {
-  return std::string{ char('a' + file_of(s)), char('1' + rank_of(s)) };
+string UCI::square(Square s) {
+  return string{ char('a' + file_of(s)), char('1' + rank_of(s)) };
 }
 
 
