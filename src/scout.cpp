@@ -48,11 +48,16 @@ void search(Thread* th) {
   Scout::Data& d = th->scout;
 
   // Compute our file sub-range to search
-  const RuleType* rules = d.rules;
   size_t range = d.dbSize  / Threads.size();
   Move* data = d.baseAddress + th->idx * range;
   Move* end = th->idx == Threads.size() - 1 ? d.baseAddress + d.dbSize
                                             : data + range;
+
+  // Copy to locals hot-path variables
+  const RuleType* rules = d.rules;
+  Bitboard all = d.pattern.all;
+  Bitboard white = d.pattern.white;
+  const auto& pieces = d.pattern.pieces;
 
   // Move to the beginning of the next game
   while (*data++ != MOVE_NONE) {}
@@ -84,12 +89,19 @@ void search(Thread* th) {
                   goto EndWhile;
 
               case RulePattern:
-                  // Here goes our match logic
+                  if (   (pos.pieces() & all) != all
+                      || (pos.pieces(WHITE) & white) != white)
+                      goto EndWhile;
+
+                  for (const auto& p : pieces)
+                     if ((pos.pieces(p.first) & p.second) != p.second)
+                         goto EndWhile;
+
+                  // Matched! Let's continue with next rule
                   break;
 
               case RuleEnd:
-                  // Success!
-                  matchCnt++;
+                  matchCnt++; // All rules passed: success!
                   goto EndWhile;
               }
           }
@@ -136,11 +148,28 @@ void print_results(const Search::LimitsType& limits) {
 
 void parse_rules(Scout::Data& d, const std::string& jsonStr) {
 
-    json j = json::parse(jsonStr);
-    
-    std::cerr << j.dump(4) << std::endl;
+  //std::string dbg = "{ \"fen\": \"8/8/p7/8/8/1B3N2/8/8\" }";
 
-    d.rules[0] = Scout::RuleNone;
+  json j = json::parse(jsonStr);
+
+  if (!j["fen"].empty())
+  {
+      StateInfo st;
+      Position pos;
+      pos.set(j["fen"], false, &st, nullptr, true);
+
+      // Setup the pattern to be searched
+      auto& p = d.pattern;
+      p.all = pos.pieces();
+      p.white = pos.pieces(WHITE);
+      for (PieceType pt = PAWN; pt <= KING; ++pt)
+          if (pos.pieces(pt))
+              p.pieces.push_back(std::make_pair(pt, pos.pieces(pt)));
+
+      d.rules[0] = Scout::RulePattern;
+      d.rules[1] = Scout::RuleEnd;
+  }
+
 }
 
 } // namespace

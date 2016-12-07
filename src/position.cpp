@@ -159,7 +159,7 @@ void Position::init() {
 /// This function is not very robust - make sure that input FENs are correct,
 /// this is assumed to be the responsibility of the GUI.
 
-Position& Position::set(const string& fenStr, bool isChess960, StateInfo* si, Thread* th) {
+Position& Position::set(const string& fenStr, bool isChess960, StateInfo* si, Thread* th, bool pattern) {
 /*
    A FEN string defines a particular position using only the ASCII character set.
 
@@ -222,6 +222,9 @@ Position& Position::set(const string& fenStr, bool isChess960, StateInfo* si, Th
           ++sq;
       }
   }
+
+  if (pattern)
+      return *this;
 
   // 2. Active color
   ss >> token;

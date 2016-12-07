@@ -36,11 +36,18 @@ enum RuleType {
   RuleNone, RulePattern, RuleEnd
 };
 
+struct Pattern {
+  Bitboard all;
+  Bitboard white;
+  std::vector<std::pair<PieceType, Bitboard>> pieces;
+};
+
 struct Data {
   Move* baseAddress;
   size_t dbMapping, dbSize;
   size_t movesCnt, matchCnt;
   RuleType rules[10];
+  Pattern pattern;
 };
 
 }
