@@ -33,7 +33,7 @@ class Position;
 namespace Scout {
 
 enum RuleType {
-  RuleNone, RulePattern, RuleMaterial, RuleEnd
+  RuleNone, RulePattern, RuleMaterial, RuleWhite, RuleBlack, RuleEnd
 };
 
 struct Pattern {

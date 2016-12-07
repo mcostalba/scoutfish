@@ -88,21 +88,31 @@ void search(Thread* th) {
               switch (*++curRule)
               {
               case RuleNone:
-                  goto EndWhile;
+                  goto Failed;
 
               case RulePattern:
                   if (   (pos.pieces() & all) != all
                       || (pos.pieces(WHITE) & white) != white)
-                      goto EndWhile;
+                      goto Failed;
 
                   for (const auto& p : pieces)
                      if ((pos.pieces(p.first) & p.second) != p.second)
-                         goto EndWhile;
+                         goto Failed;
                   break;
 
               case RuleMaterial:
                   if (pos.material_key() != matKey)
-                      goto EndWhile;
+                      goto Failed;
+                  break;
+
+              case RuleWhite:
+                  if (pos.side_to_move() != WHITE)
+                      goto Failed;
+                  break;
+
+              case RuleBlack:
+                  if (pos.side_to_move() != BLACK)
+                      goto Failed;
                   break;
 
               case RuleEnd:
@@ -111,11 +121,11 @@ void search(Thread* th) {
                   // Skip to the next game after first match
                   while (*++data != MOVE_NONE) { cnt++; }
                   data--;
-                  goto EndWhile;
+                  goto Failed;
               }
           }
 
-EndWhile: {}
+Failed: {}
 
       } while (*++data != MOVE_NONE);
 
@@ -155,10 +165,15 @@ void print_results(const Search::LimitsType& limits) {
 /// parse_rules() read a JSON input, extract the requested rules and fill the
 /// Scout::Data struct to be used during the search.
 
-void parse_rules(Scout::Data& d, const std::string& jsonStr) {
+void parse_rules(Scout::Data& data, const std::string& jsonStr) {
 
-  //std::string dbg = "{ \"fen\": \"8/8/8/8/1k6/8/8/8\", \"material\": \"KBNKP\" }";
+  /* Examples of JSON queries:
 
+      { \"fen\": \"8/8/p7/8/8/1B3N2/8/8\" }
+      { \"fen\": \"8/8/8/8/1k6/8/8/8\", \"material\": \"KBNKP\" }
+      { \"material\": \"KBNKP\", \"stm\": \"WHITE\" }
+
+  */
   json j;
 
   try {
@@ -177,24 +192,30 @@ void parse_rules(Scout::Data& d, const std::string& jsonStr) {
       pos.set(j["fen"], false, &st, nullptr, true);
 
       // Setup the pattern to be searched
-      auto& p = d.pattern;
+      auto& p = data.pattern;
       p.all = pos.pieces();
       p.white = pos.pieces(WHITE);
       for (PieceType pt = PAWN; pt <= KING; ++pt)
           if (pos.pieces(pt))
               p.pieces.push_back(std::make_pair(pt, pos.pieces(pt)));
 
-      d.rules.push_back(Scout::RulePattern);
+      data.rules.push_back(Scout::RulePattern);
   }
 
   if (!j["material"].empty())
   {
       StateInfo st;
-      d.matKey = Position().set(j["material"], WHITE, &st).material_key();
-      d.rules.push_back(Scout::RuleMaterial);
+      data.matKey = Position().set(j["material"], WHITE, &st).material_key();
+      data.rules.push_back(Scout::RuleMaterial);
   }
 
-  d.rules.push_back(d.rules.size() ? Scout::RuleEnd : Scout::RuleNone);
+  if (!j["stm"].empty())
+  {
+      auto rule = j["stm"] == "WHITE" ? Scout::RuleWhite : Scout::RuleBlack;
+      data.rules.push_back(rule);
+  }
+
+  data.rules.push_back(data.rules.size() ? Scout::RuleEnd : Scout::RuleNone);
 }
 
 } // namespace
