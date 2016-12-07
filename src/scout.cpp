@@ -27,11 +27,14 @@
 #include <string>
 #include <sstream>
 
+#include "json.hpp"
 #include "misc.h"
 #include "position.h"
 #include "search.h"
 #include "thread.h"
 #include "uci.h"
+
+using json = nlohmann::json;
 
 namespace Scout {
 
@@ -133,7 +136,9 @@ void print_results(const Search::LimitsType& limits) {
 
 void parse_rules(Scout::Data& d, const std::string& jsonStr) {
 
-    std::cerr << jsonStr << std::endl;
+    json j = json::parse(jsonStr);
+    
+    std::cerr << j.dump(4) << std::endl;
 
     d.rules[0] = Scout::RuleNone;
 }
