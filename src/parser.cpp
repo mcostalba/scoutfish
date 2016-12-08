@@ -29,8 +29,11 @@
 
 #include "misc.h"
 #include "position.h"
+#include "search.h"
 #include "thread.h"
 #include "uci.h"
+
+using Scout::GameResult;
 
 namespace {
 
@@ -56,10 +59,6 @@ enum Step : uint8_t {
     OPEN_VARIATION, START_NAG, POP_STATE, START_MOVE_NUMBER, START_NEXT_SAN,
     CASTLE_OR_RESULT, START_READ_SAN, READ_MOVE_CHAR, END_MOVE, START_RESULT,
     END_GAME, TAG_IN_BRACE, MISSING_RESULT
-};
-
-enum MetaType {
-    MOVE_TOTAL, MOVE_WIN, MOVE_DRAW
 };
 
 Token ToToken[256];
@@ -96,7 +95,8 @@ template<typename T> uint8_t* write(const T& n, uint8_t* data) {
 
 template<bool DryRun = false>
 const char* parse_game(const char* moves, const char* end, std::ofstream& ofs,
-                       const char* fen, const char* fenEnd, size_t& fixed) {
+                       const char* fen, const char* fenEnd, size_t& fixed,
+                       const char* data) {
 
     StateInfo states[1024], *st = states;
     Move gameMoves[1024], *curMove = gameMoves;
@@ -109,6 +109,17 @@ const char* parse_game(const char* moves, const char* end, std::ofstream& ofs,
         pos.set(fen, false, st++, pos.this_thread());
         standard = false;
     }
+
+    // Result is coded from 1 to 4 as WhiteWin, BlackWin, Draw, Unknown
+    // *(data-2) contains the last digit in a result, e.g. 1-0, 0-1, 1/2-1/2, *
+    GameResult result = data ? GameResult(*(data-2) - '0' + 1) : GameResult::Unknown;
+
+    // In case of * or any unknown result char, set it to RESULT_UNKNOWN
+    if (result < GameResult::WhiteWin || result > GameResult::Draw)
+        result = GameResult::Unknown;
+
+    // Write result as a special move where the 'to' square stores the result
+    *curMove++ = make_move(SQ_A1, Square(result));
 
     while (cur < end)
     {
@@ -131,7 +142,7 @@ const char* parse_game(const char* moves, const char* end, std::ofstream& ofs,
         else
             pos.do_move(*curMove, *st++, pos.gives_check(*curMove));
 
-        while (*cur++) {} // Go to next move
+        while (*cur++) {} // Go to next move, moves are '\0' terminated
         ++curMove;
     }
 
@@ -253,7 +264,7 @@ void parse_pgn(void* baseAddress, uint64_t size, PGNStats& stats, std::ofstream&
                 state = ToStep[RESULT];
                 break;
             }
-            parse_game(moves, end, ofs, fen, fenEnd, fixed);
+            parse_game(moves, end, ofs, fen, fenEnd, fixed, data);
             gameCnt++;
             end = curMove = moves;
             fenEnd = fen;
@@ -269,7 +280,7 @@ void parse_pgn(void* baseAddress, uint64_t size, PGNStats& stats, std::ofstream&
              /* Fall through */
 
         case MISSING_RESULT: // Missing result, next game already started
-            parse_game(moves, end, ofs, fen, fenEnd, fixed);
+            parse_game(moves, end, ofs, fen, fenEnd, fixed, data);
             gameCnt++;
             end = curMove = moves;
             fenEnd = fen;
@@ -290,7 +301,7 @@ void parse_pgn(void* baseAddress, uint64_t size, PGNStats& stats, std::ofstream&
     // trigger: no newline at EOF, missing result, missing closing brace, etc.
     if (state != ToStep[HEADER] && end - moves)
     {
-        parse_game(moves, end, ofs, fen, fenEnd, fixed);
+        parse_game(moves, end, ofs, fen, fenEnd, fixed, data);
         gameCnt++;
     }
 
@@ -310,7 +321,7 @@ const char* play_game(const Position& pos, Move move, const char* cur, const cha
     p.do_move(move, st, pos.gives_check(move));
     while (*cur++) {} // Move to next move in game
     return cur < end ? parse_game<true>(cur, end, ofs, p.fen().c_str(),
-                                        nullptr, fixed) : cur;
+                                        nullptr, fixed, nullptr) : cur;
 }
 
 namespace Parser {

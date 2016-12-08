@@ -69,10 +69,13 @@ void search(Thread* th) {
   {
       assert(*data != MOVE_NONE);
 
+      // First move stores the result
+      GameResult result = GameResult(to_sq(Move(*data)));
       Position pos = th->rootPos;
       st = states;
 
-      do {
+      while (*++data != MOVE_NONE) // Could be an empty game
+      {
           Move m = *data;
 
           assert(pos.legal(m));
@@ -115,9 +118,15 @@ void search(Thread* th) {
                       goto Failed;
                   break;
 
+              case RuleResult:
+                  if (result != d.result)
+                      goto SkipToNext;
+                  break;
+
               case RuleEnd:
                   matchCnt++; // All rules passed: success!
 
+SkipToNext:
                   // Skip to the next game after first match
                   while (*++data != MOVE_NONE) { cnt++; }
                   data--;
@@ -127,7 +136,7 @@ void search(Thread* th) {
 
 Failed: {}
 
-      } while (*++data != MOVE_NONE);
+      };
 
       // End of game, move to next
       while (*++data == MOVE_NONE && data < end) {}
@@ -213,6 +222,20 @@ void parse_rules(Scout::Data& data, const std::string& jsonStr) {
   {
       auto rule = j["stm"] == "WHITE" ? Scout::RuleWhite : Scout::RuleBlack;
       data.rules.push_back(rule);
+  }
+
+  if (!j["result"].empty())
+  {
+      GameResult result =  j["result"] == "1-0" ? WhiteWin
+                         : j["result"] == "0-1" ? BlackWin
+                         : j["result"] == "1/2-1/2" ? Draw
+                         : j["result"] == "*" ? Unknown : Invalid;
+
+      if (result != Invalid)
+      {
+          data.result = result;
+          data.rules.push_back(RuleResult);
+      }
   }
 
   data.rules.push_back(data.rules.size() ? Scout::RuleEnd : Scout::RuleNone);

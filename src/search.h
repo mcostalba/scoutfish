@@ -32,8 +32,12 @@ class Position;
 
 namespace Scout {
 
+enum GameResult : uint8_t {
+  WhiteWin = 1, BlackWin, Draw, Unknown, Invalid
+};
+
 enum RuleType {
-  RuleNone, RulePattern, RuleMaterial, RuleWhite, RuleBlack, RuleEnd
+  RuleNone, RulePattern, RuleMaterial, RuleWhite, RuleBlack, RuleResult, RuleEnd
 };
 
 struct Pattern {
@@ -49,6 +53,7 @@ struct Data {
   std::vector<RuleType> rules;
   Pattern pattern;
   Key matKey;
+  GameResult result;
 };
 
 }
