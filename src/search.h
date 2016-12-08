@@ -47,14 +47,20 @@ struct Pattern {
   std::vector<std::pair<PieceType, Bitboard>> pieces;
 };
 
+struct MatchingGame {
+  uint64_t gameOfs;
+  uint16_t ply;
+};
+
 struct Data {
   Move* baseAddress;
   size_t dbMapping, dbSize;
   size_t movesCnt, matchCnt;
-  std::vector<RuleType> rules;
   Pattern pattern;
   Key matKey;
   GameResult result;
+  std::vector<RuleType> rules;
+  std::vector<MatchingGame> matches;
 };
 
 }

@@ -44,9 +44,13 @@ namespace Scout {
 
 void search(Thread* th) {
 
+  static_assert(sizeof(uint64_t) == 4 * sizeof(Move), "Wrong Move size");
+
   StateInfo states[1024], *st = states;
-  size_t cnt = 0, matchCnt = 0;
+  size_t cnt = 0, matchCnt = 0, gameCnt = 0;
+  uint64_t gameOfs;
   Scout::Data& d = th->scout;
+  d.matches.reserve(100000);
 
   // Compute our file sub-range to search
   size_t range = d.dbSize  / Threads.size();
@@ -62,17 +66,28 @@ void search(Thread* th) {
   const auto& pieces = d.pattern.pieces;
 
   // Move to the beginning of the next game
-  while (*data++ != MOVE_NONE) {}
+//  while (*++data != MOVE_NONE) {}
+
+   data--; // Should point to MOVE_NONE. FIXME Broken for multi-thread!!!
+
+NextGame:
+
+  assert(data < d.baseAddress || *data == MOVE_NONE);
 
   // Main loop, replay all games until we finish our file chunk
-  while (data < end)
+  while (++data < end)
   {
+      // First 4 Moves store the game offset, skip them
+      Move* gameOfsPtr = data;
+      data += 4;
+
       assert(*data != MOVE_NONE);
 
       // First move stores the result
       GameResult result = GameResult(to_sq(Move(*data)));
       Position pos = th->rootPos;
       st = states;
+      gameCnt = cnt;
 
       while (*++data != MOVE_NONE) // Could be an empty game
       {
@@ -91,55 +106,53 @@ void search(Thread* th) {
               switch (*++curRule)
               {
               case RuleNone:
-                  goto Failed;
+                  goto NextMove;
 
               case RulePattern:
                   if (   (pos.pieces() & all) != all
                       || (pos.pieces(WHITE) & white) != white)
-                      goto Failed;
+                      goto NextMove;
 
                   for (const auto& p : pieces)
                      if ((pos.pieces(p.first) & p.second) != p.second)
-                         goto Failed;
+                         goto NextMove;
                   break;
 
               case RuleMaterial:
                   if (pos.material_key() != matKey)
-                      goto Failed;
+                      goto NextMove;
                   break;
 
               case RuleWhite:
                   if (pos.side_to_move() != WHITE)
-                      goto Failed;
+                      goto NextMove;
                   break;
 
               case RuleBlack:
                   if (pos.side_to_move() != BLACK)
-                      goto Failed;
+                      goto NextMove;
                   break;
 
               case RuleResult:
                   if (result != d.result)
-                      goto SkipToNext;
+                      goto SkipToNextGame;
                   break;
 
               case RuleEnd:
                   matchCnt++; // All rules passed: success!
+                  read_be(gameOfs, (uint8_t*)gameOfsPtr);
+                  d.matches.push_back({gameOfs, uint16_t(cnt - gameCnt)});
 
-SkipToNext:
-                  // Skip to the next game after first match
+SkipToNextGame:
+                  // Skip to the end of the game after the first match
                   while (*++data != MOVE_NONE) { cnt++; }
-                  data--;
-                  goto Failed;
+                  goto NextGame;
               }
           }
 
-Failed: {}
+NextMove: {}
 
       };
-
-      // End of game, move to next
-      while (*++data == MOVE_NONE && data < end) {}
   }
 
   d.movesCnt = cnt;
@@ -148,7 +161,7 @@ Failed: {}
 
 
 /// print_results() collect info out of the threads at the end of the search
-/// and print it out.
+/// and print it out in JSON format.
 
 void print_results(const Search::LimitsType& limits) {
 
@@ -164,10 +177,22 @@ void print_results(const Search::LimitsType& limits) {
       matches += th->scout.matchCnt;
   }
 
-  std::cerr << "\nMoves: " << cnt
-            << "\nMatches found: " << matches
-            << "\nMoves/second: " << 1000 * cnt / elapsed
-            << "\nProcessing time (ms): " << elapsed << "\n" << std::endl;
+  std::string tab = "\n    ";
+  std::string indent4 = "    ";
+  std::cout << "{"
+            << tab << "\"moves\": " << cnt << ","
+            << tab << "\"match count\": " << matches << ","
+            << tab << "\"moves/second\": " << 1000 * cnt / elapsed << ","
+            << tab << "\"processing time (ms)\": " << elapsed << ","
+            << tab << "\"matches\":"
+            << tab << "[";
+
+  for (Thread* th : Threads)
+      for (auto& m : th->scout.matches)
+          std::cout << tab << indent4 << "{ \"ofs\": " << m.gameOfs
+                                      << ", \"ply\": " << m.ply << "},";
+
+  std::cout << tab << "]\n}" << std::endl;
 }
 
 

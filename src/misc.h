@@ -111,4 +111,24 @@ namespace WinProcGroup {
 void mem_map(const char* fname, void** baseAddress, uint64_t* mapping, size_t* size);
 void mem_unmap(void* baseAddress, uint64_t mapping);
 
+
+/// Convert a number of type T into a sequence of bytes in big-endian format
+
+template<typename T> uint8_t* write_be(const T& n, uint8_t* data) {
+
+  for (int i =  8 * (sizeof(T) - 1); i >= 0; i -= 8)
+      *data++ = uint8_t(n >> i);
+
+  return data;
+}
+
+template<typename T> uint8_t* read_be(T& n, uint8_t* data) {
+
+  n = 0;
+  for (int i = sizeof(T); i > 0; --i)
+      n = (n << 8) + *data++;
+
+  return data;
+}
+
 #endif // #ifndef MISC_H_INCLUDED
