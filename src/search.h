@@ -38,12 +38,11 @@ enum GameResult : uint8_t {
 };
 
 enum RuleType {
-  RuleNone, RulePattern, RuleMaterial, RuleWhite, RuleBlack, RuleResult, RuleEnd
+  RuleNone, RuleSubFen, RuleMaterial, RuleWhite, RuleBlack, RuleResult, RuleEnd
 };
 
-struct Pattern {
-  Bitboard all;
-  Bitboard white;
+struct SubFen {
+  Bitboard white, black;
   std::vector<std::pair<PieceType, Bitboard>> pieces;
 };
 
@@ -56,10 +55,10 @@ struct Data {
   Move* baseAddress;
   size_t dbMapping, dbSize;
   size_t movesCnt, matchCnt;
-  Pattern pattern;
   Key matKey;
   GameResult result;
   std::vector<RuleType> rules;
+  std::vector<SubFen> subfens;
   std::vector<MatchingGame> matches;
 };
 

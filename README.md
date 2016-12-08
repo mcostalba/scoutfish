@@ -61,12 +61,9 @@ increase thread number according to our hardware: the search speed will increase
 Above examples show how to query for a specific material distribution, for a specific
 game result and how to compose the queries to create complex and very general multiple-conditions.
 
+You are not limited to a single sub-fen, for instance the following query:
 
+    ./scoutfish.exe scout my_db.bin { "sub-fen": ["8/8/8/q7/8/8/8/8", "8/8/8/r7/8/8/8/8"] }
 
-
-
-
-
-
-
-
+Will match all the positions with a black queen **or** a black rook in a5. There is no limit
+to the size of the sub-fen list, enabling to compose very powerful queries.

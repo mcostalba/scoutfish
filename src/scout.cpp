@@ -82,10 +82,9 @@ void search(Thread* th) {
 
   // Copy to locals hot-path variables
   const RuleType* rules = d.rules.data();
-  Bitboard all = d.pattern.all;
-  Bitboard white = d.pattern.white;
   Key matKey = d.matKey;
-  const auto& pieces = d.pattern.pieces;
+  const SubFen* subfens = d.subfens.data();
+  const SubFen* subfensEnd = subfens + d.subfens.size();
 
   // Move to the beginning of the next game
   if (data != d.baseAddress)
@@ -135,14 +134,26 @@ NextGame:
               case RuleNone:
                   goto NextMove;
 
-              case RulePattern:
-                  if (   (pos.pieces() & all) != all
-                      || (pos.pieces(WHITE) & white) != white)
-                      goto NextMove;
+              case RuleSubFen:
+                  for (const SubFen* f = subfens; f < subfensEnd; ++f)
+                  {
+                      if (   (pos.pieces(WHITE) & f->white) != f->white
+                          || (pos.pieces(BLACK) & f->black) != f->black)
+                          continue;
 
-                  for (const auto& p : pieces)
-                     if ((pos.pieces(p.first) & p.second) != p.second)
-                         goto NextMove;
+                      bool ok = true;
+                      for (const auto& p : f->pieces)
+                          if ((pos.pieces(p.first) & p.second) != p.second)
+                          {
+                              ok = false;
+                              break;
+                          }
+
+                      if (ok)
+                          goto success;
+                  }
+                  goto NextMove;
+success:
                   break;
 
               case RuleMaterial:
@@ -233,6 +244,7 @@ void parse_rules(Scout::Data& data, std::istringstream& is) {
       { "sub-fen": "8/8/8/8/1k6/8/8/8", "material": "KBNKP" }
       { "material": "KBNKP", "stm": "WHITE" }
       { "material": "KNNK", "result": "1-0" }
+      { "sub-fen": ["8/8/8/q7/8/8/8/8", "8/8/8/r7/8/8/8/8"] }
 
   */
 
@@ -240,19 +252,23 @@ void parse_rules(Scout::Data& data, std::istringstream& is) {
 
   if (!j["sub-fen"].empty())
   {
-      StateInfo st;
-      Position pos;
-      pos.set(j["sub-fen"], false, &st, nullptr, true);
+      for (const auto& fen : j["sub-fen"])
+      {
+          StateInfo st;
+          Position pos;
+          pos.set(fen, false, &st, nullptr, true);
 
-      // Setup the pattern to be searched
-      auto& p = data.pattern;
-      p.all = pos.pieces();
-      p.white = pos.pieces(WHITE);
-      for (PieceType pt = PAWN; pt <= KING; ++pt)
-          if (pos.pieces(pt))
-              p.pieces.push_back(std::make_pair(pt, pos.pieces(pt)));
+          // Setup the pattern to be searched
+          SubFen f;
+          f.white = pos.pieces(WHITE);
+          f.black = pos.pieces(BLACK);
+          for (PieceType pt = PAWN; pt <= KING; ++pt)
+              if (pos.pieces(pt))
+                  f.pieces.push_back(std::make_pair(pt, pos.pieces(pt)));
 
-      data.rules.push_back(Scout::RulePattern);
+          data.subfens.push_back(f);
+      }
+      data.rules.push_back(Scout::RuleSubFen);
   }
 
   if (!j["material"].empty())
