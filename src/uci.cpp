@@ -167,9 +167,7 @@ namespace {
     d.dbMapping = mapping;
     d.dbSize = size / sizeof(Move);
 
-    string jsonStr;
-    getline(is, jsonStr); // Get the rest of the string from the stream
-    Scout::parse_rules(d, jsonStr);
+    Scout::parse_rules(d, is);
 
     limits.startTime = now();
 

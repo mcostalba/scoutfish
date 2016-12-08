@@ -174,25 +174,18 @@ void print_results(const Search::LimitsType& limits) {
 /// parse_rules() read a JSON input, extract the requested rules and fill the
 /// Scout::Data struct to be used during the search.
 
-void parse_rules(Scout::Data& data, const std::string& jsonStr) {
+void parse_rules(Scout::Data& data, std::istringstream& is) {
 
   /* Examples of JSON queries:
 
-      { \"fen\": \"8/8/p7/8/8/1B3N2/8/8\" }
-      { \"fen\": \"8/8/8/8/1k6/8/8/8\", \"material\": \"KBNKP\" }
-      { \"material\": \"KBNKP\", \"stm\": \"WHITE\" }
+      { "fen": "8/8/p7/8/8/1B3N2/8/8" }
+      { "fen": "8/8/8/8/1k6/8/8/8", "material": "KBNKP" }
+      { "material": "KBNKP", "stm": "WHITE" }
+      { "material": "KNNK", "result": "1-0" }
 
   */
-  json j;
 
-  try {
-
-      j = json::parse(jsonStr);
-
-  } catch (const std::exception& e) {
-      std::cerr << e.what() << std::endl;
-      exit(0);
-  }
+  json j = json::parse(is);
 
   if (!j["fen"].empty())
   {

@@ -22,6 +22,7 @@
 #define SEARCH_H_INCLUDED
 
 #include <atomic>
+#include <sstream>
 #include <vector>
 
 #include "misc.h"
@@ -144,7 +145,7 @@ class Thread;
 
 namespace Scout {
 
-void parse_rules(Scout::Data&, const std::string&);
+void parse_rules(Scout::Data&, std::istringstream&);
 void search(Thread*);
 void print_results(const Search::LimitsType&);
 
