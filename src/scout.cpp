@@ -169,7 +169,6 @@ NextGame:
                   matchCnt++; // All rules passed: success!
                   read_be(gameOfs, (uint8_t*)gameOfsPtr);
                   d.matches.push_back({gameOfs, uint16_t(cnt - gameCnt)});
-
 SkipToNextGame:
                   // Skip to the end of the game after the first match
                   while (*++data != MOVE_NONE) { cnt++; }
@@ -230,8 +229,8 @@ void parse_rules(Scout::Data& data, std::istringstream& is) {
 
   /* Examples of JSON queries:
 
-      { "fen": "8/8/p7/8/8/1B3N2/8/8" }
-      { "fen": "8/8/8/8/1k6/8/8/8", "material": "KBNKP" }
+      { "sub-fen": "8/8/p7/8/8/1B3N2/8/8" }
+      { "sub-fen": "8/8/8/8/1k6/8/8/8", "material": "KBNKP" }
       { "material": "KBNKP", "stm": "WHITE" }
       { "material": "KNNK", "result": "1-0" }
 
@@ -239,11 +238,11 @@ void parse_rules(Scout::Data& data, std::istringstream& is) {
 
   json j = json::parse(is);
 
-  if (!j["fen"].empty())
+  if (!j["sub-fen"].empty())
   {
       StateInfo st;
       Position pos;
-      pos.set(j["fen"], false, &st, nullptr, true);
+      pos.set(j["sub-fen"], false, &st, nullptr, true);
 
       // Setup the pattern to be searched
       auto& p = data.pattern;
@@ -286,4 +285,4 @@ void parse_rules(Scout::Data& data, std::istringstream& is) {
   data.rules.push_back(data.rules.size() ? Scout::RuleEnd : Scout::RuleNone);
 }
 
-} // namespace
+} // namespace Scout
