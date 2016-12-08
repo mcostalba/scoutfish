@@ -389,18 +389,29 @@ void Position::set_state(StateInfo* si) const {
 
 Position& Position::set(const string& code, Color c, StateInfo* si) {
 
-  assert(code.length() > 0 && code.length() < 8);
-  assert(code[0] == 'K');
+  assert(code[0] == 'K' && code.find('K', 1) != std::string::npos);
 
   string sides[] = { code.substr(code.find('K', 1)),      // Weak
                      code.substr(0, code.find('K', 1)) }; // Strong
 
   std::transform(sides[c].begin(), sides[c].end(), sides[c].begin(), tolower);
 
-  string fenStr =  sides[0] + char(8 - sides[0].length() + '0') + "/8/8/8/8/8/8/"
-                 + sides[1] + char(8 - sides[1].length() + '0') + " w - - 0 10";
+  std::string fenStr = sides[0] + sides[1];
+  std::stringstream ss;
+  for (size_t i = 0; i < fenStr.size(); i++)
+  {
+      if (i && (i % 8 == 0))
+          ss << '/';
+      ss << fenStr[i];
+  }
 
-  return set(fenStr, false, si, nullptr);
+  if (fenStr.size() % 8)
+      ss << 8 - (fenStr.size() % 8);
+
+  ss << std::string("/8/8/8/8/8/8/8").substr(0, 2 * (7 - fenStr.size() / 8));
+  ss << " w - - 0 10";
+
+  return set(ss.str(), false, si, nullptr);
 }
 
 
