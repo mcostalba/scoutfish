@@ -102,9 +102,13 @@ const char* parse_game(const char* moves, const char* end, std::ofstream& ofs,
     Move gameMoves[1024], *curMove = gameMoves;
     Position pos = RootPos;
     const char *cur = moves;
+    bool standard = true;
 
     if (fenEnd != fen)
+    {
         pos.set(fen, false, st++, pos.this_thread());
+        standard = false;
+    }
 
     while (cur < end)
     {
@@ -116,12 +120,14 @@ const char* parse_game(const char* moves, const char* end, std::ofstream& ofs,
                 const char* sep = pos.side_to_move() == WHITE ? "" : "..";
                 std::cerr << "\nWrong move notation: " << sep << cur
                           << "\n" << pos << std::endl;
-
             }
             return cur;
         }
         else if (*curMove == MOVE_NULL)
+        {
             pos.do_null_move(*st++);
+            standard = false;
+        }
         else
             pos.do_move(*curMove, *st++, pos.gives_check(*curMove));
 
@@ -129,7 +135,7 @@ const char* parse_game(const char* moves, const char* end, std::ofstream& ofs,
         ++curMove;
     }
 
-    if (!DryRun && fenEnd == fen)
+    if (!DryRun && standard)
     {
         *curMove++ = MOVE_NONE; // Game separator
         ofs.write((const char*)gameMoves, (curMove - gameMoves) * sizeof(Move));
