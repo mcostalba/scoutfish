@@ -78,7 +78,7 @@ void search(Thread* th) {
       {
           Move m = *data;
 
-          assert(pos.legal(m));
+          assert(pos.pseudo_legal(m) && pos.legal(m));
 
           pos.do_move(m, *st++, pos.gives_check(m));
           cnt++;
