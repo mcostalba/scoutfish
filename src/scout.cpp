@@ -39,6 +39,28 @@ using json = nlohmann::json;
 
 namespace Scout {
 
+/// Helper function to detect the beginning of next game starting from a
+/// random position inside the DB. Here is tricky because a part of game offset
+/// could represent a MOVE_NONE value. We have to avoid to be fooled by this
+/// alias.
+Move* detect_next_game(Move* data) {
+
+  // Forward scan to find the first game separator candidate
+  while (*data != MOVE_NONE)
+      data++;
+
+  // This can be a real separator or a part of the game offset, because offset
+  // is 4 moves long, we jump back of 4 moves and rescan. In case of a real
+  // separator we end up at the same point, otherwise we stop earlier.
+  data -= 4;
+  while (*data != MOVE_NONE)
+      data++;
+
+  // FIXME handle the case of game shorter than 4 moves
+  return data + 1;
+}
+
+
 /// search() re-play all the games and after each move look if the current
 /// position matches the requested rules.
 
@@ -66,9 +88,14 @@ void search(Thread* th) {
   const auto& pieces = d.pattern.pieces;
 
   // Move to the beginning of the next game
-//  while (*++data != MOVE_NONE) {}
+  if (data != d.baseAddress)
+  {
+      assert(data > d.baseAddress + 4);
 
-   data--; // Should point to MOVE_NONE. FIXME Broken for multi-thread!!!
+      data = detect_next_game(data);
+  }
+
+  data--; // Should point to MOVE_NONE (the end of previous game)
 
 NextGame:
 
