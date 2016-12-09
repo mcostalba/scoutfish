@@ -1,22 +1,22 @@
 # Scoutfish
 
-Search a chess DB by means of powerful and flexible queries. Scoutfish is
-designed to run on **very big chess databases** and with **very high speed**.
+Search a chess DB by powerful and flexible queries. Scoutfish is designed to run on
+**very big chess databases** and with **very high speed**.
 
 Start building an index out of a [PGN](https://en.wikipedia.org/wiki/Portable_Game_Notation) file:
 
     ./scoutfish make my_big_db.pgn
 
-Scoutfish will create a file called _my_big_db.bin_ with the needed info to make the queries lightning fast.
-Queries are written in [JSON format](https://en.wikipedia.org/wiki/JSON) that is human-readable, well supported
-in most languages and very simple. Also the query result will be in JSON.
+Scoutfish will create a file called _my_big_db.bin_ with the needed info to make the queries
+lightning fast. Queries are written in [JSON](https://en.wikipedia.org/wiki/JSON) format that is
+human-readable, well supported in most languages and very simple. Query output will be in JSON too.
 
-You can run scoutfish from the command line:
+You can run Scoutfish from the command line:
 
     ./scoutfish scout my_big_db.bin { "sub-fen": "8/8/p7/8/8/1B3N2/8/8" }
 
-To find all the games that match the given **sub-fen**, i.e. all the games with at least one position with
-a black pawn in a6, a white bishop in b3 and a white knight in f3. Output will be like:
+To find all the games that match the given **sub-fen**, i.e. all the games with at least one position
+with a black pawn in _a6_, a white bishop in _b3_ and a white knight in _f3_. Output will be like:
 
 ~~~~
 {
@@ -38,12 +38,12 @@ a black pawn in a6, a white bishop in b3 and a white knight in f3. Output will b
 }
 ~~~~
 
-Aftrer the header, we get a list of matches, each match reports an offset (in bytes) in the original
-_my_big_db.pgn_ file, pointing at the beginning of the matching game and the ply number (half move) of the first
-match inside the game.
+After some header, there is a list of matches, each match reports an offset (in bytes) in the original
+_my_big_db.pgn_ file, pointing at the beginning of the matching game and the ply number (half move) of
+the first match inside the game.
 
-In case you call scoutfish from a higher level tool, like a GUI or a web interface, it is better to operate
-it in interactive mode:
+In case you call Scoutfish from a higher level tool, like a GUI or a web interface, it is better to
+run in interactive mode:
 
 ~~~~
 ./scoutfish
@@ -58,12 +58,19 @@ Scoutfish is strictly derived from [Stockfish](https://stockfishchess.org/) so, 
 [UCI commands](http://wbec-ridderkerk.nl/html/UCIProtocol.html), like _setoption_, that we use to
 increase thread number according to our hardware: the search speed will increase accordingly!
 
-Above examples show how to query for a specific material distribution, for a specific
-game result and how to compose the queries to create complex and very general multiple-conditions.
+Above examples show how to query for a specific **material distribution**, for a specific
+**side to move** or **game result** and how to compose a query to match multiple conditions.
 
-You are not limited to a single sub-fen, for instance the following query:
+You are not limited to search for a single sub-fen, the following query:
 
-    ./scoutfish.exe scout my_db.bin { "sub-fen": ["8/8/8/q7/8/8/8/8", "8/8/8/r7/8/8/8/8"] }
+    { "sub-fen": ["8/8/8/q7/8/8/8/8", "8/8/8/r7/8/8/8/8"] }
 
-Will match all the positions with a black queen **or** a black rook in a5. There is no limit
+Will find all the positions with a black queen **or** a black rook in a5. There is no limit
 to the size of the sub-fen list, enabling to compose very powerful queries.
+
+The position **full FEN** is just a special sub-fen, so:
+
+    { "sub-fen": ["rnbqkbnr/pp1p1ppp/2p5/4p3/3PP3/8/PPP2PPP/RNBQKBNR",
+                  "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R"] }
+
+Will search for all the games with a Caro-Kann or a Sicilian opening.
