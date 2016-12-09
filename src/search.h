@@ -38,7 +38,8 @@ enum GameResult : uint8_t {
 };
 
 enum RuleType {
-  RuleNone, RuleResult, RuleSubFen, RuleMaterial, RuleWhite, RuleBlack, RuleEnd
+  RuleNone, RuleResult, RuleSubFen, RuleMaterial, RuleWhite, RuleBlack,
+  RuleMatchedCondition, RuleMatchedSequence
 };
 
 struct SubFen {
@@ -55,13 +56,13 @@ struct Condition {
 
 struct MatchingGame {
   uint64_t gameOfs;
-  uint16_t ply;
+  std::vector<uint16_t> plies;
 };
 
 struct Data {
   Move* baseAddress;
   size_t dbMapping, dbSize;
-  size_t movesCnt, matchCnt;
+  size_t movesCnt;
   std::vector<Condition> sequences;
   std::vector<MatchingGame> matches;
 };
@@ -117,7 +118,7 @@ struct LimitsType {
   LimitsType() { // Init explicitly due to broken value-initialization of non POD in MSVC
     nodes = time[WHITE] = time[BLACK] = inc[WHITE] = inc[BLACK] =
     npmsec = movestogo = depth = movetime = mate = infinite = ponder = 0;
-    scout.dbMapping = scout.dbSize = scout.matchCnt = scout.movesCnt = 0;
+    scout.dbMapping = scout.dbSize = scout.movesCnt = 0;
     scout.baseAddress = nullptr;
   }
 

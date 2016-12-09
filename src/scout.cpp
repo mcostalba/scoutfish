@@ -69,23 +69,32 @@ void search(Thread* th) {
   static_assert(sizeof(uint64_t) == 4 * sizeof(Move), "Wrong Move size");
 
   StateInfo states[1024], *st = states;
-  size_t cnt = 0, matchCnt = 0, gameCnt = 0;
+  size_t cnt = 0, matchCnt = 0, gameCnt = 0, seqIdx = 0;
   uint64_t gameOfs;
+  Condition* cond;
+  RuleType* rules;
+  Key matKey;
+  SubFen* subfens;
+  SubFen* subfensEnd;
+  std::vector<uint16_t> matchPlies;
   Scout::Data& d = th->scout;
   d.matches.reserve(100000);
+  matchPlies.reserve(128);
+
+  // Lambda helper to copy to locals hot variables
+  auto set_condition = [&] (size_t idx) {
+    cond = d.sequences.data() + idx;
+    rules = cond->rules.data();
+    matKey = cond->matKey;
+    subfens = cond->subfens.data();
+    subfensEnd = subfens + cond->subfens.size();
+  };
+  set_condition(seqIdx);
 
   // Compute our file sub-range to search
   size_t range = d.dbSize  / Threads.size();
   Move* data = d.baseAddress + th->idx * range;
-  Move* end = th->idx == Threads.size() - 1 ? d.baseAddress + d.dbSize
-                                            : data + range;
-
-  // Copy to locals hot-path variables
-  const Condition& cond = d.sequences[0]; // FIXME for now consider only first condition
-  const RuleType* rules = cond.rules.data();
-  Key matKey = cond.matKey;
-  const SubFen* subfens = cond.subfens.data();
-  const SubFen* subfensEnd = subfens + cond.subfens.size();
+  Move* end = th->idx == Threads.size() - 1 ? d.baseAddress + d.dbSize : data + range;
 
   // Move to the beginning of the next game
   if (data != d.baseAddress)
@@ -116,6 +125,14 @@ NextGame:
       st = states;
       gameCnt = cnt;
 
+      // Reset to first condition if changed
+      if (seqIdx != 0)
+      {
+          seqIdx = 0;
+          set_condition(seqIdx);
+          matchPlies.clear();
+      }
+
       while (*++data != MOVE_NONE) // Could be an empty game
       {
           Move m = *data;
@@ -136,7 +153,7 @@ NextGame:
                   goto NextMove;
 
               case RuleResult:
-                  if (result != cond.result)
+                  if (result != cond->result)
                       goto SkipToNextGame;
                   break;
 
@@ -177,13 +194,29 @@ success:
                       goto NextMove;
                   break;
 
-              case RuleEnd:
+              case RuleMatchedCondition:
+                  ++seqIdx; // Move to next condition
+
+                  matchPlies.push_back(uint16_t(cnt - gameCnt));
+
+                  assert(seqIdx < d.sequences.size());
+
+                  set_condition(seqIdx);
+                  //data--; // Recheck same move with the new condition too
+                  break;
+
+              case RuleMatchedSequence:
+                  assert(seqIdx + 1 == d.sequences.size());
+
                   matchCnt++; // All rules passed: success!
                   read_be(gameOfs, (uint8_t*)gameOfsPtr);
-                  d.matches.push_back({gameOfs, uint16_t(cnt - gameCnt)});
+                  matchPlies.push_back(uint16_t(cnt - gameCnt));
+                  d.matches.push_back({gameOfs, matchPlies});
 SkipToNextGame:
                   // Skip to the end of the game after the first match
-                  while (*++data != MOVE_NONE) { cnt++; }
+                  while (*++data != MOVE_NONE)
+                      cnt++;
+
                   goto NextGame;
               }
           }
@@ -194,7 +227,6 @@ NextMove: {}
   }
 
   d.movesCnt = cnt;
-  d.matchCnt = matchCnt;
 }
 
 
@@ -212,7 +244,7 @@ void print_results(const Search::LimitsType& limits) {
   for (Thread* th : Threads)
   {
       cnt += th->scout.movesCnt;
-      matches += th->scout.matchCnt;
+      matches += th->scout.matches.size();
   }
 
   std::string tab = "\n    ";
@@ -227,8 +259,14 @@ void print_results(const Search::LimitsType& limits) {
 
   for (Thread* th : Threads)
       for (auto& m : th->scout.matches)
+      {
           std::cout << tab << indent4 << "{ \"ofs\": " << m.gameOfs
-                                      << ", \"ply\": " << m.ply << "},";
+                                      << ", \"ply\": [";
+          for (auto& p : m.plies)
+              std::cout << p << ", ";
+
+          std::cout << "] },";
+      }
 
   std::cout << tab << "]\n}" << std::endl;
 }
@@ -307,9 +345,27 @@ void parse_rules(Scout::Data& data, std::istringstream& is) {
           cond.rules.push_back(rule);
       }
 
-      cond.rules.push_back(cond.rules.size() ? Scout::RuleEnd : Scout::RuleNone);
+      if (cond.rules.size())
+      {
+          cond.rules.push_back(Scout::RuleMatchedCondition);
+          data.sequences.push_back(cond);
+      }
+  }
+
+  // Change the end rule of the last condition
+  if (data.sequences.size())
+  {
+      auto& lastCond = data.sequences[data.sequences.size() - 1];
+      lastCond.rules[lastCond.rules.size() - 1] = Scout::RuleMatchedSequence;
+  }
+  else
+  {
+      // If sequence is empty push a default RuleNone
+      Condition cond;
+      cond.rules.push_back(Scout::RuleNone);
       data.sequences.push_back(cond);
   }
+
 }
 
 } // namespace Scout
