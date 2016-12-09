@@ -56,7 +56,7 @@ struct Condition {
 
 struct MatchingGame {
   uint64_t gameOfs;
-  std::vector<uint16_t> plies;
+  std::vector<size_t> plies;
 };
 
 struct Data {

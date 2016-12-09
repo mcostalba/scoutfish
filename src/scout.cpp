@@ -69,19 +69,19 @@ void search(Thread* th) {
   static_assert(sizeof(uint64_t) == 4 * sizeof(Move), "Wrong Move size");
 
   StateInfo states[1024], *st = states;
-  size_t cnt = 0, matchCnt = 0, gameCnt = 0, seqIdx = 0;
   uint64_t gameOfs;
-  Condition* cond;
-  RuleType* rules;
+  const Condition* cond;
+  const RuleType* rules;
+  const SubFen* subfens;
+  const SubFen* subfensEnd;
   Key matKey;
-  SubFen* subfens;
-  SubFen* subfensEnd;
-  std::vector<uint16_t> matchPlies;
+  std::vector<size_t> matchPlies;
+  size_t condIdx = 0;
   Scout::Data& d = th->scout;
   d.matches.reserve(100000);
   matchPlies.reserve(128);
 
-  // Lambda helper to copy to locals hot variables
+  // Lambda helper to copy hot stuff to local variables
   auto set_condition = [&] (size_t idx) {
     cond = d.sequences.data() + idx;
     rules = cond->rules.data();
@@ -89,7 +89,7 @@ void search(Thread* th) {
     subfens = cond->subfens.data();
     subfensEnd = subfens + cond->subfens.size();
   };
-  set_condition(seqIdx);
+  set_condition(condIdx);
 
   // Compute our file sub-range to search
   size_t range = d.dbSize  / Threads.size();
@@ -106,8 +106,6 @@ void search(Thread* th) {
 
   data--; // Should point to MOVE_NONE (the end of previous game)
 
-NextGame:
-
   assert(data < d.baseAddress || *data == MOVE_NONE);
 
   // Main loop, replay all games until we finish our file chunk
@@ -117,19 +115,16 @@ NextGame:
       Move* gameOfsPtr = data;
       data += 4;
 
-      assert(*data != MOVE_NONE);
-
-      // First move stores the result
+      // First move stores the result in the 'to' square
       GameResult result = GameResult(to_sq(Move(*data)));
       Position pos = th->rootPos;
       st = states;
-      gameCnt = cnt;
 
-      // Reset to first condition if changed
-      if (seqIdx != 0)
+      // Reset to first condition if needed
+      if (condIdx != 0)
       {
-          seqIdx = 0;
-          set_condition(seqIdx);
+          condIdx = 0;
+          set_condition(condIdx);
           matchPlies.clear();
       }
 
@@ -140,15 +135,12 @@ NextGame:
           assert(pos.pseudo_legal(m) && pos.legal(m));
 
           pos.do_move(m, *st++, pos.gives_check(m));
-          cnt++;
           const RuleType* curRule = rules - 1;
 
-          // Loop across matching rules, early exit as soon as
-          // a match fails.
+          // Loop across matching rules, early exit as soon as a match fails
           while (true)
-          {
-              switch (*++curRule)
-              {
+              switch (*++curRule) {
+
               case RuleNone:
                   goto NextMove;
 
@@ -195,38 +187,32 @@ success:
                   break;
 
               case RuleMatchedCondition:
-                  ++seqIdx; // Move to next condition
+                  assert(condIdx + 1 < d.sequences.size());
 
-                  matchPlies.push_back(uint16_t(cnt - gameCnt));
-
-                  assert(seqIdx < d.sequences.size());
-
-                  set_condition(seqIdx);
-                  //data--; // Recheck same move with the new condition too
+                  matchPlies.push_back(pos.nodes_searched());
+                  set_condition(++condIdx);
+                  curRule = rules - 1; // Recheck same move with new rules
                   break;
 
               case RuleMatchedSequence:
-                  assert(seqIdx + 1 == d.sequences.size());
+                  assert(condIdx + 1 == d.sequences.size());
 
-                  matchCnt++; // All rules passed: success!
+                  matchPlies.push_back(pos.nodes_searched());
                   read_be(gameOfs, (uint8_t*)gameOfsPtr);
-                  matchPlies.push_back(uint16_t(cnt - gameCnt));
                   d.matches.push_back({gameOfs, matchPlies});
 SkipToNextGame:
                   // Skip to the end of the game after the first match
-                  while (*++data != MOVE_NONE)
-                      cnt++;
-
+                  while (*++data != MOVE_NONE) {}
                   goto NextGame;
               }
-          }
-
 NextMove: {}
-
       };
+
+NextGame:
+      // Can't use pos.nodes_searched() due to skipping after match
+      d.movesCnt += data - gameOfsPtr - 5; // 4+1 moves for game ofs and result
   }
 
-  d.movesCnt = cnt;
 }
 
 
