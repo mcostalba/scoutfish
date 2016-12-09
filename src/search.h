@@ -38,7 +38,7 @@ enum GameResult : uint8_t {
 };
 
 enum RuleType {
-  RuleNone, RuleSubFen, RuleMaterial, RuleWhite, RuleBlack, RuleResult, RuleEnd
+  RuleNone, RuleResult, RuleSubFen, RuleMaterial, RuleWhite, RuleBlack, RuleEnd
 };
 
 struct SubFen {

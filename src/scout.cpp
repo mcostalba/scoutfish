@@ -134,6 +134,11 @@ NextGame:
               case RuleNone:
                   goto NextMove;
 
+              case RuleResult:
+                  if (result != d.result)
+                      goto SkipToNextGame;
+                  break;
+
               case RuleSubFen:
                   for (const SubFen* f = subfens; f < subfensEnd; ++f)
                   {
@@ -169,11 +174,6 @@ success:
               case RuleBlack:
                   if (pos.side_to_move() != BLACK)
                       goto NextMove;
-                  break;
-
-              case RuleResult:
-                  if (result != d.result)
-                      goto SkipToNextGame;
                   break;
 
               case RuleEnd:
@@ -250,6 +250,20 @@ void parse_rules(Scout::Data& data, std::istringstream& is) {
 
   json j = json::parse(is);
 
+  if (!j["result"].empty())
+  {
+      GameResult result =  j["result"] == "1-0" ? WhiteWin
+                         : j["result"] == "0-1" ? BlackWin
+                         : j["result"] == "1/2-1/2" ? Draw
+                         : j["result"] == "*" ? Unknown : Invalid;
+
+      if (result != Invalid)
+      {
+          data.result = result;
+          data.rules.push_back(RuleResult);
+      }
+  }
+
   if (!j["sub-fen"].empty())
   {
       for (const auto& fen : j["sub-fen"])
@@ -282,20 +296,6 @@ void parse_rules(Scout::Data& data, std::istringstream& is) {
   {
       auto rule = j["stm"] == "WHITE" ? Scout::RuleWhite : Scout::RuleBlack;
       data.rules.push_back(rule);
-  }
-
-  if (!j["result"].empty())
-  {
-      GameResult result =  j["result"] == "1-0" ? WhiteWin
-                         : j["result"] == "0-1" ? BlackWin
-                         : j["result"] == "1/2-1/2" ? Draw
-                         : j["result"] == "*" ? Unknown : Invalid;
-
-      if (result != Invalid)
-      {
-          data.result = result;
-          data.rules.push_back(RuleResult);
-      }
   }
 
   data.rules.push_back(data.rules.size() ? Scout::RuleEnd : Scout::RuleNone);
