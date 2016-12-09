@@ -81,10 +81,11 @@ void search(Thread* th) {
                                             : data + range;
 
   // Copy to locals hot-path variables
-  const RuleType* rules = d.rules.data();
-  Key matKey = d.matKey;
-  const SubFen* subfens = d.subfens.data();
-  const SubFen* subfensEnd = subfens + d.subfens.size();
+  const Condition& cond = d.sequences[0]; // FIXME for now consider only first condition
+  const RuleType* rules = cond.rules.data();
+  Key matKey = cond.matKey;
+  const SubFen* subfens = cond.subfens.data();
+  const SubFen* subfensEnd = subfens + cond.subfens.size();
 
   // Move to the beginning of the next game
   if (data != d.baseAddress)
@@ -135,7 +136,7 @@ NextGame:
                   goto NextMove;
 
               case RuleResult:
-                  if (result != d.result)
+                  if (result != cond.result)
                       goto SkipToNextGame;
                   break;
 
@@ -249,56 +250,66 @@ void parse_rules(Scout::Data& data, std::istringstream& is) {
   */
 
   json j = json::parse(is);
+  json sequence = { j }; // Default on single element list, in JSON: {"sequence": [j]}
 
-  if (!j["result"].empty())
+  if (j.find("sequence") != j.end())
+      sequence = j["sequence"];
+
+  for (const auto& item : sequence)
   {
-      GameResult result =  j["result"] == "1-0" ? WhiteWin
-                         : j["result"] == "0-1" ? BlackWin
-                         : j["result"] == "1/2-1/2" ? Draw
-                         : j["result"] == "*" ? Unknown : Invalid;
+      Condition cond;
 
-      if (result != Invalid)
+      if (item.find("result") != item.end())
       {
-          data.result = result;
-          data.rules.push_back(RuleResult);
-      }
-  }
+          GameResult result =  item["result"] == "1-0" ? WhiteWin
+                             : item["result"] == "0-1" ? BlackWin
+                             : item["result"] == "1/2-1/2" ? Draw
+                             : item["result"] == "*" ? Unknown : Invalid;
 
-  if (!j["sub-fen"].empty())
-  {
-      for (const auto& fen : j["sub-fen"])
+          if (result != Invalid)
+          {
+              cond.result = result;
+              cond.rules.push_back(RuleResult);
+          }
+      }
+
+      if (item.find("sub-fen") != item.end())
+      {
+          for (const auto& fen : item["sub-fen"])
+          {
+              StateInfo st;
+              Position pos;
+              pos.set(fen, false, &st, nullptr, true);
+
+              // Setup the pattern to be searched
+              SubFen f;
+              f.white = pos.pieces(WHITE);
+              f.black = pos.pieces(BLACK);
+              for (PieceType pt = PAWN; pt <= KING; ++pt)
+                  if (pos.pieces(pt))
+                      f.pieces.push_back(std::make_pair(pt, pos.pieces(pt)));
+
+              cond.subfens.push_back(f);
+          }
+          cond.rules.push_back(Scout::RuleSubFen);
+      }
+
+      if (item.find("material") != item.end())
       {
           StateInfo st;
-          Position pos;
-          pos.set(fen, false, &st, nullptr, true);
-
-          // Setup the pattern to be searched
-          SubFen f;
-          f.white = pos.pieces(WHITE);
-          f.black = pos.pieces(BLACK);
-          for (PieceType pt = PAWN; pt <= KING; ++pt)
-              if (pos.pieces(pt))
-                  f.pieces.push_back(std::make_pair(pt, pos.pieces(pt)));
-
-          data.subfens.push_back(f);
+          cond.matKey = Position().set(item["material"], WHITE, &st).material_key();
+          cond.rules.push_back(Scout::RuleMaterial);
       }
-      data.rules.push_back(Scout::RuleSubFen);
-  }
 
-  if (!j["material"].empty())
-  {
-      StateInfo st;
-      data.matKey = Position().set(j["material"], WHITE, &st).material_key();
-      data.rules.push_back(Scout::RuleMaterial);
-  }
+      if (item.find("stm") != item.end())
+      {
+          auto rule = item["stm"] == "WHITE" ? Scout::RuleWhite : Scout::RuleBlack;
+          cond.rules.push_back(rule);
+      }
 
-  if (!j["stm"].empty())
-  {
-      auto rule = j["stm"] == "WHITE" ? Scout::RuleWhite : Scout::RuleBlack;
-      data.rules.push_back(rule);
+      cond.rules.push_back(cond.rules.size() ? Scout::RuleEnd : Scout::RuleNone);
+      data.sequences.push_back(cond);
   }
-
-  data.rules.push_back(data.rules.size() ? Scout::RuleEnd : Scout::RuleNone);
 }
 
 } // namespace Scout

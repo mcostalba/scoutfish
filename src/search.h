@@ -46,6 +46,13 @@ struct SubFen {
   std::vector<std::pair<PieceType, Bitboard>> pieces;
 };
 
+struct Condition {
+  Key matKey;
+  GameResult result;
+  std::vector<RuleType> rules;
+  std::vector<SubFen> subfens;
+};
+
 struct MatchingGame {
   uint64_t gameOfs;
   uint16_t ply;
@@ -55,10 +62,7 @@ struct Data {
   Move* baseAddress;
   size_t dbMapping, dbSize;
   size_t movesCnt, matchCnt;
-  Key matKey;
-  GameResult result;
-  std::vector<RuleType> rules;
-  std::vector<SubFen> subfens;
+  std::vector<Condition> sequences;
   std::vector<MatchingGame> matches;
 };
 
