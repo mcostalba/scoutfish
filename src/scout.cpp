@@ -71,10 +71,8 @@ void search(Thread* th) {
   StateInfo states[1024], *st = states;
   uint64_t gameOfs;
   const Condition* cond;
-  const RuleType* rules;
-  const SubFen* subfens;
-  const SubFen* subfensEnd;
-  Key matKey;
+  const RuleType *rules, *curRule;
+  const SubFen *subfens, *subfensEnd;
   std::vector<size_t> matchPlies;
   size_t condIdx = 0;
   Scout::Data& d = th->scout;
@@ -85,7 +83,6 @@ void search(Thread* th) {
   auto set_condition = [&] (size_t idx) {
     cond = d.sequences.data() + idx;
     rules = cond->rules.data();
-    matKey = cond->matKey;
     subfens = cond->subfens.data();
     subfensEnd = subfens + cond->subfens.size();
   };
@@ -128,88 +125,86 @@ void search(Thread* th) {
           matchPlies.clear();
       }
 
-      while (*++data != MOVE_NONE) // Could be an empty game
+      // Loop across the game (that could be empty)
+      while (*++data != MOVE_NONE)
       {
           Move m = *data;
 
           assert(pos.pseudo_legal(m) && pos.legal(m));
 
           pos.do_move(m, *st++, pos.gives_check(m));
-          const RuleType* curRule = rules - 1;
+          curRule = rules;
 
-          // Loop across matching rules, early exit as soon as a match fails
-          while (true)
-              switch (*++curRule) {
+NextRule: // Loop across rules, early exit as soon as a match fails
+          switch (*curRule++) {
 
-              case RuleNone:
-                  goto NextMove;
+          case RuleNone:
+              break;
 
-              case RuleResult:
-                  if (result != cond->result)
-                      goto SkipToNextGame;
-                  break;
+          case RuleResult:
+              if (result == cond->result)
+                  goto NextRule;
+              goto SkipToNextGame; // Shortcut: result will not change
 
-              case RuleSubFen:
-                  for (const SubFen* f = subfens; f < subfensEnd; ++f)
-                  {
-                      if (   (pos.pieces(WHITE) & f->white) != f->white
-                          || (pos.pieces(BLACK) & f->black) != f->black)
-                          continue;
+          case RuleSubFen:
+              for (const SubFen* f = subfens; f < subfensEnd; ++f)
+              {
+                  if (   (pos.pieces(WHITE) & f->white) != f->white
+                      || (pos.pieces(BLACK) & f->black) != f->black)
+                      continue;
 
-                      bool ok = true;
-                      for (const auto& p : f->pieces)
-                          if ((pos.pieces(p.first) & p.second) != p.second)
-                          {
-                              ok = false;
-                              break;
-                          }
+                  bool ok = true;
+                  for (const auto& p : f->pieces)
+                      if ((pos.pieces(p.first) & p.second) != p.second)
+                      {
+                          ok = false;
+                          break;
+                      }
 
-                      if (ok)
-                          goto success;
-                  }
-                  goto NextMove;
-success:
-                  break;
-
-              case RuleMaterial:
-                  if (pos.material_key() != matKey)
-                      goto NextMove;
-                  break;
-
-              case RuleWhite:
-                  if (pos.side_to_move() != WHITE)
-                      goto NextMove;
-                  break;
-
-              case RuleBlack:
-                  if (pos.side_to_move() != BLACK)
-                      goto NextMove;
-                  break;
-
-              case RuleMatchedCondition:
-                  assert(condIdx + 1 < d.sequences.size());
-
-                  matchPlies.push_back(pos.nodes_searched());
-                  set_condition(++condIdx);
-                  curRule = rules - 1; // Recheck same move with new rules
-                  break;
-
-              case RuleMatchedSequence:
-                  assert(condIdx + 1 == d.sequences.size());
-
-                  ++condIdx; // To force a reset at next game
-                  matchPlies.push_back(pos.nodes_searched());
-                  read_be(gameOfs, (uint8_t*)gameOfsPtr);
-                  d.matches.push_back({gameOfs, matchPlies});
-SkipToNextGame:
-                  // Skip to the end of the game after the first match
-                  while (*++data != MOVE_NONE) {}
-                  goto NextGame;
+                  if (ok)
+                      goto NextRule;
               }
-NextMove: {}
-      };
+              break;
 
-NextGame:
+          case RuleMaterial:
+              if (pos.material_key() == cond->matKey)
+                  goto NextRule;
+              break;
+
+          case RuleWhite:
+              if (pos.side_to_move() == WHITE)
+                  goto NextRule;
+              break;
+
+          case RuleBlack:
+              if (pos.side_to_move() == BLACK)
+                  goto NextRule;
+              break;
+
+          case RuleMatchedCondition:
+              assert(condIdx + 1 < d.sequences.size());
+
+              matchPlies.push_back(pos.nodes_searched());
+              set_condition(++condIdx);
+              curRule = rules; // Recheck same move with new rules
+              goto NextRule;
+
+          case RuleMatchedSequence:
+              assert(condIdx + 1 == d.sequences.size());
+
+              ++condIdx; // To force a reset at next game
+              matchPlies.push_back(pos.nodes_searched());
+              read_be(gameOfs, (uint8_t*)gameOfsPtr);
+              d.matches.push_back({gameOfs, matchPlies});
+SkipToNextGame:
+              // Skip to the end of the game after the first match
+              while (*++data != MOVE_NONE) {}
+              --data;
+              break;
+          }
+
+      }; // Game loop
+
       // Can't use pos.nodes_searched() due to skipping after match
       d.movesCnt += data - gameOfsPtr - 5; // 4+1 moves for game ofs and result
   }
