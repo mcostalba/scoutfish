@@ -192,10 +192,10 @@ NextRule: // Loop across rules, early exit as soon as a match fails
           case RuleMatchedSequence:
               assert(condIdx + 1 == d.sequences.size());
 
-              ++condIdx; // To force a reset at next game
               matchPlies.push_back(pos.nodes_searched());
               read_be(gameOfs, (uint8_t*)gameOfsPtr);
               d.matches.push_back({gameOfs, matchPlies});
+              matchPlies.clear();
 SkipToNextGame:
               // Skip to the end of the game after the first match
               while (*++data != MOVE_NONE) {}

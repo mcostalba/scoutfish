@@ -1,4 +1,4 @@
-# Scoutfish
+## Overview
 
 Search a chess DB by powerful and flexible queries. Scoutfish is designed to run on
 **very big chess databases** and with **very high speed**.
@@ -73,4 +73,19 @@ The position **full FEN** is just a special sub-fen, so:
     { "sub-fen": ["rnbqkbnr/pp1p1ppp/2p5/4p3/3PP3/8/PPP2PPP/RNBQKBNR",
                   "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R"] }
 
-Will search for all the games with a Caro-Kann or a Sicilian opening.
+Will search for all the games with a _Caro-Kann_ or a _Sicilian_ opening.
+
+
+## Sequences
+
+A _sequence_ is a powerful feature of Scoutfish to look for games that satisfy more than one
+condition at *different times in game*. This is very useful in looking for a piece path
+from a position. Typical tournament player questions are: How does one maneuver the bishop in
+this opening, should we go f1-d3-c2 or f1-b5-a4. When should we select which maneuver?
+
+    { "sequence": [ { "sub-fen": "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/2N2N2/PPPP1PPP/R1BQK2R", "result": "1-0" },
+                    { "sub-fen": "8/8/8/8/2B5/8/8/8" },
+                    { "sub-fen": "8/8/8/8/8/5B2/8/8" } ] }
+
+The above query will find all the games won by white, with _Four Knights Spanish Variation_
+opening and with bishop maneuvering to b5-c4-f3.
