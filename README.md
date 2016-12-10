@@ -92,7 +92,7 @@ opening and with bishop maneuvering to b5-c4-f3.
 
 A _sequence_ is mainly a list of conditions: a game should match first condition, then the
 second one (eventually later in the game) and so on for all the list, that can be arbitrary long.
-Ouput of the query will be like:
+Output of the query will be like:
 
 ~~~~
 {

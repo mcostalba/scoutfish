@@ -167,7 +167,8 @@ NextRule: // Loop across rules, early exit as soon as a match fails
               break;
 
           case RuleMaterial:
-              if (pos.material_key() == cond->matKey)
+              if (std::find(cond->matKeys.begin(), cond->matKeys.end(),
+                            pos.material_key()) != cond->matKeys.end())
                   goto NextRule;
               break;
 
@@ -244,7 +245,6 @@ void print_results(const Search::LimitsType& limits) {
       {
           std::cout << tab << indent4 << "{ \"ofs\": " << m.gameOfs
                                       << ", \"ply\": [";
-
           std::string comma;
           for (auto& p : m.plies)
           {
@@ -264,17 +264,17 @@ void print_results(const Search::LimitsType& limits) {
 
 void parse_query(Scout::Data& data, std::istringstream& is) {
 
-  /* Examples of JSON queries:
+  /* Some JSON queries:
 
       { "sub-fen": "8/8/p7/8/8/1B3N2/8/8" }
       { "sub-fen": "8/8/8/8/1k6/8/8/8", "material": "KBNKP" }
       { "material": "KBNKP", "stm": "WHITE" }
       { "material": "KNNK", "result": "1-0" }
       { "sub-fen": ["8/8/8/q7/8/8/8/8", "8/8/8/r7/8/8/8/8"] }
-
       { "sequence": [ { "sub-fen": "8/3q4/8/8/8/8/8/8" , "result": "0-1" },
                       { "sub-fen": "2q5/8/8/8/8/8/8/R6R" }] }
 
+     See test.py for more examples.
   */
 
   json j = json::parse(is);
@@ -324,7 +324,8 @@ void parse_query(Scout::Data& data, std::istringstream& is) {
       if (item.find("material") != item.end())
       {
           StateInfo st;
-          cond.matKey = Position().set(item["material"], WHITE, &st).material_key();
+          for (const auto& mat : item["material"])
+              cond.matKeys.push_back(Position().set(mat, WHITE, &st).material_key());
           cond.rules.push_back(Scout::RuleMaterial);
       }
 

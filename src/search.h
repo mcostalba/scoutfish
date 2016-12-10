@@ -48,10 +48,10 @@ struct SubFen {
 };
 
 struct Condition {
-  Key matKey;
   GameResult result;
   std::vector<RuleType> rules;
   std::vector<SubFen> subfens;
+  std::vector<Key> matKeys;
 };
 
 struct MatchingGame {
