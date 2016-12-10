@@ -86,10 +86,13 @@ void search(Thread* th) {
     subfens = cond->subfens.data();
     subfensEnd = subfens + cond->subfens.size();
 
+    // Clear plies when resetting the first condition
+    if (!idx)
+        matchPlies.clear();
+
     // When starting a new streak ignore previous plies
-    if (   idx
-        && cond->streakId
-        && cond->streakId != (cond-1)->streakId)
+    else if (   cond->streakId
+             && cond->streakId != (cond-1)->streakId)
         streakStartPly = matchPlies.size();
   };
   set_condition(condIdx);
@@ -128,7 +131,6 @@ void search(Thread* th) {
       {
           condIdx = 0;
           set_condition(condIdx);
-          matchPlies.clear();
       }
 
       // Loop across the game (that could be empty)
@@ -151,7 +153,6 @@ void search(Thread* th) {
 
               condIdx = 0;
               set_condition(condIdx);
-              matchPlies.clear();
           }
 
 NextRule: // Loop across rules, early exit as soon as a match fails
@@ -214,7 +215,6 @@ NextRule: // Loop across rules, early exit as soon as a match fails
               matchPlies.push_back(pos.nodes_searched());
               read_be(gameOfs, (uint8_t*)gameOfsPtr);
               d.matches.push_back({gameOfs, matchPlies});
-              matchPlies.clear();
 SkipToNextGame:
               // Skip to the end of the game after the first match
               while (*++data != MOVE_NONE) {}
