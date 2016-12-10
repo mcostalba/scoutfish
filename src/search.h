@@ -155,7 +155,7 @@ class Thread;
 
 namespace Scout {
 
-void parse_rules(Scout::Data&, std::istringstream&);
+void parse_query(Scout::Data&, std::istringstream&);
 void search(Thread*);
 void print_results(const Search::LimitsType&);
 

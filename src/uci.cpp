@@ -167,7 +167,7 @@ namespace {
     d.dbMapping = mapping;
     d.dbSize = size / sizeof(Move);
 
-    Scout::parse_rules(d, is);
+    Scout::parse_query(d, is);
 
     limits.startTime = now();
 

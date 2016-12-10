@@ -13,6 +13,8 @@ QUERY_DB = [
     {'q': '{ "sub-fen": ["8/8/8/q7/8/8/8/8", "8/8/8/r7/8/8/8/8"] }',   'matches': 72},
     {'q': '{ "sub-fen": ["rnbqkbnr/pp1p1ppp/2p5/4p3/3PP3/8/PPP2PPP/RNBQKBNR", '
           '"rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R"] }',    'matches': 50},
+    {'q': '{ "sequence": [ { "sub-fen": "8/3p4/8/8/8/8/8/8" , "result": "1-0" },'
+                          '{ "sub-fen": "8/2q5/8/8/8/8/8/R6R" }] }',   'matches':  8},
 ]
 
 

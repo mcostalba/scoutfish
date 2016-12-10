@@ -197,6 +197,7 @@ success:
               case RuleMatchedSequence:
                   assert(condIdx + 1 == d.sequences.size());
 
+                  ++condIdx; // To force a reset at next game
                   matchPlies.push_back(pos.nodes_searched());
                   read_be(gameOfs, (uint8_t*)gameOfsPtr);
                   d.matches.push_back({gameOfs, matchPlies});
@@ -258,10 +259,10 @@ void print_results(const Search::LimitsType& limits) {
 }
 
 
-/// parse_rules() read a JSON input, extract the requested rules and fill the
+/// parse_query() read a JSON input, extract the requested rules and fill the
 /// Scout::Data struct to be used during the search.
 
-void parse_rules(Scout::Data& data, std::istringstream& is) {
+void parse_query(Scout::Data& data, std::istringstream& is) {
 
   /* Examples of JSON queries:
 
@@ -271,15 +272,17 @@ void parse_rules(Scout::Data& data, std::istringstream& is) {
       { "material": "KNNK", "result": "1-0" }
       { "sub-fen": ["8/8/8/q7/8/8/8/8", "8/8/8/r7/8/8/8/8"] }
 
+      { "sequence": [ { "sub-fen": "8/3q4/8/8/8/8/8/8" , "result": "0-1" },
+                      { "sub-fen": "2q5/8/8/8/8/8/8/R6R" }] }
+
   */
 
   json j = json::parse(is);
-  json sequence = { j }; // Default on single element list, in JSON: {"sequence": [j]}
 
-  if (j.find("sequence") != j.end())
-      sequence = j["sequence"];
+  if (j.find("sequence") == j.end())
+      j = json::parse("{ \"sequence\": [" + j.dump(4) + "] }");
 
-  for (const auto& item : sequence)
+  for (const auto& item : j["sequence"])
   {
       Condition cond;
 
