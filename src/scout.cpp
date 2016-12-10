@@ -117,7 +117,7 @@ void search(Thread* th) {
       Position pos = th->rootPos;
       st = states;
 
-      // Reset to first condition if needed
+      // Reset to first condition if needed: FIXME may be useless, see bottom one
       if (condIdx != 0)
       {
           condIdx = 0;
@@ -134,6 +134,19 @@ void search(Thread* th) {
 
           pos.do_move(m, *st++, pos.gives_check(m));
           curRule = rules;
+
+          // If we are looking for a streak, reset in case last match
+          // is more than one move behind.
+          if (   cond->streak
+              && matchPlies.size()
+              && matchPlies.back() != pos.nodes_searched() - 1)
+          {
+              assert(condIdx);
+
+              condIdx = 0;
+              set_condition(condIdx);
+              matchPlies.clear();
+          }
 
 NextRule: // Loop across rules, early exit as soon as a match fails
           switch (*curRule++) {
@@ -187,13 +200,22 @@ NextRule: // Loop across rules, early exit as soon as a match fails
 
               matchPlies.push_back(pos.nodes_searched());
               set_condition(++condIdx);
-              curRule = rules; // Recheck same move with new rules
-              goto NextRule;
+              break; // Skip to next move
 
           case RuleMatchedSequence:
               assert(condIdx + 1 == d.sequences.size());
 
               matchPlies.push_back(pos.nodes_searched());
+
+              // If streak, assert for consecutive plies with some wizardy
+              assert(!cond->streak || [&] () -> bool {
+                  size_t sum = 0;
+                  // 0+1+2+3+4 -> 4+0 + 3+1 + 2 = max * size / 2
+                  for (size_t n : matchPlies)
+                      sum += n - matchPlies[0];
+                  return sum == matchPlies.back() * matchPlies.size() / 2;
+              }());
+
               read_be(gameOfs, (uint8_t*)gameOfsPtr);
               d.matches.push_back({gameOfs, matchPlies});
               matchPlies.clear();
@@ -284,7 +306,10 @@ void parse_query(Scout::Data& data, std::istringstream& is) {
 
   for (const auto& item : j["sequence"])
   {
-      Condition cond;
+      Condition cond = Condition();
+
+      if (item.find("streak") != item.end())
+          cond.streak = item["streak"];
 
       if (item.find("result") != item.end())
       {

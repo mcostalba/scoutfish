@@ -48,6 +48,7 @@ struct SubFen {
 };
 
 struct Condition {
+  bool streak;
   GameResult result;
   std::vector<RuleType> rules;
   std::vector<SubFen> subfens;
