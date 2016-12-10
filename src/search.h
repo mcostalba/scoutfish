@@ -39,7 +39,7 @@ enum GameResult : uint8_t {
 
 enum RuleType {
   RuleNone, RuleResult, RuleSubFen, RuleMaterial, RuleWhite, RuleBlack,
-  RuleMatchedCondition, RuleMatchedSequence
+  RuleMatchedCondition, RuleMatchedQuery
 };
 
 struct SubFen {
@@ -48,7 +48,7 @@ struct SubFen {
 };
 
 struct Condition {
-  bool streak;
+  int streakId;
   GameResult result;
   std::vector<RuleType> rules;
   std::vector<SubFen> subfens;
@@ -64,7 +64,7 @@ struct Data {
   Move* baseAddress;
   size_t dbMapping, dbSize;
   size_t movesCnt;
-  std::vector<Condition> sequences;
+  std::vector<Condition> conditions;
   std::vector<MatchingGame> matches;
 };
 

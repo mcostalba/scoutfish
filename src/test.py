@@ -24,6 +24,10 @@ QUERY_DB = [
                                         '4P3/2N2N2/PPPP1PPP/R1BQK2R" },'
                           '{ "sub-fen": "8/8/8/8/2B5/8/8/8" },'
                           '{ "sub-fen": "8/8/8/8/8/5B2/8/8" } ] }',               'matches':  2},
+
+    {'q': '{ "streak": [ { "sub-fen": "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/'
+                                      '4P3/2N2N2/PPPP1PPP/R1BQK2R"},'
+                        '{ "result": "0-1"}, {"result": "0-1"} ] }',              'matches':  2},
 ]
 
 

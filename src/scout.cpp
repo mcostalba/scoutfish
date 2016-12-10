@@ -81,7 +81,7 @@ void search(Thread* th) {
 
   // Lambda helper to copy hot stuff to local variables
   auto set_condition = [&] (size_t idx) {
-    cond = d.sequences.data() + idx;
+    cond = d.conditions.data() + idx;
     rules = cond->rules.data();
     subfens = cond->subfens.data();
     subfensEnd = subfens + cond->subfens.size();
@@ -137,7 +137,7 @@ void search(Thread* th) {
 
           // If we are looking for a streak, reset in case last match
           // is more than one move behind.
-          if (   cond->streak
+          if (   cond->streakId
               && matchPlies.size()
               && matchPlies.back() != pos.nodes_searched() - 1)
           {
@@ -196,24 +196,24 @@ NextRule: // Loop across rules, early exit as soon as a match fails
               break;
 
           case RuleMatchedCondition:
-              assert(condIdx + 1 < d.sequences.size());
+              assert(condIdx + 1 < d.conditions.size());
 
               matchPlies.push_back(pos.nodes_searched());
               set_condition(++condIdx);
               break; // Skip to next move
 
-          case RuleMatchedSequence:
-              assert(condIdx + 1 == d.sequences.size());
+          case RuleMatchedQuery:
+              assert(condIdx + 1 == d.conditions.size());
 
               matchPlies.push_back(pos.nodes_searched());
 
-              // If streak, assert for consecutive plies with some wizardy
-              assert(!cond->streak || [&] () -> bool {
+              // If streak, assert for consecutive plies with some magic
+              assert(!cond->streakId || [&] () -> bool {
                   size_t sum = 0;
-                  // 0+1+2+3+4 -> 4+0 + 3+1 + 2 = max * size / 2
+                  // 5+6+7+8+9 -> 9+5 + 8+6 + 7 = (max + min) * size / 2
                   for (size_t n : matchPlies)
-                      sum += n - matchPlies[0];
-                  return sum == matchPlies.back() * matchPlies.size() / 2;
+                      sum += n;
+                  return sum == (matchPlies.back() + matchPlies[0]) * matchPlies.size() / 2;
               }());
 
               read_be(gameOfs, (uint8_t*)gameOfsPtr);
@@ -281,6 +281,84 @@ void print_results(const Search::LimitsType& limits) {
 }
 
 
+void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
+
+  Condition cond;
+  cond.streakId = streakId;
+
+  if (item.find("result") != item.end())
+  {
+      GameResult result =  item["result"] == "1-0" ? WhiteWin
+                         : item["result"] == "0-1" ? BlackWin
+                         : item["result"] == "1/2-1/2" ? Draw
+                         : item["result"] == "*" ? Unknown : Invalid;
+
+      if (result != Invalid)
+      {
+          cond.result = result;
+          cond.rules.push_back(RuleResult);
+      }
+  }
+
+  if (item.find("sub-fen") != item.end())
+  {
+      for (const auto& fen : item["sub-fen"])
+      {
+          StateInfo st;
+          Position pos;
+          pos.set(fen, false, &st, nullptr, true);
+
+          // Setup the pattern to be searched
+          SubFen f;
+          f.white = pos.pieces(WHITE);
+          f.black = pos.pieces(BLACK);
+          for (PieceType pt = PAWN; pt <= KING; ++pt)
+              if (pos.pieces(pt))
+                  f.pieces.push_back(std::make_pair(pt, pos.pieces(pt)));
+
+          cond.subfens.push_back(f);
+      }
+      cond.rules.push_back(Scout::RuleSubFen);
+  }
+
+  if (item.find("material") != item.end())
+  {
+      StateInfo st;
+      for (const auto& mat : item["material"])
+          cond.matKeys.push_back(Position().set(mat, WHITE, &st).material_key());
+      cond.rules.push_back(Scout::RuleMaterial);
+  }
+
+  if (item.find("stm") != item.end())
+  {
+      auto rule = item["stm"] == "WHITE" ? Scout::RuleWhite : Scout::RuleBlack;
+      cond.rules.push_back(rule);
+  }
+
+  if (cond.rules.size())
+  {
+      cond.rules.push_back(Scout::RuleMatchedCondition);
+      data.conditions.push_back(cond);
+  }
+}
+
+void parse_streak(Scout::Data& data, const json& streak) {
+
+  static int streak_id = 1;
+  for (const json& item : streak)
+      parse_condition(data, item, streak_id++);
+}
+
+void parse_sequence(Scout::Data& data, const json& sequence) {
+
+  for (const json& item : sequence)
+      if (item.find("streak") != item.end())
+          parse_streak(data, item["streak"]);
+      else
+          parse_condition(data, item);
+}
+
+
 /// parse_query() read a JSON input, extract the requested rules and fill the
 /// Scout::Data struct to be used during the search.
 
@@ -301,84 +379,38 @@ void parse_query(Scout::Data& data, std::istringstream& is) {
 
   json j = json::parse(is);
 
-  if (j.find("sequence") == j.end())
-      j = json::parse("{ \"sequence\": [" + j.dump(4) + "] }");
+  /* Simplified grammar for our queries
 
-  for (const auto& item : j["sequence"])
-  {
-      Condition cond = Condition();
+     <query>     ::= <sequence> | <streak> | <condition>
+     <sequence>  ::= "{ sequence: [" <condition> | streak { "," <condition> | streak } "] }"
+     <streak>    ::= "{   streak: [" <condition> { "," <condition> } "] }"
+     <condition> ::= "{" <rule> { "," <rule> } "}"
+     <rule>      ::= string ":" <value>  // Maps into a JSON pair
+     <value> = string | number | array
 
-      if (item.find("streak") != item.end())
-          cond.streak = item["streak"];
+  */
 
-      if (item.find("result") != item.end())
-      {
-          GameResult result =  item["result"] == "1-0" ? WhiteWin
-                             : item["result"] == "0-1" ? BlackWin
-                             : item["result"] == "1/2-1/2" ? Draw
-                             : item["result"] == "*" ? Unknown : Invalid;
+  if (j.find("sequence") != j.end())
+      parse_sequence(data, j["sequence"]);
 
-          if (result != Invalid)
-          {
-              cond.result = result;
-              cond.rules.push_back(RuleResult);
-          }
-      }
+  else if (j.find("streak") != j.end())
+      parse_streak(data, j["streak"]);
 
-      if (item.find("sub-fen") != item.end())
-      {
-          for (const auto& fen : item["sub-fen"])
-          {
-              StateInfo st;
-              Position pos;
-              pos.set(fen, false, &st, nullptr, true);
-
-              // Setup the pattern to be searched
-              SubFen f;
-              f.white = pos.pieces(WHITE);
-              f.black = pos.pieces(BLACK);
-              for (PieceType pt = PAWN; pt <= KING; ++pt)
-                  if (pos.pieces(pt))
-                      f.pieces.push_back(std::make_pair(pt, pos.pieces(pt)));
-
-              cond.subfens.push_back(f);
-          }
-          cond.rules.push_back(Scout::RuleSubFen);
-      }
-
-      if (item.find("material") != item.end())
-      {
-          StateInfo st;
-          for (const auto& mat : item["material"])
-              cond.matKeys.push_back(Position().set(mat, WHITE, &st).material_key());
-          cond.rules.push_back(Scout::RuleMaterial);
-      }
-
-      if (item.find("stm") != item.end())
-      {
-          auto rule = item["stm"] == "WHITE" ? Scout::RuleWhite : Scout::RuleBlack;
-          cond.rules.push_back(rule);
-      }
-
-      if (cond.rules.size())
-      {
-          cond.rules.push_back(Scout::RuleMatchedCondition);
-          data.sequences.push_back(cond);
-      }
-  }
+  else
+      parse_condition(data, j);
 
   // Change the end rule of the last condition
-  if (data.sequences.size())
+  if (data.conditions.size())
   {
-      auto& lastCond = data.sequences[data.sequences.size() - 1];
-      lastCond.rules[lastCond.rules.size() - 1] = Scout::RuleMatchedSequence;
+      auto& lastCond = data.conditions[data.conditions.size() - 1];
+      lastCond.rules[lastCond.rules.size() - 1] = Scout::RuleMatchedQuery;
   }
   else
   {
-      // If sequence is empty push a default RuleNone
+      // If query is empty push a default condition with RuleNone
       Condition cond;
       cond.rules.push_back(Scout::RuleNone);
-      data.sequences.push_back(cond);
+      data.conditions.push_back(cond);
   }
 
 }
