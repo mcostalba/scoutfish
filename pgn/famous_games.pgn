@@ -1,3 +1,24 @@
+[Event "Leipzig Olympiad Fin"]
+[Site "Leipzig GDR"]
+[Date "1960.11.08"]
+[EventDate "?"]
+[Round "11"]
+[Result "1-0"]
+[White "Jonathan Penrose"]
+[Black "Mikhail Tal"]
+[ECO "A65"]
+[WhiteElo "?"]
+[BlackElo "?"]
+[PlyCount "77"]
+
+1.d4 Nf6 2.c4 e6 3.Nc3 c5 4.d5 exd5 5.cxd5 d6 6.e4 g6 7.Bd3
+Bg7 8.Nge2 O-O 9.O-O a6 10.a4 Qc7 11.h3 Nbd7 12.f4 Re8 13.Ng3
+c4 14.Bc2 Nc5 15.Qf3 Nfd7 16.Be3 b5 17.axb5 Rb8 18.Qf2 axb5
+19.e5 dxe5 20.f5 Bb7 21.Rad1 Ba8 22.Nce4 Na4 23.Bxa4 bxa4
+24.fxg6 fxg6 25.Qf7+ Kh8 26.Nc5 Qa7 27.Qxd7 Qxd7 28.Nxd7 Rxb2
+29.Nb6 Rb3 30.Nxc4 Rd8 31.d6 Rc3 32.Rc1 Rxc1 33.Rxc1 Bd5
+34.Nb6 Bb3 35.Ne4 h6 36.d7 Bf8 37.Rc8 Be7 38.Bc5 Bh4 39.g3 1-0
+
 [Event "London"]
 [Site "?"]
 [Date "1783.??.??"]

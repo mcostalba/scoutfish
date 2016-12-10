@@ -74,7 +74,7 @@ void search(Thread* th) {
   const RuleType *rules, *curRule;
   const SubFen *subfens, *subfensEnd;
   std::vector<size_t> matchPlies;
-  size_t condIdx = 0;
+  size_t condIdx = 0, streakStartPly = 0;
   Scout::Data& d = th->scout;
   d.matches.reserve(100000);
   matchPlies.reserve(128);
@@ -85,6 +85,12 @@ void search(Thread* th) {
     rules = cond->rules.data();
     subfens = cond->subfens.data();
     subfensEnd = subfens + cond->subfens.size();
+
+    // When starting a new streak ignore previous plies
+    if (   idx
+        && cond->streakId
+        && cond->streakId != (cond-1)->streakId)
+        streakStartPly = matchPlies.size();
   };
   set_condition(condIdx);
 
@@ -138,7 +144,7 @@ void search(Thread* th) {
           // If we are looking for a streak, reset in case last match
           // is more than one move behind.
           if (   cond->streakId
-              && matchPlies.size()
+              && matchPlies.size() - streakStartPly > 0
               && matchPlies.back() != pos.nodes_searched() - 1)
           {
               assert(condIdx);
@@ -206,16 +212,6 @@ NextRule: // Loop across rules, early exit as soon as a match fails
               assert(condIdx + 1 == d.conditions.size());
 
               matchPlies.push_back(pos.nodes_searched());
-
-              // If streak, assert for consecutive plies with some magic
-              assert(!cond->streakId || [&] () -> bool {
-                  size_t sum = 0;
-                  // 5+6+7+8+9 -> 9+5 + 8+6 + 7 = (max + min) * size / 2
-                  for (size_t n : matchPlies)
-                      sum += n;
-                  return sum == (matchPlies.back() + matchPlies[0]) * matchPlies.size() / 2;
-              }());
-
               read_be(gameOfs, (uint8_t*)gameOfsPtr);
               d.matches.push_back({gameOfs, matchPlies});
               matchPlies.clear();
@@ -344,9 +340,11 @@ void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
 
 void parse_streak(Scout::Data& data, const json& streak) {
 
-  static int streak_id = 1;
+  static int streakId;
+
+  ++streakId;
   for (const json& item : streak)
-      parse_condition(data, item, streak_id++);
+      parse_condition(data, item, streakId);
 }
 
 void parse_sequence(Scout::Data& data, const json& sequence) {

@@ -6,28 +6,42 @@ import pexpect
 import sys
 
 QUERY_DB = [
-    {'q': '{ "sub-fen": "8/8/p7/8/8/1B3N2/8/8" }',                                'matches': 29},
-    {'q': '{ "sub-fen": "8/8/8/8/1k6/8/8/8", "result": "1/2-1/2" }',              'matches':  1},
-    {'q': '{ "sub-fen": ["8/8/8/q7/8/8/8/8", "8/8/8/r7/8/8/8/8"] }',              'matches': 72},
-    {'q': '{ "material": "KQRRBNPPPPKQRRNNPPPP", "stm": "BLACK" }',               'matches':  2},
-    {'q': '{ "material": "KQRRBNNPPPPKQRRBNNPPPP", "result": "0-1" }',            'matches':  2},
-    {'q': '{ "material": ["KRBPPPKRPPP", "KRPPPKRPPP"] }',                        'matches':  4},
+    {'q': '{ "sub-fen": "8/8/p7/8/8/1B3N2/8/8" }',                     'matches': 29},
+    {'q': '{ "sub-fen": "8/8/8/8/1k6/8/8/8", "result": "1/2-1/2" }',   'matches':  1},
+    {'q': '{ "sub-fen": ["8/8/8/q7/8/8/8/8", "8/8/8/r7/8/8/8/8"] }',   'matches': 72},
+    {'q': '{ "material": "KQRRBNPPPPKQRRNNPPPP", "stm": "BLACK" }',    'matches':  2},
+    {'q': '{ "material": "KQRRBNNPPPPKQRRBNNPPPP", "result": "0-1" }', 'matches':  2},
+    {'q': '{ "material": ["KRBPPPKRPPP", "KRPPPKRPPP"] }',             'matches':  4},
 
     {'q': '{ "sub-fen": ["rnbqkbnr/pp1p1ppp/2p5/4p3/3PP3/8/PPP2PPP/RNBQKBNR", '
                         '"rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R"] }', 'matches': 50},
 
     {'q': '{ "sequence": [ { "sub-fen": "8/3p4/8/8/8/8/8/8" ,'
                             '"result": "1-0" },'
-                          '{ "sub-fen": "8/2q5/8/8/8/8/8/R6R" }] }',              'matches':  8},
+                          '{ "sub-fen": "8/2q5/8/8/8/8/8/R6R" }] }', 'matches':  8},
 
     {'q': '{ "sequence": [ { "sub-fen": "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/'
                                         '4P3/2N2N2/PPPP1PPP/R1BQK2R" },'
                           '{ "sub-fen": "8/8/8/8/2B5/8/8/8" },'
-                          '{ "sub-fen": "8/8/8/8/8/5B2/8/8" } ] }',               'matches':  2},
+                          '{ "sub-fen": "8/8/8/8/8/5B2/8/8" } ] }',  'matches':  2},
 
     {'q': '{ "streak": [ { "sub-fen": "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/'
                                       '4P3/2N2N2/PPPP1PPP/R1BQK2R"},'
-                        '{ "result": "0-1"}, {"result": "0-1"} ] }',              'matches':  2},
+                        '{ "result": "0-1"}, {"result": "0-1"} ] }', 'matches':  2},
+
+    {'q': '{ "sequence": [ { "sub-fen": "rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR"},'
+                          '{ "streak": [ { "sub-fen": "1rb1r1k1/2qn1pbp/3p2p1/1pnPP3/2p2P2/2N1B1NP/1PB2QP1/R4RK1"},'
+                                        '{ "sub-fen": "1rb1r1k1/2qn1pbp/6p1/1pnPp3/2p2P2/2N1B1NP/1PB2QP1/R4RK1"},'
+                                        '{ "sub-fen": "1rb1r1k1/2qn1pbp/6p1/1pnPpP2/2p5/2N1B1NP/1PB2QP1/R4RK1"} ] },'
+                          '{ "sub-fen": "br2r1k1/2qn1pbp/6p1/1pnPpP2/2p1N3/4B1NP/1PB2QP1/3R1RK1" } ] }',
+     'matches': 1},
+
+    {'q': '{ "sequence": [ { "sub-fen": "rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR"},'
+                          '{ "streak": [ { "sub-fen": "1rb1r1k1/2qn1pbp/3p2p1/1pnPP3/2p2P2/2N1B1NP/1PB2QP1/R4RK1"},'
+                                        '{ "sub-fen": "1rb1r1k1/2qn1pbp/6p1/1pnPp3/2p2P2/2N1B1NP/1PB2QP1/R4RK1"},'
+                                        '{ "sub-fen": "1rb1r1k1/2qn1pbp/6p1/1pnPpP2/2p5/2N1B1NP/1PB2QP1/R4RK1"},'
+                                        '{ "sub-fen": "br2r1k1/2qn1pbp/6p1/1pnPpP2/2p1N3/4B1NP/1PB2QP1/3R1RK1" }]}]}',
+     'matches': 0},
 ]
 
 
