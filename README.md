@@ -26,14 +26,14 @@ with a black pawn in _a6_, a white bishop in _b3_ and a white knight in _f3_. Ou
     "processing time (ms)": 4,
     "matches":
     [
-        { "ofs": 75129, "ply": 11},
-        { "ofs": 80890, "ply": 11},
-        { "ofs": 342346, "ply": 13},
-        { "ofs": 346059, "ply": 13},
-        { "ofs": 375551, "ply": 21},
-        { "ofs": 484182, "ply": 29},
-        { "ofs": 486999, "ply": 29},
-        { "ofs": 536474, "ply": 13},
+        { "ofs": 75129, "ply": [11] },
+        { "ofs": 80890, "ply": [11] },
+        { "ofs": 342346, "ply": [13] },
+        { "ofs": 346059, "ply": [13] },
+        { "ofs": 375551, "ply": [21] },
+        { "ofs": 484182, "ply": [29] },
+        { "ofs": 486999, "ply": [29] },
+        { "ofs": 536474, "ply": [13] },
     ]
 }
 ~~~~
@@ -89,3 +89,23 @@ this opening, should we go f1-d3-c2 or f1-b5-a4. When should we select which man
 
 The above query will find all the games won by white, with _Four Knights Spanish Variation_
 opening and with bishop maneuvering to b5-c4-f3.
+
+A _sequence_ is mainly a list of conditions: a game should match first condition, then the
+second one (eventually later in the game) and so on for all the list, that can be arbitrary long.
+Ouput of the query will be like:
+
+~~~~
+{
+    "moves": 28796,
+    "match count": 2,
+    "moves/second": 5759200,
+    "processing time (ms)": 5,
+    "matches":
+    [
+        { "ofs": 19054, "ply": [7, 15, 17] },
+        { "ofs": 20653, "ply": [7, 15, 17] },
+    ]
+}
+~~~~
+
+Where _ply_ list will show the matching ply for each condition.

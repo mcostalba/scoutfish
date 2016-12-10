@@ -244,8 +244,13 @@ void print_results(const Search::LimitsType& limits) {
       {
           std::cout << tab << indent4 << "{ \"ofs\": " << m.gameOfs
                                       << ", \"ply\": [";
+
+          std::string comma;
           for (auto& p : m.plies)
-              std::cout << p << ", ";
+          {
+              std::cout << comma << p;
+              comma = ", ";
+          }
 
           std::cout << "] },";
       }
