@@ -161,6 +161,9 @@ NextRule: // Loop across rules, early exit as soon as a match fails
           case RuleNone:
               break;
 
+          case RulePass:
+              goto NextRule;
+
           case RuleResult:
               if (result == cond->result)
                   goto NextRule;
@@ -414,6 +417,9 @@ void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
       auto rule = item["stm"] == "WHITE" ? RuleWhite : RuleBlack;
       cond.rules.push_back(rule);
   }
+
+  if (item.find("pass") != item.end())
+      cond.rules.push_back(RulePass);
 
   if (cond.rules.size())
   {

@@ -45,6 +45,11 @@ QUERY_DB = [
                           '{ "streak": [ { "white-move": "e5"}, { "black-move": "dxe5"}, { "white-move": "f5"},'
                                         '{ "white-move": "Ne4"} ] } ] }',
      'matches': 0},
+
+    {'q': '{ "sequence": [ { "sub-fen": "rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR"},'
+                          '{ "streak": [ { "white-move": "e5"}, { "pass": ""}, { "white-move": "f5"} ] },'
+                          '{ "white-move": "Ne4"} ] }',
+     'matches': 1},
 ]
 
 
