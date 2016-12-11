@@ -303,7 +303,7 @@ void print_results(const Search::LimitsType& limits) {
 ScoutMove parse_move(const std::string& san, Color c) {
 
   const std::string PieceToChar(" PNBRQK  pnbrqk");
-  ScoutMove m = {};
+  ScoutMove m = ScoutMove();
 
   if (san.empty())
       return m;
