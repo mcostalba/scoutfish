@@ -37,17 +37,13 @@ QUERY_DB = [
                         '{ "result": "0-1"}, {"result": "0-1"} ] }', 'matches':  2},
 
     {'q': '{ "sequence": [ { "sub-fen": "rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR"},'
-                          '{ "streak": [ { "sub-fen": "1rb1r1k1/2qn1pbp/3p2p1/1pnPP3/2p2P2/2N1B1NP/1PB2QP1/R4RK1"},'
-                                        '{ "sub-fen": "1rb1r1k1/2qn1pbp/6p1/1pnPp3/2p2P2/2N1B1NP/1PB2QP1/R4RK1"},'
-                                        '{ "sub-fen": "1rb1r1k1/2qn1pbp/6p1/1pnPpP2/2p5/2N1B1NP/1PB2QP1/R4RK1"} ] },'
-                          '{ "sub-fen": "br2r1k1/2qn1pbp/6p1/1pnPpP2/2p1N3/4B1NP/1PB2QP1/3R1RK1" } ] }',
+                          '{ "streak": [ { "white-move": "e5"}, { "black-move": "dxe5"}, { "white-move": "f5"} ] },'
+                          '{ "white-move": "Ne4"} ] }',
      'matches': 1},
 
     {'q': '{ "sequence": [ { "sub-fen": "rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR"},'
-                          '{ "streak": [ { "sub-fen": "1rb1r1k1/2qn1pbp/3p2p1/1pnPP3/2p2P2/2N1B1NP/1PB2QP1/R4RK1"},'
-                                        '{ "sub-fen": "1rb1r1k1/2qn1pbp/6p1/1pnPp3/2p2P2/2N1B1NP/1PB2QP1/R4RK1"},'
-                                        '{ "sub-fen": "1rb1r1k1/2qn1pbp/6p1/1pnPpP2/2p5/2N1B1NP/1PB2QP1/R4RK1"},'
-                                        '{ "sub-fen": "br2r1k1/2qn1pbp/6p1/1pnPpP2/2p1N3/4B1NP/1PB2QP1/3R1RK1" }]}]}',
+                          '{ "streak": [ { "white-move": "e5"}, { "black-move": "dxe5"}, { "white-move": "f5"},'
+                                        '{ "white-move": "Ne4"} ] } ] }',
      'matches': 0},
 ]
 

@@ -119,3 +119,29 @@ Output of the search will be like:
 ~~~~
 
 Where _ply_ list will show the matching ply for each condition in the sequence.
+
+## Streaks
+
+A _streak_ is a special kind of sequence. It is defined like a sequence and has all the sequence properties,
+but it is different in two key points:
+
+- Conditions in a streak should be satisfied in consecutive (half) moves
+- A streak can appear nested in a bigger, outer sequence
+
+Mainly a streak is like a sequence but with the added constrain that the conditions should be satisfied
+one-by-one along consecutive moves. You may want to use a streak to look for a pawn-down imbalance that
+should persist for at least few moves to be sure we are not in the middle of a capture-recapture
+combination.
+
+From chess perspective, say you want to find games with a clearance sacrifice in the Benoni for white.
+Plan of e5, dxe5, followed by f5 and then Ne4 for white. The first three moves are in a streak, but
+the last move might be delayed by a move (but is also played immediately):
+
+~~~~
+{ "sequence": [ { "sub-fen": "rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR"},
+                { "streak": [ { "white-move": "e5"}, { "black-move": "dxe5"}, { "white-move": "f5"} ] },
+                { "white-move": "Ne4"} ] }
+~~~~
+
+The above sequence, first checks for Benoni opening, then checks for the **consecutives** e5, dxe5, f5
+then finally by the (possibly delayed) Ne4.
