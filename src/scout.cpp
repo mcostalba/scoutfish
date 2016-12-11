@@ -25,8 +25,8 @@
 #include <fstream>
 #include <iostream>
 #include <map>
-#include <string>
 #include <sstream>
+#include <string>
 
 #include "json.hpp"
 #include "misc.h"
@@ -141,21 +141,21 @@ void search(Thread* th) {
 
           assert(pos.pseudo_legal(move) && pos.legal(move));
 
+          pos.do_move(move, *st++, pos.gives_check(move));
+          curRule = rules;
+
           // If we are looking for a streak, fail and reset as soon as last
           // matched ply is more than one half-move behind. We take care to
           // verify the last matched ply comes form the same streak.
           if (   cond->streakId
               && matchPlies.size() - streakStartPly > 0
-              && matchPlies.back() != pos.nodes_searched())
+              && matchPlies.back() != pos.nodes_searched() - 1)
           {
               assert(condIdx);
 
               condIdx = 0;
               set_condition(condIdx);
           }
-
-          pos.do_move(move, *st++, pos.gives_check(move));
-          curRule = rules;
 
 NextRule: // Loop across rules, early exit as soon as one fails
           switch (*curRule++) {
@@ -302,6 +302,7 @@ void print_results(const Search::LimitsType& limits) {
   std::cout << tab << "]\n}" << std::endl;
 }
 
+
 ScoutMove parse_move(const std::string& san, Color c) {
 
   const std::string PieceToChar(" PNBRQK  pnbrqk");
@@ -321,10 +322,10 @@ ScoutMove parse_move(const std::string& san, Color c) {
   if (san.find("=") != std::string::npos)
   {
       size_t idx = san.find("=");
-      Piece prom = Piece(PieceToChar.find(san[idx + 1]));
+      Piece promotion = Piece(PieceToChar.find(san[idx + 1]));
       m.pc = make_piece(c, PAWN);
       m.to = make_square(File(san[idx - 2] - 'a'), Rank(san[idx - 1] - '1'));
-      m.promotion = type_of(prom);
+      m.promotion = type_of(promotion);
       return m;
   }
 
@@ -347,12 +348,13 @@ ScoutMove parse_move(const std::string& san, Color c) {
   return m;
 }
 
+
 void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
 
-  Condition cond;
+  Condition cond = Condition();
   cond.streakId = streakId;
 
-  if (item.find("result") != item.end())
+  if (item.count("result"))
   {
       GameResult result =  item["result"] == "1-0" ? WhiteWin
                          : item["result"] == "0-1" ? BlackWin
@@ -366,7 +368,7 @@ void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
       }
   }
 
-  if (item.find("sub-fen") != item.end())
+  if (item.count("sub-fen"))
   {
       for (const auto& fen : item["sub-fen"])
       {
@@ -387,7 +389,7 @@ void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
       cond.rules.push_back(RuleSubFen);
   }
 
-  if (item.find("material") != item.end())
+  if (item.count("material"))
   {
       StateInfo st;
       for (const auto& mat : item["material"])
@@ -395,7 +397,7 @@ void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
       cond.rules.push_back(RuleMaterial);
   }
 
-  if (item.find("white-move") != item.end())
+  if (item.count("white-move"))
       for (const auto& move : item["white-move"])
       {
           const ScoutMove& m = parse_move(move, WHITE);
@@ -406,7 +408,7 @@ void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
           }
       }
 
-  if (item.find("black-move") != item.end())
+  if (item.count("black-move"))
       for (const auto& move : item["black-move"])
       {
           const ScoutMove& m = parse_move(move, BLACK);
@@ -420,13 +422,13 @@ void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
   if (cond.moves.size())
       cond.rules.push_back(RuleMove);
 
-  if (item.find("stm") != item.end())
+  if (item.count("stm"))
   {
       auto rule = item["stm"] == "WHITE" ? RuleWhite : RuleBlack;
       cond.rules.push_back(rule);
   }
 
-  if (item.find("pass") != item.end())
+  if (item.count("pass"))
       cond.rules.push_back(RulePass);
 
   if (cond.rules.size())
@@ -435,6 +437,7 @@ void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
       data.conditions.push_back(cond);
   }
 }
+
 
 void parse_streak(Scout::Data& data, const json& streak) {
 
@@ -445,10 +448,11 @@ void parse_streak(Scout::Data& data, const json& streak) {
       parse_condition(data, item, streakId);
 }
 
+
 void parse_sequence(Scout::Data& data, const json& sequence) {
 
   for (const json& item : sequence)
-      if (item.find("streak") != item.end())
+      if (item.count("streak"))
           parse_streak(data, item["streak"]);
       else
           parse_condition(data, item);
@@ -471,25 +475,24 @@ void parse_query(Scout::Data& data, std::istringstream& is) {
                       { "sub-fen": "2q5/8/8/8/8/8/8/R6R" }] }
 
      See test.py for more examples.
-  */
 
-  json j = json::parse(is);
-
-  /* Simplified grammar for our queries
+     Simplified grammar for our queries
 
      <query>     ::= <sequence> | <streak> | <condition>
-     <sequence>  ::= "{ sequence: [" <condition> | streak { "," <condition> | streak } "] }"
-     <streak>    ::= "{   streak: [" <condition> { "," <condition> } "] }"
+     <sequence>  ::= "{ "sequence": [" <condition> | streak { "," <condition> | streak } "] }"
+     <streak>    ::= "{   "streak": [" <condition> { "," <condition> } "] }"
      <condition> ::= "{" <rule> { "," <rule> } "}"
      <rule>      ::= string ":" <value>  // Maps into a JSON pair
      <value> = string | number | array
 
   */
 
-  if (j.find("sequence") != j.end())
+  json j = json::parse(is);
+
+  if (j.count("sequence"))
       parse_sequence(data, j["sequence"]);
 
-  else if (j.find("streak") != j.end())
+  else if (j.count("streak"))
       parse_streak(data, j["streak"]);
 
   else
@@ -497,10 +500,7 @@ void parse_query(Scout::Data& data, std::istringstream& is) {
 
   // Change the end rule of the last condition
   if (data.conditions.size())
-  {
-      auto& lastCond = data.conditions[data.conditions.size() - 1];
-      lastCond.rules[lastCond.rules.size() - 1] = RuleMatchedQuery;
-  }
+      data.conditions.back().rules.back() = RuleMatchedQuery;
   else
   {
       // If query is empty push a default condition with RuleNone
