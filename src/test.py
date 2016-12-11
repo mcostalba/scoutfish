@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import argparse
+import json
 import os
 import pexpect
 import sys
@@ -60,10 +61,10 @@ def run_queries(p, db):
         sys.stdout.write('Query ' + str(cnt) + '...')
         sys.stdout.flush()
         p.sendline(cmd + e['q'])
-        p.expect('matches')
-        result = p.before
-        result = result.split('"match count": ')[1].split(',')[0]
-        if (int(result) == e['matches']):
+        p.sendline('isready')
+        p.expect('readyok')
+        result = json.loads(p.before)
+        if (result['match count'] == e['matches']):
             print('OK')
         else:
             print('FAIL')
@@ -74,6 +75,7 @@ def run_queries(p, db):
 def run_test(args):
     # Spawn scoutfish
     p = pexpect.spawn(args.path)
+    p.setecho(False)
     p.sendline('setoption name threads value ' + str(args.threads))
 
     # Make DB

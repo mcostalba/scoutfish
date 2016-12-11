@@ -277,19 +277,25 @@ void print_results(const Search::LimitsType& limits) {
             << tab << "[";
 
   for (Thread* th : Threads)
+  {
+      std::string comma1;
       for (auto& m : th->scout.matches)
       {
-          std::cout << tab << indent4 << "{ \"ofs\": " << m.gameOfs
-                                      << ", \"ply\": [";
-          std::string comma;
+          std::cout << comma1 << tab << indent4
+                    << "{ \"ofs\": " << m.gameOfs
+                    << ", \"ply\": [";
+
+          std::string comma2;
           for (auto& p : m.plies)
           {
-              std::cout << comma << p;
-              comma = ", ";
+              std::cout << comma2 << p;
+              comma2 = ", ";
           }
 
-          std::cout << "] },";
+          std::cout << "] }";
+          comma1 = ", ";
       }
+  }
 
   std::cout << tab << "]\n}" << std::endl;
 }

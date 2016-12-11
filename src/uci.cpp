@@ -228,7 +228,12 @@ void UCI::loop(int argc, char* argv[]) {
           Tablebases::init(Options["SyzygyPath"]);
           Time.availableNodes = 0;
       }
-      else if (token == "isready")    sync_cout << "readyok" << sync_endl;
+      else if (token == "isready")
+      {
+          // This is NOT UCI compliant but is needed to sync with the UI
+          Threads.main()->wait_for_search_finished();
+          sync_cout << "readyok" << sync_endl;
+      }
       else if (token == "go")         go(pos, is);
       else if (token == "position")   position(pos, is);
       else if (token == "setoption")  setoption(is);

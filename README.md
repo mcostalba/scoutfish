@@ -34,7 +34,7 @@ Output will be like:
         { "ofs": 375551, "ply": [21] },
         { "ofs": 484182, "ply": [29] },
         { "ofs": 486999, "ply": [29] },
-        { "ofs": 536474, "ply": [13] },
+        { "ofs": 536474, "ply": [13] }
     ]
 }
 ~~~~
@@ -113,7 +113,7 @@ Output of the search will be like:
     "matches":
     [
         { "ofs": 19054, "ply": [7, 15, 17] },
-        { "ofs": 20653, "ply": [7, 15, 17] },
+        { "ofs": 20653, "ply": [7, 15, 17] }
     ]
 }
 ~~~~
