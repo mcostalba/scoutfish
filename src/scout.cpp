@@ -123,15 +123,16 @@ void search(Thread* th) {
 
       // First move stores the result in the 'to' square
       GameResult result = GameResult(to_sq(Move(*data)));
-      Position pos = th->rootPos;
-      st = states;
 
-      // Reset to first condition if needed: FIXME may be useless, see bottom one
+      // If needed, reset conditions before starting a new game
       if (condIdx != 0)
       {
           condIdx = 0;
           set_condition(condIdx);
       }
+
+      st = states;
+      Position pos = th->rootPos;
 
       // Loop across the game (that could be empty)
       while (*++data != MOVE_NONE)
@@ -140,14 +141,12 @@ void search(Thread* th) {
 
           assert(pos.pseudo_legal(move) && pos.legal(move));
 
-          pos.do_move(move, *st++, pos.gives_check(move));
-          curRule = rules;
-
-          // If we are looking for a streak, reset in case last match
-          // is more than one move behind.
+          // If we are looking for a streak, fail and reset as soon as last
+          // matched ply is more than one half-move behind. We take care to
+          // verify the last matched ply comes form the same streak.
           if (   cond->streakId
               && matchPlies.size() - streakStartPly > 0
-              && matchPlies.back() != pos.nodes_searched() - 1)
+              && matchPlies.back() != pos.nodes_searched())
           {
               assert(condIdx);
 
@@ -155,7 +154,10 @@ void search(Thread* th) {
               set_condition(condIdx);
           }
 
-NextRule: // Loop across rules, early exit as soon as a match fails
+          pos.do_move(move, *st++, pos.gives_check(move));
+          curRule = rules;
+
+NextRule: // Loop across rules, early exit as soon as one fails
           switch (*curRule++) {
 
           case RuleNone:
@@ -242,7 +244,7 @@ SkipToNextGame:
 
       }; // Game loop
 
-      // Can't use pos.nodes_searched() due to skipping after match
+      // Can't use pos.nodes_searched() due to skipping moves after a match
       d.movesCnt += data - gameOfsPtr - 5; // 4+1 moves for game ofs and result
   }
 
