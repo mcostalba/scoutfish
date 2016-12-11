@@ -12,6 +12,13 @@ QUERY_DB = [
     {'q': '{ "material": "KQRRBNPPPPKQRRNNPPPP", "stm": "BLACK" }',    'matches':  2},
     {'q': '{ "material": "KQRRBNNPPPPKQRRBNNPPPP", "result": "0-1" }', 'matches':  2},
     {'q': '{ "material": ["KRBPPPKRPPP", "KRPPPKRPPP"] }',             'matches':  4},
+    {'q': '{ "white-move": "Nb7" }',                                   'matches':  6},
+    {'q': '{ "black-move": "c3" }',                                    'matches': 27},
+    {'q': '{ "black-move": "e1=Q" }',                                  'matches':  1},
+    {'q': '{ "black-move": "O-O" }',                                   'matches':354},
+    {'q': '{ "black-move": "O-O-O" }',                                 'matches': 28},
+    {'q': '{ "black-move": ["O-O-O", "O-O"] }',                        'matches':382},
+    {'q': '{ "white-move": ["a7", "b7"] }',                            'matches': 16},
 
     {'q': '{ "sub-fen": ["rnbqkbnr/pp1p1ppp/2p5/4p3/3PP3/8/PPP2PPP/RNBQKBNR", '
                         '"rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R"] }', 'matches': 50},

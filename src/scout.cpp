@@ -136,11 +136,11 @@ void search(Thread* th) {
       // Loop across the game (that could be empty)
       while (*++data != MOVE_NONE)
       {
-          Move m = *data;
+          Move move = *data;
 
-          assert(pos.pseudo_legal(m) && pos.legal(m));
+          assert(pos.pseudo_legal(move) && pos.legal(move));
 
-          pos.do_move(m, *st++, pos.gives_check(m));
+          pos.do_move(move, *st++, pos.gives_check(move));
           curRule = rules;
 
           // If we are looking for a streak, reset in case last match
@@ -192,6 +192,20 @@ NextRule: // Loop across rules, early exit as soon as a match fails
                   goto NextRule;
               break;
 
+          case RuleMove:
+              if (cond->moveSquares & to_sq(move))
+                  for (const auto& m : cond->moves)
+                  {
+                      if (   (pos.piece_on(to_sq(move)) != m.pc && type_of(move) == NORMAL)
+                          || to_sq(move) != m.to
+                          || m.castle != (type_of(move) == CASTLING)
+                          || (   type_of(move) == PROMOTION
+                              && promotion_type(move) != m.promotion))
+                          continue;
+                      goto NextRule;
+                  }
+              break;
+
           case RuleWhite:
               if (pos.side_to_move() == WHITE)
                   goto NextRule;
@@ -215,6 +229,7 @@ NextRule: // Loop across rules, early exit as soon as a match fails
               matchPlies.push_back(pos.nodes_searched());
               read_be(gameOfs, (uint8_t*)gameOfsPtr);
               d.matches.push_back({gameOfs, matchPlies});
+              matchPlies.clear(); // Needed for single conditon case
 SkipToNextGame:
               // Skip to the end of the game after the first match
               while (*++data != MOVE_NONE) {}
@@ -276,6 +291,50 @@ void print_results(const Search::LimitsType& limits) {
   std::cout << tab << "]\n}" << std::endl;
 }
 
+ScoutMove parse_move(const std::string& san, Color c) {
+
+  const std::string PieceToChar(" PNBRQK  pnbrqk");
+  ScoutMove m = {};
+
+  if (san.empty())
+      return m;
+
+  if (san[0] == 'O')
+  {
+      m.pc = make_piece(c, KING);
+      m.to = relative_square(c, san == "O-O" ? SQ_H1 : SQ_A1); // King captures rook
+      m.castle = true;
+      return m;
+  }
+
+  if (san.find("=") != std::string::npos)
+  {
+      size_t idx = san.find("=");
+      Piece prom = Piece(PieceToChar.find(san[idx + 1]));
+      m.pc = make_piece(c, PAWN);
+      m.to = make_square(File(san[idx - 2] - 'a'), Rank(san[idx - 1] - '1'));
+      m.promotion = type_of(prom);
+      return m;
+  }
+
+  if (san[0] >= 'a' && san[0] <= 'h')
+      m.pc = make_piece(c, PAWN);
+
+  else if (PieceToChar.find(san[0]) != std::string::npos)
+  {
+      Piece pp = Piece(PieceToChar.find(san[0]));
+      m.pc = make_piece(c, type_of(pp));
+  }
+  else
+      return m;
+
+  size_t toIdx = san.size() - 2;
+  if (san.back() == '+' || san.back() == '#')
+      toIdx--;
+
+  m.to = make_square(File(san[toIdx] - 'a'), Rank(san[toIdx + 1] - '1'));
+  return m;
+}
 
 void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
 
@@ -314,7 +373,7 @@ void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
 
           cond.subfens.push_back(f);
       }
-      cond.rules.push_back(Scout::RuleSubFen);
+      cond.rules.push_back(RuleSubFen);
   }
 
   if (item.find("material") != item.end())
@@ -322,18 +381,43 @@ void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
       StateInfo st;
       for (const auto& mat : item["material"])
           cond.matKeys.push_back(Position().set(mat, WHITE, &st).material_key());
-      cond.rules.push_back(Scout::RuleMaterial);
+      cond.rules.push_back(RuleMaterial);
   }
+
+  if (item.find("white-move") != item.end())
+      for (const auto& move : item["white-move"])
+      {
+          const ScoutMove& m = parse_move(move, WHITE);
+          if (m.pc != NO_PIECE)
+          {
+              cond.moves.push_back(m);
+              cond.moveSquares |= m.to;
+          }
+      }
+
+  if (item.find("black-move") != item.end())
+      for (const auto& move : item["black-move"])
+      {
+          const ScoutMove& m = parse_move(move, BLACK);
+          if (m.pc != NO_PIECE)
+          {
+              cond.moves.push_back(m);
+              cond.moveSquares |= m.to;
+          }
+      }
+
+  if (cond.moves.size())
+      cond.rules.push_back(RuleMove);
 
   if (item.find("stm") != item.end())
   {
-      auto rule = item["stm"] == "WHITE" ? Scout::RuleWhite : Scout::RuleBlack;
+      auto rule = item["stm"] == "WHITE" ? RuleWhite : RuleBlack;
       cond.rules.push_back(rule);
   }
 
   if (cond.rules.size())
   {
-      cond.rules.push_back(Scout::RuleMatchedCondition);
+      cond.rules.push_back(RuleMatchedCondition);
       data.conditions.push_back(cond);
   }
 }
@@ -401,13 +485,13 @@ void parse_query(Scout::Data& data, std::istringstream& is) {
   if (data.conditions.size())
   {
       auto& lastCond = data.conditions[data.conditions.size() - 1];
-      lastCond.rules[lastCond.rules.size() - 1] = Scout::RuleMatchedQuery;
+      lastCond.rules[lastCond.rules.size() - 1] = RuleMatchedQuery;
   }
   else
   {
       // If query is empty push a default condition with RuleNone
       Condition cond;
-      cond.rules.push_back(Scout::RuleNone);
+      cond.rules.push_back(RuleNone);
       data.conditions.push_back(cond);
   }
 

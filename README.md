@@ -50,6 +50,7 @@ run in interactive mode:
 ./scoutfish
 setoption name threads value 8
 scout my_big_db.bin { "sub-fen": "8/8/8/8/1k6/8/8/8", "material": "KBNKP" }
+scout my_big_db.bin { "white-move": "O-O-O" }
 scout my_big_db.bin { "material": "KBNKP", "stm": "WHITE" }
 scout my_big_db.bin { "material": "KNNK", "result": "1-0" }
 quit
@@ -59,21 +60,23 @@ Scoutfish is strictly derived from [Stockfish](https://stockfishchess.org/) so, 
 [UCI commands](http://wbec-ridderkerk.nl/html/UCIProtocol.html), like _setoption_, that we use to
 increase thread number according to our hardware: the search speed will increase accordingly!
 
-Above examples show how to look for a specific **material distribution**, for a specific
-**side to move** or for a **game result** and how to compose a **multi-rule condition**: a position
-should satisfy all the rules to match the condition.
+Above examples show how to look for a specific **move**, **material distribution**, **side to move**
+or for a **game result** and how to compose a **multi-rule condition**: a position should satisfy
+all the rules to match the condition.
 
 You are not limited to search for a single _sub-fen_, the following condition:
 
     { "sub-fen": ["8/8/8/q7/8/8/8/8", "8/8/8/r7/8/8/8/8"] }
 
 Will find all the positions with a black queen **or** a black rook in a5. There is no limit
-to the size of the _sub-fen_ list, enabling to compose very powerful requests. Material
-distributions can be put in a list too:
+to the size of the _sub-fen_ list, enabling to compose very powerful requests. Moves and
+material distributions can be put in a list too:
 
+    { "black-move": ["c1=Q", "c1=N"] }'
     { "material": ["KRPPPKRPPP", "KRBPPPKRPPP"] }'
 
-Will match games with a rook and 3 pawns on both sides or with an added white bishop.
+To find respectively all games with black queen and knight prmotions in c1 and all games with
+a rook and 3 pawns on both sides or with an added white bishop.
 
 The position **full FEN** is just a special _sub-fen_, so:
 
