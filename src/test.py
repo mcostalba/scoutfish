@@ -75,8 +75,7 @@ if __name__ == "__main__":
     p.setoption('threads', args.threads)
 
     # Make DB
-    db = os.path.splitext(args.pgn)[0]+'.bin'
-    sys.stdout.write("Making DB '" + os.path.basename(db) + "'...")
+    sys.stdout.write('Making index...')
     sys.stdout.flush()
     p.make(args.pgn)
     print('done')
@@ -86,7 +85,7 @@ if __name__ == "__main__":
     for e in QUERY_DB:
         sys.stdout.write('Query ' + str(cnt) + '...')
         sys.stdout.flush()
-        result = p.scout(db, e['q'])
+        result = p.scout(e['q'])
         if (result['match count'] == e['matches']):
             print('OK')
         else:
