@@ -3,8 +3,9 @@
 import argparse
 import json
 import os
-import pexpect
 import sys
+
+from scoutfish import Scoutfish
 
 QUERY_DB = [
     {'q': '{ "sub-fen": "8/8/p7/8/8/1B3N2/8/8" }',                     'matches': 29},
@@ -54,48 +55,6 @@ QUERY_DB = [
 ]
 
 
-def run_queries(p, db):
-    cmd = 'scout ' + db + ' '
-    cnt = 1
-    for e in QUERY_DB:
-        sys.stdout.write('Query ' + str(cnt) + '...')
-        sys.stdout.flush()
-        p.sendline(cmd + e['q'])
-        p.sendline('isready')
-        p.expect('readyok')
-        result = json.loads(p.before)
-        if (result['match count'] == e['matches']):
-            print('OK')
-        else:
-            print('FAIL')
-        p.before = ''
-        cnt += 1
-
-
-def run_test(args):
-    # Spawn scoutfish
-    p = pexpect.spawn(args.path)
-    p.setecho(False)
-    p.sendline('setoption name threads value ' + str(args.threads))
-
-    # Make DB
-    db = os.path.splitext(args.pgn)[0]+'.bin'
-    sys.stdout.write("Making DB '" + os.path.basename(db) + "'...")
-    sys.stdout.flush()
-    p.sendline('make ' + args.pgn)
-    p.sendline('isready')
-    p.expect('readyok')
-    p.before = ''
-    print('done')
-
-    # Run queries
-    run_queries(p, db)
-
-    # Terminate scoutfish
-    p.sendline('quit')
-    p.expect(pexpect.EOF)
-
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Run a set of test queries')
     parser.add_argument('--pgn', default='../pgn/famous_games.pgn')
@@ -111,4 +70,28 @@ if __name__ == "__main__":
         print("File {} does not exsist".format(args.pgn))
         sys.exit(0)
 
-    run_test(args)
+    # Spawn scoutfish
+    p = Scoutfish(args.path)
+    p.setoption('threads', args.threads)
+
+    # Make DB
+    db = os.path.splitext(args.pgn)[0]+'.bin'
+    sys.stdout.write("Making DB '" + os.path.basename(db) + "'...")
+    sys.stdout.flush()
+    p.make(args.pgn)
+    print('done')
+
+    # Run queries
+    cnt = 1
+    for e in QUERY_DB:
+        sys.stdout.write('Query ' + str(cnt) + '...')
+        sys.stdout.flush()
+        result = p.scout(db, e['q'])
+        if (result['match count'] == e['matches']):
+            print('OK')
+        else:
+            print('FAIL')
+        p.before = ''
+        cnt += 1
+
+    p.close()
