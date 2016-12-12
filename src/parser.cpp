@@ -500,7 +500,7 @@ void make_db(std::istringstream& is) {
     size_t lastdot = dbName.find_last_of(".");
     if (lastdot != std::string::npos)
         dbName = dbName.substr(0, lastdot);
-    dbName += ".bin";
+    dbName += ".scout";
     std::ofstream ofs;
     ofs.open(dbName, std::ofstream::out | std::ofstream::binary);
 
