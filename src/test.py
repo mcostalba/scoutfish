@@ -77,7 +77,7 @@ if __name__ == "__main__":
     # Make DB
     sys.stdout.write('Making index...')
     sys.stdout.flush()
-    p.make(args.pgn)
+    p.open(args.pgn, True)
     print('done')
 
     # Run queries
