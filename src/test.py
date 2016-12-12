@@ -3,8 +3,10 @@
 import argparse
 import json
 import os
-import pexpect
 import sys
+
+import pexpect
+from pexpect.popen_spawn import PopenSpawn
 
 QUERY_DB = [
     {'q': '{ "sub-fen": "8/8/p7/8/8/1B3N2/8/8" }',                     'matches': 29},
@@ -74,8 +76,7 @@ def run_queries(p, db):
 
 def run_test(args):
     # Spawn scoutfish
-    p = pexpect.spawn(args.path)
-    p.setecho(False)
+    p = PopenSpawn(args.path)
     p.sendline('setoption name threads value ' + str(args.threads))
 
     # Make DB
