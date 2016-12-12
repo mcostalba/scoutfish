@@ -8,7 +8,9 @@ from pexpect.popen_spawn import PopenSpawn
 
 
 class Scoutfish:
-    def __init__(self, engine):
+    def __init__(self, engine = ''):
+        if not engine:
+            engine = './scoutfish'
         self.p = PopenSpawn(engine, encoding="utf-8")
         self.wait_ready()
 
@@ -39,7 +41,7 @@ class Scoutfish:
         '''Run a query in JSON format. The result will be in JSON format too'''
         if not db:
             db = self.db
-        cmd = 'scout ' + db + ' ' + q
+        cmd = 'scout ' + db + ' ' + str(q)
         self.p.sendline(cmd)
         self.wait_ready()
         result = json.loads(self.p.before)

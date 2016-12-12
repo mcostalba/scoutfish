@@ -76,7 +76,7 @@ void search(Thread* th) {
   std::vector<size_t> matchPlies;
   size_t condIdx = 0, streakStartPly = 0;
   Scout::Data& d = th->scout;
-  d.matches.reserve(100000);
+  d.matches.reserve(d.maxMatches ? d.maxMatches : 100000);
   matchPlies.reserve(128);
 
   // Lambda helper to copy hot stuff to local variables
@@ -235,6 +235,10 @@ NextRule: // Loop across rules, early exit as soon as one fails
               read_be(gameOfs, (uint8_t*)gameOfsPtr);
               d.matches.push_back({gameOfs, matchPlies});
               matchPlies.clear(); // Needed for single conditon case
+
+              // Terminate if we have collected more then enough data
+              if (d.maxMatches && d.matches.size() >= d.maxMatches)
+                  data = end - 2;
 SkipToNextGame:
               // Skip to the end of the game after the first match
               while (*++data != MOVE_NONE) {}
@@ -268,6 +272,9 @@ void print_results(const Search::LimitsType& limits) {
       matches += th->scout.matches.size();
   }
 
+  if (d.maxMatches)
+      matches = std::min(matches, d.maxMatches);
+
   std::string tab = "\n    ";
   std::string indent4 = "    ";
   std::cout << "{"
@@ -278,9 +285,9 @@ void print_results(const Search::LimitsType& limits) {
             << tab << "\"matches\":"
             << tab << "[";
 
+  std::string comma1;
   for (Thread* th : Threads)
   {
-      std::string comma1;
       for (auto& m : th->scout.matches)
       {
           std::cout << comma1 << tab << indent4
@@ -296,7 +303,13 @@ void print_results(const Search::LimitsType& limits) {
 
           std::cout << "] }";
           comma1 = ", ";
+
+          if (!--matches)
+              break;
       }
+
+      if (!matches)
+          break;
   }
 
   std::cout << tab << "]\n}" << std::endl;

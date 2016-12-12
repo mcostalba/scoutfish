@@ -72,7 +72,7 @@ struct MatchingGame {
 struct Data {
   Move* baseAddress;
   size_t dbMapping, dbSize;
-  size_t movesCnt;
+  size_t maxMatches, movesCnt;
   std::vector<Condition> conditions;
   std::vector<MatchingGame> matches;
 };
@@ -128,7 +128,7 @@ struct LimitsType {
   LimitsType() { // Init explicitly due to broken value-initialization of non POD in MSVC
     nodes = time[WHITE] = time[BLACK] = inc[WHITE] = inc[BLACK] =
     npmsec = movestogo = depth = movetime = mate = infinite = ponder = 0;
-    scout.dbMapping = scout.dbSize = scout.movesCnt = 0;
+    scout.dbMapping = scout.dbSize = scout.movesCnt = scout.maxMatches = 0;
     scout.baseAddress = nullptr;
   }
 
