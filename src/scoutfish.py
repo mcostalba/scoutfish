@@ -3,17 +3,17 @@
 import json
 import os
 import pexpect
+from pexpect.popen_spawn import PopenSpawn
 
 
 class Scoutfish:
     def __init__(self, engine):
-        self.p = pexpect.spawn(engine)
-        self.p.setecho(False)
+        self.p = PopenSpawn(engine, encoding="utf-8")
         self.wait_ready()
 
     def wait_ready(self):
         self.p.sendline('isready')
-        self.p.expect('readyok')
+        self.p.expect(u'readyok')
 
     def close(self):
         '''Terminate scoutfish. Not really needed: engine will terminate as
