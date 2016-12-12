@@ -8,49 +8,49 @@ import sys
 from scoutfish import Scoutfish
 
 QUERY_DB = [
-    {'q': '{ "sub-fen": "8/8/p7/8/8/1B3N2/8/8" }',                     'matches': 29},
-    {'q': '{ "sub-fen": "8/8/8/8/1k6/8/8/8", "result": "1/2-1/2" }',   'matches':  1},
-    {'q': '{ "sub-fen": ["8/8/8/q7/8/8/8/8", "8/8/8/r7/8/8/8/8"] }',   'matches': 72},
-    {'q': '{ "material": "KQRRBNPPPPKQRRNNPPPP", "stm": "BLACK" }',    'matches':  2},
-    {'q': '{ "material": "KQRRBNNPPPPKQRRBNNPPPP", "result": "0-1" }', 'matches':  2},
-    {'q': '{ "material": ["KRBPPPKRPPP", "KRPPPKRPPP"] }',             'matches':  4},
-    {'q': '{ "white-move": "Nb7" }',                                   'matches':  6},
-    {'q': '{ "black-move": "c3" }',                                    'matches': 27},
-    {'q': '{ "black-move": "e1=Q" }',                                  'matches':  1},
-    {'q': '{ "black-move": "O-O" }',                                   'matches':354},
-    {'q': '{ "black-move": "O-O-O" }',                                 'matches': 28},
-    {'q': '{ "black-move": ["O-O-O", "O-O"] }',                        'matches':382},
-    {'q': '{ "white-move": ["a7", "b7"] }',                            'matches': 16},
+    {'q': { "sub-fen": "8/8/p7/8/8/1B3N2/8/8" },                     'matches': 29},
+    {'q': { "sub-fen": "8/8/8/8/1k6/8/8/8", "result": "1/2-1/2" },   'matches':  1},
+    {'q': { "sub-fen": ["8/8/8/q7/8/8/8/8", "8/8/8/r7/8/8/8/8"] },   'matches': 72},
+    {'q': { "material": "KQRRBNPPPPKQRRNNPPPP", "stm": "BLACK" },    'matches':  2},
+    {'q': { "material": "KQRRBNNPPPPKQRRBNNPPPP", "result": "0-1" }, 'matches':  2},
+    {'q': { "material": ["KRBPPPKRPPP", "KRPPPKRPPP"] },             'matches':  4},
+    {'q': { "white-move": "Nb7" },                                   'matches':  6},
+    {'q': { "black-move": "c3" },                                    'matches': 27},
+    {'q': { "black-move": "e1=Q" },                                  'matches':  1},
+    {'q': { "black-move": "O-O" },                                   'matches':354},
+    {'q': { "black-move": "O-O-O" },                                 'matches': 28},
+    {'q': { "black-move": ["O-O-O", "O-O"] },                        'matches':382},
+    {'q': { "white-move": ["a7", "b7"] },                            'matches': 16},
 
-    {'q': '{ "sub-fen": ["rnbqkbnr/pp1p1ppp/2p5/4p3/3PP3/8/PPP2PPP/RNBQKBNR", '
-                        '"rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R"] }', 'matches': 50},
+    {'q': { "sub-fen": ["rnbqkbnr/pp1p1ppp/2p5/4p3/3PP3/8/PPP2PPP/RNBQKBNR",
+                        "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R"] }, 'matches': 50},
 
-    {'q': '{ "sequence": [ { "sub-fen": "8/3p4/8/8/8/8/8/8" ,'
-                            '"result": "1-0" },'
-                          '{ "sub-fen": "8/2q5/8/8/8/8/8/R6R" }] }', 'matches':  8},
+    {'q': { "sequence": [ { "sub-fen": "8/3p4/8/8/8/8/8/8" ,
+                            "result": "1-0" },
+                          { "sub-fen": "8/2q5/8/8/8/8/8/R6R" }] }, 'matches':  8},
 
-    {'q': '{ "sequence": [ { "sub-fen": "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/'
-                                        '4P3/2N2N2/PPPP1PPP/R1BQK2R" },'
-                          '{ "sub-fen": "8/8/8/8/2B5/8/8/8" },'
-                          '{ "sub-fen": "8/8/8/8/8/5B2/8/8" } ] }',  'matches':  2},
+    {'q': { "sequence": [ { "sub-fen": "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/"
+                                        "4P3/2N2N2/PPPP1PPP/R1BQK2R" },
+                          { "sub-fen": "8/8/8/8/2B5/8/8/8" },
+                          { "sub-fen": "8/8/8/8/8/5B2/8/8" } ] },  'matches':  2},
 
-    {'q': '{ "streak": [ { "sub-fen": "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/'
-                                      '4P3/2N2N2/PPPP1PPP/R1BQK2R"},'
-                        '{ "result": "0-1"}, {"result": "0-1"} ] }', 'matches':  2},
+    {'q': { "streak": [ { "sub-fen": "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/"
+                                      "4P3/2N2N2/PPPP1PPP/R1BQK2R"},
+                        { "result": "0-1"}, {"result": "0-1"} ] }, 'matches':  2},
 
-    {'q': '{ "sequence": [ { "sub-fen": "rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR"},'
-                          '{ "streak": [ { "white-move": "e5"}, { "black-move": "dxe5"}, { "white-move": "f5"} ] },'
-                          '{ "white-move": "Ne4"} ] }',
+    {'q': { "sequence": [ { "sub-fen": "rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR"},
+                          { "streak": [ { "white-move": "e5"}, { "black-move": "dxe5"}, { "white-move": "f5"} ] },
+                          { "white-move": "Ne4"} ] },
      'matches': 1},
 
-    {'q': '{ "sequence": [ { "sub-fen": "rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR"},'
-                          '{ "streak": [ { "white-move": "e5"}, { "black-move": "dxe5"}, { "white-move": "f5"},'
-                                        '{ "white-move": "Ne4"} ] } ] }',
+    {'q': { "sequence": [ { "sub-fen": "rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR"},
+                          { "streak": [ { "white-move": "e5"}, { "black-move": "dxe5"}, { "white-move": "f5"},
+                                        { "white-move": "Ne4"} ] } ] },
      'matches': 0},
 
-    {'q': '{ "sequence": [ { "sub-fen": "rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR"},'
-                          '{ "streak": [ { "white-move": "e5"}, { "pass": ""}, { "white-move": "f5"} ] },'
-                          '{ "white-move": "Ne4"} ] }',
+    {'q': { "sequence": [ { "sub-fen": "rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR"},
+                          { "streak": [ { "white-move": "e5"}, { "pass": ""}, { "white-move": "f5"} ] },
+                          { "white-move": "Ne4"} ] },
      'matches': 1},
 ]
 

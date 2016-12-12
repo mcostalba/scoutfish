@@ -3,13 +3,11 @@
 import json
 import os
 import pexpect
-import sys
-
 from pexpect.popen_spawn import PopenSpawn
 
 
 class Scoutfish:
-    def __init__(self, engine = ''):
+    def __init__(self, engine=''):
         if not engine:
             engine = './scoutfish'
         self.p = PopenSpawn(engine, encoding="utf-8")
@@ -21,15 +19,16 @@ class Scoutfish:
         self.p.sendline('isready')
         self.p.expect(u'readyok')
 
-    def open(self, pgn, force_make=False):
-        '''Open a PGN file and create an index if not exsisting or if force_make
+    def open(self, pgn, force=False):
+        '''Open a PGN file and create an index if not exsisting or if force
            is set.'''
         if not os.path.isfile(pgn):
-            print("File {} does not exsist".format(pgn))
-            sys.exit(0)
+            raise NameError("File {} does not exsist".format(pgn))
+        if self.pgn:
+            self.close()
         self.pgn = pgn
         self.db = os.path.splitext(pgn)[0] + '.scout'
-        if force_make or not os.path.isfile(self.db):
+        if not os.path.isfile(self.db) or force:
             self.db = self.make(pgn)
 
     def close(self):
@@ -53,33 +52,29 @@ class Scoutfish:
         self.wait_ready()
 
     def scout(self, q):
-        '''Run a query in JSON format. The result will be in JSON format too'''
+        '''Run query defined by 'q' dict. Result will be a dict too'''
         if not self.db:
-            print("Unknown DB, first open a PGN file")
-            sys.exit(0)
-        cmd = 'scout ' + self.db + ' ' + str(q)
+            raise NameError("Unknown DB, first open a PGN file")
+        j = json.dumps(q)
+        cmd = 'scout ' + self.db + ' ' + j
         self.p.sendline(cmd)
         self.wait_ready()
         result = json.loads(self.p.before)
         self.p.before = ''
         return result
 
-
     def get_games(self, list):
-        '''Retrieve the PGN games specified in the list accessing the PGN file.
-           Games are added to each match entry with a new key "pgn" '''
+        '''Retrieve the PGN games specified in the offsets list. Games are
+           added to each list entry with a new "pgn" key'''
         if not self.pgn:
-            print("Unknown DB, first open a PGN file")
-            sys.exit(0)
-
+            raise NameError("Unknown DB, first open a PGN file")
         with open(self.pgn, "r") as f:
-            for m in list:
-                ofs = m['ofs']
-                f.seek(ofs)
+            for match in list:
+                f.seek(match['ofs'])
                 game = ''
                 for line in f:
                     if "[Event" in line and game.strip():
-                        break # Next game start
+                        break  # Start of next game
                     game += line
-                m['pgn'] = game.strip()
+                match['pgn'] = game.strip()
         return list
