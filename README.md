@@ -157,7 +157,7 @@ a user friendly experience.
 To easy integration with higher level tools, a Python wrapper is provided through
 **scoutfish.py** file:
 
-~~~~
+~~~~python
 from scoutfish import Scoutfish
 
 p = Scoutfish()
