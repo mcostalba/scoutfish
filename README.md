@@ -145,3 +145,36 @@ the last move might be delayed by a move (but is also played immediately):
 
 The above sequence, first checks for Benoni opening, then checks for the **consecutives** e5, dxe5, f5
 then finally by the (possibly delayed) Ne4.
+
+
+## Python wrapper
+
+As a typical UCI chess engine, also Scoutfish is not intended to be exposed to the
+user directly, eventually a GUI or a web interface will handle the user interaction,
+composing the query and later presenting the results in a graphical form, ensuring
+a user friendly experience.
+
+To easy integration with higher level tools, a Python wrapper is provided through
+**scoutfish.py** file:
+
+~~~~
+from scoutfish import Scoutfish
+
+p = Scoutfish()
+p.setoption('threads', 4)  # Will use 4 threads for searching
+p.setoption('Max Matches', 5)  # Will retrieve max 5 games
+p.open('my_big.pgn')
+
+q = {'white-move': 'O-O-O'}  # Our query, defined as a simple dict
+result = p.scout(q)
+num = result['match count']
+
+print('Found ' + str(num) + ' games')
+
+games = p.get_games(result['matches'])  # Load the pgn games from my_big.pgn
+
+for g in games:
+    print(g['pgn'])
+
+p.close()
+~~~~

@@ -20,12 +20,10 @@ class Scoutfish:
         self.p.expect(u'readyok')
 
     def open(self, pgn, force=False):
-        '''Open a PGN file and create an index if not exsisting or if force
+        '''Open a PGN file and create an index if not exsisting or if 'force'
            is set.'''
         if not os.path.isfile(pgn):
             raise NameError("File {} does not exsist".format(pgn))
-        if self.pgn:
-            self.close()
         self.pgn = pgn
         self.db = os.path.splitext(pgn)[0] + '.scout'
         if not os.path.isfile(self.db) or force:
@@ -65,7 +63,7 @@ class Scoutfish:
 
     def get_games(self, list):
         '''Retrieve the PGN games specified in the offsets list. Games are
-           added to each list entry with a new "pgn" key'''
+           added to each list entry with a 'pgn' key'''
         if not self.pgn:
             raise NameError("Unknown DB, first open a PGN file")
         with open(self.pgn, "r") as f:

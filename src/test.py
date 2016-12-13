@@ -5,7 +5,6 @@ import hashlib
 import json
 import os
 import sys
-
 from scoutfish import Scoutfish
 
 QUERIES = [
@@ -80,19 +79,16 @@ if __name__ == "__main__":
         sys.exit(0)
 
     # Spawn scoutfish
-    p = Scoutfish(args.path)
-    p.setoption('threads', args.threads)
-
-    # Make DB
     sys.stdout.write('Making index...')
     sys.stdout.flush()
+    p = Scoutfish(args.path)
+    p.setoption('threads', args.threads)
     p.open(args.pgn, True)
     print('done')
 
-    # Run queries
-    cnt = 1
-    for e in QUERIES:
-        sys.stdout.write('Query ' + str(cnt) + '...')
+    # Run test queries
+    for cnt, e in enumerate(QUERIES):
+        sys.stdout.write('Query ' + str(cnt+1) + '...')
         sys.stdout.flush()
         result = p.scout(e['q'])
         num = str(result['match count'])
@@ -101,6 +97,5 @@ if __name__ == "__main__":
         else:
             print('FAIL (' + num + ')')
         p.before = ''
-        cnt += 1
 
     p.close()
