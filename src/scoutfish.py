@@ -74,7 +74,6 @@ class Scoutfish:
                     headers[tag_match.group(1)] = tag_match.group(2)
             else:
                 break
-
         return headers
 
     def get_game_headers(self, l):
@@ -84,16 +83,18 @@ class Scoutfish:
         return headers
 
 
-    def get_games(self, list):
+    def get_games(self, l):
         '''Retrieve the PGN games specified in the offsets list. Games are
            added to each list entry with a 'pgn' key'''
         if not self.pgn:
             raise NameError("Unknown DB, first open a PGN file")
         with open(self.pgn, "r") as f:
-            for match in list:
+            for match in l:
                 f.seek(match['ofs'])
                 game = ''
                 for line in f:
                     if "[Event" in line and game.strip():
                         break  # Start of next game
                     game += line
+                match['pgn'] = game.strip()
+        return l
