@@ -8,6 +8,7 @@ from pexpect.popen_spawn import PopenSpawn
 
 PGN_HEADERS_REGEX = re.compile(r"\[([A-Za-z0-9_]+)\s+\"(.*)\"\]")
 
+
 class Scoutfish:
     def __init__(self, engine=''):
         if not engine:
@@ -63,33 +64,13 @@ class Scoutfish:
         self.p.before = ''
         return result
 
-    def get_header(self, result):
-        headers = {}
-        for line in result['pgn'].splitlines():
-            line = line.strip()
-            if line.startswith('[') and line.endswith(']'):
-                # Process header line
-                tag_match = PGN_HEADERS_REGEX.match(line)
-                if tag_match:
-                    headers[tag_match.group(1)] = tag_match.group(2)
-            else:
-                break
-        return headers
-
-    def get_game_headers(self, l):
-        headers = []
-        for game in l:
-            headers.append(self.get_header(game))
-        return headers
-
-
-    def get_games(self, l):
+    def get_games(self, matches):
         '''Retrieve the PGN games specified in the offsets list. Games are
            added to each list entry with a 'pgn' key'''
         if not self.pgn:
             raise NameError("Unknown DB, first open a PGN file")
         with open(self.pgn, "r") as f:
-            for match in l:
+            for match in matches:
                 f.seek(match['ofs'])
                 game = ''
                 for line in f:
@@ -97,4 +78,28 @@ class Scoutfish:
                         break  # Start of next game
                     game += line
                 match['pgn'] = game.strip()
-        return l
+        return matches
+
+    def get_header(self, pgn):
+        '''Return a dict with just header information out of a pgn game. The
+           pgn tags are supposed to be consecutive'''
+        header = {}
+        for line in pgn.splitlines():
+            line = line.strip()
+            if line.startswith('[') and line.endswith(']'):
+                tag_match = PGN_HEADERS_REGEX.match(line)
+                if tag_match:
+                    header[tag_match.group(1)] = tag_match.group(2)
+            else:
+                break
+        return header
+
+    def get_game_headers(self, matches):
+        '''Return a list of headers out of a list of pgn games. It is defined
+           to be compatible with the return value of get_games()'''
+        headers = []
+        for match in matches:
+            pgn = match['pgn']
+            h = self.get_header(pgn)
+            headers.append(h)
+        return headers
