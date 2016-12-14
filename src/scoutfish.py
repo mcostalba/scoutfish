@@ -3,8 +3,10 @@
 import json
 import os
 import pexpect
+import re
 from pexpect.popen_spawn import PopenSpawn
 
+PGN_HEADERS_REGEX = re.compile(r"\[([A-Za-z0-9_]+)\s+\"(.*)\"\]")
 
 class Scoutfish:
     def __init__(self, engine=''):
@@ -62,6 +64,33 @@ class Scoutfish:
         result = json.loads(self.p.before)
         self.p.before = ''
         return result
+
+    def get_header(self, result):
+        headers = {}
+        # print("result[pgn]: {0}".format(result['pgn']))
+        for line in result['pgn'].splitlines():
+            line = line.strip()
+            if line.startswith('[') and line.endswith(']'):
+                # Process header line
+                # print("line: {0}".format(line))
+                tag_match = PGN_HEADERS_REGEX.match(line)
+                # print("tag_match: {0}".format(tag_match))
+                # print("tag_match[0]: {0}".format(tag_match.group(1)))
+                if tag_match:
+                    # print("tag match!!")
+                    headers[tag_match.group(1)] = tag_match.group(2)
+                    # print(headers)
+            else:
+                break
+
+        return headers
+
+    def get_game_headers(self, l):
+        headers = []
+        for game in l:
+            headers.append(self.get_header(game))
+        return headers
+
 
     def get_games(self, list):
         '''Retrieve the PGN games specified in the offsets list. Games are
