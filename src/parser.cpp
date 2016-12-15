@@ -110,7 +110,9 @@ const char* parse_game(const char* moves, const char* end, std::ofstream& ofs,
 
     // Result is coded from 1 to 4 as WhiteWin, BlackWin, Draw, Unknown
     // *(data-2) contains the last digit in a result, e.g. 1-0, 0-1, 1/2-1/2, *
-    GameResult result = data ? GameResult(*(data-2) - '0' + 1) : GameResult::Unknown;
+    bool cr = data && *(data-1) == 13; // Carriage return
+    GameResult result = data ? GameResult(*(data - 1 - cr) - '0' + 1)
+                             : GameResult::Unknown;
 
     // In case of * or any unknown result char, set it to RESULT_UNKNOWN
     if (result < GameResult::WhiteWin || result > GameResult::Draw)
