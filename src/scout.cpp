@@ -198,16 +198,17 @@ NextRule: // Loop across rules, early exit as soon as one fails
               break;
 
           case RuleImbalance:
-              if (   cond->nonPawnMaterial ==  pos.non_pawn_material(WHITE)
-                                             - pos.non_pawn_material(BLACK)
-                  && cond->pawnCount ==  pos.count<PAWN>(WHITE)
-                                       - pos.count<PAWN>(BLACK))
-                  goto NextRule;
+              for (const Imbalance& imb : cond->imbalances)
+                  if (   imb.nonPawnMaterial ==  pos.non_pawn_material(WHITE)
+                                               - pos.non_pawn_material(BLACK)
+                      && imb.pawnCount ==  pos.count<PAWN>(WHITE)
+                                         - pos.count<PAWN>(BLACK))
+                      goto NextRule;
               break;
 
           case RuleMove:
               if (cond->moveSquares & to_sq(move))
-                  for (const auto& m : cond->moves)
+                  for (const ScoutMove& m : cond->moves)
                   {
                       if (   (pos.piece_on(to_sq(move)) != m.pc && type_of(move) == NORMAL)
                           || to_sq(move) != m.to
@@ -404,10 +405,10 @@ void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
           for (PieceType pt = PAWN; pt <= KING; ++pt)
               if (pos.pieces(pt))
                   f.pieces.push_back(std::make_pair(pt, pos.pieces(pt)));
-
           cond.subfens.push_back(f);
       }
-      cond.rules.push_back(RuleSubFen);
+      if (cond.subfens.size())
+          cond.rules.push_back(RuleSubFen);
   }
 
   if (item.count("material"))
@@ -415,20 +416,27 @@ void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
       StateInfo st;
       for (const auto& mat : item["material"])
           cond.matKeys.push_back(Position().set(mat, WHITE, &st).material_key());
-      cond.rules.push_back(RuleMaterial);
+      if (cond.matKeys.size())
+          cond.rules.push_back(RuleMaterial);
   }
 
-  if (item.count("imbalance") && item["imbalance"].size() == 2)
+  if (item.count("imbalance"))
   {
-      std::string code;
-      for (const std::string& imb : item["imbalance"])
-          code += std::string("K") + imb;
-
-      StateInfo st;
-      const Position& pos = Position().set(code, WHITE, &st);
-      cond.nonPawnMaterial = pos.non_pawn_material(WHITE) - pos.non_pawn_material(BLACK);
-      cond.pawnCount = pos.count<PAWN>(WHITE) - pos.count<PAWN>(BLACK);
-      cond.rules.push_back(RuleImbalance);
+      for (std::string code : item["imbalance"])
+      {
+          StateInfo st;
+          Imbalance imb;
+          auto v = code.find('v');
+          if (v == std::string::npos)
+              continue;
+          code.replace(v, 1, "K").insert(0, "K");
+          const Position& pos = Position().set(code, WHITE, &st);
+          imb.nonPawnMaterial = pos.non_pawn_material(WHITE) - pos.non_pawn_material(BLACK);
+          imb.pawnCount = pos.count<PAWN>(WHITE) - pos.count<PAWN>(BLACK);
+          cond.imbalances.push_back(imb);
+      }
+      if (cond.imbalances.size())
+          cond.rules.push_back(RuleImbalance);
   }
 
   if (item.count("white-move"))

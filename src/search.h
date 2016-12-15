@@ -54,16 +54,20 @@ struct ScoutMove {
   bool castle;
 };
 
+struct Imbalance {
+  Value nonPawnMaterial;
+  int pawnCount;
+};
+
 struct Condition {
   Bitboard moveSquares;
   int streakId;
   GameResult result;
-  Value nonPawnMaterial;
-  int pawnCount;
   std::vector<RuleType> rules;
   std::vector<SubFen> subfens;
   std::vector<ScoutMove> moves;
   std::vector<Key> matKeys;
+  std::vector<Imbalance> imbalances;
 };
 
 struct MatchingGame {
