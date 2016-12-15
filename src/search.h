@@ -38,8 +38,8 @@ enum GameResult : uint8_t {
 };
 
 enum RuleType {
-  RuleNone, RulePass, RuleResult, RuleSubFen, RuleMaterial, RuleMove,
-  RuleWhite, RuleBlack, RuleMatchedCondition, RuleMatchedQuery
+  RuleNone, RulePass, RuleResult, RuleSubFen, RuleMaterial, RuleImbalance,
+  RuleMove, RuleWhite, RuleBlack, RuleMatchedCondition, RuleMatchedQuery
 };
 
 struct SubFen {
@@ -58,6 +58,8 @@ struct Condition {
   Bitboard moveSquares;
   int streakId;
   GameResult result;
+  Value nonPawnMaterial;
+  int pawnCount;
   std::vector<RuleType> rules;
   std::vector<SubFen> subfens;
   std::vector<ScoutMove> moves;

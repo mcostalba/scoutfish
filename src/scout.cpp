@@ -197,6 +197,14 @@ NextRule: // Loop across rules, early exit as soon as one fails
                   goto NextRule;
               break;
 
+          case RuleImbalance:
+              if (   cond->nonPawnMaterial ==  pos.non_pawn_material(WHITE)
+                                             - pos.non_pawn_material(BLACK)
+                  && cond->pawnCount ==  pos.count<PAWN>(WHITE)
+                                       - pos.count<PAWN>(BLACK))
+                  goto NextRule;
+              break;
+
           case RuleMove:
               if (cond->moveSquares & to_sq(move))
                   for (const auto& m : cond->moves)
@@ -408,6 +416,19 @@ void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
       for (const auto& mat : item["material"])
           cond.matKeys.push_back(Position().set(mat, WHITE, &st).material_key());
       cond.rules.push_back(RuleMaterial);
+  }
+
+  if (item.count("imbalance") && item["imbalance"].size() == 2)
+  {
+      std::string code;
+      for (const std::string& imb : item["imbalance"])
+          code += std::string("K") + imb;
+
+      StateInfo st;
+      const Position& pos = Position().set(code, WHITE, &st);
+      cond.nonPawnMaterial = pos.non_pawn_material(WHITE) - pos.non_pawn_material(BLACK);
+      cond.pawnCount = pos.count<PAWN>(WHITE) - pos.count<PAWN>(BLACK);
+      cond.rules.push_back(RuleImbalance);
   }
 
   if (item.count("white-move"))
