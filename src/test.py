@@ -21,6 +21,8 @@ QUERIES = [
     {'q': {'black-move': 'O-O-O'}, 'sig': '9f3fd79'},
     {'q': {'black-move': ['O-O-O', 'O-O']}, 'sig': '40d4f99'},
     {'q': {'white-move': ['a7', 'b7']}, 'sig': '295355b'},
+    {'q': {'imbalance': 'vPP'}, 'sig': 'cd24b30'},
+    {'q': {'imbalance': ['BvN', 'NNvB']}, 'sig': '1f01493'},
 
     {'q': {'sub-fen': ['rnbqkbnr/pp1p1ppp/2p5/4p3/3PP3/8/PPP2PPP/RNBQKBNR',
                        'rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R']},
@@ -54,6 +56,9 @@ QUERIES = [
                         {'streak': [{'white-move': 'e5'}, {'pass': ''}, {'white-move': 'f5'}]},
                         {'white-move': 'Ne4'}]},
      'sig': '52706ff'},
+
+    {'q': {'streak': [{'imbalance': 'NNvB'}, {'imbalance': 'NNvB'}, {'imbalance': 'NNvB'}]},
+     'sig': '160458e'},
 ]
 
 
