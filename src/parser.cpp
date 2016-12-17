@@ -87,7 +87,7 @@ void error(Step* state, const char* data) {
 template<bool DryRun = false>
 const char* parse_game(const char* moves, const char* end, std::ofstream& ofs,
                        const char* fen, const char* fenEnd, size_t& fixed,
-                       const char* data, uint64_t gameOfs) {
+                       uint64_t gameOfs, GameResult result) {
 
     static_assert(sizeof(uint64_t) == 4 * sizeof(Move), "Wrong Move size");
 
@@ -107,12 +107,6 @@ const char* parse_game(const char* moves, const char* end, std::ofstream& ofs,
 
     // Save the game offset at the beginning of the new game in big-endian
     curMove = (Move*)write_be(gameOfs, (uint8_t*)curMove);
-
-    // Result is coded from 1 to 4 as WhiteWin, BlackWin, Draw, Unknown
-    // *(data-2) contains the last digit in a result, e.g. 1-0, 0-1, 1/2-1/2, *
-    bool cr = data && *(data-1) == 13; // Carriage return
-    GameResult result = data ? GameResult(*(data - 1 - cr) - '0' + 1)
-                             : GameResult::Unknown;
 
     // In case of * or any unknown result char, set it to RESULT_UNKNOWN
     if (result < GameResult::WhiteWin || result > GameResult::Draw)
@@ -155,6 +149,27 @@ const char* parse_game(const char* moves, const char* end, std::ofstream& ofs,
     return end;
 }
 
+GameResult get_result(const char* data) {
+
+    switch (*data) {
+    case '/':
+        return GameResult::Draw;
+    case '0':
+        return GameResult::BlackWin;
+    case '-':
+        if (    *(data-1) == '1'
+            || (*(data-1) == ' ' && *(data-2) == '1')) // Like '1 - 0'
+            return GameResult::WhiteWin;
+        else if (    *(data-1) == '0'
+                 || (*(data-1) == ' ' && *(data-2) == '0'))
+            return GameResult::BlackWin;
+        break;
+    default:
+        break;
+    }
+    return GameResult::Unknown;
+}
+
 void parse_pgn(void* baseAddress, uint64_t size, PGNStats& stats, std::ofstream& ofs) {
 
     Step* stateStack[16];
@@ -164,6 +179,7 @@ void parse_pgn(void* baseAddress, uint64_t size, PGNStats& stats, std::ofstream&
     char* end = curMove;
     size_t moveCnt = 0, gameCnt = 0, fixed = 0;
     uint64_t gameOfs = 0;
+    GameResult result = GameResult::Unknown;
     char* data = (char*)baseAddress;
     char* eof = data + size;
     int stm = WHITE;
@@ -249,6 +265,9 @@ void parse_pgn(void* baseAddress, uint64_t size, PGNStats& stats, std::ofstream&
         case CASTLE_OR_RESULT:
             if (data[2] != '0')
             {
+                assert (result == GameResult::Unknown);
+
+                result = get_result(data);
                 state = ToStep[RESULT];
                 continue;
             }
@@ -272,6 +291,9 @@ void parse_pgn(void* baseAddress, uint64_t size, PGNStats& stats, std::ofstream&
             break;
 
         case START_RESULT:
+            assert (result == GameResult::Unknown);
+
+            result = get_result(data);
             state = ToStep[RESULT];
             break;
 
@@ -281,8 +303,9 @@ void parse_pgn(void* baseAddress, uint64_t size, PGNStats& stats, std::ofstream&
                 state = ToStep[RESULT];
                 break;
             }
-            parse_game(moves, end, ofs, fen, fenEnd, fixed, data, gameOfs);
+            parse_game(moves, end, ofs, fen, fenEnd, fixed, gameOfs, result);
             gameCnt++;
+            result = GameResult::Unknown;
             gameOfs = (data - (char*)baseAddress) + 1; // Beginning of next game
             end = curMove = moves;
             fenEnd = fen;
@@ -298,8 +321,9 @@ void parse_pgn(void* baseAddress, uint64_t size, PGNStats& stats, std::ofstream&
              /* Fall through */
 
         case MISSING_RESULT: // Missing result, next game already started
-            parse_game(moves, end, ofs, fen, fenEnd, fixed, data, gameOfs);
+            parse_game(moves, end, ofs, fen, fenEnd, fixed, gameOfs, result);
             gameCnt++;
+            result = GameResult::Unknown;
             gameOfs = (data - (char*)baseAddress); // Beginning of next game
             end = curMove = moves;
             fenEnd = fen;
@@ -320,7 +344,7 @@ void parse_pgn(void* baseAddress, uint64_t size, PGNStats& stats, std::ofstream&
     // trigger: no newline at EOF, missing result, missing closing brace, etc.
     if (state != ToStep[HEADER] && state != ToStep[SKIP_GAME] && end - moves)
     {
-        parse_game(moves, end, ofs, fen, fenEnd, fixed, data, gameOfs);
+        parse_game(moves, end, ofs, fen, fenEnd, fixed, gameOfs, result);
         gameCnt++;
     }
 
@@ -340,7 +364,7 @@ const char* play_game(const Position& pos, Move move, const char* cur, const cha
     p.do_move(move, st, pos.gives_check(move));
     while (*cur++) {} // Move to next move in game
     return cur < end ? parse_game<true>(cur, end, ofs, p.fen().c_str(),
-                                        nullptr, fixed, nullptr, 0) : cur;
+                                        nullptr, fixed, 0, GameResult::Unknown) : cur;
 }
 
 namespace Parser {
