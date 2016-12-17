@@ -74,9 +74,13 @@ class Scoutfish:
                 f.seek(match['ofs'])
                 game = ''
                 for line in f:
-                    if line.startswith('[Event "') and game.strip():
-                        break  # Start of next game
-                    game += line
+                    if line.startswith('[Event "'):
+                        if game:
+                            break  # Second one, start of next game
+                        else:
+                            game = line  # First occurence
+                    elif game:
+                        game += line
                 match['pgn'] = game.strip()
         return matches
 
