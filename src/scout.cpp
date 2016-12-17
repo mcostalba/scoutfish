@@ -76,7 +76,8 @@ void search(Thread* th) {
   std::vector<size_t> matchPlies;
   size_t condIdx = 0, streakStartPly = 0;
   Scout::Data& d = th->scout;
-  d.matches.reserve(d.maxMatches ? d.maxMatches : 100000);
+  size_t maxMatches = d.limit ? d.skip + d.limit : 0;
+  d.matches.reserve(maxMatches ? maxMatches : 100000);
   matchPlies.reserve(128);
 
   // Lambda helper to copy hot stuff to local variables
@@ -246,7 +247,7 @@ NextRule: // Loop across rules, early exit as soon as one fails
               matchPlies.clear(); // Needed for single conditon case
 
               // Terminate if we have collected more then enough data
-              if (d.maxMatches && d.matches.size() >= d.maxMatches)
+              if (maxMatches && d.matches.size() >= maxMatches)
                   data = end - 2;
 SkipToNextGame:
               // Skip to the end of the game after the first match
@@ -281,8 +282,11 @@ void print_results(const Search::LimitsType& limits) {
       matches += th->scout.matches.size();
   }
 
-  if (d.maxMatches)
-      matches = std::min(matches, d.maxMatches);
+  size_t skip = d.skip;
+  matches -= skip;
+
+  if (d.limit)
+      matches = std::min(matches, d.limit);
 
   std::string tab = "\n    ";
   std::string indent4 = "    ";
@@ -299,6 +303,16 @@ void print_results(const Search::LimitsType& limits) {
   {
       for (auto& m : th->scout.matches)
       {
+          if (skip)
+          {
+              skip--;
+              continue;
+          }
+
+          if (matches <= 0)
+              break;
+
+          matches--;
           std::cout << comma1 << tab << indent4
                     << "{ \"ofs\": " << m.gameOfs
                     << ", \"ply\": [";
@@ -312,12 +326,9 @@ void print_results(const Search::LimitsType& limits) {
 
           std::cout << "] }";
           comma1 = ", ";
-
-          if (!--matches)
-              break;
       }
 
-      if (!matches)
+      if (matches <= 0)
           break;
   }
 
@@ -530,6 +541,12 @@ void parse_query(Scout::Data& data, std::istringstream& is) {
   */
 
   json j = json::parse(is);
+
+  if (j.count("skip"))
+      data.skip = j["skip"];
+
+  if (j.count("limit"))
+      data.limit = j["limit"];
 
   if (j.count("sequence"))
       parse_sequence(data, j["sequence"]);

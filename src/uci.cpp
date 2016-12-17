@@ -166,7 +166,6 @@ namespace {
     d.baseAddress = (Move*)baseAddress;
     d.dbMapping = mapping;
     d.dbSize = size / sizeof(Move);
-    d.maxMatches = Options["Max Matches"];
 
     Scout::parse_query(d, is);
 

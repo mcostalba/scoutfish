@@ -174,7 +174,6 @@ from scoutfish import Scoutfish
 
 p = Scoutfish()
 p.setoption('threads', 4)  # Will use 4 threads for searching
-p.setoption('Max Matches', 5)  # Will retrieve max 5 games
 p.open('my_big.pgn')
 
 q = {'white-move': 'O-O-O'}  # Our query, defined as a simple dict
@@ -183,6 +182,11 @@ result = p.scout(q)
 num = result['match count']
 print('Found ' + str(num) + ' games')
 
+# Run again the query but limiting output to max 10 games and skipping
+# the first 50 results. This is useful for pagination.
+q = {'skip': 50, 'limit': 10, 'white-move': 'O-O-O'}
+
+result = p.scout(q)
 games = p.get_games(result['matches'])  # Load the pgn games from my_big.pgn
 
 for g in games:

@@ -18,6 +18,7 @@ QUERIES = [
     {'q': {'black-move': 'c3'}, 'sig': '8357cde'},
     {'q': {'black-move': 'e1=Q'}, 'sig': '03f16ba'},
     {'q': {'black-move': 'O-O'}, 'sig': 'ea3c83b'},
+    {'q': {'skip': 200, 'limit': 100, 'black-move': 'O-O'}, 'sig': '9d8ab01'},
     {'q': {'black-move': 'O-O-O'}, 'sig': '9f3fd79'},
     {'q': {'black-move': ['O-O-O', 'O-O']}, 'sig': '40d4f99'},
     {'q': {'white-move': ['a7', 'b7']}, 'sig': '295355b'},
