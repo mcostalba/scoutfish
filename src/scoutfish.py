@@ -23,14 +23,14 @@ class Scoutfish:
         self.p.expect(u'readyok')
 
     def open(self, pgn, force=False):
-        '''Open a PGN file and create an index if not exsisting or if 'force'
-           is set.'''
+        '''Open a PGN file and create an index if not exsisting or
+           if 'force' is set.'''
         if not os.path.isfile(pgn):
             raise NameError("File {} does not exsist".format(pgn))
         self.pgn = pgn
         self.db = os.path.splitext(pgn)[0] + '.scout'
         if not os.path.isfile(self.db) or force:
-            self.db = self.make(pgn)
+            self.db = self.make()
 
     def close(self):
         '''Terminate scoutfish. Not really needed: engine will terminate as
@@ -40,16 +40,20 @@ class Scoutfish:
         self.pgn = ''
         self.db = ''
 
-    def make(self, pgn):
+    def make(self):
         '''Make an index out of a pgn file. Normally called by open()'''
-        self.p.sendline('make ' + pgn)
+        if not self.pgn:
+            raise NameError("Unknown DB, first open a PGN file")
+        cmd = 'make ' + self.pgn
+        self.p.sendline(cmd)
         self.wait_ready()
-        db = self.p.before.split('DB file:')[1]
+        db = self.p.before.split('DB file: ')[1]
         return db.split()[0]
 
     def setoption(self, name, value):
         '''Set an option value, like threads number'''
-        self.p.sendline('setoption name ' + name + ' value ' + str(value))
+        cmd = "setoption name {} value {}".format(name, value)
+        self.p.sendline(cmd)
         self.wait_ready()
 
     def scout(self, q):
@@ -57,7 +61,7 @@ class Scoutfish:
         if not self.db:
             raise NameError("Unknown DB, first open a PGN file")
         j = json.dumps(q)
-        cmd = 'scout ' + self.db + ' ' + j
+        cmd = "scout {} {}".format(self.db, j)
         self.p.sendline(cmd)
         self.wait_ready()
         result = json.loads(self.p.before)
@@ -65,8 +69,8 @@ class Scoutfish:
         return result
 
     def get_games(self, matches):
-        '''Retrieve the PGN games specified in the offsets list. Games are
-           added to each list entry with a 'pgn' key'''
+        '''Retrieve the PGN games specified in the offset list. Games are
+           added to each list item with a 'pgn' key'''
         if not self.pgn:
             raise NameError("Unknown DB, first open a PGN file")
         with open(self.pgn, "r") as f:
