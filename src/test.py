@@ -8,23 +8,25 @@ import sys
 from scoutfish import Scoutfish
 
 QUERIES = [
+    {'q': {'sub-fen': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR', 'stm': 'WHITE'}, 'sig': '869e89b'},
+    {'q': {'sub-fen': 'rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR', 'stm': 'BLACK'}, 'sig': 'ec5311d'},
     {'q': {'sub-fen': '8/8/p7/8/8/1B3N2/8/8'}, 'sig': '7e1b65e'},
     {'q': {'sub-fen': '8/8/8/8/1k6/8/8/8', 'result': '1/2-1/2'}, 'sig': 'b56bf5e'},
     {'q': {'sub-fen': ['8/8/8/q7/8/8/8/8', '8/8/8/r7/8/8/8/8']}, 'sig': '051c204'},
     {'q': {'material': 'KQRRBNPPPPKQRRNNPPPP', 'stm': 'BLACK'}, 'sig': 'aa091ce'},
     {'q': {'material': 'KQRRBNNPPPPKQRRBNNPPPP', 'result': '0-1'}, 'sig': '7e121f7'},
     {'q': {'material': ['KRBPPPKRPPP', 'KRPPPKRPPP']}, 'sig': 'ba89092'},
-    {'q': {'white-move': 'Nb7'}, 'sig': 'a488346'},
-    {'q': {'black-move': 'c3'}, 'sig': '136c4b6'},
-    {'q': {'black-move': 'e1=Q'}, 'sig': 'a75253a'},
-    {'q': {'black-move': 'O-O'}, 'sig': 'f835ca0'},
-    {'q': {'skip': 200, 'limit': 100, 'black-move': 'O-O'}, 'sig': '21cde8f'},
-    {'q': {'black-move': 'O-O-O'}, 'sig': 'ecc3f62'},
-    {'q': {'black-move': ['O-O-O', 'O-O']}, 'sig': '02df67f'},
-    {'q': {'white-move': ['a7', 'b7']}, 'sig': 'd4eab96'},
+    {'q': {'white-move': 'Nb7'}, 'sig': 'c24c598'},
+    {'q': {'black-move': 'c3'}, 'sig': '965bb73'},
+    {'q': {'black-move': 'e1=Q'}, 'sig': '9430748'},
+    {'q': {'black-move': 'O-O'}, 'sig': '58ac19c'},
+    {'q': {'skip': 200, 'limit': 100, 'black-move': 'O-O'}, 'sig': '634255e'},
+    {'q': {'black-move': 'O-O-O'}, 'sig': '6059a8c'},
+    {'q': {'black-move': ['O-O-O', 'O-O']}, 'sig': '65ddb21'},
+    {'q': {'white-move': ['a7', 'b7']}, 'sig': 'a3a99e0'},
     {'q': {'imbalance': 'vPP'}, 'sig': '742217a'},
     {'q': {'imbalance': ['BvN', 'NNvB']}, 'sig': '408c38a'},
-    {'q': {'moved': 'KP', 'captured': 'Q'}, 'sig': '0fed505'},
+    {'q': {'moved': 'KP', 'captured': 'Q'}, 'sig': '84d49e7'},
 
     {'q': {'sub-fen': ['rnbqkbnr/pp1p1ppp/2p5/4p3/3PP3/8/PPP2PPP/RNBQKBNR',
                        'rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R']},
@@ -32,7 +34,7 @@ QUERIES = [
 
     {'q': {'sequence': [{'sub-fen': '8/3p4/8/8/8/8/8/8', 'result': '1-0'},
                         {'sub-fen': '8/2q5/8/8/8/8/8/R6R'}]},
-     'sig': 'f4356c0'},
+     'sig': '4146400'},
 
     {'q': {'sequence': [{'sub-fen': 'r1bqkb1r/pppp1ppp/2n2n2/1B2p3/'
                                     '4P3/2N2N2/PPPP1PPP/R1BQK2R'},
@@ -47,7 +49,7 @@ QUERIES = [
     {'q': {'sequence': [{'sub-fen': 'rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR'},
                         {'streak': [{'white-move': 'e5'}, {'black-move': 'dxe5'}, {'white-move': 'f5'}]},
                         {'white-move': 'Ne4'}]},
-     'sig': '960a341'},
+     'sig': '7ada661'},
 
     {'q': {'sequence': [{'sub-fen': 'rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR'},
                         {'streak': [{'white-move': 'e5'}, {'black-move': 'dxe5'}, {'white-move': 'f5'},
@@ -57,13 +59,13 @@ QUERIES = [
     {'q': {'sequence': [{'sub-fen': 'rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR'},
                         {'streak': [{'white-move': 'e5'}, {'pass': ''}, {'white-move': 'f5'}]},
                         {'white-move': 'Ne4'}]},
-     'sig': '960a341'},
+     'sig': '7ada661'},
 
     {'q': {'streak': [{'imbalance': 'NNvB'}, {'imbalance': 'NNvB'}, {'imbalance': 'NNvB'}]},
      'sig': '6974053'},
 
     {'q': {'streak': [{'moved': 'P', 'captured': 'Q'}, {'captured': ''}]},
-     'sig': '545fe39'},
+     'sig': 'ecebf2f'},
 ]
 
 

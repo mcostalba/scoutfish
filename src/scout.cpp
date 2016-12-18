@@ -113,18 +113,17 @@ void search(Thread* th) {
       data = detect_next_game(data);
   }
 
-  data--; // Should point to MOVE_NONE (the end of previous game)
-
-  assert(data < d.baseAddress || *data == MOVE_NONE);
+  // Should point to game offset, just after the end of previous game
+  assert(data == d.baseAddress || *(data-1) == MOVE_NONE);
 
   // Main loop, replay all games until we finish our file chunk
-  while (++data < end)
+  while (data < end)
   {
-      // First 4 Moves store the game offset, skip them
+      // First 4 moves store the game offset, skip them
       Move* gameOfsPtr = data;
       data += 4;
 
-      // First move stores the result in the 'to' square
+      // Fifth move stores the result in the 'to' square
       GameResult result = GameResult(to_sq(Move(*data)));
 
       // If needed, reset conditions before starting a new game
@@ -136,15 +135,13 @@ void search(Thread* th) {
 
       st = states;
       Position pos = th->rootPos;
+      data++; // First move of the game
 
       // Loop across the game (that could be empty)
-      while (*++data != MOVE_NONE)
-      {
-          Move move = *data;
+      do {
+          Move move = *data; // Could be MOVE_NONE
 
-          assert(pos.pseudo_legal(move) && pos.legal(move));
-
-          pos.do_move(move, *st++, pos.gives_check(move));
+          assert(!move || (pos.pseudo_legal(move) && pos.legal(move)));
 
           // If we are looking for a streak, fail and reset as soon as last
           // matched ply is more than one half-move behind. We take care to
@@ -214,34 +211,32 @@ NextRule: // Loop across rules, early exit as soon as one fails
               if (cond->moveSquares & to_sq(move))
                   for (const ScoutMove& m : cond->moves)
                   {
-                      if (   (pos.piece_on(to_sq(move)) != m.pc && type_of(move) == NORMAL)
+                      if (   pos.moved_piece(move) != m.pc
                           || to_sq(move) != m.to
-                          || m.castle != (type_of(move) == CASTLING)
-                          || (   type_of(move) == PROMOTION
-                              && promotion_type(move) != m.promotion))
+                          || m.castle != (type_of(move) == CASTLING))
                           continue;
                       goto NextRule;
                   }
               break;
 
           case RuleQuietMove:
-              if (pos.captured_piece() == NO_PIECE)
+              if (move && !pos.capture(move))
                   goto NextRule;
               break;
 
           case RuleCapturedPiece:
-              if (cond->capturedFlags & (1 << int(pos.captured_piece())))
-                  goto NextRule;
+              if (move && pos.capture(move))
+              {
+                  PieceType pt = type_of(move) == NORMAL ? type_of(pos.piece_on(to_sq(move))) : PAWN;
+                  if (cond->capturedFlags & (1 << int(pt)))
+                      goto NextRule;
+              }
               break;
 
           case RuleMovedPiece:
-          {
-              PieceType pt =  type_of(move) == NORMAL   ? type_of(pos.piece_on(to_sq(move)))
-                            : type_of(move) == CASTLING ? KING : PAWN;
-              if (cond->movedFlags & (1 << int(pt)))
+              if (move && (cond->movedFlags & (1 << int(type_of(pos.moved_piece(move))))))
                   goto NextRule;
               break;
-          }
 
           case RuleWhite:
               if (pos.side_to_move() == WHITE)
@@ -273,15 +268,19 @@ NextRule: // Loop across rules, early exit as soon as one fails
                   data = end - 2;
 SkipToNextGame:
               // Skip to the end of the game after the first match
-              while (*++data != MOVE_NONE) {}
-              --data;
+              while (*data != MOVE_NONE)
+                  ++data;
               break;
           }
 
-      }; // Game loop
+          // Do the move after rule checking
+          if (move)
+              pos.do_move(move, *st++, pos.gives_check(move));
+
+      } while (*data++ != MOVE_NONE); // Exit the game loop pointing to next ofs
 
       // Can't use pos.nodes_searched() due to skipping moves after a match
-      d.movesCnt += data - gameOfsPtr - 5; // 4+1 moves for game ofs and result
+      d.movesCnt += data - gameOfsPtr - 6; // 4+1+1 for ofs, result and MOVE_NONE
   }
 
 }
