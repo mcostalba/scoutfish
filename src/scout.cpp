@@ -145,7 +145,6 @@ void search(Thread* th) {
           assert(pos.pseudo_legal(move) && pos.legal(move));
 
           pos.do_move(move, *st++, pos.gives_check(move));
-          curRule = rules;
 
           // If we are looking for a streak, fail and reset as soon as last
           // matched ply is more than one half-move behind. We take care to
@@ -159,6 +158,8 @@ void search(Thread* th) {
               condIdx = 0;
               set_condition(condIdx);
           }
+
+          curRule = rules;
 
 NextRule: // Loop across rules, early exit as soon as one fails
           switch (*curRule++) {
