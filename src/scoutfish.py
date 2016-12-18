@@ -22,14 +22,13 @@ class Scoutfish:
         self.p.sendline('isready')
         self.p.expect(u'readyok')
 
-    def open(self, pgn, force=False):
-        '''Open a PGN file and create an index if not exsisting or
-           if 'force' is set.'''
+    def open(self, pgn):
+        '''Open a PGN file and create an index if not exsisting'''
         if not os.path.isfile(pgn):
             raise NameError("File {} does not exsist".format(pgn))
         self.pgn = pgn
         self.db = os.path.splitext(pgn)[0] + '.scout'
-        if not os.path.isfile(self.db) or force:
+        if not os.path.isfile(self.db):
             self.db = self.make()
 
     def close(self):

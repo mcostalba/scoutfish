@@ -24,7 +24,7 @@ QUERIES = [
     {'q': {'white-move': ['a7', 'b7']}, 'sig': 'd4eab96'},
     {'q': {'imbalance': 'vPP'}, 'sig': '742217a'},
     {'q': {'imbalance': ['BvN', 'NNvB']}, 'sig': '408c38a'},
-    {'q': {'moved': 'KP', 'captured': 'Q' } , 'sig': '0fed505'},
+    {'q': {'moved': 'KP', 'captured': 'Q'}, 'sig': '0fed505'},
 
     {'q': {'sub-fen': ['rnbqkbnr/pp1p1ppp/2p5/4p3/3PP3/8/PPP2PPP/RNBQKBNR',
                        'rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R']},
@@ -93,7 +93,8 @@ if __name__ == "__main__":
     sys.stdout.flush()
     p = Scoutfish(args.path)
     p.setoption('threads', args.threads)
-    p.open(args.pgn, True)
+    p.open(args.pgn)
+    p.make()  # Force rebuilding of DB index
     print('done')
 
     # Run test queries
