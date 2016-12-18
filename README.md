@@ -52,9 +52,6 @@ it is better to run in interactive mode:
 setoption name threads value 8
 scout my_big_db.bin { "sub-fen": "8/8/8/8/1k6/8/8/8", "material": "KBNKP" }
 scout my_big_db.bin { "white-move": "O-O-O" }
-scout my_big_db.bin { "imbalance": "PPvN" }
-scout my_big_db.bin { "material": "KBNKP", "stm": "WHITE" }
-scout my_big_db.bin { "material": "KNNK", "result": "1-0" }
 quit
 ~~~~
 
@@ -63,10 +60,9 @@ yes, it understands [UCI commands](http://wbec-ridderkerk.nl/html/UCIProtocol.ht
 like _setoption_, that we use to increase thread number according to our hardware:
 the search speed will increase accordingly!
 
-Above examples show how to look for a specific **move**, **imbalance**,
-**material distribution**, **side to move** or for a **game result** and how to
-compose a **multi-rule condition**: a position should satisfy all the rules to
-match the condition.
+Above examples show how to look for a specific **material distribution** and **move**
+and how to compose a **multi-rule condition**: a position should satisfy all the rules
+to match the condition.
 
 You are not limited to search for a single _sub-fen_, the following condition:
 
@@ -74,15 +70,7 @@ You are not limited to search for a single _sub-fen_, the following condition:
 
 Will find all the positions with a black queen **or** a black rook in a5. There
 is no limit to the size of the _sub-fen_ list, enabling to compose very powerful
-requests. Moves, imbalance and material distributions can be put in a list too:
-
-    { "black-move": ["c1=Q", "c1=N"] }
-    { "imbalance": ["PPPv", "PPv"] }
-    { "material": ["KRPPPKRPPP", "KRBPPPKRPPP"] }
-
-To find respectively all games with black queen and knight prmotions in c1;
-all games with 3 or 2 pawns advantage for white and all games with a rook and
-3 pawns on both sides or with an added white bishop.
+requests.
 
 The position **full FEN** is just a special _sub-fen_, so:
 
@@ -90,6 +78,81 @@ The position **full FEN** is just a special _sub-fen_, so:
                   "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R"] }
 
 Will search for all the games with a _Caro-Kann_ or a _Sicilian_ opening.
+
+
+## Rules
+
+Rules allow to look for very specific occurrences. We have already
+seen some of them, like _sub-fen_, but there are many more.
+
+
+##### sub-fen
+
+Find all games with a position matching the sub-fen pattern given in
+PGN notation. Support lists.
+
+
+##### result
+
+Find all games with a given result in PGN notation, like "1-0" or "1/2-1/2"
+
+    { "sub-fen": "8/pp1p1ppp/2p5/4p3/3PP3/8/PPP2PPP/8", "result": "1-0" }
+
+
+##### material
+
+Find all games with a given material distribution, i.e. the given pieces,
+no matter where placed. Support lists.
+
+    { "material": ["KBNKNN", "KBNPKNN"] }
+
+To find all end-games with white Knight and Bishop plus one optional pawn
+against two black Knights.
+
+
+##### imbalance
+
+Find all games with a given material imbalance. Support lists.
+
+    { "imbalance": ["PPPv", "PPv"] }
+    { "imbalance": "PPvN" }
+
+
+To find all games with 3 or 2 pawns advantage for white and all games
+where white is above 2 pawns but down of a knight.
+
+
+##### white-move / black-move
+
+Find all games with a given move in PGN notation. Support lists.
+
+    {"white-move": "e8=Q"}
+    {"black-move": ["O-O-O", "O-O"]}
+
+To find all games with white's queen promotion in e8 and all games
+with a black castling, no matter if long or short.
+
+
+##### moved / captured
+
+Find all games with a given moved and/or captured piece. Pieces are given
+in a single string.
+
+    {"moved": "KP", "captured": "Q" }
+    {"captured": "" }
+
+To find all games with a queen captured by a king or a pawn and all games
+with a quiet move (eventually to be used in a multi-rule condition).
+
+
+##### stm
+
+This rule matches the given side to move, that can be "WHITE" or "BLACK"
+Usually it is used in a multi-rule condition.
+
+    {"stm": "BLACK", "captured": "QR" }
+
+To find all games where black side captures a queen or a rook.
 
 
 ## Sequences
@@ -127,6 +190,7 @@ that can be arbitrary long. Output of the search will be like:
 
 Where _ply_ list will show the matching ply for each condition in the sequence.
 
+
 ## Streaks
 
 A _streak_ is a special kind of sequence. It is defined like a sequence and has
@@ -157,6 +221,15 @@ move (but is also played immediately):
 
 The above sequence, first checks for Benoni opening, then checks for the
 **consecutives** e5, dxe5, f5 then finally by the (possibly delayed) Ne4.
+
+Some rules like _captured_ are very suitable to be used in a streak:
+
+~~~~
+{ "streak": [ { "captured": "" }, { "stm": "WHITE", "captured": "Q" }, { "captured": "" } ] }
+~~~~
+
+To find all games where white captures a net queen, i.e. not in a capture-recapture
+combination.
 
 
 ## Python wrapper
