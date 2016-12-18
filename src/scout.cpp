@@ -39,6 +39,8 @@ using json = nlohmann::json;
 
 namespace Scout {
 
+const std::string PieceToChar(" PNBRQK  pnbrqk");
+
 /// Helper function to detect the beginning of next game starting from a
 /// random position inside the DB. Here is tricky because a part of game offset
 /// could represent a MOVE_NONE value. We have to avoid to be fooled by this
@@ -221,6 +223,25 @@ NextRule: // Loop across rules, early exit as soon as one fails
                   }
               break;
 
+          case RuleQuietMove:
+              if (pos.captured_piece() == NO_PIECE)
+                  goto NextRule;
+              break;
+
+          case RuleCapturedPiece:
+              if (cond->capturedFlags & (1 << int(pos.captured_piece())))
+                  goto NextRule;
+              break;
+
+          case RuleMovedPiece:
+          {
+              PieceType pt =  type_of(move) == NORMAL   ? type_of(pos.piece_on(to_sq(move)))
+                            : type_of(move) == CASTLING ? KING : PAWN;
+              if (cond->movedFlags & (1 << int(pt)))
+                  goto NextRule;
+              break;
+          }
+
           case RuleWhite:
               if (pos.side_to_move() == WHITE)
                   goto NextRule;
@@ -338,7 +359,6 @@ void print_results(const Search::LimitsType& limits) {
 
 ScoutMove parse_move(const std::string& san, Color c) {
 
-  const std::string PieceToChar(" PNBRQK  pnbrqk");
   ScoutMove m = ScoutMove();
 
   if (san.empty())
@@ -474,6 +494,31 @@ void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
 
   if (cond.moves.size())
       cond.rules.push_back(RuleMove);
+
+  if (item.count("captured"))
+  {
+      const std::string str = item["captured"];
+      for (char ch : str)
+          if (PieceToChar.find(ch) != std::string::npos)
+          {
+              Piece pc = Piece(PieceToChar.find(ch));
+              cond.capturedFlags |= 1 << int(type_of(pc));
+          }
+      cond.rules.push_back(cond.capturedFlags ? RuleCapturedPiece : RuleQuietMove);
+  }
+
+  if (item.count("moved"))
+  {
+      const std::string str = item["moved"];
+      for (char ch : str)
+          if (PieceToChar.find(ch) != std::string::npos)
+          {
+              Piece pc = Piece(PieceToChar.find(ch));
+              cond.movedFlags |= 1 << int(type_of(pc));
+          }
+      if (cond.movedFlags)
+          cond.rules.push_back(RuleMovedPiece);
+  }
 
   if (item.count("stm"))
   {
