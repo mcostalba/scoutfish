@@ -8,58 +8,58 @@ import sys
 from scoutfish import Scoutfish
 
 QUERIES = [
-    {'q': {'sub-fen': '8/8/p7/8/8/1B3N2/8/8'}, 'sig': '6265541'},
-    {'q': {'sub-fen': '8/8/8/8/1k6/8/8/8', 'result': '1/2-1/2'}, 'sig': '0369452'},
-    {'q': {'sub-fen': ['8/8/8/q7/8/8/8/8', '8/8/8/r7/8/8/8/8']}, 'sig': 'd0eaae9'},
-    {'q': {'material': 'KQRRBNPPPPKQRRNNPPPP', 'stm': 'BLACK'}, 'sig': 'e4caa92'},
-    {'q': {'material': 'KQRRBNNPPPPKQRRBNNPPPP', 'result': '0-1'}, 'sig': 'c892fb9'},
-    {'q': {'material': ['KRBPPPKRPPP', 'KRPPPKRPPP']}, 'sig': '377a2bb'},
-    {'q': {'white-move': 'Nb7'}, 'sig': '6089546'},
-    {'q': {'black-move': 'c3'}, 'sig': '8357cde'},
-    {'q': {'black-move': 'e1=Q'}, 'sig': '03f16ba'},
-    {'q': {'black-move': 'O-O'}, 'sig': 'ea3c83b'},
-    {'q': {'skip': 200, 'limit': 100, 'black-move': 'O-O'}, 'sig': '9d8ab01'},
-    {'q': {'black-move': 'O-O-O'}, 'sig': '9f3fd79'},
-    {'q': {'black-move': ['O-O-O', 'O-O']}, 'sig': '40d4f99'},
-    {'q': {'white-move': ['a7', 'b7']}, 'sig': '295355b'},
-    {'q': {'imbalance': 'vPP'}, 'sig': 'cd24b30'},
-    {'q': {'imbalance': ['BvN', 'NNvB']}, 'sig': '1f01493'},
+    {'q': {'sub-fen': '8/8/p7/8/8/1B3N2/8/8'}, 'sig': '7e1b65e'},
+    {'q': {'sub-fen': '8/8/8/8/1k6/8/8/8', 'result': '1/2-1/2'}, 'sig': 'b56bf5e'},
+    {'q': {'sub-fen': ['8/8/8/q7/8/8/8/8', '8/8/8/r7/8/8/8/8']}, 'sig': '051c204'},
+    {'q': {'material': 'KQRRBNPPPPKQRRNNPPPP', 'stm': 'BLACK'}, 'sig': 'aa091ce'},
+    {'q': {'material': 'KQRRBNNPPPPKQRRBNNPPPP', 'result': '0-1'}, 'sig': '7e121f7'},
+    {'q': {'material': ['KRBPPPKRPPP', 'KRPPPKRPPP']}, 'sig': 'ba89092'},
+    {'q': {'white-move': 'Nb7'}, 'sig': 'a488346'},
+    {'q': {'black-move': 'c3'}, 'sig': '136c4b6'},
+    {'q': {'black-move': 'e1=Q'}, 'sig': 'a75253a'},
+    {'q': {'black-move': 'O-O'}, 'sig': 'f835ca0'},
+    {'q': {'skip': 200, 'limit': 100, 'black-move': 'O-O'}, 'sig': '21cde8f'},
+    {'q': {'black-move': 'O-O-O'}, 'sig': 'ecc3f62'},
+    {'q': {'black-move': ['O-O-O', 'O-O']}, 'sig': '02df67f'},
+    {'q': {'white-move': ['a7', 'b7']}, 'sig': 'd4eab96'},
+    {'q': {'imbalance': 'vPP'}, 'sig': '742217a'},
+    {'q': {'imbalance': ['BvN', 'NNvB']}, 'sig': '408c38a'},
 
     {'q': {'sub-fen': ['rnbqkbnr/pp1p1ppp/2p5/4p3/3PP3/8/PPP2PPP/RNBQKBNR',
                        'rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R']},
-     'sig': '4dace7c'},
+     'sig': '5bb64c8'},
 
     {'q': {'sequence': [{'sub-fen': '8/3p4/8/8/8/8/8/8', 'result': '1-0'},
                         {'sub-fen': '8/2q5/8/8/8/8/8/R6R'}]},
-     'sig': 'bda360d'},
+     'sig': 'f4356c0'},
 
     {'q': {'sequence': [{'sub-fen': 'r1bqkb1r/pppp1ppp/2n2n2/1B2p3/'
                                     '4P3/2N2N2/PPPP1PPP/R1BQK2R'},
                         {'sub-fen': '8/8/8/8/2B5/8/8/8'},
                         {'sub-fen': '8/8/8/8/8/5B2/8/8'}]},
-     'sig': '7c244bb'},
+     'sig': '636f55b'},
 
     {'q': {'streak': [{'sub-fen': 'r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/2N2N2/PPPP1PPP/R1BQK2R'},
                       {'result': '0-1'}, {'result': '0-1'}]},
-     'sig': '68b4158'},
+     'sig': '13302dd'},
 
     {'q': {'sequence': [{'sub-fen': 'rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR'},
                         {'streak': [{'white-move': 'e5'}, {'black-move': 'dxe5'}, {'white-move': 'f5'}]},
                         {'white-move': 'Ne4'}]},
-     'sig': '52706ff'},
+     'sig': '960a341'},
 
     {'q': {'sequence': [{'sub-fen': 'rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR'},
                         {'streak': [{'white-move': 'e5'}, {'black-move': 'dxe5'}, {'white-move': 'f5'},
                                     {'white-move': 'Ne4'}]}]},
-     'sig': '97d170e'},
+     'sig': 'cab98f3'},
 
     {'q': {'sequence': [{'sub-fen': 'rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR'},
                         {'streak': [{'white-move': 'e5'}, {'pass': ''}, {'white-move': 'f5'}]},
                         {'white-move': 'Ne4'}]},
-     'sig': '52706ff'},
+     'sig': '960a341'},
 
     {'q': {'streak': [{'imbalance': 'NNvB'}, {'imbalance': 'NNvB'}, {'imbalance': 'NNvB'}]},
-     'sig': '160458e'},
+     'sig': '6974053'},
 ]
 
 
@@ -98,7 +98,14 @@ if __name__ == "__main__":
         sys.stdout.flush()
         result = p.scout(e['q'])
         num = str(result['match count'])
-        if (e['sig'] == signature(result['matches'])):
+        matches = result['matches']
+        games = p.get_games(matches[:10])
+        headers = p.get_game_headers(games)
+        sig1 = signature(matches)
+        sig2 = signature(games)
+        sig3 = signature(headers)
+        sig = signature(sig1 + sig2 + sig3)
+        if (e['sig'] == sig):
             print('OK (' + num + ')')
         else:
             print('FAIL (' + num + ')')
