@@ -1,20 +1,19 @@
 ## Overview
 
-Scoutfish is designed to run powerful and flexible queries on **very big chess
-databases** and with **very high speed**.
+Run powerful and flexible queries on **very big chessdatabases** and with **very high speed**.
 
 Start building an index out of a [PGN](https://en.wikipedia.org/wiki/Portable_Game_Notation) file:
 
     ./scoutfish make my_big_db.pgn
 
-Scoutfish will create a file called _my_big_db.bin_ with the needed info to make
+Scoutfish will create a file called _my_big_db.scout_ with the needed bits to make
 the queries lightning fast. Queries are written in [JSON](https://en.wikipedia.org/wiki/JSON)
 format that is human-readable, well supported in most languages and very simple.
 Search result will be in JSON too.
 
 You can run Scoutfish from the command line:
 
-    ./scoutfish scout my_big_db.bin { "sub-fen": "8/8/p7/8/8/1B3N2/8/8" }
+    ./scoutfish scout my_big_db.scout { "sub-fen": "8/8/p7/8/8/1B3N2/8/8" }
 
 To find all the games that match the given **sub-fen** condition, i.e. all the
 games with at least one position with a black pawn in _a6_, a white bishop in
@@ -42,7 +41,8 @@ _b3_ and a white knight in _f3_. Output will be like:
 
 After some header, there is a list of matches, each match reports an offset
 (in bytes) in the original _my_big_db.pgn_ file, pointing at the beginning of
-the matching game and the ply number (half move) of the first match inside the game.
+the matching game and the ply number: this is the number of (half) moves before
+reaching the first position in the game that satisfies the given condition.
 
 In case you call Scoutfish from a higher level tool, like a GUI or a web interface,
 it is better to run in interactive mode:
@@ -50,8 +50,8 @@ it is better to run in interactive mode:
 ~~~~
 ./scoutfish
 setoption name threads value 8
-scout my_big_db.bin { "sub-fen": "8/8/8/8/1k6/8/8/8", "material": "KBNKP" }
-scout my_big_db.bin { "white-move": "O-O-O" }
+scout my_big_db.scout { "sub-fen": "8/8/8/8/1k6/8/8/8", "material": "KBNKP" }
+scout my_big_db.scout { "white-move": "O-O-O" }
 quit
 ~~~~
 
@@ -82,7 +82,7 @@ Will search for all the games with a _Caro-Kann_ or a _Sicilian_ opening.
 
 ## Rules
 
-Rules allow to look for very specific occurrences. We have already
+Rules allow to look for very specific occurrences in the game. We have already
 seen some of them, like _sub-fen_, but there are many more.
 
 
@@ -129,13 +129,13 @@ Find all games with a given move in PGN notation. Support lists.
     {"white-move": "e8=Q"}
     {"black-move": ["O-O-O", "O-O"]}
 
-To find all games with white's queen promotion in e8 and all games
+To find all games with white's queen promotion in _e8_ and all games
 with a black castling, no matter if long or short.
 
 
 ##### moved / captured
 
-Find all games with a given moved and/or captured piece. Pieces are given
+Find all games with a given moved and/or captured piece. Pieces are listed
 in a single string.
 
     {"moved": "KP", "captured": "Q" }
