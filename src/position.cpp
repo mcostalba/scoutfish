@@ -241,14 +241,15 @@ Position& Position::set(const string& fenStr, bool isChess960, StateInfo* si, Th
       Square rsq;
       Color c = islower(token) ? BLACK : WHITE;
       Piece rook = make_piece(c, ROOK);
+      Square ksq = square<KING>(c);
 
       token = char(toupper(token));
 
       if (token == 'K')
-          for (rsq = relative_square(c, SQ_H1); piece_on(rsq) != rook; --rsq) {}
+          for (rsq = relative_square(c, SQ_H1); piece_on(rsq) != rook && rsq > ksq; --rsq) {}
 
       else if (token == 'Q')
-          for (rsq = relative_square(c, SQ_A1); piece_on(rsq) != rook; ++rsq) {}
+          for (rsq = relative_square(c, SQ_A1); piece_on(rsq) != rook && rsq < ksq; ++rsq) {}
 
       else if (token >= 'A' && token <= 'H')
           rsq = make_square(File(token - 'A'), relative_rank(c, RANK_1));
@@ -256,7 +257,8 @@ Position& Position::set(const string& fenStr, bool isChess960, StateInfo* si, Th
       else
           continue;
 
-      set_castling_right(c, rsq);
+      if (rsq != ksq)
+          set_castling_right(c, rsq);
   }
 
   // 4. En passant square. Ignore if no pawn capture is possible
