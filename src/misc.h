@@ -108,7 +108,7 @@ namespace WinProcGroup {
   void bindThisThread(size_t idx);
 }
 
-void mem_map(const char* fname, void** baseAddress, uint64_t* mapping, size_t* size);
+void mem_map(const char* fname, void** baseAddress, uint64_t* mapping, uint64_t* size);
 void mem_unmap(void* baseAddress, uint64_t mapping);
 
 

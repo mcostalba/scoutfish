@@ -329,7 +329,7 @@ void bindThisThread(size_t idx) {
 
 } // namespace WinProcGroup
 
-void mem_map(const char* fname, void** baseAddress, uint64_t* mapping, size_t* size) {
+void mem_map(const char* fname, void** baseAddress, uint64_t* mapping, uint64_t* size) {
 
 #ifndef _WIN32
     struct stat statbuf;
