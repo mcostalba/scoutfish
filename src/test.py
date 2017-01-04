@@ -7,6 +7,8 @@ import os
 import sys
 from scoutfish import Scoutfish
 
+SCOUTFISH = './scoutfish.exe' if 'nt' in os.name else './scoutfish'
+
 QUERIES = [
     {'q': {'sub-fen': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR', 'stm': 'WHITE'}, 'sig': '869e89b'},
     {'q': {'sub-fen': 'rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR', 'stm': 'BLACK'}, 'sig': 'ec5311d'},
@@ -78,7 +80,7 @@ def signature(matches):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Run a set of test queries')
     parser.add_argument('--pgn', default='../pgn/famous_games.pgn')
-    parser.add_argument('--path', default='./scoutfish')
+    parser.add_argument('--path', default=SCOUTFISH)
     parser.add_argument('--threads', default=1)
     args = parser.parse_args()
 
@@ -101,7 +103,7 @@ if __name__ == "__main__":
 
     # Run test queries
     for cnt, e in enumerate(QUERIES):
-        sys.stdout.write('Query ' + str(cnt+1) + '...')
+        sys.stdout.write('Query ' + str(cnt + 1) + '...')
         sys.stdout.flush()
         result = p.scout(e['q'])
         num = str(result['match count'])

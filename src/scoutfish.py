@@ -26,10 +26,12 @@ class Scoutfish:
         '''Open a PGN file and create an index if not exsisting'''
         if not os.path.isfile(pgn):
             raise NameError("File {} does not exsist".format(pgn))
+        pgn = os.path.normcase(pgn)
         self.pgn = pgn
         self.db = os.path.splitext(pgn)[0] + '.scout'
         if not os.path.isfile(self.db):
-            self.db = self.make()
+            result = self.make()
+            self.db = result['DB file']
 
     def close(self):
         '''Terminate scoutfish. Not really needed: engine will terminate as
@@ -46,8 +48,11 @@ class Scoutfish:
         cmd = 'make ' + self.pgn
         self.p.sendline(cmd)
         self.wait_ready()
-        db = self.p.before.split('DB file: ')[1]
-        return db.split()[0]
+        s = '{' + self.p.before.split('{')[1]
+        s = s.replace('\\', r'\\')  # Escape Windows's path delimiter
+        result = json.loads(s)
+        self.p.before = ''
+        return result
 
     def setoption(self, name, value):
         '''Set an option value, like threads number'''

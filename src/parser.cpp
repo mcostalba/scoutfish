@@ -569,16 +569,24 @@ void make_db(std::istringstream& is) {
     size_t dbSize = ofs.tellp();
     ofs.close();
 
-    std::cerr << "done\n"
-              << "\nGames: " << stats.games
-              << "\nMoves: " << stats.moves
-              << "\nIncorrect moves: " << stats.fixed
-              << "\nGames/second: " << 1000 * stats.games / elapsed
-              << "\nMoves/second: " << 1000 * stats.moves / elapsed
-              << "\nMBytes/second: " << float(size) / elapsed / 1000
-              << "\nDB file: " << dbName
-              << "\nDB file size: " << dbSize
-              << "\nProcessing time (ms): " << elapsed << "\n" << std::endl;
+    std::cerr << "done" << std::endl;
+
+    // Output info in JSON format
+    std::string tab = "\n    ";
+    std::stringstream json;
+    json << "{"
+         << tab << "\"Games\": " << stats.games << ","
+         << tab << "\"Moves\": " << stats.moves << ","
+         << tab << "\"Incorrect moves\": " << stats.fixed << ","
+         << tab << "\"Games/second\": " << 1000 * stats.games / elapsed << ","
+         << tab << "\"Moves/second\": " << 1000 * stats.moves / elapsed << ","
+         << tab << "\"MBytes/second\": " << float(size) / elapsed / 1000 << ","
+         << tab << "\"DB file\": \"" << dbName << "\","
+         << tab << "\"DB file size\": " << dbSize << ","
+         << tab << "\"Processing time (ms)\": " << elapsed << "\n"
+         << "}";
+
+    std::cout << json.str() << std::endl;
 }
 
 }
