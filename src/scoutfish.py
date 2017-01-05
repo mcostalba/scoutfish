@@ -77,7 +77,7 @@ class Scoutfish:
            added to each list item with a 'pgn' key'''
         if not self.pgn:
             raise NameError("Unknown DB, first open a PGN file")
-        with open(self.pgn, "r") as f:
+        with open(self.pgn, "rU") as f:
             for match in matches:
                 f.seek(match['ofs'])
                 game = ''
