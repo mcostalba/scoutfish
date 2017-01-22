@@ -72,6 +72,18 @@ class Scoutfish:
         self.p.before = ''
         return result
 
+    def scout_raw(self, q):
+        '''Run query defined by 'q' dict. Result will be full output'''
+        if not self.db:
+            raise NameError("Unknown DB, first open a PGN file")
+        j = json.dumps(q)
+        cmd = "scout {} {}".format(self.db, j)
+        self.p.sendline(cmd)
+        self.wait_ready()
+        result = self.p.before
+        self.p.before = ''
+        return result
+
     def get_games(self, matches):
         '''Retrieve the PGN games specified in the offset list. Games are
            added to each list item with a 'pgn' key'''
