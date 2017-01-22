@@ -37,9 +37,13 @@ enum GameResult : uint8_t {
   WhiteWin = 1, BlackWin, Draw, Unknown, Invalid
 };
 
+enum ResultType {
+  ResultNone, ResultMate, ResultStalemate
+};
+
 enum RuleType {
-  RuleNone, RulePass, RuleResult, RuleSubFen, RuleMaterial, RuleImbalance,
-  RuleMove, RuleQuietMove, RuleCapturedPiece, RuleMovedPiece,
+  RuleNone, RulePass, RuleResult, RuleResultType, RuleSubFen, RuleMaterial,
+  RuleImbalance, RuleMove, RuleQuietMove, RuleCapturedPiece, RuleMovedPiece,
   RuleWhite, RuleBlack, RuleMatchedCondition, RuleMatchedQuery
 };
 
@@ -64,6 +68,7 @@ struct Condition {
   Bitboard moveSquares;
   int streakId;
   GameResult result;
+  ResultType resultType;
   uint64_t movedFlags, capturedFlags;
   std::vector<RuleType> rules;
   std::vector<SubFen> subfens;

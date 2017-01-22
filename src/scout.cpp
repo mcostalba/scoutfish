@@ -172,6 +172,13 @@ NextRule: // Loop across rules, early exit as soon as one fails
                   goto NextRule;
               goto SkipToNextGame; // Shortcut: result will not change
 
+          case RuleResultType:
+              if (   !move // End of game
+                  && !MoveList<LEGAL>(pos).size()
+                  && !!pos.checkers() == (cond->resultType == ResultMate))
+                  goto NextRule;
+              break;
+
           case RuleSubFen:
               for (const SubFen* f = subfens; f < subfensEnd; ++f)
               {
@@ -418,6 +425,18 @@ void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
       {
           cond.result = result;
           cond.rules.push_back(RuleResult);
+      }
+  }
+
+  if (item.count("result-type"))
+  {
+      ResultType result =  item["result-type"] == "mate"      ? ResultMate
+                         : item["result-type"] == "stalemate" ? ResultStalemate
+                                                              : ResultNone;
+      if (result != ResultNone)
+      {
+          cond.resultType = result;
+          cond.rules.push_back(RuleResultType);
       }
   }
 

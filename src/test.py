@@ -29,6 +29,7 @@ QUERIES = [
     {'q': {'imbalance': 'vPP'}, 'sig': '4eeb4cf'},
     {'q': {'imbalance': ['BvN', 'NNvB']}, 'sig': '07318ef'},
     {'q': {'moved': 'KP', 'captured': 'Q'}, 'sig': 'e3f73e8'},
+    {'q': {'result-type': 'mate', 'result': '0-1'}, 'sig': '87f61c4'},
 
     {'q': {'sub-fen': ['rnbqkbnr/pp1p1ppp/2p5/4p3/3PP3/8/PPP2PPP/RNBQKBNR',
                        'rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R']},
