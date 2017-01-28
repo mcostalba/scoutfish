@@ -10,8 +10,8 @@ from scoutfish import Scoutfish
 SCOUTFISH = './scoutfish.exe' if 'nt' in os.name else './scoutfish'
 
 QUERIES = [
-    {'q': {'sub-fen': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR', 'stm': 'WHITE'}, 'sig': 'bbba013'},
-    {'q': {'sub-fen': 'rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR', 'stm': 'BLACK'}, 'sig': 'cbfff97'},
+    {'q': {'sub-fen': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR', 'stm': 'white'}, 'sig': 'bbba013'},
+    {'q': {'sub-fen': 'rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR', 'stm': 'black'}, 'sig': 'cbfff97'},
     {'q': {'sub-fen': '8/8/p7/8/8/1B3N2/8/8'}, 'sig': '27e9564'},
     {'q': {'sub-fen': '8/8/8/8/1k6/8/8/8', 'result': '1/2-1/2'}, 'sig': 'acc1e8a'},
     {'q': {'sub-fen': ['8/8/8/q7/8/8/8/8', '8/8/8/r7/8/8/8/8']}, 'sig': '75ed0d6'},
