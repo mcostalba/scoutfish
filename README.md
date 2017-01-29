@@ -147,10 +147,10 @@ with a quiet move (eventually to be used in a multi-rule condition).
 
 ##### stm
 
-This rule matches the given side to move, that can be "WHITE" or "BLACK"
+This rule matches the given side to move, that can be "white" or "black"
 Usually it is used in a multi-rule condition.
 
-    {"stm": "BLACK", "captured": "QR" }
+    {"stm": "black", "captured": "QR" }
 
 To find all games where black side captures a queen or a rook.
 
@@ -225,7 +225,7 @@ The above sequence, first checks for Benoni opening, then checks for the
 Some rules like _captured_ are very suitable to be used in a streak:
 
 ~~~~
-{ "streak": [ { "captured": "" }, { "stm": "WHITE", "captured": "Q" }, { "captured": "" } ] }
+{ "streak": [ { "captured": "" }, { "stm": "white", "captured": "Q" }, { "captured": "" } ] }
 ~~~~
 
 To find all games where white captures a net queen, i.e. not in a capture-recapture

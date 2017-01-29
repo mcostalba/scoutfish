@@ -19,6 +19,7 @@
 */
 
 #include <algorithm>
+#include <cctype>    // tolower()
 #include <cstdint>
 #include <cstdio>
 #include <exception>
@@ -556,8 +557,11 @@ void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
 
   if (item.count("stm"))
   {
-      auto rule = item["stm"] == "WHITE" ? RuleWhite : RuleBlack;
-      cond.rules.push_back(rule);
+      std::string stm = item["stm"];
+      std::transform(stm.begin(), stm.end(), stm.begin(), ::tolower);
+
+      if (stm == "white" || stm == "black")
+          cond.rules.push_back(stm == "white" ? RuleWhite : RuleBlack);
   }
 
   if (item.count("pass"))

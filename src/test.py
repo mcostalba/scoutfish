@@ -11,10 +11,10 @@ from scoutfish import Scoutfish
 SCOUTFISH = './scoutfish.exe' if 'nt' in os.name else './scoutfish'
 
 QUERIES = [
-    {'q': {'sub-fen': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR', 'stm': 'WHITE'},
+    {'q': {'sub-fen': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR', 'stm': 'white'},
         'count': 501, 'matches': [{'ofs': 0, 'ply': [0]}, {'ofs': 666, 'ply': [0]}]},
 
-    {'q': {'sub-fen': 'rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR', 'stm': 'BLACK'},
+    {'q': {'sub-fen': 'rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR', 'stm': 'balck'},
         'count': 229, 'matches': [{'ofs': 666, 'ply': [1]}, {'ofs': 2008, 'ply': [1]}]},
 
     {'q': {'sub-fen': '8/8/p7/8/8/1B3N2/8/8'},
@@ -26,7 +26,7 @@ QUERIES = [
     {'q': {'sub-fen': ['8/8/8/q7/8/8/8/8', '8/8/8/r7/8/8/8/8']},
         'count': 72, 'matches': [{'ofs': 42247, 'ply': [6]}, {'ofs': 45161, 'ply': [34]}]},
 
-    {'q': {'material': 'KQRRBNPPPPKQRRNNPPPP', 'stm': 'BLACK'},
+    {'q': {'material': 'KQRRBNPPPPKQRRNNPPPP', 'stm': 'black'},
         'count': 2, 'matches': [{'ofs': 576617, 'ply': [49]}, {'ofs': 611693, 'ply': [43]}]},
 
     {'q': {'material': 'KQRRBNNPPPPKQRRBNNPPPP', 'result': '0-1'},
