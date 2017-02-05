@@ -138,6 +138,11 @@ void search(Thread* th) {
       Position pos = th->rootPos;
       data++; // First move of the game
 
+      // Position related rule matches happens at pos.nodes_searched() but
+      // move related rules matches happens on next ply, so we have to score
+      // this to give back the correct ply at the end of querying
+      bool move_rule = false;
+
       // Loop across the game (that could be empty)
       do {
           Move move = *data; // Could be MOVE_NONE
@@ -149,7 +154,7 @@ void search(Thread* th) {
           // verify the last matched ply comes form the same streak.
           if (   cond->streakId
               && matchPlies.size() - streakStartPly > 0
-              && matchPlies.back() != pos.nodes_searched() - 1)
+              && matchPlies.back() != pos.nodes_searched() - (move_rule ? 0 : 1))
           {
               assert(condIdx);
 
@@ -223,13 +228,17 @@ NextRule: // Loop across rules, early exit as soon as one fails
                           || to_sq(move) != m.to
                           || m.castle != (type_of(move) == CASTLING))
                           continue;
+                      move_rule = true;
                       goto NextRule;
                   }
               break;
 
           case RuleQuietMove:
               if (move && !pos.capture(move))
+              {
+                  move_rule = true;
                   goto NextRule;
+              }
               break;
 
           case RuleCapturedPiece:
@@ -237,13 +246,19 @@ NextRule: // Loop across rules, early exit as soon as one fails
               {
                   PieceType pt = type_of(move) == NORMAL ? type_of(pos.piece_on(to_sq(move))) : PAWN;
                   if (cond->capturedFlags & (1 << int(pt)))
+                  {
+                      move_rule = true;
                       goto NextRule;
+                  }
               }
               break;
 
           case RuleMovedPiece:
               if (move && (cond->movedFlags & (1 << int(type_of(pos.moved_piece(move))))))
+              {
+                  move_rule = true;
                   goto NextRule;
+              }
               break;
 
           case RuleWhite:
@@ -259,14 +274,14 @@ NextRule: // Loop across rules, early exit as soon as one fails
           case RuleMatchedCondition:
               assert(condIdx + 1 < d.conditions.size());
 
-              matchPlies.push_back(pos.nodes_searched());
+              matchPlies.push_back(pos.nodes_searched() + (move_rule ? 1 : 0));
               set_condition(++condIdx);
               break; // Skip to next move
 
           case RuleMatchedQuery:
               assert(condIdx + 1 == d.conditions.size());
 
-              matchPlies.push_back(pos.nodes_searched());
+              matchPlies.push_back(pos.nodes_searched() + (move_rule ? 1 : 0));
               read_be(gameOfs, (uint8_t*)gameOfsPtr);
               d.matches.push_back({gameOfs, matchPlies});
               matchPlies.clear(); // Needed for single conditon case

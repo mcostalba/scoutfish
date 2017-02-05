@@ -1,124 +1,158 @@
 #!/usr/bin/env python
 
-import argparse
-import hashlib
 import json
 import os
 import sys
+import unittest
+
 from scoutfish import Scoutfish
+
 
 SCOUTFISH = './scoutfish.exe' if 'nt' in os.name else './scoutfish'
 
 QUERIES = [
-    {'q': {'sub-fen': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR', 'stm': 'white'}, 'sig': 'bbba013'},
-    {'q': {'sub-fen': 'rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR', 'stm': 'black'}, 'sig': 'cbfff97'},
-    {'q': {'sub-fen': '8/8/p7/8/8/1B3N2/8/8'}, 'sig': '27e9564'},
-    {'q': {'sub-fen': '8/8/8/8/1k6/8/8/8', 'result': '1/2-1/2'}, 'sig': 'acc1e8a'},
-    {'q': {'sub-fen': ['8/8/8/q7/8/8/8/8', '8/8/8/r7/8/8/8/8']}, 'sig': '75ed0d6'},
-    {'q': {'material': 'KQRRBNPPPPKQRRNNPPPP', 'stm': 'BLACK'}, 'sig': '6018fa4'},
-    {'q': {'material': 'KQRRBNNPPPPKQRRBNNPPPP', 'result': '0-1'}, 'sig': '2cd1c3e'},
-    {'q': {'material': ['KRBPPPKRPPP', 'KRPPPKRPPP']}, 'sig': '9cf980c'},
-    {'q': {'white-move': 'Nb7'}, 'sig': '1683032'},
-    {'q': {'black-move': 'c3'}, 'sig': 'e4f532e'},
-    {'q': {'black-move': 'e1=Q'}, 'sig': '89abcc3'},
-    {'q': {'black-move': 'O-O'}, 'sig': '423497f'},
-    {'q': {'skip': 200, 'limit': 100, 'black-move': 'O-O'}, 'sig': 'bcd9d2c'},
-    {'q': {'black-move': 'O-O-O'}, 'sig': '8072796'},
-    {'q': {'black-move': ['O-O-O', 'O-O']}, 'sig': '99f2b6f'},
-    {'q': {'white-move': ['a7', 'b7']}, 'sig': 'fe84899'},
-    {'q': {'imbalance': 'vPP'}, 'sig': '4eeb4cf'},
-    {'q': {'imbalance': ['BvN', 'NNvB']}, 'sig': '07318ef'},
-    {'q': {'moved': 'KP', 'captured': 'Q'}, 'sig': 'e3f73e8'},
-    {'q': {'result-type': 'mate', 'result': '0-1'}, 'sig': '87f61c4'},
+    {'q': {'sub-fen': 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR', 'stm': 'white'},
+        'count': 501, 'matches': [{'ofs': 0, 'ply': [0]}, {'ofs': 666, 'ply': [0]}]},
+
+    {'q': {'sub-fen': 'rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR', 'stm': 'balck'},
+        'count': 229, 'matches': [{'ofs': 666, 'ply': [1]}, {'ofs': 2008, 'ply': [1]}]},
+
+    {'q': {'sub-fen': '8/8/p7/8/8/1B3N2/8/8'},
+        'count': 29, 'matches': [{'ofs': 90547, 'ply': [11]}, {'ofs': 106231, 'ply': [13]}]},
+
+    {'q': {'sub-fen': '8/8/8/8/1k6/8/8/8', 'result': '1/2-1/2'},
+        'count': 1, 'matches': [{'ofs': 810760, 'ply': [98]}]},
+
+    {'q': {'sub-fen': ['8/8/8/q7/8/8/8/8', '8/8/8/r7/8/8/8/8']},
+        'count': 72, 'matches': [{'ofs': 42247, 'ply': [6]}, {'ofs': 45161, 'ply': [34]}]},
+
+    {'q': {'material': 'KQRRBNPPPPKQRRNNPPPP', 'stm': 'black'},
+        'count': 2, 'matches': [{'ofs': 576617, 'ply': [49]}, {'ofs': 611693, 'ply': [43]}]},
+
+    {'q': {'material': 'KQRRBNNPPPPKQRRBNNPPPP', 'result': '0-1'},
+        'count': 2, 'matches': [{'ofs': 611693, 'ply': [39]}, {'ofs': 692493, 'ply': [60]}]},
+
+    {'q': {'material': ['KRBPPPKRPPP', 'KRPPPKRPPP']},
+        'count': 4, 'matches': [{'ofs': 666, 'ply': [77]}, {'ofs': 164246, 'ply': [83]}]},
+
+    {'q': {'white-move': 'Nb7'},
+        'count': 6, 'matches': [{'ofs': 141745, 'ply': [35]}, {'ofs': 538533, 'ply': [37]}]},
+
+    {'q': {'black-move': 'c3'},
+        'count': 27, 'matches': [{'ofs': 10226, 'ply': [34]}, {'ofs': 26360, 'ply': [8]}]},
+
+    {'q': {'black-move': 'e1=Q'},
+        'count': 1, 'matches': [{'ofs': 666, 'ply': [104]}]},
+
+    {'q': {'black-move': 'O-O'},
+        'count': 354, 'matches': [{'ofs': 0, 'ply': [16]}, {'ofs': 666, 'ply': [32]}]},
+
+    {'q': {'skip': 200, 'limit': 100, 'black-move': 'O-O'},
+        'count': 100, 'matches': [{'ofs': 485616, 'ply': [16]}, {'ofs': 487518, 'ply': [12]}]},
+
+    {'q': {'black-move': 'O-O-O'},
+        'count': 28, 'matches': [{'ofs': 10226, 'ply': [36]}, {'ofs': 64548, 'ply': [32]}]},
+
+    {'q': {'black-move': ['O-O-O', 'O-O']},
+        'count': 382, 'matches': [{'ofs': 0, 'ply': [16]}, {'ofs': 666, 'ply': [32]}]},
+
+    {'q': {'white-move': ['a7', 'b7']},
+        'count': 16, 'matches': [{'ofs': 2008, 'ply': [33]}, {'ofs': 10226, 'ply': [39]}]},
+
+    {'q': {'imbalance': 'vPP'},
+        'count': 52, 'matches': [{'ofs': 3313, 'ply': [12]}, {'ofs': 8436, 'ply': [12]}]},
+
+    {'q': {'imbalance': ['BvN', 'NNvB']},
+        'count': 142, 'matches': [{'ofs': 666, 'ply': [42]}, {'ofs': 16551, 'ply': [25]}]},
+
+    {'q': {'moved': 'KP', 'captured': 'Q'},
+        'count': 51, 'matches': [{'ofs': 666, 'ply': [46]}, {'ofs': 8436, 'ply': [42]}]},
+
+    {'q': {'result-type': 'mate', 'result': '0-1'},
+        'count': 10, 'matches': [{'ofs': 11831, 'ply': [24]}, {'ofs': 30634, 'ply': [40]}]},
 
     {'q': {'sub-fen': ['rnbqkbnr/pp1p1ppp/2p5/4p3/3PP3/8/PPP2PPP/RNBQKBNR',
                        'rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R']},
-     'sig': '826e5b5'},
+        'count': 50, 'matches': [{'ofs': 16551, 'ply': [3]}, {'ofs': 75579, 'ply': [3]}]},
 
     {'q': {'sequence': [{'sub-fen': '8/3p4/8/8/8/8/8/8', 'result': '1-0'},
                         {'sub-fen': '8/2q5/8/8/8/8/8/R6R'}]},
-     'sig': '0f061d8'},
+        'count': 8, 'matches': [{'ofs': 195418, 'ply': [0, 42]}, {'ofs': 323394, 'ply': [0, 8]}]},
 
     {'q': {'sequence': [{'sub-fen': 'r1bqkb1r/pppp1ppp/2n2n2/1B2p3/'
                                     '4P3/2N2N2/PPPP1PPP/R1BQK2R'},
                         {'sub-fen': '8/8/8/8/2B5/8/8/8'},
                         {'sub-fen': '8/8/8/8/8/5B2/8/8'}]},
-     'sig': '104d885'},
+        'count': 2, 'matches': [{'ofs': 19722, 'ply': [7, 15, 21]}, {'ofs': 21321, 'ply': [7, 15, 21]}]},
 
     {'q': {'streak': [{'sub-fen': 'r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/2N2N2/PPPP1PPP/R1BQK2R'},
                       {'result': '0-1'}, {'result': '0-1'}]},
-     'sig': 'b59334d'},
+        'count': 2 , 'matches': [{'ofs': 19722, 'ply': [7, 8, 9]}, {'ofs': 21321, 'ply': [7, 8, 9]}]},
 
     {'q': {'sequence': [{'sub-fen': 'rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR'},
                         {'streak': [{'white-move': 'e5'}, {'black-move': 'dxe5'}, {'white-move': 'f5'}]},
                         {'white-move': 'Ne4'}]},
-     'sig': '7ea196f'},
+        'count': 1 , 'matches': [{'ofs': 0, 'ply': [7, 37, 38, 39, 43]}]},
 
     {'q': {'sequence': [{'sub-fen': 'rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR'},
                         {'streak': [{'white-move': 'e5'}, {'black-move': 'dxe5'}, {'white-move': 'f5'},
                                     {'white-move': 'Ne4'}]}]},
-     'sig': 'cab98f3'},
+        'count':0 , 'matches': []},
 
     {'q': {'sequence': [{'sub-fen': 'rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR'},
                         {'streak': [{'white-move': 'e5'}, {'pass': ''}, {'white-move': 'f5'}]},
                         {'white-move': 'Ne4'}]},
-     'sig': '7ea196f'},
+        'count': 1, 'matches': [{'ofs': 0, 'ply': [7, 37, 38, 39, 43]}]},
 
     {'q': {'streak': [{'imbalance': 'NNvB'}, {'imbalance': 'NNvB'}, {'imbalance': 'NNvB'}]},
-     'sig': '84d67bf'},
+        'count': 4, 'matches': [{'ofs': 82982, 'ply': [39, 40, 41]}, {'ofs': 99933, 'ply': [37, 38, 39]}]},
 
     {'q': {'streak': [{'moved': 'P', 'captured': 'Q'}, {'captured': ''}]},
-     'sig': 'd431d7b'},
+        'count': 24, 'matches': [{'ofs': 19722, 'ply': [35, 36]}, {'ofs': 21321, 'ply': [35, 36]}]},
 ]
 
 
-def signature(matches):
-    d = str(matches)
-    sha = hashlib.sha1(d).hexdigest()
-    return sha[:7]
+# Spawn scoutfish
+sys.stdout.write('Making index...')
+sys.stdout.flush()
+p = Scoutfish(SCOUTFISH)
+p.setoption('threads', 1)
+p.open('../pgn/famous_games.pgn')
+p.make()  # Force rebuilding of DB index
+print('done')
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Run a set of test queries')
-    parser.add_argument('--pgn', default='../pgn/famous_games.pgn')
-    parser.add_argument('--path', default=SCOUTFISH)
-    parser.add_argument('--threads', default=1)
-    args = parser.parse_args()
+class ScoutfishTestCase(unittest.TestCase):
+    pass
 
-    if not os.path.isfile(args.path):
-        print("File {} does not exsist".format(args.path))
-        sys.exit(0)
 
-    if not os.path.isfile(args.pgn):
-        print("File {} does not exsist".format(args.pgn))
-        sys.exit(0)
+def create_test(expected):
+    def test(self):
+        result = p.scout(expected['q'])
 
-    # Spawn scoutfish
-    sys.stdout.write('Making index...')
-    sys.stdout.flush()
-    p = Scoutfish(args.path)
-    p.setoption('threads', args.threads)
-    p.open(args.pgn)
-    p.make()  # Force rebuilding of DB index
-    print('done')
+        self.assertEqual(expected['count'], result['match count'])
 
-    # Run test queries
-    for cnt, e in enumerate(QUERIES):
-        sys.stdout.write('Query ' + str(cnt + 1) + '...')
-        sys.stdout.flush()
-        result = p.scout(e['q'])
-        num = str(result['match count'])
-        matches = result['matches']
-        games = p.get_games(matches[:10])
-        headers = p.get_game_headers(games)
-        sig1 = signature(matches)
-        sig2 = signature(games)
-        sig3 = signature(headers)
-        sig = signature(sig1 + sig2 + sig3)
-        if (e['sig'] == sig):
-            print('OK (' + num + ')')
-        else:
-            print('FAIL (' + num + ')')
-        p.before = ''
+        for idx, match in enumerate(expected['matches']):
+            self.assertEqual(match['ofs'], result['matches'][idx]['ofs'])
+            self.assertEqual(match['ply'], result['matches'][idx]['ply'])
 
+    return test
+
+
+for cnt, expected in enumerate(QUERIES):
+    # create test method
+    test_method = create_test(expected)
+
+    # change it's name to be unique in ScoutfishTestCase class
+    test_method.__name__ = 'test_scout_{num:02d}'.format(num=cnt + 1)
+
+    # create meaningful doc string from scout query
+    test_method.__doc__ = '{query}'.format(query=expected['q'])
+
+    # add created test_method to ScoutfishTestCase class
+    setattr(ScoutfishTestCase, test_method.__name__, test_method)
+
+
+if __name__ == '__main__':
+    unittest.main()
     p.close()
