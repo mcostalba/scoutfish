@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import json
 import os
 import sys
 import unittest
@@ -36,28 +35,28 @@ QUERIES = [
         'count': 4, 'matches': [{'ofs': 666, 'ply': [77]}, {'ofs': 164246, 'ply': [83]}]},
 
     {'q': {'white-move': 'Nb7'},
-        'count': 6, 'matches': [{'ofs': 141745, 'ply': [34]}, {'ofs': 538533, 'ply': [36]}]},
+        'count': 6, 'matches': [{'ofs': 141745, 'ply': [35]}, {'ofs': 538533, 'ply': [37]}]},
 
     {'q': {'black-move': 'c3'},
-        'count': 27, 'matches': [{'ofs': 10226, 'ply': [33]}, {'ofs': 26360, 'ply': [7]}]},
+        'count': 27, 'matches': [{'ofs': 10226, 'ply': [34]}, {'ofs': 26360, 'ply': [8]}]},
 
     {'q': {'black-move': 'e1=Q'},
-        'count': 1, 'matches': [{'ofs': 666, 'ply': [103]}]},
+        'count': 1, 'matches': [{'ofs': 666, 'ply': [104]}]},
 
     {'q': {'black-move': 'O-O'},
-        'count': 354, 'matches': [{'ofs': 0, 'ply': [15]}, {'ofs': 666, 'ply': [31]}]},
+        'count': 354, 'matches': [{'ofs': 0, 'ply': [16]}, {'ofs': 666, 'ply': [32]}]},
 
     {'q': {'skip': 200, 'limit': 100, 'black-move': 'O-O'},
-        'count': 100, 'matches': [{'ofs': 485616, 'ply': [15]}, {'ofs': 487518, 'ply': [11]}]},
+        'count': 100, 'matches': [{'ofs': 485616, 'ply': [16]}, {'ofs': 487518, 'ply': [12]}]},
 
     {'q': {'black-move': 'O-O-O'},
-        'count': 28, 'matches': [{'ofs': 10226, 'ply': [35]}, {'ofs': 64548, 'ply': [31]}]},
+        'count': 28, 'matches': [{'ofs': 10226, 'ply': [36]}, {'ofs': 64548, 'ply': [32]}]},
 
     {'q': {'black-move': ['O-O-O', 'O-O']},
-        'count': 382, 'matches': [{'ofs': 0, 'ply': [15]}, {'ofs': 666, 'ply': [31]}]},
+        'count': 382, 'matches': [{'ofs': 0, 'ply': [16]}, {'ofs': 666, 'ply': [32]}]},
 
     {'q': {'white-move': ['a7', 'b7']},
-        'count': 16, 'matches': [{'ofs': 2008, 'ply': [32]}, {'ofs': 10226, 'ply': [38]}]},
+        'count': 16, 'matches': [{'ofs': 2008, 'ply': [33]}, {'ofs': 10226, 'ply': [39]}]},
 
     {'q': {'imbalance': 'vPP'},
         'count': 52, 'matches': [{'ofs': 3313, 'ply': [12]}, {'ofs': 8436, 'ply': [12]}]},
@@ -66,7 +65,7 @@ QUERIES = [
         'count': 142, 'matches': [{'ofs': 666, 'ply': [42]}, {'ofs': 16551, 'ply': [25]}]},
 
     {'q': {'moved': 'KP', 'captured': 'Q'},
-        'count': 51, 'matches': [{'ofs': 666, 'ply': [45]}, {'ofs': 8436, 'ply': [41]}]},
+        'count': 51, 'matches': [{'ofs': 666, 'ply': [46]}, {'ofs': 8436, 'ply': [42]}]},
 
     {'q': {'result-type': 'mate', 'result': '0-1'},
         'count': 10, 'matches': [{'ofs': 11831, 'ply': [24]}, {'ofs': 30634, 'ply': [40]}]},
@@ -87,28 +86,31 @@ QUERIES = [
 
     {'q': {'streak': [{'sub-fen': 'r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/2N2N2/PPPP1PPP/R1BQK2R'},
                       {'result': '0-1'}, {'result': '0-1'}]},
-        'count': 2 , 'matches': [{'ofs': 19722, 'ply': [7, 8, 9]}, {'ofs': 21321, 'ply': [7, 8, 9]}]},
+        'count': 2, 'matches': [{'ofs': 19722, 'ply': [7, 8, 9]}, {'ofs': 21321, 'ply': [7, 8, 9]}]},
 
     {'q': {'sequence': [{'sub-fen': 'rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR'},
                         {'streak': [{'white-move': 'e5'}, {'black-move': 'dxe5'}, {'white-move': 'f5'}]},
                         {'white-move': 'Ne4'}]},
-        'count': 1 , 'matches': [{'ofs': 0, 'ply': [7, 36, 37, 38, 42]}]},
+        'count': 1, 'matches': [{'ofs': 0, 'ply': [7, 37, 38, 39, 43]}]},
 
     {'q': {'sequence': [{'sub-fen': 'rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR'},
                         {'streak': [{'white-move': 'e5'}, {'black-move': 'dxe5'}, {'white-move': 'f5'},
                                     {'white-move': 'Ne4'}]}]},
-        'count':0 , 'matches': []},
+        'count': 0, 'matches': []},
 
     {'q': {'sequence': [{'sub-fen': 'rnbqkb1r/pp1p1ppp/4pn2/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR'},
                         {'streak': [{'white-move': 'e5'}, {'pass': ''}, {'white-move': 'f5'}]},
                         {'white-move': 'Ne4'}]},
-        'count': 1, 'matches': [{'ofs': 0, 'ply': [7, 36, 37, 38, 42]}]},
+        'count': 1, 'matches': [{'ofs': 0, 'ply': [7, 37, 38, 39, 43]}]},
 
     {'q': {'streak': [{'imbalance': 'NNvB'}, {'imbalance': 'NNvB'}, {'imbalance': 'NNvB'}]},
         'count': 4, 'matches': [{'ofs': 82982, 'ply': [39, 40, 41]}, {'ofs': 99933, 'ply': [37, 38, 39]}]},
 
     {'q': {'streak': [{'moved': 'P', 'captured': 'Q'}, {'captured': ''}]},
-        'count': 24, 'matches': [{'ofs': 19722, 'ply': [34, 35]}, {'ofs': 21321, 'ply': [34, 35]}]},
+        'count': 24, 'matches': [{'ofs': 19722, 'ply': [35, 36]}, {'ofs': 21321, 'ply': [35, 36]}]},
+
+    {'q': {'white-move': 'e4', 'stm': 'balck', 'sub-fen': 'rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR'},
+        'count': 229, 'matches': [{'ofs': 666, 'ply': [1]}]},
 ]
 
 
