@@ -94,9 +94,13 @@ PGN notation. Support lists.
 
 ##### result
 
-Find all games with a given result in PGN notation, like "1-0" or "1/2-1/2"
+Find all games with a given result in PGN notation, like "1-0" or "1/2-1/2".
+Support lists.
 
     { "sub-fen": "8/pp1p1ppp/2p5/4p3/3PP3/8/PPP2PPP/8", "result": "1-0" }
+    { "result": ["1-0", "0-1"] }
+
+To find all white winning games with given sub-fen or all the decided games.
 
 
 ##### material

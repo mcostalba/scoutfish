@@ -65,8 +65,8 @@ QUERIES = [
     {'q': {'imbalance': ['BvN', 'NNvB']},
         'count': 142, 'matches': [{'ofs': 666, 'ply': [42]}, {'ofs': 16551, 'ply': [25]}]},
 
-    {'q': {'moved': 'KP', 'captured': 'Q'},
-        'count': 51, 'matches': [{'ofs': 666, 'ply': [45]}, {'ofs': 8436, 'ply': [41]}]},
+    {'q': {'moved': 'KP', 'captured': 'Q', 'result': ['1-0', '0-1']},
+        'count': 48, 'matches': [{'ofs': 666, 'ply': [45]}, {'ofs': 8436, 'ply': [41]}]},
 
     {'q': {'result-type': 'mate', 'result': '0-1'},
         'count': 10, 'matches': [{'ofs': 11831, 'ply': [24]}, {'ofs': 30634, 'ply': [40]}]},

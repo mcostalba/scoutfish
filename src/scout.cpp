@@ -181,7 +181,8 @@ NextRule: // Loop across rules, early exit as soon as one fails
               goto NextRule;
 
           case RuleResult:
-              if (result == cond->result)
+              if (std::find(cond->results.begin(), cond->results.end(),
+                            result) != cond->results.end())
                   goto NextRule;
               goto SkipToNextGame; // Shortcut: result will not change
 
@@ -437,16 +438,18 @@ void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
 
   if (item.count("result"))
   {
-      GameResult result =  item["result"] == "1-0" ? WhiteWin
-                         : item["result"] == "0-1" ? BlackWin
-                         : item["result"] == "1/2-1/2" ? Draw
-                         : item["result"] == "*" ? Unknown : Invalid;
-
-      if (result != Invalid)
+      for (const auto& res : item["result"])
       {
-          cond.result = result;
-          cond.rules.push_back(RuleResult);
+          GameResult result =  res == "1-0" ? WhiteWin
+                             : res == "0-1" ? BlackWin
+                             : res == "1/2-1/2" ? Draw
+                             : res == "*" ? Unknown : Invalid;
+
+          if (result != Invalid)
+              cond.results.push_back(result);
       }
+      if (cond.results.size())
+          cond.rules.push_back(RuleResult);
   }
 
   if (item.count("result-type"))

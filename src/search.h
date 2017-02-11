@@ -68,11 +68,11 @@ struct Imbalance {
 struct Condition {
   Bitboard moveSquares;
   int streakId;
-  GameResult result;
   ResultType resultType;
   uint64_t movedFlags, capturedFlags;
   std::vector<RuleType> rules;
   std::vector<SubFen> subfens;
+  std::vector<GameResult> results;
   std::vector<ScoutMove> moves;
   std::vector<Key> matKeys;
   std::vector<Imbalance> imbalances;
