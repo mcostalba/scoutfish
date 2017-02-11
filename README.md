@@ -86,12 +86,6 @@ Rules allow to look for very specific occurrences in the game. We have already
 seen some of them, like _sub-fen_, but there are many more.
 
 
-##### sub-fen
-
-Find all games with a position matching the sub-fen pattern given in
-PGN notation. Support lists.
-
-
 ##### result
 
 Find all games with a given result in PGN notation, like "1-0" or "1/2-1/2".
@@ -133,6 +127,19 @@ Find all games with a given material imbalance. Support lists.
 
 To find all games with 3 or 2 pawns advantage for white and all games
 where white is above 2 pawns but down of a knight.
+
+
+##### sub-fen
+
+Find all games with a position matching the sub-fen pattern given in
+PGN notation. Support lists.
+
+    { "sub-fen": "1n2k1n1/8/8/8/8/8/8/2B1K1N1", "material": "KBNKNN" }
+
+To find all games with given sub-fen **and** given material distribution.
+Note that the sub-fen is matched by the start position and without the
+added rule on material, any game would match. A condition composed by
+sub-fen + material, can be used to find an **exact fen**.
 
 
 ##### white-move / black-move
