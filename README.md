@@ -103,6 +103,15 @@ Support lists.
 To find all white winning games with given sub-fen or all the decided games.
 
 
+##### result-type
+
+Find all games with a given result type that can be "mate" or "stalemate".
+
+    { "result": "0-1", "result-type": "mate" }
+
+To find all games won by black by giving mate.
+
+
 ##### material
 
 Find all games with a given material distribution, i.e. the given pieces,
