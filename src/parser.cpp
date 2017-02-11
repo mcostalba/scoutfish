@@ -85,9 +85,9 @@ void error(Step* state, const char* data) {
 }
 
 template<bool DryRun = false>
-const char* parse_game(const char* moves, const char* end, std::ofstream& ofs,
+const char* parse_game(const char* moves, const char* end, std::ofstream& db,
                        const char* fen, const char* fenEnd, size_t& fixed,
-                       uint64_t gameOfs, GameResult result) {
+                       uint64_t ofs, GameResult result) {
 
     static_assert(sizeof(uint64_t) == 4 * sizeof(Move), "Wrong Move size");
 
@@ -106,7 +106,7 @@ const char* parse_game(const char* moves, const char* end, std::ofstream& ofs,
     assert(!(uintptr_t(curMove) & 1)); // At least Move aligned
 
     // Save the game offset at the beginning of the new game in big-endian
-    curMove = (Move*)write_be(gameOfs, (uint8_t*)curMove);
+    curMove = (Move*)write_be(ofs, (uint8_t*)curMove);
 
     // In case of * or any unknown result char, set it to RESULT_UNKNOWN
     if (result < GameResult::WhiteWin || result > GameResult::Draw)
@@ -143,7 +143,7 @@ const char* parse_game(const char* moves, const char* end, std::ofstream& ofs,
     if (!DryRun && standard)
     {
         *curMove++ = MOVE_NONE; // Game separator
-        ofs.write((const char*)gameMoves, (curMove - gameMoves) * sizeof(Move));
+        db.write((const char*)gameMoves, (curMove - gameMoves) * sizeof(Move));
     }
 
     return end;
@@ -170,7 +170,7 @@ GameResult get_result(const char* data) {
     return GameResult::Unknown;
 }
 
-void parse_pgn(void* baseAddress, uint64_t size, PGNStats& stats, std::ofstream& ofs) {
+void parse_pgn(void* baseAddress, uint64_t size, PGNStats& stats, std::ofstream& db, uint64_t startOfs) {
 
     Step* stateStack[16];
     Step**stateSp = stateStack;
@@ -178,7 +178,7 @@ void parse_pgn(void* baseAddress, uint64_t size, PGNStats& stats, std::ofstream&
     char moves[1024 * 8], *curMove = moves;
     char* end = curMove;
     size_t moveCnt = 0, gameCnt = 0, fixed = 0;
-    uint64_t gameOfs = 0;
+    uint64_t ofs = startOfs;
     GameResult result = GameResult::Unknown;
     char* data = (char*)baseAddress;
     char* eof = data + size;
@@ -303,10 +303,10 @@ void parse_pgn(void* baseAddress, uint64_t size, PGNStats& stats, std::ofstream&
                 state = ToStep[RESULT];
                 break;
             }
-            parse_game(moves, end, ofs, fen, fenEnd, fixed, gameOfs, result);
+            parse_game(moves, end, db, fen, fenEnd, fixed, ofs, result);
             gameCnt++;
             result = GameResult::Unknown;
-            gameOfs = (data - (char*)baseAddress) + 1; // Beginning of next game
+            ofs = (data - (char*)baseAddress) + 1; // Beginning of next game
             end = curMove = moves;
             fenEnd = fen;
             state = ToStep[HEADER];
@@ -321,10 +321,10 @@ void parse_pgn(void* baseAddress, uint64_t size, PGNStats& stats, std::ofstream&
              /* Fall through */
 
         case MISSING_RESULT: // Missing result, next game already started
-            parse_game(moves, end, ofs, fen, fenEnd, fixed, gameOfs, result);
+            parse_game(moves, end, db, fen, fenEnd, fixed, ofs, result);
             gameCnt++;
             result = GameResult::Unknown;
-            gameOfs = (data - (char*)baseAddress); // Beginning of next game
+            ofs = (data - (char*)baseAddress); // Beginning of next game
             end = curMove = moves;
             fenEnd = fen;
             state = ToStep[HEADER];
@@ -344,7 +344,7 @@ void parse_pgn(void* baseAddress, uint64_t size, PGNStats& stats, std::ofstream&
     // trigger: no newline at EOF, missing result, missing closing brace, etc.
     if (state != ToStep[HEADER] && state != ToStep[SKIP_GAME] && end - moves)
     {
-        parse_game(moves, end, ofs, fen, fenEnd, fixed, gameOfs, result);
+        parse_game(moves, end, db, fen, fenEnd, fixed, ofs, result);
         gameCnt++;
     }
 
@@ -537,7 +537,7 @@ void make_db(std::istringstream& is) {
     PGNStats stats;
     uint64_t mapping, size;
     void* baseAddress;
-    std::string dbName;
+    std::string dbName, startOfs;
 
     is >> dbName;
 
@@ -549,25 +549,30 @@ void make_db(std::istringstream& is) {
 
     mem_map(dbName.c_str(), &baseAddress, &mapping, &size);
 
+    is >> startOfs;
+
+    if (startOfs.empty())
+        startOfs = "0";
+
     size_t lastdot = dbName.find_last_of(".");
     if (lastdot != std::string::npos)
         dbName = dbName.substr(0, lastdot);
     dbName += ".scout";
-    std::ofstream ofs;
-    ofs.open(dbName, std::ofstream::out | std::ofstream::binary);
+    std::ofstream db;
+    db.open(dbName, std::ofstream::out | std::ofstream::binary);
 
     std::cerr << "\nProcessing...";
 
     TimePoint elapsed = now();
 
-    parse_pgn(baseAddress, size, stats, ofs);
+    parse_pgn(baseAddress, size, stats, db, stoll(startOfs));
 
     elapsed = now() - elapsed + 1; // Ensure positivity to avoid a 'divide by zero'
 
     mem_unmap(baseAddress, mapping);
 
-    size_t dbSize = ofs.tellp();
-    ofs.close();
+    size_t dbSize = db.tellp();
+    db.close();
 
     std::cerr << "done" << std::endl;
 
