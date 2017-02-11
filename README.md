@@ -128,9 +128,11 @@ Find all games with a given move in PGN notation. Support lists.
 
     {"white-move": "e8=Q"}
     {"black-move": ["O-O-O", "O-O"]}
+    {"black-move": "Rac1"}
 
 To find all games with white's queen promotion in _e8_ and all games
-with a black castling, no matter if long or short.
+with a black castling, no matter if long or short. Rule supports
+SAN notation with a disambiguation, like _Rac1_.
 
 
 ##### moved / captured

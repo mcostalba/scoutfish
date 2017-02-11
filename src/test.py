@@ -56,8 +56,8 @@ QUERIES = [
     {'q': {'black-move': ['O-O-O', 'O-O']},
         'count': 382, 'matches': [{'ofs': 0, 'ply': [15]}, {'ofs': 666, 'ply': [31]}]},
 
-    {'q': {'white-move': ['a7', 'b7']},
-        'count': 16, 'matches': [{'ofs': 2008, 'ply': [32]}, {'ofs': 10226, 'ply': [38]}]},
+    {'q': {'white-move': ['a7', 'b7', 'Rac1']},
+        'count': 120, 'matches': [{'ofs': 666, 'ply': [38]}, {'ofs': 2008, 'ply': [32]}, {'ofs': 10226, 'ply': [38]}]},
 
     {'q': {'imbalance': 'vPP'},
         'count': 52, 'matches': [{'ofs': 3313, 'ply': [12]}, {'ofs': 8436, 'ply': [12]}]},

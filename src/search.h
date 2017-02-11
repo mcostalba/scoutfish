@@ -55,6 +55,7 @@ struct SubFen {
 struct ScoutMove {
   Piece pc;
   Square to;
+  int disambiguation;
   PieceType promotion;
   bool castle;
 };
