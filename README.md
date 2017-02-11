@@ -172,7 +172,8 @@ To find all games where black side captures a queen or a rook.
 
 ##### pass
 
-This rule matches any position. It is used mainly for debugging purposes.
+This rule matches any position. It is used mainly for debugging purposes or
+as a part of a more complex condition (see streaks).
 
     {"pass": "" }
 
@@ -250,10 +251,12 @@ Some rules like _captured_ are very suitable to be used in a streak:
 
 ~~~~
 { "streak": [ { "captured": "" }, { "stm": "white", "captured": "Q" }, { "captured": "" } ] }
+{ "streak": [ { "white-move": "e5"}, { "pass": "" }, { "white-move": "f5" } ] }
 ~~~~
 
 To find all games where white captures a net queen, i.e. not in a capture-recapture
-combination.
+combination. The second streak uses 'pass' rule to find all games with white _e5_
+followed by _f5_, independently from the black reply.
 
 
 ## Python wrapper
