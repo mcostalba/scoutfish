@@ -157,6 +157,15 @@ Usually it is used in a multi-rule condition.
 To find all games where black side captures a queen or a rook.
 
 
+##### pass
+
+This rule matches any position. It is used mainly for debugging purposes.
+
+    {"pass": "" }
+
+To find the number of games in the DB, because it will match any game.
+
+
 ## Sequences
 
 A _sequence_ is a powerful feature of Scoutfish to look for games that satisfy
