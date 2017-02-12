@@ -149,7 +149,7 @@ void search(Thread* th) {
 
       st = states;
       Position pos = th->rootPos;
-      Move move = *data; // Could be MOVE_NONE
+      Move move = MOVE_NONE;
       data++; // First move of the game
 
       // Loop across the game (that could be empty)
