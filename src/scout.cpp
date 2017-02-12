@@ -19,7 +19,7 @@
 */
 
 #include <algorithm>
-#include <cctype>    // tolower()
+#include <cctype>    // tolower(), isdigit()
 #include <cstdint>
 #include <cstdio>
 #include <exception>
@@ -41,6 +41,18 @@ using json = nlohmann::json;
 namespace Scout {
 
 const std::string PieceToChar(" PNBRQK  pnbrqk");
+
+
+/// Helper function to verify if the move's 'from' square satisfies
+/// the disambiguation rule, if any.
+bool from_sq_ok(int d, Square from) {
+
+  if (!d)
+      return true;
+
+  return d == (d > 8 ? 9 + int(rank_of(from)) : 1 + int(file_of(from)));
+}
+
 
 /// Helper function to detect the beginning of next game starting from a
 /// random position inside the DB. Here is tricky because a part of game offset
@@ -171,7 +183,8 @@ NextRule: // Loop across rules, early exit as soon as one fails
               goto NextRule;
 
           case RuleResult:
-              if (result == cond->result)
+              if (std::find(cond->results.begin(), cond->results.end(),
+                            result) != cond->results.end())
                   goto NextRule;
               goto SkipToNextGame; // Shortcut: result will not change
 
@@ -223,7 +236,8 @@ NextRule: // Loop across rules, early exit as soon as one fails
                   {
                       if (   movedPiece != m.pc
                           || to_sq(move) != m.to
-                          || m.castle != (type_of(move) == CASTLING))
+                          || m.castle != (type_of(move) == CASTLING)
+                          || !from_sq_ok(m.disambiguation, from_sq(move)))
                           continue;
                       goto NextRule;
                   }
@@ -410,6 +424,13 @@ ScoutMove parse_move(const std::string& san, Color c) {
       toIdx--;
 
   m.to = make_square(File(san[toIdx] - 'a'), Rank(san[toIdx + 1] - '1'));
+
+  if (type_of(m.pc) != PAWN && toIdx > 1) // Disambiguation
+  {
+      char d = san[toIdx - 1];
+      m.disambiguation = ::isdigit(d) ? 9 + (d - '1') : 1 + (d - 'a');
+  }
+
   return m;
 }
 
@@ -421,16 +442,18 @@ void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
 
   if (item.count("result"))
   {
-      GameResult result =  item["result"] == "1-0" ? WhiteWin
-                         : item["result"] == "0-1" ? BlackWin
-                         : item["result"] == "1/2-1/2" ? Draw
-                         : item["result"] == "*" ? Unknown : Invalid;
-
-      if (result != Invalid)
+      for (const auto& res : item["result"])
       {
-          cond.result = result;
-          cond.rules.push_back(RuleResult);
+          GameResult result =  res == "1-0" ? WhiteWin
+                             : res == "0-1" ? BlackWin
+                             : res == "1/2-1/2" ? Draw
+                             : res == "*" ? Unknown : Invalid;
+
+          if (result != Invalid)
+              cond.results.push_back(result);
       }
+      if (cond.results.size())
+          cond.rules.push_back(RuleResult);
   }
 
   if (item.count("result-type"))

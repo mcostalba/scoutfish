@@ -86,17 +86,24 @@ Rules allow to look for very specific occurrences in the game. We have already
 seen some of them, like _sub-fen_, but there are many more.
 
 
-##### sub-fen
-
-Find all games with a position matching the sub-fen pattern given in
-PGN notation. Support lists.
-
-
 ##### result
 
-Find all games with a given result in PGN notation, like "1-0" or "1/2-1/2"
+Find all games with a given result in PGN notation, like "1-0" or "1/2-1/2".
+Support lists.
 
     { "sub-fen": "8/pp1p1ppp/2p5/4p3/3PP3/8/PPP2PPP/8", "result": "1-0" }
+    { "result": ["1-0", "0-1"] }
+
+To find all white winning games with given sub-fen or all the decided games.
+
+
+##### result-type
+
+Find all games with a given result type that can be "mate" or "stalemate".
+
+    { "result": "0-1", "result-type": "mate" }
+
+To find all games won by black by giving mate.
 
 
 ##### material
@@ -122,15 +129,30 @@ To find all games with 3 or 2 pawns advantage for white and all games
 where white is above 2 pawns but down of a knight.
 
 
+##### sub-fen
+
+Find all games with a position matching the sub-fen pattern given in
+PGN notation. Support lists.
+
+    { "sub-fen": "1n2k1n1/8/8/8/8/8/8/2B1K1N1", "material": "KBNKNN" }
+
+To find all games with given sub-fen **and** given material distribution.
+Note that the sub-fen is matched by the start position and without the
+added rule on material, any game would match. A condition composed by
+sub-fen + material, can be used to find an **exact fen**.
+
+
 ##### white-move / black-move
 
 Find all games with a given move in PGN notation. Support lists.
 
     {"white-move": "e8=Q"}
     {"black-move": ["O-O-O", "O-O"]}
+    {"black-move": "Rac1"}
 
 To find all games with white's queen promotion in _e8_ and all games
-with a black castling, no matter if long or short.
+with a black castling, no matter if long or short. Rule supports
+SAN notation with a disambiguation, like _Rac1_.
 
 
 ##### moved / captured
@@ -153,6 +175,16 @@ Usually it is used in a multi-rule condition.
     {"stm": "black", "captured": "QR" }
 
 To find all games where black side captures a queen or a rook.
+
+
+##### pass
+
+This rule matches any position. It is used mainly for debugging purposes or
+as a part of a more complex condition (see streaks).
+
+    {"pass": "" }
+
+To find the number of games in the DB, because it will match any game.
 
 
 ## Sequences
@@ -226,10 +258,12 @@ Some rules like _captured_ are very suitable to be used in a streak:
 
 ~~~~
 { "streak": [ { "captured": "" }, { "stm": "white", "captured": "Q" }, { "captured": "" } ] }
+{ "streak": [ { "white-move": "e5"}, { "pass": "" }, { "white-move": "f5" } ] }
 ~~~~
 
 To find all games where white captures a net queen, i.e. not in a capture-recapture
-combination.
+combination. The second streak uses 'pass' rule to find all games with white _e5_
+followed by _f5_, independently from the black reply.
 
 
 ## Python wrapper
