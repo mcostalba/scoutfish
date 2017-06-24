@@ -156,8 +156,8 @@ ifeq ($(COMP),gcc)
 		ifeq ($(OS),Android)
 			CXXFLAGS += -m$(bits)
 		endif
-	else
-		CXXFLAGS += -m$(bits)
+#	else
+#		CXXFLAGS += -m$(bits)
 	endif
 
 	ifneq ($(KERNEL),Darwin)
