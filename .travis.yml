@@ -13,13 +13,13 @@ branches:
 
 install:
  - sudo apt-get install -y g++-multilib python3-pip
- - sudo pip3 install pexpect
- - virtualenv --python=python3 --system-site-packages _venv
- - source _venv/bin/activate
 
 script:
  - cd src
  - make clean && make build ARCH=x86-64
+ - virtualenv --python=python3 --system-site-packages _venv
+ - source _venv/bin/activate
+ - pip3 install pexpect
  - python3 test.py
  - mv scoutfish scoutfish_x64
  - make clean && make build ARCH=x86-32 EXE=scoutfish_x32
