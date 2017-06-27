@@ -7,10 +7,6 @@ matrix:
     dist: trusty
     compiler: gcc
 
-branches:
-  only:
-  - master
-
 install:
   - sudo apt-get install -y g++-multilib python3-pip
 
