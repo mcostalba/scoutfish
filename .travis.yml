@@ -9,18 +9,30 @@ matrix:
 
 branches:
   only:
-   - master
+  - master
 
 install:
- - sudo apt-get install -y g++-multilib python3-pip
+  - sudo apt-get install -y g++-multilib python3-pip
 
 script:
- - cd src
- - make clean && make build ARCH=x86-64
- - virtualenv --python=python3 --system-site-packages _venv
- - source _venv/bin/activate
- - pip3 install pexpect
- - python3 test.py
- - mv scoutfish scoutfish_x64
- - make clean && make build ARCH=x86-32 EXE=scoutfish_x32
- - ls -l
+  - cd src
+  - make clean && make build ARCH=x86-64
+  - virtualenv --python=python3 --system-site-packages _venv
+  - source _venv/bin/activate
+  - pip3 install pexpect
+  - python3 test.py
+  - mv scoutfish scoutfish_x64
+  - make clean && make build ARCH=x86-32 EXE=scoutfish_x32
+  - ls -l
+
+deploy:
+  provider: releases
+  api_key:
+    secure: r5a368elHb7WUHnR9r2fPLTWdA6ACCFhi+G5zcfajgW+Yf8HlS32GsZeO5LS21mPHJFga4VuhD6OETbJgDEbJ6evFMqRwqoVgCLgSMED0tKroaBQugJKQCONgZd7oEAVwQGiUX1Axeblc/PUWPVZ1sDNDDllp09rZmS6yvH8O/baDNv249j9xWOtQ6NaUWPKsCtPm2vGWGvH0zw36vpeuYUEA01t0BIVwaGSs8S4jaHKSF/xMlR/bvA+jfr3CiOJyrgBLEB0K7YTX/U6A1Bh+etguHBSQ69gJGM4fzusfXybtqu/hHlEMQNQ2OIPx3XdGTqSQme2gem8tKkIV6H3FXDd5D1OetcMyoqgrkYG0KpE7FVPS++vbnZnUwuO0UY6sNd9bNy3S1K1R/FcGdoi+3/OrbyZkhEBwoPu3Eva0AOBQjp3r7icEpqFOTZhoQ6KbD2T7kMLkSDmAmRQLdxZ0glHbqzllzhvpWydhz+Nb50noT8MvcOBxr/vg2ljkrO4k2KDLUKZ/uxl8nFbLKuFnAkR0x3IdVpAACcmAafdCiN7IPXL52rh5c7nVYDCmoJAZxG6KDNrAVgC3r6G5qo6MvB9PaZRYKX1aJeFI+mtTQRyS/TS4yPuEGMEk40cLUHaGZF7+kNvWyEBTS+Ya+aKO88idd0vMk4qLT+w0oDF6Pg=
+  file:
+  - scoutfish_x64
+  - scoutfish_x32
+  skip_cleanup: true
+  on:
+    tags: true
+    repo: gbtami/scoutfish
