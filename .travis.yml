@@ -4,36 +4,31 @@ matrix:
   include:
   - os: linux
     sudo: required
-    services:
-    - docker
-    env:
-    - BASEEXE=scoutfish
-  - os: osx
-    compiler: clang
-    env:
-    - COMPILER=clang++ V='Apple LLVM 6.0'
-    - COMP=clang
-    - BASEEXE=scoutfish-osx
+    dist: trusty
 
-before_install:
-- ldd --version || echo no ldd
-- if [ -f /proc/cpuinfo ] ; then cat /proc/cpuinfo; fi
+branches:
+  only:
+   - master
 
-script: |
-  if [ "$BASEEXE" != "scoutfish-osx" ]; then
-    docker build --tag wheezy-for-scoutfish .
-    docker run --volume $PWD:/home/builder/scoutfish --user $(id -u) wheezy-for-scoutfish
-  else
-    cd src
-    make build ARCH=x86-64 EXE=../$BASEEXE-x86_64
-    cd ..
-  fi
-  ls -lh
+before_script:
+  - cd src
+
+install:
+ - sudo apt-get install -y python3-pip
+ - sudo pip3 install pexpect
+
+script:
+ - cd src
+ - make clean && make build ARCH=x86-64
+ - python3 test.py
+ - mv scoutfish scoutfish_x64
+ - make clean && make build ARCH=x86-32 EXE=scoutfish_x32
+ - ls -l
 
 deploy:
   provider: releases
   api_key:
-    secure: 
+    secure:
   prerelease: true
   file_glob: true
   file:
