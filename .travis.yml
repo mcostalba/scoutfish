@@ -5,16 +5,14 @@ matrix:
   - os: linux
     sudo: required
     dist: trusty
+    compiler: gcc
 
 branches:
   only:
    - master
 
-before_script:
-  - cd src
-
 install:
- - sudo apt-get install -y python3-pip
+ - sudo apt-get install -y g++-multilib python3-pip
  - sudo pip3 install pexpect
 
 script:
@@ -24,17 +22,3 @@ script:
  - mv scoutfish scoutfish_x64
  - make clean && make build ARCH=x86-32 EXE=scoutfish_x32
  - ls -l
-
-deploy:
-  provider: releases
-  api_key:
-    secure:
-  prerelease: true
-  file_glob: true
-  file:
-    - $BASEEXE-*
-  skip_cleanup: true
-  on:
-    tags: true
-    repo: gbtami/scoutfish
-    branch: master
