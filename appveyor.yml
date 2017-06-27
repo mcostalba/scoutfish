@@ -1,0 +1,33 @@
+os: Visual Studio 2013
+
+shallow_clone: true
+clone_depth: 1
+
+platform: x64
+
+cache:
+  - x86_64-4.9.2-release-posix-seh-rt_v4-rev2.7z
+
+install:
+  - cinst wget
+  - wget --no-clobber "http://sourceforge.net/projects/mingw-w64/files/Toolchains targetting Win64/Personal Builds/mingw-builds/4.9.2/threads-posix/seh/x86_64-4.9.2-release-posix-seh-rt_v4-rev2.7z"
+  - 7z x -oC:\MinGW\msys\1.0\ x86_64-4.9.2-release-posix-seh-rt_v4-rev2.7z > nul
+
+build_script:
+  - C:\MinGW\msys\1.0\bin\sh.exe -c "cd /c/projects/scoutfish/; /c/projects/scoutfish/msys_build.sh"
+
+artifacts:
+  - path: scoutfish-windows-*
+
+deploy:
+  release: $(APPVEYOR_REPO_TAG_NAME)
+  description: 'pychess.org custom scoutfish binaries'
+  skip_cleanup: true
+  provider: GitHub
+  auth_token:
+    secure: 
+  artifact: /scoutfish-windows-.*/
+  draft: false
+  prerelease: true
+  on:
+    appveyor_repo_tag: true

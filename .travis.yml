@@ -1,0 +1,45 @@
+language: cpp
+
+matrix:
+  include:
+  - os: linux
+    sudo: required
+    services:
+    - docker
+    env:
+    - BASEEXE=scoutfish
+  - os: osx
+    compiler: clang
+    env:
+    - COMPILER=clang++ V='Apple LLVM 6.0'
+    - COMP=clang
+    - BASEEXE=scoutfish-osx
+
+before_install:
+- ldd --version || echo no ldd
+- if [ -f /proc/cpuinfo ] ; then cat /proc/cpuinfo; fi
+
+script: |
+  if [ "$BASEEXE" != "scoutfish-osx" ]; then
+    docker build --tag wheezy-for-scoutfish .
+    docker run --volume $PWD:/home/builder/scoutfish --user $(id -u) wheezy-for-scoutfish
+  else
+    cd src
+    make build ARCH=x86-64 EXE=../$BASEEXE-x86_64
+    cd ..
+  fi
+  ls -lh
+
+deploy:
+  provider: releases
+  api_key:
+    secure: 
+  prerelease: true
+  file_glob: true
+  file:
+    - $BASEEXE-*
+  skip_cleanup: true
+  on:
+    tags: true
+    repo: gbtami/scoutfish
+    branch: master

@@ -1,0 +1,4 @@
+scoutfish-*
+src/scoutfish
+src/.depend
+*.o
