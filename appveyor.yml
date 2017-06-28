@@ -3,9 +3,7 @@ version: 1.0.{build}
 os: Visual Studio 2015
 
 platform:
-  - x86
   - x64
-  - Any CPU
 
 environment:
   matrix:
@@ -37,6 +35,7 @@ before_build:
 build_script:
   - cmake -G "Visual Studio 14 2015 Win64" .
   - cmake --build .
+  - copy Debug\scoutfish.exe .
 
 test_script:
   - python test.py
