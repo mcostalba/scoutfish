@@ -1,0 +1,42 @@
+version: 1.0.{build}
+
+os: Visual Studio 2015
+
+platform:
+  - x86
+  - x64
+  - Any CPU
+
+environment:
+  matrix:
+    # http://www.appveyor.com/docs/installed-software#python lists available
+    # versions
+    - PYTHON: "C:\\Python34"
+      PYTHON_VERSION: "3.4.x" # currently 3.4.4
+      PYTHON_ARCH: "64"
+
+install:
+  - "set PATH=%PYTHON%;%PYTHON%\\Scripts;%PATH%"
+
+  # Check that we have the expected version and architecture for Python  - "python --version"
+  - "python -c \"import struct; print(struct.calcsize('P') * 8)\""
+
+  # Upgrade to the latest version of pip to avoid it displaying warnings
+  # about it being out of date.
+  - "pip install --disable-pip-version-check --user --upgrade pip"
+  - "pip install pexpect"
+
+before_build:
+  - cd src
+  - echo project (scoutfish) >> CMakeLists.txt
+  - echo add_executable(scoutfish benchmark.cpp bitbase.cpp bitboard.cpp endgame.cpp evaluate.cpp >> CMakeLists.txt
+  - echo main.cpp material.cpp misc.cpp movepick.cpp parser.cpp pawns.cpp position.cpp psqt.cpp >> CMakeLists.txt
+  - echo scout.cpp search.cpp thread.cpp timeman.cpp tt.cpp uci.cpp ucioption.cpp syzygy/tbprobe.cpp) >> CMakeLists.txt
+  - echo set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/src) >> CMakeLists.txt
+
+build_script:
+  - cmake -G "Visual Studio 14 2015 Win64" .
+  - cmake --build .
+
+test_script:
+  - python test.py
