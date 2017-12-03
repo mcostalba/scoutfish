@@ -116,6 +116,21 @@ no matter where placed. Support lists.
 To find all end-games with white Knight and Bishop plus one optional pawn
 against two black Knights.
 
+##### material-signature
+
+A rule more specialized that 'material'.
+
+   { "material-signature": "QQR0vQRR"}
+
+Finds games where one side has 2 Queens and no Rooks, while
+the other side has 1 Queen and 2 Rooks.
+
+  {"material-signature": "Q0RRBBvQ0RRNN"}
+
+Finds end-games where neither side has a Queen (Q0), and one
+side has 2 Rooks and 2 Bishops, while the other side has
+2 Rooks and 2 Knights.
+
 
 ##### imbalance
 
