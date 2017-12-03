@@ -293,6 +293,22 @@ SkipToNextGame:
               while (*data != MOVE_NONE)
                   ++data;
               break;
+
+           case RuleMaterialSignature: {
+             bool ok = true;
+             for (const auto& it : cond->material_signature) {
+               Piece p = it.first;
+               int count = it.second;
+               if (popcount(pos.pieces(color_of(p), type_of(p))) != count) {
+                 ok = false;
+                 break;
+               }
+             }
+             if (ok) {
+               goto NextRule;
+             }
+           }
+            break;
           }
 
           // Do the move after rule checking
@@ -492,6 +508,38 @@ void parse_condition(Scout::Data& data, const json& item, int streakId = 0) {
           cond.matKeys.push_back(Position().set(mat, WHITE, &st).material_key());
       if (cond.matKeys.size())
           cond.rules.push_back(RuleMaterial);
+  }
+
+  if (item.count("material-signature"))
+  {
+      for (std::string code : item["material-signature"])
+      {
+          bool white = true;
+          Piece last_piece = NO_PIECE;
+          for (size_t i = 0; i < code.size(); i++) {
+              char ch = code[i];
+              Piece p = NO_PIECE;
+              switch (ch) {
+                  case 'K': p = (white ? W_KING : B_KING); break;
+                  case 'Q': p = (white ? W_QUEEN : B_QUEEN); break;
+                  case 'R': p = (white ? W_ROOK : B_ROOK); break;
+                  case 'B': p = (white ? W_BISHOP : B_BISHOP); break;
+                  case 'N': p = (white ? W_KNIGHT : B_KNIGHT); break;
+                  case 'P': p = (white ? W_PAWN : B_PAWN); break;
+                  case 'v': white = not white; break;
+                  case '0':
+                      assert(last_piece != NO_PIECE);
+                      assert(last_piece != W_KING);
+                      assert(last_piece != B_KING);
+                      cond.material_signature[last_piece] = 0;
+                      break;
+              }
+              if (p == NO_PIECE) { continue; }
+              last_piece = p;
+              cond.material_signature[p] += 1;
+      }
+    }
+    cond.rules.push_back(RuleMaterialSignature);
   }
 
   if (item.count("imbalance"))
