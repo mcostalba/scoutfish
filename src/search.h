@@ -22,6 +22,7 @@
 #define SEARCH_H_INCLUDED
 
 #include <atomic>
+#include <map>
 #include <sstream>
 #include <vector>
 
@@ -44,7 +45,8 @@ enum ResultType {
 enum RuleType {
   RuleNone, RulePass, RuleResult, RuleResultType, RuleSubFen, RuleMaterial,
   RuleImbalance, RuleMove, RuleQuietMove, RuleCapturedPiece, RuleMovedPiece,
-  RuleWhite, RuleBlack, RuleMatchedCondition, RuleMatchedQuery
+  RuleWhite, RuleBlack, RuleMatchedCondition, RuleMatchedQuery,
+  RuleMaterialSignature
 };
 
 struct SubFen {
@@ -76,6 +78,12 @@ struct Condition {
   std::vector<ScoutMove> moves;
   std::vector<Key> matKeys;
   std::vector<Imbalance> imbalances;
+
+  // Piece -> # occurrances required.
+  // The value can be zero meaning the piece must be absent.
+  // If an entry is not present then the piece count
+  // is not checked for that piece.
+  std::map<Piece, int> material_signature;
 };
 
 struct MatchingGame {
