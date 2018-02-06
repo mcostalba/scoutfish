@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/pychess/scoutfish.svg?branch=master)](https://travis-ci.org/pychess/scoutfish)
+
 ## Overview
 
 Run powerful and flexible queries on **very big chessdatabases** and with **very high speed**.
