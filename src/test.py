@@ -123,14 +123,60 @@ p = Scoutfish(SCOUTFISH)
 p.setoption('threads', 1)
 p.open('../pgn/famous_games.pgn')
 p.make()  # Force rebuilding of DB index
+p.open('../pgn/newlines.pgn')
+p.make()  # Force rebuilding of DB index
 print('done')
+
+
+class ParserTestCase(unittest.TestCase):
+    def setUp(self):
+        """ This .pgn contains extra newlines between games! """
+        p.open('../pgn/newlines.pgn')
+
+    def test_01(self):
+        expected = {'q': {'sub-fen': '8/8/8/8/8/8/4q3/3q2K1'},
+                    'count': 1, 'matches': [{'ofs': 418, 'ply': [88]}]}
+
+        result = p.scout(expected['q'])
+
+        self.assertEqual(expected['count'], result['match count'])
+
+        for idx, match in enumerate(expected['matches']):
+            self.assertEqual(match['ofs'], result['matches'][idx]['ofs'])
+            self.assertEqual(match['ply'], result['matches'][idx]['ply'])
+
+    def test_02(self):
+        expected = {'q': {'sub-fen': '8/8/8/8/7b/6qK/8/8'},
+                    'count': 1, 'matches': [{'ofs': 1066, 'ply': [36]}]}
+
+        result = p.scout(expected['q'])
+
+        self.assertEqual(expected['count'], result['match count'])
+
+        for idx, match in enumerate(expected['matches']):
+            self.assertEqual(match['ofs'], result['matches'][idx]['ofs'])
+            self.assertEqual(match['ply'], result['matches'][idx]['ply'])
+
+    def test_03(self):
+        expected = {'q': {'sub-fen': '8/3QR3/2k5/8/8/8/8/8'},
+                    'count': 1, 'matches': [{'ofs': 1424, 'ply': [67]}]}
+
+        result = p.scout(expected['q'])
+
+        self.assertEqual(expected['count'], result['match count'])
+
+        for idx, match in enumerate(expected['matches']):
+            self.assertEqual(match['ofs'], result['matches'][idx]['ofs'])
+            self.assertEqual(match['ply'], result['matches'][idx]['ply'])
 
 
 class TestSuite(unittest.TestCase):
     ''' Each single test will be appended here as a new method
         with setattr(). The methods will then be loaded and
         run by unittest. '''
-    pass
+
+    def setUp(self):
+        p.open('../pgn/famous_games.pgn')
 
 
 def create_test(expected):
