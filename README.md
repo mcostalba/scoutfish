@@ -2,6 +2,14 @@
 
 Run powerful and flexible queries on **very big chessdatabases** and with **very high speed**.
 
+## Compiling
+
+Scoutfish needs to be compiled before use as binaries are not provided. To see help on how to compile:
+
+    cd src && make help
+
+## Getting started
+
 Start building an index out of a [PGN](https://en.wikipedia.org/wiki/Portable_Game_Notation) file:
 
     ./scoutfish make my_big_db.pgn
