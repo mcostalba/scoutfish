@@ -21,7 +21,7 @@ Search result will be in JSON too.
 
 You can run Scoutfish from the command line:
 
-    ./scoutfish scout my_big_db.scout { "sub-fen": "8/8/p7/8/8/1B3N2/8/8" }
+    ./scoutfish scout my_big_db.scout "{ \"sub-fen\": \"8/8/p7/8/8/1B3N2/8/8\" }"
 
 To find all the games that match the given **sub-fen** condition, i.e. all the
 games with at least one position with a black pawn in _a6_, a white bishop in
