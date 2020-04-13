@@ -299,9 +299,10 @@ SkipToNextGame:
 
           // Do the move after rule checking
           move = *data;
-          if (move)
+          if (move) {
               movedPiece = pos.moved_piece(move);
               pos.do_move(move, *st++, pos.gives_check(move));
+          }
 
       } while (*data++ != MOVE_NONE); // Exit the game loop pointing to next ofs
 
