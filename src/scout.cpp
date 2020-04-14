@@ -94,6 +94,7 @@ void search(Thread* th) {
   size_t maxMatches = d.limit ? d.skip + d.limit : 0;
   d.matches.reserve(maxMatches ? maxMatches : 100000);
   matchPlies.reserve(128);
+  Piece movedPiece = NO_PIECE;
 
   // Lambda helper to copy hot stuff to local variables
   auto set_condition = [&] (size_t idx) {
@@ -148,13 +149,14 @@ void search(Thread* th) {
 
       st = states;
       Position pos = th->rootPos;
+      Move move = MOVE_NONE;
       data++; // First move of the game
 
       // Loop across the game (that could be empty)
       do {
-          Move move = *data; // Could be MOVE_NONE
-
           assert(!move || (pos.pseudo_legal(move) && pos.legal(move)));
+
+          Move nextMove = *data;
 
           // If we are looking for a streak, fail and reset as soon as last
           // matched ply is more than one half-move behind. We take care to
@@ -187,7 +189,7 @@ NextRule: // Loop across rules, early exit as soon as one fails
               goto SkipToNextGame; // Shortcut: result will not change
 
           case RuleResultType:
-              if (   !move // End of game
+              if (   !nextMove // End of game
                   && !MoveList<LEGAL>(pos).size()
                   && !!pos.checkers() == (cond->resultType == ResultMate))
                   goto NextRule;
@@ -232,7 +234,7 @@ NextRule: // Loop across rules, early exit as soon as one fails
               if (cond->moveSquares & to_sq(move))
                   for (const ScoutMove& m : cond->moves)
                   {
-                      if (   pos.moved_piece(move) != m.pc
+                      if (   movedPiece != m.pc
                           || to_sq(move) != m.to
                           || m.castle != (type_of(move) == CASTLING)
                           || !from_sq_ok(m.disambiguation, from_sq(move)))
@@ -242,21 +244,21 @@ NextRule: // Loop across rules, early exit as soon as one fails
               break;
 
           case RuleQuietMove:
-              if (move && !pos.capture(move))
+              if (move && !pos.captured_piece())
                   goto NextRule;
               break;
 
           case RuleCapturedPiece:
               if (move && pos.capture(move))
               {
-                  PieceType pt = type_of(move) == NORMAL ? type_of(pos.piece_on(to_sq(move))) : PAWN;
+                  PieceType pt = type_of(move) == NORMAL ? type_of(pos.captured_piece()) : PAWN;
                   if (cond->capturedFlags & (1 << int(pt)))
                       goto NextRule;
               }
               break;
 
           case RuleMovedPiece:
-              if (move && (cond->movedFlags & (1 << int(type_of(pos.moved_piece(move))))))
+              if (move && (cond->movedFlags & (1 << int(type_of(movedPiece)))))
                   goto NextRule;
               break;
 
@@ -296,8 +298,11 @@ SkipToNextGame:
           }
 
           // Do the move after rule checking
-          if (move)
+          move = *data;
+          if (move) {
+              movedPiece = pos.moved_piece(move);
               pos.do_move(move, *st++, pos.gives_check(move));
+          }
 
       } while (*data++ != MOVE_NONE); // Exit the game loop pointing to next ofs
 

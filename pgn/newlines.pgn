@@ -1,0 +1,65 @@
+[Event "?"]
+[Site "?"]
+[Date "2018.01.04"]
+[Round "1"]
+[White "Gull"]
+[Black "Rybka"]
+[Result "1-0"]
+[TimeControl "60+1"]
+[PlyCount "45"]
+
+1. Nc3 Nc6 2. Nf3 Nf6 3. d4 d6 4. e4 Be6 5. d5 Bd7 6. dxc6 Bxc6 7. Bd3 d5 8.
+Ne5 Qd6 9. Nxc6 Qxc6 10. Bb5 dxe4 11. Bxc6+ bxc6 12. Qd4 Rd8 13. Qxa7 Kd7 14.
+Bf4 Ke8 15. Qxc7 c5 16. Qc6+ Rd7 17. Rd1 e5 18. Bxe5 Bd6 19. Rxd6 e3 20. Qc8+
+Ke7 21. Nd5+ Nxd5 22. Qxd7+ Kf8 23. Qd8# 1-0
+
+
+[Event "?"]
+[Site "?"]
+[Date "2018.01.04"]
+[Round "1"]
+[White "Rybka"]
+[Black "Gull"]
+[Result "0-1"]
+[PlyCount "88"]
+
+1. Nc3 Nc6 2. Nf3 d5 3. d3 Nf6 4. Bf4 a6 5. Ne5 Nxe5 6. Bxe5 c6 7. Qd2 Ng4 8.
+Bd4 e5 9. Be3 d4 10. Bg5 dxc3 11. bxc3 Qb6 12. d4 exd4 13. cxd4 h6 14. Bf4 Qb2
+15. Rd1 Bb4 16. c3 Bxc3 17. h3 Bxd2+ 18. Bxd2 Nf6 19. e3 Qxa2 20. Bd3 a5 21.
+O-O Qb3 22. Bc1 a4 23. e4 a3 24. Bf4 a2 25. e5 Nd5 26. Be3 Nxe3 27. fxe3 Qc3
+28. e6 Bxe6 29. d5 Bxd5 30. e4 a1=Q 31. Rxa1 Rxa1 32. exd5 Qxd3 33. Rxa1 Qd4+
+34. Kh2 Qe5+ 35. g3 Qb2+ 36. Kg1 Qxa1+ 37. Kf2 cxd5 38. h4 Qh1 39. Ke3 Qe4+ 40.
+Kf2 d4 41. Kg1 d3 42. Kf1 Qe2+ 43. Kg1 d2 44. h5 d1=Q# 0-1
+
+
+[Event "?"]
+[Site "?"]
+[Date "2018.01.04"]
+[Round "1"]
+[White "Rybka"]
+[Black "Gull"]
+[Result "0-1"]
+[TimeControl "60+1"]
+[PlyCount "36"]
+
+1. Nc3 Nf6 2. Nf3 d5 3. Ne5 d4 4. Nb5 c6 5. Na3 Bf5 6. Nac4 b5 7. g4 Nxg4 8.
+f3 e6 9. h4 Be7 10. Nxg4 Bxg4 11. e3 Bxh4+ 12. Ke2 d3+ 13. cxd3 Bxf3+ 14. Kxf3
+Qf6+ 15. Kg4 Qg5+ 16. Kf3 Qf5+ 17. Kg2 Qf2+ 18. Kh3 Qg3# 0-1
+
+
+[Event "?"]
+[Site "?"]
+[Date "2018.01.04"]
+[Round "1"]
+[White "Gull"]
+[Black "Rybka"]
+[Result "1-0"]
+[TimeControl "60+1"]
+[PlyCount "67"]
+
+1. c4 Nc6 2. Nf3 Nf6 3. d4 d5 4. cxd5 Qxd5 5. Nc3 Qd6 6. e4 Be6 7. e5 Qb4 8.
+a3 Qa5 9. exf6 O-O-O 10. Bb5 exf6 11. O-O Bd6 12. Be3 Kb8 13. b4 Qb6 14. d5 Nd4
+15. Bxd4 c5 16. dxc6 Qc7 17. cxb7 Qxb7 18. Qa4 Rc8 19. Ba6 Qd7 20. Nb5 Rc6 21.
+Bxa7+ Ka8 22. Be3 Bb3 23. Qa5 Qd8 24. Bb7+ Kxb7 25. Qa7+ Kc8 26. Nxd6+ Qxd6 27.
+Qa8+ Kd7 28. Qxh8 Rc2 29. Rad1 Bd5 30. Bc5 Qe6 31. Rfe1 Qg4 32. Re7+ Kc6 33.
+Qe8+ Qd7 34. Qxd7# 1-0
