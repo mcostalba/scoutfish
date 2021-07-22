@@ -123,6 +123,13 @@ ifeq ($(ARCH),armv7)
 	prefetch = yes
 endif
 
+ifeq ($(ARCH),aarch64)
+	arch = arm64
+	bits = 64
+	prefetch = yes
+endif
+
+
 ifeq ($(ARCH),ppc-32)
 	arch = ppc
 endif
@@ -396,6 +403,7 @@ help:
 	@echo "ppc-64                  > PPC 64-bit"
 	@echo "ppc-32                  > PPC 32-bit"
 	@echo "armv7                   > ARMv7 32-bit"
+	@echo "aarch64                 > AArch 64-bit"
 	@echo "general-64              > unspecified 64-bit"
 	@echo "general-32              > unspecified 32-bit"
 	@echo ""
@@ -497,7 +505,8 @@ config-sanity:
 	@test "$(sanitize)" = "yes" || test "$(sanitize)" = "no"
 	@test "$(optimize)" = "yes" || test "$(optimize)" = "no"
 	@test "$(arch)" = "any" || test "$(arch)" = "x86_64" || test "$(arch)" = "i386" || \
-	 test "$(arch)" = "ppc64" || test "$(arch)" = "ppc" || test "$(arch)" = "armv7"
+	 test "$(arch)" = "ppc64" || test "$(arch)" = "ppc" || test "$(arch)" = "armv7" || \
+	 test "$(arch)" = "arm64"
 	@test "$(bits)" = "32" || test "$(bits)" = "64"
 	@test "$(prefetch)" = "yes" || test "$(prefetch)" = "no"
 	@test "$(popcnt)" = "yes" || test "$(popcnt)" = "no"
